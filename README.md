@@ -10,8 +10,8 @@
 ## Getting started
 ```
 cd react-kanban/
-npm install
-npm run storybook
+yarn install
+yarn run storybook
 ```
 
 ### Scripts
