@@ -1,0 +1,83 @@
+{
+  "name": "react-kanban",
+  "description": "React components for kanbnan board",
+  "main": "dist/index.js",
+  "jsnext:main": "components/index.js",
+  "module": "components/index.js",
+  "files": [
+    "src",
+    "dist",
+    "README"
+  ],
+  "scripts": {
+    "lint": "eslint components/** tests/**",
+    "lintfix": "eslint --fix components/** tests/**",
+    "prepublish": "npm run lint && npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "storybook": "start-storybook -p 9002",
+    "test": "mocha --require tests/config/setup 'tests/**/*.test.js'",
+    "test:watch": "mocha --require tests/config/setup 'tests/**/*.test.js' --watch",
+    "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require tests/config/setup 'tests/**/*.test.js'",
+    "test:report": "cat ./coverage/lcov.info | codecov && rm -rf ./coverage",
+    "build": "babel components --out-dir dist",
+    "docs": "build-storybook -o docs",
+    "commit": "git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react", "trello", "board"
+  ],
+  "author": "RC, Prakash",
+  "license": "MIT",
+  "devDependencies": {
+    "@kadira/storybook": "^2.32.1",
+    "@kadira/storybook-addon-actions": "^1.1.1",
+    "@kadira/storybook-addon-knobs": "^1.7.0",
+    "@kadira/storybook-addon-options": "^1.0.1",
+    "autoprefixer": "^6.5.3",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
+    "codecov.io": "^0.1.6",
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.11.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "isparta": "^4.0.0",
+    "istanbul": "^1.1.0-alpha.1",
+    "jsdom": "^9.8.3",
+    "mocha": "^3.2.0",
+    "node-sass": "^3.13.0",
+    "react-addons-test-utils": "^15.4.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "semantic-release": "^6.3.2",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "@kadira/storybook-deployer": "^1.0.0",
+    "classnames": "^2.2.3",
+    "invariant": "^2.0.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
