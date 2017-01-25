@@ -1,3 +1,7 @@
-import App from './App/App'
+import Board from './lib/Board'
+import Lane from './lib/Lane'
+import Card from './lib/Card'
 
-export {App}
+export {Board}
+export {Lane}
+export {Card}

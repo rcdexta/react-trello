@@ -1,0 +1,78 @@
+{
+  "pageCount": 20,
+  "lanes": [
+    {
+      "key": "INVOICES_TO_ADD",
+      "description": "Add Invoice",
+      "overdueCount": 20,
+      "totalCount": 70,
+      "slaApplicable": true,
+      "cards": [
+        {
+          "title": "Amy Curtiss",
+          "sla": "5 mins",
+          "overdue": false,
+          "description": "Quote $70,000 Invoiced $40,000"
+        },
+        {
+          "title": "Bob Jackson",
+          "sla": "15 mins",
+          "overdue": false,
+          "description": "Quote $17,000 Invoiced $0"
+        }
+      ]
+    },
+    {
+      "key": "INVOICES_CREATED",
+      "description": "Publish Invoice",
+      "overdueCount": 10,
+      "totalCount": 20,
+      "slaApplicable": true,
+      "cards": [
+        {
+          "title": "Joseph Major",
+          "sla": "15 mins",
+          "overdue": false,
+          "description": "Invoice Amount $300"
+        }
+      ]
+    },
+    {
+      "key": "INVOICES_SENT",
+      "description": "Collect Payments",
+      "overdueCount": 30,
+      "totalCount": 50,
+      "slaApplicable": true,
+      "cards": []
+    },
+    {
+      "key": "INVOICES_PAST_DUE",
+      "description": "Collect Payments Past Due",
+      "overdueCount": 80,
+      "totalCount": 90,
+      "slaApplicable": true,
+      "cards": [
+        {
+          "title": "Amy Curtiss",
+          "sla": "6 hours",
+          "overdue": false,
+          "description": "Invoice Amount $23,000"
+        }
+      ]
+    },
+    {
+      "key": "INVOICES_PAID",
+      "description": "Invoices Paid",
+      "overdueCount": 0,
+      "totalCount": 200,
+      "slaApplicable": false,
+      "cards": [
+        {
+          "title": "Mathew Williams",
+          "overdue": false,
+          "description": "Invoice Amount $13,000"
+        }
+      ]
+    }
+  ]
+}
