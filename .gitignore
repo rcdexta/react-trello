@@ -2,7 +2,6 @@ node_modules
 *.log
 .DS_Store
 dist
-lib
 coverage
 .idea
 examples/bundle.js
