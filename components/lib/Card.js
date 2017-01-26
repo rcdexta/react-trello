@@ -17,5 +17,6 @@ Card.propTypes = {
   title: React.PropTypes.string.isRequired,
   description: React.PropTypes.string,
   rightHeader: React.PropTypes.string,
-  onClick: React.PropTypes.func
+  onClick: React.PropTypes.func,
+  id: React.PropTypes.string
 }

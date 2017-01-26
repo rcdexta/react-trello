@@ -1,12 +1,13 @@
 .board {
   background-color: #23719F;
-  overflow: auto;
+  overflow-y: hidden;
   padding: 5px;
   font: 14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #393939;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 100vh;
 }
 
 .list {
@@ -15,6 +16,8 @@
   margin: 5px 5px;
   padding: 10px;
   min-width: 220px;
+  height: 92%;
+  overflow-y: auto;
 
   header {
     margin-bottom: 10px;

@@ -1,12 +1,11 @@
 #react-trello
 
-Pluggable components to integrate a trello-like board for your application
+Pluggable components to add a trello like kanban board for your application
 
 ##Features
 
-* responsive and light-weight
-* easily pluggable into existing applications
-
+* responsive, extensible and light-weight
+* easily pluggable into existing application
 
 ## Development
 ```

@@ -16,7 +16,7 @@ setDefaults({ header: false, inline: true, propTables: false });
 setAddon(infoAddon)
 
 function loadStories () {
-  require('../stories/App.story');
+  require('../stories');
 }
 
 configure(loadStories, module);
