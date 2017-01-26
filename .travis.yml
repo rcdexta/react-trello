@@ -12,9 +12,8 @@ before_install:
 before_script:
   - npm prune
 script:
-  - npm run test:cover
+  - npm run test
 after_success:
-  - npm run test:report
   - npm run semantic-release
 branches:
   except:

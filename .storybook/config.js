@@ -3,8 +3,8 @@ import { setOptions } from '@kadira/storybook-addon-options';
 import infoAddon, { setDefaults } from '@kadira/react-storybook-addon-info';
 
 setOptions({
-  name: 'react-kanban',
-  url: 'https://github.com/rcdexta/react-kanban',
+  name: 'react-trello',
+  url: 'https://github.com/rcdexta/react-trello',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: false,

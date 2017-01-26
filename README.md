@@ -1,15 +1,16 @@
-#react-kanban
+#react-trello
 
-> React components for kanban like board
+Pluggable components to integrate a trello-like board for your application
 
 ##Features
 
 * responsive and light-weight
-* modular and highly customizable
+* easily pluggable into existing applications
 
-## Getting started
+
+## Development
 ```
-cd react-kanban/
+cd react-trello/
 yarn install
 yarn run storybook
 ```

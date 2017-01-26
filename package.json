@@ -1,6 +1,6 @@
 {
-  "name": "react-kanban",
-  "description": "React components for kanbnan board",
+  "name": "react-trello",
+  "description": "Pluggable components to integrate a trello-like board for your application",
   "main": "dist/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
