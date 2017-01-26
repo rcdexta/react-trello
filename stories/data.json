@@ -1,75 +1,86 @@
 {
   "lanes": [
     {
-      "key": "INVOICES_TO_ADD",
-      "description": "Add Invoice",
+      "key": "PLANNED",
+      "description": "Planned Tasks",
       "overdueCount": 20,
       "totalCount": 70,
-      "slaApplicable": true,
       "cards": [
         {
-          "title": "Amy Curtiss",
-          "sla": "5 mins",
-          "overdue": false,
-          "description": "Quote $70,000 Invoiced $40,000"
+          "title": "Buy milk",
+          "sla": "Today",
+          "description": "2 Gallons of milk at the Deli store"
         },
         {
-          "title": "Bob Jackson",
-          "sla": "15 mins",
-          "overdue": false,
-          "description": "Quote $17,000 Invoiced $0"
+          "title": "Dispose Garbage",
+          "sla": "Today",
+          "description": "Sort out recyclable and waste as needed"
         }
       ]
     },
     {
-      "key": "INVOICES_CREATED",
-      "description": "Publish Invoice",
+      "key": "WIP",
+      "description": "Work In Progress",
       "overdueCount": 10,
       "totalCount": 20,
       "slaApplicable": true,
       "cards": [
         {
-          "title": "Joseph Major",
-          "sla": "15 mins",
+          "title": "Clean House",
+          "sla": "30 mins",
           "overdue": false,
-          "description": "Invoice Amount $300"
+          "description": "Soap wash and polish floor. Polish windows and doors"
         }
       ]
     },
     {
-      "key": "INVOICES_SENT",
-      "description": "Collect Payments",
-      "overdueCount": 30,
-      "totalCount": 50,
+      "key": "BLOCKED",
+      "description": "Blocked",
+      "overdueCount": 0,
+      "totalCount": 0,
       "slaApplicable": true,
       "cards": []
     },
     {
-      "key": "INVOICES_PAST_DUE",
-      "description": "Collect Payments Past Due",
-      "overdueCount": 80,
-      "totalCount": 90,
+      "key": "COMPLETED",
+      "description": "Completed",
+      "overdueCount": 0,
+      "totalCount": 0,
       "slaApplicable": true,
       "cards": [
         {
-          "title": "Amy Curtiss",
-          "sla": "6 hours",
+          "title": "Practice Meditation",
+          "sla": "15 mins",
           "overdue": false,
-          "description": "Invoice Amount $23,000"
+          "description": "Use Headspace app"
         }
       ]
     },
     {
-      "key": "INVOICES_PAID",
-      "description": "Invoices Paid",
-      "overdueCount": 0,
-      "totalCount": 200,
+      "key": "REPEAT",
+      "description": "Repeat",
+      "overdueCount": 1,
+      "totalCount": 1,
       "slaApplicable": false,
       "cards": [
         {
-          "title": "Mathew Williams",
-          "overdue": false,
-          "description": "Invoice Amount $13,000"
+          "title": "Morning Jog",
+          "sla": "30 mins",
+          "description": "Track using fitbit"
+        }
+      ]
+    },
+    {
+      "key": "ARCHIVED",
+      "description": "Archived",
+      "overdueCount": 1,
+      "totalCount": 10,
+      "slaApplicable": false,
+      "cards": [
+        {
+          "title": "Morning Jog",
+          "sla": "30 mins",
+          "description": "Track using fitbit"
         }
       ]
     }

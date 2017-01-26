@@ -35,6 +35,7 @@
   "author": "RC, Prakash",
   "license": "MIT",
   "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.32.1",
     "@kadira/storybook-addon-actions": "^1.1.1",
     "@kadira/storybook-addon-knobs": "^1.7.0",

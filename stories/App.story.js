@@ -7,39 +7,41 @@ const data = require('./data.json');
 
 storiesOf('react-kanban', module)
 
-  .add('Default Layout', () => (
-    <Board>
-      {data.lanes.map((lane) => {
-        return <Lane key={lane.key}
-                     title={lane.description}
-                     rightHeader={`${lane.overdueCount}/${lane.totalCount}`}>
-          {
-            lane.cards && lane.cards.map((card) => {
-              return <Card  key={card.title} title={card.title}
-                            description={card.description}
-                            rightHeader={card.sla}/>
-            })
-          }
+  .addWithInfo('Simple Example',
+    'A simple Trello board with a single lane',
+    () => (
+      <Board>
+        <Lane key='Lane1'
+              title='Planned Tasks'>
+          <Card key='Card1'
+                title='Board and Lane'
+                description='Trello board and Lane as components'
+                rightHeader='2 days'/>
+          <Card key='Card2'
+                title='Card as component'
+                description='Model a simple card component'
+                rightHeader='1 day'/>
         </Lane>
-      })}
-    </Board>
-  ))
+      </Board>
+    ))
 
-  .add('Event Handling', () => (
-    <Board>
-      {data.lanes.map((lane) => {
-        return <Lane id={lane.key}
-                     title={lane.description}
-                     rightHeader={`${lane.overdueCount}/${lane.totalCount}`}>
-          {
-            lane.cards && lane.cards.map((card) => {
-              return <Card  title={card.title}
-                            onClick={() => alert(`clicked on ${card.title}`)}
-                            description={card.description}
-                            rightHeader={card.sla}/>
-            })
-          }
-        </Lane>
-      })}
-    </Board>
-  ));
+  .addWithInfo('Bigger Board',
+    'A complete Trello board with multiple lanes',
+    () => (
+      <Board>
+        {data.lanes.map((lane) => {
+          return <Lane key={lane.key}
+                       title={lane.description}
+                       rightHeader={`${lane.overdueCount}/${lane.totalCount}`}>
+            {
+              lane.cards && lane.cards.map((card) => {
+                return <Card key={card.title}
+                             title={card.title}
+                             description={card.description}
+                             rightHeader={card.sla}/>
+              })
+            }
+          </Lane>
+        })}
+      </Board>
+    ));

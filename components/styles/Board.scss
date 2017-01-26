@@ -14,7 +14,7 @@
   border-radius: 3px;
   margin: 5px 5px;
   padding: 10px;
-  width: 260px;
+  min-width: 220px;
 
   header {
     margin-bottom: 10px;
@@ -48,8 +48,17 @@
     padding: 6px 8px;
     cursor: pointer;
 
+    header {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+
     .title {
       font-size: 14px;
+    }
+
+    .rightContent {
+      font-size: 10px;
     }
 
     &:hover {
