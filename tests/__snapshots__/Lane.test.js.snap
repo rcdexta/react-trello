@@ -1,0 +1,16 @@
+exports[`<Lane/> snapshot test 1`] = `
+<section
+  className="list">
+  <header>
+    <span
+      className="title">
+      First Lane
+    </span>
+    <span
+      className="rightContent">
+      Total: 3
+    </span>
+  </header>
+  Many cards here
+</section>
+`;

@@ -5,8 +5,8 @@ setOptions({
   name: 'react-kanban',
   url: 'https://github.com/rcdexta/react-kanban',
   goFullScreen: false,
-  showLeftPanel: false,
-  showDownPanel: true,
+  showLeftPanel: true,
+  showDownPanel: false,
   showSearchBox: false,
   downPanelInRight: false,
 });

@@ -1,0 +1,6 @@
+exports[`<Board/> snapshot test 1`] = `
+<div
+  className="board">
+  Many boards here
+</div>
+`;

@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 
 export default class Card extends Component {
   render() {
-    const {title, description, rightHeader} = this.props
-    return <article className='card'>
+    const {title, description, rightHeader, ...otherProps} = this.props
+    return <article className='card' key={title} {...otherProps}>
       <header>
         <span className='title'>{title}</span>
         <span className='rightContent'>{rightHeader}</span>
@@ -15,5 +15,7 @@ export default class Card extends Component {
 
 Card.propTypes = {
   title: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired
+  description: React.PropTypes.string,
+  rightHeader: React.PropTypes.string,
+  onClick: React.PropTypes.func
 }

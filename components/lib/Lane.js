@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class Lane extends Component {
   render() {
-    const {title, rightHeader, cards} = this.props
+    const {title, rightHeader} = this.props
     return <section className='list'>
       <header>
         <span className='title'>{title}</span>
@@ -14,8 +14,6 @@ export default class Lane extends Component {
 }
 
 Lane.propTypes = {
-  key: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
-  rightHeader: React.PropTypes.string,
-  cards: React.PropTypes.array
+  rightHeader: React.PropTypes.string
 }

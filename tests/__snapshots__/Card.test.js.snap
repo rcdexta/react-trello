@@ -1,0 +1,41 @@
+exports[`<Card/> snapshot test 1`] = `
+<article
+  className="card"
+  onClick={[Function]}>
+  <header>
+    <span
+      className="title">
+      Card title
+    </span>
+    <span
+      className="rightContent">
+      Overdue
+    </span>
+  </header>
+  <div
+    className="detail">
+    New Description
+  </div>
+</article>
+`;
+
+exports[`<Card/> snapshot test 2`] = `
+<article
+  className="card"
+  onClick={[Function]}>
+  <header>
+    <span
+      className="title">
+      Card title
+    </span>
+    <span
+      className="rightContent">
+      Overdue
+    </span>
+  </header>
+  <div
+    className="detail">
+    New Description
+  </div>
+</article>
+`;
