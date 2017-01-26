@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/rcdexta/react-trello"
   },
   "keywords": [
     "react",
@@ -35,6 +35,10 @@
   ],
   "author": "RC, Prakash",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcdexta/react-trello/issues"
+  },
+  "homepage": "https://github.com/rcdexta/react-trello",
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.32.1",
