@@ -21,7 +21,8 @@
     "test:report": "cat ./coverage/lcov.info | codecov && rm -rf ./coverage",
     "build": "babel components --out-dir dist",
     "docs": "build-storybook -o docs",
-    "commit": "git cz"
+    "commit": "git cz",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
