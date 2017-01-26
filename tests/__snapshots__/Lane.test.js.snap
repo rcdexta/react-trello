@@ -11,6 +11,5 @@ exports[`<Lane/> snapshot test 1`] = `
       Total: 3
     </span>
   </header>
-  Many cards here
 </section>
 `;

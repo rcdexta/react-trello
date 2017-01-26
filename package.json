@@ -10,8 +10,8 @@
     "README"
   ],
   "scripts": {
-    "lint": "eslint components/** tests/**",
-    "lintfix": "eslint --fix components/** tests/**",
+    "lint": "eslint components/**",
+    "lintfix": "eslint --fix components/**",
     "prepublish": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "storybook": "start-storybook -p 9002",
