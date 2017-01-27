@@ -15,7 +15,7 @@ function delayedPromise(duration, resolution) {
 
 function generateCards(startWith = 0) {
   const cards = []
-  for (let i = startWith + 1; i <= startWith + 11; i++) {
+  for (let i = startWith + 1; i <= startWith + 10; i++) {
     cards.push(<Card key={i}
                      id={(i).toString()}
                      title={`Card${i}`}
@@ -25,8 +25,8 @@ function generateCards(startWith = 0) {
   return cards
 }
 
-function paginate(lastItemId) {
-  let newCards = generateCards(parseInt(lastItemId));
+function paginate(lastCardId) {
+  let newCards = generateCards(parseInt(lastCardId));
   return delayedPromise(2000, newCards);
 }
 
