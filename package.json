@@ -1,6 +1,6 @@
 {
   "name": "react-trello",
-  "description": "Pluggable components to integrate a trello-like board for your application",
+  "description": "Pluggable components to add a trello like kanban board to your application",
   "main": "dist/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",

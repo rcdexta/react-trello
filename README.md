@@ -1,6 +1,6 @@
 #react-trello
 
-Pluggable components to add a trello like kanban board for your application
+Pluggable components to add a trello like kanban board to your application
 
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 
@@ -11,7 +11,7 @@ Pluggable components to add a trello like kanban board for your application
 * responsive, extensible and light-weight
 * easily pluggable into existing application
 * supports pagination on scrolling individual lanes
-* drag-and-drop within and between lanes
+* drag-and-drop within and across lanes
 * api callback functions for all events 
 
 ## Getting Started
