@@ -37,8 +37,11 @@ export default class Lane extends Component {
         <span className='title'>{title}</span>
         <span className='rightContent'>{rightHeader}</span>
       </header>
-      {this.state.cards}
+      <div className="drag-inner-list">
+        {this.state.cards}
+      </div>
       {loading && <Loader/>}
+
     </section>
   }
 }

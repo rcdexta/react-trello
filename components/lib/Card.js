@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 export default class Card extends Component {
   render() {
     const {title, description, rightHeader, ...otherProps} = this.props
-    return <article className='card' key={title} {...otherProps}>
+    return <article className='card drag-item' key={title} {...otherProps}>
       <header>
         <span className='title'>{title}</span>
         <span className='rightContent'>{rightHeader}</span>

@@ -1,3 +1,5 @@
+$ease-out: all .3s cubic-bezier(0.23, 1, 0.32, 1);
+
 .board {
   background-color: #23719F;
   overflow-y: hidden;
@@ -15,7 +17,7 @@
   border-radius: 3px;
   margin: 5px 5px;
   padding: 10px;
-  min-width: 220px;
+  min-width: 250px;
   height: 92%;
   overflow-y: auto;
 
@@ -67,6 +69,16 @@
     &:hover {
       background-color: #F0F0F0;
     }
+  }
+
+  .drag-item {
+    transition: $ease-out;
+    cursor: pointer;
+
+    &.is-moving {
+      background: rgba(black, 0.8);
+    }
+
   }
 }
 

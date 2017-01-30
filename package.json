@@ -83,6 +83,7 @@
   "dependencies": {
     "@kadira/storybook-deployer": "^1.0.0",
     "classnames": "^2.2.3",
+    "dragula": "^3.7.2",
     "invariant": "^2.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
