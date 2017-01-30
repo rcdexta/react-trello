@@ -1,6 +1,6 @@
 exports[`<Card/> snapshot test 1`] = `
 <article
-  className="card"
+  className="card drag-item"
   onClick={[Function]}>
   <header>
     <span
@@ -21,7 +21,7 @@ exports[`<Card/> snapshot test 1`] = `
 
 exports[`<Card/> snapshot test 2`] = `
 <article
-  className="card"
+  className="card drag-item"
   onClick={[Function]}>
   <header>
     <span

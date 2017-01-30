@@ -11,5 +11,7 @@ exports[`<Lane/> snapshot test 1`] = `
       Total: 3
     </span>
   </header>
+  <div
+    className="drag-inner-list" />
 </section>
 `;
