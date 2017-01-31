@@ -5,11 +5,25 @@ import {Board, Lane, Card} from '../components';
 
 const data = require('./data.json');
 
+function handleDragStart(cardId, laneId) {
+  console.log('drag started')
+  console.log(cardId, laneId)
+}
+
+function handleDragEnd(cardId, laneId) {
+  console.log('drag ended')
+  console.log(cardId, laneId)
+}
+
 storiesOf('react-trello', module)
 
   .add('Drag-n-Drop',
     () => (
-      <Board>
+      <Board
+        draggable={true}
+        onDragStart={handleDragStart}
+        onDragEnd={handleDragEnd}
+      >
         <Lane key='Lane1'
               title='Planned'
               cards={[

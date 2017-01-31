@@ -12,7 +12,8 @@ $ease-out: all .3s cubic-bezier(0.23, 1, 0.32, 1);
   height: 100vh;
 }
 
-.list {
+.lane {
+
   background-color: #E3E3E3;
   border-radius: 3px;
   margin: 5px 5px;
@@ -20,66 +21,75 @@ $ease-out: all .3s cubic-bezier(0.23, 1, 0.32, 1);
   min-width: 250px;
   height: 92%;
   overflow-y: auto;
+}
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .title {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: grab;
+    width: 80%;
+  }
+
+  .rightContent {
+    width: 30%;
+    text-align: right;
+    font-size: 13px;
+  }
+}
+
+article {
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+.drag-inner-list {
+  min-height: 100px;
+}
+
+
+.card {
+  border-bottom: 1px solid #CCC;
+  padding: 6px 8px;
+  cursor: pointer;
 
   header {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    .title {
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 18px;
-      cursor: grab;
-      width: 80%;
-    }
-
-    .rightContent {
-      width: 30%;
-      text-align: right;
-      font-size: 13px;
-    }
+    border-bottom: 1px solid #eee;
+    padding-bottom: 6px;
   }
 
-  article {
-    border-radius: 3px;
-    margin: 10px 0px;
+  .title {
+    font-size: 14px;
   }
 
-  .card {
-    background-color: #FFF;
-    border-bottom: 1px solid #CCC;
-    padding: 6px 8px;
-    cursor: pointer;
+  .rightContent {
+    font-size: 10px;
+  }
+
+  &:hover {
+    background-color: #F0F0F0;
+  }
+}
+
+.drag-item {
+  transition: $ease-out;
+  cursor: pointer;
+  background-color: #FFF;
+
+  &.is-moving {
+    background-color: rgba(black, 0.8);
 
     header {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-
-    .title {
-      font-size: 14px;
-    }
-
-    .rightContent {
-      font-size: 10px;
-    }
-
-    &:hover {
-      background-color: #F0F0F0;
+      border: none;
     }
   }
 
-  .drag-item {
-    transition: $ease-out;
-    cursor: pointer;
-
-    &.is-moving {
-      background: rgba(black, 0.8);
-    }
-
-  }
 }
 
 .detail {

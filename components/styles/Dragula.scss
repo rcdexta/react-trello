@@ -2,8 +2,7 @@
   position: fixed !important;
   margin: 0 !important;
   z-index: 9999 !important;
-  opacity: 0.8;
-  list-style-type: none;
+  background-color: #fff !important;
 }
 
 .gu-hide {
@@ -19,4 +18,8 @@
 
 .gu-transit {
   opacity: 0.2;
+
+  span, div {
+    color: transparent;
+  }
 }

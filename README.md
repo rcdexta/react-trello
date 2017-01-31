@@ -6,7 +6,7 @@ Pluggable components to add a trello like kanban board to your application
 
 ## Features
 
-![alt tag](https://github.com/rcdexta/react-trello/raw/master/board.png)
+![alt tag](https://github.com/rcdexta/react-trello/raw/master/react-trello.gif)
 
 * responsive, extensible and light-weight
 * easily pluggable into existing application

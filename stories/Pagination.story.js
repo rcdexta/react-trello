@@ -13,7 +13,7 @@ function delayedPromise(duration, resolution) {
   });
 }
 
-function generateCards(startWith = 0) {
+function generateCards(startWith = 0, laneKey) {
   const cards = []
   for (let i = startWith + 1; i <= startWith + 10; i++) {
     cards.push(<Card key={i}

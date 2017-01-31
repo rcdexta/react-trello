@@ -12,7 +12,7 @@ export default class Lane extends Component {
     if (elemScrolPosition <= 0 && onScroll) {
       const {cards} = this.state
       this.setState({loading: true})
-      onScroll(this.lastCardId()).then((moreCards) => {
+      onScroll(this.lastCardId(), this.props.key).then((moreCards) => {
         this.setState({cards: [...cards, ...moreCards], loading: false})
       })
     }
@@ -32,7 +32,7 @@ export default class Lane extends Component {
   render() {
     const {loading} = this.state
     const {title, rightHeader, cards, ...otherProps} = this.props
-    return <section className='list' {...otherProps} ref={this.laneDidMount}>
+    return <section className='lane' {...otherProps} ref={this.laneDidMount}>
       <header>
         <span className='title'>{title}</span>
         <span className='rightContent'>{rightHeader}</span>
