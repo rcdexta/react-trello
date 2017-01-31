@@ -20,5 +20,7 @@ export default class Board extends Component {
 
 Board.propTypes = {
   children: React.PropTypes.node,
-  draggable: React.PropTypes.bool
+  draggable: React.PropTypes.bool,
+  onDragStart: React.PropTypes.func,
+  onDragEnd: React.PropTypes.func
 }
