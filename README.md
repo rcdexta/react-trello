@@ -19,7 +19,6 @@ Pluggable components to add a trello like kanban board to your application
 
 ```
 npm install --save react-trello
-
 ```
 
 ## Usage
@@ -54,7 +53,7 @@ This is the container component that encapsulates the lanes and cards
 
 | Name        | Type     | Description                              |
 | ----------- | -------- | ---------------------------------------- |
-| draggable   | boolean  | Makes all cards in the lanes draggable   |
+| draggable   | boolean  | Makes all cards in the lanes draggable. Default: false   |
 | onDragStart | function | Callback function triggered when card drag is started: `onDragStart(cardId, laneId)` |
 | onDragEnd   | function | Callback function triggered when card drag ends: `onDragEnd(cardId, laneId)` |
 
