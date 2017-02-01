@@ -24,6 +24,10 @@ exports.Board = _Board2.default;
 exports.Lane = _Lane2.default;
 exports.Card = _Card2.default;
 
+window.Board = exports.Board;
+window.Lane = exports.Lane;
+window.Card = exports.Card;
+
 },{"./lib/Board":2,"./lib/Card":3,"./lib/Lane":4}],2:[function(require,module,exports){
 'use strict';
 
@@ -63,21 +67,13 @@ var Board = function (_Component) {
   _createClass(Board, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      (0, _dragula2.default)([].concat(_toConsumableArray(document.querySelectorAll('.drag-inner-list')))).on('drag', function (el) {
-        // add 'is-moving' class to element being dragged
-        el.classList.add('is-moving');
-      }).on('dragend', function (el) {
-        // remove 'is-moving' class from element after dragging has stopped
-        el.classList.remove('is-moving');
-
-        // add the 'is-moved' class for 600ms then remove it
-        window.setTimeout(function () {
-          el.classList.add('is-moved');
-          window.setTimeout(function () {
-            el.classList.remove('is-moved');
-          }, 600);
-        }, 100);
-      });
+      if (this.props.draggable) {
+        (0, _dragula2.default)([].concat(_toConsumableArray(document.querySelectorAll('.drag-inner-list')))).on('drag', function (el) {
+          return el.classList.add('is-moving');
+        }).on('dragend', function (el) {
+          return el.classList.remove('is-moving');
+        });
+      }
     }
   }, {
     key: 'render',
@@ -97,7 +93,10 @@ exports.default = Board;
 
 
 Board.propTypes = {
-  children: _react2.default.PropTypes.node
+  children: _react2.default.PropTypes.node,
+  draggable: _react2.default.PropTypes.bool,
+  onDragStart: _react2.default.PropTypes.func,
+  onDragEnd: _react2.default.PropTypes.func
 };
 },{"dragula":13,"react":43}],3:[function(require,module,exports){
 'use strict';
@@ -188,8 +187,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
@@ -200,11 +197,11 @@ var _Loader = require('./Loader');
 
 var _Loader2 = _interopRequireDefault(_Loader);
 
+var _Card = require('./Card');
+
+var _Card2 = _interopRequireDefault(_Card);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -226,22 +223,7 @@ var Lane = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { cards: _this.props.cards, loading: false }, _this.handleScroll = function (evt) {
-      var node = evt.target;
-      var elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight;
-      var onScroll = _this.props.onScroll;
-
-      if (elemScrolPosition <= 0 && onScroll) {
-        (function () {
-          var cards = _this.state.cards;
-
-          _this.setState({ loading: true });
-          onScroll(_this.lastCardId()).then(function (moreCards) {
-            _this.setState({ cards: [].concat(_toConsumableArray(cards), _toConsumableArray(moreCards)), loading: false });
-          });
-        })();
-      }
-    }, _this.laneDidMount = function (node) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { cards: _this.props.cards, loading: false }, _this.laneDidMount = function (node) {
       if (node) {
         node.addEventListener('scroll', _this.handleScroll);
       }
@@ -253,19 +235,21 @@ var Lane = function (_Component) {
   }
 
   _createClass(Lane, [{
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.setState({ cards: nextProps.cards });
+    }
+  }, {
     key: 'render',
     value: function render() {
       var loading = this.state.loading;
-
       var _props = this.props,
           title = _props.title,
-          rightHeader = _props.rightHeader,
-          cards = _props.cards,
-          otherProps = _objectWithoutProperties(_props, ['title', 'rightHeader', 'cards']);
+          rightHeader = _props.rightHeader;
 
       return _react2.default.createElement(
         'section',
-        _extends({ className: 'list' }, otherProps, { ref: this.laneDidMount }),
+        { className: 'lane' },
         _react2.default.createElement(
           'header',
           null,
@@ -283,7 +267,11 @@ var Lane = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: 'drag-inner-list' },
-          this.state.cards
+          this.state.cards.map(function (card) {
+            return _react2.default.createElement(_Card2.default, { key: card.key,
+              title: card.title,
+              description: card.description });
+          })
         ),
         loading && _react2.default.createElement(_Loader2.default, null)
       );
@@ -302,7 +290,7 @@ Lane.propTypes = {
   rightHeader: _react2.default.PropTypes.string,
   onScroll: _react2.default.PropTypes.func
 };
-},{"./Loader":5,"react":43}],5:[function(require,module,exports){
+},{"./Card":3,"./Loader":5,"react":43}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
