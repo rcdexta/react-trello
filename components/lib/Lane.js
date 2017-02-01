@@ -1,21 +1,13 @@
 import React, {Component} from 'react'
 import Loader from './Loader'
+import Card from './Card'
 
 export default class Lane extends Component {
 
   state = {cards: this.props.cards, loading: false}
 
-  handleScroll = (evt) => {
-    const node = evt.target
-    const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const {onScroll} = this.props
-    if (elemScrolPosition <= 0 && onScroll) {
-      const {cards} = this.state
-      this.setState({loading: true})
-      onScroll(this.lastCardId(), this.props.key).then((moreCards) => {
-        this.setState({cards: [...cards, ...moreCards], loading: false})
-      })
-    }
+  componentWillReceiveProps(nextProps) {
+    this.setState({cards: nextProps.cards})
   }
 
   laneDidMount = (node) => {
@@ -31,17 +23,21 @@ export default class Lane extends Component {
 
   render() {
     const {loading} = this.state
-    const {title, rightHeader, cards, ...otherProps} = this.props
-    return <section className='lane' {...otherProps} ref={this.laneDidMount}>
+    const {title, rightHeader} = this.props
+    return <section className='lane'>
       <header>
         <span className='title'>{title}</span>
         <span className='rightContent'>{rightHeader}</span>
       </header>
       <div className="drag-inner-list">
-        {this.state.cards}
+        {this.state.cards.map((card) => (
+          <Card key={card.key}
+                title={card.title}
+                description={card.description}/>
+        ))
+        }
       </div>
       {loading && <Loader/>}
-
     </section>
   }
 }

@@ -7,8 +7,8 @@ describe('<Lane/>', () => {
     const component = renderer.create(
       <Lane key='Lane1'
         title='First Lane'
-        rightHeader='Total: 3'>
-        Many cards here
+        rightHeader='Total: 3'
+        cards={[{title: 'hello', description: 'hello hello', key: 'card1'}]}>
       </Lane>
     )
     let tree = component.toJSON()

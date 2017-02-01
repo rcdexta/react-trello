@@ -10,20 +10,15 @@ storiesOf('react-trello', module)
   .addWithInfo('Events',
     'Adding event handlers to the card',
     () => (
-      <Board>
-        <Lane key='Lane1'
-              title='Planned Tasks'
-              cards={[
-                <Card key='Card1'
-                      title='Board and Lane'
-                      description='Trello board and Lane as components'
-                      onClick={() => alert('You chose wisely!')}/>,
-                <Card key='Card2'
-                      title='Card as component'
-                      description='Model a simple card component'
-                      onClick={() => alert('Continue creating additional dialogues?')}/>
-              ]}>
-        </Lane>
-      </Board>
+      <div>
+        <button onClick={addOneCard}>Add Card</button>
+        <Board>
+          {lanes.map((lane) => (
+            <Lane key={lane.title}
+                  title={lane.title}
+                  cards={lane.cards} />
+          ))}
+        </Board>
+      </div>
     ))
 

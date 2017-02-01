@@ -12,6 +12,22 @@ exports[`<Lane/> snapshot test 1`] = `
     </span>
   </header>
   <div
-    className="drag-inner-list" />
+    className="drag-inner-list">
+    <article
+      className="card drag-item">
+      <header>
+        <span
+          className="title">
+          hello
+        </span>
+        <span
+          className="rightContent" />
+      </header>
+      <div
+        className="detail">
+        hello hello
+      </div>
+    </article>
+  </div>
 </section>
 `;
