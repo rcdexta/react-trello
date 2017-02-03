@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const BoardDiv = styled.div`
   background-color: #23719F;
@@ -10,7 +10,7 @@ export const BoardDiv = styled.div`
   flex-direction: row;
   align-items: flex-start;
   height: 100vh;
-`;
+`
 
 export const Section = styled.section`
   background-color: #E3E3E3;
@@ -20,14 +20,14 @@ export const Section = styled.section`
   min-width: 250px;
   height: 92%;
   overflow-y: auto;
-`;
+`
 
 export const Header = styled.header`
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-`;
+`
 
 export const Title = styled.span`
   font-weight: bold;
@@ -35,17 +35,17 @@ export const Title = styled.span`
   line-height: 18px;
   cursor: grab;
   width: 80%;
-`;
+`
 
 export const RightContent = styled.span`
   width: 30%;
   text-align: right;
   font-size: 13px;
-`;
+`
 
 export const DraggableList = styled.div`
   min-height: 100px;
- `;
+ `
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
@@ -63,22 +63,22 @@ export const CardWrapper = styled.article`
   &.is-moving {
     background-color: rgba(black, 0.8);
   }
-`;
+`
 
 export const CardHeader = styled(Header)`
   border-bottom: 1px solid #eee;
   padding-bottom: 6px;
-`;
+`
 
 export const CardTitle = styled(Title)`
  font-size: 14px;
-`;
+`
 
 export const CardRightContent = styled(RightContent)`
   font-size: 10px;
-`;
+`
 
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
-`;
+`

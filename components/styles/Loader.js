@@ -1,4 +1,4 @@
-import styled,  { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 const keyframeAnimation = keyframes`
     0% {
@@ -14,7 +14,7 @@ const keyframeAnimation = keyframes`
 export const LoaderDiv = styled.div`
   text-align: center;
   margin: 15px 0px;
-`;
+`
 
 export const LoadingBar = styled.div`
   display: inline-block;
@@ -37,4 +37,4 @@ export const LoadingBar = styled.div`
   &:nth-child(4) {
     animation-delay: .27s;
   }
-`;
+`
