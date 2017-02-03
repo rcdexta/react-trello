@@ -28,18 +28,16 @@ A simple board with a single lane can be created likewise:
 ```jsx
  <Board>
         <Lane key='Lane1'
-              title='Planned Tasks'
-              cards={[
+              title='Planned Tasks'>
                 <Card key='Card1'
                       title='Board and Lane'
                       description='Trello board and Lane as components'
-                      rightHeader='2 days'/>,
+                      rightHeader='2 days'/>
                 <Card key='Card2'
                       title='Card as component'
                       description='Model a simple card component'
                       rightHeader='1 day'/>
-              ]}
-        />
+          </Lane>          
       </Board>
 ```
 
@@ -53,7 +51,7 @@ This is the container component that encapsulates the lanes and cards
 
 | Name        | Type     | Description                              |
 | ----------- | -------- | ---------------------------------------- |
-| draggable   | boolean  | Makes all cards in the lanes draggable. Default: false   |
+| draggable   | boolean  | Makes all cards in the lanes draggable. Default: false |
 | onDragStart | function | Callback function triggered when card drag is started: `onDragStart(cardId, laneId)` |
 | onDragEnd   | function | Callback function triggered when card drag ends: `onDragEnd(cardId, laneId)` |
 
@@ -61,13 +59,14 @@ This is the container component that encapsulates the lanes and cards
 
 Each lane in the board is modeled after this component
 
-| Name        | Type       | Description                              |
-| ----------- | ---------- | ---------------------------------------- |
-| title       | string     | The title for the lane                   |
-| key         | string     | Unique key for the lane. Passed as param in callback functions |
-| rightHeader | node       | Element to be rendered on the top-right corner |
-| cards       | node array | List of Card components to be rendered inside this lane |
-| onScroll    | function   | Pagination callback function called when lane scrolled to bottom `onScroll(lastCardId, laneId)` |
+| Name        | Type     | Description                              |
+| ----------- | -------- | ---------------------------------------- |
+| title       | string   | The title for the lane                   |
+| key         | string   | Unique key for the lane. Passed as param in callback functions |
+| rightHeader | node     | Element to be rendered on the top-right corner |
+| cards       | array    | List of Card components as a json array. Each json element should contain `id`,`key`,`title` and optional`description` |
+| onScroll    | function | Pagination callback function called when lane scrolled to bottom `onScroll(lastCardId, laneId)` |
+| children    | nodes    | Pass Card component as children if not passed as `cards` prop |
 
 ###  Card
 

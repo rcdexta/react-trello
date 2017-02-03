@@ -1,19 +1,20 @@
 exports[`<Card/> snapshot test 1`] = `
 <article
-  className="card drag-item"
+  className="idjyyL"
   onClick={[Function]}>
-  <header>
+  <header
+    className="ceKhth">
     <span
-      className="title">
+      className="jyysHb">
       Card title
     </span>
     <span
-      className="rightContent">
+      className="jrlHOK">
       Overdue
     </span>
   </header>
   <div
-    className="detail">
+    className="gWrsil">
     New Description
   </div>
 </article>
@@ -21,20 +22,21 @@ exports[`<Card/> snapshot test 1`] = `
 
 exports[`<Card/> snapshot test 2`] = `
 <article
-  className="card drag-item"
+  className="idjyyL"
   onClick={[Function]}>
-  <header>
+  <header
+    className="ceKhth">
     <span
-      className="title">
+      className="jyysHb">
       Card title
     </span>
     <span
-      className="rightContent">
+      className="jrlHOK">
       Overdue
     </span>
   </header>
   <div
-    className="detail">
+    className="gWrsil">
     New Description
   </div>
 </article>

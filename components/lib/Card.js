@@ -1,15 +1,16 @@
 import React, {Component} from 'react'
+import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail} from '../styles/Base'
 
 export default class Card extends Component {
   render() {
     const {title, description, rightHeader, ...otherProps} = this.props
-      return <article className='card drag-item' key={title} {...otherProps}>
-        <header>
-          <span className='title'>{title}</span>
-          <span className='rightContent'>{rightHeader}</span>
-        </header>
-        <div className='detail'>{description}</div>
-      </article>
+      return <CardWrapper key={title} {...otherProps}>
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardRightContent>{rightHeader}</CardRightContent>
+        </CardHeader>
+        <Detail>{description}</Detail>
+      </CardWrapper>
   }
 }
 

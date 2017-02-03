@@ -16,11 +16,11 @@ function delayedPromise(duration, resolution) {
 function generateCards(startWith = 0, laneKey) {
   const cards = []
   for (let i = startWith + 1; i <= startWith + 10; i++) {
-    cards.push(<Card key={i}
-                     id={(i).toString()}
-                     title={`Card${i}`}
-                     description={`Description for #${i}`}
-    />)
+    cards.push({
+      key: i,
+      title: `Card${i}`,
+      description: `Description for #${i}`
+    })
   }
   return cards
 }
@@ -34,7 +34,8 @@ storiesOf('react-trello', module)
   .add('Infinite Scrolling',
     () => (
       <Board>
-        <Lane key='Lane1'
+        <Lane id='Lane1'
+              key='Lane 1'
               title='Paginated Lane'
               onScroll={paginate}
               cards={generateCards()}

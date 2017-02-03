@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
+import {LoaderDiv, LoadingBar} from '../styles/Loader'
 
 const Loader = ({ children }) => (
-  <div className="loading">
-    <div className="loading-bar"></div>
-    <div className="loading-bar"></div>
-    <div className="loading-bar"></div>
-    <div className="loading-bar"></div>
-  </div>
+  <LoaderDiv>
+    <LoadingBar/>
+    <LoadingBar/>
+    <LoadingBar/>
+    <LoadingBar/>
+  </LoaderDiv>
 );
 
 export default Loader

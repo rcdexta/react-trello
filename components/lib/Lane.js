@@ -1,10 +1,24 @@
 import React, {Component} from 'react'
 import Loader from './Loader'
 import Card from './Card'
+import {Section, Header, Title, RightContent, DraggableList} from '../styles/Base'
 
 export default class Lane extends Component {
 
   state = {cards: this.props.cards, loading: false}
+
+  handleScroll = (evt) => {
+    const node = evt.target
+    const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
+    const {onScroll} = this.props
+    if (elemScrolPosition <= 0 && onScroll) {
+      const {cards} = this.state
+      this.setState({loading: true})
+      onScroll(this.lastCardId(), this.props.id).then((moreCards) => {
+        this.setState({cards: [...cards, ...moreCards], loading: false})
+      })
+    }
+  }
 
   componentWillReceiveProps(nextProps) {
     this.setState({cards: nextProps.cards})
@@ -18,27 +32,28 @@ export default class Lane extends Component {
 
   lastCardId = () => {
     const {cards} = this.state
-    return cards[cards.length - 1].props.id
+    return cards[cards.length - 1].key
   }
 
   render() {
     const {loading} = this.state
-    const {title, rightHeader} = this.props
-    return <section className='lane'>
-      <header>
-        <span className='title'>{title}</span>
-        <span className='rightContent'>{rightHeader}</span>
-      </header>
-      <div className="drag-inner-list">
-        {this.state.cards.map((card) => (
+    const {title, rightHeader, cards, ...otherProps} = this.props
+    return <Section {...otherProps} innerRef={this.laneDidMount}>
+      <Header>
+        <Title>{title}</Title>
+        <RightContent>{rightHeader}</RightContent>
+      </Header>
+      <DraggableList>
+        {this.state.cards && this.state.cards.map((card) => (
           <Card key={card.key}
                 title={card.title}
                 description={card.description}/>
         ))
         }
-      </div>
+        {this.props.children}
+      </DraggableList>
       {loading && <Loader/>}
-    </section>
+    </Section>
   }
 }
 

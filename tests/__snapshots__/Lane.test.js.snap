@@ -1,30 +1,32 @@
 exports[`<Lane/> snapshot test 1`] = `
 <section
-  className="lane">
-  <header>
+  className="iQKVWF">
+  <header
+    className="eQnITk">
     <span
-      className="title">
+      className="jgmSre">
       First Lane
     </span>
     <span
-      className="rightContent">
+      className="ggHFfo">
       Total: 3
     </span>
   </header>
   <div
-    className="drag-inner-list">
+    className="ljSFec">
     <article
-      className="card drag-item">
-      <header>
+      className="idjyyL">
+      <header
+        className="ceKhth">
         <span
-          className="title">
+          className="jyysHb">
           hello
         </span>
         <span
-          className="rightContent" />
+          className="jrlHOK" />
       </header>
       <div
-        className="detail">
+        className="gWrsil">
         hello hello
       </div>
     </article>

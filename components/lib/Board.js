@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {BoardDiv} from '../styles/Base'
 import dragula from 'dragula'
 
 export default class Board extends Component {
@@ -12,9 +13,9 @@ export default class Board extends Component {
   }
 
   render() {
-    return <div className='board'>
+    return <BoardDiv>
       {this.props.children}
-    </div>
+    </BoardDiv>
   }
 }
 
