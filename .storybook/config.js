@@ -12,7 +12,7 @@ setOptions({
   downPanelInRight: false,
 });
 
-setDefaults({ header: false, inline: true, propTables: false });
+setDefaults({ header: true, inline: false, propTables: false });
 setAddon(infoAddon)
 
 function loadStories () {

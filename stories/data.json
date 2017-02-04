@@ -8,13 +8,23 @@
       "cards": [
         {
           "title": "Buy milk",
-          "sla": "Today",
+          "sla": "15 mins",
           "description": "2 Gallons of milk at the Deli store"
         },
         {
           "title": "Dispose Garbage",
-          "sla": "Today",
+          "sla": "10 mins",
           "description": "Sort out recyclable and waste as needed"
+        },
+        {
+          "title": "Write Blog",
+          "sla": "30 mins",
+          "description": "Can AI make memes?"
+        },
+        {
+          "title": "Pay Rent",
+          "sla": "5 mins",
+          "description": "Transfer to bank account"
         }
       ]
     },
@@ -53,6 +63,12 @@
           "sla": "15 mins",
           "overdue": false,
           "description": "Use Headspace app"
+        },
+        {
+          "title": "Maintain Daily Journal",
+          "sla": "15 mins",
+          "overdue": false,
+          "description": "Use Spreadsheet for now"
         }
       ]
     },
@@ -78,9 +94,9 @@
       "slaApplicable": false,
       "cards": [
         {
-          "title": "Morning Jog",
-          "sla": "30 mins",
-          "description": "Track using fitbit"
+          "title": "Go Trekking",
+          "sla": "300 mins",
+          "description": "Completed 10km on cycle"
         }
       ]
     }

@@ -18,7 +18,8 @@ export const Section = styled.section`
   margin: 5px 5px;
   padding: 10px;
   min-width: 250px;
-  height: 92%;
+  height: auto;
+  max-height: 95%;
   overflow-y: auto;
 `
 
@@ -45,7 +46,7 @@ export const RightContent = styled.span`
 
 export const DraggableList = styled.div`
   min-height: 100px;
- `
+`
 
 export const CardWrapper = styled.article`
   border-radius: 3px;

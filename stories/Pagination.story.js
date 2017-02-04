@@ -3,37 +3,48 @@ import {storiesOf} from '@kadira/storybook';
 
 import {Board, Lane, Card} from '../components';
 
-const data = require('./data.json');
-
-function delayedPromise(duration, resolution) {
-  return new Promise(function (resolve) {
-    setTimeout(function () {
-      resolve(resolution);
-    }, duration)
-  });
-}
-
-function generateCards(startWith = 0, laneKey) {
-  const cards = []
-  for (let i = startWith + 1; i <= startWith + 10; i++) {
-    cards.push({
-      key: i,
-      title: `Card${i}`,
-      description: `Description for #${i}`
-    })
-  }
-  return cards
-}
-
-function paginate(lastCardId) {
-  let newCards = generateCards(parseInt(lastCardId));
-  return delayedPromise(2000, newCards);
-}
-
 storiesOf('react-trello', module)
-  .add('Infinite Scrolling',
-    () => (
-      <Board>
+  .addWithInfo('Infinite Scrolling',
+    `
+      Infinite scroll with OnScroll function callback to fetch more items
+      
+      The callback function passed to onScroll will be of the following form
+      ~~~js
+      function paginate(requestedPage, laneId) {
+        return fetchCardsFromBackend(laneId, requestedPage); 
+      };
+      ~~~
+    `,
+    () => {
+      const PER_PAGE = 10
+
+      function delayedPromise(duration, resolution) {
+        return new Promise(function (resolve) {
+          setTimeout(function () {
+            resolve(resolution);
+          }, duration)
+        });
+      }
+
+      function generateCards(requestedPage=1) {
+        const cards = []
+        let fetchedItems = (requestedPage - 1) * PER_PAGE;
+        for (let i = fetchedItems + 1; i <= fetchedItems + PER_PAGE; i++) {
+          cards.push({
+            key: `Card${i}`,
+            title: `Card${i}`,
+            description: `Description for #${i}`
+          })
+        }
+        return cards
+      }
+
+      function paginate(requestedPage, laneId) {
+        let newCards = generateCards(requestedPage);
+        return delayedPromise(2000, newCards);
+      }
+
+      return <Board>
         <Lane id='Lane1'
               key='Lane 1'
               title='Paginated Lane'
@@ -41,5 +52,5 @@ storiesOf('react-trello', module)
               cards={generateCards()}
         />
       </Board>
-    ))
+    })
 
