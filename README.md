@@ -65,8 +65,8 @@ Each lane in the board is modeled after this component
 | key         | string   | Unique key for the lane. Passed as param in callback functions |
 | rightHeader | node     | Element to be rendered on the top-right corner |
 | cards       | array    | List of Card components as a json array. Each json element should contain `id`,`key`,`title` and optional`description` |
-| onScroll    | function | Pagination callback function called when lane scrolled to bottom `onScroll(lastCardId, laneId)` |
-| children    | nodes    | Pass Card component as children if not passed as `cards` prop |
+| onScroll    | function | Pagination callback function called when lane scrolled to bottom `onScroll(requestedPageNumber, laneId)` |
+| children    | nodes    | Pass Card component(s) as children if not passed as `cards` prop |
 
 ###  Card
 

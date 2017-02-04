@@ -18,7 +18,6 @@ var _Card = require('./lib/Card');
 
 var _Card2 = _interopRequireDefault(_Card);
 
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Board = _Board2.default;
@@ -236,18 +235,21 @@ var Lane = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { cards: _this.props.cards, loading: false }, _this.handleScroll = function (evt) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { cards: _this.props.cards, loading: false, currentPage: 1 }, _this.handleScroll = function (evt) {
       var node = evt.target;
       var elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight;
       var onScroll = _this.props.onScroll;
 
-      if (elemScrolPosition <= 0 && onScroll) {
+      if (elemScrolPosition <= 0 && onScroll && !_this.state.loading) {
         (function () {
-          var cards = _this.state.cards;
+          var _this$state = _this.state,
+              currentPage = _this$state.currentPage,
+              cards = _this$state.cards;
 
           _this.setState({ loading: true });
-          onScroll(_this.lastCardId(), _this.props.id).then(function (moreCards) {
-            _this.setState({ cards: [].concat(_toConsumableArray(cards), _toConsumableArray(moreCards)), loading: false });
+          var nextPage = currentPage + 1;
+          onScroll(nextPage, _this.props.id).then(function (moreCards) {
+            _this.setState({ cards: [].concat(_toConsumableArray(cards), _toConsumableArray(moreCards)), loading: false, currentPage: nextPage });
           });
         })();
       }
@@ -255,10 +257,6 @@ var Lane = function (_Component) {
       if (node) {
         node.addEventListener('scroll', _this.handleScroll);
       }
-    }, _this.lastCardId = function () {
-      var cards = _this.state.cards;
-
-      return cards[cards.length - 1].key;
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
@@ -276,7 +274,8 @@ var Lane = function (_Component) {
           title = _props.title,
           rightHeader = _props.rightHeader,
           cards = _props.cards,
-          otherProps = _objectWithoutProperties(_props, ['title', 'rightHeader', 'cards']);
+          onScroll = _props.onScroll,
+          otherProps = _objectWithoutProperties(_props, ['title', 'rightHeader', 'cards', 'onScroll']);
 
       return _react2.default.createElement(
         _Base.Section,
@@ -359,11 +358,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.Detail = exports.CardRightContent = exports.CardTitle = exports.CardHeader = exports.CardWrapper = exports.DraggableList = exports.RightContent = exports.Title = exports.Header = exports.Section = exports.BoardDiv = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n  background-color: #23719F;\n  overflow-y: hidden;\n  padding: 5px;\n  font: 14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;\n  color: #393939;\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n  height: 100vh;\n'], ['\n  background-color: #23719F;\n  overflow-y: hidden;\n  padding: 5px;\n  font: 14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;\n  color: #393939;\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n  height: 100vh;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  background-color: #E3E3E3;\n  border-radius: 3px;\n  margin: 5px 5px;\n  padding: 10px;\n  min-width: 250px;\n  height: 92%;\n  overflow-y: auto;\n'], ['\n  background-color: #E3E3E3;\n  border-radius: 3px;\n  margin: 5px 5px;\n  padding: 10px;\n  min-width: 250px;\n  height: 92%;\n  overflow-y: auto;\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  background-color: #E3E3E3;\n  border-radius: 3px;\n  margin: 5px 5px;\n  padding: 10px;\n  min-width: 250px;\n  height: auto;\n  max-height: 95%;\n  overflow-y: auto;\n'], ['\n  background-color: #E3E3E3;\n  border-radius: 3px;\n  margin: 5px 5px;\n  padding: 10px;\n  min-width: 250px;\n  height: auto;\n  max-height: 95%;\n  overflow-y: auto;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  margin-bottom: 10px;\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n'], ['\n  margin-bottom: 10px;\n  display: flex;\n  flex-direction: row;\n  align-items: flex-start;\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n  font-weight: bold;\n  font-size: 15px;\n  line-height: 18px;\n  cursor: grab;\n  width: 80%;\n'], ['\n  font-weight: bold;\n  font-size: 15px;\n  line-height: 18px;\n  cursor: grab;\n  width: 80%;\n']),
     _templateObject5 = _taggedTemplateLiteral(['\n  width: 30%;\n  text-align: right;\n  font-size: 13px;\n'], ['\n  width: 30%;\n  text-align: right;\n  font-size: 13px;\n']),
-    _templateObject6 = _taggedTemplateLiteral(['\n  min-height: 100px;\n '], ['\n  min-height: 100px;\n ']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  min-height: 100px;\n'], ['\n  min-height: 100px;\n']),
     _templateObject7 = _taggedTemplateLiteral(['\n  border-radius: 3px;\n  margin: 10px 0px;  \n  border-bottom: 1px solid #CCC;\n  padding: 6px 8px;\n  cursor: pointer;\n  transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);;\n  background-color: #FFF;\n  \n  &:hover {\n    background-color: #F0F0F0;\n  }\n  \n  &.is-moving {\n    background-color: rgba(black, 0.8);\n  }\n'], ['\n  border-radius: 3px;\n  margin: 10px 0px;  \n  border-bottom: 1px solid #CCC;\n  padding: 6px 8px;\n  cursor: pointer;\n  transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);;\n  background-color: #FFF;\n  \n  &:hover {\n    background-color: #F0F0F0;\n  }\n  \n  &.is-moving {\n    background-color: rgba(black, 0.8);\n  }\n']),
     _templateObject8 = _taggedTemplateLiteral(['\n  border-bottom: 1px solid #eee;\n  padding-bottom: 6px;\n'], ['\n  border-bottom: 1px solid #eee;\n  padding-bottom: 6px;\n']),
     _templateObject9 = _taggedTemplateLiteral(['\n font-size: 14px;\n'], ['\n font-size: 14px;\n']),

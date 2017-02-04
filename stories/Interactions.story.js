@@ -7,17 +7,22 @@ const data = require('./data.json');
 
 storiesOf('react-trello', module)
 
-  .addWithInfo('Events',
-    'Adding event handlers to the card',
+  .addWithInfo('Event Handling',
+    'Adding event handlers to each card',
     () => (
       <div>
-        <button onClick={addOneCard}>Add Card</button>
         <Board>
-          {lanes.map((lane) => (
-            <Lane key={lane.title}
-                  title={lane.title}
-                  cards={lane.cards} />
-          ))}
+          <Lane key='Lane1'
+                title='Planned Tasks'>
+            <Card key='Card1'
+                  title='Board and Lane'
+                  description='Trello board and Lane as components'
+                  onClick={() => alert('You chose wisely!')}/>
+            <Card key='Card2'
+                  title='Card as component'
+                  description='Model a simple card component'
+                  onClick={() => alert('Continue creating additional dialogues?')}/>
+          </Lane>
         </Board>
       </div>
     ))
