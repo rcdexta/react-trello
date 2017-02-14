@@ -300,6 +300,7 @@ var Lane = function (_Component) {
           this.state.cards && this.state.cards.map(function (card) {
             return _react2.default.createElement(_Card2.default, { key: card.key,
               title: card.title,
+              rightHeader: card.rightHeader,
               description: card.description });
           }),
           this.props.children
