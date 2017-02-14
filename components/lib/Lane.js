@@ -44,6 +44,7 @@ export default class Lane extends Component {
         {this.state.cards && this.state.cards.map((card) => (
           <Card key={card.key}
                 title={card.title}
+                rightHeader={card.rightHeader}
                 description={card.description}/>
         ))
         }
