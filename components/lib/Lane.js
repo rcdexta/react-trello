@@ -40,6 +40,13 @@ export default class Lane extends Component {
       })
   }
 
+  createCard(card, onCardClick){
+    if(!onCardClick){
+    return <Card key={card.key} title={card.title} rightHeader={card.rightHeader} description={card.description}/>
+    }
+    return <Card key={card.key} title={card.title} rightHeader={card.rightHeader} description={card.description} onClick={() => onCardClick(card.metadata)}/>
+  }
+
   render() {
     const {loading} = this.state
     const {title, rightHeader, cards, onScroll, sortFunction, onCardClick, ...otherProps} = this.props
@@ -50,10 +57,7 @@ export default class Lane extends Component {
       </Header>
       <DraggableList>
         {this.sortedCards(this.state.cards, sortFunction).map((card) => (
-          <Card key={card.key}
-                title={card.title}
-                rightHeader={card.rightHeader}
-                description={card.description}/>
+          this.createCard(card, onCardClick)
         ))
         }
         {this.props.children}

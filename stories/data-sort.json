@@ -9,7 +9,8 @@
       "sla": "15 mins",
       "description": "2 Gallons of milk at the Deli store -  2017-12-01",
       "metadata":{
-        "completedAt":"2017-12-01T10:00:00Z"
+        "completedAt":"2017-12-01T10:00:00Z",
+        "shortCode": "abc"
       }
     },
     {
@@ -17,7 +18,8 @@
       "sla": "10 mins",
       "description": "Sort out recyclable and waste as needed - 2017-11-01",
       "metadata":{
-        "completedAt":"2017-11-01T10:00:00Z"
+        "completedAt":"2017-11-01T10:00:00Z",
+        "shortCode": "aaa"
       }
     },
     {
@@ -25,7 +27,8 @@
       "sla": "30 mins",
       "description": "Can AI make memes? - 2017-10-01",
       "metadata":{
-        "completedAt":"2017-10-01T10:00:00Z"
+        "completedAt":"2017-10-01T10:00:00Z",
+        "shortCode": "fa1"
       }
     },
     {
@@ -33,7 +36,8 @@
       "sla": "5 mins",
       "description": "Transfer to bank account - 2017-09-01",
       "metadata":{
-        "completedAt":"2017-09-01T10:00:00Z"
+        "completedAt":"2017-09-01T10:00:00Z",
+        "shortCode": "ga2"
       }
     }
   ]
