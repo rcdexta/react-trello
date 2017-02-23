@@ -32,16 +32,24 @@ export default class Lane extends Component {
     }
   };
 
+  sortedCards(cards, sortFunction) {
+      if(!cards) return [];
+      if(!sortFunction) return cards;
+      return cards.sort(function(card1, card2){
+        return sortFunction(card1.metadata, card2.metadata)
+      })
+  }
+
   render() {
     const {loading} = this.state
-    const {title, rightHeader, cards, onScroll, ...otherProps} = this.props
+    const {title, rightHeader, cards, onScroll, sortFunction, onCardClick, ...otherProps} = this.props
     return <Section {...otherProps} innerRef={this.laneDidMount}>
       <Header>
         <Title>{title}</Title>
         <RightContent>{rightHeader}</RightContent>
       </Header>
       <DraggableList>
-        {this.state.cards && this.state.cards.map((card) => (
+        {this.sortedCards(this.state.cards, sortFunction).map((card) => (
           <Card key={card.key}
                 title={card.title}
                 rightHeader={card.rightHeader}
