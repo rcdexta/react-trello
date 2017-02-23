@@ -66,6 +66,8 @@ Each lane in the board is modeled after this component
 | rightHeader | node     | Element to be rendered on the top-right corner |
 | cards       | array    | List of Card components as a json array. Each json element should contain `id`,`key`,`title` and optional`description` |
 | onScroll    | function | Pagination callback function called when lane scrolled to bottom `onScroll(requestedPageNumber, laneId)` |
+| onCardClick    | function |  Callback function called when card is clicked `onCardClick(cardMetadata)` |
+| sortFunction| function | The lane will be sorted by the sort function provided `sort(cardMetadata1, cardMetadata2)` |
 | children    | nodes    | Pass Card component(s) as children if not passed as `cards` prop |
 
 ###  Card
@@ -77,6 +79,7 @@ Each lane in the board is modeled after this component
 | rightHeader | node     | Element to be rendered on the top-right corner |
 | description | node     | Secondary label for the card             |
 | onClick     | function | Callback function when the card is clicked |
+| metadata    | object   | Additional business context object that is used to store application attributes. This metadata object is passed to sort and onclick functions |
 
 Refer to tests for more detailed info about the components
 
