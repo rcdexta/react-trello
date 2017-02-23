@@ -18,6 +18,7 @@ var _Card = require('./lib/Card');
 
 var _Card2 = _interopRequireDefault(_Card);
 
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Board = _Board2.default;
@@ -266,8 +267,29 @@ var Lane = function (_Component) {
       this.setState({ cards: nextProps.cards });
     }
   }, {
+    key: 'sortedCards',
+    value: function sortedCards(cards, sortFunction) {
+      if (!cards) return [];
+      if (!sortFunction) return cards;
+      return cards.sort(function (card1, card2) {
+        return sortFunction(card1.metadata, card2.metadata);
+      });
+    }
+  }, {
+    key: 'createCard',
+    value: function createCard(card, onCardClick) {
+      if (!onCardClick) {
+        return _react2.default.createElement(_Card2.default, { key: card.key, title: card.title, rightHeader: card.rightHeader, description: card.description });
+      }
+      return _react2.default.createElement(_Card2.default, { key: card.key, title: card.title, rightHeader: card.rightHeader, description: card.description, onClick: function onClick() {
+          return onCardClick(card.metadata);
+        } });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var loading = this.state.loading;
 
       var _props = this.props,
@@ -275,7 +297,9 @@ var Lane = function (_Component) {
           rightHeader = _props.rightHeader,
           cards = _props.cards,
           onScroll = _props.onScroll,
-          otherProps = _objectWithoutProperties(_props, ['title', 'rightHeader', 'cards', 'onScroll']);
+          sortFunction = _props.sortFunction,
+          onCardClick = _props.onCardClick,
+          otherProps = _objectWithoutProperties(_props, ['title', 'rightHeader', 'cards', 'onScroll', 'sortFunction', 'onCardClick']);
 
       return _react2.default.createElement(
         _Base.Section,
@@ -297,11 +321,8 @@ var Lane = function (_Component) {
         _react2.default.createElement(
           _Base.DraggableList,
           null,
-          this.state.cards && this.state.cards.map(function (card) {
-            return _react2.default.createElement(_Card2.default, { key: card.key,
-              title: card.title,
-              rightHeader: card.rightHeader,
-              description: card.description });
+          this.sortedCards(this.state.cards, sortFunction).map(function (card) {
+            return _this2.createCard(card, onCardClick);
           }),
           this.props.children
         ),
