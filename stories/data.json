@@ -1,101 +1,96 @@
 {
   "lanes": [
     {
-      "key": "PLANNED",
-      "description": "Planned Tasks",
-      "overdueCount": 20,
-      "totalCount": 70,
+      "id": "PLANNED",
+      "title": "Planned Tasks",
+      "label": "20/70",
       "cards": [
         {
+          "id": "Plan1",
           "title": "Buy milk",
-          "sla": "15 mins",
+          "label": "15 mins",
           "description": "2 Gallons of milk at the Deli store"
         },
         {
+          "id": "Plan2",
           "title": "Dispose Garbage",
-          "sla": "10 mins",
+          "label": "10 mins",
           "description": "Sort out recyclable and waste as needed"
         },
         {
+          "id": "Plan3",
           "title": "Write Blog",
-          "sla": "30 mins",
+          "label": "30 mins",
           "description": "Can AI make memes?"
         },
         {
+          "id": "Plan4",
           "title": "Pay Rent",
-          "sla": "5 mins",
+          "label": "5 mins",
           "description": "Transfer to bank account"
         }
       ]
     },
     {
-      "key": "WIP",
-      "description": "Work In Progress",
-      "overdueCount": 10,
-      "totalCount": 20,
-      "slaApplicable": true,
+      "id": "WIP",
+      "title": "Work In Progress",
+      "label": "10/20",
       "cards": [
         {
+          "id": "Wip1",
           "title": "Clean House",
-          "sla": "30 mins",
-          "overdue": false,
+          "label": "30 mins",
           "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
         }
       ]
     },
     {
-      "key": "BLOCKED",
-      "description": "Blocked",
-      "overdueCount": 0,
-      "totalCount": 0,
-      "slaApplicable": true,
+      "id": "BLOCKED",
+      "title": "Blocked",
+      "label": "0/0",
       "cards": []
     },
     {
-      "key": "COMPLETED",
-      "description": "Completed",
-      "overdueCount": 0,
-      "totalCount": 0,
-      "slaApplicable": true,
+      "id": "COMPLETED",
+      "title": "Completed",
+      "label": "2/5",
       "cards": [
         {
+          "id": "Completed1",
           "title": "Practice Meditation",
-          "sla": "15 mins",
-          "overdue": false,
+          "label": "15 mins",
           "description": "Use Headspace app"
         },
         {
+          "id": "Completed2",
           "title": "Maintain Daily Journal",
-          "sla": "15 mins",
-          "overdue": false,
+          "label": "15 mins",
           "description": "Use Spreadsheet for now"
         }
       ]
     },
     {
-      "key": "REPEAT",
-      "description": "Repeat",
-      "overdueCount": 1,
-      "totalCount": 1,
-      "slaApplicable": false,
+      "id": "REPEAT",
+      "title": "Repeat",
+      "label": "1/1",
       "cards": [
         {
+          "id": "Repeat1",
           "title": "Morning Jog",
-          "sla": "30 mins",
+          "label": "30 mins",
           "description": "Track using fitbit"
         }
       ]
     },
     {
-      "key": "ARCHIVED",
-      "description": "Archived",
-      "overdueCount": 1,
-      "totalCount": 10,
-      "slaApplicable": false,
+      "id": "ARCHIVED",
+      "title": "Archived",
+      "label": "1/1",
       "cards": [
         {
+          "id": "Archived1",
           "title": "Go Trekking",
-          "sla": "300 mins",
+          "label": "300 mins",
           "description": "Completed 10km on cycle"
         }
       ]

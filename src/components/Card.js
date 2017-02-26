@@ -3,11 +3,11 @@ import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail} from '../s
 
 export default class Card extends Component {
   render() {
-    const {title, description, rightHeader, ...otherProps} = this.props
-      return <CardWrapper key={title} {...otherProps}>
+    const {id, title, description, label, ...otherProps} = this.props
+      return <CardWrapper key={id} {...otherProps}>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          <CardRightContent>{rightHeader}</CardRightContent>
+          <CardRightContent>{label}</CardRightContent>
         </CardHeader>
         <Detail>{description}</Detail>
       </CardWrapper>
@@ -15,9 +15,10 @@ export default class Card extends Component {
 }
 
 Card.propTypes = {
+  id: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
   description: React.PropTypes.string,
-  rightHeader: React.PropTypes.string,
+  label: React.PropTypes.string,
   onClick: React.PropTypes.func,
-  id: React.PropTypes.string
+  metadata: React.PropTypes.object
 }

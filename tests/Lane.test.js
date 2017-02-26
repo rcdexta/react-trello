@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Lane from '../components/lib/Lane'
+import Lane from '../src/components/Lane'
 
 describe('<Lane/>', () => {
   it('snapshot test', () => {

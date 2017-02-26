@@ -1,5 +1,4 @@
 import './Base.story'
-import './Sort.story'
-import './Interactions.story'
-import './InteractionsFromLane.story.js'
 import './Pagination.story'
+import './Interactions.story'
+import './Sort.story'

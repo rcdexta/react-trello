@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Card from '../components/lib/Card'
+import Card from '../src/components/Card'
 
 describe('<Card/>', () => {
   it('snapshot test', () => {

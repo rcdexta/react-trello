@@ -1,29 +1,26 @@
 import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 
-import {Board, Lane, Card} from '../components';
+import {Board} from '../src';
 
-const data = require('./data.json');
+const data = {
+  lanes: [{
+    id: 'lane1',
+    title: 'Planned Tasks',
+    cards: [{id: 'Card1', title: 'Card1', description: 'foo card', metadata: 'foo'},
+            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: 'bar'}]
+  }]
+}
 
 storiesOf('react-trello', module)
 
   .addWithInfo('Event Handling',
-    'Adding event handlers to each card',
+    'Adding event handlers to cards',
     () => (
       <div>
-        <Board>
-          <Lane key='Lane1'
-                title='Planned Tasks'>
-            <Card key='Card1'
-                  title='Board and Lane'
-                  description='Trello board and Lane as components'
-                  onClick={() => alert('You chose wisely!')}/>
-            <Card key='Card2'
-                  title='Card as component'
-                  description='Model a simple card component'
-                  onClick={() => alert('Continue creating additional dialogues?')}/>
-          </Lane>
-        </Board>
+        <Board data={data}
+               onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata: ${metadata}`)}
+        />
       </div>
     ))
 

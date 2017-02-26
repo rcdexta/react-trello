@@ -1,14 +1,14 @@
 import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 
-import {Board, Lane, Card} from '../components';
+import {Board} from '../src';
 
 storiesOf('react-trello', module)
   .addWithInfo('Infinite Scrolling',
     `
-      Infinite scroll with OnScroll function callback to fetch more items
+      Infinite scroll with onLaneScroll function callback to fetch more items
       
-      The callback function passed to onScroll will be of the following form
+      The callback function passed to onLaneScroll will be of the following form
       ~~~js
       function paginate(requestedPage, laneId) {
         return fetchCardsFromBackend(laneId, requestedPage); 
@@ -16,22 +16,22 @@ storiesOf('react-trello', module)
       ~~~
     `,
     () => {
-      const PER_PAGE = 10
+      const PER_PAGE = 15
 
-      function delayedPromise(duration, resolution) {
+      function delayedPromise(durationInMs, resolutionPayload) {
         return new Promise(function (resolve) {
           setTimeout(function () {
-            resolve(resolution);
-          }, duration)
+            resolve(resolutionPayload);
+          }, durationInMs)
         });
       }
 
-      function generateCards(requestedPage=1) {
+      function generateCards(requestedPage = 1) {
         const cards = []
         let fetchedItems = (requestedPage - 1) * PER_PAGE;
         for (let i = fetchedItems + 1; i <= fetchedItems + PER_PAGE; i++) {
           cards.push({
-            key: `Card${i}`,
+            id: `Card${i}`,
             title: `Card${i}`,
             description: `Description for #${i}`
           })
@@ -44,13 +44,15 @@ storiesOf('react-trello', module)
         return delayedPromise(2000, newCards);
       }
 
-      return <Board>
-        <Lane id='Lane1'
-              key='Lane 1'
-              title='Paginated Lane'
-              onScroll={paginate}
-              cards={generateCards()}
-        />
-      </Board>
+      const data = {
+        lanes: [{
+          id: 'Lane1',
+          title: 'Lane1',
+          cards: generateCards()
+        }]
+      }
+
+      return <Board data={data}
+                    onLaneScroll={paginate}/>
     })
 

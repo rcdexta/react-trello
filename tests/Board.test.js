@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Board from '../components/lib/Board'
+import Board from '../src/components/Board'
 
 describe('<Board/>', () => {
   it('snapshot test', () => {

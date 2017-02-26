@@ -9,9 +9,7 @@ exports[`<Card/> snapshot test 1`] = `
       Card title
     </span>
     <span
-      className="jrlHOK">
-      Overdue
-    </span>
+      className="jrlHOK" />
   </header>
   <div
     className="gWrsil">
@@ -31,9 +29,7 @@ exports[`<Card/> snapshot test 2`] = `
       Card title
     </span>
     <span
-      className="jrlHOK">
-      Overdue
-    </span>
+      className="jrlHOK" />
   </header>
   <div
     className="gWrsil">
