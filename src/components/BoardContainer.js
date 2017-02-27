@@ -5,6 +5,8 @@ import {connect} from 'react-redux'
 import Lane from './Lane'
 
 const boardActions = require('../actions/board_actions')
+const laneActions = require('../actions/lane_actions')
+
 
 class BoardContainer extends Component {
 
@@ -17,13 +19,26 @@ class BoardContainer extends Component {
     //     .on('dragend', (el) => el.classList.remove('is-moving'))
     // }
     this.props.actions.loadBoard(this.props.data)
+    if (this.props.callbackHandle) {
+      let handle = {
+        publishHook: (event) => {
+          switch(event.type) {
+            case 'ADD_CARD':
+              this.props.actions.addCard({laneId: event.laneId, card: event.card})
+            case 'REMOVE_CARD':
+              this.props.actions.removeCard({laneId: event.laneId, cardId: event.cardId})
+          }
+        }
+      }
+      this.props.callbackHandle(handle)
+    }
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('board received new props')
-    this.setState({data: nextProps.newData})
+    if (nextProps.newData) {
+      this.setState({data: nextProps.newData})
+    }
   }
-
 
   render() {
     const {data} = this.state
@@ -47,6 +62,7 @@ BoardContainer.propTypes = {
   data: React.PropTypes.object.isRequired,
   onLaneScroll: React.PropTypes.func,
   onCardClick: React.PropTypes.func,
+  callbackHandle: React.PropTypes.func,
   laneSortFunction: React.PropTypes.func,
   draggable: React.PropTypes.bool,
   onDragStart: React.PropTypes.func,
@@ -57,6 +73,6 @@ const mapStateToProps = (state) => {
   return {newData: state}
 }
 
-const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators(boardActions, dispatch)})
+const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
 export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)
