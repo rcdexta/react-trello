@@ -25,7 +25,7 @@ npm install --save react-trello
 
 The `Board` component takes a prop called `data` that contains all the details related to rendering the board. A sample data json is given here to illustrate the contract:
 
-```json
+```javascript
 const data = {
   lanes: [
     {
