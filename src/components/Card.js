@@ -2,15 +2,15 @@ import React, {Component} from 'react'
 import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail} from '../styles/Base'
 
 export default class Card extends Component {
-  render() {
+  render () {
     const {id, title, description, label, ...otherProps} = this.props
-      return <CardWrapper key={id} {...otherProps}>
-        <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <CardRightContent>{label}</CardRightContent>
-        </CardHeader>
-        <Detail>{description}</Detail>
-      </CardWrapper>
+    return <CardWrapper key={id} {...otherProps}>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardRightContent>{label}</CardRightContent>
+      </CardHeader>
+      <Detail>{description}</Detail>
+    </CardWrapper>
   }
 }
 

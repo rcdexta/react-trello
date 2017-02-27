@@ -23,7 +23,6 @@ const removeCardFromLane = (state, {laneId, cardId}) => {
 }
 
 const boardReducer = (state = {lanes: []}, action) => {
-
   switch (action.type) {
     case 'LOAD_BOARD':
       return action.payload
@@ -37,6 +36,5 @@ const boardReducer = (state = {lanes: []}, action) => {
       return state
   }
 }
-
 
 export default boardReducer

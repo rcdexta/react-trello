@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {LoaderDiv, LoadingBar} from '../styles/Loader'
 
-const Loader = ({ children }) => (
+const Loader = () => (
   <LoaderDiv>
-    <LoadingBar/>
-    <LoadingBar/>
-    <LoadingBar/>
-    <LoadingBar/>
+    <LoadingBar />
+    <LoadingBar />
+    <LoadingBar />
+    <LoadingBar />
   </LoaderDiv>
-);
+)
 
 export default Loader

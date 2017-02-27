@@ -7,12 +7,11 @@ import Lane from './Lane'
 const boardActions = require('../actions/board_actions')
 const laneActions = require('../actions/lane_actions')
 
-
 class BoardContainer extends Component {
 
   state = {data: this.props.data}
 
-  componentDidMount() {
+  componentDidMount () {
     // if (this.props.draggable) {
     //   dragula([...document.querySelectorAll('.drag-inner-list')])
     //     .on('drag', (el) => el.classList.add('is-moving'))
@@ -22,7 +21,7 @@ class BoardContainer extends Component {
     if (this.props.eventBusHandle) {
       let eventBus = {
         publish: (event) => {
-          switch(event.type) {
+          switch (event.type) {
             case 'ADD_CARD':
               this.props.actions.addCard({laneId: event.laneId, card: event.card})
             case 'REMOVE_CARD':
@@ -34,24 +33,24 @@ class BoardContainer extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     if (nextProps.newData) {
       this.setState({data: nextProps.newData})
     }
   }
 
-  render() {
+  render () {
     const {data} = this.state
     return <BoardDiv>
       {
         data.lanes.map((lane) => {
           const {id, ...otherProps} = lane
           return <Lane key={id}
-                       id={id}
-                       {...otherProps}
-                       onCardClick={this.props.onCardClick}
-                       onScroll={this.props.onLaneScroll}
-                       laneSortFunction={this.props.laneSortFunction}
+            id={id}
+            {...otherProps}
+            onCardClick={this.props.onCardClick}
+            onScroll={this.props.onLaneScroll}
+            laneSortFunction={this.props.laneSortFunction}
           />
         })}
     </BoardDiv>

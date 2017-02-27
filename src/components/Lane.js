@@ -18,7 +18,7 @@ class Lane extends Component {
     if (elemScrolPosition <= 0 && onScroll && !this.state.loading) {
       const {currentPage} = this.state
       this.setState({loading: true})
-      const nextPage = currentPage + 1;
+      const nextPage = currentPage + 1
       onScroll(nextPage, this.props.id)
         .then((moreCards) => {
           this.setState({loading: false, currentPage: nextPage})
@@ -27,44 +27,44 @@ class Lane extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     this.setState({cards: nextProps.cards})
   }
 
   laneDidMount = (node) => {
     if (node) {
-      node.addEventListener('scroll', this.handleScroll);
+      node.addEventListener('scroll', this.handleScroll)
     }
   };
 
-  sortedCards(cards, sortFunction) {
-    if (!cards) return [];
-    if (!sortFunction) return cards;
+  sortedCards (cards, sortFunction) {
+    if (!cards) return []
+    if (!sortFunction) return cards
     return cards.sort(function (card1, card2) {
       return sortFunction(card1, card2)
     })
   }
 
-  render() {
+  render () {
     const {loading} = this.state
-    const {id, title, rightHeader, cards, laneSortFunction, onCardClick, ...otherProps} = this.props
+    const {id, title, label, cards, laneSortFunction, onCardClick, ...otherProps} = this.props
     return <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
       <Header>
         <Title>{title}</Title>
-        <RightContent>{rightHeader}</RightContent>
+        <RightContent>{label}</RightContent>
       </Header>
       <DraggableList>
         {this.sortedCards(cards, laneSortFunction).map((card) => (
           <Card id={card.id}
-                key={card.id}
-                title={card.title}
-                label={card.label}
-                description={card.description}
-                onClick={() => onCardClick(card.id, card.metadata)}/>
+            key={card.id}
+            title={card.title}
+            label={card.label}
+            description={card.description}
+            onClick={() => onCardClick(card.id, card.metadata)} />
         ))
         }
       </DraggableList>
-      {loading && <Loader/>}
+      {loading && <Loader />}
     </Section>
   }
 }
@@ -72,6 +72,7 @@ class Lane extends Component {
 Lane.propTypes = {
   id: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired,
+  laneSortFunction: React.PropTypes.func,
   cards: React.PropTypes.array,
   label: React.PropTypes.string,
   onScroll: React.PropTypes.func

@@ -8,9 +8,9 @@ let store = createStore(boardReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && win
 
 export default class Board extends Component {
 
-  render() {
+  render () {
     return <Provider store={store}>
-      <BoardContainer {...this.props}/>
+      <BoardContainer {...this.props} />
     </Provider>
   }
 }

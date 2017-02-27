@@ -10,8 +10,8 @@
     "README"
   ],
   "scripts": {
-    "lint": "eslint components/**",
-    "lintfix": "eslint --fix components/**",
+    "lint": "eslint src/**",
+    "lintfix": "eslint --fix src/**",
     "prepublish": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "storybook": "start-storybook -p 9002",
@@ -48,6 +48,7 @@
     "autoprefixer": "^6.5.3",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
+    "babel-eslint": "^6.1.2",
     "babel-jest": "^18.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.19.0",
     "babel-preset-es2015": "^6.22.0",
@@ -59,7 +60,7 @@
     "commitizen": "^2.8.6",
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.6.0",
-    "eslint": "^3.11.0",
+    "eslint": "^3.16.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-config-standard-react": "^4.2.0",
     "eslint-plugin-promise": "^3.4.0",
