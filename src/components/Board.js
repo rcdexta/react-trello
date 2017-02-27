@@ -19,6 +19,7 @@ Board.propTypes = {
   data: React.PropTypes.object.isRequired,
   onLaneScroll: React.PropTypes.func,
   onCardClick: React.PropTypes.func,
+  eventBusHandle: React.PropTypes.func,
   laneSortFunction: React.PropTypes.func,
   draggable: React.PropTypes.bool,
   onDragStart: React.PropTypes.func,

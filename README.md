@@ -13,7 +13,7 @@ Pluggable components to add a trello like kanban board to your application
 * easily pluggable into existing application
 * supports pagination on scrolling individual lanes
 * drag-and-drop within and across lanes
-* api callback functions for all events 
+* api callback functions for external events (e.g.: adding or removing cards using realtime backend integration)
 
 ## Getting Started
 
@@ -23,22 +23,36 @@ npm install --save react-trello
 
 ## Usage
 
-A simple board with a single lane can be created likewise:
+The `Board` component takes a prop called `data` that contains all the details related to rendering the board. A sample data json is given here to illustrate the contract:
+
+```json
+const data = {
+  lanes: [
+    {
+      id: 'lane1',
+      title: 'Planned Tasks',
+      label: '2/2',
+      cards: [
+        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins'},
+	    {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
+      ]
+    },
+    {
+      id: 'lane2',
+      title: 'Completed',
+      label: '0/0',
+      cards: []
+    }
+  ]
+}
+```
+
+
+
+The data is fed to the board component and that's it.
 
 ```jsx
- <Board>
-        <Lane key='Lane1'
-              title='Planned Tasks'>
-                <Card key='Card1'
-                      title='Board and Lane'
-                      description='Trello board and Lane as components'
-                      rightHeader='2 days'/>
-                <Card key='Card2'
-                      title='Card as component'
-                      description='Model a simple card component'
-                      rightHeader='1 day'/>
-          </Lane>          
-      </Board>
+ <Board data={data} />
 ```
 
 Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello/
@@ -49,39 +63,39 @@ Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello
 
 This is the container component that encapsulates the lanes and cards
 
-| Name        | Type     | Description                              |
-| ----------- | -------- | ---------------------------------------- |
-| draggable   | boolean  | Makes all cards in the lanes draggable. Default: false |
-| onDragStart | function | Callback function triggered when card drag is started: `onDragStart(cardId, laneId)` |
-| onDragEnd   | function | Callback function triggered when card drag ends: `onDragEnd(cardId, laneId)` |
-
-### Lane
-
-Each lane in the board is modeled after this component
-
-| Name        | Type     | Description                              |
-| ----------- | -------- | ---------------------------------------- |
-| title       | string   | The title for the lane                   |
-| key         | string   | Unique key for the lane. Passed as param in callback functions |
-| rightHeader | node     | Element to be rendered on the top-right corner |
-| cards       | array    | List of Card components as a json array. Each json element should contain `id`,`key`,`title` and optional`description` |
-| onScroll    | function | Pagination callback function called when lane scrolled to bottom `onScroll(requestedPageNumber, laneId)` |
-| onCardClick    | function |  Callback function called when card is clicked `onCardClick(cardMetadata)` |
-| sortFunction| function | The lane will be sorted by the sort function provided `sort(cardMetadata1, cardMetadata2)` |
-| children    | nodes    | Pass Card component(s) as children if not passed as `cards` prop |
-
-###  Card
-
-| Name        | Type     | Description                              |
-| ----------- | -------- | ---------------------------------------- |
-| title       | string   | The title for the card                   |
-| key         | string   | Unique key for the card. Passed as param in callback functions |
-| rightHeader | node     | Element to be rendered on the top-right corner |
-| description | node     | Secondary label for the card             |
-| onClick     | function | Callback function when the card is clicked |
-| metadata    | object   | Additional business context object that is used to store application attributes. This metadata object is passed to sort and onclick functions |
+| Name             | Type     | Description                              |
+| ---------------- | -------- | ---------------------------------------- |
+| draggable        | boolean  | Makes all cards in the lanes draggable. Default: false |
+| onDragStart      | function | Callback function triggered when card drag is started: `onDragStart(cardId, laneId)` |
+| onDragEnd        | function | Callback function triggered when card drag ends: `onDragEnd(cardId, laneId)` |
+| onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
+| onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata) ` |
+| laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
+| eventBushandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 
 Refer to tests for more detailed info about the components
+
+### Publish Events 
+
+When defining the board, it is possible to obtain a event hook to the component to publish new events later after the board has been rendered. Refer the example below:
+
+```javascript
+let eventBus = undefined
+
+let setEventBus = (handle) => {
+  eventBus = handle
+}
+//To add a card
+eventBus.publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "M1", title: "Buy Milk", label: "15 mins", description: "Also set reminder"}})
+
+//To remove a card
+eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "M1"})
+  
+<Board data={data}
+       eventBushandle={setEventBus}/>
+```
+
+The code will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
 
 ## Development
 
@@ -108,5 +122,3 @@ Learn how to write stories [here](https://getstorybook.io/docs/basics/writing-st
 
 ### License
 MIT
-
-

@@ -5,19 +5,19 @@ import {Board} from '../src';
 
 const data = require('./data.json');
 
-let publish = undefined
+let eventBus = undefined
 
-let setHandle = (handle) => {
-  publish = handle.publishHook
+let setEventBus = (handle) => {
+  eventBus = handle
 }
 
 const completeMilkEvent = () => {
-  publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "Milk", title: "Buy Milk", label: "15 mins", description: "Use Headspace app"}})
-  publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "Milk"})
+  eventBus.publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "Milk", title: "Buy Milk", label: "15 mins", description: "Use Headspace app"}})
+  eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "Milk"})
 }
 
 const addBlockedEvent = () => {
-  publish({type: 'ADD_CARD', laneId: 'BLOCKED', card: {id: "Ec2Error", title: "EC2 Instance Down", label: "30 mins", description: "Main Ec2 instance down"}})
+  eventBus.publish({type: 'ADD_CARD', laneId: 'BLOCKED', card: {id: "Ec2Error", title: "EC2 Instance Down", label: "30 mins", description: "Main Ec2 instance down"}})
 }
 
 storiesOf('react-trello', module)
@@ -29,6 +29,6 @@ storiesOf('react-trello', module)
         <button onClick={completeMilkEvent} style={{margin: 5}}>Complete Buy Milk</button>
         <button onClick={addBlockedEvent} style={{margin: 5}}>Add Blocked</button>
         <Board data={data}
-               callbackHandle={setHandle}/>
+               eventBusHandle={setEventBus}/>
       </div>
     ));

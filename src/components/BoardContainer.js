@@ -19,9 +19,9 @@ class BoardContainer extends Component {
     //     .on('dragend', (el) => el.classList.remove('is-moving'))
     // }
     this.props.actions.loadBoard(this.props.data)
-    if (this.props.callbackHandle) {
-      let handle = {
-        publishHook: (event) => {
+    if (this.props.eventBusHandle) {
+      let eventBus = {
+        publish: (event) => {
           switch(event.type) {
             case 'ADD_CARD':
               this.props.actions.addCard({laneId: event.laneId, card: event.card})
@@ -30,7 +30,7 @@ class BoardContainer extends Component {
           }
         }
       }
-      this.props.callbackHandle(handle)
+      this.props.eventBusHandle(eventBus)
     }
   }
 
@@ -62,7 +62,7 @@ BoardContainer.propTypes = {
   data: React.PropTypes.object.isRequired,
   onLaneScroll: React.PropTypes.func,
   onCardClick: React.PropTypes.func,
-  callbackHandle: React.PropTypes.func,
+  eventBusHandle: React.PropTypes.func,
   laneSortFunction: React.PropTypes.func,
   draggable: React.PropTypes.bool,
   onDragStart: React.PropTypes.func,
