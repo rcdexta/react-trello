@@ -44,7 +44,7 @@ class BoardContainer extends Component {
     this.props.eventBusHandle(eventBus)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.props.actions.loadBoard(this.props.data)
 
     if (this.props.draggable) {
@@ -56,7 +56,7 @@ class BoardContainer extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     if (nextProps.newData) {
       const dataToUpdate = this.state.data
       dataToUpdate.lanes = nextProps.newData.lanes
@@ -64,18 +64,18 @@ class BoardContainer extends Component {
     }
   }
 
-  render() {
+  render () {
     const {data} = this.state
     return <BoardDiv>
       {
         data.lanes.map((lane) => {
           const {id, ...otherProps} = lane
           return <Lane key={id}
-                       id={id}
-                       {...otherProps}
-                       onCardClick={this.props.onCardClick}
-                       onScroll={this.props.onLaneScroll}
-                       laneSortFunction={this.props.laneSortFunction}
+            id={id}
+            {...otherProps}
+            onCardClick={this.props.onCardClick}
+            onScroll={this.props.onLaneScroll}
+            laneSortFunction={this.props.laneSortFunction}
           />
         })}
     </BoardDiv>
