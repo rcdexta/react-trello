@@ -4,7 +4,7 @@ import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail} from '../s
 export default class Card extends Component {
   render () {
     const {id, title, description, label, ...otherProps} = this.props
-    return <CardWrapper key={id} {...otherProps}>
+    return <CardWrapper key={id} data-id={id} {...otherProps}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardRightContent>{label}</CardRightContent>

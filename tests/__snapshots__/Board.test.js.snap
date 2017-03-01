@@ -14,7 +14,8 @@ exports[`<Board/> snapshot test 1`] = `
         className="ggHFfo" />
     </header>
     <div
-      className="gPtRcD" />
+      className="drag-inner-list gPtRcD"
+      data-id="Lane1" />
   </section>
 </div>
 `;

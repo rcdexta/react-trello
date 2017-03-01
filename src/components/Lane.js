@@ -53,7 +53,7 @@ class Lane extends Component {
         <Title>{title}</Title>
         <RightContent>{label}</RightContent>
       </Header>
-      <DraggableList>
+      <DraggableList className='drag-inner-list' data-id={id}>
         {this.sortedCards(cards, laneSortFunction).map((card) => (
           <Card id={card.id}
             key={card.id}

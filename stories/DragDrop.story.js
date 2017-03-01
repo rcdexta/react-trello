@@ -1,18 +1,21 @@
 import React from 'react';
 import {storiesOf} from '@kadira/storybook';
 
-import {Board, Lane, Card} from '../components';
+import {Board} from '../src';
 
 const data = require('./data.json');
 
 function handleDragStart(cardId, laneId) {
   console.log('drag started')
-  console.log(cardId, laneId)
+  console.log(`cardId: ${cardId}`)
+  console.log(`laneId: ${laneId}`)
 }
 
-function handleDragEnd(cardId, laneId) {
+function handleDragEnd(cardId, sourceLaneId, targetLaneId) {
   console.log('drag ended')
-  console.log(cardId, laneId)
+  console.log(`cardId: ${cardId}`)
+  console.log(`sourceLaneId: ${sourceLaneId}`)
+  console.log(`targetLaneId: ${targetLaneId}`)
 }
 
 storiesOf('react-trello', module)
@@ -20,29 +23,10 @@ storiesOf('react-trello', module)
   .add('Drag-n-Drop',
     () => (
       <Board
+        data={data}
         draggable={true}
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
-      >
-        <Lane key='Lane1'
-              title='Planned'
-              cards={[
-                <Card key='Card1'
-                      title='Refactor code'
-                      description='Review and refactor DnD module'/>,
-                <Card key='Card2'
-                      title='Deployment script'
-                      description='Automate deployment with semantic-release'/>
-              ]}>
-        </Lane>
-        <Lane key='Lane2'
-              title='Completed'
-              cards={[
-                <Card key='Card3'
-                      title='Unit Tests'
-                      description='Add unit tests for all components'/>
-              ]}>
-        </Lane>
-      </Board>
+      />
     ))
 
