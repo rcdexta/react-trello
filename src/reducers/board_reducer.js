@@ -1,7 +1,15 @@
+const sortedCards = (cards, sortFunction) => {
+  if (!cards) return []
+  if (!sortFunction) return cards
+  return cards.sort(function (card1, card2) {
+    return sortFunction(card1, card2)
+  })
+}
+
 const appendCardsToLane = (state, {laneId, newCards}) => {
   const lanes = state.lanes.map((lane) => {
     if (lane.id === laneId) {
-      lane.cards = [...lane.cards, ...newCards]
+      lane.cards = sortedCards([...lane.cards, ...newCards], lane.laneSortFunction)
     }
     return lane
   })
