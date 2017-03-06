@@ -2,8 +2,7 @@ exports[`<Board/> snapshot test 1`] = `
 <div
   className="dMcBAq">
   <section
-    className="kjauoa"
-    onScroll={undefined}>
+    className="kjauoa">
     <header
       className="eQnITk">
       <span
