@@ -14,12 +14,12 @@ class Lane extends Component {
   handleScroll = (evt) => {
     const node = evt.target
     const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const {onScroll} = this.props
-    if (elemScrolPosition <= 0 && onScroll && !this.state.loading) {
+    const {onLaneScroll} = this.props
+    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
       const {currentPage} = this.state
       this.setState({loading: true})
       const nextPage = currentPage + 1
-      onScroll(nextPage, this.props.id)
+      onLaneScroll(nextPage, this.props.id)
         .then((moreCards) => {
           this.setState({loading: false, currentPage: nextPage})
           this.props.actions.updateLane({laneId: this.props.id, newCards: moreCards})
@@ -75,7 +75,7 @@ Lane.propTypes = {
   laneSortFunction: React.PropTypes.func,
   cards: React.PropTypes.array,
   label: React.PropTypes.string,
-  onScroll: React.PropTypes.func
+  onLaneScroll: React.PropTypes.func
 }
 
 const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators(laneActions, dispatch)})

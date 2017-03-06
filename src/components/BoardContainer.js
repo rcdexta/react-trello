@@ -74,7 +74,7 @@ class BoardContainer extends Component {
             id={id}
             {...otherProps}
             onCardClick={this.props.onCardClick}
-            onScroll={this.props.onLaneScroll}
+            onLaneScroll={this.props.onLaneScroll}
             laneSortFunction={this.props.laneSortFunction}
           />
         })}
