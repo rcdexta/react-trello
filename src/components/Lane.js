@@ -35,7 +35,6 @@ class Lane extends Component {
     })
   }
 
-
   componentWillReceiveProps (nextProps) {
     this.setState({cards: this.sortedCards(nextProps.cards, this.props.laneSortFunction)})
   }
