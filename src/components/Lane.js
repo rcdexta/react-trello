@@ -41,8 +41,8 @@ class Lane extends Component {
     }
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.cards.map(c => c.id) !== this.props.cards.map(c => c.id) || nextState !== this.state;
+  shouldComponentUpdate (nextProps, nextState) {
+    return nextProps.cards.map(c => c.id) !== this.props.cards.map(c => c.id) || nextState !== this.state
   }
 
   render () {
