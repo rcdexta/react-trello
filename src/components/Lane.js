@@ -35,15 +35,15 @@ class Lane extends Component {
     })
   }
 
-  componentWillReceiveProps (nextProps) {
-    this.setState({cards: nextProps.cards})
-  }
-
   laneDidMount = (node) => {
     if (node) {
       node.addEventListener('scroll', this.handleScroll)
     }
-  };
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return nextProps.cards.map(c => c.id) !== this.props.cards.map(c => c.id) || nextState !== this.state;
+  }
 
   render () {
     const {loading} = this.state

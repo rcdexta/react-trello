@@ -84,7 +84,6 @@ var Board = function (_Component) {
 exports.default = Board;
 window.Board = Board;
 
-
 Board.propTypes = {
   data: _react2.default.PropTypes.object.isRequired,
   onLaneScroll: _react2.default.PropTypes.func,
@@ -429,9 +428,13 @@ var Lane = function (_Component) {
       });
     }
   }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      this.setState({ cards: nextProps.cards });
+    key: 'shouldComponentUpdate',
+    value: function shouldComponentUpdate(nextProps, nextState) {
+      return nextProps.cards.map(function (c) {
+        return c.id;
+      }) !== this.props.cards.map(function (c) {
+        return c.id;
+      }) || nextState !== this.state;
     }
   }, {
     key: 'render',
@@ -608,6 +611,7 @@ exports.Board = undefined;
 var _Board = require('./components/Board');
 
 var _Board2 = _interopRequireDefault(_Board);
+
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
