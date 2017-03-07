@@ -17,7 +17,7 @@ const completeMilkEvent = () => {
 }
 
 const addBlockedEvent = () => {
-  eventBus.publish({type: 'ADD_CARD', laneId: 'BLOCKED', card: {id: "Ec2Error", title: "EC2 Instance Down", label: "30 mins", description: "Main Ec2 instance down"}})
+  eventBus.publish({type: 'ADD_CARD', laneId: 'BLOCKED', card: {id: "Ec2Error", title: "EC2 Instance Down", label: "30 mins", description: "Main EC2 instance down"}})
 }
 
 storiesOf('react-trello', module)

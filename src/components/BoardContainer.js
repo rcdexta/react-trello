@@ -26,6 +26,7 @@ class BoardContainer extends Component {
         const fromLaneId = source.dataset.id
         const toLaneId = target.dataset.id
         this.props.onDragEnd(cardId, fromLaneId, toLaneId)
+        // TODO: This alters the state of redux as well as the DOM. Sathiya Sothanai!
         // this.props.actions.moveCard({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
       })
   }

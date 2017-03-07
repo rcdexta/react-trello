@@ -27,16 +27,16 @@ class Lane extends Component {
     }
   }
 
-  sortedCards (cards, sortFunction) {
+  sortCards (cards, sortFunction) {
     if (!cards) return []
     if (!sortFunction) return cards
-    return cards.sort(function (card1, card2) {
+    return cards.concat().sort(function (card1, card2) {
       return sortFunction(card1, card2)
     })
   }
 
   componentWillReceiveProps (nextProps) {
-    this.setState({cards: this.sortedCards(nextProps.cards, this.props.laneSortFunction)})
+    this.setState({cards: nextProps.cards})
   }
 
   laneDidMount = (node) => {
@@ -47,14 +47,14 @@ class Lane extends Component {
 
   render () {
     const {loading} = this.state
-    const {id, title, label, cards, onCardClick, ...otherProps} = this.props
+    const {id, title, label, cards, laneSortFunction, onCardClick, ...otherProps} = this.props
     return <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
       <Header>
         <Title>{title}</Title>
         <RightContent>{label}</RightContent>
       </Header>
       <DraggableList className='drag-inner-list' data-id={id}>
-        {cards.map((card) => (
+        {this.sortCards(cards, laneSortFunction).map((card) => (
           <Card id={card.id}
             key={card.id}
             title={card.title}

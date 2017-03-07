@@ -31,7 +31,7 @@ storiesOf('react-trello', module)
         let fetchedItems = (requestedPage - 1) * PER_PAGE;
         for (let i = fetchedItems + 1; i <= fetchedItems + PER_PAGE; i++) {
           cards.push({
-            id: `Card${i}`,
+            id: `${i}`,
             title: `Card${i}`,
             description: `Description for #${i}`
           })
@@ -53,6 +53,7 @@ storiesOf('react-trello', module)
       }
 
       return <Board data={data}
+                    laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)}
                     onLaneScroll={paginate}/>
     })
 
