@@ -1,4 +1,4 @@
 import Board from './components/Board'
-import './styles/Dragula.scss'
+import './styles/Dragula'
 
 export {Board}
