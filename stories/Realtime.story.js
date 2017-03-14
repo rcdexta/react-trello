@@ -20,6 +20,11 @@ const addBlockedEvent = () => {
   eventBus.publish({type: 'ADD_CARD', laneId: 'BLOCKED', card: {id: "Ec2Error", title: "EC2 Instance Down", label: "30 mins", description: "Main EC2 instance down"}})
 }
 
+const shouldReceiveNewData = (nextData) => {
+  console.log('data has changed')
+  console.log(nextData)
+}
+
 storiesOf('react-trello', module)
 
   .addWithInfo('Realtime Events',
@@ -29,6 +34,7 @@ storiesOf('react-trello', module)
         <button onClick={completeMilkEvent} style={{margin: 5}}>Complete Buy Milk</button>
         <button onClick={addBlockedEvent} style={{margin: 5}}>Add Blocked</button>
         <Board data={data}
+               onDataChange={shouldReceiveNewData}
                eventBusHandle={setEventBus}/>
       </div>
     ));

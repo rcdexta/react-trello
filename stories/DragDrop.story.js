@@ -12,22 +12,28 @@ storiesOf('react-trello', module)
     'A demonstration of onDragStart and onDragEnd hooks',
     () => {
     
-      function handleDragStart(cardId, laneId) {
+      const handleDragStart = (cardId, laneId) => {
         console.log('drag started')
         console.log(`cardId: ${cardId}`)
         console.log(`laneId: ${laneId}`)
       }
 
-      function handleDragEnd(cardId, sourceLaneId, targetLaneId) {
+      const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
         console.log('drag ended')
         console.log(`cardId: ${cardId}`)
         console.log(`sourceLaneId: ${sourceLaneId}`)
         console.log(`targetLaneId: ${targetLaneId}`)
       }
 
+      const shouldReceiveNewData = (nextData) => {
+        console.log('data has changed')
+        console.log(nextData)
+      }
+
       return <Board
         data={data}
         draggable={true}
+        onDataChange={shouldReceiveNewData}
         handleDragStart={handleDragStart}
         handleDragEnd={handleDragEnd}
       />

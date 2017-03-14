@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
 import Loader from './Loader'
 import Card from './Card'
 import {Section, Header, Title, RightContent, DraggableList} from '../styles/Base'
@@ -118,22 +118,22 @@ class Lane extends Component {
 }
 
 Lane.propTypes = {
-  id: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  laneSortFunction: React.PropTypes.func,
-  cards: React.PropTypes.array,
-  label: React.PropTypes.string,
-  onLaneScroll: React.PropTypes.func,
-  handleDragStart: React.PropTypes.func,
-  handleDragEnd: React.PropTypes.func
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  laneSortFunction: PropTypes.func,
+  cards: PropTypes.array,
+  label: PropTypes.string,
+  onLaneScroll: PropTypes.func,
+  handleDragStart: PropTypes.func,
+  handleDragEnd: PropTypes.func
 }
 
 const cardTarget = {
   drop (props, monitor, component) {
     const {id} = props
-    const sourceObj = monitor.getItem()
-    if (id !== sourceObj.listId) {
-      props.actions.addCard({laneId: id, card: sourceObj.card})
+    const draggedObj = monitor.getItem()
+    if (id !== draggedObj.listId) {
+      props.actions.addCard({laneId: id, card: draggedObj.card})
     } else {
       props.actions.updateCards({laneId: id, cards: component.state.cards})
     }

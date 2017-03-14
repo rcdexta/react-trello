@@ -85,15 +85,17 @@ var Board = function (_Component) {
 exports.default = Board;
 window.Board = Board;
 
+
 Board.propTypes = {
-  data: _react2.default.PropTypes.object.isRequired,
-  onLaneScroll: _react2.default.PropTypes.func,
-  onCardClick: _react2.default.PropTypes.func,
-  eventBusHandle: _react2.default.PropTypes.func,
-  laneSortFunction: _react2.default.PropTypes.func,
-  draggable: _react2.default.PropTypes.bool,
-  handleDragStart: _react2.default.PropTypes.func,
-  handleDragEnd: _react2.default.PropTypes.func
+  data: _react.PropTypes.object.isRequired,
+  onLaneScroll: _react.PropTypes.func,
+  onCardClick: _react.PropTypes.func,
+  eventBusHandle: _react.PropTypes.func,
+  laneSortFunction: _react.PropTypes.func,
+  draggable: _react.PropTypes.bool,
+  handleDragStart: _react.PropTypes.func,
+  handleDragEnd: _react.PropTypes.func,
+  onDataChange: _react.PropTypes.func
 };
 },{"../reducers/BoardReducer":11,"./BoardContainer":4,"react":408,"react-redux":377,"redux":423}],4:[function(require,module,exports){
 'use strict';
@@ -183,6 +185,7 @@ var BoardContainer = function (_Component) {
         var dataToUpdate = this.state.data;
         dataToUpdate.lanes = nextProps.newData.lanes;
         this.setState({ data: dataToUpdate });
+        this.props.onDataChange && this.props.onDataChange(nextProps.newData);
       }
     }
   }, {
@@ -199,16 +202,17 @@ var BoardContainer = function (_Component) {
           var id = lane.id,
               otherProps = _objectWithoutProperties(lane, ['id']);
 
+          var _props = _this2.props,
+              draggable = _props.draggable,
+              handleDragStart = _props.handleDragStart,
+              handleDragEnd = _props.handleDragEnd,
+              onCardClick = _props.onCardClick,
+              onLaneScroll = _props.onLaneScroll,
+              laneSortFunction = _props.laneSortFunction;
+
           return _react2.default.createElement(_Lane2.default, _extends({ key: id,
-            id: id,
-            draggable: _this2.props.draggable,
-            handleDragStart: _this2.props.handleDragStart,
-            handleDragEnd: _this2.props.handleDragEnd
-          }, otherProps, {
-            onCardClick: _this2.props.onCardClick,
-            onLaneScroll: _this2.props.onLaneScroll,
-            laneSortFunction: _this2.props.laneSortFunction
-          }));
+            id: id
+          }, otherProps, { draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction }));
         })
       );
     }
@@ -218,14 +222,15 @@ var BoardContainer = function (_Component) {
 }(_react.Component);
 
 BoardContainer.propTypes = {
-  data: _react2.default.PropTypes.object.isRequired,
-  onLaneScroll: _react2.default.PropTypes.func,
-  onCardClick: _react2.default.PropTypes.func,
-  eventBusHandle: _react2.default.PropTypes.func,
-  laneSortFunction: _react2.default.PropTypes.func,
-  draggable: _react2.default.PropTypes.bool,
-  handleDragStart: _react2.default.PropTypes.func,
-  handleDragEnd: _react2.default.PropTypes.func
+  data: _react.PropTypes.object.isRequired,
+  onLaneScroll: _react.PropTypes.func,
+  onCardClick: _react.PropTypes.func,
+  eventBusHandle: _react.PropTypes.func,
+  laneSortFunction: _react.PropTypes.func,
+  draggable: _react.PropTypes.bool,
+  handleDragStart: _react.PropTypes.func,
+  handleDragEnd: _react.PropTypes.func,
+  onDataChange: _react.PropTypes.func
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -357,7 +362,6 @@ var cardTarget = {
     var hoverIndex = props.index;
     var sourceListId = monitor.getItem().listId;
 
-    // Don't replace items with themselves
     if (dragIndex === hoverIndex) {
       return;
     }
@@ -390,11 +394,6 @@ var cardTarget = {
 
     if (props.listId === sourceListId) {
       props.moveCard(dragIndex, hoverIndex);
-
-      // Note: we're mutating the monitor item here!
-      // Generally it's better to avoid mutations,
-      // but it's good here for the sake of performance
-      // to avoid expensive index searches.
       monitor.getItem().index = hoverIndex;
     }
   }
@@ -617,23 +616,23 @@ var Lane = function (_Component) {
 }(_react.Component);
 
 Lane.propTypes = {
-  id: _react2.default.PropTypes.string.isRequired,
-  title: _react2.default.PropTypes.string.isRequired,
-  laneSortFunction: _react2.default.PropTypes.func,
-  cards: _react2.default.PropTypes.array,
-  label: _react2.default.PropTypes.string,
-  onLaneScroll: _react2.default.PropTypes.func,
-  handleDragStart: _react2.default.PropTypes.func,
-  handleDragEnd: _react2.default.PropTypes.func
+  id: _react.PropTypes.string.isRequired,
+  title: _react.PropTypes.string.isRequired,
+  laneSortFunction: _react.PropTypes.func,
+  cards: _react.PropTypes.array,
+  label: _react.PropTypes.string,
+  onLaneScroll: _react.PropTypes.func,
+  handleDragStart: _react.PropTypes.func,
+  handleDragEnd: _react.PropTypes.func
 };
 
 var cardTarget = {
   drop: function drop(props, monitor, component) {
     var id = props.id;
 
-    var sourceObj = monitor.getItem();
-    if (id !== sourceObj.listId) {
-      props.actions.addCard({ laneId: id, card: sourceObj.card });
+    var draggedObj = monitor.getItem();
+    if (id !== draggedObj.listId) {
+      props.actions.addCard({ laneId: id, card: draggedObj.card });
     } else {
       props.actions.updateCards({ laneId: id, cards: component.state.cards });
     }

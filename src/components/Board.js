@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
 import BoardContainer from './BoardContainer'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
@@ -16,12 +16,13 @@ export default class Board extends Component {
 }
 
 Board.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  onLaneScroll: React.PropTypes.func,
-  onCardClick: React.PropTypes.func,
-  eventBusHandle: React.PropTypes.func,
-  laneSortFunction: React.PropTypes.func,
-  draggable: React.PropTypes.bool,
-  handleDragStart: React.PropTypes.func,
-  handleDragEnd: React.PropTypes.func
+  data: PropTypes.object.isRequired,
+  onLaneScroll: PropTypes.func,
+  onCardClick: PropTypes.func,
+  eventBusHandle: PropTypes.func,
+  laneSortFunction: PropTypes.func,
+  draggable: PropTypes.bool,
+  handleDragStart: PropTypes.func,
+  handleDragEnd: PropTypes.func,
+  onDataChange: PropTypes.func
 }

@@ -57,7 +57,6 @@ const cardTarget = {
     const hoverIndex = props.index
     const sourceListId = monitor.getItem().listId
 
-    // Don't replace items with themselves
     if (dragIndex === hoverIndex) {
       return
     }
@@ -90,11 +89,6 @@ const cardTarget = {
 
     if (props.listId === sourceListId) {
       props.moveCard(dragIndex, hoverIndex)
-
-      // Note: we're mutating the monitor item here!
-      // Generally it's better to avoid mutations,
-      // but it's good here for the sake of performance
-      // to avoid expensive index searches.
       monitor.getItem().index = hoverIndex
     }
   }

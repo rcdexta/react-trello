@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
@@ -39,6 +39,7 @@ class BoardContainer extends Component {
       const dataToUpdate = this.state.data
       dataToUpdate.lanes = nextProps.newData.lanes
       this.setState({data: dataToUpdate})
+      this.props.onDataChange && this.props.onDataChange(nextProps.newData)
     }
   }
 
@@ -48,15 +49,11 @@ class BoardContainer extends Component {
       {
         data.lanes.map((lane) => {
           const {id, ...otherProps} = lane
+          const {draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction} = this.props
           return <Lane key={id}
             id={id}
-            draggable={this.props.draggable}
-            handleDragStart={this.props.handleDragStart}
-            handleDragEnd={this.props.handleDragEnd}
             {...otherProps}
-            onCardClick={this.props.onCardClick}
-            onLaneScroll={this.props.onLaneScroll}
-            laneSortFunction={this.props.laneSortFunction}
+            {...{draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction}}
           />
         })}
     </BoardDiv>
@@ -64,14 +61,15 @@ class BoardContainer extends Component {
 }
 
 BoardContainer.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  onLaneScroll: React.PropTypes.func,
-  onCardClick: React.PropTypes.func,
-  eventBusHandle: React.PropTypes.func,
-  laneSortFunction: React.PropTypes.func,
-  draggable: React.PropTypes.bool,
-  handleDragStart: React.PropTypes.func,
-  handleDragEnd: React.PropTypes.func
+  data: PropTypes.object.isRequired,
+  onLaneScroll: PropTypes.func,
+  onCardClick: PropTypes.func,
+  eventBusHandle: PropTypes.func,
+  laneSortFunction: PropTypes.func,
+  draggable: PropTypes.bool,
+  handleDragStart: PropTypes.func,
+  handleDragEnd: PropTypes.func,
+  onDataChange: PropTypes.func
 }
 
 const mapStateToProps = (state) => {

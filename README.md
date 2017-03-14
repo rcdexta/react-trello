@@ -47,8 +47,6 @@ const data = {
 }
 ```
 
-
-
 The data is fed to the board component and that's it.
 
 ```jsx
@@ -72,6 +70,7 @@ This is the container component that encapsulates the lanes and cards
 | onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata) ` |
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
 | eventBushandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
+| onDataChange     | function | Called everytime the data changes due to user interaction or event bus |
 
 Refer to tests for more detailed info about the components
 
