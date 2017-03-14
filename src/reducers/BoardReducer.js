@@ -1,4 +1,4 @@
-import Lh from '../helpers/lane_helper'
+import Lh from '../helpers/LaneHelper'
 
 const boardReducer = (state = {lanes: []}, action) => {
   switch (action.type) {
@@ -12,6 +12,8 @@ const boardReducer = (state = {lanes: []}, action) => {
       return Lh.removeCardFromLane(state, action.payload)
     case 'MOVE_CARD':
       return Lh.moveCardAcrossLanes(state, action.payload)
+    case 'UPDATE_CARDS':
+      return Lh.updateCardsForLane(state, action.payload)
     default:
       return state
   }

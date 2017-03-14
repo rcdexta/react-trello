@@ -2,34 +2,16 @@ import React, {Component} from 'react'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import dragula from 'dragula'
+import {DragDropContext} from 'react-dnd'
+import HTML5Backend from 'react-dnd-html5-backend'
 import Lane from './Lane'
 
-const boardActions = require('../actions/board_actions')
-const laneActions = require('../actions/lane_actions')
+const boardActions = require('../actions/BoardActions')
+const laneActions = require('../actions/LaneActions')
 
 class BoardContainer extends Component {
 
   state = {data: this.props.data}
-
-  handleDragDrop = () => {
-    dragula([...document.querySelectorAll('.drag-inner-list')])
-      .on('drag', (el) => {
-        const cardId = el.dataset.id
-        const sourceLaneId = el.parentNode.dataset.id
-        this.props.onDragStart(cardId, sourceLaneId)
-        el.classList.add('is-moving')
-      })
-      .on('drop', (el, target, source, sibling) => {
-        el.classList.remove('is-moving')
-        const cardId = el.dataset.id
-        const fromLaneId = source.dataset.id
-        const toLaneId = target.dataset.id
-        this.props.onDragEnd(cardId, fromLaneId, toLaneId)
-        // TODO: This alters the state of redux as well as the DOM. Sathiya Sothanai!
-        // this.props.actions.moveCard({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
-      })
-  }
 
   wireEventBus = () => {
     let eventBus = {
@@ -47,11 +29,6 @@ class BoardContainer extends Component {
 
   componentDidMount () {
     this.props.actions.loadBoard(this.props.data)
-
-    if (this.props.draggable) {
-      this.handleDragDrop()
-    }
-
     if (this.props.eventBusHandle) {
       this.wireEventBus()
     }
@@ -73,6 +50,7 @@ class BoardContainer extends Component {
           const {id, ...otherProps} = lane
           return <Lane key={id}
             id={id}
+            draggable={this.props.draggable}
             {...otherProps}
             onCardClick={this.props.onCardClick}
             onLaneScroll={this.props.onLaneScroll}
@@ -100,4 +78,4 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
-export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(DragDropContext(HTML5Backend)(BoardContainer))

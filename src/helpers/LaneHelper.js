@@ -34,6 +34,16 @@ const LaneHelper = {
       return lane
     })
     return LaneHelper.appendCardToLane({lanes: interimLanes}, {laneId: toLaneId, card: cardToMove})
+  },
+
+  updateCardsForLane: (state, {laneId, cards}) => {
+    const lanes = state.lanes.map((lane) => {
+      if (lane.id === laneId) {
+        lane.cards = cards
+      }
+      return lane
+    })
+    return {...state, ...lanes}
   }
 }
 
