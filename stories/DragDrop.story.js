@@ -28,8 +28,8 @@ storiesOf('react-trello', module)
       return <Board
         data={data}
         draggable={true}
-        onDragStart={handleDragStart}
-        onDragEnd={handleDragEnd}
+        handleDragStart={handleDragStart}
+        handleDragEnd={handleDragEnd}
       />
     }
   )

@@ -32,6 +32,7 @@ const cardSource = {
   },
 
   beginDrag (props) {
+    props.handleDragStart(props.id, props.listId)
     return {
       id: props.id,
       listId: props.listId,
@@ -46,6 +47,7 @@ const cardSource = {
     if (dropResult && dropResult.listId !== item.listId) {
       props.removeCard(item.listId, item.id)
     }
+    props.handleDragEnd(item.id, item.listId, dropResult.listId)
   }
 }
 
@@ -106,7 +108,9 @@ Card.propTypes = {
   onClick: PropTypes.func,
   metadata: PropTypes.object,
   connectDragSource: PropTypes.func.isRequired,
-  isDragging: PropTypes.bool.isRequired
+  isDragging: PropTypes.bool.isRequired,
+  handleDragStart: React.PropTypes.func,
+  handleDragEnd: React.PropTypes.func
 }
 
 export default flow(

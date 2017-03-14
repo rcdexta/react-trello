@@ -66,8 +66,8 @@ This is the container component that encapsulates the lanes and cards
 | Name             | Type     | Description                              |
 | ---------------- | -------- | ---------------------------------------- |
 | draggable        | boolean  | Makes all cards in the lanes draggable. Default: false |
-| onDragStart      | function | Callback function triggered when card drag is started: `onDragStart(cardId, laneId)` |
-| onDragEnd        | function | Callback function triggered when card drag ends: `onDragEnd(cardId, sourceLaneId, targetLaneId)` |
+| handleDragStart  | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
+| handleDragEnd    | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId)` |
 | onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
 | onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata) ` |
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |

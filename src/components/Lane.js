@@ -45,7 +45,7 @@ class Lane extends Component {
   }
 
   moveCard = (dragIndex, hoverIndex) => {
-    const { cards } = this.state
+    const {cards} = this.state
     const dragCard = cards[dragIndex]
 
     this.setState(update(this.state, {
@@ -88,6 +88,8 @@ class Lane extends Component {
                 index={idx}
                 listId={id}
                 draggable={this.props.draggable}
+                handleDragStart={this.props.handleDragStart}
+                handleDragEnd={this.props.handleDragEnd}
                 title={card.title}
                 moveCard={this.moveCard}
                 removeCard={this.removeCard}
@@ -121,7 +123,9 @@ Lane.propTypes = {
   laneSortFunction: React.PropTypes.func,
   cards: React.PropTypes.array,
   label: React.PropTypes.string,
-  onLaneScroll: React.PropTypes.func
+  onLaneScroll: React.PropTypes.func,
+  handleDragStart: React.PropTypes.func,
+  handleDragEnd: React.PropTypes.func
 }
 
 const cardTarget = {

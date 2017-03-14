@@ -22,6 +22,6 @@ Board.propTypes = {
   eventBusHandle: React.PropTypes.func,
   laneSortFunction: React.PropTypes.func,
   draggable: React.PropTypes.bool,
-  onDragStart: React.PropTypes.func,
-  onDragEnd: React.PropTypes.func
+  handleDragStart: React.PropTypes.func,
+  handleDragEnd: React.PropTypes.func
 }

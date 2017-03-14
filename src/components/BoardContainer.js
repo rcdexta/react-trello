@@ -51,6 +51,8 @@ class BoardContainer extends Component {
           return <Lane key={id}
             id={id}
             draggable={this.props.draggable}
+            handleDragStart={this.props.handleDragStart}
+            handleDragEnd={this.props.handleDragEnd}
             {...otherProps}
             onCardClick={this.props.onCardClick}
             onLaneScroll={this.props.onLaneScroll}
@@ -68,8 +70,8 @@ BoardContainer.propTypes = {
   eventBusHandle: React.PropTypes.func,
   laneSortFunction: React.PropTypes.func,
   draggable: React.PropTypes.bool,
-  onDragStart: React.PropTypes.func,
-  onDragEnd: React.PropTypes.func
+  handleDragStart: React.PropTypes.func,
+  handleDragEnd: React.PropTypes.func
 }
 
 const mapStateToProps = (state) => {
