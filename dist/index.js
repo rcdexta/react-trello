@@ -92,8 +92,8 @@ Board.propTypes = {
   eventBusHandle: _react2.default.PropTypes.func,
   laneSortFunction: _react2.default.PropTypes.func,
   draggable: _react2.default.PropTypes.bool,
-  onDragStart: _react2.default.PropTypes.func,
-  onDragEnd: _react2.default.PropTypes.func
+  handleDragStart: _react2.default.PropTypes.func,
+  handleDragEnd: _react2.default.PropTypes.func
 };
 },{"../reducers/BoardReducer":11,"./BoardContainer":4,"react":408,"react-redux":377,"redux":423}],4:[function(require,module,exports){
 'use strict';
@@ -201,7 +201,9 @@ var BoardContainer = function (_Component) {
 
           return _react2.default.createElement(_Lane2.default, _extends({ key: id,
             id: id,
-            draggable: _this2.props.draggable
+            draggable: _this2.props.draggable,
+            handleDragStart: _this2.props.handleDragStart,
+            handleDragEnd: _this2.props.handleDragEnd
           }, otherProps, {
             onCardClick: _this2.props.onCardClick,
             onLaneScroll: _this2.props.onLaneScroll,
@@ -222,8 +224,8 @@ BoardContainer.propTypes = {
   eventBusHandle: _react2.default.PropTypes.func,
   laneSortFunction: _react2.default.PropTypes.func,
   draggable: _react2.default.PropTypes.bool,
-  onDragStart: _react2.default.PropTypes.func,
-  onDragEnd: _react2.default.PropTypes.func
+  handleDragStart: _react2.default.PropTypes.func,
+  handleDragEnd: _react2.default.PropTypes.func
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -331,6 +333,7 @@ var cardSource = {
     return props.draggable;
   },
   beginDrag: function beginDrag(props) {
+    props.handleDragStart(props.id, props.listId);
     return {
       id: props.id,
       listId: props.listId,
@@ -344,6 +347,7 @@ var cardSource = {
     if (dropResult && dropResult.listId !== item.listId) {
       props.removeCard(item.listId, item.id);
     }
+    props.handleDragEnd(item.id, item.listId, dropResult.listId);
   }
 };
 
@@ -404,7 +408,9 @@ Card.propTypes = {
   onClick: _react.PropTypes.func,
   metadata: _react.PropTypes.object,
   connectDragSource: _react.PropTypes.func.isRequired,
-  isDragging: _react.PropTypes.bool.isRequired
+  isDragging: _react.PropTypes.bool.isRequired,
+  handleDragStart: _react2.default.PropTypes.func,
+  handleDragEnd: _react2.default.PropTypes.func
 };
 
 exports.default = flow((0, _reactDnd.DropTarget)(_DragType.DragType.CARD, cardTarget, function (connect) {
@@ -536,6 +542,8 @@ var Lane = function (_Component) {
               index: idx,
               listId: id,
               draggable: _this.props.draggable,
+              handleDragStart: _this.props.handleDragStart,
+              handleDragEnd: _this.props.handleDragEnd,
               title: card.title,
               moveCard: _this.moveCard,
               removeCard: _this.removeCard,
@@ -614,7 +622,9 @@ Lane.propTypes = {
   laneSortFunction: _react2.default.PropTypes.func,
   cards: _react2.default.PropTypes.array,
   label: _react2.default.PropTypes.string,
-  onLaneScroll: _react2.default.PropTypes.func
+  onLaneScroll: _react2.default.PropTypes.func,
+  handleDragStart: _react2.default.PropTypes.func,
+  handleDragEnd: _react2.default.PropTypes.func
 };
 
 var cardTarget = {
