@@ -1,4 +1,4 @@
-#react-trello
+# react-trello
 
 Pluggable components to add a trello like kanban board to your application
 
