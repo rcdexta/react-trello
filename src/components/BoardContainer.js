@@ -27,7 +27,7 @@ class BoardContainer extends Component {
     this.props.eventBusHandle(eventBus)
   }
 
-  componentDidMount () {
+  componentWillMount () {
     this.props.actions.loadBoard(this.props.data)
     if (this.props.eventBusHandle) {
       this.wireEventBus()
@@ -35,11 +35,11 @@ class BoardContainer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.newData) {
+    if (nextProps.data.lanes) {
       const dataToUpdate = this.state.data
-      dataToUpdate.lanes = nextProps.newData.lanes
+      dataToUpdate.lanes = nextProps.data.lanes
       this.setState({data: dataToUpdate})
-      this.props.onDataChange && this.props.onDataChange(nextProps.newData)
+      this.props.onDataChange && this.props.onDataChange(nextProps.data)
     }
   }
 
