@@ -1,5 +1,19 @@
 const LaneHelper = {
 
+  initialiseLanes: (state, {lanes}) => {
+    const updatedLanes = lanes.map((lane) => {
+      lane.currentPage = 1
+      return lane
+    })
+    return {lanes: updatedLanes}
+  },
+
+  paginateLane: (state, {laneId, newCards, nextPage}) => {
+    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: newCards})
+    updatedLanes.find((lane) => lane.id === laneId).currentPage = nextPage
+    return {...state, ...updatedLanes}
+  },
+
   appendCardsToLane: (state, {laneId, newCards}) => {
     const lanes = state.lanes.map((lane) => {
       if (lane.id === laneId) {
@@ -7,11 +21,12 @@ const LaneHelper = {
       }
       return lane
     })
-    return {...state, ...lanes}
+    return lanes
   },
 
   appendCardToLane: (state, {laneId, card}) => {
-    return LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card]})
+    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card]})
+    return {...state, ...updatedLanes}
   },
 
   removeCardFromLane: (state, {laneId, cardId}) => {
@@ -44,6 +59,10 @@ const LaneHelper = {
       return lane
     })
     return {...state, ...lanes}
+  },
+
+  updateLanes: (state, lanes) => {
+    return {...state, ...{lanes: lanes}}
   }
 }
 

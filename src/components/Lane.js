@@ -12,7 +12,7 @@ const laneActions = require('../actions/LaneActions')
 
 class Lane extends Component {
 
-  state = {loading: false, currentPage: 1, cards: this.props.cards}
+  state = {loading: false, currentPage: this.props.currentPage, cards: this.props.cards}
 
   handleScroll = (evt) => {
     const node = evt.target
@@ -24,8 +24,8 @@ class Lane extends Component {
       const nextPage = currentPage + 1
       onLaneScroll(nextPage, this.props.id)
         .then((moreCards) => {
-          this.setState({loading: false, currentPage: nextPage})
-          this.props.actions.updateLane({laneId: this.props.id, newCards: moreCards})
+          this.setState({loading: false})
+          this.props.actions.paginateLane({laneId: this.props.id, newCards: moreCards, nextPage: nextPage})
         })
     }
   }
@@ -64,7 +64,7 @@ class Lane extends Component {
 
   componentWillReceiveProps (nextProps) {
     if (!this.sameCards(this.props.cards, nextProps.cards)) {
-      this.setState({cards: nextProps.cards})
+      this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
     }
   }
 

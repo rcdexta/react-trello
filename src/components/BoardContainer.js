@@ -18,9 +18,11 @@ class BoardContainer extends Component {
       publish: (event) => {
         switch (event.type) {
           case 'ADD_CARD':
-            this.props.actions.addCard({laneId: event.laneId, card: event.card})
+            return this.props.actions.addCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
-            this.props.actions.removeCard({laneId: event.laneId, cardId: event.cardId})
+            return this.props.actions.removeCard({laneId: event.laneId, cardId: event.cardId})
+          case 'REFRESH_BOARD':
+            return this.props.actions.loadBoard(event.data)
         }
       }
     }
@@ -50,7 +52,7 @@ class BoardContainer extends Component {
         data.lanes.map((lane) => {
           const {id, ...otherProps} = lane
           const {draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction} = this.props
-          return <Lane key={id}
+          return <Lane key={`${id}`}
             id={id}
             {...otherProps}
             {...{draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction}}
@@ -73,7 +75,7 @@ BoardContainer.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  return {newData: state}
+  return state.lanes ? {data: state} : {}
 }
 
 const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})

@@ -15,15 +15,16 @@ var loadBoard = exports.loadBoard = (0, _reduxActions.createAction)('LOAD_BOARD'
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.updateCards = exports.moveCard = exports.removeCard = exports.addCard = exports.updateLane = undefined;
+exports.paginateLane = exports.updateLanes = exports.updateCards = exports.moveCard = exports.removeCard = exports.addCard = undefined;
 
 var _reduxActions = require('redux-actions');
 
-var updateLane = exports.updateLane = (0, _reduxActions.createAction)('UPDATE_LANE');
 var addCard = exports.addCard = (0, _reduxActions.createAction)('ADD_CARD');
 var removeCard = exports.removeCard = (0, _reduxActions.createAction)('REMOVE_CARD');
 var moveCard = exports.moveCard = (0, _reduxActions.createAction)('MOVE_CARD');
 var updateCards = exports.updateCards = (0, _reduxActions.createAction)('UPDATE_CARDS');
+var updateLanes = exports.updateLanes = (0, _reduxActions.createAction)('UPDATE_LANES');
+var paginateLane = exports.paginateLane = (0, _reduxActions.createAction)('PAGINATE_LANE');
 },{"redux-actions":495}],3:[function(require,module,exports){
 'use strict';
 
@@ -160,9 +161,11 @@ var BoardContainer = function (_Component) {
         publish: function publish(event) {
           switch (event.type) {
             case 'ADD_CARD':
-              _this.props.actions.addCard({ laneId: event.laneId, card: event.card });
+              return _this.props.actions.addCard({ laneId: event.laneId, card: event.card });
             case 'REMOVE_CARD':
-              _this.props.actions.removeCard({ laneId: event.laneId, cardId: event.cardId });
+              return _this.props.actions.removeCard({ laneId: event.laneId, cardId: event.cardId });
+            case 'REFRESH_BOARD':
+              return _this.props.actions.loadBoard(event.data);
           }
         }
       };
@@ -210,7 +213,7 @@ var BoardContainer = function (_Component) {
               onLaneScroll = _props.onLaneScroll,
               laneSortFunction = _props.laneSortFunction;
 
-          return _react2.default.createElement(_Lane2.default, _extends({ key: id,
+          return _react2.default.createElement(_Lane2.default, _extends({ key: '' + id,
             id: id
           }, otherProps, { draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction }));
         })
@@ -234,7 +237,7 @@ BoardContainer.propTypes = {
 };
 
 var mapStateToProps = function mapStateToProps(state) {
-  return { newData: state };
+  return state.lanes ? { data: state } : {};
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
@@ -485,7 +488,7 @@ var Lane = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { loading: false, currentPage: 1, cards: _this.props.cards }, _this.handleScroll = function (evt) {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Lane.__proto__ || Object.getPrototypeOf(Lane)).call.apply(_ref, [this].concat(args))), _this), _this.state = { loading: false, currentPage: _this.props.currentPage, cards: _this.props.cards }, _this.handleScroll = function (evt) {
       var node = evt.target;
       var elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight;
       var onLaneScroll = _this.props.onLaneScroll;
@@ -496,8 +499,8 @@ var Lane = function (_Component) {
         _this.setState({ loading: true });
         var nextPage = currentPage + 1;
         onLaneScroll(nextPage, _this.props.id).then(function (moreCards) {
-          _this.setState({ loading: false, currentPage: nextPage });
-          _this.props.actions.updateLane({ laneId: _this.props.id, newCards: moreCards });
+          _this.setState({ loading: false });
+          _this.props.actions.paginateLane({ laneId: _this.props.id, newCards: moreCards, nextPage: nextPage });
         });
       }
     }, _this.laneDidMount = function (node) {
@@ -568,7 +571,7 @@ var Lane = function (_Component) {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       if (!this.sameCards(this.props.cards, nextProps.cards)) {
-        this.setState({ cards: nextProps.cards });
+        this.setState({ cards: nextProps.cards, currentPage: nextProps.currentPage });
       }
     }
   }, {
@@ -701,9 +704,31 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var LaneHelper = {
 
-  appendCardsToLane: function appendCardsToLane(state, _ref) {
-    var laneId = _ref.laneId,
-        newCards = _ref.newCards;
+  initialiseLanes: function initialiseLanes(state, _ref) {
+    var lanes = _ref.lanes;
+
+    var updatedLanes = lanes.map(function (lane) {
+      lane.currentPage = 1;
+      return lane;
+    });
+    return { lanes: updatedLanes };
+  },
+
+  paginateLane: function paginateLane(state, _ref2) {
+    var laneId = _ref2.laneId,
+        newCards = _ref2.newCards,
+        nextPage = _ref2.nextPage;
+
+    var updatedLanes = LaneHelper.appendCardsToLane(state, { laneId: laneId, newCards: newCards });
+    updatedLanes.find(function (lane) {
+      return lane.id === laneId;
+    }).currentPage = nextPage;
+    return _extends({}, state, updatedLanes);
+  },
+
+  appendCardsToLane: function appendCardsToLane(state, _ref3) {
+    var laneId = _ref3.laneId,
+        newCards = _ref3.newCards;
 
     var lanes = state.lanes.map(function (lane) {
       if (lane.id === laneId) {
@@ -711,19 +736,20 @@ var LaneHelper = {
       }
       return lane;
     });
-    return _extends({}, state, lanes);
+    return lanes;
   },
 
-  appendCardToLane: function appendCardToLane(state, _ref2) {
-    var laneId = _ref2.laneId,
-        card = _ref2.card;
+  appendCardToLane: function appendCardToLane(state, _ref4) {
+    var laneId = _ref4.laneId,
+        card = _ref4.card;
 
-    return LaneHelper.appendCardsToLane(state, { laneId: laneId, newCards: [card] });
+    var updatedLanes = LaneHelper.appendCardsToLane(state, { laneId: laneId, newCards: [card] });
+    return _extends({}, state, updatedLanes);
   },
 
-  removeCardFromLane: function removeCardFromLane(state, _ref3) {
-    var laneId = _ref3.laneId,
-        cardId = _ref3.cardId;
+  removeCardFromLane: function removeCardFromLane(state, _ref5) {
+    var laneId = _ref5.laneId,
+        cardId = _ref5.cardId;
 
     var lanes = state.lanes.map(function (lane) {
       if (lane.id === laneId) {
@@ -736,10 +762,10 @@ var LaneHelper = {
     return _extends({}, state, lanes);
   },
 
-  moveCardAcrossLanes: function moveCardAcrossLanes(state, _ref4) {
-    var fromLaneId = _ref4.fromLaneId,
-        toLaneId = _ref4.toLaneId,
-        cardId = _ref4.cardId;
+  moveCardAcrossLanes: function moveCardAcrossLanes(state, _ref6) {
+    var fromLaneId = _ref6.fromLaneId,
+        toLaneId = _ref6.toLaneId,
+        cardId = _ref6.cardId;
 
     var cardToMove = null;
     var interimLanes = state.lanes.map(function (lane) {
@@ -756,9 +782,9 @@ var LaneHelper = {
     return LaneHelper.appendCardToLane({ lanes: interimLanes }, { laneId: toLaneId, card: cardToMove });
   },
 
-  updateCardsForLane: function updateCardsForLane(state, _ref5) {
-    var laneId = _ref5.laneId,
-        cards = _ref5.cards;
+  updateCardsForLane: function updateCardsForLane(state, _ref7) {
+    var laneId = _ref7.laneId,
+        cards = _ref7.cards;
 
     var lanes = state.lanes.map(function (lane) {
       if (lane.id === laneId) {
@@ -767,6 +793,10 @@ var LaneHelper = {
       return lane;
     });
     return _extends({}, state, lanes);
+  },
+
+  updateLanes: function updateLanes(state, lanes) {
+    return _extends({}, state, { lanes: lanes });
   }
 };
 
@@ -802,20 +832,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var boardReducer = function boardReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { lanes: null };
   var action = arguments[1];
+  var payload = action.payload,
+      type = action.type;
 
-  switch (action.type) {
+  switch (type) {
     case 'LOAD_BOARD':
-      return action.payload;
-    case 'UPDATE_LANE':
-      return _LaneHelper2.default.appendCardsToLane(state, action.payload);
+      return _LaneHelper2.default.initialiseLanes(state, payload);
     case 'ADD_CARD':
-      return _LaneHelper2.default.appendCardToLane(state, action.payload);
+      return _LaneHelper2.default.appendCardToLane(state, payload);
     case 'REMOVE_CARD':
-      return _LaneHelper2.default.removeCardFromLane(state, action.payload);
+      return _LaneHelper2.default.removeCardFromLane(state, payload);
     case 'MOVE_CARD':
-      return _LaneHelper2.default.moveCardAcrossLanes(state, action.payload);
+      return _LaneHelper2.default.moveCardAcrossLanes(state, payload);
     case 'UPDATE_CARDS':
-      return _LaneHelper2.default.updateCardsForLane(state, action.payload);
+      return _LaneHelper2.default.updateCardsForLane(state, payload);
+    case 'UPDATE_LANES':
+      return _LaneHelper2.default.updateLanes(state, payload);
+    case 'PAGINATE_LANE':
+      return _LaneHelper2.default.paginateLane(state, payload);
     default:
       return state;
   }

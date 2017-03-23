@@ -40,15 +40,12 @@ class BoardWrapper extends Component {
   }
 
   refreshCards = () => {
-    const {data} = this.state
-    data.lanes = [{
+    eventBus.publish({type: 'REFRESH_BOARD', data: {lanes: [{
       id: 'Lane1',
       title: 'Changed Lane',
       cards: []
-    }]
-    this.setState({data: data})
+    }]}})
   }
-
 
   paginate = (requestedPage, laneId) => {
     let newCards = generateCards(requestedPage);
