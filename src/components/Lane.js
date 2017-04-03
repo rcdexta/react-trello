@@ -91,6 +91,7 @@ class Lane extends Component {
                 handleDragStart={this.props.handleDragStart}
                 handleDragEnd={this.props.handleDragEnd}
                 title={card.title}
+                tags={card.tags}
                 moveCard={this.moveCard}
                 removeCard={this.removeCard}
                 label={card.label}

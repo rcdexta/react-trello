@@ -56,6 +56,7 @@ export const CardWrapper = styled.article`
   cursor: pointer;
   transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);;
   background-color: #FFF;
+  max-width: 250px;
   
   &:hover {
     background-color: #F0F0F0;
@@ -82,4 +83,25 @@ export const CardRightContent = styled(RightContent)`
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
+`
+
+export const Footer = styled.div`
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: row;
+   flex-wrap: wrap;
+`
+
+export const TagSpan = styled.span`
+  padding: 2px 5px;
+  font-size: 90%;
+  border-radius: 3px;
+  margin: 2px 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 35%;
 `

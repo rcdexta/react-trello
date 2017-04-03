@@ -1,14 +1,15 @@
 import React, {Component, PropTypes} from 'react'
-import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail} from '../styles/Base'
+import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail, Footer} from '../styles/Base'
 import {DragType} from '../helpers/DragType'
 import {DragSource, DropTarget} from 'react-dnd'
 var flow = require('lodash.flow')
 import {findDOMNode} from 'react-dom'
+import Tag from './Tag'
 
 class Card extends Component {
 
   render () {
-    const {id, title, description, label, connectDragSource, connectDropTarget, isDragging, ...otherProps} = this.props
+    const {id, title, description, label, tags, connectDragSource, connectDropTarget, isDragging, ...otherProps} = this.props
     const opacity = isDragging ? 0 : 1
     return connectDragSource(
       connectDropTarget(
@@ -19,6 +20,10 @@ class Card extends Component {
               <CardRightContent>{label}</CardRightContent>
             </CardHeader>
             <Detail>{description}</Detail>
+            {tags && <Footer>
+              {tags.map((tag) => <Tag {...tag} />)}
+            </Footer>
+            }
           </CardWrapper>
         </div>
       )
