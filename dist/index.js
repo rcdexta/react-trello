@@ -367,7 +367,7 @@ var cardSource = {
     if (dropResult && dropResult.listId !== item.listId) {
       props.removeCard(item.listId, item.id);
     }
-    props.handleDragEnd(item.id, item.listId, dropResult.listId);
+    props.handleDragEnd(item.id, item.listId, dropResult ? dropResult.listId : item.listId);
   }
 };
 
