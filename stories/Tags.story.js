@@ -5,8 +5,8 @@ import {Board} from '../src';
 
 storiesOf('react-trello', module)
 
-  .addWithInfo('Cards with Tags',
-    'A lane sorted by completed at ascending',
+  .addWithInfo('Tags',
+    'Customizable tags for each card',
     () => {
 
       const data = {
