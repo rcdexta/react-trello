@@ -96,12 +96,9 @@ export const Footer = styled.div`
 `
 
 export const TagSpan = styled.span`
-  padding: 2px 5px;
-  font-size: 90%;
+  padding: 2px 3px;
+  font-size: 80%;
   border-radius: 3px;
   margin: 2px 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 35%;
+  font-size: 70%; 
 `

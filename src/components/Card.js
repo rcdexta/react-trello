@@ -21,7 +21,7 @@ class Card extends Component {
             </CardHeader>
             <Detail>{description}</Detail>
             {tags && <Footer>
-              {tags.map((tag) => <Tag {...tag} />)}
+              {tags.map((tag) => <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />)}
             </Footer>
             }
           </CardWrapper>

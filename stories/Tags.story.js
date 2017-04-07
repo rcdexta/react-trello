@@ -18,10 +18,10 @@ storiesOf('react-trello', module)
                    {title: 'Tech Debt', color: 'white', bgcolor: '#0079BF'},
                    {title: 'Very long tag that is', color: 'white', bgcolor: '#61BD4F'},
               {title: 'One more', color: 'white', bgcolor: '#61BD4F'}]},
-            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: 'bar', tags: [{title: 'Low', color: 'white', bgcolor: 'orange'}]}]
+            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: 'bar', tags: [{title: 'Low'}]}]
         }]
       }
 
-      return <Board data={data}/>
+      return <Board data={data} tagStyle={{fontSize: '80%'}}/>
     }
   )

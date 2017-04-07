@@ -206,6 +206,7 @@ var BoardContainer = function (_Component) {
               otherProps = _objectWithoutProperties(lane, ['id']);
 
           var _props = _this2.props,
+              tagStyle = _props.tagStyle,
               draggable = _props.draggable,
               handleDragStart = _props.handleDragStart,
               handleDragEnd = _props.handleDragEnd,
@@ -215,7 +216,7 @@ var BoardContainer = function (_Component) {
 
           return _react2.default.createElement(_Lane2.default, _extends({ key: '' + id,
             id: id
-          }, otherProps, { draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction }));
+          }, otherProps, { tagStyle: tagStyle, draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction }));
         })
       );
     }
@@ -296,6 +297,8 @@ var Card = function (_Component) {
   _createClass(Card, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var _props = this.props,
           id = _props.id,
           title = _props.title,
@@ -337,7 +340,7 @@ var Card = function (_Component) {
             _Base.Footer,
             null,
             tags.map(function (tag) {
-              return _react2.default.createElement(_Tag2.default, tag);
+              return _react2.default.createElement(_Tag2.default, _extends({ key: tag.title }, tag, { tagStyle: _this2.props.tagStyle }));
             })
           )
         )
@@ -558,6 +561,7 @@ var Lane = function (_Component) {
               handleDragEnd: _this.props.handleDragEnd,
               title: card.title,
               tags: card.tags,
+              tagStyle: _this.props.tagStyle,
               moveCard: _this.moveCard,
               removeCard: _this.removeCard,
               label: card.label,
@@ -702,6 +706,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
@@ -711,6 +717,8 @@ var _react2 = _interopRequireDefault(_react);
 var _Base = require('../styles/Base');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -733,12 +741,14 @@ var Tag = function (_Component) {
       var _props = this.props,
           title = _props.title,
           color = _props.color,
-          bgcolor = _props.bgcolor;
+          bgcolor = _props.bgcolor,
+          tagStyle = _props.tagStyle,
+          otherProps = _objectWithoutProperties(_props, ['title', 'color', 'bgcolor', 'tagStyle']);
 
-      var style = { color: color || 'white', backgroundColor: bgcolor || 'orange' };
+      var style = _extends({ color: color || 'white', backgroundColor: bgcolor || 'orange' }, tagStyle);
       return _react2.default.createElement(
         _Base.TagSpan,
-        { style: style },
+        _extends({ style: style }, otherProps),
         title
       );
     }
@@ -949,7 +959,7 @@ var _templateObject = _taggedTemplateLiteral(['\n  background-color: #23719F;\n 
     _templateObject10 = _taggedTemplateLiteral(['\n  font-size: 10px;\n'], ['\n  font-size: 10px;\n']),
     _templateObject11 = _taggedTemplateLiteral(['\n  font-size: 12px;\n  color: #4d4d4d;\n'], ['\n  font-size: 12px;\n  color: #4d4d4d;\n']),
     _templateObject12 = _taggedTemplateLiteral(['\n  border-top: 1px solid #eee;\n  padding-top: 6px;\n  text-align: right;\n   display: flex;\n   justify-content: flex-end;\n   flex-direction: row;\n   flex-wrap: wrap;\n'], ['\n  border-top: 1px solid #eee;\n  padding-top: 6px;\n  text-align: right;\n   display: flex;\n   justify-content: flex-end;\n   flex-direction: row;\n   flex-wrap: wrap;\n']),
-    _templateObject13 = _taggedTemplateLiteral(['\n  padding: 2px 5px;\n  font-size: 90%;\n  border-radius: 3px;\n  margin: 2px 5px;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 35%;\n'], ['\n  padding: 2px 5px;\n  font-size: 90%;\n  border-radius: 3px;\n  margin: 2px 5px;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  max-width: 35%;\n']);
+    _templateObject13 = _taggedTemplateLiteral(['\n  padding: 2px 3px;\n  font-size: 80%;\n  border-radius: 3px;\n  margin: 2px 5px;\n  font-size: 70%; \n'], ['\n  padding: 2px 3px;\n  font-size: 80%;\n  border-radius: 3px;\n  margin: 2px 5px;\n  font-size: 70%; \n']);
 
 var _styledComponents = require('styled-components');
 
