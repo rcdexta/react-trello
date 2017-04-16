@@ -50,21 +50,32 @@ export const DraggableList = styled.div`
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
-  margin: 10px 0px;  
+  margin: 10px 0px;
   border-bottom: 1px solid #CCC;
   padding: 6px 8px;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);;
   background-color: #FFF;
   max-width: 250px;
-  
+
   &:hover {
     background-color: #F0F0F0;
   }
-  
+
   &.is-moving {
     background-color: rgba(black, 0.8);
   }
+`
+
+export const Placeholder = styled.section`
+  background-color: #999;
+  border-radius: 3px;
+  margin: 5px 0px;
+  padding: 10px;
+  min-width: 226px;
+  height: 45px;
+  max-height: 95%;
+  overflow-y: auto;
 `
 
 export const CardHeader = styled(Header)`
@@ -100,5 +111,5 @@ export const TagSpan = styled.span`
   font-size: 80%;
   border-radius: 3px;
   margin: 2px 5px;
-  font-size: 70%; 
+  font-size: 70%;
 `
