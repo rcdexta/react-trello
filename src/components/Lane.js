@@ -76,6 +76,9 @@ class Lane extends Component {
     if (!this.sameCards(this.props.cards, nextProps.cards)) {
       this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
     }
+    if (!nextProps.isOver) {
+      this.setState({ placeholderIndex: -1 })
+    }
   }
 
   removeCard = (listId, cardId) => {
@@ -177,6 +180,8 @@ const cardTarget = {
       findDOMNode(component).scrollTop
     )
     component.setState({ placeholderIndex })
+
+    return monitor.isOver()
 
     function getPlaceholderIndex (y, scrollY) {
       // shift placeholder if y position more than card height / 2

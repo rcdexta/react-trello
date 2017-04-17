@@ -68,8 +68,7 @@ export const CardWrapper = styled.article`
 `
 
 export const Placeholder = styled.section`
-  background-color: #999;
-  border-radius: 3px;
+  background-color: #CCC;
   margin: 5px 0px;
   padding: 10px;
   min-width: 226px;
