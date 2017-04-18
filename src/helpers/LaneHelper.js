@@ -14,18 +14,22 @@ const LaneHelper = {
     return {...state, ...updatedLanes}
   },
 
-  appendCardsToLane: (state, {laneId, newCards}) => {
+  appendCardsToLane: (state, {laneId, newCards, index}) => {
     const lanes = state.lanes.map((lane) => {
       if (lane.id === laneId) {
-        lane.cards = [...lane.cards, ...newCards]
+        if (index !== undefined) {
+          lane.cards.splice(index, 0, ...newCards)
+        } else {
+          lane.cards = [...lane.cards, ...newCards]
+        }
       }
       return lane
     })
     return lanes
   },
 
-  appendCardToLane: (state, {laneId, card}) => {
-    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card]})
+  appendCardToLane: (state, {laneId, card, index}) => {
+    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card], index})
     return {...state, ...updatedLanes}
   },
 
