@@ -17,7 +17,7 @@ const LaneHelper = {
   appendCardsToLane: (state, {laneId, newCards, index}) => {
     const lanes = state.lanes.map((lane) => {
       if (lane.id === laneId) {
-        if (index) {
+        if (index !== undefined) {
           lane.cards.splice(index, 0, ...newCards)
         } else {
           lane.cards = [...lane.cards, ...newCards]
