@@ -50,10 +50,19 @@ const data = {
 The data is fed to the board component and that's it.
 
 ```jsx
- <Board data={data} />
+import React from 'react'
+import {Board} from 'react-trello'
+
+export default class App extends React.Component {
+	render() {
+		return  <Board data={data} />
+	}
+}
 ```
 
 Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello/
+
+Also please refer to this sample project that uses react-trello: https://github.com/rcdexta/react-trello-example
 
 ## Documentation
 
