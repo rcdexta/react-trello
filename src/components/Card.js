@@ -5,20 +5,20 @@ import {DragSource, DropTarget} from 'react-dnd'
 var flow = require('lodash.flow')
 import {findDOMNode} from 'react-dom'
 import Tag from './Tag'
+import { default as TouchBackend } from 'react-dnd-touch-backend';
 
 class Card extends Component {
 
   render () {
     const {id, title, description, label, tags, connectDragSource, connectDropTarget, isDragging, ...otherProps} = this.props
     const opacity = isDragging ? 0 : 1
-    const background = isDragging ? '#CCC' : '#E3E3E3'
+    const background = isDragging ? '#ECECEC' : '#E3E3E3'
     return connectDragSource(
       connectDropTarget(
         <div style={{background: background}}>
           <CardWrapper key={id} data-id={id} {...otherProps} style={{opacity: opacity}}>
             <CardHeader>
               <CardTitle>{title}</CardTitle>
-              <CardRightContent>{label}</CardRightContent>
             </CardHeader>
             <Detail>{description}</Detail>
             {tags && <Footer>
@@ -102,7 +102,7 @@ const cardTarget = {
 
 Card.propTypes = {
   id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,

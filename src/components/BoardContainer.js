@@ -5,6 +5,9 @@ import {connect} from 'react-redux'
 import {DragDropContext} from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
 import Lane from './Lane'
+import { default as TouchBackend } from 'react-dnd-touch-backend';
+import MultiBackend from 'react-dnd-multi-backend';
+import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch'; 
 
 const boardActions = require('../actions/BoardActions')
 const laneActions = require('../actions/LaneActions')
@@ -80,4 +83,4 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
-export default connect(mapStateToProps, mapDispatchToProps)(DragDropContext(HTML5Backend)(BoardContainer))
+export default connect(mapStateToProps, mapDispatchToProps)(DragDropContext(MultiBackend(HTML5toTouch))(BoardContainer))
