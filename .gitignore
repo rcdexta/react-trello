@@ -7,3 +7,6 @@ examples/bundle.js
 examples/style.css
 npm-debug.log
 .idea
+.tmp
+dist
+src/settings/development.js
