@@ -3,8 +3,8 @@ import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {DragDropContext} from 'react-dnd'
-import MultiBackend from 'react-dnd-multi-backend';
-import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch';
+import MultiBackend from 'react-dnd-multi-backend'
+import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch'
 import Lane from './Lane'
 
 const boardActions = require('../actions/BoardActions')

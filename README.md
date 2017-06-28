@@ -12,7 +12,7 @@ Pluggable components to add a trello like kanban board to your application
 * responsive and extensible
 * easily pluggable into existing application
 * supports pagination on scrolling individual lanes
-* drag-and-drop within and across lanes
+* drag-and-drop within and across lanes (compatible with touch devices) 
 * event bus for triggering external events (e.g.: adding or removing cards using realtime backend integration)
 
 ## Getting Started
