@@ -87,6 +87,8 @@
     "react": "^15.4.2",
     "react-dnd": "^2.2.4",
     "react-dnd-html5-backend": "^2.2.4",
+    "react-dnd-multi-backend": "^2.3.7",
+    "react-dnd-touch-backend": "^0.3.11",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
