@@ -82,6 +82,7 @@
   },
   "dependencies": {
     "@kadira/storybook-deployer": "^1.0.0",
+    "immutability-helper": "^2.2.3",
     "invariant": "^2.0.0",
     "lodash.flow": "^3.5.0",
     "react": "^15.4.2",
