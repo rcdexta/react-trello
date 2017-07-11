@@ -84,7 +84,7 @@ var Board = function (_Component) {
 }(_react.Component);
 
 exports.default = Board;
-window && window.Board = Board;
+window.Board = Board;
 
 
 Board.propTypes = {
@@ -120,14 +120,6 @@ var _redux = require('redux');
 var _reactRedux = require('react-redux');
 
 var _reactDnd = require('react-dnd');
-
-var _reactDndHtml5Backend = require('react-dnd-html5-backend');
-
-var _reactDndHtml5Backend2 = _interopRequireDefault(_reactDndHtml5Backend);
-
-var _reactDndTouchBackend = require('react-dnd-touch-backend');
-
-var _reactDndTouchBackend2 = _interopRequireDefault(_reactDndTouchBackend);
 
 var _reactDndMultiBackend = require('react-dnd-multi-backend');
 
@@ -168,7 +160,7 @@ var BoardContainer = function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = BoardContainer.__proto__ || Object.getPrototypeOf(BoardContainer)).call.apply(_ref, [this].concat(args))), _this), _this.state = { data: _this.props.data }, _this.wireEventBus = function () {
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = BoardContainer.__proto__ || Object.getPrototypeOf(BoardContainer)).call.apply(_ref, [this].concat(args))), _this), _this.wireEventBus = function () {
       var eventBus = {
         publish: function publish(event) {
           switch (event.type) {
@@ -196,10 +188,7 @@ var BoardContainer = function (_Component) {
   }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
-      if (nextProps.data.lanes) {
-        var dataToUpdate = this.state.data;
-        dataToUpdate.lanes = nextProps.data.lanes;
-        this.setState({ data: dataToUpdate });
+      if (nextProps.data) {
         this.props.onDataChange && this.props.onDataChange(nextProps.data);
       }
     }
@@ -208,7 +197,7 @@ var BoardContainer = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var data = this.state.data;
+      var data = this.props.data;
 
       return _react2.default.createElement(
         _Base.BoardDiv,
@@ -224,11 +213,14 @@ var BoardContainer = function (_Component) {
               handleDragEnd = _props.handleDragEnd,
               onCardClick = _props.onCardClick,
               onLaneScroll = _props.onLaneScroll,
-              laneSortFunction = _props.laneSortFunction;
+              laneSortFunction = _props.laneSortFunction,
+              customCardLayout = _props.customCardLayout,
+              cardStyle = _props.cardStyle,
+              children = _props.children;
 
           return _react2.default.createElement(_Lane2.default, _extends({ key: '' + id,
             id: id
-          }, otherProps, { tagStyle: tagStyle, draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction }));
+          }, otherProps, { tagStyle: tagStyle, draggable: draggable, handleDragStart: handleDragStart, handleDragEnd: handleDragEnd, onCardClick: onCardClick, onLaneScroll: onLaneScroll, laneSortFunction: laneSortFunction, customCardLayout: customCardLayout, cardStyle: cardStyle, children: children }));
         })
       );
     }
@@ -246,7 +238,8 @@ BoardContainer.propTypes = {
   draggable: _react.PropTypes.bool,
   handleDragStart: _react.PropTypes.func,
   handleDragEnd: _react.PropTypes.func,
-  onDataChange: _react.PropTypes.func
+  onDataChange: _react.PropTypes.func,
+  customCardLayout: _react.PropTypes.bool
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -258,7 +251,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)((0, _reactDnd.DragDropContext)((0, _reactDndMultiBackend2.default)(_HTML5toTouch2.default))(BoardContainer));
-},{"../actions/BoardActions":1,"../actions/LaneActions":2,"../styles/Base":13,"./Lane":6,"react":503,"react-dnd":306,"react-dnd-html5-backend":186,"react-dnd-multi-backend":291,"react-dnd-multi-backend/lib/HTML5toTouch":286,"react-dnd-touch-backend":292,"react-redux":462,"redux":580}],5:[function(require,module,exports){
+},{"../actions/BoardActions":1,"../actions/LaneActions":2,"../styles/Base":13,"./Lane":6,"react":503,"react-dnd":306,"react-dnd-multi-backend":291,"react-dnd-multi-backend/lib/HTML5toTouch":286,"react-redux":462,"redux":580}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -301,35 +294,34 @@ var Card = function (_Component) {
   _inherits(Card, _Component);
 
   function Card() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, Card);
 
-    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
-  }
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-  _createClass(Card, [{
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Card.__proto__ || Object.getPrototypeOf(Card)).call.apply(_ref, [this].concat(args))), _this), _this.renderBody = function () {
+      if (_this.props.customCardLayout) {
+        var customCardWithProps = _react2.default.cloneElement(_this.props.customCard, _extends({}, _this.props));
+        return _react2.default.createElement(
+          'span',
+          null,
+          customCardWithProps
+        );
+      } else {
+        var _this$props = _this.props,
+            title = _this$props.title,
+            description = _this$props.description,
+            label = _this$props.label,
+            tags = _this$props.tags;
 
-      var _props = this.props,
-          id = _props.id,
-          title = _props.title,
-          description = _props.description,
-          label = _props.label,
-          tags = _props.tags,
-          connectDragSource = _props.connectDragSource,
-          connectDropTarget = _props.connectDropTarget,
-          isDragging = _props.isDragging,
-          otherProps = _objectWithoutProperties(_props, ['id', 'title', 'description', 'label', 'tags', 'connectDragSource', 'connectDropTarget', 'isDragging']);
-
-      var opacity = isDragging ? 0 : 1;
-      var background = isDragging ? '#CCC' : '#E3E3E3';
-      return connectDragSource(connectDropTarget(_react2.default.createElement(
-        'div',
-        { style: { background: background } },
-        _react2.default.createElement(
-          _Base.CardWrapper,
-          _extends({ key: id, 'data-id': id }, otherProps, { style: { opacity: opacity } }),
+        return _react2.default.createElement(
+          'span',
+          null,
           _react2.default.createElement(
             _Base.CardHeader,
             null,
@@ -353,9 +345,34 @@ var Card = function (_Component) {
             _Base.Footer,
             null,
             tags.map(function (tag) {
-              return _react2.default.createElement(_Tag2.default, _extends({ key: tag.title }, tag, { tagStyle: _this2.props.tagStyle }));
+              return _react2.default.createElement(_Tag2.default, _extends({ key: tag.title }, tag, { tagStyle: _this.props.tagStyle }));
             })
           )
+        );
+      }
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(Card, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          id = _props.id,
+          connectDragSource = _props.connectDragSource,
+          connectDropTarget = _props.connectDropTarget,
+          isDragging = _props.isDragging,
+          cardStyle = _props.cardStyle,
+          otherProps = _objectWithoutProperties(_props, ['id', 'connectDragSource', 'connectDropTarget', 'isDragging', 'cardStyle']);
+
+      var opacity = isDragging ? 0 : 1;
+      var background = isDragging ? '#CCC' : '#E3E3E3';
+      return connectDragSource(connectDropTarget(_react2.default.createElement(
+        'div',
+        { style: { background: background } },
+        _react2.default.createElement(
+          _Base.CardWrapper,
+          _extends({ key: id, 'data-id': id }, otherProps, { style: _extends({}, cardStyle, { opacity: opacity }) }),
+          this.renderBody()
         )
       )));
     }
@@ -430,9 +447,14 @@ var cardTarget = {
   }
 };
 
+Card.defaultProps = {
+  cardStyle: {},
+  customCardLayout: false
+};
+
 Card.propTypes = {
   id: _react.PropTypes.string.isRequired,
-  title: _react.PropTypes.string.isRequired,
+  title: _react.PropTypes.string,
   description: _react.PropTypes.string,
   label: _react.PropTypes.string,
   onClick: _react.PropTypes.func,
@@ -440,7 +462,9 @@ Card.propTypes = {
   connectDragSource: _react.PropTypes.func.isRequired,
   isDragging: _react.PropTypes.bool.isRequired,
   handleDragStart: _react2.default.PropTypes.func,
-  handleDragEnd: _react2.default.PropTypes.func
+  handleDragEnd: _react2.default.PropTypes.func,
+  customCardLayout: _react2.default.PropTypes.bool,
+  customCard: _react2.default.PropTypes.node
 };
 
 exports.default = flow((0, _reactDnd.DropTarget)(_DragType.DragType.CARD, cardTarget, function (connect) {
@@ -571,23 +595,23 @@ var Lane = function (_Component) {
 
 
       var cardList = _this.sortCards(_this.state.cards, laneSortFunction).map(function (card, idx) {
-        return _react2.default.createElement(_Card2.default, { id: card.id,
+        return _react2.default.createElement(_Card2.default, _extends({
           key: card.id,
           index: idx,
           listId: id,
           draggable: _this.props.draggable,
+          customCardLayout: _this.props.customCardLayout,
+          customCard: _this.props.children,
           handleDragStart: _this.props.handleDragStart,
           handleDragEnd: _this.props.handleDragEnd,
-          title: card.title,
-          tags: card.tags,
           tagStyle: _this.props.tagStyle,
+          cardStyle: _this.props.cardStyle,
           moveCard: _this.moveCard,
           removeCard: _this.removeCard,
-          label: card.label,
-          description: card.description,
           onClick: function onClick() {
             return onCardClick && onCardClick(card.id, card.metadata);
-          } });
+          }
+        }, card));
       });
 
       if (_this.state.placeholderIndex > -1) {
@@ -688,7 +712,8 @@ var cardTarget = {
       props.actions.addCard({
         laneId: id,
         card: draggedObj.card,
-        index: index });
+        index: index
+      });
     } else {
       props.actions.updateCards({ laneId: id, cards: component.state.cards });
     }
