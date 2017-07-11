@@ -7,8 +7,8 @@ const data = {
   lanes: [{
     id: 'lane1',
     title: 'Planned Tasks',
-    cards: [{id: 'Card1', title: 'Card1', description: 'foo card', metadata: 'foo'},
-            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: 'bar'}]
+    cards: [{id: 'Card1', title: 'Card1', description: 'foo card', metadata: {id: 'Card1'}},
+            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: {id: 'Card2'}}]
   }]
 }
 
@@ -19,7 +19,7 @@ storiesOf('react-trello', module)
     () => (
       <div>
         <Board data={data}
-               onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata: ${metadata}`)}
+               onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
         />
       </div>
     ))
