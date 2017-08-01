@@ -11,9 +11,9 @@ Pluggable components to add a trello like kanban board to your application
 
 * responsive and extensible
 * easily pluggable into existing application
-* supports pagination on scrolling individual lanes
+* supports pagination when scrolling individual lanes
 * drag-and-drop within and across lanes (compatible with touch devices) 
-* event bus for triggering external events (e.g.: adding or removing cards using realtime backend integration)
+* event bus for triggering events externally (e.g.: adding or removing cards based on events emanating from backend)
 
 ## Getting Started
 
@@ -78,7 +78,7 @@ This is the container component that encapsulates the lanes and cards
 | onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
 | onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata) ` |
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
-| eventBushandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
+| eventBusHandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange     | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
 
 Refer to tests for more detailed info about the components
