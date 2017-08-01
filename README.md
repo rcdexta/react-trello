@@ -100,7 +100,7 @@ eventBus.publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "M1", title:
 eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "M1"})
   
 <Board data={data}
-       eventBushandle={setEventBus}/>
+       eventBusHandle={setEventBus}/>
 ```
 
 The code will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
