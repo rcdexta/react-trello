@@ -4,7 +4,7 @@ import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import boardReducer from '../reducers/BoardReducer'
 
-let store = createStore(boardReducer, typeof(window) !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+let store = createStore(boardReducer, typeof (window) !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 export default class Board extends Component {
 
