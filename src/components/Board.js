@@ -24,5 +24,6 @@ Board.propTypes = {
   draggable: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
-  onDataChange: PropTypes.func
+  onDataChange: PropTypes.func,
+  backgroundColor: PropTypes.string
 }
