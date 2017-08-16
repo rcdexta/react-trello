@@ -80,6 +80,7 @@ This is the container component that encapsulates the lanes and cards
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
 | eventBusHandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange     | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
+| style            | object   | Pass css style props to board container |
 
 Refer to tests for more detailed info about the components
 

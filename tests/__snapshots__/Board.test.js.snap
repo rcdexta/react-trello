@@ -3,7 +3,7 @@ exports[`<Board/> snapshot test 1`] = `
   className="dMcBAq"
   style={
     Object {
-      "backgroundColor": undefined,
+      "backgroundColor": "#eee",
     }
   }>
   <section
