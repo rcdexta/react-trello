@@ -42,8 +42,8 @@ class BoardContainer extends Component {
   }
 
   render () {
-    const {data} = this.props
-    return <BoardDiv style={{backgroundColor: this.props.backgroundColor}}>
+    const {data, style} = this.props
+    return <BoardDiv style={style}>
       {
         data.lanes.map((lane) => {
           const {id, ...otherProps} = lane
@@ -69,7 +69,7 @@ BoardContainer.propTypes = {
   handleDragEnd: PropTypes.func,
   onDataChange: PropTypes.func,
   customCardLayout: PropTypes.bool,
-  backgroundColor: PropTypes.string
+  style: PropTypes.object
 }
 
 const mapStateToProps = (state) => {
