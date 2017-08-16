@@ -1,6 +1,11 @@
 exports[`<Board/> snapshot test 1`] = `
 <div
-  className="dMcBAq">
+  className="dMcBAq"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }>
   <section
     className="kjauoa"
     draggable={undefined}>
