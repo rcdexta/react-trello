@@ -78,7 +78,6 @@
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
     "semantic-release": "^6.3.2",
-    "redux-logger": "^3.0.6",
     "sinon": "^1.17.6"
   },
   "dependencies": {
@@ -95,7 +94,8 @@
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.2",
-    "styled-components": "^1.4.2"
+    "styled-components": "^1.4.2",
+    "redux-logger": "^3.0.6"
   },
   "config": {
     "commitizen": {
