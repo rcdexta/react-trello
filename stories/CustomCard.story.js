@@ -59,12 +59,29 @@ storiesOf('react-trello', module).addWithInfo('Custom Card styling', 'Style your
             cardStyle: { borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15 }
           }
         ]
+      },
+      {
+        id: 'lane2',
+        title: 'Completed Tasks',
+        cards: [
+          {
+            id: 'Card3',
+            name: 'Michael Caine',
+            dueOn: 'due in a day',
+            subTitle: 'Email received at 4:23pm today',
+            body: 'You are welcome. Interested in doing business with you' +
+            ' again',
+            escalationText: 'Escalated to OPS-ESCALATIONS!',
+            cardColor: '#BD3B36',
+            cardStyle: { borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15 }
+          }
+        ]
       }
     ]
   }
 
   return (
-    <Board data={data} customCardLayout>
+    <Board data={data} draggable customCardLayout>
       <CustomCard />
     </Board>
   )
