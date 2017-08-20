@@ -51,10 +51,10 @@ const cardSource = {
   },
 
   beginDrag (props) {
-    props.handleDragStart(props.id, props.listId)
+    props.handleDragStart(props.id, props.laneId)
     return {
       id: props.id,
-      listId: props.listId,
+      laneId: props.laneId,
       index: props.index,
       card: props
     }
@@ -63,10 +63,10 @@ const cardSource = {
   endDrag (props, monitor) {
     const item = monitor.getItem()
     const dropResult = monitor.getDropResult()
-    if (dropResult && dropResult.listId !== item.listId) {
-      props.removeCard(item.listId, item.id)
+    if (dropResult && dropResult.laneId !== item.laneId) {
+      props.moveCardAcrossLanes(item.laneId, dropResult.laneId, item.id)
     }
-    props.handleDragEnd(item.id, item.listId, dropResult ? dropResult.listId : item.listId)
+    props.handleDragEnd(item.id, item.laneId, dropResult ? dropResult.laneId : item.laneId)
   }
 }
 
@@ -74,7 +74,7 @@ const cardTarget = {
   hover (props, monitor, component) {
     const dragIndex = monitor.getItem().index
     const hoverIndex = props.index
-    const sourceListId = monitor.getItem().listId
+    const sourceListId = monitor.getItem().laneId
 
     if (dragIndex === hoverIndex) {
       return
@@ -106,7 +106,7 @@ const cardTarget = {
       return
     }
 
-    if (props.listId === sourceListId) {
+    if (props.laneId === sourceListId) {
       props.moveCard(dragIndex, hoverIndex)
       monitor.getItem().index = hoverIndex
     }

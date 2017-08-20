@@ -1,13 +1,13 @@
-import React, { Component, PropTypes } from 'react'
+import React, {Component, PropTypes} from 'react'
 import Loader from './Loader'
 import Card from './Card'
-import { Section, Header, Title, RightContent, DraggableList, Placeholder } from '../styles/Base'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
-import { DropTarget } from 'react-dnd'
+import {Section, Header, Title, RightContent, DraggableList, Placeholder} from '../styles/Base'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import {DropTarget} from 'react-dnd'
 import update from 'react/lib/update'
-import { DragType } from '../helpers/DragType'
-import { findDOMNode } from 'react-dom'
+import {DragType} from '../helpers/DragType'
+import {findDOMNode} from 'react-dom'
 
 const laneActions = require('../actions/LaneActions')
 
@@ -26,14 +26,14 @@ class Lane extends Component {
   handleScroll = evt => {
     const node = evt.target
     const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const { onLaneScroll } = this.props
+    const {onLaneScroll} = this.props
     if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
-      const { currentPage } = this.state
-      this.setState({ loading: true })
+      const {currentPage} = this.state
+      this.setState({loading: true})
       const nextPage = currentPage + 1
       onLaneScroll(nextPage, this.props.id).then(moreCards => {
-        this.setState({ loading: false })
-        this.props.actions.paginateLane({ laneId: this.props.id, newCards: moreCards, nextPage: nextPage })
+        this.setState({loading: false})
+        this.props.actions.paginateLane({laneId: this.props.id, newCards: moreCards, nextPage: nextPage})
       })
     }
   }
@@ -53,7 +53,7 @@ class Lane extends Component {
   }
 
   moveCard = (dragIndex, hoverIndex) => {
-    const { cards } = this.state
+    const {cards} = this.state
     const dragCard = cards[dragIndex]
 
     this.setState(
@@ -71,15 +71,19 @@ class Lane extends Component {
 
   componentWillReceiveProps (nextProps) {
     if (!this.sameCards(this.props.cards, nextProps.cards)) {
-      this.setState({ cards: nextProps.cards, currentPage: nextProps.currentPage })
+      this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
     }
     if (!nextProps.isOver) {
-      this.setState({ placeholderIndex: -1 })
+      this.setState({placeholderIndex: -1})
     }
   }
 
-  removeCard = (listId, cardId) => {
-    this.props.actions.removeCard({ laneId: listId, cardId: cardId })
+  moveCardAcrossLanes = (fromLaneId, toLaneId, cardId) => {
+    this.props.actions.moveCardAcrossLanes({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
+  }
+
+  removeCard = (laneId, cardId) => {
+    this.props.actions.removeCard({laneId: laneId, cardId: cardId})
   }
 
   shouldComponentUpdate (nextProps, nextState) {
@@ -87,13 +91,12 @@ class Lane extends Component {
   }
 
   renderDragContainer = () => {
-    const { connectDropTarget, laneSortFunction, onCardClick, id } = this.props
+    const {connectDropTarget, laneSortFunction, onCardClick} = this.props
 
-    const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) => (
+    const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) =>
       <Card
         key={card.id}
         index={idx}
-        listId={id}
         draggable={this.props.draggable}
         customCardLayout={this.props.customCardLayout}
         customCard={this.props.children}
@@ -102,11 +105,12 @@ class Lane extends Component {
         tagStyle={this.props.tagStyle}
         cardStyle={this.props.cardStyle}
         moveCard={this.moveCard}
+        moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
         onClick={() => onCardClick && onCardClick(card.id, card.metadata)}
         {...card}
       />
-    ))
+    )
 
     if (this.state.placeholderIndex > -1) {
       cardList.splice(this.state.placeholderIndex, 0, <Placeholder key='placeholder' />)
@@ -122,13 +126,17 @@ class Lane extends Component {
   }
 
   render () {
-    const { loading } = this.state
-    const { id, title, label, ...otherProps } = this.props
+    const {loading} = this.state
+    const {id, title, label, ...otherProps} = this.props
     return (
       <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
         <Header>
-          <Title>{title}</Title>
-          <RightContent>{label}</RightContent>
+          <Title>
+            {title}
+          </Title>
+          <RightContent>
+            {label}
+          </RightContent>
         </Header>
         {this.renderDragContainer()}
         {loading && <Loader />}
@@ -150,33 +158,26 @@ Lane.propTypes = {
 
 const cardTarget = {
   drop (props, monitor, component) {
-    const { id } = props
-    const index = component.state.placeholderIndex
+    const {id} = props
     const draggedObj = monitor.getItem()
-    if (id !== draggedObj.listId) {
-      props.actions.addCard({
-        laneId: id,
-        card: draggedObj.card,
-        index
-      })
-    } else {
-      props.actions.updateCards({ laneId: id, cards: component.state.cards })
+    if (id === draggedObj.laneId) {
+      props.actions.updateCards({laneId: id, cards: component.state.cards})
     }
-    component.setState({ placeholderIndex: -1 })
+    component.setState({placeholderIndex: -1})
     return {
-      listId: id
+      laneId: id
     }
   },
 
   hover (props, monitor, component) {
-    const { id } = props
+    const {id} = props
     const draggedObj = monitor.getItem()
-    if (id === draggedObj.listId) {
+    if (id === draggedObj.laneId) {
       return
     }
 
     const placeholderIndex = getPlaceholderIndex(monitor.getClientOffset().y, findDOMNode(component).scrollTop)
-    component.setState({ placeholderIndex })
+    component.setState({placeholderIndex})
 
     return monitor.isOver()
 
@@ -201,6 +202,6 @@ function collect (connect, monitor) {
   }
 }
 
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators(laneActions, dispatch) })
+const mapDispatchToProps = dispatch => ({actions: bindActionCreators(laneActions, dispatch)})
 
 export default connect(null, mapDispatchToProps)(DropTarget(DragType.CARD, cardTarget, collect)(Lane))

@@ -1,10 +1,11 @@
 import React, {Component, PropTypes} from 'react'
 import BoardContainer from './BoardContainer'
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 import boardReducer from '../reducers/BoardReducer'
+import logger from 'redux-logger'
 
-let store = createStore(boardReducer, typeof (window) !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+let store = createStore(boardReducer, applyMiddleware(logger))
 
 export default class Board extends Component {
 
