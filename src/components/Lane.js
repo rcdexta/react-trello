@@ -1,5 +1,6 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
 import Loader from './Loader'
+import PropTypes from 'prop-types'
 import Card from './Card'
 import {Section, Header, Title, RightContent, DraggableList, Placeholder} from '../styles/Base'
 import {bindActionCreators} from 'redux'

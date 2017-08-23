@@ -2,12 +2,12 @@ import update from 'immutability-helper'
 
 const LaneHelper = {
   initialiseLanes: (state, {lanes}) => {
-    const updatedLanes = lanes.map(lane => {
+    const newLanes = lanes.map(lane => {
       lane.currentPage = 1
       lane.cards && lane.cards.forEach(c => (c.laneId = lane.id))
       return lane
     })
-    return {lanes: updatedLanes}
+    return update(state, {lanes: {$set: newLanes}})
   },
 
   paginateLane: (state, {laneId, newCards, nextPage}) => {
