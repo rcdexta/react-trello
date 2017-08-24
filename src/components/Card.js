@@ -138,10 +138,10 @@ Card.propTypes = {
   metadata: PropTypes.object,
   connectDragSource: PropTypes.func.isRequired,
   isDragging: PropTypes.bool.isRequired,
-  handleDragStart: React.PropTypes.func,
-  handleDragEnd: React.PropTypes.func,
-  customCardLayout: React.PropTypes.bool,
-  customCard: React.PropTypes.node
+  handleDragStart: PropTypes.func,
+  handleDragEnd: PropTypes.func,
+  customCardLayout: PropTypes.bool,
+  customCard: PropTypes.node
 }
 
 export default flow(
