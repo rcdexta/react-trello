@@ -1,14 +1,12 @@
-import React from 'react';
-import {storiesOf} from '@kadira/storybook';
+import React from 'react'
+import {withInfo} from '@storybook/addon-info'
+import {storiesOf} from '@storybook/react'
 
-import {Board} from '../src';
+import {Board} from '../src'
 
-const data = require('./data.json');
+const data = require('./data.json')
 
-storiesOf('react-trello', module)
-
-  .addWithInfo('Full Board example',
-    'A complete Trello board with multiple lanes fed as json data',
-    () => (
-      <Board data={data}/>
-    ));
+storiesOf('React Trello', module).add(
+  'Full Board example',
+  withInfo('A complete Trello board with multiple' + ' lanes fed as json' + ' data')(() => <Board data={data} />)
+)

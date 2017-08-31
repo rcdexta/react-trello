@@ -1,42 +1,40 @@
-import React from 'react';
-import {storiesOf} from '@kadira/storybook';
+import React from 'react'
+import {withInfo} from '@storybook/addon-info'
+import {storiesOf} from '@storybook/react'
 
-import {Board} from '../src';
+import {Board} from '../src'
 
-const data = require('./data.json');
+const data = require('./data.json')
 
+storiesOf('React Trello', module).add(
+  'Drag-n-Drop',
+  withInfo('A demonstration of onDragStart and onDragEnd hooks')(() => {
+    const handleDragStart = (cardId, laneId) => {
+      console.log('drag started')
+      console.log(`cardId: ${cardId}`)
+      console.log(`laneId: ${laneId}`)
+    }
 
-storiesOf('react-trello', module)
+    const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
+      console.log('drag ended')
+      console.log(`cardId: ${cardId}`)
+      console.log(`sourceLaneId: ${sourceLaneId}`)
+      console.log(`targetLaneId: ${targetLaneId}`)
+    }
 
-  .addWithInfo('Drag-n-Drop',
-    'A demonstration of onDragStart and onDragEnd hooks',
-    () => {
-    
-      const handleDragStart = (cardId, laneId) => {
-        console.log('drag started')
-        console.log(`cardId: ${cardId}`)
-        console.log(`laneId: ${laneId}`)
-      }
+    const shouldReceiveNewData = nextData => {
+      console.log('data has changed')
+      console.log(nextData)
+    }
 
-      const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
-        console.log('drag ended')
-        console.log(`cardId: ${cardId}`)
-        console.log(`sourceLaneId: ${sourceLaneId}`)
-        console.log(`targetLaneId: ${targetLaneId}`)
-      }
-
-      const shouldReceiveNewData = (nextData) => {
-        console.log('data has changed')
-        console.log(nextData)
-      }
-
-      return <Board
+    return (
+      <Board
         data={data}
         draggable={true}
         onDataChange={shouldReceiveNewData}
         handleDragStart={handleDragStart}
         handleDragEnd={handleDragEnd}
       />
-    }
-  )
-
+    )
+  })
+)

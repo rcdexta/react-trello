@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail, Footer} from '../styles/Base'
 import {DragType} from '../helpers/DragType'
 import {DragSource, DropTarget} from 'react-dnd'
-var flow = require('lodash.flow')
 import {findDOMNode} from 'react-dom'
 import Tag from './Tag'
+
+var flow = require('lodash.flow')
 
 class Card extends Component {
   renderBody = () => {

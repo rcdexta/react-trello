@@ -90,7 +90,6 @@ var Board = function (_Component) {
 }(_react.Component);
 
 exports.default = Board;
-window.Board = Board;
 }).call(this,require('_process'))
 },{"../reducers/BoardReducer":12,"./BoardContainer":4,"_process":645,"react":504,"react-redux":461,"redux":582,"redux-logger":576}],4:[function(require,module,exports){
 'use strict';
@@ -466,10 +465,10 @@ Card.propTypes = {
   metadata: _propTypes2.default.object,
   connectDragSource: _propTypes2.default.func.isRequired,
   isDragging: _propTypes2.default.bool.isRequired,
-  handleDragStart: _react2.default.PropTypes.func,
-  handleDragEnd: _react2.default.PropTypes.func,
-  customCardLayout: _react2.default.PropTypes.bool,
-  customCard: _react2.default.PropTypes.node
+  handleDragStart: _propTypes2.default.func,
+  handleDragEnd: _propTypes2.default.func,
+  customCardLayout: _propTypes2.default.bool,
+  customCard: _propTypes2.default.node
 };
 
 exports.default = flow((0, _reactDnd.DropTarget)(_DragType.DragType.CARD, cardTarget, function (connect) {

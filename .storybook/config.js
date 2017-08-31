@@ -1,19 +1,17 @@
-import { configure, setAddon } from '@kadira/storybook';
-import { setOptions } from '@kadira/storybook-addon-options';
-import infoAddon, { setDefaults } from '@kadira/react-storybook-addon-info';
+import { configure } from '@storybook/react';
+// import { setOptions } from '@kadira/storybook-addon-options';
 
-setOptions({
-  name: 'react-trello',
-  url: 'https://github.com/rcdexta/react-trello',
-  goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: false,
-  showSearchBox: false,
-  downPanelInRight: false,
-});
+// setOptions({
+//   name: 'react-trello',
+//   url: 'https://github.com/rcdexta/react-trello',
+//   goFullScreen: false,
+//   showLeftPanel: true,
+//   showDownPanel: false,
+//   showSearchBox: false,
+//   downPanelInRight: false,
+// });
 
-setDefaults({ header: true, inline: false, propTables: false });
-setAddon(infoAddon)
+// setDefaults({ header: true, inline: false, propTables: false });
 
 function loadStories () {
   require('../stories');

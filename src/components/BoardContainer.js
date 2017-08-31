@@ -12,7 +12,6 @@ const boardActions = require('../actions/BoardActions')
 const laneActions = require('../actions/LaneActions')
 
 class BoardContainer extends Component {
-
   wireEventBus = () => {
     let eventBus = {
       publish: (event) => {
