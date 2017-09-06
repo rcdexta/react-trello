@@ -1,6 +1,6 @@
 import Lh from '../helpers/LaneHelper'
 
-const boardReducer = (state = {lanes: null}, action) => {
+const boardReducer = (state = {lanes: []}, action) => {
   const {payload, type} = action
   switch (type) {
     case 'LOAD_BOARD':

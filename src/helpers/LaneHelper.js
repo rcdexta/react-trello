@@ -13,7 +13,7 @@ const LaneHelper = {
   paginateLane: (state, {laneId, newCards, nextPage}) => {
     const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: newCards})
     updatedLanes.find(lane => lane.id === laneId).currentPage = nextPage
-    return {...state, ...updatedLanes}
+    return update(state, {lanes: {$set: updatedLanes}})
   },
 
   appendCardsToLane: (state, {laneId, newCards, index}) => {

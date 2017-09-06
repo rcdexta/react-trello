@@ -12,7 +12,7 @@ const addCard = () => {
   eventBus.publish({
     type: 'ADD_CARD',
     laneId: 'Lane1',
-    card: {id: '000', title: 'EC2 Instance Down', label: '30 mins', description: 'Main EC2 instance down'}
+    card: {id: '000', title: 'EC2 Instance Down', label: '30 mins', description: 'Main EC2 instance down', metadata: {cardId: '000'}}
   })
 }
 
@@ -23,7 +23,8 @@ function generateCards(requestedPage = 1) {
     cards.push({
       id: `${i}`,
       title: `Card${i}`,
-      description: `Description for #${i}`
+      description: `Description for #${i}`,
+      metadata: {cardId: `${i}`}
     })
   }
   return cards

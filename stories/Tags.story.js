@@ -17,7 +17,7 @@ storiesOf('React Trello', module).add(
               id: 'Card1',
               title: 'Card1',
               description: 'foo card',
-              metadata: 'foo',
+              metadata: {cardId: 'Card1'},
               tags: [
                 {title: 'High', color: 'white', bgcolor: '#EB5A46'},
                 {title: 'Tech Debt', color: 'white', bgcolor: '#0079BF'},
@@ -25,7 +25,7 @@ storiesOf('React Trello', module).add(
                 {title: 'One more', color: 'white', bgcolor: '#61BD4F'}
               ]
             },
-            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: 'bar', tags: [{title: 'Low'}]}
+            {id: 'Card2', title: 'Card2', description: 'bar card', metadata: {cardId: 'Card2'}, tags: [{title: 'Low'}]}
           ]
         }
       ]

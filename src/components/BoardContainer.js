@@ -36,16 +36,17 @@ class BoardContainer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.data) {
+    if (nextProps.data && nextProps.data !== this.props.data) {
+      this.props.actions.loadBoard(nextProps.data)
       this.props.onDataChange && this.props.onDataChange(nextProps.data)
     }
   }
 
   render () {
-    const {data, style} = this.props
+    const {reducerData, style} = this.props
     return <BoardDiv style={style}>
       {
-        data.lanes.map((lane) => {
+        reducerData.lanes.map((lane) => {
           const {id, ...otherProps} = lane
           const {tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children} = this.props
           return <Lane key={`${id}`}
@@ -73,7 +74,7 @@ BoardContainer.propTypes = {
 }
 
 const mapStateToProps = (state) => {
-  return state.lanes ? {data: state} : {}
+  return state.lanes ? {reducerData: state} : {}
 }
 
 const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})

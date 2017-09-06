@@ -4,15 +4,6 @@ import {storiesOf} from '@storybook/react'
 
 import {Board} from '../src'
 
-class StoryBoard extends React.Component {
-  state = {data: this.props.data}
-
-  render() {
-    const {data, ...otherProps} = this.props
-    return <Board data={this.state.data} {...otherProps}/>
-  }
-}
-
 storiesOf('React Trello', module).add(
   'Infinite Scrolling',
   withInfo(`
@@ -64,7 +55,7 @@ storiesOf('React Trello', module).add(
     }
 
     return (
-      <StoryBoard
+      <Board
         data={data}
         laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)}
         onLaneScroll={paginate}
