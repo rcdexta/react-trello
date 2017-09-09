@@ -12,6 +12,7 @@
   "scripts": {
     "lint": "eslint src/**",
     "lintfix": "eslint --fix src/**",
+    "prepublish": "npm run lint && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "storybook": "start-storybook -p 9002",
     "test": "jest",
