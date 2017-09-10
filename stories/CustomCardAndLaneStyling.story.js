@@ -43,13 +43,15 @@ const CustomCard = props => {
 }
 
 storiesOf('React Trello', module).add(
-  'Custom Card styling',
-  withInfo('Style your own cards')(() => {
+  'Card and Lane Styling',
+  withInfo('Style your own cards and override lane styles')(() => {
     const data = {
       lanes: [
         {
           id: 'lane1',
           title: 'Planned Tasks',
+          style: {backgroundColor: 'cyan', padding: 20},
+          titleStyle: {fontSize: 20, marginBottom: 15},
           cards: [
             {
               id: 'Card1',
