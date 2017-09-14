@@ -43,8 +43,8 @@ class BoardContainer extends Component {
   }
 
   render () {
-    const {reducerData, style} = this.props
-    return <BoardDiv style={style}>
+    const {reducerData, style, ...otherProps} = this.props
+    return <BoardDiv style={style} {...otherProps}>
       {
         reducerData.lanes.map((lane) => {
           const {id, ...otherProps} = lane
