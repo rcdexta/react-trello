@@ -148,7 +148,7 @@ class Lane extends Component {
 
 Lane.propTypes = {
   id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node,
   laneSortFunction: PropTypes.func,
   style: PropTypes.object,
   titleStyle: PropTypes.object,
