@@ -135,9 +135,10 @@ class Lane extends Component {
           <Title style={titleStyle}>
             {title}
           </Title>
+          {label !== "" &&
           <RightContent>
             {label}
-          </RightContent>
+          </RightContent>}
         </Header>
         {this.renderDragContainer()}
         {loading && <Loader />}
