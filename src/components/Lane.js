@@ -135,7 +135,7 @@ class Lane extends Component {
           <Title style={titleStyle}>
             {title}
           </Title>
-          {label !== "" &&
+          {label !== '' &&
           <RightContent>
             {label}
           </RightContent>}
