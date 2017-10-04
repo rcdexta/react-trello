@@ -35,7 +35,7 @@ export const Title = styled.span`
   font-size: 15px;
   line-height: 18px;
   cursor: grab;
-  width: 80%;
+  width: 100%;
 `
 
 export const RightContent = styled.span`

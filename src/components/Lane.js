@@ -135,7 +135,7 @@ class Lane extends Component {
           <Title style={titleStyle}>
             {title}
           </Title>
-          {label !== '' &&
+          {label &&
           <RightContent>
             {label}
           </RightContent>}
@@ -162,7 +162,8 @@ Lane.propTypes = {
 
 Lane.defaultProps = {
   style: {},
-  titleStyle: {}
+  titleStyle: {},
+  label: undefined
 }
 
 const cardTarget = {

@@ -50,6 +50,7 @@ storiesOf('React Trello', module).add(
         {
           id: 'lane1',
           title: 'Planned Tasks',
+          label: '12/12',
           style: {backgroundColor: 'cyan', padding: 20},
           titleStyle: {fontSize: 20, marginBottom: 15},
           cards: [
@@ -79,7 +80,7 @@ storiesOf('React Trello', module).add(
         },
         {
           id: 'lane2',
-          title: 'Completed Tasks',
+          title: 'Long Lane name this is i suppose ha!',
           cards: [
             {
               id: 'Card3',
