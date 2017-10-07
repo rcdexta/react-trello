@@ -128,9 +128,9 @@ class Lane extends Component {
 
   render () {
     const {loading} = this.state
-    const {id, title, label, titleStyle, ...otherProps} = this.props
+    const {id, title, label, titleStyle, onLaneClick, ...otherProps} = this.props
     return (
-      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => this.props.onLaneClick && this.props.onLaneClick(this.props.id)}>
+      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(id)}>
         <Header>
           <Title style={titleStyle}>
             {title}

@@ -198,20 +198,19 @@ var Lane = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var loading = this.state.loading;
       var _props = this.props,
           id = _props.id,
           title = _props.title,
           label = _props.label,
           titleStyle = _props.titleStyle,
-          otherProps = (0, _objectWithoutProperties3.default)(_props, ['id', 'title', 'label', 'titleStyle']);
+          onLaneClick = _props.onLaneClick,
+          otherProps = (0, _objectWithoutProperties3.default)(_props, ['id', 'title', 'label', 'titleStyle', 'onLaneClick']);
 
       return _react2.default.createElement(
         _Base.Section,
         (0, _extends3.default)({}, otherProps, { key: id, innerRef: this.laneDidMount, onClick: function onClick() {
-            return _this2.props.onLaneClick && _this2.props.onLaneClick(_this2.props.id);
+            return onLaneClick && onLaneClick(id);
           } }),
         _react2.default.createElement(
           _Base.Header,
