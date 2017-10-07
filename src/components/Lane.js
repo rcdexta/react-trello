@@ -130,7 +130,7 @@ class Lane extends Component {
     const {loading} = this.state
     const {id, title, label, titleStyle, ...otherProps} = this.props
     return (
-      <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
+      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(this.props.id)}>
         <Header>
           <Title style={titleStyle}>
             {title}
@@ -155,6 +155,7 @@ Lane.propTypes = {
   titleStyle: PropTypes.object,
   cards: PropTypes.array,
   label: PropTypes.string,
+  onLaneClick: PropTypes.func,
   onLaneScroll: PropTypes.func,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func
