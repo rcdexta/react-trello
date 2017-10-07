@@ -198,8 +198,6 @@ var Lane = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var loading = this.state.loading;
       var _props = this.props,
           id = _props.id,
@@ -212,7 +210,7 @@ var Lane = function (_Component) {
       return _react2.default.createElement(
         _Base.Section,
         (0, _extends3.default)({}, otherProps, { key: id, innerRef: this.laneDidMount, onClick: function onClick() {
-            return _this2.onLaneClick && _this2.onLaneClick(_this2.id);
+            return onLaneClick && onLaneClick(id);
           } }),
         _react2.default.createElement(
           _Base.Header,
