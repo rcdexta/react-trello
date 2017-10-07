@@ -211,7 +211,7 @@ var Lane = function (_Component) {
       return _react2.default.createElement(
         _Base.Section,
         (0, _extends3.default)({}, otherProps, { key: id, innerRef: this.laneDidMount, onClick: function onClick() {
-            return onLaneClick && onLaneClick(_this2.props.id);
+            return _this2.props.onLaneClick && _this2.props.onLaneClick(_this2.props.id);
           } }),
         _react2.default.createElement(
           _Base.Header,
