@@ -48,11 +48,11 @@ class BoardContainer extends Component {
       {
         reducerData.lanes.map((lane) => {
           const {id, ...otherProps} = lane
-          const {tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children} = this.props
+          const {tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children} = this.props
           return <Lane key={`${id}`}
             id={id}
             {...otherProps}
-            {...{tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children}}
+            {...{tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children}}
           />
         })}
     </BoardDiv>
@@ -63,6 +63,7 @@ BoardContainer.propTypes = {
   data: PropTypes.object.isRequired,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,
+  onLaneClick: PropTypes.func,
   eventBusHandle: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
