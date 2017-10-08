@@ -82,7 +82,7 @@ This is the container component that encapsulates the lanes and cards
 | onDataChange     | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
 | style            | object   | Pass css style props to board container |
 
-Refer to tests for more detailed info about the components
+Refer to `stories` folder for examples on many more options for customization.
 
 ### Publish Events 
 

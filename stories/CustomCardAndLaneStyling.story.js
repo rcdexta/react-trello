@@ -53,6 +53,7 @@ storiesOf('React Trello', module).add(
           label: '12/12',
           style: {backgroundColor: 'cyan', padding: 20},
           titleStyle: {fontSize: 20, marginBottom: 15},
+          labelStyle: {color: '#009688', fontWeight: 'bold'},
           cards: [
             {
               id: 'Card1',

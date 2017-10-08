@@ -7,3 +7,4 @@ examples/bundle.js
 examples/style.css
 npm-debug.log
 .idea
+dist/

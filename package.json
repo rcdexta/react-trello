@@ -86,24 +86,28 @@
     "semantic-release": "^6.3.6",
     "sinon": "^2.3.2",
     "style-loader": "^0.18.2",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "immutability-helper": "^2.4.0",
     "jest-cli": "^21.0.1",
     "lodash.flow": "^3.5.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "react-dnd": "^2.2.4",
     "react-dnd-html5-backend": "^2.2.4",
     "react-dnd-multi-backend": "^2.3.7",
     "react-dnd-touch-backend": "^0.3.11",
-    "react-dom": "^16.0.0",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.2",
     "redux-logger": "^3.0.6",
     "styled-components": "^1.4.2"
+  },
+  "peerDependencies": {
+    "react": ">= 0.14.0 < 17.0.0-0",
+    "react-dom": ">= 0.14.0 < 17.0.0-0"
   },
   "config": {
     "commitizen": {

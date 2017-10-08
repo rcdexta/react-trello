@@ -128,7 +128,7 @@ class Lane extends Component {
 
   render () {
     const {loading} = this.state
-    const {id, title, label, titleStyle, ...otherProps} = this.props
+    const {id, title, label, titleStyle, labelStyle, ...otherProps} = this.props
     return (
       <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
         <Header>
@@ -137,7 +137,7 @@ class Lane extends Component {
           </Title>
           {label &&
           <RightContent>
-            {label}
+            <span style={labelStyle}>{label}</span>
           </RightContent>}
         </Header>
         {this.renderDragContainer()}
@@ -153,6 +153,7 @@ Lane.propTypes = {
   laneSortFunction: PropTypes.func,
   style: PropTypes.object,
   titleStyle: PropTypes.object,
+  labelStyle: PropTypes.object,
   cards: PropTypes.array,
   label: PropTypes.string,
   onLaneScroll: PropTypes.func,
@@ -163,6 +164,7 @@ Lane.propTypes = {
 Lane.defaultProps = {
   style: {},
   titleStyle: {},
+  labelStyle: {},
   label: undefined
 }
 
