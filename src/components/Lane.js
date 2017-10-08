@@ -6,7 +6,7 @@ import {Section, Header, Title, RightContent, DraggableList, Placeholder} from '
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {DropTarget} from 'react-dnd'
-import update from 'react/lib/update'
+import update from 'immutability-helper'
 import {DragType} from '../helpers/DragType'
 import {findDOMNode} from 'react-dom'
 
