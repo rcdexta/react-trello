@@ -40,6 +40,10 @@ storiesOf('React Trello', module).add(
     }
 
     function paginate(requestedPage, laneId) {
+      // simulate no more cards after page 2
+      if (requestedPage > 2) {
+        return delayedPromise(2000, [])
+      }
       let newCards = generateCards(requestedPage)
       return delayedPromise(2000, newCards)
     }

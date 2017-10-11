@@ -33,8 +33,13 @@ class Lane extends Component {
       this.setState({loading: true})
       const nextPage = currentPage + 1
       onLaneScroll(nextPage, this.props.id).then(moreCards => {
+        if (!moreCards || moreCards.length === 0) {
+          // if no cards present, stop retrying until user action
+          node.scrollTop = node.scrollTop - 50
+        } else {
+          this.props.actions.paginateLane({laneId: this.props.id, newCards: moreCards, nextPage: nextPage})
+        }
         this.setState({loading: false})
-        this.props.actions.paginateLane({laneId: this.props.id, newCards: moreCards, nextPage: nextPage})
       })
     }
   }
@@ -136,9 +141,11 @@ class Lane extends Component {
             {title}
           </Title>
           {label &&
-          <RightContent>
-            <span style={labelStyle}>{label}</span>
-          </RightContent>}
+            <RightContent>
+              <span style={labelStyle}>
+                {label}
+              </span>
+            </RightContent>}
         </Header>
         {this.renderDragContainer()}
         {loading && <Loader />}
