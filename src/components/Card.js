@@ -75,10 +75,12 @@ const cardSource = {
   endDrag (props, monitor) {
     const item = monitor.getItem()
     const dropResult = monitor.getDropResult()
-    if (dropResult && dropResult.laneId !== item.laneId) {
-      props.moveCardAcrossLanes(item.laneId, dropResult.laneId, item.id)
+    if (dropResult) {
+      if (dropResult.laneId !== item.laneId) {
+        props.moveCardAcrossLanes(item.laneId, dropResult.laneId, item.id)
+      }
+      props.handleDragEnd && props.handleDragEnd(item.id, item.laneId, dropResult.laneId)
     }
-    props.handleDragEnd && props.handleDragEnd(item.id, item.laneId, dropResult ? dropResult.laneId : item.laneId)
   }
 }
 

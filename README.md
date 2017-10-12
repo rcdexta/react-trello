@@ -13,7 +13,7 @@ Pluggable components to add a trello like kanban board to your application
 * easily pluggable into existing application
 * supports pagination when scrolling individual lanes
 * drag-and-drop within and across lanes (compatible with touch devices) 
-* event bus for triggering events externally (e.g.: adding or removing cards based on events emanating from backend)
+* event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ export default class App extends React.Component {
 
 Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello/
 
-Also please refer to this sample project that uses react-trello: https://github.com/rcdexta/react-trello-example
+Also please refer to this sample project that uses react-trello for usage: https://github.com/rcdexta/react-trello-example
 
 ## Documentation
 
@@ -118,7 +118,7 @@ You can completely customize the look-and-feel of each card in any lane by passi
 
 `customCardLayout` prop must be set to true for the custom card to be rendered
 
-A json content of the card and the card template must agree on the props and everything should work as expected:
+The json content for the card and the card template must agree on the props:
 
 ```javascript
 const CustomCard = props => {
@@ -175,8 +175,6 @@ const data = {
     ]
   }
 ```
-
-As you can see, there is no limit to level of customization that can be done as long as the custom template knows what props to render from the card son
 
 ## Development
 
