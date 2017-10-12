@@ -23,6 +23,7 @@ storiesOf('React Trello', module).add(
     <Board
       data={data}
       onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
+      onLaneClick={(laneId) => alert(`Lane with id:${laneId} clicked`)}
     />
   )
 )

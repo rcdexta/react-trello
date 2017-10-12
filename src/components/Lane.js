@@ -96,8 +96,14 @@ class Lane extends Component {
     return !this.sameCards(this.props.cards, nextProps.cards) || nextState !== this.state
   }
 
+  handleCardClick = (e, card) => {
+    const {onCardClick} = this.props
+    onCardClick && onCardClick(card.id, card.metadata)
+    e.stopPropagation()
+  }
+
   renderDragContainer = () => {
-    const {connectDropTarget, laneSortFunction, onCardClick} = this.props
+    const {connectDropTarget, laneSortFunction} = this.props
 
     const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) =>
       <Card
@@ -113,7 +119,7 @@ class Lane extends Component {
         moveCard={this.moveCard}
         moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
-        onClick={() => onCardClick && onCardClick(card.id, card.metadata)}
+        onClick={(e) => this.handleCardClick(e, card)}
         {...card}
       />
     )
@@ -133,9 +139,9 @@ class Lane extends Component {
 
   render () {
     const {loading} = this.state
-    const {id, title, label, titleStyle, labelStyle, ...otherProps} = this.props
+    const {id, title, label, titleStyle, labelStyle, onLaneClick, ...otherProps} = this.props
     return (
-      <Section {...otherProps} key={id} innerRef={this.laneDidMount}>
+      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(id)}>
         <Header>
           <Title style={titleStyle}>
             {title}
