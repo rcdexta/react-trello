@@ -72,7 +72,16 @@ class Lane extends Component {
   }
 
   sameCards = (cardsA, cardsB) => {
-    return cardsA.length === cardsB.length && cardsA.every((el, ix) => el.id === cardsB[ix].id)
+    return (
+      cardsA.length === cardsB.length &&
+      cardsA.every(
+        (el, ix) =>
+          el.id === cardsB[ix].id &&
+          el.title === cardsB[ix].title &&
+          el.label === cardsB[ix].label &&
+          el.description === cardsB[ix].description
+      )
+    )
   }
 
   componentWillReceiveProps (nextProps) {
@@ -119,7 +128,7 @@ class Lane extends Component {
         moveCard={this.moveCard}
         moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
-        onClick={(e) => this.handleCardClick(e, card)}
+        onClick={e => this.handleCardClick(e, card)}
         {...card}
       />
     )
