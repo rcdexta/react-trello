@@ -14,7 +14,7 @@ const laneActions = require('../actions/LaneActions')
 class BoardContainer extends Component {
   wireEventBus = () => {
     let eventBus = {
-      publish: (event) => {
+      publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
             return this.props.actions.addCard({laneId: event.laneId, card: event.card})
@@ -36,26 +36,58 @@ class BoardContainer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.data && nextProps.data !== this.props.data) {
+    // nextProps.data changes when Board input props change and reducerData changes due to event bus changes
+    const {data, reducerData} = this.props
+    if (this.props.onDataChange && nextProps.reducerData && reducerData !== nextProps.reducerData) {
+      this.props.onDataChange(nextProps.reducerData)
+    }
+    if (nextProps.data && nextProps.data !== data) {
       this.props.actions.loadBoard(nextProps.data)
-      this.props.onDataChange && this.props.onDataChange(nextProps.data)
     }
   }
 
   render () {
     const {reducerData, style, ...otherProps} = this.props
-    return <BoardDiv style={style} {...otherProps}>
-      {
-        reducerData.lanes.map((lane) => {
+    return (
+      <BoardDiv style={style} {...otherProps}>
+        {reducerData.lanes.map(lane => {
           const {id, ...otherProps} = lane
-          const {tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children} = this.props
-          return <Lane key={`${id}`}
-            id={id}
-            {...otherProps}
-            {...{tagStyle, draggable, handleDragStart, handleDragEnd, onCardClick, onLaneClick, onLaneScroll, laneSortFunction, customCardLayout, cardStyle, children}}
-          />
+          const {
+            tagStyle,
+            draggable,
+            handleDragStart,
+            handleDragEnd,
+            onCardClick,
+            onLaneClick,
+            onLaneScroll,
+            laneSortFunction,
+            customCardLayout,
+            cardStyle,
+            children
+          } = this.props
+          return (
+            <Lane
+              key={`${id}`}
+              id={id}
+              {...otherProps}
+              {...{
+                tagStyle,
+                draggable,
+                handleDragStart,
+                handleDragEnd,
+                onCardClick,
+                onLaneClick,
+                onLaneScroll,
+                laneSortFunction,
+                customCardLayout,
+                cardStyle,
+                children
+              }}
+            />
+          )
         })}
-    </BoardDiv>
+      </BoardDiv>
+    )
   }
 }
 
@@ -74,10 +106,10 @@ BoardContainer.propTypes = {
   style: PropTypes.object
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return state.lanes ? {reducerData: state} : {}
 }
 
-const mapDispatchToProps = (dispatch) => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
+const mapDispatchToProps = dispatch => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
 export default connect(mapStateToProps, mapDispatchToProps)(DragDropContext(MultiBackend(HTML5toTouch))(BoardContainer))
