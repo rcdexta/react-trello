@@ -76,7 +76,7 @@ This is the container component that encapsulates the lanes and cards
 | handleDragStart  | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
 | handleDragEnd    | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId)` |
 | onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
-| onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata) ` |
+| onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
 | onLaneClick      | function | Called when a lane is clicked: `onLaneClick(laneId) `. Card clicks are not propagated to lane click event |
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
 | eventBusHandle   | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
