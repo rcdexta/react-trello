@@ -5,8 +5,7 @@ import {DragType} from '../helpers/DragType'
 import {DragSource, DropTarget} from 'react-dnd'
 import {findDOMNode} from 'react-dom'
 import Tag from './Tag'
-
-var flow = require('lodash.flow')
+import flow from 'lodash/flow'
 
 class Card extends Component {
   renderBody = () => {

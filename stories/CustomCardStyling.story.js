@@ -48,8 +48,8 @@ const CustomCard = props => {
 }
 
 storiesOf('React Trello', module).add(
-  'Card and Lane Styling',
-  withInfo('Style your own cards and override lane styles. Watch out for usage of tags in custom styling as well!')(() => {
+  'Custom Card Template',
+  withInfo('Style your own card appearance. Watch out for usage of tags in custom styling as well!')(() => {
     const data = {
       lanes: [
         {

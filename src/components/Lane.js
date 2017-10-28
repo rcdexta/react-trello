@@ -146,11 +146,17 @@ class Lane extends Component {
     )
   }
 
-  render () {
-    const {loading} = this.state
-    const {id, title, label, titleStyle, labelStyle, onLaneClick, ...otherProps} = this.props
-    return (
-      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(id)}>
+  renderHeader = () => {
+    if (this.props.customLaneHeader) {
+      const customLaneElement = React.cloneElement(this.props.customLaneHeader, {...this.props})
+      return (
+        <span>
+          {customLaneElement}
+        </span>
+      )
+    } else {
+      const {title, label, titleStyle, labelStyle} = this.props
+      return (
         <Header>
           <Title style={titleStyle}>
             {title}
@@ -162,6 +168,16 @@ class Lane extends Component {
               </span>
             </RightContent>}
         </Header>
+      )
+    }
+  }
+
+  render () {
+    const {loading} = this.state
+    const {id, onLaneClick, ...otherProps} = this.props
+    return (
+      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(id)}>
+        {this.renderHeader()}
         {this.renderDragContainer()}
         {loading && <Loader />}
       </Section>

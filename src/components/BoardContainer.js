@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import omit from 'lodash/omit'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
@@ -36,7 +37,7 @@ class BoardContainer extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    // nextProps.data changes when Board input props change and reducerData changes due to event bus changes
+    // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
     const {data, reducerData} = this.props
     if (this.props.onDataChange && nextProps.reducerData && reducerData !== nextProps.reducerData) {
       this.props.onDataChange(nextProps.reducerData)
@@ -52,39 +53,8 @@ class BoardContainer extends Component {
       <BoardDiv style={style} {...otherProps}>
         {reducerData.lanes.map(lane => {
           const {id, ...otherProps} = lane
-          const {
-            tagStyle,
-            draggable,
-            handleDragStart,
-            handleDragEnd,
-            onCardClick,
-            onLaneClick,
-            onLaneScroll,
-            laneSortFunction,
-            customCardLayout,
-            cardStyle,
-            children
-          } = this.props
-          return (
-            <Lane
-              key={`${id}`}
-              id={id}
-              {...otherProps}
-              {...{
-                tagStyle,
-                draggable,
-                handleDragStart,
-                handleDragEnd,
-                onCardClick,
-                onLaneClick,
-                onLaneScroll,
-                laneSortFunction,
-                customCardLayout,
-                cardStyle,
-                children
-              }}
-            />
-          )
+          const passthroughProps = omit(this.props, ['data', 'onDataChange', 'eventBusHandle'])
+          return <Lane key={`${id}`} id={id} {...otherProps} {...passthroughProps} />
         })}
       </BoardDiv>
     )
@@ -93,17 +63,19 @@ class BoardContainer extends Component {
 
 BoardContainer.propTypes = {
   data: PropTypes.object.isRequired,
+  onDataChange: PropTypes.func,
+  eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,
   onLaneClick: PropTypes.func,
-  eventBusHandle: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
-  onDataChange: PropTypes.func,
   customCardLayout: PropTypes.bool,
-  style: PropTypes.object
+  customLaneHeader: PropTypes.element,
+  style: PropTypes.object,
+  tagStyle: PropTypes.object
 }
 
 const mapStateToProps = state => {
