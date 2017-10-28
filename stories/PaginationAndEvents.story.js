@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
-import {Board} from '../src'
+import Board from '../src'
 
 let eventBus = undefined
 

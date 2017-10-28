@@ -3,7 +3,7 @@ import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
 
-import {Board} from '../src'
+import Board from '../src'
 
 const data = require('./data.json')
 

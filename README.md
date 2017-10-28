@@ -51,7 +51,7 @@ The data is fed to the board component and that's it.
 
 ```jsx
 import React from 'react'
-import {Board} from 'react-trello'
+import Board from 'react-trello'
 
 export default class App extends React.Component {
 	render() {

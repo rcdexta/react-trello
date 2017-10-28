@@ -2,7 +2,8 @@ import React from 'react'
 import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
-import {Board} from '../src'
+import Board from '../src'
+import {Tag} from '../src'
 
 const CustomCard = props => {
   return (
@@ -37,6 +38,10 @@ const CustomCard = props => {
         <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
           {props.escalationText}
         </div>
+				{props.tags &&
+        <div style={{borderTop: '1px solid #eee', paddingTop: 6,  display: 'flex', justifyContent: 'flex-end', flexDirection: 'row', flexWrap: 'wrap'}}>
+					{props.tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />)}
+        </div>}
       </div>
     </div>
   )
@@ -44,7 +49,7 @@ const CustomCard = props => {
 
 storiesOf('React Trello', module).add(
   'Card and Lane Styling',
-  withInfo('Style your own cards and override lane styles')(() => {
+  withInfo('Style your own cards and override lane styles. Watch out for usage of tags in custom styling as well!')(() => {
     const data = {
       lanes: [
         {
@@ -92,7 +97,11 @@ storiesOf('React Trello', module).add(
               escalationText: 'Escalated to OPS-ESCALATIONS!',
               cardColor: '#BD3B36',
               cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
-              metadata: {id: 'Card1'}
+              metadata: {id: 'Card1'},
+							tags: [
+								{title: 'Critical', color: 'white', bgcolor: 'red'},
+								{title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
+							]
             }
           ]
         }
@@ -101,6 +110,7 @@ storiesOf('React Trello', module).add(
 
     return (
       <Board
+        tagStyle={{fontSize: '80%'}}
         data={data}
         draggable
         customCardLayout
