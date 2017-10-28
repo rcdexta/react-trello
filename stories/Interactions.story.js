@@ -17,7 +17,9 @@ const data = {
     {
       id: 'lane2',
       title: 'Executing',
-      cards: []
+      cards: [
+        {id: 'Card3', title: 'Card3', description: 'foobar card', metadata: {id: 'Card3'}}
+      ]
     }
   ]
 }
