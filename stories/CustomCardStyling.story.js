@@ -38,10 +38,19 @@ const CustomCard = props => {
         <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
           {props.escalationText}
         </div>
-				{props.tags &&
-        <div style={{borderTop: '1px solid #eee', paddingTop: 6,  display: 'flex', justifyContent: 'flex-end', flexDirection: 'row', flexWrap: 'wrap'}}>
-					{props.tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />)}
-        </div>}
+        {props.tags &&
+          <div
+            style={{
+              borderTop: '1px solid #eee',
+              paddingTop: 6,
+              display: 'flex',
+              justifyContent: 'flex-end',
+              flexDirection: 'row',
+              flexWrap: 'wrap'
+            }}
+          >
+            {props.tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />)}
+          </div>}
       </div>
     </div>
   )
@@ -98,10 +107,10 @@ storiesOf('React Trello', module).add(
               cardColor: '#BD3B36',
               cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
               metadata: {id: 'Card1'},
-							tags: [
-								{title: 'Critical', color: 'white', bgcolor: 'red'},
-								{title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
-							]
+              tags: [
+                {title: 'Critical', color: 'white', bgcolor: 'red'},
+                {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
+              ]
             }
           ]
         }

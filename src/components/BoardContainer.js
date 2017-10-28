@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import omit from 'lodash/omit'
+import pick from 'lodash/pick'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
@@ -53,7 +53,19 @@ class BoardContainer extends Component {
       <BoardDiv style={style} {...otherProps}>
         {reducerData.lanes.map(lane => {
           const {id, ...otherProps} = lane
-          const passthroughProps = omit(this.props, ['data', 'onDataChange', 'eventBusHandle'])
+          const passthroughProps = pick(this.props, [
+            'onLaneScroll',
+            'onCardClick',
+            'onLaneClick',
+            'laneSortFunction',
+            'draggable',
+            'handleDragStart',
+            'handleDragEnd',
+            'customCardLayout',
+            'customLaneHeader',
+            'tagStyle',
+            'children'
+          ])
           return <Lane key={`${id}`} id={id} {...otherProps} {...passthroughProps} />
         })}
       </BoardDiv>
