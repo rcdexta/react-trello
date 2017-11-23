@@ -207,7 +207,7 @@ Lane.defaultProps = {
 }
 
 const cardTarget = {
-  canDrop(props) {
+  canDrop (props) {
     return props.droppable
   },
 
