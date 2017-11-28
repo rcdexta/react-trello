@@ -95,7 +95,7 @@ class Lane extends Component {
   }
 
   moveCardAcrossLanes = (fromLaneId, toLaneId, cardId) => {
-    this.props.actions.moveCardAcrossLanes({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
+    toLaneId && this.props.actions.moveCardAcrossLanes({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
   }
 
   removeCard = (laneId, cardId) => {
@@ -208,6 +208,10 @@ Lane.defaultProps = {
 }
 
 const cardTarget = {
+  canDrop (props) {
+    return props.droppable
+  },
+
   drop (props, monitor, component) {
     const {id} = props
     const draggedObj = monitor.getItem()
@@ -226,7 +230,6 @@ const cardTarget = {
     if (id === draggedObj.laneId) {
       return
     }
-
     const placeholderIndex = getPlaceholderIndex(monitor.getClientOffset().y, findDOMNode(component).scrollTop)
 
     if (component.state.shouldUpdate) {
