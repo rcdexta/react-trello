@@ -73,7 +73,6 @@ This is the container component that encapsulates the lanes and cards
 | Name             | Type     | Description                              |
 | ---------------- | -------- | ---------------------------------------- |
 | draggable        | boolean  | Makes all cards in the lanes draggable. Default: false |
-| droppable        | boolean  | Makes a lane draggable. Default: true   |
 | handleDragStart  | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
 | handleDragEnd    | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId)` |
 | onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
