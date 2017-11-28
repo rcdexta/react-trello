@@ -8,3 +8,4 @@ examples/style.css
 npm-debug.log
 .idea
 dist/
+*.iml
