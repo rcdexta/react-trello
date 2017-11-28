@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
+import isEqual from 'lodash/isEqual'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
@@ -38,9 +39,9 @@ class BoardContainer extends Component {
 
   componentWillReceiveProps (nextProps) {
     // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
-    const {data, reducerData} = this.props
-    if (this.props.onDataChange && nextProps.reducerData && reducerData !== nextProps.reducerData) {
-      this.props.onDataChange(nextProps.reducerData)
+    const {data, reducerData, onDataChange} = this.props
+    if (onDataChange && nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
+      onDataChange(nextProps.reducerData)
     }
     if (nextProps.data && nextProps.data !== data) {
       this.props.actions.loadBoard(nextProps.data)
