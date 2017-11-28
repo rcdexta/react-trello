@@ -75,6 +75,6 @@ storiesOf('React Trello', module).add(
       ]
     }
 
-    return <Board data={data} customLaneHeader={<CustomLaneHeader />} />
+    return <Board data={data} customLancustomLaneHeadereHeader={<CustomLaneHeader />} />
   })
 )

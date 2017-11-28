@@ -35,6 +35,7 @@
       "id": "WIP",
       "title": "Work In Progress (Not Droppable)",
       "label": "10/20",
+      "droppable": false,
       "cards": [
         {
           "id": "Wip1",
@@ -46,54 +47,9 @@
     },
     {
       "id": "BLOCKED",
-      "title": "Blocked",
+      "title": "Blocked (Droppable)",
       "label": "0/0",
       "cards": []
-    },
-    {
-      "id": "COMPLETED",
-      "title": "Completed",
-      "label": "2/5",
-      "cards": [
-        {
-          "id": "Completed1",
-          "title": "Practice Meditation",
-          "label": "15 mins",
-          "description": "Use Headspace app"
-        },
-        {
-          "id": "Completed2",
-          "title": "Maintain Daily Journal",
-          "label": "15 mins",
-          "description": "Use Spreadsheet for now"
-        }
-      ]
-    },
-    {
-      "id": "REPEAT",
-      "title": "Repeat",
-      "label": "1/1",
-      "cards": [
-        {
-          "id": "Repeat1",
-          "title": "Morning Jog",
-          "label": "30 mins",
-          "description": "Track using fitbit"
-        }
-      ]
-    },
-    {
-      "id": "ARCHIVED",
-      "title": "Archived",
-      "label": "1/1",
-      "cards": [
-        {
-          "id": "Archived1",
-          "title": "Go Trekking",
-          "label": "300 mins",
-          "description": "Completed 10km on cycle"
-        }
-      ]
     }
   ]
 }
