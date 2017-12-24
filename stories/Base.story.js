@@ -6,7 +6,7 @@ import Board from '../src'
 
 const data = require('./data.json')
 
-storiesOf('React Trello', module).add(
+storiesOf('Basic Functions', module).add(
   'Full Board example',
   withInfo('A complete Trello board with multiple lanes fed as json data')(() =>
       <Board data={data} />

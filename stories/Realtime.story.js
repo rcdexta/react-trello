@@ -75,7 +75,7 @@ class RealtimeBoard extends Component {
 }
 
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Realtime Events',
   withInfo('This is an illustration of external events that modify the cards in the board')(() => <RealtimeBoard/>)
 )

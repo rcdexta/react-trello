@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-storiesOf('React Trello', module).add(
+storiesOf('Basic Functions', module).add(
   'Tags',
   withInfo('Customizable tags for each card')(() => {
     const data = {

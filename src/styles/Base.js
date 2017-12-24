@@ -1,4 +1,18 @@
-import styled from 'styled-components'
+import styled, {injectGlobal} from 'styled-components'
+
+injectGlobal`
+	.comPlainTextContentEditable {
+		-webkit-user-modify: read-write-plaintext-only;
+	}
+	
+	.comPlainTextContentEditable--has-placeholder::before {
+		content: attr(placeholder);
+		opacity: 0.5;
+		color: inherit;
+		cursor: text;
+	}
+`
+
 
 export const BoardDiv = styled.div`
   background-color: #23719f;
@@ -44,19 +58,22 @@ export const RightContent = styled.span`
   font-size: 13px;
 `
 
-export const DraggableList = styled.div`min-height: 100px;`
+export const DraggableList = styled.div`min-height: 10px;`
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
   margin: 10px 0px;
   border-bottom: 1px solid #ccc;
+  position: relative;
   padding: 6px 8px;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);
   background-color: #fff;
   max-width: 250px;
+`
 
-  &:hover {
+export const MovableCardWrapper = styled(CardWrapper)`
+	&:hover {
     background-color: #f0f0f0;
   }
 
@@ -109,4 +126,21 @@ export const TagSpan = styled.span`
   border-radius: 3px;
   margin: 2px 5px;
   font-size: 70%;
+`
+
+export const AddCard = styled.a`
+	border-radius: 0 0 3px 3px;
+	color: #838c91;
+	display: block;
+	flex: 0 0 auto;
+	padding: 5px 2px;
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+	
+	&:hover {
+	  //background-color: #cdd2d4;
+    color: #4d4d4d;
+    text-decoration: underline;
+	}
 `

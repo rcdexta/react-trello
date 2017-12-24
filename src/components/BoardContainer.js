@@ -15,24 +15,26 @@ const laneActions = require('../actions/LaneActions')
 
 class BoardContainer extends Component {
   wireEventBus = () => {
+    const {actions, eventBusHandle} = this.props
     let eventBus = {
       publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
-            return this.props.actions.addCard({laneId: event.laneId, card: event.card})
+            return actions.addCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
-            return this.props.actions.removeCard({laneId: event.laneId, cardId: event.cardId})
+            return actions.removeCard({laneId: event.laneId, cardId: event.cardId})
           case 'REFRESH_BOARD':
-            return this.props.actions.loadBoard(event.data)
+            return actions.loadBoard(event.data)
         }
       }
     }
-    this.props.eventBusHandle(eventBus)
+    eventBusHandle(eventBus)
   }
 
   componentWillMount () {
-    this.props.actions.loadBoard(this.props.data)
-    if (this.props.eventBusHandle) {
+		const {actions, eventBusHandle} = this.props
+    actions.loadBoard(this.props.data)
+    if (eventBusHandle) {
       this.wireEventBus()
     }
   }
@@ -40,11 +42,12 @@ class BoardContainer extends Component {
   componentWillReceiveProps (nextProps) {
     // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
     const {data, reducerData, onDataChange} = this.props
-    if (onDataChange && nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
+    if (nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
       onDataChange(nextProps.reducerData)
     }
-    if (nextProps.data && nextProps.data !== data) {
+    if (nextProps.data && !isEqual(nextProps.data,data)) {
       this.props.actions.loadBoard(nextProps.data)
+			onDataChange(nextProps.data)
     }
   }
 
@@ -60,6 +63,7 @@ class BoardContainer extends Component {
             'onLaneClick',
             'laneSortFunction',
             'draggable',
+            'editable',
             'handleDragStart',
             'handleDragEnd',
             'customCardLayout',
@@ -83,12 +87,17 @@ BoardContainer.propTypes = {
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
+  editable: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
   customLaneHeader: PropTypes.element,
   style: PropTypes.object,
   tagStyle: PropTypes.object
+}
+
+BoardContainer.defaultProps = {
+	onDataChange: () => {}
 }
 
 const mapStateToProps = state => {

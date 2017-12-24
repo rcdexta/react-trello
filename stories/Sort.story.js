@@ -6,7 +6,7 @@ import Board from '../src'
 
 const data = require('./data-sort.json')
 
-storiesOf('React Trello', module)
+storiesOf('Basic Functions', module)
   .add(
     'Sorted Lane',
     withInfo('A lane sorted by completed at ascending')(() =>

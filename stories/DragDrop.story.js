@@ -6,7 +6,7 @@ import Board from '../src'
 
 const data = require('./data.json')
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Drag-n-Drop',
   withInfo('A demonstration of onDragStart and onDragEnd hooks')(() => {
     const handleDragStart = (cardId, laneId) => {

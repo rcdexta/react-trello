@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-storiesOf('React Trello', module).add(
+storiesOf('Basic Functions', module).add(
   'Infinite Scrolling',
   withInfo(`
       Infinite scroll with onLaneScroll function callback to fetch more items

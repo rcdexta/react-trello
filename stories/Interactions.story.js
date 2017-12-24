@@ -24,7 +24,7 @@ const data = {
   ]
 }
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Event Handling',
   withInfo('Adding event handlers to cards')(() =>
     <Board

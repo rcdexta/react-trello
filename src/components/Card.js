@@ -1,16 +1,27 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {CardWrapper, CardHeader, CardTitle, CardRightContent, Detail, Footer} from '../styles/Base'
-import {DragType} from '../helpers/DragType'
-import {DragSource, DropTarget} from 'react-dnd'
-import {findDOMNode} from 'react-dom'
-import Tag from './Tag'
-import flow from 'lodash/flow'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {
+	CardHeader, CardRightContent, CardTitle, Detail, Footer,
+	MovableCardWrapper,
+} from '../styles/Base';
+import {DragType} from '../helpers/DragType';
+import {DragSource, DropTarget} from 'react-dnd';
+import {findDOMNode} from 'react-dom';
+import Tag from './Tag';
+import flow from 'lodash/flow';
+import DeleteButton from './widgets/DeleteButton';
 
 class Card extends Component {
+
+	removeCard = () => {
+	  const {id, laneId} = this.props
+	  this.props.removeCard(laneId, id)
+  }
+
   renderBody = () => {
     if (this.props.customCardLayout) {
-      const customCardWithProps = React.cloneElement(this.props.customCard, {...this.props})
+      const {customCard, ...otherProps} = this.props
+      const customCardWithProps = React.cloneElement(customCard, {...otherProps})
       return (
         <span>
           {customCardWithProps}
@@ -41,15 +52,16 @@ class Card extends Component {
   }
 
   render () {
-    const {id, connectDragSource, connectDropTarget, isDragging, cardStyle, ...otherProps} = this.props
+    const {id, connectDragSource, connectDropTarget, isDragging, cardStyle, editable, ...otherProps} = this.props
     const opacity = isDragging ? 0 : 1
     const background = isDragging ? '#CCC' : '#E3E3E3'
     return connectDragSource(
       connectDropTarget(
         <div style={{background: background}}>
-          <CardWrapper key={id} data-id={id} {...otherProps} style={{...cardStyle, opacity: opacity}}>
+          <MovableCardWrapper key={id} data-id={id} {...otherProps} style={{...cardStyle, opacity: opacity}}>
             {this.renderBody()}
-          </CardWrapper>
+            {editable && <DeleteButton onClick={this.removeCard}/>}
+          </MovableCardWrapper>
         </div>
       )
     )

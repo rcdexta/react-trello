@@ -2,13 +2,14 @@ import React, {Component} from 'react'
 import Loader from './Loader'
 import PropTypes from 'prop-types'
 import Card from './Card'
-import {Section, Header, Title, RightContent, DraggableList, Placeholder} from '../styles/Base'
+import {Section, Header, Title, RightContent, DraggableList, Placeholder, AddCard} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {DropTarget} from 'react-dnd'
 import update from 'immutability-helper'
 import {DragType} from '../helpers/DragType'
 import {findDOMNode} from 'react-dom'
+import NewCard from './NewCard'
 
 const laneActions = require('../actions/LaneActions')
 
@@ -22,7 +23,8 @@ class Lane extends Component {
     currentPage: this.props.currentPage,
     cards: this.props.cards,
     placeholderIndex: -1,
-    shouldUpdate: true
+    shouldUpdate: true,
+    addCardMode: false
   }
 
   handleScroll = evt => {
@@ -112,27 +114,42 @@ class Lane extends Component {
     e.stopPropagation()
   }
 
-  renderDragContainer = () => {
-    const {connectDropTarget, laneSortFunction} = this.props
+  showEditableCard = () => {
+    this.setState({addCardMode: true})
+  }
 
-    const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) =>
+	hideEditableCard = () => {
+		this.setState({addCardMode: false})
+	}
+
+	addNewCard = (card) => {
+    this.hideEditableCard()
+		return this.props.actions.addCard({laneId: this.props.id, card: card})
+  }
+
+  renderDragContainer = () => {
+    const {connectDropTarget, laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
+    const {addCardMode} = this.state
+
+    const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) => (
       <Card
         key={card.id}
         index={idx}
-        draggable={this.props.draggable}
         customCardLayout={this.props.customCardLayout}
         customCard={this.props.children}
         handleDragStart={this.props.handleDragStart}
         handleDragEnd={this.props.handleDragEnd}
-        tagStyle={this.props.tagStyle}
-        cardStyle={this.props.cardStyle}
+        tagStyle={tagStyle}
+        cardStyle={cardStyle}
         moveCard={this.moveCard}
         moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
         onClick={e => this.handleCardClick(e, card)}
+        draggable={draggable}
+        editable={editable}
         {...card}
       />
-    )
+    ))
 
     if (this.state.placeholderIndex > -1) {
       cardList.splice(this.state.placeholderIndex, 0, <Placeholder key='placeholder' />)
@@ -140,9 +157,9 @@ class Lane extends Component {
 
     return connectDropTarget(
       <div>
-        <DraggableList>
-          {cardList}
-        </DraggableList>
+        <DraggableList>{cardList}</DraggableList>
+        {editable && !addCardMode && <AddCard onClick={this.showEditableCard}>Add Card</AddCard>}
+        {addCardMode && <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard}/>}
       </div>
     )
   }
@@ -150,24 +167,17 @@ class Lane extends Component {
   renderHeader = () => {
     if (this.props.customLaneHeader) {
       const customLaneElement = React.cloneElement(this.props.customLaneHeader, {...this.props})
-      return (
-        <span>
-          {customLaneElement}
-        </span>
-      )
+      return <span>{customLaneElement}</span>
     } else {
       const {title, label, titleStyle, labelStyle} = this.props
       return (
         <Header>
-          <Title style={titleStyle}>
-            {title}
-          </Title>
-          {label &&
+          <Title style={titleStyle}>{title}</Title>
+          {label && (
             <RightContent>
-              <span style={labelStyle}>
-                {label}
-              </span>
-            </RightContent>}
+              <span style={labelStyle}>{label}</span>
+            </RightContent>
+          )}
         </Header>
       )
     }
@@ -234,8 +244,8 @@ const cardTarget = {
     const placeholderIndex = getPlaceholderIndex(monitor.getClientOffset().y, findDOMNode(component).scrollTop)
 
     if (component.state.shouldUpdate) {
-      component.setState({ placeholderIndex: placeholderIndex, shouldUpdate: false })
-      setTimeout(() => component.setState({ shouldUpdate: true }), 50)
+      component.setState({placeholderIndex: placeholderIndex, shouldUpdate: false})
+      setTimeout(() => component.setState({shouldUpdate: true}), 50)
     }
 
     return monitor.isOver()

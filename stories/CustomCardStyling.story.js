@@ -56,7 +56,7 @@ const CustomCard = props => {
   )
 }
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Custom Card Template',
   withInfo('Style your own card appearance. Watch out for usage of tags in custom styling as well!')(() => {
     const data = {

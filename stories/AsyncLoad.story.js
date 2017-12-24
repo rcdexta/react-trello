@@ -25,7 +25,7 @@ class AsyncBoard extends Component {
   }
 }
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Async Load data',
   withInfo('Load board data asynchronously after the component has mounted')(() => <AsyncBoard />)
 )

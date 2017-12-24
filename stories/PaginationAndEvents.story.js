@@ -85,7 +85,7 @@ class BoardWrapper extends Component {
   }
 }
 
-storiesOf('React Trello', module).add(
+storiesOf('Advanced Features', module).add(
   'Scrolling and Events',
   withInfo(`
       Infinite scroll with onLaneScroll function callback to fetch more items
