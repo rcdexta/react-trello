@@ -196,6 +196,8 @@ Check out the [editable board story](https://rcdexta.github.io/react-trello/?sel
 * Rewrite the drag-n-drop functionality to support moving cards to a specific position within a lane or to a different lane. Ability to re-arrange lanes
 * the prop `onDataChange` is a catch all callback that returns the entire board data when anything changes on the board. Micro-events like when a card is added or re-arranged should be possible too
 
+Check the Milestones for this project to track when the above features will be implemented. 
+
 ## Development
 
 ```
