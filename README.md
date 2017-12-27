@@ -97,7 +97,7 @@ When defining the board, it is possible to obtain a event hook to the component 
 ```javascript
 let eventBus = undefined
 
-let setEventBus = (handle) => {
+const setEventBus = (handle) => {
   eventBus = handle
 }
 //To add a card
@@ -190,7 +190,11 @@ It is possible to make the entire board editable by setting the `editable` prop 
 
 Check out the [editable board story](https://rcdexta.github.io/react-trello/?selectedKind=Editable%20Board&selectedStory=Add%2FDelete%20Cards&full=0&down=0&left=1&panelRight=0) and its corresponding [source code](https://github.com/rcdexta/react-trello/blob/master/stories/EditableBoard.story.js) for more details.
 
+## Feature Wishlist
 
+* Making the board fully editable. Currently, the library supports adding new cards to a lane and deleting existing cards. The ability to add new lanes to the end should be possible
+* Rewrite the drag-n-drop functionality to support moving cards to a specific position within a lane or to a different lane. Ability to re-arrange lanes
+* the prop `onDataChange` is a catch all callback that returns the entire board data when anything changes on the board. Micro-events like when a card is added or re-arranged should be possible too
 
 ## Development
 
