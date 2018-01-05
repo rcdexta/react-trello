@@ -132,6 +132,16 @@ class Lane extends Component {
 		this.props.onCardAdd(card, laneId)
 	}
 
+	renderAddCardLink = () => {
+    const {addCardLink} = this.props
+    if (addCardLink) {
+      return <span onClick={this.showEditableCard}>{addCardLink}</span>
+    } else {
+			return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
+    }
+  }
+
+
   renderDragContainer = () => {
     const {connectDropTarget, laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
     const {addCardMode} = this.state
@@ -164,7 +174,7 @@ class Lane extends Component {
     return connectDropTarget(
       <div>
         <DraggableList>{cardList}</DraggableList>
-        {editable && !addCardMode && <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>}
+        {editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />}
       </div>
     )

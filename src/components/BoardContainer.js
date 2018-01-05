@@ -32,7 +32,7 @@ class BoardContainer extends Component {
   }
 
   componentWillMount () {
-		const {actions, eventBusHandle} = this.props
+    const {actions, eventBusHandle} = this.props
     actions.loadBoard(this.props.data)
     if (eventBusHandle) {
       this.wireEventBus()
@@ -45,9 +45,9 @@ class BoardContainer extends Component {
     if (nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
       onDataChange(nextProps.reducerData)
     }
-    if (nextProps.data && !isEqual(nextProps.data,data)) {
+    if (nextProps.data && !isEqual(nextProps.data, data)) {
       this.props.actions.loadBoard(nextProps.data)
-			onDataChange(nextProps.data)
+      onDataChange(nextProps.data)
     }
   }
 
@@ -86,8 +86,9 @@ BoardContainer.propTypes = {
   eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,
-	onCardDelete: PropTypes.func,
-	onCardAdd: PropTypes.func,
+  onCardDelete: PropTypes.func,
+  onCardAdd: PropTypes.func,
+  addCardLink: PropTypes.node,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
@@ -101,7 +102,7 @@ BoardContainer.propTypes = {
 }
 
 BoardContainer.defaultProps = {
-	onDataChange: () => {}
+  onDataChange: () => {}
 }
 
 const mapStateToProps = state => {
