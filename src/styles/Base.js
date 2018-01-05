@@ -128,7 +128,7 @@ export const TagSpan = styled.span`
   font-size: 70%;
 `
 
-export const AddCard = styled.a`
+export const AddCardLink = styled.a`
 	border-radius: 0 0 3px 3px;
 	color: #838c91;
 	display: block;

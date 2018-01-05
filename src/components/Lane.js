@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Loader from './Loader'
 import PropTypes from 'prop-types'
 import Card from './Card'
-import {Section, Header, Title, RightContent, DraggableList, Placeholder, AddCard} from '../styles/Base'
+import {Section, Header, Title, RightContent, DraggableList, Placeholder, AddCardLink} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {DropTarget} from 'react-dnd'
@@ -10,6 +10,7 @@ import update from 'immutability-helper'
 import {DragType} from '../helpers/DragType'
 import {findDOMNode} from 'react-dom'
 import NewCard from './NewCard'
+import uuidv1 from 'uuid/v1'
 
 const laneActions = require('../actions/LaneActions')
 
@@ -118,14 +119,18 @@ class Lane extends Component {
     this.setState({addCardMode: true})
   }
 
-	hideEditableCard = () => {
-		this.setState({addCardMode: false})
-	}
-
-	addNewCard = (card) => {
-    this.hideEditableCard()
-		return this.props.actions.addCard({laneId: this.props.id, card: card})
+  hideEditableCard = () => {
+    this.setState({addCardMode: false})
   }
+
+  addNewCard = params => {
+    const laneId = this.props.id
+    const id = uuidv1()
+		this.hideEditableCard()
+		let card = {...params, id};
+		this.props.actions.addCard({laneId, card})
+		this.props.onCardAdd(card, laneId)
+	}
 
   renderDragContainer = () => {
     const {connectDropTarget, laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
@@ -145,6 +150,7 @@ class Lane extends Component {
         moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
         onClick={e => this.handleCardClick(e, card)}
+        onDelete={this.props.onCardDelete}
         draggable={draggable}
         editable={editable}
         {...card}
@@ -158,8 +164,8 @@ class Lane extends Component {
     return connectDropTarget(
       <div>
         <DraggableList>{cardList}</DraggableList>
-        {editable && !addCardMode && <AddCard onClick={this.showEditableCard}>Add Card</AddCard>}
-        {addCardMode && <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard}/>}
+        {editable && !addCardMode && <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>}
+        {addCardMode && <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />}
       </div>
     )
   }
@@ -208,14 +214,18 @@ Lane.propTypes = {
   droppable: PropTypes.bool,
   onLaneScroll: PropTypes.func,
   handleDragStart: PropTypes.func,
-  handleDragEnd: PropTypes.func
+  handleDragEnd: PropTypes.func,
+  onCardClick: PropTypes.func,
+  onCardDelete: PropTypes.func,
+  onCardAdd: PropTypes.func
 }
 
 Lane.defaultProps = {
   style: {},
   titleStyle: {},
   labelStyle: {},
-  label: undefined
+  label: undefined,
+  onCardAdd: () => {}
 }
 
 const cardTarget = {

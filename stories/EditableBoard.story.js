@@ -15,10 +15,23 @@ storiesOf('Editable Board', module).add(
 			console.log(nextData)
 		}
 
+		const handleCardDelete = (cardId, laneId) => {
+			console.log(`Card: ${cardId} deleted from lane: ${laneId}`)
+		}
+
+		const handleCardAdd = (card, laneId) => {
+			console.log(`New card added to lane ${laneId}`)
+			console.dir(card)
+		}
+
     return (
       <Board
         data={data}
+				draggable
 				onDataChange={shouldReceiveNewData}
+				onCardDelete={handleCardDelete}
+				onCardAdd={handleCardAdd}
+				onCardClick={(cardId, metadata, laneId) => alert(`Card with id:${cardId} clicked. Card in lane: ${laneId}`)}
         editable
       />
     )

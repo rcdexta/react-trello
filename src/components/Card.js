@@ -1,51 +1,36 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {
-	CardHeader, CardRightContent, CardTitle, Detail, Footer,
-	MovableCardWrapper,
-} from '../styles/Base';
-import {DragType} from '../helpers/DragType';
-import {DragSource, DropTarget} from 'react-dnd';
-import {findDOMNode} from 'react-dom';
-import Tag from './Tag';
-import flow from 'lodash/flow';
-import DeleteButton from './widgets/DeleteButton';
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
+import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
+import {DragType} from '../helpers/DragType'
+import {DragSource, DropTarget} from 'react-dnd'
+import {findDOMNode} from 'react-dom'
+import Tag from './Tag'
+import flow from 'lodash/flow'
+import DeleteButton from './widgets/DeleteButton'
 
 class Card extends Component {
-
-	removeCard = () => {
-	  const {id, laneId} = this.props
-	  this.props.removeCard(laneId, id)
+  removeCard = e => {
+    const {id, laneId, removeCard, onDelete} = this.props
+    removeCard(laneId, id)
+    onDelete(id, laneId)
+    e.stopPropagation()
   }
 
   renderBody = () => {
     if (this.props.customCardLayout) {
       const {customCard, ...otherProps} = this.props
       const customCardWithProps = React.cloneElement(customCard, {...otherProps})
-      return (
-        <span>
-          {customCardWithProps}
-        </span>
-      )
+      return <span>{customCardWithProps}</span>
     } else {
       const {title, description, label, tags} = this.props
       return (
         <span>
           <CardHeader>
-            <CardTitle>
-              {title}
-            </CardTitle>
-            <CardRightContent>
-              {label}
-            </CardRightContent>
+            <CardTitle>{title}</CardTitle>
+            <CardRightContent>{label}</CardRightContent>
           </CardHeader>
-          <Detail>
-            {description}
-          </Detail>
-          {tags &&
-            <Footer>
-              {tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />)}
-            </Footer>}
+          <Detail>{description}</Detail>
+          {tags && <Footer>{tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />)}</Footer>}
         </span>
       )
     }
@@ -60,7 +45,7 @@ class Card extends Component {
         <div style={{background: background}}>
           <MovableCardWrapper key={id} data-id={id} {...otherProps} style={{...cardStyle, opacity: opacity}}>
             {this.renderBody()}
-            {editable && <DeleteButton onClick={this.removeCard}/>}
+            {editable && <DeleteButton onClick={this.removeCard} />}
           </MovableCardWrapper>
         </div>
       )
@@ -140,7 +125,8 @@ const cardTarget = {
 
 Card.defaultProps = {
   cardStyle: {},
-  customCardLayout: false
+  customCardLayout: false,
+  onDelete: () => {}
 }
 
 Card.propTypes = {
@@ -149,6 +135,7 @@ Card.propTypes = {
   description: PropTypes.string,
   label: PropTypes.string,
   onClick: PropTypes.func,
+  onDelete: PropTypes.func,
   metadata: PropTypes.object,
   connectDragSource: PropTypes.func.isRequired,
   isDragging: PropTypes.bool.isRequired,

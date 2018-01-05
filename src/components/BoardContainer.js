@@ -60,6 +60,8 @@ class BoardContainer extends Component {
           const passthroughProps = pick(this.props, [
             'onLaneScroll',
             'onCardClick',
+            'onCardDelete',
+            'onCardAdd',
             'onLaneClick',
             'laneSortFunction',
             'draggable',
@@ -84,6 +86,8 @@ BoardContainer.propTypes = {
   eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,
+	onCardDelete: PropTypes.func,
+	onCardAdd: PropTypes.func,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
