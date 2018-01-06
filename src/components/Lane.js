@@ -227,7 +227,8 @@ Lane.propTypes = {
   handleDragEnd: PropTypes.func,
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
-  onCardAdd: PropTypes.func
+  onCardAdd: PropTypes.func,
+	addCardLink: PropTypes.node
 }
 
 Lane.defaultProps = {

@@ -52,32 +52,16 @@ class BoardContainer extends Component {
   }
 
   render () {
-    const {reducerData, style, ...otherProps} = this.props
-    return (
-      <BoardDiv style={style} {...otherProps}>
-        {reducerData.lanes.map(lane => {
-          const {id, droppable, ...otherProps} = lane
-          const passthroughProps = pick(this.props, [
-            'onLaneScroll',
-            'onCardClick',
-            'onCardDelete',
-            'onCardAdd',
-            'onLaneClick',
-            'laneSortFunction',
-            'draggable',
-            'editable',
-            'handleDragStart',
-            'handleDragEnd',
-            'customCardLayout',
-            'customLaneHeader',
-            'tagStyle',
-            'children'
-          ])
-          return <Lane key={`${id}`} id={id} droppable={droppable === undefined ? true : droppable} {...otherProps} {...passthroughProps} />
-        })}
-      </BoardDiv>
-    )
-  }
+		const {reducerData, style, className, ...otherProps} = this.props
+		return (
+			<BoardDiv style={style} className={className} {...otherProps}>
+				{reducerData.lanes.map(lane => {
+					const {id, droppable, ...otherLaneProps} = lane
+					return <Lane key={`${id}`} id={id} droppable={droppable === undefined ? true : droppable} {...otherLaneProps} {...otherProps} />
+				})}
+			</BoardDiv>
+		)
+	}
 }
 
 BoardContainer.propTypes = {
