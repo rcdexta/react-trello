@@ -28,6 +28,7 @@ storiesOf('Editable Board', module)
         <Board
           data={data}
           draggable
+					id='EditableBoard1'
           onDataChange={shouldReceiveNewData}
           onCardDelete={handleCardDelete}
           onCardAdd={handleCardAdd}
