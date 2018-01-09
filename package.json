@@ -88,11 +88,11 @@
     "semantic-release": "^6.3.6",
     "sinon": "^2.3.2",
     "style-loader": "^0.18.2",
-    "webpack": "^3.0.0"
+    "webpack": "^3.0.0",
+    "jest-cli": "^21.0.1"
   },
   "dependencies": {
     "immutability-helper": "^2.4.0",
-    "jest-cli": "^21.0.1",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react-dnd": "^2.2.4",

@@ -34,7 +34,7 @@ const CustomLaneHeader = props => {
   )
 }
 
-storiesOf('Advanced Features', module).add(
+storiesOf('Custom Templates', module).add(
   'Custom Lane Template',
   withInfo('Style your lane header appearance')(() => {
     const data = {

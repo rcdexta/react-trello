@@ -1,12 +1,15 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
-import {DragType} from '../helpers/DragType'
-import {DragSource, DropTarget} from 'react-dnd'
-import {findDOMNode} from 'react-dom'
-import Tag from './Tag'
-import flow from 'lodash/flow'
-import DeleteButton from './widgets/DeleteButton'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {
+	CardHeader, CardRightContent, CardTitle, Detail, Footer,
+	MovableCardWrapper,
+} from '../styles/Base';
+import {DragType} from '../helpers/DragType';
+import {DragSource, DropTarget} from 'react-dnd';
+import {findDOMNode} from 'react-dom';
+import Tag from './Tag';
+import flow from 'lodash/flow';
+import DeleteButton from './widgets/DeleteButton';
 
 class Card extends Component {
   removeCard = e => {
@@ -37,13 +40,14 @@ class Card extends Component {
   }
 
   render () {
-    const {id, connectDragSource, connectDropTarget, isDragging, cardStyle, editable, ...otherProps} = this.props
+    const {id, connectDragSource, connectDropTarget, isDragging, cardStyle, editable, customCardLayout, ...otherProps} = this.props
     const opacity = isDragging ? 0 : 1
     const background = isDragging ? '#CCC' : '#E3E3E3'
+    const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     return connectDragSource(
       connectDropTarget(
         <div style={{background: background}}>
-          <MovableCardWrapper key={id} data-id={id} {...otherProps} style={{...cardStyle, opacity: opacity}}>
+          <MovableCardWrapper key={id} data-id={id} {...otherProps} style={{...style, opacity: opacity}}>
             {this.renderBody()}
             {editable && <DeleteButton onClick={this.removeCard} />}
           </MovableCardWrapper>

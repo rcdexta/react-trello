@@ -7,7 +7,7 @@ import {Tag} from '../src'
 
 const CustomCard = props => {
   return (
-    <div>
+    <div style={{padding: 6}}>
       <header
         style={{
           borderBottom: '1px solid #eee',
@@ -56,7 +56,7 @@ const CustomCard = props => {
   )
 }
 
-storiesOf('Advanced Features', module).add(
+storiesOf('Custom Templates', module).add(
   'Custom Card Template',
   withInfo('Style your own card appearance. Watch out for usage of tags in custom styling as well!')(() => {
     const data = {

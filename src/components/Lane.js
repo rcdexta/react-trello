@@ -7,6 +7,7 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {DropTarget} from 'react-dnd'
 import update from 'immutability-helper'
+import isEqual from 'lodash/isEqual'
 import {DragType} from '../helpers/DragType'
 import {findDOMNode} from 'react-dom'
 import NewCard from './NewCard'
@@ -89,7 +90,7 @@ class Lane extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (!this.sameCards(this.props.cards, nextProps.cards)) {
+    if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
     }
     if (!nextProps.isOver) {
@@ -106,7 +107,7 @@ class Lane extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState) {
-    return !this.sameCards(this.props.cards, nextProps.cards) || nextState !== this.state
+    return !isEqual(this.props.cards, nextProps.cards) || nextState !== this.state
   }
 
   handleCardClick = (e, card) => {
