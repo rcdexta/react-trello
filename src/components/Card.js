@@ -130,7 +130,8 @@ const cardTarget = {
 Card.defaultProps = {
   cardStyle: {},
   customCardLayout: false,
-  onDelete: () => {}
+  onDelete: () => {},
+  editable: false
 }
 
 Card.propTypes = {
@@ -146,7 +147,8 @@ Card.propTypes = {
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
-  customCard: PropTypes.node
+  customCard: PropTypes.node,
+  editable: PropTypes.bool
 }
 
 export default flow(

@@ -229,7 +229,8 @@ Lane.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
-	addCardLink: PropTypes.node
+	addCardLink: PropTypes.node,
+  editable: PropTypes.bool
 }
 
 Lane.defaultProps = {
@@ -237,6 +238,7 @@ Lane.defaultProps = {
   titleStyle: {},
   labelStyle: {},
   label: undefined,
+	editable: false,
   onCardAdd: () => {}
 }
 

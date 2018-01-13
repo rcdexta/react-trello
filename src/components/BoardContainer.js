@@ -112,7 +112,9 @@ BoardContainer.propTypes = {
 }
 
 BoardContainer.defaultProps = {
-  onDataChange: () => {}
+  onDataChange: () => {},
+	editable: false,
+  draggable: false
 }
 
 const mapStateToProps = state => {
