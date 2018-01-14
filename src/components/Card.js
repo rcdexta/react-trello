@@ -23,7 +23,7 @@ class Card extends Component {
     if (this.props.customCardLayout) {
       const {customCard, ...otherProps} = this.props
       const customCardWithProps = React.cloneElement(customCard, {...otherProps})
-      return <span>{customCardWithProps}</span>
+      return customCardWithProps
     } else {
       const {title, description, label, tags} = this.props
       return (

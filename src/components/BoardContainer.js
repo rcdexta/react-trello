@@ -71,6 +71,7 @@ class BoardContainer extends Component {
             'handleDragStart',
             'handleDragEnd',
             'customCardLayout',
+            'newCardTemplate',
             'customLaneHeader',
             'tagStyle',
             'children'
@@ -106,6 +107,7 @@ BoardContainer.propTypes = {
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
+	newCardTemplate: PropTypes.node,
   customLaneHeader: PropTypes.element,
   style: PropTypes.object,
   tagStyle: PropTypes.object

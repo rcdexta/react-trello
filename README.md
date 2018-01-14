@@ -80,6 +80,7 @@ This is the container component that encapsulates the lanes and cards
 | onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
 | onCardAdd        | function | Called when a new card is added: `onCardAdd(card, laneId) ` |
 | addCardLink      | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable) |
+| newCardTemplate  | node     | Pass a custom new card template to add new cards to a lane (when board is editable) |
 | onCardDelete     | function | Called when a card is deleted: `onCardDelete(cardId, laneId) ` |
 | onLaneClick      | function | Called when a lane is clicked: `onLaneClick(laneId) `. Card clicks are not propagated to lane click event |
 | laneSortFunction | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |

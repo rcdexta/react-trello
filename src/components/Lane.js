@@ -76,19 +76,6 @@ class Lane extends Component {
     )
   }
 
-  sameCards = (cardsA, cardsB) => {
-    return (
-      cardsA.length === cardsB.length &&
-      cardsA.every(
-        (el, ix) =>
-          el.id === cardsB[ix].id &&
-          el.title === cardsB[ix].title &&
-          el.label === cardsB[ix].label &&
-          el.description === cardsB[ix].description
-      )
-    )
-  }
-
   componentWillReceiveProps (nextProps) {
     if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
@@ -142,6 +129,15 @@ class Lane extends Component {
     }
   }
 
+  renderNewCard = () => {
+    const {newCardTemplate} = this.props
+    if (newCardTemplate) {
+			const newCardWithProps = React.cloneElement(newCardTemplate, {onCancel: this.hideEditableCard, onAdd: this.addNewCard})
+			return <span>{newCardWithProps}</span>
+    } else {
+			return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />
+    }
+  }
 
   renderDragContainer = () => {
     const {connectDropTarget, laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
@@ -176,7 +172,7 @@ class Lane extends Component {
       <div>
         <DraggableList>{cardList}</DraggableList>
         {editable && !addCardMode && this.renderAddCardLink()}
-        {addCardMode && <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />}
+        {addCardMode && this.renderNewCard()}
       </div>
     )
   }
@@ -229,6 +225,7 @@ Lane.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+	newCardTemplate: PropTypes.node,
 	addCardLink: PropTypes.node,
   editable: PropTypes.bool
 }
