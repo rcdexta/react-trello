@@ -22,7 +22,8 @@ const LaneHelper = {
       if (lane.id === laneId) {
         let cards = null
         if (index !== undefined) {
-          cards = lane.cards.splice(index, 0, ...newCards)
+          cards = lane.cards
+          cards.splice(index, 0, ...newCards)
         } else {
           cards = [...lane.cards, ...newCards]
         }
@@ -50,7 +51,7 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
-  moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId}) => {
+  moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index}) => {
     let cardToMove = null
     const interimLanes = state.lanes.map(lane => {
       if (lane.id === fromLaneId) {
@@ -62,7 +63,7 @@ const LaneHelper = {
       }
     })
     const updatedState = update(state, {lanes: {$set: interimLanes}})
-    return LaneHelper.appendCardToLane(updatedState, {laneId: toLaneId, card: cardToMove})
+    return LaneHelper.appendCardToLane(updatedState, {laneId: toLaneId, card: cardToMove, index: index})
   },
 
   updateCardsForLane: (state, {laneId, cards}) => {

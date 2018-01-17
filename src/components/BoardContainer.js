@@ -5,13 +5,11 @@ import isEqual from 'lodash/isEqual'
 import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import {DragDropContext} from 'react-dnd'
-import MultiBackend from 'react-dnd-multi-backend'
-import HTML5toTouch from 'react-dnd-multi-backend/lib/HTML5toTouch'
 import Lane from './Lane'
 
-const boardActions = require('../actions/BoardActions')
-const laneActions = require('../actions/LaneActions')
+import * as boardActions from '../actions/BoardActions'
+import * as laneActions from '../actions/LaneActions'
+import {DragDropContext, Droppable} from 'react-beautiful-dnd'
 
 class BoardContainer extends Component {
   wireEventBus = () => {
@@ -31,7 +29,7 @@ class BoardContainer extends Component {
     eventBusHandle(eventBus)
   }
 
-  componentWillMount () {
+  componentWillMount() {
     const {actions, eventBusHandle} = this.props
     actions.loadBoard(this.props.data)
     if (eventBusHandle) {
@@ -39,7 +37,7 @@ class BoardContainer extends Component {
     }
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
     const {data, reducerData, onDataChange} = this.props
     if (nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
@@ -51,42 +49,58 @@ class BoardContainer extends Component {
     }
   }
 
-  render () {
+  onDragStart = initial => {
+    console.log('onDragStart')
+    console.log(initial)
+  }
+
+  onDragEnd = result => {
+    console.log('onDragEnd')
+    console.log(result)
+    const {source, destination, draggableId} = result
+		destination && this.props.actions.moveCardAcrossLanes({fromLaneId: source.droppableId, toLaneId: destination.droppableId, cardId: draggableId, index: destination.index})
+  }
+
+  render() {
     const {reducerData, style, ...otherProps} = this.props
+    // Stick to whitelisting attributes to segregate board and lane props
+    const passthroughProps = pick(this.props, [
+      'onLaneScroll',
+      'onCardClick',
+      'onCardDelete',
+      'onCardAdd',
+      'onLaneClick',
+      'addCardLink',
+      'laneSortFunction',
+      'draggable',
+      'editable',
+      'handleDragStart',
+      'handleDragEnd',
+      'customCardLayout',
+      'newCardTemplate',
+      'customLaneHeader',
+      'tagStyle',
+      'children'
+    ])
+
     return (
-      <BoardDiv style={style} {...otherProps}>
-        {reducerData.lanes.map(lane => {
-          const {id, droppable, ...otherProps} = lane
-          // Stick to whitelisting attributes to segregate board and lane props
-          const passthroughProps = pick(this.props, [
-            'onLaneScroll',
-            'onCardClick',
-            'onCardDelete',
-            'onCardAdd',
-            'onLaneClick',
-            'addCardLink',
-            'laneSortFunction',
-            'draggable',
-            'editable',
-            'handleDragStart',
-            'handleDragEnd',
-            'customCardLayout',
-            'newCardTemplate',
-            'customLaneHeader',
-            'tagStyle',
-            'children'
-          ])
-          return (
-            <Lane
-              key={`${id}`}
-              id={id}
-              droppable={droppable === undefined ? true : droppable}
-              {...otherProps}
-              {...passthroughProps}
-            />
-          )
-        })}
-      </BoardDiv>
+      <DragDropContext onDragStart={this.onDragStart} onDragEnd={this.onDragEnd}>
+        <BoardDiv style={style} {...otherProps}>
+          {reducerData.lanes.map((lane, index) => {
+            const {id, droppable, ...otherProps} = lane
+            return (
+              <Lane
+                key={`${id}`}
+                id={id}
+                index={index}
+                droppable={droppable === undefined ? true : droppable}
+                {...otherProps}
+                {...passthroughProps}
+              />
+            )
+          })}
+        </BoardDiv>
+      </DragDropContext>
     )
   }
 }
@@ -107,7 +121,7 @@ BoardContainer.propTypes = {
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
-	newCardTemplate: PropTypes.node,
+  newCardTemplate: PropTypes.node,
   customLaneHeader: PropTypes.element,
   style: PropTypes.object,
   tagStyle: PropTypes.object
@@ -115,7 +129,7 @@ BoardContainer.propTypes = {
 
 BoardContainer.defaultProps = {
   onDataChange: () => {},
-	editable: false,
+  editable: false,
   draggable: false
 }
 
@@ -125,4 +139,4 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
-export default connect(mapStateToProps, mapDispatchToProps)(DragDropContext(MultiBackend(HTML5toTouch))(BoardContainer))
+export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)

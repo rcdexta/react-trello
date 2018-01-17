@@ -26,15 +26,19 @@ export const BoardDiv = styled.div`
   height: 100vh;
 `
 
+export const ScrollableLane = styled.div`
+	height: auto;
+  max-height: 95%;
+  overflow-y: auto;
+  min-width: 250px;
+`
+
 export const Section = styled.section`
   background-color: #e3e3e3;
   border-radius: 3px;
   margin: 5px 5px;
   padding: 10px;
-  min-width: 250px;
-  height: auto;
-  max-height: 95%;
-  overflow-y: auto;
+  
 `
 
 export const Header = styled.header`
@@ -68,17 +72,12 @@ export const CardWrapper = styled.article`
   padding: 6px 8px;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);
-  background-color: #fff;
   max-width: 250px;
 `
 
 export const MovableCardWrapper = styled(CardWrapper)`
 	&:hover {
     background-color: #f0f0f0;
-  }
-
-  &.is-moving {
-    background-color: rgba(black, 0.8);
   }
 `
 
@@ -144,3 +143,12 @@ export const AddCardLink = styled.a`
     text-decoration: underline;
 	}
 `
+
+export const LaneWrapper = styled.div`
+  background-color: ${({ isDraggingOver }) => (isDraggingOver ? 'cyan' : 'white')};
+  display: flex;
+  flex-direction: column;
+  opacity: ${({ isDropDisabled }) => (isDropDisabled ? 0.5 : 'inherit')};
+  transition: background-color 0.1s ease, opacity 0.1s ease;
+  user-select: none;
+`;

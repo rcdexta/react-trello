@@ -76,6 +76,7 @@
     "isparta": "^4.0.0",
     "istanbul": "^1.1.0-alpha.1",
     "jest": "^21.0.1",
+    "jest-cli": "^21.0.1",
     "jsdom": "^9.12.0",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
@@ -88,17 +89,13 @@
     "semantic-release": "^6.3.6",
     "sinon": "^2.3.2",
     "style-loader": "^0.18.2",
-    "webpack": "^3.0.0",
-    "jest-cli": "^21.0.1"
+    "webpack": "^3.0.0"
   },
   "dependencies": {
     "immutability-helper": "^2.4.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
-    "react-dnd": "^2.2.4",
-    "react-dnd-html5-backend": "^2.2.4",
-    "react-dnd-multi-backend": "^2.3.7",
-    "react-dnd-touch-backend": "^0.3.11",
+    "react-beautiful-dnd": "^4.0.1",
     "react-redux": "^5.0.3",
     "redux": "^3.6.0",
     "redux-actions": "^1.2.2",

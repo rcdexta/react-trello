@@ -2,29 +2,31 @@ import React, {Component} from 'react'
 import Loader from './Loader'
 import PropTypes from 'prop-types'
 import Card from './Card'
-import {Section, Header, Title, RightContent, DraggableList, Placeholder, AddCardLink} from '../styles/Base'
+import {
+	Section,
+	Header,
+	Title,
+	RightContent,
+	DraggableList,
+	Placeholder,
+	AddCardLink,
+	LaneWrapper, ScrollableLane,
+} from '../styles/Base';
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import {DropTarget} from 'react-dnd'
 import update from 'immutability-helper'
 import isEqual from 'lodash/isEqual'
-import {DragType} from '../helpers/DragType'
-import {findDOMNode} from 'react-dom'
 import NewCard from './NewCard'
+import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd'
 import uuidv1 from 'uuid/v1'
 
-const laneActions = require('../actions/LaneActions')
-
-const CARD_HEIGHT = 66
-const CARD_MARGIN = 10
-const OFFSET_HEIGHT = 15
+import * as laneActions from '../actions/LaneActions'
 
 class Lane extends Component {
   state = {
     loading: false,
     currentPage: this.props.currentPage,
     cards: this.props.cards,
-    placeholderIndex: -1,
     shouldUpdate: true,
     addCardMode: false
   }
@@ -49,10 +51,10 @@ class Lane extends Component {
     }
   }
 
-  sortCards (cards, sortFunction) {
+  sortCards(cards, sortFunction) {
     if (!cards) return []
     if (!sortFunction) return cards
-    return cards.concat().sort(function (card1, card2) {
+    return cards.concat().sort(function(card1, card2) {
       return sortFunction(card1, card2)
     })
   }
@@ -76,12 +78,9 @@ class Lane extends Component {
     )
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps(nextProps) {
     if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
-    }
-    if (!nextProps.isOver) {
-      this.setState({placeholderIndex: -1})
     }
   }
 
@@ -93,7 +92,7 @@ class Lane extends Component {
     this.props.actions.removeCard({laneId: laneId, cardId: cardId})
   }
 
-  shouldComponentUpdate (nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     return !isEqual(this.props.cards, nextProps.cards) || nextState !== this.state
   }
 
@@ -114,33 +113,41 @@ class Lane extends Component {
   addNewCard = params => {
     const laneId = this.props.id
     const id = uuidv1()
-		this.hideEditableCard()
-		let card = {...params, id};
-		this.props.actions.addCard({laneId, card})
-		this.props.onCardAdd(card, laneId)
-	}
+    this.hideEditableCard()
+    let card = {...params, id}
+    this.props.actions.addCard({laneId, card})
+    this.props.onCardAdd(card, laneId)
+  }
 
-	renderAddCardLink = () => {
+  renderAddCardLink = () => {
     const {addCardLink} = this.props
     if (addCardLink) {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
-			return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
+      return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
     }
   }
 
   renderNewCard = () => {
     const {newCardTemplate} = this.props
     if (newCardTemplate) {
-			const newCardWithProps = React.cloneElement(newCardTemplate, {onCancel: this.hideEditableCard, onAdd: this.addNewCard})
-			return <span>{newCardWithProps}</span>
+      const newCardWithProps = React.cloneElement(newCardTemplate, {
+        onCancel: this.hideEditableCard,
+        onAdd: this.addNewCard
+      })
+      return <span>{newCardWithProps}</span>
     } else {
-			return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />
+      return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />
     }
   }
 
+  onDragEnd = result => {
+    console.log('onDragEnd')
+    console.log(result)
+  }
+
   renderDragContainer = () => {
-    const {connectDropTarget, laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
+    const {laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
     const {addCardMode} = this.state
 
     const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) => (
@@ -164,11 +171,7 @@ class Lane extends Component {
       />
     ))
 
-    if (this.state.placeholderIndex > -1) {
-      cardList.splice(this.state.placeholderIndex, 0, <Placeholder key='placeholder' />)
-    }
-
-    return connectDropTarget(
+    return (
       <div>
         <DraggableList>{cardList}</DraggableList>
         {editable && !addCardMode && this.renderAddCardLink()}
@@ -186,25 +189,36 @@ class Lane extends Component {
       return (
         <Header>
           <Title style={titleStyle}>{title}</Title>
-          {label && (
+          {label &&
             <RightContent>
               <span style={labelStyle}>{label}</span>
-            </RightContent>
-          )}
+            </RightContent>}
         </Header>
       )
     }
   }
 
-  render () {
+  render() {
     const {loading} = this.state
-    const {id, onLaneClick, ...otherProps} = this.props
+    const {id, onLaneClick, index, droppable, ...otherProps} = this.props
+    const isDropDisabled = !droppable
     return (
-      <Section {...otherProps} key={id} innerRef={this.laneDidMount} onClick={() => onLaneClick && onLaneClick(id)}>
-        {this.renderHeader()}
-        {this.renderDragContainer()}
-        {loading && <Loader />}
-      </Section>
+      <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled}>
+        {(dropProvided, dropSnapshot) => (
+          <ScrollableLane innerRef={this.laneDidMount}>
+            <Section
+              {...otherProps}
+              key={id}
+              onClick={() => onLaneClick && onLaneClick(id)}
+              innerRef={dropProvided.innerRef}
+              {...dropProvided.draggableProps}>
+              {this.renderHeader()}
+              {this.renderDragContainer()}
+              {loading && <Loader />}
+            </Section>
+          </ScrollableLane>
+        )}
+      </Droppable>
     )
   }
 }
@@ -212,6 +226,7 @@ class Lane extends Component {
 Lane.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.node,
+  index: PropTypes.number,
   laneSortFunction: PropTypes.func,
   style: PropTypes.object,
   titleStyle: PropTypes.object,
@@ -225,8 +240,8 @@ Lane.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
-	newCardTemplate: PropTypes.node,
-	addCardLink: PropTypes.node,
+  newCardTemplate: PropTypes.node,
+  addCardLink: PropTypes.node,
   editable: PropTypes.bool
 }
 
@@ -235,63 +250,10 @@ Lane.defaultProps = {
   titleStyle: {},
   labelStyle: {},
   label: undefined,
-	editable: false,
+  editable: false,
   onCardAdd: () => {}
-}
-
-const cardTarget = {
-  canDrop (props) {
-    return props.droppable
-  },
-
-  drop (props, monitor, component) {
-    const {id} = props
-    const draggedObj = monitor.getItem()
-    if (id === draggedObj.laneId) {
-      props.actions.updateCards({laneId: id, cards: component.state.cards})
-    }
-    component.setState({placeholderIndex: -1})
-    return {
-      laneId: id
-    }
-  },
-
-  hover (props, monitor, component) {
-    const {id} = props
-    const draggedObj = monitor.getItem()
-    if (id === draggedObj.laneId) {
-      return
-    }
-    const placeholderIndex = getPlaceholderIndex(monitor.getClientOffset().y, findDOMNode(component).scrollTop)
-
-    if (component.state.shouldUpdate) {
-      component.setState({placeholderIndex: placeholderIndex, shouldUpdate: false})
-      setTimeout(() => component.setState({shouldUpdate: true}), 50)
-    }
-
-    return monitor.isOver()
-
-    function getPlaceholderIndex (y, scrollY) {
-      // shift placeholder if y position more than card height / 2
-      const yPos = y - OFFSET_HEIGHT + scrollY
-      let placeholderIndex
-      if (yPos < CARD_HEIGHT / 2) {
-        placeholderIndex = -1 // place at the start
-      } else {
-        placeholderIndex = Math.floor((yPos - CARD_HEIGHT / 2) / (CARD_HEIGHT + CARD_MARGIN))
-      }
-      return placeholderIndex
-    }
-  }
-}
-
-function collect (connect, monitor) {
-  return {
-    connectDropTarget: connect.dropTarget(),
-    isOver: monitor.isOver()
-  }
 }
 
 const mapDispatchToProps = dispatch => ({actions: bindActionCreators(laneActions, dispatch)})
 
-export default connect(null, mapDispatchToProps)(DropTarget(DragType.CARD, cardTarget, collect)(Lane))
+export default connect(null, mapDispatchToProps)(Lane)
