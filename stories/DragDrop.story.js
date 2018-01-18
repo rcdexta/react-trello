@@ -6,8 +6,8 @@ import Board from '../src'
 
 const data = require('./data.json')
 
-storiesOf('Advanced Features', module).add(
-  'Drag-n-Drop',
+storiesOf('Drag-n-Drop', module).add(
+  'Basic',
   withInfo('A demonstration of onDragStart and onDragEnd hooks')(() => {
     const handleDragStart = (cardId, laneId) => {
       console.log('drag started')

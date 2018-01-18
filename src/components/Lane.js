@@ -59,9 +59,10 @@ class Lane extends Component {
     })
   }
 
-  laneDidMount = node => {
+  laneDidMount = (node, dragReference) => {
     if (node) {
       node.addEventListener('scroll', this.handleScroll)
+			dragReference(node)
     }
   }
 
@@ -204,20 +205,20 @@ class Lane extends Component {
     const isDropDisabled = !droppable
     return (
       <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled}>
-        {(dropProvided, dropSnapshot) => (
-          <ScrollableLane innerRef={this.laneDidMount}>
-            <Section
-              {...otherProps}
-              key={id}
-              onClick={() => onLaneClick && onLaneClick(id)}
-              innerRef={dropProvided.innerRef}
-              {...dropProvided.draggableProps}>
-              {this.renderHeader()}
-              {this.renderDragContainer()}
-              {loading && <Loader />}
-            </Section>
-          </ScrollableLane>
-        )}
+        {(dropProvided, dropSnapshot) => {
+          const isDraggingOver = dropSnapshot.isDraggingOver
+					return <Section
+						{...otherProps}
+						key={id}
+						onClick={() => onLaneClick && onLaneClick(id)}
+						innerRef={ref => this.laneDidMount(ref, dropProvided.innerRef)}
+						isDraggingOver={isDraggingOver}
+						{...dropProvided.draggableProps}>
+						{this.renderHeader()}
+						{this.renderDragContainer()}
+						{loading && <Loader/>}
+					</Section>
+				}}
       </Droppable>
     )
   }

@@ -6,9 +6,9 @@ import Board from '../src'
 
 const data = require('./drag-drop.json')
 
-storiesOf('Advanced Features', module).add(
-  'Restrict Drag-n-Drop',
-  withInfo('Use droppable property to pervent some lanes from being droppable')(() => {
+storiesOf('Drag-n-Drop', module).add(
+  'Restrict lanes',
+  withInfo('Use droppable property to prevent some lanes from being droppable')(() => {
     return (
       <Board
         data={data}

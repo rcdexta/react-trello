@@ -26,19 +26,17 @@ export const BoardDiv = styled.div`
   height: 100vh;
 `
 
-export const ScrollableLane = styled.div`
-	height: auto;
-  max-height: 95%;
-  overflow-y: auto;
-  min-width: 250px;
-`
-
 export const Section = styled.section`
   background-color: #e3e3e3;
   border-radius: 3px;
   margin: 5px 5px;
+  position: relative;
   padding: 10px;
-  
+  min-width: 250px;
+  height: auto;
+  padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
+  max-height: 95%;
+  overflow-y: auto;
 `
 
 export const Header = styled.header`
@@ -68,8 +66,9 @@ export const CardWrapper = styled.article`
   border-radius: 3px;
   margin: 10px 0px;
   border-bottom: 1px solid #ccc;
+  background-color: #fff;
   position: relative;
-  padding: 6px 8px;
+  padding: 10px;
   cursor: pointer;
   transition: all .3s cubic-bezier(0.23, 1, 0.32, 1);
   max-width: 250px;
@@ -131,11 +130,11 @@ export const AddCardLink = styled.a`
 	border-radius: 0 0 3px 3px;
 	color: #838c91;
 	display: block;
-	flex: 0 0 auto;
 	padding: 5px 2px;
-	position: relative;
+	position: absolute;
 	text-decoration: none;
 	cursor: pointer;
+	bottom: 3px;
 	
 	&:hover {
 	  //background-color: #cdd2d4;
