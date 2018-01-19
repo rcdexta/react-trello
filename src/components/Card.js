@@ -49,14 +49,15 @@ class Card extends Component {
                 <MovableCardWrapper
                   key={id}
                   data-id={id}
-                  {...otherProps}
                   innerRef={dragProvided.innerRef}
                   {...dragProvided.draggableProps}
                   {...dragProvided.dragHandleProps}
 									style={{
 										...style,
 										...dragStyle
-									}}>
+									}}
+									{...otherProps}
+                >
                   {this.renderBody()}
                   {editable && <DeleteButton onClick={this.removeCard} />}
                 </MovableCardWrapper>
