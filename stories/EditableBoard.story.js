@@ -22,10 +22,10 @@ class NewCard extends Component {
         <div style={{padding: 5, margin: 5}}>
           <div>
             <div style={{marginBottom: 5}}>
-                <input type='text' onChange={evt => this.updateField('title', evt)} placeholder='Title' />
+              <input type='text' onChange={evt => this.updateField('title', evt)} placeholder='Title' />
             </div>
             <div style={{marginBottom: 5}}>
-              <input type='text' onChange={evt => this.updateField('description', evt)} placeholder='Description'/>
+              <input type='text' onChange={evt => this.updateField('description', evt)} placeholder='Description' />
             </div>
           </div>
           <button onClick={this.handleAdd}>Add</button>

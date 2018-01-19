@@ -3,15 +3,16 @@ import Loader from './Loader'
 import PropTypes from 'prop-types'
 import Card from './Card'
 import {
-	Section,
-	Header,
-	Title,
-	RightContent,
-	DraggableList,
-	Placeholder,
-	AddCardLink,
-	LaneWrapper, ScrollableLane,
-} from '../styles/Base';
+  Section,
+  Header,
+  Title,
+  RightContent,
+  DraggableList,
+  Placeholder,
+  AddCardLink,
+  LaneWrapper,
+  ScrollableLane
+} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import update from 'immutability-helper'
@@ -44,7 +45,11 @@ class Lane extends Component {
           // if no cards present, stop retrying until user action
           node.scrollTop = node.scrollTop - 50
         } else {
-          this.props.actions.paginateLane({laneId: this.props.id, newCards: moreCards, nextPage: nextPage})
+          this.props.actions.paginateLane({
+            laneId: this.props.id,
+            newCards: moreCards,
+            nextPage: nextPage
+          })
         }
         this.setState({loading: false})
       })
@@ -62,7 +67,7 @@ class Lane extends Component {
   laneDidMount = (node, dragReference) => {
     if (node) {
       node.addEventListener('scroll', this.handleScroll)
-			dragReference(node)
+      dragReference(node)
     }
   }
 
@@ -81,12 +86,20 @@ class Lane extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (!isEqual(this.props.cards, nextProps.cards)) {
-      this.setState({cards: nextProps.cards, currentPage: nextProps.currentPage})
+      this.setState({
+        cards: nextProps.cards,
+        currentPage: nextProps.currentPage
+      })
     }
   }
 
   moveCardAcrossLanes = (fromLaneId, toLaneId, cardId) => {
-    toLaneId && this.props.actions.moveCardAcrossLanes({fromLaneId: fromLaneId, toLaneId: toLaneId, cardId: cardId})
+    toLaneId &&
+      this.props.actions.moveCardAcrossLanes({
+        fromLaneId: fromLaneId,
+        toLaneId: toLaneId,
+        cardId: cardId
+      })
   }
 
   removeCard = (laneId, cardId) => {
@@ -190,10 +203,11 @@ class Lane extends Component {
       return (
         <Header>
           <Title style={titleStyle}>{title}</Title>
-          {label &&
+          {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
-            </RightContent>}
+            </RightContent>
+          )}
         </Header>
       )
     }
@@ -207,18 +221,20 @@ class Lane extends Component {
       <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled}>
         {(dropProvided, dropSnapshot) => {
           const isDraggingOver = dropSnapshot.isDraggingOver
-					return <Section
-						{...otherProps}
-						key={id}
-						onClick={() => onLaneClick && onLaneClick(id)}
-						innerRef={ref => this.laneDidMount(ref, dropProvided.innerRef)}
-						isDraggingOver={isDraggingOver}
-						{...dropProvided.draggableProps}>
-						{this.renderHeader()}
-						{this.renderDragContainer()}
-						{loading && <Loader/>}
-					</Section>
-				}}
+          return (
+            <Section
+              {...otherProps}
+              key={id}
+              onClick={() => onLaneClick && onLaneClick(id)}
+              innerRef={ref => this.laneDidMount(ref, dropProvided.innerRef)}
+              isDraggingOver={isDraggingOver}
+              {...dropProvided.draggableProps}>
+              {this.renderHeader()}
+              {this.renderDragContainer()}
+              {loading && <Loader />}
+            </Section>
+          )
+        }}
       </Droppable>
     )
   }
@@ -255,6 +271,8 @@ Lane.defaultProps = {
   onCardAdd: () => {}
 }
 
-const mapDispatchToProps = dispatch => ({actions: bindActionCreators(laneActions, dispatch)})
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(laneActions, dispatch)
+})
 
 export default connect(null, mapDispatchToProps)(Lane)

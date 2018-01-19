@@ -46,20 +46,20 @@ class Card extends Component {
           const dragStyle = this.getItemStyle(dragSnapshot.isDragging, dragProvided.draggableProps.style)
           return (
             <div>
-                <MovableCardWrapper
-                  key={id}
-                  data-id={id}
-                  {...otherProps}
-                  innerRef={dragProvided.innerRef}
-                  {...dragProvided.draggableProps}
-                  {...dragProvided.dragHandleProps}
-									style={{
-										...style,
-										...dragStyle
-									}}>
-                  {this.renderBody()}
-                  {editable && <DeleteButton onClick={this.removeCard} />}
-                </MovableCardWrapper>
+              <MovableCardWrapper
+                key={id}
+                data-id={id}
+                {...otherProps}
+                innerRef={dragProvided.innerRef}
+                {...dragProvided.draggableProps}
+                {...dragProvided.dragHandleProps}
+                style={{
+                  ...style,
+                  ...dragStyle
+                }}>
+                {this.renderBody()}
+                {editable && <DeleteButton onClick={this.removeCard} />}
+              </MovableCardWrapper>
               {dragProvided.placeholder}
             </div>
           )

@@ -28,7 +28,7 @@ storiesOf('Advanced Features', module).add(
   'Event Handling',
   withInfo('Adding event handlers to cards')(() =>
     <Board
-    draggable={true}
+      draggable
       data={data}
       onCardClick={(cardId, metadata, laneId) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}. Card in lane: ${laneId}`)}
       onLaneClick={(laneId) => alert(`Lane with id:${laneId} clicked`)}

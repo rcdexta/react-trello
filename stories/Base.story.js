@@ -9,6 +9,6 @@ const data = require('./data.json')
 storiesOf('Basic Functions', module).add(
   'Full Board example',
   withInfo('A complete Trello board with multiple lanes fed as json data')(() =>
-      <Board data={data} />
+    <Board data={data} />
   )
 )
