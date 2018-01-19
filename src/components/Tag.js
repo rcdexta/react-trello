@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {TagSpan} from '../styles/Base'
 
-export default class Tag extends Component {
+class Tag extends Component {
   render() {
     const {title, color, bgcolor, tagStyle, ...otherProps} = this.props
     const style = {color: color || 'white', backgroundColor: bgcolor || 'orange', ...tagStyle}
@@ -14,8 +14,11 @@ export default class Tag extends Component {
   }
 }
 
-Tag.PropTypes = {
-  title: PropTypes.array.isRequired,
+Tag.propTypes = {
+  title: PropTypes.string.isRequired,
   color: PropTypes.string,
-  bgcolor: PropTypes.string
+  bgcolor: PropTypes.string,
+  tagStyle: PropTypes.object
 }
+
+export default Tag

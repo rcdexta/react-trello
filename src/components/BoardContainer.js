@@ -105,7 +105,9 @@ class BoardContainer extends Component {
 }
 
 BoardContainer.propTypes = {
+  actions: PropTypes.object,
   data: PropTypes.object.isRequired,
+  reducerData: PropTypes.object,
   onDataChange: PropTypes.func,
   eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,
