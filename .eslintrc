@@ -4,6 +4,7 @@
     "strict": 0,
     "no-fallthrough": 0,
     "react/prop-types": 0,
+    "no-undef": 1,
     "prettier/prettier": ["error", {
       "printWidth": 120,
       "singleQuote": true,
