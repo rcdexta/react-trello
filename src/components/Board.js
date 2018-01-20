@@ -9,9 +9,11 @@ const middlewares = process.env.NODE_ENV === 'development' ? [logger] : []
 const store = createStore(boardReducer, applyMiddleware(...middlewares))
 
 export default class Board extends Component {
-  render () {
-    return <Provider store={store}>
-      <BoardContainer {...this.props} />
-    </Provider>
+  render() {
+    return (
+      <Provider store={store}>
+        <BoardContainer {...this.props} />
+      </Provider>
+    )
   }
 }

@@ -5,7 +5,7 @@ export default class EditableLabel extends React.Component {
     onChange: () => {},
     placeholder: '',
     className: '',
-		autoFocus: false
+    autoFocus: false
   }
 
   state = {text: ''}
@@ -19,15 +19,15 @@ export default class EditableLabel extends React.Component {
     this.setState({text: text})
   }
 
-  componentDidMount(){
-  	if (this.props.autoFocus) {
-  		this.refDiv.focus()
-		}
-	}
+  componentDidMount() {
+    if (this.props.autoFocus) {
+      this.refDiv.focus()
+    }
+  }
 
   onBlur = () => {
-		this.props.onChange(this.state.text)
-	}
+    this.props.onChange(this.state.text)
+  }
 
   onPaste = ev => {
     ev.preventDefault()
@@ -40,14 +40,14 @@ export default class EditableLabel extends React.Component {
     return `comPlainTextContentEditable ${placeholder} ${this.props.className}`
   }
 
-  render () {
+  render() {
     return (
       <div
-        ref={(ref) => this.refDiv = ref}
-        contentEditable='true'
+        ref={ref => (this.refDiv = ref)}
+        contentEditable="true"
         className={this.getClassName()}
         onPaste={this.onPaste}
-				onBlur={this.onBlur}
+        onBlur={this.onBlur}
         onInput={this.onTextChange}
         placeholder={this.props.placeholder}
       />

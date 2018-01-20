@@ -68,7 +68,7 @@ export const AddButton = styled.button`
   font-weight: bold;
   border-radius: 3px;
   font-size: 14px;
-  cursor: pointer;	
+  cursor: pointer;
   margin-bottom: 0;
 `
 
@@ -83,6 +83,6 @@ export const CancelButton = styled.button`
   font-weight: bold;
   border-radius: 3px;
   font-size: 14px;
-  cursor: pointer;	
+  cursor: pointer;
   margin-bottom: 0;
 `
