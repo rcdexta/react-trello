@@ -25,6 +25,13 @@ export const BoardDiv = styled.div`
   height: 100vh;
 `
 
+export const Header = styled.header`
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+`
+
 export const Section = styled.section`
   background-color: #e3e3e3;
   border-radius: 3px;
@@ -32,17 +39,20 @@ export const Section = styled.section`
   position: relative;
   padding: 10px;
   min-width: 250px;
-  height: auto;
   padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
-  max-height: 95%;
-  overflow-y: auto;
+  display: flex;
+  height: auto;
+  max-height: 90%;
+  flex-direction: column;
 `
 
-export const Header = styled.header`
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+export const LaneHeader = styled(Header)`
+	margin-bottom: 10px;
+`
+
+export const ScrollableLane = styled.div`
+	flex: 1;
+	overflow-y: auto;
 `
 
 export const Title = styled.span`
@@ -60,7 +70,7 @@ export const RightContent = styled.span`
 `
 
 export const DraggableList = styled.div`
-  min-height: 10px;
+  
 `
 
 export const CardWrapper = styled.article`

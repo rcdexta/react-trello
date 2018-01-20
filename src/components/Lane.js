@@ -3,16 +3,16 @@ import Loader from './Loader'
 import PropTypes from 'prop-types'
 import Card from './Card'
 import {
-  Section,
-  Header,
-  Title,
-  RightContent,
-  DraggableList,
-  Placeholder,
-  AddCardLink,
-  LaneWrapper,
-  ScrollableLane
-} from '../styles/Base'
+	Section,
+	Header,
+	Title,
+	RightContent,
+	DraggableList,
+	Placeholder,
+	AddCardLink,
+	LaneWrapper,
+	ScrollableLane, LaneHeader,
+} from '../styles/Base';
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import update from 'immutability-helper'
@@ -43,7 +43,7 @@ class Lane extends Component {
       onLaneScroll(nextPage, this.props.id).then(moreCards => {
         if (!moreCards || moreCards.length === 0) {
           // if no cards present, stop retrying until user action
-          node.scrollTop = node.scrollTop - 50
+          node.scrollTop = node.scrollTop - 100
         } else {
           this.props.actions.paginateLane({
             laneId: this.props.id,
@@ -64,10 +64,9 @@ class Lane extends Component {
     })
   }
 
-  laneDidMount = (node, dragReference) => {
+  laneDidMount = (node) => {
     if (node) {
       node.addEventListener('scroll', this.handleScroll)
-      dragReference(node)
     }
   }
 
@@ -181,11 +180,11 @@ class Lane extends Component {
     ))
 
     return (
-      <div>
+      <ScrollableLane innerRef={this.laneDidMount}>
         <DraggableList>{cardList}</DraggableList>
         {editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
-      </div>
+      </ScrollableLane>
     )
   }
 
@@ -196,14 +195,14 @@ class Lane extends Component {
     } else {
       const {title, label, titleStyle, labelStyle} = this.props
       return (
-        <Header>
+        <LaneHeader>
           <Title style={titleStyle}>{title}</Title>
           {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
             </RightContent>
           )}
-        </Header>
+        </LaneHeader>
       )
     }
   }
@@ -221,7 +220,7 @@ class Lane extends Component {
               {...otherProps}
               key={id}
               onClick={() => onLaneClick && onLaneClick(id)}
-              innerRef={ref => this.laneDidMount(ref, dropProvided.innerRef)}
+              innerRef={dropProvided.innerRef}
               isDraggingOver={isDraggingOver}
               {...dropProvided.draggableProps}>
               {this.renderHeader()}
