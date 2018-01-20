@@ -47,12 +47,12 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 `
 
 export const ScrollableLane = styled.div`
-	flex: 1;
-	overflow-y: auto;
+  flex: 1;
+  overflow-y: auto;
 `
 
 export const Title = styled.span`
@@ -69,9 +69,7 @@ export const RightContent = styled.span`
   font-size: 13px;
 `
 
-export const DraggableList = styled.div`
-  
-`
+export const DraggableList = styled.div``
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
