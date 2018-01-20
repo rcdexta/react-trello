@@ -21,7 +21,7 @@ class AsyncBoard extends Component {
   }
 
   render () {
-    return <Board data={this.state.boardData}/>
+    return <Board data={this.state.boardData} />
   }
 }
 

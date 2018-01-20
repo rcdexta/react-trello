@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 
 const keyframeAnimation = keyframes`
     0% {
@@ -24,7 +24,7 @@ export const LoadingBar = styled.div`
   border-radius: 4px;
   animation: ${keyframeAnimation} 1s ease-in-out infinite;
   background-color: #777;
-  
+
   &:nth-child(1) {
     animation-delay: 0.0001s;
   }
@@ -32,9 +32,9 @@ export const LoadingBar = styled.div`
     animation-delay: 0.09s;
   }
   &:nth-child(3) {
-    animation-delay: .18s;
+    animation-delay: 0.18s;
   }
   &:nth-child(4) {
-    animation-delay: .27s;
+    animation-delay: 0.27s;
   }
 `

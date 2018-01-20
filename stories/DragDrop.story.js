@@ -30,7 +30,7 @@ storiesOf('Drag-n-Drop', module).add(
     return (
       <Board
         data={data}
-        draggable={true}
+        draggable
         onDataChange={shouldReceiveNewData}
         handleDragStart={handleDragStart}
         handleDragEnd={handleDragEnd}

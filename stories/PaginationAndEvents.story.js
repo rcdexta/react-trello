@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-let eventBus = undefined
+let eventBus
 
 const PER_PAGE = 15
 

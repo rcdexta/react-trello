@@ -51,7 +51,13 @@ class BoardContainer extends Component {
 
   onDragEnd = result => {
     const {source, destination, draggableId} = result
-		destination && this.props.actions.moveCardAcrossLanes({fromLaneId: source.droppableId, toLaneId: destination.droppableId, cardId: draggableId, index: destination.index})
+    destination &&
+      this.props.actions.moveCardAcrossLanes({
+        fromLaneId: source.droppableId,
+        toLaneId: destination.droppableId,
+        cardId: draggableId,
+        index: destination.index
+      })
   }
 
   render() {
