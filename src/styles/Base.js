@@ -39,20 +39,26 @@ export const Section = styled.section`
   position: relative;
   padding: 10px;
   min-width: 250px;
-  padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
   display: flex;
   height: auto;
   max-height: 90%;
   flex-direction: column;
+  display: flex;
 `
 
 export const LaneHeader = styled(Header)`
-  margin-bottom: 10px;
+	z-index: 1000;
+	padding: 0px 5px;
+	margin-bottom: 0px;
 `
 
 export const ScrollableLane = styled.div`
-  flex: 1;
-  overflow-y: auto;
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
+	margin-top: 10px;
 `
 
 export const Title = styled.span`
@@ -81,6 +87,7 @@ export const CardWrapper = styled.article`
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   max-width: 250px;
+  min-width: 230px;
 `
 
 export const MovableCardWrapper = styled(CardWrapper)`

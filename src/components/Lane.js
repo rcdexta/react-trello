@@ -145,7 +145,7 @@ class Lane extends Component {
     }
   }
 
-  renderDragContainer = () => {
+  renderDragContainer = (isDraggingOver) => {
     const {laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
     const {addCardMode} = this.state
 
@@ -171,7 +171,7 @@ class Lane extends Component {
     ))
 
     return (
-      <ScrollableLane innerRef={this.laneDidMount}>
+      <ScrollableLane innerRef={this.laneDidMount} isDraggingOver={isDraggingOver}>
         <DraggableList>{cardList}</DraggableList>
         {editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
@@ -215,7 +215,7 @@ class Lane extends Component {
               isDraggingOver={isDraggingOver}
               {...dropProvided.draggableProps}>
               {this.renderHeader()}
-              {this.renderDragContainer()}
+              {this.renderDragContainer(isDraggingOver)}
               {loading && <Loader />}
             </Section>
           )
