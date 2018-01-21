@@ -9,7 +9,7 @@ import Lane from './Lane'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
-import {DragDropContext, Droppable} from 'react-beautiful-dnd'
+import {DragDropContext} from 'react-beautiful-dnd'
 
 class BoardContainer extends Component {
   wireEventBus = () => {
@@ -105,7 +105,9 @@ class BoardContainer extends Component {
 }
 
 BoardContainer.propTypes = {
+  actions: PropTypes.object,
   data: PropTypes.object.isRequired,
+  reducerData: PropTypes.object,
   onDataChange: PropTypes.func,
   eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,

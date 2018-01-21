@@ -3,9 +3,5 @@ node_modules
 .DS_Store
 coverage
 .idea
-examples/bundle.js
-examples/style.css
 npm-debug.log
-.idea
 dist/
-*.iml

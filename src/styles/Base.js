@@ -47,12 +47,12 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 `
 
 export const ScrollableLane = styled.div`
-	flex: 1;
-	overflow-y: auto;
+  flex: 1;
+  overflow-y: auto;
 `
 
 export const Title = styled.span`
@@ -69,13 +69,11 @@ export const RightContent = styled.span`
   font-size: 13px;
 `
 
-export const DraggableList = styled.div`
-  
-`
+export const DraggableList = styled.div``
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
-  margin: 10px 0px;
+  margin: 10px 0;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   position: relative;
@@ -93,7 +91,7 @@ export const MovableCardWrapper = styled(CardWrapper)`
 
 export const Placeholder = styled.section`
   background-color: #ccc;
-  margin: 5px 0px;
+  margin: 5px 0;
   padding: 10px;
   min-width: 226px;
   height: 45px;
@@ -131,7 +129,6 @@ export const Footer = styled.div`
 
 export const TagSpan = styled.span`
   padding: 2px 3px;
-  font-size: 80%;
   border-radius: 3px;
   margin: 2px 5px;
   font-size: 70%;

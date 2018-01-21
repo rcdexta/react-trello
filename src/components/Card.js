@@ -46,21 +46,20 @@ class Card extends Component {
           const dragStyle = this.getItemStyle(dragSnapshot.isDragging, dragProvided.draggableProps.style)
           return (
             <div>
-                <MovableCardWrapper
-                  key={id}
-                  data-id={id}
-                  innerRef={dragProvided.innerRef}
-                  {...dragProvided.draggableProps}
-                  {...dragProvided.dragHandleProps}
-									style={{
-										...style,
-										...dragStyle
-									}}
-									{...otherProps}
-                >
-                  {this.renderBody()}
-                  {editable && <DeleteButton onClick={this.removeCard} />}
-                </MovableCardWrapper>
+              <MovableCardWrapper
+                key={id}
+                data-id={id}
+                innerRef={dragProvided.innerRef}
+                {...dragProvided.draggableProps}
+                {...dragProvided.dragHandleProps}
+                style={{
+                  ...style,
+                  ...dragStyle
+                }}
+                {...otherProps}>
+                {this.renderBody()}
+                {editable && <DeleteButton onClick={this.removeCard} />}
+              </MovableCardWrapper>
               {dragProvided.placeholder}
             </div>
           )
@@ -80,13 +79,19 @@ Card.defaultProps = {
 Card.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string,
+  index: PropTypes.number,
   description: PropTypes.string,
   label: PropTypes.string,
+  tags: PropTypes.array,
+  laneId: PropTypes.string.isRequired,
+  removeCard: PropTypes.func,
   onClick: PropTypes.func,
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
+  cardStyle: PropTypes.object,
+  tagStyle: PropTypes.object,
   customCardLayout: PropTypes.bool,
   customCard: PropTypes.node,
   editable: PropTypes.bool

@@ -1,25 +1,16 @@
 import React, {Component} from 'react'
-import Loader from './Loader'
 import PropTypes from 'prop-types'
-import Card from './Card'
-import {
-	Section,
-	Header,
-	Title,
-	RightContent,
-	DraggableList,
-	Placeholder,
-	AddCardLink,
-	LaneWrapper,
-	ScrollableLane, LaneHeader,
-} from '../styles/Base';
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import update from 'immutability-helper'
 import isEqual from 'lodash/isEqual'
-import NewCard from './NewCard'
-import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd'
+import {Droppable} from 'react-beautiful-dnd'
 import uuidv1 from 'uuid/v1'
+
+import Loader from './Loader'
+import Card from './Card'
+import NewCard from './NewCard'
+import {Section, Title, RightContent, DraggableList, AddCardLink, ScrollableLane, LaneHeader} from '../styles/Base'
 
 import * as laneActions from '../actions/LaneActions'
 
@@ -64,7 +55,7 @@ class Lane extends Component {
     })
   }
 
-  laneDidMount = (node) => {
+  laneDidMount = node => {
     if (node) {
       node.addEventListener('scroll', this.handleScroll)
     }
@@ -235,15 +226,23 @@ class Lane extends Component {
 }
 
 Lane.propTypes = {
+  actions: PropTypes.object,
+  children: PropTypes.node,
   id: PropTypes.string.isRequired,
   title: PropTypes.node,
   index: PropTypes.number,
   laneSortFunction: PropTypes.func,
   style: PropTypes.object,
+  cardStyle: PropTypes.object,
+  tagStyle: PropTypes.object,
   titleStyle: PropTypes.object,
   labelStyle: PropTypes.object,
+  customLaneHeader: PropTypes.element,
+  customCardLayout: PropTypes.bool,
   cards: PropTypes.array,
   label: PropTypes.string,
+  currentPage: PropTypes.number,
+  draggable: PropTypes.bool,
   droppable: PropTypes.bool,
   onLaneScroll: PropTypes.func,
   handleDragStart: PropTypes.func,
@@ -251,6 +250,7 @@ Lane.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+  onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
   editable: PropTypes.bool

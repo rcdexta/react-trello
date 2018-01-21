@@ -13,12 +13,12 @@ const keyframeAnimation = keyframes`
 `
 export const LoaderDiv = styled.div`
   text-align: center;
-  margin: 15px 0px;
+  margin: 15px 0;
 `
 
 export const LoadingBar = styled.div`
   display: inline-block;
-  margin: 0px 2px;
+  margin: 0 2px;
   width: 4px;
   height: 18px;
   border-radius: 4px;

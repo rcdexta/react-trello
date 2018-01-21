@@ -1,13 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default class EditableLabel extends React.Component {
-  static defaultProps = {
-    onChange: () => {},
-    placeholder: '',
-    className: '',
-    autoFocus: false
-  }
-
+class EditableLabel extends React.Component {
   state = {text: ''}
 
   getText = el => {
@@ -54,3 +48,18 @@ export default class EditableLabel extends React.Component {
     )
   }
 }
+
+EditableLabel.defaultProps = {
+  onChange: () => {},
+  placeholder: '',
+  className: '',
+  autoFocus: false
+}
+EditableLabel.propTypes = {
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  className: PropTypes.string,
+  autoFocus: PropTypes.bool
+}
+
+export default EditableLabel
