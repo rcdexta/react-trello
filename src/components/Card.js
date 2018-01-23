@@ -38,12 +38,14 @@ class Card extends Component {
   })
 
   render() {
-    const {id, index, cardStyle, editable, customCardLayout, ...otherProps} = this.props
+    const {id, index, cardStyle, draggable, editable, customCardLayout, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
+    const isDragDisabled = !draggable
     return (
-      <Draggable key={id} draggableId={id} index={index}>
+      <Draggable key={id} draggableId={id} index={index} isDragDisabled={isDragDisabled}>
         {(dragProvided, dragSnapshot) => {
-          const dragStyle = this.getItemStyle(dragSnapshot.isDragging, dragProvided.draggableProps.style)
+          const draggablePropsStyle = dragProvided.draggableProps && dragProvided.draggableProps.style
+          const dragStyle = this.getItemStyle(dragSnapshot.isDragging, draggablePropsStyle)
           return (
             <div>
               <MovableCardWrapper
