@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-const data = require('./data.json')
+const data = require('./data/base.json')
 
 storiesOf('Basic Functions', module).add(
   'Full Board example',

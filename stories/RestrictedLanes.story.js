@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-const data = require('./drag-drop.json')
+const data = require('./data/drag-drop.json')
 
 storiesOf('Drag-n-Drop', module).add(
   'Restrict lanes',

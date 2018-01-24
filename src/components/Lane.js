@@ -172,7 +172,7 @@ class Lane extends Component {
 
     return (
       <ScrollableLane innerRef={this.laneDidMount} isDraggingOver={isDraggingOver}>
-        <DraggableList>{cardList}</DraggableList>
+        <span>{cardList}</span>
         {editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>

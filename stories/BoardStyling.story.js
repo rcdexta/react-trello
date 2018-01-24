@@ -6,7 +6,7 @@ import Board from '../src'
 
 import './board.css'
 
-const data = require('./data.json')
+const data = require('./data/base.json')
 
 storiesOf('Advanced Features', module).add(
   'Board Styling',

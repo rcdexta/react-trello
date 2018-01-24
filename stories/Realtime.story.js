@@ -5,7 +5,7 @@ import update from 'immutability-helper'
 
 import Board from '../src'
 
-const data = require('./data.json')
+const data = require('./data/base.json')
 
 class RealtimeBoard extends Component {
     state = {boardData: data, eventBus: undefined}

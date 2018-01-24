@@ -38,12 +38,10 @@ export const Section = styled.section`
   margin: 5px 5px;
   position: relative;
   padding: 10px;
-  min-width: 250px;
-  display: flex;
+  display: inline-flex;
   height: auto;
   max-height: 90%;
   flex-direction: column;
-  display: flex;
 `
 
 export const LaneHeader = styled(Header)`
@@ -55,7 +53,9 @@ export const LaneHeader = styled(Header)`
 export const ScrollableLane = styled.div`
 	flex: 1;
 	overflow-y: auto;
+	min-width: 250px;
 	overflow-x: hidden;
+	display: inline-flex;
 	height: 100%;
 	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
 	margin-top: 10px;
@@ -66,16 +66,16 @@ export const Title = styled.span`
   font-size: 15px;
   line-height: 18px;
   cursor: grab;
-  width: 100%;
+  width: 70%;
 `
 
 export const RightContent = styled.span`
   width: 30%;
   text-align: right;
+  padding-right: 5px;
   font-size: 13px;
 `
 
-export const DraggableList = styled.div``
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
@@ -94,16 +94,6 @@ export const MovableCardWrapper = styled(CardWrapper)`
   &:hover {
     background-color: #f0f0f0;
   }
-`
-
-export const Placeholder = styled.section`
-  background-color: #ccc;
-  margin: 5px 0;
-  padding: 10px;
-  min-width: 226px;
-  height: 45px;
-  max-height: 95%;
-  overflow-y: auto;
 `
 
 export const CardHeader = styled(Header)`
@@ -156,13 +146,4 @@ export const AddCardLink = styled.a`
     color: #4d4d4d;
     text-decoration: underline;
   }
-`
-
-export const LaneWrapper = styled.div`
-  background-color: ${({isDraggingOver}) => (isDraggingOver ? 'cyan' : 'white')};
-  display: flex;
-  flex-direction: column;
-  opacity: ${({isDropDisabled}) => (isDropDisabled ? 0.5 : 'inherit')};
-  transition: background-color 0.1s ease, opacity 0.1s ease;
-  user-select: none;
 `
