@@ -15,11 +15,12 @@ storiesOf('Drag-n-Drop', module).add(
       console.log(`laneId: ${laneId}`)
     }
 
-    const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
+    const handleDragEnd = (cardId, sourceLaneId, targetLaneId, position) => {
       console.log('drag ended')
       console.log(`cardId: ${cardId}`)
       console.log(`sourceLaneId: ${sourceLaneId}`)
       console.log(`targetLaneId: ${targetLaneId}`)
+      console.log(`newPosition: ${position}`)
     }
 
     const shouldReceiveNewData = nextData => {

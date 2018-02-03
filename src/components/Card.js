@@ -90,8 +90,6 @@ Card.propTypes = {
   onClick: PropTypes.func,
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
-  handleDragStart: PropTypes.func,
-  handleDragEnd: PropTypes.func,
   cardStyle: PropTypes.object,
   tagStyle: PropTypes.object,
   customCardLayout: PropTypes.bool,

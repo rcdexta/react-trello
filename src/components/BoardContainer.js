@@ -49,15 +49,23 @@ class BoardContainer extends Component {
     }
   }
 
+	onDragStart = card => {
+    const {handleDragStart} = this.props
+		handleDragStart(card.draggableId, card.source.droppableId)
+  }
+
   onDragEnd = result => {
+    const {handleDragEnd} = this.props
     const {source, destination, draggableId} = result
-    destination &&
-      this.props.actions.moveCardAcrossLanes({
-        fromLaneId: source.droppableId,
-        toLaneId: destination.droppableId,
-        cardId: draggableId,
-        index: destination.index
-      })
+    if (destination) {
+			this.props.actions.moveCardAcrossLanes({
+				fromLaneId: source.droppableId,
+				toLaneId: destination.droppableId,
+				cardId: draggableId,
+				index: destination.index
+			})
+      handleDragEnd(draggableId, source.droppableId, destination.droppableId, destination.index)
+    }
   }
 
   render() {
@@ -73,8 +81,6 @@ class BoardContainer extends Component {
       'laneSortFunction',
       'draggable',
       'editable',
-      'handleDragStart',
-      'handleDragEnd',
       'customCardLayout',
       'newCardTemplate',
       'customLaneHeader',
@@ -83,7 +89,7 @@ class BoardContainer extends Component {
     ])
 
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
+      <DragDropContext onDragStart={this.onDragStart} onDragEnd={this.onDragEnd}>
         <BoardDiv style={style} {...otherProps}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
@@ -130,6 +136,8 @@ BoardContainer.propTypes = {
 
 BoardContainer.defaultProps = {
   onDataChange: () => {},
+	handleDragStart: () => {},
+	handleDragEnd: () => {},
   editable: false,
   draggable: false
 }

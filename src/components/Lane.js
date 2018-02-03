@@ -155,8 +155,6 @@ class Lane extends Component {
         index={idx}
         customCardLayout={this.props.customCardLayout}
         customCard={this.props.children}
-        handleDragStart={this.props.handleDragStart}
-        handleDragEnd={this.props.handleDragEnd}
         tagStyle={tagStyle}
         cardStyle={cardStyle}
         moveCard={this.moveCard}
@@ -245,8 +243,6 @@ Lane.propTypes = {
   draggable: PropTypes.bool,
   droppable: PropTypes.bool,
   onLaneScroll: PropTypes.func,
-  handleDragStart: PropTypes.func,
-  handleDragEnd: PropTypes.func,
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,

@@ -75,7 +75,7 @@ This is the container component that encapsulates the lanes and cards
 | draggable        | boolean  | Makes all cards in the lanes draggable. Default: false |
 | editable         | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false |
 | handleDragStart  | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
-| handleDragEnd    | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId)` |
+| handleDragEnd    | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)` |
 | onLaneScroll     | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
 | onCardClick      | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
 | onCardAdd        | function | Called when a new card is added: `onCardAdd(card, laneId) ` |
