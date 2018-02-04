@@ -1,9 +1,16 @@
-import React, {Component, Fragment} from 'react'
-import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
-import Tag from './Tag'
-import DeleteButton from './widgets/DeleteButton'
-import {Draggable} from 'react-beautiful-dnd'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import {
+	CardHeader,
+	CardRightContent,
+	CardTitle,
+	Detail,
+	Footer,
+	MovableCardWrapper,
+} from '../styles/Base';
+import Tag from './Tag';
+import DeleteButton from './widgets/DeleteButton';
+import {Draggable} from 'react-beautiful-dnd';
 
 class Card extends Component {
   removeCard = e => {
@@ -48,7 +55,7 @@ class Card extends Component {
           const draggablePropsStyle = dragProvided.draggableProps && dragProvided.draggableProps.style
           const dragStyle = this.getItemStyle(dragSnapshot.isDragging, draggablePropsStyle)
           return (
-            <Fragment>
+            <span>
               <MovableCardWrapper
                 key={id}
                 data-id={id}
@@ -64,7 +71,7 @@ class Card extends Component {
                 {editable && !hideCardDeleteIcon && <DeleteButton onClick={this.removeCard} />}
               </MovableCardWrapper>
               {dragProvided.placeholder}
-            </Fragment>
+            </span>
           )
         }}
       </Draggable>
