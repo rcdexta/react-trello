@@ -81,6 +81,7 @@ class BoardContainer extends Component {
       'laneSortFunction',
       'draggable',
       'editable',
+      'hideCardDeleteIcon',
       'customCardLayout',
       'newCardTemplate',
       'customLaneHeader',
@@ -125,6 +126,7 @@ BoardContainer.propTypes = {
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
   editable: PropTypes.bool,
+	hideCardDeleteIcon: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
@@ -139,6 +141,7 @@ BoardContainer.defaultProps = {
 	handleDragStart: () => {},
 	handleDragEnd: () => {},
   editable: false,
+	hideCardDeleteIcon: false,
   draggable: false
 }
 

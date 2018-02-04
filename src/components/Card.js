@@ -35,11 +35,11 @@ class Card extends Component {
   getItemStyle = (isDragging, draggableStyle) => ({
     backgroundColor: isDragging ? '#fbfbbc' : '#fff',
     ...draggableStyle,
-    margin: '0px 0px 5px 0px',
+    margin: '0px 0px 7px 0px',
   })
 
   render() {
-    const {id, index, cardStyle, draggable, editable, customCardLayout, ...otherProps} = this.props
+    const {id, index, cardStyle, draggable, editable, hideCardDeleteIcon, customCardLayout, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     const isDragDisabled = !draggable
     return (
@@ -61,7 +61,7 @@ class Card extends Component {
                 }}
                 {...otherProps}>
                 {this.renderBody()}
-                {editable && <DeleteButton onClick={this.removeCard} />}
+                {editable && !hideCardDeleteIcon && <DeleteButton onClick={this.removeCard} />}
               </MovableCardWrapper>
               {dragProvided.placeholder}
             </Fragment>

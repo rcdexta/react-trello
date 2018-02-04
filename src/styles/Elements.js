@@ -11,8 +11,8 @@ export const DeleteWrapper = styled.div`
 export const DeleteIcon = styled.span`
   position: relative;
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   opacity: 0;
   overflow: hidden;
   border: 1px solid #83bd42;

@@ -146,7 +146,7 @@ class Lane extends Component {
   }
 
   renderDragContainer = (isDraggingOver) => {
-    const {laneSortFunction, editable, tagStyle, cardStyle, draggable} = this.props
+    const {laneSortFunction, editable, hideCardDeleteIcon, tagStyle, cardStyle, draggable} = this.props
     const {addCardMode} = this.state
 
     const cardList = this.sortCards(this.state.cards, laneSortFunction).map((card, idx) => (
@@ -164,6 +164,7 @@ class Lane extends Component {
         onDelete={this.props.onCardDelete}
         draggable={draggable}
         editable={editable}
+				hideCardDeleteIcon={hideCardDeleteIcon}
         {...card}
       />
     ))
