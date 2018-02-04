@@ -201,7 +201,7 @@ class Lane extends Component {
     const {id, onLaneClick, index, droppable, ...otherProps} = this.props
     const isDropDisabled = !droppable
     return (
-      <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled}>
+      <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled} ignoreContainerClipping={false}>
         {(dropProvided, dropSnapshot) => {
           const isDraggingOver = dropSnapshot.isDraggingOver
           return (

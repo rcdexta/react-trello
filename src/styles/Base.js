@@ -55,10 +55,12 @@ export const ScrollableLane = styled.div`
 	overflow-y: auto;
 	min-width: 250px;
 	overflow-x: hidden;
-	display: inline-flex;
+	align-self: center;
 	height: 100%;
 	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
 	margin-top: 10px;
+	flex-direction: column;
+	justify-content: space-between;
 `
 
 export const Title = styled.span`
@@ -79,14 +81,13 @@ export const RightContent = styled.span`
 
 export const CardWrapper = styled.article`
   border-radius: 3px;
-  margin: 10px 0;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
   position: relative;
   padding: 10px;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   max-width: 250px;
+  margin-bottom: 5px;
   min-width: 230px;
 `
 

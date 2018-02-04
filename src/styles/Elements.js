@@ -4,7 +4,7 @@ import {CardWrapper} from './Base'
 export const DeleteWrapper = styled.div`
   text-align: center;
   position: absolute;
-  top: -8px;
+  top: -6px;
   right: -1px;
 `
 

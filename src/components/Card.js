@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import PropTypes from 'prop-types'
 import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
 import Tag from './Tag'
@@ -34,7 +34,8 @@ class Card extends Component {
 
   getItemStyle = (isDragging, draggableStyle) => ({
     backgroundColor: isDragging ? '#fbfbbc' : '#fff',
-    ...draggableStyle
+    ...draggableStyle,
+    margin: '0px 0px 5px 0px',
   })
 
   render() {
@@ -42,12 +43,12 @@ class Card extends Component {
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     const isDragDisabled = !draggable
     return (
-      <Draggable key={id} draggableId={id} index={index} isDragDisabled={isDragDisabled}>
+      <Draggable key={id} draggableId={id} type="card" index={index} isDragDisabled={isDragDisabled} disableInteractiveElementBlocking={true}>
         {(dragProvided, dragSnapshot) => {
           const draggablePropsStyle = dragProvided.draggableProps && dragProvided.draggableProps.style
           const dragStyle = this.getItemStyle(dragSnapshot.isDragging, draggablePropsStyle)
           return (
-            <div>
+            <Fragment>
               <MovableCardWrapper
                 key={id}
                 data-id={id}
@@ -55,15 +56,15 @@ class Card extends Component {
                 {...dragProvided.draggableProps}
                 {...dragProvided.dragHandleProps}
                 style={{
+									...dragStyle,
                   ...style,
-                  ...dragStyle
                 }}
                 {...otherProps}>
                 {this.renderBody()}
                 {editable && <DeleteButton onClick={this.removeCard} />}
               </MovableCardWrapper>
               {dragProvided.placeholder}
-            </div>
+            </Fragment>
           )
         }}
       </Draggable>
