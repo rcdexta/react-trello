@@ -83,15 +83,6 @@ class Lane extends Component {
     }
   }
 
-  moveCardAcrossLanes = (fromLaneId, toLaneId, cardId) => {
-    toLaneId &&
-      this.props.actions.moveCardAcrossLanes({
-        fromLaneId: fromLaneId,
-        toLaneId: toLaneId,
-        cardId: cardId
-      })
-  }
-
   removeCard = (laneId, cardId) => {
     this.props.actions.removeCard({laneId: laneId, cardId: cardId})
   }
@@ -158,7 +149,6 @@ class Lane extends Component {
         tagStyle={tagStyle}
         cardStyle={cardStyle}
         moveCard={this.moveCard}
-        moveCardAcrossLanes={this.moveCardAcrossLanes}
         removeCard={this.removeCard}
         onClick={e => this.handleCardClick(e, card)}
         onDelete={this.props.onCardDelete}

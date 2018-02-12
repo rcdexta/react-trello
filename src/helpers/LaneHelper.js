@@ -20,14 +20,12 @@ const LaneHelper = {
     newCards = newCards.map(c => update(c, {laneId: {$set: laneId}}))
     return state.lanes.map(lane => {
       if (lane.id === laneId) {
-        let cards = null
         if (index !== undefined) {
-          cards = lane.cards
-          cards.splice(index, 0, ...newCards)
+          return update(lane, {cards: {$splice: [[index, 0, ...newCards]]}})
         } else {
-          cards = [...lane.cards, ...newCards]
+					const cardsToUpdate = [...lane.cards, ...newCards]
+					return update(lane, {cards: {$set: cardsToUpdate}})
         }
-        return update(lane, {cards: {$set: cards}})
       } else {
         return lane
       }
