@@ -24,7 +24,7 @@ class BoardContainer extends Component {
           case 'REFRESH_BOARD':
             return actions.loadBoard(event.data)
           case 'MOVE_CARD':
-            return actions.moveCardAcrossLanes({fromLaneId: event.fromLaneId, toLaneId: event.toLaneID, cardId: event.cardId, index: event.index})
+            return actions.moveCardAcrossLanes({fromLaneId: event.fromLaneId, toLaneId: event.toLaneId, cardId: event.cardId, index: event.index})
         }
       }
     }
@@ -98,7 +98,7 @@ class BoardContainer extends Component {
             const {id, droppable, ...otherProps} = lane
             return (
               <Lane
-                key={`${id}`}
+                key={id}
                 id={id}
                 index={index}
                 droppable={droppable === undefined ? true : droppable}

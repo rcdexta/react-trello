@@ -15,12 +15,12 @@ class RealtimeBoard extends Component {
     }
 
     completeMilkEvent = () => {
+			this.state.eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: 'Milk'})
         this.state.eventBus.publish({
             type: 'ADD_CARD',
             laneId: 'COMPLETED',
             card: {id: 'Milk', title: 'Buy Milk', label: '15 mins', description: 'Use Headspace app'}
         })
-        this.state.eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: 'Milk'})
     }
 
     addBlockedEvent = () => {
@@ -49,11 +49,20 @@ class RealtimeBoard extends Component {
         this.setState({boardData: newData})
     }
 
+	  prioritizeWriteBlog = () => {
+			this.state.eventBus.publish({
+				type: 'MOVE_CARD',
+				fromLaneId: 'PLANNED',
+			  toLaneId: 'WIP',
+        cardId: 'Plan3',
+        index: 0
+			})
+    }
+
     shouldReceiveNewData = nextData => {
         console.log('data has changed')
         console.log(nextData)
     }
-
 
     render() {
       return <div>
@@ -68,7 +77,10 @@ class RealtimeBoard extends Component {
           </button>
         <button onClick={this.modifyCardTitle} style={{margin: 5}}>
               Modify Card Title
-          </button>
+        </button>
+				<button onClick={this.prioritizeWriteBlog} style={{margin: 5}}>
+					Prioritize Write Blog
+				</button>
         <Board data={this.state.boardData} onDataChange={this.shouldReceiveNewData}
           eventBusHandle={this.setEventBus} />
       </div>
