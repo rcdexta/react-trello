@@ -111,13 +111,13 @@ eventBus.publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "M1", title:
 //To remove a card
 eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "M1"})
 
-//To move a card from one lane to another
+//To move a card from one lane to another. index specifies the position to move the card to in the target lane
 eventBus.publish({type: 'MOVE_CARD', fromLaneId: 'PLANNED', toLaneId: 'WIP', cardId: 'Plan3', index: 0})
 
 <Board data={data} eventBusHandle={setEventBus}/>
 ```
 
-The code will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
+The first event in the above example will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
 
 ### Custom Card Styling
 
@@ -188,8 +188,6 @@ const data = {
     ]
   }
 ```
-
-
 
 ## Editable Board
 
