@@ -72,24 +72,6 @@ class BoardContainer extends Component {
 
   render() {
     const {reducerData, style, ...otherProps} = this.props
-    // Stick to whitelisting attributes to segregate board and lane props
-    const passthroughProps = pick(this.props, [
-      'onLaneScroll',
-      'onCardClick',
-      'onCardDelete',
-      'onCardAdd',
-      'onLaneClick',
-      'addCardLink',
-      'laneSortFunction',
-      'draggable',
-      'editable',
-      'hideCardDeleteIcon',
-      'customCardLayout',
-      'newCardTemplate',
-      'customLaneHeader',
-      'tagStyle',
-      'children'
-    ])
 
     return (
       <DragDropContext onDragStart={this.onDragStart} onDragEnd={this.onDragEnd}>
@@ -103,7 +85,6 @@ class BoardContainer extends Component {
                 index={index}
                 droppable={droppable === undefined ? true : droppable}
                 {...otherProps}
-                {...passthroughProps}
               />
             )
           })}
@@ -128,7 +109,7 @@ BoardContainer.propTypes = {
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
   editable: PropTypes.bool,
-	hideCardDeleteIcon: PropTypes.bool,
+  hideCardDeleteIcon: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
