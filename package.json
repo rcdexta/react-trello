@@ -4,14 +4,8 @@
   "main": "dist/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
-  "files": [
-    "src",
-    "dist",
-    "README"
-  ],
+  "files": ["src", "dist", "README"],
   "scripts": {
-    "lint": "eslint src/**",
-    "lintfix": "eslint --fix src/**",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "storybook": "start-storybook -p 9002",
@@ -22,17 +16,14 @@
     "build": "babel src --out-dir dist --copy-files",
     "docs": "build-storybook -o docs",
     "commit": "git cz",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "format": "pretty-quick \"src/**/*.js\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/rcdexta/react-trello"
   },
-  "keywords": [
-    "react",
-    "trello",
-    "board"
-  ],
+  "keywords": ["react", "trello", "board"],
   "author": "RC, Prakash",
   "license": "MIT",
   "bugs": {
@@ -75,12 +66,14 @@
     "eslint-plugin-standard": "^3.0.1",
     "eventsource-polyfill": "^0.9.6",
     "extract-text-webpack-plugin": "^2.1.0",
+    "husky": "^0.14.3",
     "jest": "^21.0.1",
     "jest-cli": "^21.0.1",
     "jsdom": "^9.12.0",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
     "prettier": "1.10.2",
+    "pretty-quick": "^1.4.1",
     "react": "^16.2.0",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^16.2.0",
