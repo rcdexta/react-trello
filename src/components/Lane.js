@@ -19,7 +19,6 @@ class Lane extends Component {
     loading: false,
     currentPage: this.props.currentPage,
     cards: this.props.cards,
-    shouldUpdate: true,
     addCardMode: false
   }
 
