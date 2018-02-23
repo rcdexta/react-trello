@@ -60,19 +60,6 @@ class Lane extends Component {
     }
   }
 
-  moveCard = (dragIndex, hoverIndex) => {
-    const {cards} = this.state
-    const dragCard = cards[dragIndex]
-
-    this.setState(
-      update(this.state, {
-        cards: {
-          $splice: [[dragIndex, 1], [hoverIndex, 0, dragCard]]
-        }
-      })
-    )
-  }
-
   componentWillReceiveProps(nextProps) {
     if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({
@@ -147,7 +134,6 @@ class Lane extends Component {
         customCard={this.props.children}
         tagStyle={tagStyle}
         cardStyle={cardStyle}
-        moveCard={this.moveCard}
         removeCard={this.removeCard}
         onClick={e => this.handleCardClick(e, card)}
         onDelete={this.props.onCardDelete}
