@@ -6,12 +6,17 @@ import boardReducer from '../reducers/BoardReducer'
 import logger from 'redux-logger'
 
 const middlewares = process.env.NODE_ENV === 'development' ? [logger] : []
-const store = createStore(boardReducer, applyMiddleware(...middlewares))
 
 export default class Board extends Component {
+
+  getStore = () => {
+    //When you create multiple boards, unique stores are created for isolation
+    return createStore(boardReducer, applyMiddleware(...middlewares))
+  }
+
   render() {
     return (
-      <Provider store={store}>
+      <Provider store={this.getStore()}>
         <BoardContainer {...this.props} />
       </Provider>
     )
