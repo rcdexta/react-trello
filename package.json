@@ -30,6 +30,18 @@
     "url": "https://github.com/rcdexta/react-trello/issues"
   },
   "homepage": "https://github.com/rcdexta/react-trello",
+  "dependencies": {
+    "immutability-helper": "^2.4.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react-beautiful-dnd": "^6.0.1",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.2",
+    "redux-logger": "^3.0.6",
+    "styled-components": "^2.1.1",
+    "uuid": "^3.1.0"
+  },
   "devDependencies": {
     "@storybook/addon-info": "^3.2.12",
     "@storybook/addon-options": "^3.2.12",
@@ -82,18 +94,6 @@
     "semantic-release": "^6.3.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0"
-  },
-  "dependencies": {
-    "immutability-helper": "^2.4.0",
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0",
-    "react-beautiful-dnd": "^4.0.1",
-    "react-redux": "^5.0.3",
-    "redux": "^3.6.0",
-    "redux-actions": "^1.2.2",
-    "redux-logger": "^3.0.6",
-    "styled-components": "^2.1.1",
-    "uuid": "^3.1.0"
   },
   "peerDependencies": {
     "react": ">= 0.14.0 < 17.0.0-0",
