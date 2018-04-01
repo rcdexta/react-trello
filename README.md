@@ -12,8 +12,9 @@ Pluggable components to add a trello like kanban board to your application
 * responsive and extensible
 * easily pluggable into existing application
 * supports pagination when scrolling individual lanes
-* drag-and-drop within and across lanes (compatible with touch devices) 
+* drag-and-drop within and across lanes (compatible with touch devices)
 * event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* edit functionality to add/delete cards
 
 ## Getting Started
 
@@ -73,6 +74,7 @@ This is the container component that encapsulates the lanes and cards
 | Name                  | Type     | Description                              |
 | --------------------- | -------- | ---------------------------------------- |
 | draggable             | boolean  | Makes all cards in the lanes draggable. Default: false |
+| collapsibleLanes      | boolean  | Make the lanes with cards collapsible. Default: false |
 | editable              | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false |
 | handleDragStart       | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
 | handleDragEnd         | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)` |
@@ -201,7 +203,7 @@ Check out the [editable board story](https://rcdexta.github.io/react-trello/?sel
 * Rewrite the drag-n-drop functionality to support moving cards to a specific position within a lane or to a different lane. Ability to re-arrange lanes
 * the prop `onDataChange` is a catch all callback that returns the entire board data when anything changes on the board. Micro-events like when a card is added or re-arranged should be possible too
 
-Check the Milestones for this project to track when the above features will be implemented. 
+Check the Milestones for this project to track when the above features will be implemented.
 
 ## Development
 

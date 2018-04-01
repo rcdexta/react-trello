@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import update from 'immutability-helper'
 import isEqual from 'lodash/isEqual'
 import {Droppable} from 'react-beautiful-dnd'
 import uuidv1 from 'uuid/v1'
@@ -10,15 +9,25 @@ import uuidv1 from 'uuid/v1'
 import Loader from './Loader'
 import Card from './Card'
 import NewCard from './NewCard'
-import {Section, Title, RightContent, DraggableList, AddCardLink, ScrollableLane, LaneHeader} from '../styles/Base'
+import {
+  AddCardLink,
+  LaneFooter,
+  LaneHeader,
+  RightContent,
+  ScrollableLane,
+  Section,
+  Title
+} from '../styles/Base'
 
 import * as laneActions from '../actions/LaneActions'
+import {CollapseBtn, ExpandBtn} from '../styles/Elements'
 
 class Lane extends Component {
   state = {
     loading: false,
     currentPage: this.props.currentPage,
-    addCardMode: false
+    addCardMode: false,
+    collapsed: false
   }
 
   handleScroll = evt => {
@@ -120,11 +129,13 @@ class Lane extends Component {
     }
   }
 
-  renderDragContainer = (isDraggingOver) => {
+  renderDragContainer = isDraggingOver => {
     const {laneSortFunction, editable, hideCardDeleteIcon, tagStyle, cardStyle, draggable, cards} = this.props
-    const {addCardMode} = this.state
+    const {addCardMode, collapsed} = this.state
 
-    const cardList = this.sortCards(cards, laneSortFunction).map((card, idx) => (
+    const showableCards = collapsed ? [] : cards
+
+    const cardList = this.sortCards(showableCards, laneSortFunction).map((card, idx) => (
       <Card
         key={card.id}
         index={idx}
@@ -137,7 +148,7 @@ class Lane extends Component {
         onDelete={this.props.onCardDelete}
         draggable={draggable}
         editable={editable}
-				hideCardDeleteIcon={hideCardDeleteIcon}
+        hideCardDeleteIcon={hideCardDeleteIcon}
         {...card}
       />
     ))
@@ -152,14 +163,17 @@ class Lane extends Component {
   }
 
   renderHeader = () => {
-    if (this.props.customLaneHeader) {
-      const customLaneElement = React.cloneElement(this.props.customLaneHeader, {...this.props})
+    const {customLaneHeader} = this.props
+    if (customLaneHeader) {
+      const customLaneElement = React.cloneElement(customLaneHeader, {...this.props})
       return <span>{customLaneElement}</span>
     } else {
       const {title, label, titleStyle, labelStyle} = this.props
       return (
-        <LaneHeader>
-          <Title style={titleStyle}>{title}</Title>
+        <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
+          <Title style={titleStyle}>
+            {title}
+          </Title>
           {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
@@ -170,12 +184,31 @@ class Lane extends Component {
     }
   }
 
+  renderFooter = () => {
+    const {collapsibleLanes, cards} = this.props
+    const {collapsed} = this.state
+    if (collapsibleLanes && cards.length > 0) {
+        return <LaneFooter onClick={this.toggleLaneCollapsed}>
+          {collapsed ? <ExpandBtn/> : <CollapseBtn/>}
+        </LaneFooter>
+    }
+  }
+
+  toggleLaneCollapsed = () => {
+    this.props.collapsibleLanes && this.setState(state => ({collapsed: !state.collapsed}))
+  }
+
   render() {
     const {loading} = this.state
     const {id, onLaneClick, index, droppable, ...otherProps} = this.props
     const isDropDisabled = !droppable
     return (
-      <Droppable droppableId={id} type="card" index={index} isDropDisabled={isDropDisabled} ignoreContainerClipping={false}>
+      <Droppable
+        droppableId={id}
+        type="card"
+        index={index}
+        isDropDisabled={isDropDisabled}
+        ignoreContainerClipping={false}>
         {(dropProvided, dropSnapshot) => {
           const isDraggingOver = dropSnapshot.isDraggingOver
           return (
@@ -189,6 +222,7 @@ class Lane extends Component {
               {this.renderHeader()}
               {this.renderDragContainer(isDraggingOver)}
               {loading && <Loader />}
+              {this.renderFooter()}
             </Section>
           )
         }}
@@ -215,6 +249,7 @@ Lane.propTypes = {
   label: PropTypes.string,
   currentPage: PropTypes.number,
   draggable: PropTypes.bool,
+  collapsibleLanes: PropTypes.bool,
   droppable: PropTypes.bool,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,

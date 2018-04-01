@@ -24,7 +24,12 @@ class BoardContainer extends Component {
           case 'REFRESH_BOARD':
             return actions.loadBoard(event.data)
           case 'MOVE_CARD':
-            return actions.moveCardAcrossLanes({fromLaneId: event.fromLaneId, toLaneId: event.toLaneId, cardId: event.cardId, index: event.index})
+            return actions.moveCardAcrossLanes({
+              fromLaneId: event.fromLaneId,
+              toLaneId: event.toLaneId,
+              cardId: event.cardId,
+              index: event.index
+            })
         }
       }
     }
@@ -51,21 +56,21 @@ class BoardContainer extends Component {
     }
   }
 
-	onDragStart = card => {
+  onDragStart = card => {
     const {handleDragStart} = this.props
-		handleDragStart(card.draggableId, card.source.droppableId)
+    handleDragStart(card.draggableId, card.source.droppableId)
   }
 
   onDragEnd = result => {
     const {handleDragEnd} = this.props
     const {source, destination, draggableId} = result
     if (destination) {
-			this.props.actions.moveCardAcrossLanes({
-				fromLaneId: source.droppableId,
-				toLaneId: destination.droppableId,
-				cardId: draggableId,
-				index: destination.index
-			})
+      this.props.actions.moveCardAcrossLanes({
+        fromLaneId: source.droppableId,
+        toLaneId: destination.droppableId,
+        cardId: draggableId,
+        index: destination.index
+      })
       handleDragEnd(draggableId, source.droppableId, destination.droppableId, destination.index)
     }
   }
@@ -82,6 +87,7 @@ class BoardContainer extends Component {
       'addCardLink',
       'laneSortFunction',
       'draggable',
+      'collapsibleLanes',
       'editable',
       'hideCardDeleteIcon',
       'customCardLayout',
@@ -127,8 +133,9 @@ BoardContainer.propTypes = {
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
+  collapsibleLanes: PropTypes.bool,
   editable: PropTypes.bool,
-	hideCardDeleteIcon: PropTypes.bool,
+  hideCardDeleteIcon: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
@@ -140,11 +147,12 @@ BoardContainer.propTypes = {
 
 BoardContainer.defaultProps = {
   onDataChange: () => {},
-	handleDragStart: () => {},
-	handleDragEnd: () => {},
+  handleDragStart: () => {},
+  handleDragEnd: () => {},
   editable: false,
-	hideCardDeleteIcon: false,
-  draggable: false
+  hideCardDeleteIcon: false,
+  draggable: false,
+  collapsibleLanes: false
 }
 
 const mapStateToProps = state => {

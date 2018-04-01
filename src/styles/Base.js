@@ -50,6 +50,15 @@ export const LaneHeader = styled(Header)`
 	margin-bottom: 0px;
 `
 
+export const LaneFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 10px;
+`
+
 export const ScrollableLane = styled.div`
 	flex: 1;
 	overflow-y: auto;
@@ -74,11 +83,9 @@ export const Title = styled.span`
 export const RightContent = styled.span`
   width: 30%;
   text-align: right;
-  padding-right: 5px;
+  padding-right: 10px;
   font-size: 13px;
 `
-
-
 export const CardWrapper = styled.article`
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
