@@ -33,12 +33,18 @@ class Lane extends Component {
   handleScroll = evt => {
     const node = evt.target
     const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const {onLaneScroll} = this.props
-    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
-      const {currentPage} = this.state
+    const {onLaneScroll, shouldLanePaginate, id} = this.props
+    const {currentPage} = this.state;      
+    const nextPage = currentPage + 1
+
+    // shouldLanePaginate will determine the triggering of onLaneScroll
+    if(!shouldLanePaginate(nextProps, id)){
+      return
+    }
+
+    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {      
       this.setState({loading: true})
-      const nextPage = currentPage + 1
-      onLaneScroll(nextPage, this.props.id).then(moreCards => {
+      onLaneScroll(nextPage, id).then(moreCards => {
         if (!moreCards || moreCards.length === 0) {
           // if no cards present, stop retrying until user action
           node.scrollTop = node.scrollTop - 100
@@ -258,7 +264,8 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
-  editable: PropTypes.bool
+  editable: PropTypes.bool,
+  shouldLanePaginate: PropTypes.func
 }
 
 Lane.defaultProps = {
@@ -267,7 +274,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  shouldLanePaginate: () => true
 }
 
 const mapDispatchToProps = dispatch => ({

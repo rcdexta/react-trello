@@ -94,7 +94,8 @@ class BoardContainer extends Component {
       'newCardTemplate',
       'customLaneHeader',
       'tagStyle',
-      'children'
+      'children',
+      'shouldLanePaginate'
     ])
 
     return (
@@ -142,7 +143,8 @@ BoardContainer.propTypes = {
   newCardTemplate: PropTypes.node,
   customLaneHeader: PropTypes.element,
   style: PropTypes.object,
-  tagStyle: PropTypes.object
+  tagStyle: PropTypes.object,
+  shouldLanePaginate: PropTypes.func
 }
 
 BoardContainer.defaultProps = {
