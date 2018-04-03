@@ -26,15 +26,14 @@ class Lane extends Component {
     const node = evt.target
     const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
     const {onLaneScroll, shouldLanePaginate, id} = this.props
-    const {currentPage} = this.state
+    const {currentPage, loading} = this.state
     const nextPage = currentPage + 1
 
-    // shouldLanePaginate will determine the triggering of onLaneScroll
-    if (!shouldLanePaginate(nextProps, id)) {
-      return
-    }
-
-    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
+    if (elemScrolPosition <= 0 && onLaneScroll && !loading) {
+      // shouldLanePaginate will determine the triggering of onLaneScroll
+      if (!shouldLanePaginate(nextPage, id)) {
+        return
+      }
       this.setState({loading: true})
       onLaneScroll(nextPage, id).then(moreCards => {
         if (!moreCards || moreCards.length === 0) {
