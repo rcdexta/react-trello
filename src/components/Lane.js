@@ -9,15 +9,7 @@ import uuidv1 from 'uuid/v1'
 import Loader from './Loader'
 import Card from './Card'
 import NewCard from './NewCard'
-import {
-  AddCardLink,
-  LaneFooter,
-  LaneHeader,
-  RightContent,
-  ScrollableLane,
-  Section,
-  Title
-} from '../styles/Base'
+import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
 
 import * as laneActions from '../actions/LaneActions'
 import {CollapseBtn, ExpandBtn} from '../styles/Elements'
@@ -33,12 +25,17 @@ class Lane extends Component {
   handleScroll = evt => {
     const node = evt.target
     const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const {onLaneScroll} = this.props
-    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
-      const {currentPage} = this.state
+    const {onLaneScroll, shouldLanePaginate, id} = this.props
+    const {currentPage, loading} = this.state
+    const nextPage = currentPage + 1
+
+    if (elemScrolPosition <= 0 && onLaneScroll && !loading) {
+      // shouldLanePaginate will determine the triggering of onLaneScroll
+      if (!shouldLanePaginate(nextPage, id)) {
+        return
+      }
       this.setState({loading: true})
-      const nextPage = currentPage + 1
-      onLaneScroll(nextPage, this.props.id).then(moreCards => {
+      onLaneScroll(nextPage, id).then(moreCards => {
         if (!moreCards || moreCards.length === 0) {
           // if no cards present, stop retrying until user action
           node.scrollTop = node.scrollTop - 100
@@ -171,9 +168,7 @@ class Lane extends Component {
       const {title, label, titleStyle, labelStyle} = this.props
       return (
         <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
-          <Title style={titleStyle}>
-            {title}
-          </Title>
+          <Title style={titleStyle}>{title}</Title>
           {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
@@ -188,9 +183,7 @@ class Lane extends Component {
     const {collapsibleLanes, cards} = this.props
     const {collapsed} = this.state
     if (collapsibleLanes && cards.length > 0) {
-        return <LaneFooter onClick={this.toggleLaneCollapsed}>
-          {collapsed ? <ExpandBtn/> : <CollapseBtn/>}
-        </LaneFooter>
+      return <LaneFooter onClick={this.toggleLaneCollapsed}>{collapsed ? <ExpandBtn /> : <CollapseBtn />}</LaneFooter>
     }
   }
 
@@ -258,7 +251,8 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
-  editable: PropTypes.bool
+  editable: PropTypes.bool,
+  shouldLanePaginate: PropTypes.func
 }
 
 Lane.defaultProps = {
@@ -267,7 +261,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  shouldLanePaginate: () => true
 }
 
 const mapDispatchToProps = dispatch => ({
