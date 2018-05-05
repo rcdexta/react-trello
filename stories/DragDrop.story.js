@@ -8,7 +8,7 @@ const data = require('./data/base.json')
 
 storiesOf('Drag-n-Drop', module).add(
   'Basic',
-  withInfo('A demonstration of onDragStart and onDragEnd hooks')(() => {
+  withInfo('A demonstration of onDragStart and onDragEnd hooks for card and lanes')(() => {
     const handleDragStart = (cardId, laneId) => {
       console.log('drag started')
       console.log(`cardId: ${cardId}`)
@@ -23,6 +23,15 @@ storiesOf('Drag-n-Drop', module).add(
       console.log(`newPosition: ${position}`)
     }
 
+    const handleLaneDragStart = (laneId) => {
+      console.log(`lane drag started for ${laneId}`)
+    }
+
+    const handleLaneDragEnd = (laneId, newPosition) => {
+      console.log(`lane drag ended for ${laneId}`)
+      console.log(`New lane position: ${newPosition}`)
+    }
+
     const shouldReceiveNewData = nextData => {
       console.log('data has changed')
       console.log(nextData)
@@ -35,6 +44,8 @@ storiesOf('Drag-n-Drop', module).add(
         onDataChange={shouldReceiveNewData}
         handleDragStart={handleDragStart}
         handleDragEnd={handleDragEnd}
+        handleLaneDragStart={handleLaneDragStart}
+        handleLaneDragEnd={handleLaneDragEnd}
       />
     )
   })

@@ -80,6 +80,12 @@ const LaneHelper = {
 
   updateLanes: (state, lanes) => {
     return {...state, ...{lanes: lanes}}
+  },
+
+  moveLane: (state, {oldIndex, newIndex}) => {
+    const laneToMove = state.lanes[oldIndex]
+    const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}});
+    return update(tempState, {lanes: {$splice: [[newIndex, 0, laneToMove]]}})
   }
 }
 

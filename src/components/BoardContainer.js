@@ -6,6 +6,7 @@ import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import Lane from './Lane'
+import {Container, Draggable} from 'react-smooth-dnd'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
@@ -59,6 +60,20 @@ class BoardContainer extends Component {
     return this.props.reducerData.lanes.find(lane => lane.id === laneId).cards[cardIndex]
   }
 
+  onDragStart = (index, payload) => {
+    const {handleLaneDragStart} = this.props
+    handleLaneDragStart(payload.id)
+  }
+
+  onLaneDrop = ({removedIndex, addedIndex, payload}) => {
+    const {actions, handleLaneDragEnd} = this.props
+    actions.moveLane({oldIndex: removedIndex, newIndex: addedIndex})
+    handleLaneDragEnd(payload.id, addedIndex)
+  }
+
+  getLaneDetails = (index) => {
+    return this.props.reducerData.lanes[index]
+  }
 
   render() {
     const {reducerData, style, ...otherProps} = this.props
@@ -85,22 +100,31 @@ class BoardContainer extends Component {
     ])
 
     return (
-        <BoardDiv style={style} {...otherProps} draggable={false}>
+      <BoardDiv style={style} {...otherProps} draggable={false}>
+        <Container
+          orientation="horizontal"
+          onDragStart={this.onDragStart}
+          onDrop={this.onLaneDrop}
+          getChildPayload={index => this.getLaneDetails(index)}
+          groupName="TrelloBoard">
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
             return (
-              <Lane
-                key={id}
-                id={id}
-                getCardDetails={this.getCardDetails}
-                index={index}
-                droppable={droppable === undefined ? true : droppable}
-                {...otherProps}
-                {...passthroughProps}
-              />
+              <Draggable key={lane.id}>
+                <Lane
+                  key={id}
+                  id={id}
+                  getCardDetails={this.getCardDetails}
+                  index={index}
+                  droppable={droppable === undefined ? true : droppable}
+                  {...otherProps}
+                  {...passthroughProps}
+                />
+              </Draggable>
             )
           })}
-        </BoardDiv>
+        </Container>
+      </BoardDiv>
     )
   }
 }
@@ -124,6 +148,8 @@ BoardContainer.propTypes = {
   hideCardDeleteIcon: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
+  handleLaneDragStart: PropTypes.func,
+  handleLaneDragEnd: PropTypes.func,
   customCardLayout: PropTypes.bool,
   newCardTemplate: PropTypes.node,
   customLaneHeader: PropTypes.element,
@@ -135,6 +161,8 @@ BoardContainer.defaultProps = {
   onDataChange: () => {},
   handleDragStart: () => {},
   handleDragEnd: () => {},
+  handleLaneDragStart: () => {},
+  handleLaneDragEnd: () => {},
   editable: false,
   hideCardDeleteIcon: false,
   draggable: false,
