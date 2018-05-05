@@ -7229,6 +7229,12 @@ react-simple-di@^1.2.0:
     babel-runtime "6.x.x"
     hoist-non-react-statics "1.x.x"
 
+react-smooth-dnd@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/react-smooth-dnd/-/react-smooth-dnd-0.3.6.tgz#754e4b3848dd8f8bcee6d25b276d55b863c47aab"
+  dependencies:
+    smooth-dnd "^0.3.7"
+
 react-split-pane@^0.1.65:
   version "0.1.66"
   resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.66.tgz#369085dd07ec1237bda123e73813dcc7dc6502c1"
@@ -8026,6 +8032,10 @@ slice-ansi@1.0.0:
 slide@^1.1.3, slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
+
+smooth-dnd@^0.3.7:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/smooth-dnd/-/smooth-dnd-0.3.9.tgz#f970a0df9e4da04682f97fe4980866e9d626d9cb"
 
 sntp@0.2.x:
   version "0.2.4"

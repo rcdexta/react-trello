@@ -9,7 +9,6 @@ import Lane from './Lane'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
-import {DragDropContext} from 'react-beautiful-dnd'
 
 class BoardContainer extends Component {
   wireEventBus = () => {
@@ -56,24 +55,10 @@ class BoardContainer extends Component {
     }
   }
 
-  onDragStart = card => {
-    const {handleDragStart} = this.props
-    handleDragStart(card.draggableId, card.source.droppableId)
+  getCardDetails = (laneId, cardIndex) => {
+    return this.props.reducerData.lanes.find(lane => lane.id === laneId).cards[cardIndex]
   }
 
-  onDragEnd = result => {
-    const {handleDragEnd} = this.props
-    const {source, destination, draggableId} = result
-    if (destination) {
-      this.props.actions.moveCardAcrossLanes({
-        fromLaneId: source.droppableId,
-        toLaneId: destination.droppableId,
-        cardId: draggableId,
-        index: destination.index
-      })
-      handleDragEnd(draggableId, source.droppableId, destination.droppableId, destination.index)
-    }
-  }
 
   render() {
     const {reducerData, style, ...otherProps} = this.props
@@ -94,18 +79,20 @@ class BoardContainer extends Component {
       'newCardTemplate',
       'customLaneHeader',
       'tagStyle',
+      'handleDragStart',
+      'handleDragEnd',
       'children'
     ])
 
     return (
-      <DragDropContext onDragStart={this.onDragStart} onDragEnd={this.onDragEnd}>
-        <BoardDiv style={style} {...otherProps}>
+        <BoardDiv style={style} {...otherProps} draggable={false}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
             return (
               <Lane
                 key={id}
                 id={id}
+                getCardDetails={this.getCardDetails}
                 index={index}
                 droppable={droppable === undefined ? true : droppable}
                 {...otherProps}
@@ -114,7 +101,6 @@ class BoardContainer extends Component {
             )
           })}
         </BoardDiv>
-      </DragDropContext>
     )
   }
 }

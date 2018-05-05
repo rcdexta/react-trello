@@ -1,16 +1,8 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {
-	CardHeader,
-	CardRightContent,
-	CardTitle,
-	Detail,
-	Footer,
-	MovableCardWrapper,
-} from '../styles/Base';
-import Tag from './Tag';
-import DeleteButton from './widgets/DeleteButton';
-import {Draggable} from 'react-beautiful-dnd';
+import React, {Component} from 'react'
+import PropTypes from 'prop-types'
+import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
+import Tag from './Tag'
+import DeleteButton from './widgets/DeleteButton'
 
 class Card extends Component {
   removeCard = e => {
@@ -39,42 +31,20 @@ class Card extends Component {
     }
   }
 
-  getItemStyle = (isDragging, draggableStyle) => ({
-    backgroundColor: isDragging ? '#fbfbbc' : '#fff',
-    ...draggableStyle,
-    margin: '0px 0px 7px 0px',
-  })
-
   render() {
-    const {id, index, cardStyle, draggable, editable, hideCardDeleteIcon, customCardLayout, ...otherProps} = this.props
+    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
-    const isDragDisabled = !draggable
     return (
-      <Draggable key={id} draggableId={id} type="card" index={index} isDragDisabled={isDragDisabled} disableInteractiveElementBlocking={true}>
-        {(dragProvided, dragSnapshot) => {
-          const draggablePropsStyle = dragProvided.draggableProps && dragProvided.draggableProps.style
-          const dragStyle = this.getItemStyle(dragSnapshot.isDragging, draggablePropsStyle)
-          return (
-            <span>
-              <MovableCardWrapper
-                key={id}
-                data-id={id}
-                innerRef={dragProvided.innerRef}
-                {...dragProvided.draggableProps}
-                {...dragProvided.dragHandleProps}
-                style={{
-									...dragStyle,
-                  ...style,
-                }}
-                {...otherProps}>
-                {this.renderBody()}
-                {editable && !hideCardDeleteIcon && <DeleteButton onClick={this.removeCard} />}
-              </MovableCardWrapper>
-              {dragProvided.placeholder}
-            </span>
-          )
+      <MovableCardWrapper
+        key={id}
+        data-id={id}
+        style={{
+          ...style
         }}
-      </Draggable>
+        {...otherProps}>
+        {this.renderBody()}
+        {editable && !hideCardDeleteIcon && <DeleteButton onClick={this.removeCard} />}
+      </MovableCardWrapper>
     )
   }
 }

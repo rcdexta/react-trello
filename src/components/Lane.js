@@ -3,21 +3,13 @@ import PropTypes from 'prop-types'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
-import {Droppable} from 'react-beautiful-dnd'
+import {Container, Draggable} from 'react-smooth-dnd'
 import uuidv1 from 'uuid/v1'
 
 import Loader from './Loader'
 import Card from './Card'
 import NewCard from './NewCard'
-import {
-  AddCardLink,
-  LaneFooter,
-  LaneHeader,
-  RightContent,
-  ScrollableLane,
-  Section,
-  Title
-} from '../styles/Base'
+import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
 
 import * as laneActions from '../actions/LaneActions'
 import {CollapseBtn, ExpandBtn} from '../styles/Elements'
@@ -88,6 +80,7 @@ class Lane extends Component {
     const {onCardClick} = this.props
     onCardClick && onCardClick(card.id, card.metadata, card.laneId)
     e.stopPropagation()
+    e.preventDefault()
   }
 
   showEditableCard = () => {
@@ -129,33 +122,71 @@ class Lane extends Component {
     }
   }
 
+  onDragStart = (index, payload) => {
+    const {handleDragStart} = this.props
+    handleDragStart && handleDragStart(payload.id, payload.laneId)
+  }
+
+  onDragEnd = (laneId, result) => {
+    const {handleDragEnd} = this.props
+    const {addedIndex, payload} = result
+    if (addedIndex != null) {
+      this.props.actions.moveCardAcrossLanes({
+        fromLaneId: payload.laneId,
+        toLaneId: laneId,
+        cardId: payload.id,
+        index: addedIndex
+      })
+      handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex)
+    }
+  }
+
   renderDragContainer = isDraggingOver => {
-    const {laneSortFunction, editable, hideCardDeleteIcon, tagStyle, cardStyle, draggable, cards} = this.props
+    const {
+      laneSortFunction,
+      editable,
+      hideCardDeleteIcon,
+      tagStyle,
+      cardStyle,
+      draggable,
+      droppable,
+      cards,
+      id
+    } = this.props
     const {addCardMode, collapsed} = this.state
 
     const showableCards = collapsed ? [] : cards
 
-    const cardList = this.sortCards(showableCards, laneSortFunction).map((card, idx) => (
-      <Card
-        key={card.id}
-        index={idx}
-        customCardLayout={this.props.customCardLayout}
-        customCard={this.props.children}
-        tagStyle={tagStyle}
-        cardStyle={cardStyle}
-        removeCard={this.removeCard}
-        onClick={e => this.handleCardClick(e, card)}
-        onDelete={this.props.onCardDelete}
-        draggable={draggable}
-        editable={editable}
-        hideCardDeleteIcon={hideCardDeleteIcon}
-        {...card}
-      />
-    ))
+    const cardList = this.sortCards(showableCards, laneSortFunction).map((card, idx) => {
+      const cardToRender = (
+        <Card
+          key={card.id}
+          index={idx}
+          customCardLayout={this.props.customCardLayout}
+          customCard={this.props.children}
+          tagStyle={tagStyle}
+          cardStyle={cardStyle}
+          removeCard={this.removeCard}
+          onClick={e => this.handleCardClick(e, card)}
+          onDelete={this.props.onCardDelete}
+          editable={editable}
+          hideCardDeleteIcon={hideCardDeleteIcon}
+          {...card}
+        />
+      )
+      return draggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span>{cardToRender}</span>
+    })
 
     return (
       <ScrollableLane innerRef={this.laneDidMount} isDraggingOver={isDraggingOver}>
-        <span>{cardList}</span>
+        <Container
+          groupName="TrelloLane"
+          onDragStart={this.onDragStart}
+          onDrop={e => this.onDragEnd(id, e)}
+          shouldAcceptDrop={() => droppable}
+          getChildPayload={index => this.props.getCardDetails(id, index)}>
+          {cardList}
+        </Container>
         {editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>
@@ -171,9 +202,7 @@ class Lane extends Component {
       const {title, label, titleStyle, labelStyle} = this.props
       return (
         <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
-          <Title style={titleStyle}>
-            {title}
-          </Title>
+          <Title style={titleStyle}>{title}</Title>
           {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
@@ -188,9 +217,7 @@ class Lane extends Component {
     const {collapsibleLanes, cards} = this.props
     const {collapsed} = this.state
     if (collapsibleLanes && cards.length > 0) {
-        return <LaneFooter onClick={this.toggleLaneCollapsed}>
-          {collapsed ? <ExpandBtn/> : <CollapseBtn/>}
-        </LaneFooter>
+      return <LaneFooter onClick={this.toggleLaneCollapsed}>{collapsed ? <ExpandBtn /> : <CollapseBtn />}</LaneFooter>
     }
   }
 
@@ -200,33 +227,14 @@ class Lane extends Component {
 
   render() {
     const {loading} = this.state
-    const {id, onLaneClick, index, droppable, ...otherProps} = this.props
-    const isDropDisabled = !droppable
+    const {id, onLaneClick, ...otherProps} = this.props
     return (
-      <Droppable
-        droppableId={id}
-        type="card"
-        index={index}
-        isDropDisabled={isDropDisabled}
-        ignoreContainerClipping={false}>
-        {(dropProvided, dropSnapshot) => {
-          const isDraggingOver = dropSnapshot.isDraggingOver
-          return (
-            <Section
-              {...otherProps}
-              key={id}
-              onClick={() => onLaneClick && onLaneClick(id)}
-              innerRef={dropProvided.innerRef}
-              isDraggingOver={isDraggingOver}
-              {...dropProvided.draggableProps}>
-              {this.renderHeader()}
-              {this.renderDragContainer(isDraggingOver)}
-              {loading && <Loader />}
-              {this.renderFooter()}
-            </Section>
-          )
-        }}
-      </Droppable>
+      <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false}>
+        {this.renderHeader()}
+        {this.renderDragContainer(false)}
+        {loading && <Loader />}
+        {this.renderFooter()}
+      </Section>
     )
   }
 }
