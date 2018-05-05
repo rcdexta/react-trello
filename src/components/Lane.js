@@ -19,7 +19,8 @@ class Lane extends Component {
     loading: false,
     currentPage: this.props.currentPage,
     addCardMode: false,
-    collapsed: false
+    collapsed: false,
+    isDraggingOver: false
   }
 
   handleScroll = evt => {
@@ -183,6 +184,8 @@ class Lane extends Component {
           groupName="TrelloLane"
           onDragStart={this.onDragStart}
           onDrop={e => this.onDragEnd(id, e)}
+          onDragEnter={() => this.setState({isDraggingOver: true})}
+          onDragLeave={() => this.setState({isDraggingOver: false})}
           shouldAcceptDrop={() => droppable}
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
@@ -226,12 +229,12 @@ class Lane extends Component {
   }
 
   render() {
-    const {loading} = this.state
+    const {loading, isDraggingOver} = this.state
     const {id, onLaneClick, ...otherProps} = this.props
     return (
       <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false}>
         {this.renderHeader()}
-        {this.renderDragContainer(false)}
+        {this.renderDragContainer(isDraggingOver)}
         {loading && <Loader />}
         {this.renderFooter()}
       </Section>

@@ -65,7 +65,7 @@ export const ScrollableLane = styled.div`
 	min-width: 250px;
 	overflow-x: hidden;
 	align-self: center;
-	height: 100%;
+	max-height: 90vh;
 	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
 	margin-top: 10px;
 	flex-direction: column;

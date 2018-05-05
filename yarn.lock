@@ -5746,10 +5746,6 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-memoize-one@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-3.1.1.tgz#ef609811e3bc28970eac2884eece64d167830d17"
-
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
@@ -6540,10 +6536,6 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-performance-now@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
-
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -7047,16 +7039,6 @@ radium@^0.19.0:
     inline-style-prefixer "^2.0.5"
     prop-types "^15.5.8"
 
-raf-schd@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-2.1.1.tgz#0b59964cee2e96b7dd46ffaeb5c08740f3a5e7ab"
-
-raf@^3.1.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.0.tgz#a28876881b4bc2ca9117d4138163ddb80f781575"
-  dependencies:
-    performance-now "^2.1.0"
-
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -7103,21 +7085,6 @@ react-addons-create-fragment@^15.5.3:
 react-addons-test-utils@^15.5.1:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.0.tgz#062d36117fe8d18f3ba5e06eb33383b0b85ea5b9"
-
-react-beautiful-dnd@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/react-beautiful-dnd/-/react-beautiful-dnd-7.1.0.tgz#f78b4b47c557fba7ca3c4ae399c3b9621c92dc50"
-  dependencies:
-    babel-runtime "^6.26.0"
-    memoize-one "^3.1.1"
-    prop-types "^15.6.0"
-    raf-schd "^2.1.1"
-    react-motion "^0.5.2"
-    react-redux "^5.0.6"
-    redux "^3.7.2"
-    redux-thunk "^2.2.0"
-    reselect "^3.0.1"
-    tiny-invariant "^0.0.3"
 
 react-docgen@^2.15.0:
   version "2.17.0"
@@ -7203,15 +7170,7 @@ react-modal@^2.3.2:
     exenv "^1.2.0"
     prop-types "^15.5.10"
 
-react-motion@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
-  dependencies:
-    performance-now "^0.2.0"
-    prop-types "^15.5.8"
-    raf "^3.1.0"
-
-react-redux@^5.0.3, react-redux@^5.0.6:
+react-redux@^5.0.3:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"
   dependencies:
@@ -7443,10 +7402,6 @@ redux-logger@^3.0.6:
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
   dependencies:
     deep-diff "^0.3.5"
-
-redux-thunk@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
 
 redux@^3.6.0, redux@^3.7.2:
   version "3.7.2"
@@ -7687,10 +7642,6 @@ require-uncached@^1.0.3:
   dependencies:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
-
-reselect@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
 
 resolve-dir@^0.1.0:
   version "0.1.1"
@@ -8502,10 +8453,6 @@ timers-browserify@^2.0.2:
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.4.tgz#96ca53f4b794a5e7c0e1bd7cc88a372298fa01e6"
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-invariant@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-0.0.3.tgz#4c7283c950e290889e9e94f64d3586ec9156cf44"
 
 tmp@^0.0.29:
   version "0.0.29"

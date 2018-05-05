@@ -71,12 +71,12 @@ class BoardContainer extends Component {
     handleLaneDragEnd(payload.id, addedIndex)
   }
 
-  getLaneDetails = (index) => {
+  getLaneDetails = index => {
     return this.props.reducerData.lanes[index]
   }
 
   render() {
-    const {reducerData, style, ...otherProps} = this.props
+    const {reducerData, draggable, style, ...otherProps} = this.props
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
@@ -105,23 +105,23 @@ class BoardContainer extends Component {
           orientation="horizontal"
           onDragStart={this.onDragStart}
           onDrop={this.onLaneDrop}
+          lockAxis={'x'}
           getChildPayload={index => this.getLaneDetails(index)}
           groupName="TrelloBoard">
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
-            return (
-              <Draggable key={lane.id}>
-                <Lane
-                  key={id}
-                  id={id}
-                  getCardDetails={this.getCardDetails}
-                  index={index}
-                  droppable={droppable === undefined ? true : droppable}
-                  {...otherProps}
-                  {...passthroughProps}
-                />
-              </Draggable>
+            const laneToRender = (
+              <Lane
+                key={id}
+                id={id}
+                getCardDetails={this.getCardDetails}
+                index={index}
+                droppable={droppable === undefined ? true : droppable}
+                {...otherProps}
+                {...passthroughProps}
+              />
             )
+            return draggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span>{laneToRender}</span>
           })}
         </Container>
       </BoardDiv>
