@@ -1,25 +1,36 @@
 # react-trello
 
-Pluggable components to add a trello like kanban board to your application
+Pluggable components to add a trello-like kanban board to your application
 
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 [![npm version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 
+ [Demo]( https://rcdexta.github.io/react-trello/)
+
 ## Features
 
-![alt tag](https://github.com/rcdexta/react-trello/raw/master/react-trello.gif)
+![alt tag](https://raw.githubusercontent.com/rcdexta/react-trello/master/react-trello.gif)
 
 * responsive and extensible
 * easily pluggable into existing application
 * supports pagination when scrolling individual lanes
-* drag-and-drop within and across lanes (compatible with touch devices)
+* drag-and-drop cards and lanes (compatible with touch devices)
 * event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
 * edit functionality to add/delete cards
+* Parameterised templates to customize lane and card appearance
 
 ## Getting Started
 
+Install using npm or yarn 
+
+```bash
+$ npm install --save react-trello
 ```
-npm install --save react-trello
+
+or
+
+```bash
+$ yarn add react-trello
 ```
 
 ## Usage
@@ -48,7 +59,7 @@ const data = {
 }
 ```
 
-The data is fed to the board component and that's it.
+The data is passed to the board component and that's it.
 
 ```jsx
 import React from 'react'
@@ -63,7 +74,7 @@ export default class App extends React.Component {
 
 Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello/
 
-Also please refer to this sample project that uses react-trello for usage: https://github.com/rcdexta/react-trello-example
+Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
 
 ## Documentation
 
@@ -71,29 +82,31 @@ Also please refer to this sample project that uses react-trello for usage: https
 
 This is the container component that encapsulates the lanes and cards
 
-| Name                  | Type     | Description                              |
-| --------------------- | -------- | ---------------------------------------- |
-| draggable             | boolean  | Makes all cards in the lanes draggable. Default: false |
-| collapsibleLanes      | boolean  | Make the lanes with cards collapsible. Default: false |
-| editable              | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false |
-| handleDragStart       | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
-| handleDragEnd         | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)` |
-| onLaneScroll          | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
-| onCardClick           | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
-| onCardAdd             | function | Called when a new card is added: `onCardAdd(card, laneId) ` |
-| addCardLink           | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable) |
-| newCardTemplate       | node     | Pass a custom new card template to add new cards to a lane (when board is editable) |
-| hideCardDeleteIcon    | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable) |
-| onCardDelete          | function | Called when a card is deleted: `onCardDelete(cardId, laneId) ` |
-| onLaneClick           | function | Called when a lane is clicked: `onLaneClick(laneId) `. Card clicks are not propagated to lane click event |
-| laneSortFunction      | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
-| eventBusHandle        | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
-| onDataChange          | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
-| style                 | object   | Pass css style props to board container  |
-| customCardLayout      | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board |
-| customLaneHeader      | element  | Pass custom lane header as react component to modify appearance |
-| data                  | object   | Actual board data in the form of json    |
-| tagStyle              | object   | If cards have tags, use this prop to modify their style |
+| Name                | Type     | Description                                                  |
+| ------------------- | -------- | ------------------------------------------------------------ |
+| draggable           | boolean  | Makes all cards in the lanes draggable. Default: false       |
+| collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false        |
+| editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false |
+| handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
+| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)` |
+| handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)` |
+| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)` |
+| onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
+| onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
+| onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId) `  |
+| addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable) |
+| newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable) |
+| hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable) |
+| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId) ` |
+| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId) `. Card clicks are not propagated to lane click event |
+| laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
+| eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
+| onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
+| style               | object   | Pass css style props to board container                      |
+| customCardLayout    | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board |
+| customLaneHeader    | element  | Pass custom lane header as react component to modify appearance |
+| data                | object   | Actual board data in the form of json                        |
+| tagStyle            | object   | If cards have tags, use this prop to modify their style      |
 
 Refer to `stories` folder for examples on many more options for customization.
 
