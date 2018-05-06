@@ -17,7 +17,6 @@ export const BoardDiv = styled.div`
   background-color: #23719f;
   overflow-y: hidden;
   padding: 5px;
-  font: 14px/18px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: #393939;
   display: flex;
   flex-direction: row;
@@ -120,6 +119,7 @@ export const CardRightContent = styled(RightContent)`
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
+  white-space: normal;
 `
 
 export const Footer = styled.div`

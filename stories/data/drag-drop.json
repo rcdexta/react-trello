@@ -46,9 +46,10 @@
       ]
     },
     {
-      "id": "BLOCKED",
-      "title": "Blocked (Droppable)",
+      "id": "COMPLETED",
+      "title": "Completed (Droppable)",
       "label": "0/0",
+      "style": {"width": 280},
       "cards": []
     }
   ]
