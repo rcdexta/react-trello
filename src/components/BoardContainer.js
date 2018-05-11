@@ -121,7 +121,7 @@ class BoardContainer extends Component {
                 {...passthroughProps}
               />
             )
-            return draggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span>{laneToRender}</span>
+            return draggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
           })}
         </Container>
       </BoardDiv>

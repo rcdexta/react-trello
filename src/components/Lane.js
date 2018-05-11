@@ -178,7 +178,7 @@ class Lane extends Component {
           {...card}
         />
       )
-      return draggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span>{cardToRender}</span>
+      return draggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
     })
 
     return (
