@@ -8,6 +8,11 @@ import logger from 'redux-logger'
 const middlewares = process.env.NODE_ENV === 'development' ? [logger] : []
 
 export default class Board extends Component {
+  constructor() {
+    super()
+
+    this.store = this.getStore();
+  }
 
   getStore = () => {
     //When you create multiple boards, unique stores are created for isolation
@@ -16,7 +21,7 @@ export default class Board extends Component {
 
   render() {
     return (
-      <Provider store={this.getStore()}>
+      <Provider store={this.store}>
         <BoardContainer {...this.props} />
       </Provider>
     )
