@@ -73,10 +73,6 @@ class Lane extends Component {
     this.props.actions.removeCard({laneId: laneId, cardId: cardId})
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return !isEqual(this.props.cards, nextProps.cards) || nextState !== this.state
-  }
-
   handleCardClick = (e, card) => {
     const {onCardClick} = this.props
     onCardClick && onCardClick(card.id, card.metadata, card.laneId)
