@@ -30,6 +30,8 @@ class BoardContainer extends Component {
               cardId: event.cardId,
               index: event.index
             })
+          case 'UPDATE_LANES':
+            return actions.updateLanes(event.lanes)
         }
       }
     }

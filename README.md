@@ -129,6 +129,9 @@ eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "M1"})
 //To move a card from one lane to another. index specifies the position to move the card to in the target lane
 eventBus.publish({type: 'MOVE_CARD', fromLaneId: 'PLANNED', toLaneId: 'WIP', cardId: 'Plan3', index: 0})
 
+//To update the lanes
+eventBus.publish({type: 'UPDATE_LANES', lanes: newLaneData})
+
 <Board data={data} eventBusHandle={setEventBus}/>
 ```
 
