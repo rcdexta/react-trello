@@ -64,6 +64,7 @@ class BoardContainer extends Component {
 
   onDragStart = (index, payload) => {
     const {handleLaneDragStart} = this.props
+    payload = payload || index.payload
     handleLaneDragStart(payload.id)
   }
 
