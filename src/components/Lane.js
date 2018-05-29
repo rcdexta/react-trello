@@ -119,7 +119,7 @@ class Lane extends Component {
     }
   }
 
-  onDragStart = (index, payload) => {
+  onDragStart = ({payload}) => {
     const {handleDragStart} = this.props
     handleDragStart && handleDragStart(payload.id, payload.laneId)
   }

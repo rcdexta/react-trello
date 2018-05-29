@@ -62,7 +62,7 @@ class BoardContainer extends Component {
     return this.props.reducerData.lanes.find(lane => lane.id === laneId).cards[cardIndex]
   }
 
-  onDragStart = (index, payload) => {
+  onDragStart = ({payload}) => {
     const {handleLaneDragStart} = this.props
     handleLaneDragStart(payload.id)
   }
