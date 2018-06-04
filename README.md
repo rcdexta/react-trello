@@ -5,7 +5,7 @@ Pluggable components to add a trello-like kanban board to your application
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 [![npm version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 
- [Demo]( https://rcdexta.github.io/react-trello/)
+[Demo](https://rcdexta.github.io/react-trello/)
 
 ## Features
 
@@ -21,7 +21,7 @@ Pluggable components to add a trello-like kanban board to your application
 
 ## Getting Started
 
-Install using npm or yarn 
+Install using npm or yarn
 
 ```bash
 $ npm install --save react-trello
@@ -46,7 +46,7 @@ const data = {
       label: '2/2',
       cards: [
         {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins'},
-	    {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
+        {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
       ]
     },
     {
@@ -66,9 +66,9 @@ import React from 'react'
 import Board from 'react-trello'
 
 export default class App extends React.Component {
-	render() {
-		return  <Board data={data} />
-	}
+  render() {
+    return <Board data={data} />
+  }
 }
 ```
 
@@ -82,31 +82,33 @@ Also refer to the sample project that uses react-trello as illustration: https:/
 
 This is the container component that encapsulates the lanes and cards
 
-| Name                | Type     | Description                                                  |
-| ------------------- | -------- | ------------------------------------------------------------ |
-| draggable           | boolean  | Makes all cards in the lanes draggable. Default: false       |
-| collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false        |
-| editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false |
-| handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)` |
-| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)` |
-| handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)` |
-| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)` |
-| onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)` |
-| onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId) ` |
-| onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId) `  |
-| addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable) |
-| newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable) |
-| hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable) |
-| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId) ` |
-| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId) `. Card clicks are not propagated to lane click event |
-| laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)` |
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| draggable           | boolean  | Makes all cards and lanes draggable. Default: false                                                                            |
+| laneDraggable       | boolean  | Set to false to disable lane dragging. Default: true                                                                           |
+| cardDraggable       | boolean  | Set to false to disable card dragging. Default: true                                                                           |
+| collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
+| editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
+| handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
+| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)`                 |
+| handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
+| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)`                                      |
+| onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
+| onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
+| onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
+| addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
+| newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
+| hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
+| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
+| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
+| laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
-| onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)` |
-| style               | object   | Pass css style props to board container                      |
-| customCardLayout    | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board |
-| customLaneHeader    | element  | Pass custom lane header as react component to modify appearance |
-| data                | object   | Actual board data in the form of json                        |
-| tagStyle            | object   | If cards have tags, use this prop to modify their style      |
+| onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
+| style               | object   | Pass css style props to board container                                                                                        |
+| customCardLayout    | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
+| customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
+| data                | object   | Actual board data in the form of json                                                                                          |
+| tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
 
 Refer to `stories` folder for examples on many more options for customization.
 
@@ -143,7 +145,7 @@ You can completely customize the look-and-feel of each card in any lane by passi
 
 ```javascript
 <Board data={data} customCardLayout>
-      <CustomCard />
+  <CustomCard />
 </Board>
 ```
 
@@ -156,18 +158,24 @@ const CustomCard = props => {
   return (
     <div>
       <header
-        style={{borderBottom: '1px solid #eee', paddingBottom: 6, marginBottom: 10,
-    		 display: 'flex', flexDirection: 'row', justifyContent: 'space-between',
-			color: props.cardColor
-        }}
-      >
-        <div style={{ fontSize: 14, fontWeight: 'bold' }}>{props.name}</div>
-        <div style={{ fontSize: 11 }}>{props.dueOn}</div>
+        style={{
+          borderBottom: '1px solid #eee',
+          paddingBottom: 6,
+          marginBottom: 10,
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          color: props.cardColor
+        }}>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.name}</div>
+        <div style={{fontSize: 11}}>{props.dueOn}</div>
       </header>
-      <div style={{ fontSize: 12, color: '#BD3B36' }}>
-        <div style={{ color: '#4C4C4C', fontWeight: 'bold' }}>{props.subTitle}</div>
-        <div style={{ padding: '5px 0px' }}><i>{props.body}</i></div>
-        <div style={{ marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold' }}>
+      <div style={{fontSize: 12, color: '#BD3B36'}}>
+        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{props.subTitle}</div>
+        <div style={{padding: '5px 0px'}}>
+          <i>{props.body}</i>
+        </div>
+        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
           {props.escalationText}
         </div>
       </div>
@@ -176,35 +184,35 @@ const CustomCard = props => {
 }
 
 const data = {
-    lanes: [
-      {
-        id: 'lane1',
-        title: 'Planned Tasks',
-        cards: [
-          {
-            id: 'Card1',
-            name: 'John Smith',
-            dueOn: 'due in a day',
-            subTitle: 'SMS received at 12:13pm today',
-            body: 'Thanks. Please schedule me for an estimate on Monday.',
-            escalationText: 'Escalated to OPS-ESCALATIONS!',
-            cardColor: '#BD3B36',
-            cardStyle: { borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15 }
-          },
-          {
-            id: 'Card2',
-            name: 'Card Weathers',
-            dueOn: 'due now',
-            subTitle: 'Email received at 1:14pm',
-            body: 'Is the estimate free, and can someone call me soon?',
-            escalationText: 'Escalated to Admin',
-            cardColor: '#E08521',
-            cardStyle: { borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15 }
-          }
-        ]
-      }
-    ]
-  }
+  lanes: [
+    {
+      id: 'lane1',
+      title: 'Planned Tasks',
+      cards: [
+        {
+          id: 'Card1',
+          name: 'John Smith',
+          dueOn: 'due in a day',
+          subTitle: 'SMS received at 12:13pm today',
+          body: 'Thanks. Please schedule me for an estimate on Monday.',
+          escalationText: 'Escalated to OPS-ESCALATIONS!',
+          cardColor: '#BD3B36',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15}
+        },
+        {
+          id: 'Card2',
+          name: 'Card Weathers',
+          dueOn: 'due now',
+          subTitle: 'Email received at 1:14pm',
+          body: 'Is the estimate free, and can someone call me soon?',
+          escalationText: 'Escalated to Admin',
+          cardColor: '#E08521',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15}
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## Editable Board
@@ -231,18 +239,19 @@ yarn run storybook
 
 ### Scripts
 
-1. `npm run lint` : Lint all js files
-2. `npm run lintfix` : fix linting errors of all js files
-3. `npm run semantic-release` : make a release. Leave it for CI to do.
-4. `npm run storybook`: Start developing by using storybook
-5. `npm run test` : Run tests. tests file should be written as `*.test.js` and using ES2015
-6. `npm run test:watch` : Watch tests while writing
-7. `npm run test:cover` : Show coverage report of your tests
-8. `npm run test:report` : Report test coverage to codecov.io. Leave this for CI
-9. `npm run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
+1.  `npm run lint` : Lint all js files
+2.  `npm run lintfix` : fix linting errors of all js files
+3.  `npm run semantic-release` : make a release. Leave it for CI to do.
+4.  `npm run storybook`: Start developing by using storybook
+5.  `npm run test` : Run tests. tests file should be written as `*.test.js` and using ES2015
+6.  `npm run test:watch` : Watch tests while writing
+7.  `npm run test:cover` : Show coverage report of your tests
+8.  `npm run test:report` : Report test coverage to codecov.io. Leave this for CI
+9.  `npm run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
 10. `npm run docs`: create static build of storybook in `docs` directory that can be used for github pages
 
 Learn how to write stories [here](https://getstorybook.io/docs/basics/writing-stories)
 
 ### License
+
 MIT

@@ -78,7 +78,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {reducerData, draggable, style, ...otherProps} = this.props
+    const {reducerData, draggable, laneDraggable, style, ...otherProps} = this.props
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
@@ -89,6 +89,7 @@ class BoardContainer extends Component {
       'addCardLink',
       'laneSortFunction',
       'draggable',
+      'cardDraggable',
       'collapsibleLanes',
       'editable',
       'hideCardDeleteIcon',
@@ -123,7 +124,11 @@ class BoardContainer extends Component {
                 {...passthroughProps}
               />
             )
-            return draggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
+            return draggable && laneDraggable ? (
+              <Draggable key={lane.id}>{laneToRender}</Draggable>
+            ) : (
+              <span key={lane.id}>{laneToRender}</span>
+            )
           })}
         </Container>
       </BoardDiv>
@@ -156,7 +161,9 @@ BoardContainer.propTypes = {
   newCardTemplate: PropTypes.node,
   customLaneHeader: PropTypes.element,
   style: PropTypes.object,
-  tagStyle: PropTypes.object
+  tagStyle: PropTypes.object,
+  laneDraggable: PropTypes.bool,
+  cardDraggable: PropTypes.bool
 }
 
 BoardContainer.defaultProps = {
@@ -168,7 +175,9 @@ BoardContainer.defaultProps = {
   editable: false,
   hideCardDeleteIcon: false,
   draggable: false,
-  collapsibleLanes: false
+  collapsibleLanes: false,
+  laneDraggable: true,
+  cardDraggable: true
 }
 
 const mapStateToProps = state => {

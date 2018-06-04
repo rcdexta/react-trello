@@ -150,6 +150,7 @@ class Lane extends Component {
       tagStyle,
       cardStyle,
       draggable,
+      cardDraggable,
       cards,
       id
     } = this.props
@@ -174,7 +175,7 @@ class Lane extends Component {
           {...card}
         />
       )
-      return draggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
+      return draggable && cardDraggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
     })
 
     return (
@@ -269,7 +270,8 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
-  editable: PropTypes.bool
+  editable: PropTypes.bool,
+  cardDraggable: PropTypes.bool
 }
 
 Lane.defaultProps = {

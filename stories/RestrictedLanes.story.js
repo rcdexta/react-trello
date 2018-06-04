@@ -17,3 +17,16 @@ storiesOf('Drag-n-Drop', module).add(
     )
   })
 )
+
+storiesOf('Drag-n-Drop', module).add(
+  'Drag Cards not Lanes',
+  withInfo('Use props to disable dragging lanes but enable card dragging')(() => {
+    return (
+      <Board
+        data={data}
+        draggable
+        laneDraggable={false}
+      />
+    )
+  })
+)
