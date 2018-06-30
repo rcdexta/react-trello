@@ -138,7 +138,7 @@ class Lane extends Component {
         cardId: payload.id,
         index: addedIndex
       })
-      handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex)
+      handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload)
     }
   }
 

@@ -90,7 +90,7 @@ This is the container component that encapsulates the lanes and cards
 | collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
-| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)`                 |
+| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
 | handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)`                                      |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |          
