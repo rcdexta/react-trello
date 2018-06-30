@@ -93,6 +93,8 @@ This is the container component that encapsulates the lanes and cards
 | handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
 | handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)`                                      |
+| cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |          
+| laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |          
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |

@@ -78,7 +78,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {reducerData, draggable, laneDraggable, style, ...otherProps} = this.props
+    const {reducerData, draggable, laneDraggable, laneDragClass, style, ...otherProps} = this.props
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
@@ -99,6 +99,7 @@ class BoardContainer extends Component {
       'tagStyle',
       'handleDragStart',
       'handleDragEnd',
+      'cardDragClass',
       'children'
     ])
 
@@ -107,6 +108,7 @@ class BoardContainer extends Component {
         <Container
           orientation="horizontal"
           onDragStart={this.onDragStart}
+          dragClass={laneDragClass}
           onDrop={this.onLaneDrop}
           lockAxis={'x'}
           getChildPayload={index => this.getLaneDetails(index)}
@@ -163,7 +165,9 @@ BoardContainer.propTypes = {
   style: PropTypes.object,
   tagStyle: PropTypes.object,
   laneDraggable: PropTypes.bool,
-  cardDraggable: PropTypes.bool
+  cardDraggable: PropTypes.bool,
+  cardDragClass: PropTypes.string,
+  laneDragClass: PropTypes.string
 }
 
 BoardContainer.defaultProps = {
@@ -177,7 +181,9 @@ BoardContainer.defaultProps = {
   draggable: false,
   collapsibleLanes: false,
   laneDraggable: true,
-  cardDraggable: true
+  cardDraggable: true,
+  cardDragClass: 'react_trello_dragClass',
+  laneDragClass: 'react_trello_dragLaneClass'
 }
 
 const mapStateToProps = state => {

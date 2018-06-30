@@ -32,14 +32,15 @@ class Card extends Component {
   }
 
   render() {
-    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, ...otherProps} = this.props
+    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     return (
       <MovableCardWrapper
         key={id}
         data-id={id}
         style={{
-          ...style
+          ...style,
+          ...dragStyle
         }}
         {...otherProps}>
         {this.renderBody()}
@@ -53,7 +54,8 @@ Card.defaultProps = {
   cardStyle: {},
   customCardLayout: false,
   onDelete: () => {},
-  editable: false
+  editable: false,
+  dragStyle: {}
 }
 
 Card.propTypes = {
@@ -69,6 +71,7 @@ Card.propTypes = {
   onDelete: PropTypes.func,
   metadata: PropTypes.object,
   cardStyle: PropTypes.object,
+  dragStyle: PropTypes.object,
   tagStyle: PropTypes.object,
   customCardLayout: PropTypes.bool,
   customCard: PropTypes.node,

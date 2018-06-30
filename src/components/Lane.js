@@ -124,7 +124,7 @@ class Lane extends Component {
     handleDragStart && handleDragStart(payload.id, payload.laneId)
   }
 
-  shouldAcceptDrop = (sourceContainerOptions) => {
+  shouldAcceptDrop = sourceContainerOptions => {
     return this.props.droppable && sourceContainerOptions.groupName === 'TrelloLane'
   }
 
@@ -152,6 +152,7 @@ class Lane extends Component {
       draggable,
       cardDraggable,
       cards,
+      cardDragClass,
       id
     } = this.props
     const {addCardMode, collapsed} = this.state
@@ -175,7 +176,11 @@ class Lane extends Component {
           {...card}
         />
       )
-      return draggable && cardDraggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
+      return draggable && cardDraggable ? (
+        <Draggable key={card.id}>{cardToRender}</Draggable>
+      ) : (
+        <span key={card.id}>{cardToRender}</span>
+      )
     })
 
     return (
@@ -183,6 +188,7 @@ class Lane extends Component {
         <Container
           orientation="vertical"
           groupName="TrelloLane"
+          dragClass={cardDragClass}
           onDragStart={this.onDragStart}
           onDrop={e => this.onDragEnd(id, e)}
           onDragEnter={() => this.setState({isDraggingOver: true})}
@@ -271,7 +277,8 @@ Lane.propTypes = {
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
   editable: PropTypes.bool,
-  cardDraggable: PropTypes.bool
+  cardDraggable: PropTypes.bool,
+  cardDragClass: PropTypes.string
 }
 
 Lane.defaultProps = {
