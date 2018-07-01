@@ -78,7 +78,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {reducerData, draggable, laneDraggable, laneDragClass, style, ...otherProps} = this.props
+    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, ...otherProps} = this.props
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
@@ -112,7 +112,7 @@ class BoardContainer extends Component {
           onDrop={this.onLaneDrop}
           lockAxis={'x'}
           getChildPayload={index => this.getLaneDetails(index)}
-          groupName="TrelloBoard">
+          groupName={`TrelloBoard${id}`}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
             const laneToRender = (
@@ -139,6 +139,7 @@ class BoardContainer extends Component {
 }
 
 BoardContainer.propTypes = {
+  id: PropTypes.string,
   actions: PropTypes.object,
   data: PropTypes.object.isRequired,
   reducerData: PropTypes.object,
