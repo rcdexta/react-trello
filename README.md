@@ -225,7 +225,7 @@ Check out the [editable board story](https://rcdexta.github.io/react-trello/?sel
 
 ## Compatible Browsers
 
-Tested to work with following browsers using [Browserling[(https://www.browserling.com/):
+Tested to work with following browsers using [Browserling](https://www.browserling.com/):
 
 * Chrome 60 or above
 * Firefox 52 or above
