@@ -227,11 +227,11 @@ Check out the [editable board story](https://rcdexta.github.io/react-trello/?sel
 
 Tested to work with following browsers using [Browserling[(https://www.browserling.com/):
 
-Chrome 60 or above
-Firefox 52 or above
-Opera 51 or above
-Safari 4.0 or above
-Microsoft Edge 15 or above
+* Chrome 60 or above
+* Firefox 52 or above
+* Opera 51 or above
+* Safari 4.0 or above
+* Microsoft Edge 15 or above
 
 ## Feature Wishlist
 
