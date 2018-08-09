@@ -107,11 +107,12 @@ class Lane extends Component {
   }
 
   renderNewCard = () => {
-    const {newCardTemplate} = this.props
+    const {newCardTemplate, id} = this.props
     if (newCardTemplate) {
       const newCardWithProps = React.cloneElement(newCardTemplate, {
         onCancel: this.hideEditableCard,
-        onAdd: this.addNewCard
+        onAdd: this.addNewCard,
+        laneId: id
       })
       return <span>{newCardWithProps}</span>
     } else {
