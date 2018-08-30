@@ -6,7 +6,7 @@ import boardReducer from '../reducers/BoardReducer'
 import logger from 'redux-logger'
 import uuidv1 from "uuid/v1"
 
-const middlewares = process.env.NODE_ENV === 'development' ? [logger] : []
+const middlewares = process.env.REDUX_LOGGING ? [logger] : []
 
 export default class Board extends Component {
   constructor() {

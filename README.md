@@ -93,8 +93,8 @@ This is the container component that encapsulates the lanes and cards
 | handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
 | handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)`                                      |
-| cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |          
-| laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |          
+| cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
+| laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
@@ -238,6 +238,10 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * the prop `onDataChange` is a catch all callback that returns the entire board data when anything changes on the board. Micro-events like when a card is added or re-arranged should be possible too
 
 Check the Milestones for this project to track when the above features will be implemented.
+
+## Logging
+
+Pass environment variable `REDUX_LOGGING` as true to enable Redux logging in any environment
 
 ## Development
 
