@@ -6,8 +6,8 @@ import {BoardDiv} from '../styles/Base'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import Lane from './Lane'
-import {Container, Draggable} from 'react-smooth-dnd'
-
+import Container from '../dnd/Container'
+import Draggable from '../dnd/Draggable'
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
 
