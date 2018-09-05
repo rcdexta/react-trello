@@ -198,6 +198,7 @@ var Lane = function (_Component) {
         });
         handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload);
       }
+      _this.setState({ isDraggingOver: false });
     }, _this.renderDragContainer = function (isDraggingOver) {
       var _this$props = _this.props,
           laneSortFunction = _this$props.laneSortFunction,

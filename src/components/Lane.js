@@ -144,6 +144,7 @@ class Lane extends Component {
       })
       handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload)
     }
+    this.setState({isDraggingOver: false});
   }
 
   renderDragContainer = isDraggingOver => {
