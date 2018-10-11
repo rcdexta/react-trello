@@ -31,11 +31,6 @@ class RealtimeBoard extends Component {
         })
     }
 
-    modifyLaneTitle = () => {
-        const data = this.state.boardData
-        const newData = update(data, {lanes: {1: {title: {$set: 'New Lane Title'}}}})
-        this.setState({boardData: newData})
-    }
 
     modifyLaneTitle = () => {
         const data = this.state.boardData
