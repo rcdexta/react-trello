@@ -1,8 +1,18 @@
 {
   "presets": [
-    "es2015",
-    "stage-0",
-    "react"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ],
+    "@babel/react"
   ],
-  "plugins": ["transform-object-rest-spread", "transform-runtime"]
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-async-to-generator",
+    "@babel/plugin-transform-runtime"
+  ]
 }
