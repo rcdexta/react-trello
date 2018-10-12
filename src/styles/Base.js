@@ -22,7 +22,7 @@ injectGlobal`
 `
 
 export const BoardDiv = styled.div`
-  background-color: #23719f;
+  background-color: #3179BA;
   overflow-y: hidden;
   padding: 5px;
   color: #393939;
@@ -162,4 +162,29 @@ export const AddCardLink = styled.a`
     color: #4d4d4d;
     text-decoration: underline;
   }
+`
+
+export const LaneTitle = styled.div`
+  font-size: 15px;
+  width:268px;
+  height: auto;
+`
+
+export const LaneSection = styled.section`
+  background-color: #2B6AA3;
+  border-radius: 3px;
+  margin: 5px ;
+  position: relative;
+  padding: 5px;
+  display: inline-flex;
+  height: auto;
+  flex-direction: column;
+`
+
+export const NewLaneSection = styled(LaneSection)`
+  background-color: #E0E3E6;
+`
+
+export const NewLaneButtons = styled.div`
+  margin-top: 10px;
 `

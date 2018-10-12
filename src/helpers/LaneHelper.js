@@ -1,4 +1,5 @@
 import update from 'immutability-helper'
+import uuidv1 from 'uuid/v1'
 
 const LaneHelper = {
   initialiseLanes: (state, {lanes}) => {
@@ -38,6 +39,11 @@ const LaneHelper = {
   appendCardToLane: (state, {laneId, card, index}) => {
     const newLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card], index})
     return update(state, {lanes: {$set: newLanes}})
+  },
+
+  addLane: (state, lane) => {
+    const newLane = {...lane, id: uuidv1(), cards: []}
+    return update(state, {lanes: {$push: [newLane]}})
   },
 
   removeCardFromLane: (state, {laneId, cardId}) => {

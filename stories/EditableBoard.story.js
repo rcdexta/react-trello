@@ -5,6 +5,7 @@ import {storiesOf} from '@storybook/react'
 import Board from '../src'
 
 const data = require('./data/base.json')
+const smallData = require('./data/data-sort')
 
 class NewCard extends Component {
   updateField = (field, evt) => {
@@ -78,5 +79,11 @@ storiesOf('Editable Board', module)
     'New Card Template',
     withInfo('Pass a custom new card template to add card')(() => {
       return <Board data={data} editable newCardTemplate={<NewCard />} />
+    })
+  )
+  .add(
+    'Add New Lane',
+    withInfo('Allow adding new lane')(() => {
+      return <Board data={smallData} editable />
     })
   )

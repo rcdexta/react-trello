@@ -19,6 +19,8 @@ const boardReducer = (state = {lanes: []}, action) => {
       return Lh.paginateLane(state, payload)
     case 'MOVE_LANE':
       return Lh.moveLane(state, payload)
+    case 'ADD_LANE':
+      return Lh.addLane(state, payload)
     default:
       return state
   }

@@ -139,3 +139,18 @@ export const CancelButton = styled.button`
   cursor: pointer;
   margin-bottom: 0;
 `
+export const NewLaneButton = styled.button`
+  background: #2B6AA3;
+  border: none; 
+  color: #fff;
+  transition: background 0.3s ease;
+  min-height: 32px;
+  padding: 4px 16px;
+  vertical-align: top;
+  margin-top: 0; 
+  margin-right: 0px; 
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 0;
+`
