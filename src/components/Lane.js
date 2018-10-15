@@ -93,7 +93,7 @@ class Lane extends Component {
     const laneId = this.props.id
     const id = uuidv1()
     this.hideEditableCard()
-    let card = {...params, id}
+    let card = {id, ...params}
     this.props.actions.addCard({laneId, card})
     this.props.onCardAdd(card, laneId)
   }
