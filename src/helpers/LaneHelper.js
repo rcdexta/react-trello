@@ -42,7 +42,7 @@ const LaneHelper = {
   },
 
   addLane: (state, lane) => {
-    const newLane = {...lane, id: uuidv1(), cards: []}
+    const newLane = {id: uuidv1(), cards: [], ...lane}
     return update(state, {lanes: {$push: [newLane]}})
   },
 
