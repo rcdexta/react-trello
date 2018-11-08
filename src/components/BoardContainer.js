@@ -114,7 +114,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, addLaneTitle, editable, ...otherProps} = this.props
+    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
@@ -129,6 +129,7 @@ class BoardContainer extends Component {
       'cardDraggable',
       'collapsibleLanes',
       'editable',
+      'canAddLanes',
       'hideCardDeleteIcon',
       'customCardLayout',
       'customLaneHeader',
@@ -174,15 +175,18 @@ class BoardContainer extends Component {
             );
           })}
         </Container>
-        <Container
-          orientation="horizontal"
-        >
-          {editable && !addLaneMode ? (
-            <LaneSection style={{width: 200}}>
-              <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
-            </LaneSection>
-          ) : (addLaneMode && this.renderNewLane())}
-        </Container>
+        {
+          canAddLanes &&
+          <Container
+            orientation="horizontal"
+          >
+            {editable && !addLaneMode ? (
+              <LaneSection style={{ width: 200 }}>
+                <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
+              </LaneSection>
+            ) : (addLaneMode && this.renderNewLane())}
+          </Container>
+        }
       </BoardDiv>
     );
   }
@@ -205,6 +209,7 @@ BoardContainer.propTypes = {
   draggable: PropTypes.bool,
   collapsibleLanes: PropTypes.bool,
   editable: PropTypes.bool,
+  canAddLanes: PropTypes.bool,
   hideCardDeleteIcon: PropTypes.bool,
   handleDragStart: PropTypes.func,
   handleDragEnd: PropTypes.func,
@@ -230,6 +235,7 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   editable: false,
+  canAddLanes: false,
   hideCardDeleteIcon: false,
   draggable: false,
   collapsibleLanes: false,
