@@ -9,7 +9,7 @@ const data = require('./data/base.json')
 class AsyncBoard extends Component {
   state = {boardData: {lanes: []}}
 
-  async componentWillMount () {
+  async componentDidMount () {
     const response = await this.getBoard()
     this.setState({boardData: response})
   }

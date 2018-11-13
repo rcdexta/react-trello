@@ -15,13 +15,11 @@ import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
 
 class BoardContainer extends Component {
-  //+add 2018.08.23
   state = {
     addLaneMode: false
   }
 
-  //+end
-  componentWillMount() {
+  componentDidMount() {
     const {actions, eventBusHandle} = this.props
     actions.loadBoard(this.props.data)
     if (eventBusHandle) {
@@ -48,8 +46,7 @@ class BoardContainer extends Component {
 
   onLaneDrop = ({removedIndex, addedIndex, payload}) => {
     const {actions, handleLaneDragEnd} = this.props
-    if (removedIndex !== addedIndex) {//  2018.08.22
-      // actions.moveLane({oldIndex: removedIndex, newIndex: addedIndex});
+    if (removedIndex !== addedIndex) {
       handleLaneDragEnd(removedIndex, addedIndex, payload)
     }
   }
@@ -77,12 +74,12 @@ class BoardContainer extends Component {
               toLaneId: event.toLaneId,
               cardId: event.cardId,
               index: event.index
-            });
+            })
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
         }
-      },
-    };
+      }
+    }
     eventBusHandle(eventBus)
   }
 
@@ -109,7 +106,7 @@ class BoardContainer extends Component {
       })
       return <span>{newCardWithProps}</span>
     } else {
-      return <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane}/>
+      return <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} />
     }
   }
 
@@ -142,7 +139,7 @@ class BoardContainer extends Component {
       'addCardTitle',
       'newLaneTemplate',
       'newCardTemplate'
-    ]);
+    ])
 
     return (
       <BoardDiv style={style} {...otherProps} draggable={false}>
@@ -153,8 +150,7 @@ class BoardContainer extends Component {
           onDrop={this.onLaneDrop}
           lockAxis="x"
           getChildPayload={index => this.getLaneDetails(index)}
-          groupName={`TrelloBoard${id}`}
-        >
+          groupName={`TrelloBoard${id}`}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
             const laneToRender = (
@@ -167,28 +163,23 @@ class BoardContainer extends Component {
                 {...otherProps}
                 {...passthroughProps}
               />
-            );
-            return draggable && laneDraggable ? (
-              <Draggable key={lane.id}>{laneToRender}</Draggable>
-            ) : (
-              <span key={lane.id}>{laneToRender}</span>
-            );
+            )
+            return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
           })}
         </Container>
-        {
-          canAddLanes &&
-          <Container
-            orientation="horizontal"
-          >
+        {canAddLanes && (
+          <Container orientation="horizontal">
             {editable && !addLaneMode ? (
-              <LaneSection style={{ width: 200 }}>
+              <LaneSection style={{width: 200}}>
                 <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
               </LaneSection>
-            ) : (addLaneMode && this.renderNewLane())}
+            ) : (
+              addLaneMode && this.renderNewLane()
+            )}
           </Container>
-        }
+        )}
       </BoardDiv>
-    );
+    )
   }
 }
 
@@ -226,7 +217,7 @@ BoardContainer.propTypes = {
   addLaneTitle: PropTypes.string,
   addCardTitle: PropTypes.string,
   newLaneTemplate: PropTypes.node
-};
+}
 
 BoardContainer.defaultProps = {
   onDataChange: () => {},
@@ -245,12 +236,15 @@ BoardContainer.defaultProps = {
   laneDragClass: 'react_trello_dragLaneClass',
   addLaneTitle: '+ Add another lane',
   addCardTitle: 'Add Card'
-};
+}
 
 const mapStateToProps = state => {
   return state.lanes ? {reducerData: state} : {}
-};
+}
 
 const mapDispatchToProps = dispatch => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
 
-export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(BoardContainer)
