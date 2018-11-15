@@ -399,7 +399,7 @@ Lane.propTypes = {
   onCardAdd: _propTypes2.default.func,
   onLaneClick: _propTypes2.default.func,
   newCardTemplate: _propTypes2.default.node,
-  addCardLink: _propTypes2.default.oneOfType(_propTypes2.default.func, _propTypes2.default.node),
+  addCardLink: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.node]),
   editable: _propTypes2.default.bool,
   cardDraggable: _propTypes2.default.bool,
   cardDragClass: _propTypes2.default.string
