@@ -18,10 +18,10 @@ storiesOf('Multiple Boards', module).add(
     return (
       <div style={{display: 'flex', flexDirection: 'column'}}>
         <div style={containerStyles}>
-          <Board data={data1} draggable />
+          <Board id="board1" data={data1} draggable />
         </div>
         <div style={containerStyles}>
-          <Board data={data2} draggable />
+          <Board id="board2" data={data2} draggable />
         </div>
       </div>
     )

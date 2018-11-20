@@ -127,7 +127,12 @@ class Lane extends Component {
   }
 
   shouldAcceptDrop = sourceContainerOptions => {
-    return this.props.droppable && sourceContainerOptions.groupName === 'TrelloLane'
+    return this.props.droppable && sourceContainerOptions.groupName === this.groupName
+  }
+
+  get groupName()  {
+    const {boardId} = this.props
+    return `TrelloBoard${boardId}Lane`
   }
 
   onDragEnd = (laneId, result) => {
@@ -189,7 +194,7 @@ class Lane extends Component {
       <ScrollableLane innerRef={this.laneDidMount} isDraggingOver={isDraggingOver}>
         <Container
           orientation="vertical"
-          groupName="TrelloLane"
+          groupName={this.groupName}
           dragClass={cardDragClass}
           onDragStart={this.onDragStart}
           onDrop={e => this.onDragEnd(id, e)}
@@ -255,6 +260,7 @@ Lane.propTypes = {
   actions: PropTypes.object,
   children: PropTypes.node,
   id: PropTypes.string.isRequired,
+  boardId: PropTypes.string,
   title: PropTypes.node,
   index: PropTypes.number,
   laneSortFunction: PropTypes.func,
