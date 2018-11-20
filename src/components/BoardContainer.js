@@ -110,6 +110,11 @@ class BoardContainer extends Component {
     }
   }
 
+  get groupName() {
+    const {id} = this.props
+    return `TrelloBoard${id}`
+  }
+
   render() {
     const {id, reducerData, draggable, laneDraggable, laneDragClass, style, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
     const {addLaneMode} = this.state
@@ -150,12 +155,13 @@ class BoardContainer extends Component {
           onDrop={this.onLaneDrop}
           lockAxis="x"
           getChildPayload={index => this.getLaneDetails(index)}
-          groupName={`TrelloBoard${id}`}>
+          groupName={this.groupName}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
             const laneToRender = (
               <Lane
                 key={id}
+                boardId={this.groupName}
                 id={id}
                 getCardDetails={this.getCardDetails}
                 index={index}
