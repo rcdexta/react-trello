@@ -160,6 +160,7 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
+      selfEditable=true,
       id
     } = this.props
     const {addCardMode, collapsed} = this.state
@@ -204,7 +205,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && !addCardMode && this.renderAddCardLink()}
+        {editable && selfEditable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>
     )
