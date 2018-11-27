@@ -127,14 +127,14 @@ class Lane extends _react.Component {
     (0, _defineProperty2.default)(this, "renderAddCardLink", () => {
       const addCardLink = this.props.addCardLink;
 
-      if (addCardLink) {
+      if (typeof addCardLink !== 'string') {
         return _react.default.createElement("span", {
           onClick: this.showEditableCard
         }, addCardLink);
       } else {
         return _react.default.createElement(_Base.AddCardLink, {
           onClick: this.showEditableCard
-        }, "Add Card");
+        }, addCardLink);
       }
     });
     (0, _defineProperty2.default)(this, "renderNewCard", () => {
@@ -356,7 +356,8 @@ Lane.defaultProps = {
   label: undefined,
   editable: true,
   boardEditable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  addCardLink: 'Add Card'
 };
 
 const mapDispatchToProps = dispatch => ({

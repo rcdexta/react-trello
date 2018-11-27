@@ -100,10 +100,10 @@ class Lane extends Component {
 
   renderAddCardLink = () => {
     const {addCardLink} = this.props
-    if (addCardLink) {
+    if (typeof addCardLink !== 'string') {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
-      return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
+      return <AddCardLink onClick={this.showEditableCard}>{addCardLink}</AddCardLink>
     }
   }
 
@@ -298,7 +298,8 @@ Lane.defaultProps = {
   label: undefined,
   editable: true,
   boardEditable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  addCardLink: 'Add Card'
 }
 
 const mapDispatchToProps = dispatch => ({

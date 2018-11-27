@@ -5,7 +5,7 @@
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
   "files": ["src", "dist", "README"],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
