@@ -100,10 +100,10 @@ class Lane extends Component {
 
   renderAddCardLink = () => {
     const {addCardLink} = this.props
-    if (addCardLink) {
+    if (typeof addCardLink !== 'string') {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
-      return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
+      return <AddCardLink onClick={this.showEditableCard}>{addCardLink}</AddCardLink>
     }
   }
 
@@ -283,7 +283,10 @@ Lane.propTypes = {
   onCardAdd: PropTypes.func,
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
-  addCardLink: PropTypes.node,
+  addCardLink: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.node
+  ]),
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string
@@ -295,7 +298,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  addCardLink: 'Add Card'
 }
 
 const mapDispatchToProps = dispatch => ({
