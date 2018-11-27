@@ -130,7 +130,7 @@ class Lane extends Component {
     return this.props.droppable && sourceContainerOptions.groupName === this.groupName
   }
 
-  get groupName()  {
+  get groupName() {
     const {boardId} = this.props
     return `TrelloBoard${boardId}Lane`
   }
@@ -160,9 +160,12 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
-      editable=true,
+      editable,
       id
     } = this.props
+
+    const editable = this.props.editable || !this.props.hasOwnProperty('editable')
+
     const {addCardMode, collapsed} = this.state
 
     const showableCards = collapsed ? [] : cards
@@ -303,4 +306,7 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(laneActions, dispatch)
 })
 
-export default connect(null, mapDispatchToProps)(Lane)
+export default connect(
+  null,
+  mapDispatchToProps
+)(Lane)
