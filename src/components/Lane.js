@@ -160,7 +160,7 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
-      editable=true,
+      editable,
       id
     } = this.props
     const {addCardMode, collapsed} = this.state
@@ -295,7 +295,8 @@ Lane.defaultProps = {
   titleStyle: {},
   labelStyle: {},
   label: undefined,
-  editable: false,
+  editable: true,
+  boardEditable: false,
   onCardAdd: () => {}
 }
 
