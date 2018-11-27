@@ -59,7 +59,7 @@ const data = {
 }
 ```
 
-Draggable property of Card object is `true` by default.
+`draggable` property of Card object is `true` by default.
 
 The data is passed to the board component and that's it.
 
