@@ -4,4 +4,3 @@ node_modules
 coverage
 .idea
 npm-debug.log
-dist/
