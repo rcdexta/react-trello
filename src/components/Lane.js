@@ -139,13 +139,16 @@ class Lane extends Component {
     const {handleDragEnd} = this.props
     const {addedIndex, payload} = result
     if (addedIndex != null) {
-      this.props.actions.moveCardAcrossLanes({
-        fromLaneId: payload.laneId,
-        toLaneId: laneId,
-        cardId: payload.id,
-        index: addedIndex
-      })
-      handleDragEnd && handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload)
+      const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload) : true
+      if (response === undefined || !!response) {
+        this.props.actions.moveCardAcrossLanes({
+          fromLaneId: payload.laneId,
+          toLaneId: laneId,
+          cardId: payload.id,
+          index: addedIndex
+        })
+      }
+      return response
     }
   }
 
