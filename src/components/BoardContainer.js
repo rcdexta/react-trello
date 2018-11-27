@@ -171,6 +171,7 @@ class BoardContainer extends Component {
                 droppable={droppable === undefined ? true : droppable}
                 {...otherProps}
                 {...passthroughProps}
+                editable={lane.editable}
               />
             )
             return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
