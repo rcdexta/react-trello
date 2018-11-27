@@ -9,6 +9,7 @@
     "dist",
     "README"
   ],
+  "version": "0.1",
   "scripts": {
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
