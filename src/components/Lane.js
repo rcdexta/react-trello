@@ -130,7 +130,7 @@ class Lane extends Component {
     return this.props.droppable && sourceContainerOptions.groupName === this.groupName
   }
 
-  get groupName()  {
+  get groupName() {
     const {boardId} = this.props
     return `TrelloBoard${boardId}Lane`
   }
@@ -152,7 +152,7 @@ class Lane extends Component {
   renderDragContainer = isDraggingOver => {
     const {
       laneSortFunction,
-      editable,
+      boardEditable,
       hideCardDeleteIcon,
       tagStyle,
       cardStyle,
@@ -160,8 +160,10 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
+      editable,
       id
     } = this.props
+
     const {addCardMode, collapsed} = this.state
 
     const showableCards = collapsed ? [] : cards
@@ -178,12 +180,12 @@ class Lane extends Component {
           removeCard={this.removeCard}
           onClick={e => this.handleCardClick(e, card)}
           onDelete={this.props.onCardDelete}
-          editable={editable}
+          editable={boardEditable}
           hideCardDeleteIcon={hideCardDeleteIcon}
           {...card}
         />
       )
-      return draggable && cardDraggable ? (
+      return draggable && cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
         <Draggable key={card.id}>{cardToRender}</Draggable>
       ) : (
         <span key={card.id}>{cardToRender}</span>
@@ -204,7 +206,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && !addCardMode && this.renderAddCardLink()}
+        {boardEditable && editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>
     )
@@ -297,7 +299,8 @@ Lane.defaultProps = {
   titleStyle: {},
   labelStyle: {},
   label: undefined,
-  editable: false,
+  editable: true,
+  boardEditable: false,
   onCardAdd: () => {},
   addCardLink: 'Add Card'
 }
@@ -306,4 +309,7 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(laneActions, dispatch)
 })
 
-export default connect(null, mapDispatchToProps)(Lane)
+export default connect(
+  null,
+  mapDispatchToProps
+)(Lane)

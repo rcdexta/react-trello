@@ -45,7 +45,7 @@ const data = {
       title: 'Planned Tasks',
       label: '2/2',
       cards: [
-        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins'},
+        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins', draggable: false},
         {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
       ]
     },
@@ -58,6 +58,8 @@ const data = {
   ]
 }
 ```
+
+`draggable` property of Card object is `true` by default.
 
 The data is passed to the board component and that's it.
 
@@ -193,6 +195,17 @@ const data = {
       title: 'Planned Tasks',
       cards: [
         {
+          id: 'Card0',
+          name: 'Template',
+          dueOn: 'Set due date',
+          subTitle: 'Example card',
+          body: 'It is a sample card.',
+          escalationText: 'Text to be shown when escalated',
+          cardColor: 'lightgray',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #D3D3D3', marginBottom: 15},
+          draggable: false
+        },      
+        {
           id: 'Card1',
           name: 'John Smith',
           dueOn: 'due in a day',
@@ -220,7 +233,7 @@ const data = {
 
 ## Editable Board
 
-It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card.
+It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card. You can add `editable` property and set it to `false` to any lane in data, if you don't want to have `Add Card` link for some of the lanes.
 
 Check out the [editable board story](https://rcdexta.github.io/react-trello/?selectedKind=Editable%20Board&selectedStory=Add%2FDelete%20Cards&full=0&down=0&left=1&panelRight=0) and its corresponding [source code](https://github.com/rcdexta/react-trello/blob/master/stories/EditableBoard.story.js) for more details.
 
