@@ -160,7 +160,6 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
-      editable,
       id
     } = this.props
 
