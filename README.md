@@ -45,7 +45,7 @@ const data = {
       title: 'Planned Tasks',
       label: '2/2',
       cards: [
-        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins', notDraggable: true},
+        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins', draggable: false},
         {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
       ]
     },
@@ -58,6 +58,8 @@ const data = {
   ]
 }
 ```
+
+Draggable property of Card object is `true` by default.
 
 The data is passed to the board component and that's it.
 
@@ -192,6 +194,17 @@ const data = {
       id: 'lane1',
       title: 'Planned Tasks',
       cards: [
+        {
+          id: 'Card0',
+          name: 'Template',
+          dueOn: 'Set due date',
+          subTitle: 'Example card',
+          body: 'It is a sample card.',
+          escalationText: 'Text to be shown when escalated',
+          cardColor: 'lightgray',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #D3D3D3', marginBottom: 15},
+          draggable: false
+        },      
         {
           id: 'Card1',
           name: 'John Smith',
