@@ -233,7 +233,7 @@ const data = {
 
 ## Editable Board
 
-It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card. You can add `selfEditable` property and set it to `false` to any lane in data, if you don't want to have `Add Card` link for some of the lanes.
+It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card. You can add `editable` property and set it to `false` to any lane in data, if you don't want to have `Add Card` link for some of the lanes.
 
 Check out the [editable board story](https://rcdexta.github.io/react-trello/?selectedKind=Editable%20Board&selectedStory=Add%2FDelete%20Cards&full=0&down=0&left=1&panelRight=0) and its corresponding [source code](https://github.com/rcdexta/react-trello/blob/master/stories/EditableBoard.story.js) for more details.
 

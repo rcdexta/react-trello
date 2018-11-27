@@ -152,7 +152,7 @@ class Lane extends Component {
   renderDragContainer = isDraggingOver => {
     const {
       laneSortFunction,
-      editable,
+      boardEditable,
       hideCardDeleteIcon,
       tagStyle,
       cardStyle,
@@ -160,7 +160,7 @@ class Lane extends Component {
       cardDraggable,
       cards,
       cardDragClass,
-      selfEditable=true,
+      editable=true,
       id
     } = this.props
     const {addCardMode, collapsed} = this.state
@@ -179,7 +179,7 @@ class Lane extends Component {
           removeCard={this.removeCard}
           onClick={e => this.handleCardClick(e, card)}
           onDelete={this.props.onCardDelete}
-          editable={editable}
+          editable={boardEditable}
           hideCardDeleteIcon={hideCardDeleteIcon}
           {...card}
         />
@@ -205,7 +205,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && selfEditable && !addCardMode && this.renderAddCardLink()}
+        {boardEditable && editable && !addCardMode && this.renderAddCardLink()}
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>
     )
