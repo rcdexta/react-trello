@@ -1,7 +1,7 @@
 {
   "name": "react-trello-new",
   "description": "Pluggable components to add a trello like kanban board to your application",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
   "files": [
@@ -26,19 +26,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rcdexta/react-trello"
+    "url": "https://github.com/ahmetcetin/react-trello"
   },
   "keywords": [
     "react",
     "trello",
     "board"
   ],
-  "author": "RC, Prakash",
+  "author": "RC, Prakash, Ahmet Cetin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rcdexta/react-trello/issues"
+    "url": "https://github.com/ahmetcetin/react-trello/issues"
   },
-  "homepage": "https://github.com/rcdexta/react-trello",
+  "homepage": "https://github.com/ahmetcetin/react-trello",
   "dependencies": {
     "immutability-helper": "^2.8.1",
     "lodash": "^4.17.11",
