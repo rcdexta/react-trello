@@ -192,8 +192,8 @@ class Lane extends _react.Component {
             cardDraggable = _this$props2.cardDraggable,
             cards = _this$props2.cards,
             cardDragClass = _this$props2.cardDragClass,
+            editable = _this$props2.editable,
             id = _this$props2.id;
-      const editable = this.props.editable || !this.props.hasOwnProperty('editable');
       const _this$state = this.state,
             addCardMode = _this$state.addCardMode,
             collapsed = _this$state.collapsed;
@@ -354,7 +354,7 @@ Lane.defaultProps = {
   titleStyle: {},
   labelStyle: {},
   label: undefined,
-  editable: false,
+  editable: true,
   onCardAdd: () => {}
 };
 

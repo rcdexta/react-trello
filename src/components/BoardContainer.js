@@ -116,7 +116,18 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
+    const {
+      id,
+      reducerData,
+      draggable,
+      laneDraggable,
+      laneDragClass,
+      style,
+      addLaneTitle,
+      editable,
+      canAddLanes,
+      ...otherProps
+    } = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
@@ -145,7 +156,7 @@ class BoardContainer extends Component {
       'newLaneTemplate',
       'newCardTemplate'
     ])
-    
+
     passthroughProps.boardEditable = passthroughProps.editable
     delete passthroughProps.editable
 
@@ -161,6 +172,7 @@ class BoardContainer extends Component {
           groupName={this.groupName}>
           {reducerData.lanes.map((lane, index) => {
             const {id, droppable, ...otherProps} = lane
+            console.log(lane)
             const laneToRender = (
               <Lane
                 key={id}
@@ -171,9 +183,14 @@ class BoardContainer extends Component {
                 droppable={droppable === undefined ? true : droppable}
                 {...otherProps}
                 {...passthroughProps}
+                editable={lane.editable}
               />
             )
-            return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
+            return draggable && laneDraggable ? (
+              <Draggable key={lane.id}>{laneToRender}</Draggable>
+            ) : (
+              <span key={lane.id}>{laneToRender}</span>
+            )
           })}
         </Container>
         {canAddLanes && (

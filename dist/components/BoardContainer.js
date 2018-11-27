@@ -212,6 +212,7 @@ class BoardContainer extends _react.Component {
       const id = lane.id,
             droppable = lane.droppable,
             otherProps = (0, _objectWithoutProperties2.default)(lane, ["id", "droppable"]);
+      console.log(lane);
 
       const laneToRender = _react.default.createElement(_Lane.default, (0, _extends2.default)({
         key: id,
@@ -220,7 +221,9 @@ class BoardContainer extends _react.Component {
         getCardDetails: this.getCardDetails,
         index: index,
         droppable: droppable === undefined ? true : droppable
-      }, otherProps, passthroughProps));
+      }, otherProps, passthroughProps, {
+        editable: lane.editable
+      }));
 
       return draggable && laneDraggable ? _react.default.createElement(_Draggable.default, {
         key: lane.id
