@@ -4,12 +4,8 @@
   "main": "dist/index.js",
   "jsnext:main": "components/index.js",
   "module": "components/index.js",
-  "files": [
-    "src",
-    "dist",
-    "README"
-  ],
-  "version": "0.1.0",
+  "files": ["src", "dist", "README"],
+  "version": "0.1.1",
   "scripts": {
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -28,11 +24,7 @@
     "type": "git",
     "url": "https://github.com/ahmetcetin/react-trello"
   },
-  "keywords": [
-    "react",
-    "trello",
-    "board"
-  ],
+  "keywords": ["react", "trello", "board"],
   "author": "RC, Prakash, Ahmet Cetin",
   "license": "MIT",
   "bugs": {

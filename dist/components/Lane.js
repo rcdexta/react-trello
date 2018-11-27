@@ -355,6 +355,7 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: true,
+  boardEditable: false,
   onCardAdd: () => {}
 };
 
