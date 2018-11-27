@@ -145,6 +145,9 @@ class BoardContainer extends Component {
       'newLaneTemplate',
       'newCardTemplate'
     ])
+    
+    passthroughProps.boardEditable = passthroughProps.editable
+    delete passthroughProps.editable
 
     return (
       <BoardDiv style={style} {...otherProps} draggable={false}>
