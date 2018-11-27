@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
+import cloneDeep from 'lodash/cloneDeep'
 import Container from '../dnd/Container'
 import Draggable from '../dnd/Draggable'
 import uuidv1 from 'uuid/v1'
@@ -139,7 +140,8 @@ class Lane extends Component {
     const {handleDragEnd} = this.props
     const {addedIndex, payload} = result
     if (addedIndex != null) {
-      const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, payload) : true
+      const newCard = {...cloneDeep(payload), laneId}
+      const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, newCard) : true
       if (response === undefined || !!response) {
         this.props.actions.moveCardAcrossLanes({
           fromLaneId: payload.laneId,
