@@ -126,6 +126,7 @@ class Lane extends _react.Component {
     });
     (0, _defineProperty2.default)(this, "renderAddCardLink", () => {
       const addCardLink = this.props.addCardLink;
+      console.log(typeof addCardLink);
 
       if (typeof addCardLink !== 'string') {
         return _react.default.createElement("span", {
