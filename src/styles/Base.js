@@ -108,12 +108,14 @@ export const CardWrapper = styled.article`
 export const MovableCardWrapper = styled(CardWrapper)`
   &:hover {
     background-color: #f0f0f0;
+    color: #000
   }
 `
 
 export const CardHeader = styled(Header)`
   border-bottom: 1px solid #eee;
   padding-bottom: 6px;
+  color: #000;
 `
 
 export const CardTitle = styled(Title)`

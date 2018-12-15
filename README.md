@@ -146,6 +146,13 @@ eventBus.publish({type: 'UPDATE_LANES', lanes: newLaneData})
 
 The first event in the above example will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
 
+### Styling
+
+There are two ways to apply styles to the library components including `Board`, `Lane` or `Card`:
+
+* Use the predefined css classnames attached to these elements that go by `.react-trello-lane`, `.react-trello-card`, `.react-trello-board`
+* You can also pass custom style attributes as part of data. Refer to the storybook for examples
+
 ### Custom Card Styling
 
 You can completely customize the look-and-feel of each card in any lane by passing in a custom component as child to the Board as seen below:

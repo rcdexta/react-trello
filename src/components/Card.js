@@ -36,6 +36,7 @@ class Card extends Component {
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     return (
       <MovableCardWrapper
+        className="react-trello-card"
         key={id}
         data-id={id}
         style={{
