@@ -47,6 +47,7 @@ class BoardContainer extends Component {
   onLaneDrop = ({removedIndex, addedIndex, payload}) => {
     const {actions, handleLaneDragEnd} = this.props
     if (removedIndex !== addedIndex) {
+      actions.moveLane({oldIndex: removedIndex, newIndex: addedIndex})
       handleLaneDragEnd(removedIndex, addedIndex, payload)
     }
   }
