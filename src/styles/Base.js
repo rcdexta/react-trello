@@ -1,6 +1,6 @@
-import styled, {injectGlobal} from 'styled-components'
+import styled, {createGlobalStyle} from 'styled-components'
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
   }
