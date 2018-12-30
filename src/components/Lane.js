@@ -78,7 +78,6 @@ class Lane extends Component {
     const {onCardClick} = this.props
     onCardClick && onCardClick(card.id, card.metadata, card.laneId)
     e.stopPropagation()
-    e.preventDefault()
   }
 
   showEditableCard = () => {

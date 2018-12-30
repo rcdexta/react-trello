@@ -52,7 +52,6 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-	z-index: 1000;
 	padding: 0px 5px;
 	margin-bottom: 0px;
 `

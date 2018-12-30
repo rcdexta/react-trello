@@ -84,6 +84,6 @@ storiesOf('Editable Board', module)
   .add(
     'Add New Lane',
     withInfo('Allow adding new lane')(() => {
-      return <Board data={smallData} editable />
+      return <Board data={smallData} editable canAddLanes />
     })
   )
