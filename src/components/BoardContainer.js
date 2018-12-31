@@ -153,6 +153,7 @@ class BoardContainer extends Component {
           orientation="horizontal"
           onDragStart={this.onDragStart}
           dragClass={laneDragClass}
+          dropClass=""
           onDrop={this.onLaneDrop}
           lockAxis="x"
           getChildPayload={index => this.getLaneDetails(index)}
@@ -174,17 +175,6 @@ class BoardContainer extends Component {
             return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
           })}
         </Container>
-        {canAddLanes && (
-          <Container orientation="horizontal">
-            {editable && !addLaneMode ? (
-              <LaneSection style={{width: 200}}>
-                <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
-              </LaneSection>
-            ) : (
-              addLaneMode && this.renderNewLane()
-            )}
-          </Container>
-        )}
       </BoardDiv>
     )
   }

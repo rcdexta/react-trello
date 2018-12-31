@@ -19,10 +19,11 @@ export const GlobalStyle = createGlobalStyle`
   .react_trello_dragLaneClass {
     transform: rotate(3deg);
   }
+  
 `
 
 export const BoardDiv = styled.div`
-  background-color: #3179BA;
+  background-color: #3179ba;
   overflow-y: hidden;
   padding: 5px;
   color: #393939;
@@ -52,8 +53,8 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-	padding: 0px 5px;
-	margin-bottom: 0px;
+  padding: 0px 5px;
+  margin-bottom: 0px;
 `
 
 export const LaneFooter = styled.div`
@@ -66,16 +67,16 @@ export const LaneFooter = styled.div`
 `
 
 export const ScrollableLane = styled.div`
-	flex: 1;
-	overflow-y: auto;
-	min-width: 250px;
-	overflow-x: hidden;
-	align-self: center;
-	max-height: 90vh;
-	padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
-	margin-top: 10px;
-	flex-direction: column;
-	justify-content: space-between;
+  flex: 1;
+  overflow-y: auto;
+  min-width: 250px;
+  overflow-x: hidden;
+  align-self: center;
+  max-height: 90vh;
+  padding-bottom: ${props => (props.isDraggingOver ? '130px' : '30px')};
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const Title = styled.span`
@@ -107,7 +108,7 @@ export const CardWrapper = styled.article`
 export const MovableCardWrapper = styled(CardWrapper)`
   &:hover {
     background-color: #f0f0f0;
-    color: #000
+    color: #000;
   }
 `
 
@@ -167,14 +168,14 @@ export const AddCardLink = styled.a`
 
 export const LaneTitle = styled.div`
   font-size: 15px;
-  width:268px;
+  width: 268px;
   height: auto;
 `
 
 export const LaneSection = styled.section`
-  background-color: #2B6AA3;
+  background-color: #2b6aa3;
   border-radius: 3px;
-  margin: 5px ;
+  margin: 5px;
   position: relative;
   padding: 5px;
   display: inline-flex;
@@ -183,7 +184,7 @@ export const LaneSection = styled.section`
 `
 
 export const NewLaneSection = styled(LaneSection)`
-  background-color: #E0E3E6;
+  background-color: #e0e3e6;
 `
 
 export const NewLaneButtons = styled.div`

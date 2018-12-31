@@ -1,7 +1,7 @@
 import React from 'react'
 import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
-import './drag.css'
+// import './drag.css'
 
 import Board from '../src'
 
