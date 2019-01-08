@@ -112,7 +112,7 @@ This is the container component that encapsulates the lanes and cards
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
 | style               | object   | Pass css style props to board container                                                                                        |
-| customCardLayout    | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
+| customCardLayout    | boolean  | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
 | customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
 | data                | object   | Actual board data in the form of json                                                                                          |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
