@@ -23137,7 +23137,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23228,7 +23228,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23277,7 +23277,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23409,7 +23409,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23500,7 +23500,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23591,7 +23591,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23682,7 +23682,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23773,7 +23773,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 className="sc-jzJRlG BFmJH"
                 onClick={[Function]}
               >
-                Add Card
+                Click to add
               </a>
             </div>
           </section>
@@ -23952,7 +23952,10 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 </span>
                 <span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
@@ -24355,7 +24358,10 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                     </span>
                   </span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
@@ -24363,7 +24369,10 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                     </span>
                   </span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
@@ -24387,7 +24396,37 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                         }
                       </span>
                     </span>
-                     
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      addCardTitle
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        "
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }
+                        >
+                          Click to add
+                        </span>
+                        "
+                      </span>
+                    </span>
+                    <br />
                   </span>
                 </span>
                 <span

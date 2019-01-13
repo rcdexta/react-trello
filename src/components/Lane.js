@@ -98,11 +98,11 @@ class Lane extends Component {
   }
 
   renderAddCardLink = () => {
-    const {addCardLink} = this.props
+    const {addCardLink, addCardTitle} = this.props
     if (addCardLink) {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
-      return <AddCardLink onClick={this.showEditableCard}>Add Card</AddCardLink>
+      return <AddCardLink onClick={this.showEditableCard}>{addCardTitle}</AddCardLink>
     }
   }
 
@@ -116,7 +116,7 @@ class Lane extends Component {
       })
       return <span>{newCardWithProps}</span>
     } else {
-      return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />
+      return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard}/>
     }
   }
 
@@ -283,6 +283,7 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
+  addCardTitle: PropTypes.string,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string

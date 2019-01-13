@@ -79,7 +79,7 @@ storiesOf('Editable Board', module)
   .add(
     'New Card Template',
     () => {
-      return <Board data={data} editable newCardTemplate={<NewCard />} />
+      return <Board data={data} editable newCardTemplate={<NewCard />} addCardTitle='Click to add'/>
     },
     {info: 'Pass a custom new card template to add card'}
   )
