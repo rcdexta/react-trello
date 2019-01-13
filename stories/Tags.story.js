@@ -1,12 +1,11 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
 storiesOf('Basic Functions', module).add(
   'Tags',
-  withInfo('Customizable tags for each card')(() => {
+  () => {
     const data = {
       lanes: [
         {
@@ -31,5 +30,6 @@ storiesOf('Basic Functions', module).add(
       ]
     }
     return <Board data={data} tagStyle={{fontSize: '80%'}} />
-  })
+  },
+  {info: 'Customizable tags for each card'}
 )

@@ -1,5 +1,4 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -14,7 +13,7 @@ const containerStyles = {
 
 storiesOf('Multiple Boards', module).add(
   'Two Boards',
-  withInfo('Have two boards rendering their own data')(() => {
+  () => {
     return (
       <div style={{display: 'flex', flexDirection: 'column'}}>
         <div style={containerStyles}>
@@ -25,5 +24,6 @@ storiesOf('Multiple Boards', module).add(
         </div>
       </div>
     )
-  })
+  },
+  {info: 'Have two boards rendering their own data'}
 )

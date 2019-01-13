@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -40,7 +39,7 @@ class NewCard extends Component {
 storiesOf('Editable Board', module)
   .add(
     'Add/Delete Cards',
-    withInfo('Add/delete cards or delete lanes')(() => {
+    () => {
       const shouldReceiveNewData = nextData => {
         console.log('Board has changed')
         console.log(nextData)
@@ -67,23 +66,27 @@ storiesOf('Editable Board', module)
           editable
         />
       )
-    })
+    },
+    {info: 'Add/delete cards or delete lanes'}
   )
   .add(
     'Custom Buttons',
-    withInfo('Allow editable elements on the board to be customized')(() => {
+    () => {
       return <Board data={data} editable hideCardDeleteIcon addCardLink={<button>New Card</button>} />
-    })
+    },
+    {info: 'Allow editable elements on the board to be customized'}
   )
   .add(
     'New Card Template',
-    withInfo('Pass a custom new card template to add card')(() => {
+    () => {
       return <Board data={data} editable newCardTemplate={<NewCard />} />
-    })
+    },
+    {info: 'Pass a custom new card template to add card'}
   )
   .add(
     'Add New Lane',
-    withInfo('Allow adding new lane')(() => {
+    () => {
       return <Board data={smallData} editable canAddLanes />
-    })
+    },
+    {info: 'Allow adding new lane'}
   )

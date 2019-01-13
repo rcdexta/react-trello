@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -87,16 +86,7 @@ class BoardWrapper extends Component {
 
 storiesOf('Advanced Features', module).add(
   'Scrolling and Events',
-  withInfo(`
-      Infinite scroll with onLaneScroll function callback to fetch more items
-      
-      The callback function passed to onLaneScroll will be of the following form
-      ~~~js
-      function paginate(requestedPage, laneId) {
-        return fetchCardsFromBackend(laneId, requestedPage); 
-      };
-      ~~~
-    `)(() => {
+  () => {
     const data = {
       lanes: [
         {
@@ -108,5 +98,17 @@ storiesOf('Advanced Features', module).add(
     }
 
     return <BoardWrapper data={data} />
-  })
+  },
+  {
+    info: `
+      Infinite scroll with onLaneScroll function callback to fetch more items
+      
+      The callback function passed to onLaneScroll will be of the following form
+      ~~~js
+      function paginate(requestedPage, laneId) {
+        return fetchCardsFromBackend(laneId, requestedPage); 
+      };
+      ~~~
+    `
+  }
 )

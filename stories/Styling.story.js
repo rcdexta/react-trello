@@ -1,5 +1,4 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -10,9 +9,8 @@ const data = require('./data/base.json')
 
 storiesOf('Styling', module).add(
   'Board Styling',
-  withInfo('Change the background and other css styles for the board container')(() => (
-    <Board data={data} style={{padding: '30px 20px', fontFamily: 'Verdana'}} className="boardContainer" />
-  ))
+  () => <Board data={data} style={{padding: '30px 20px', fontFamily: 'Verdana'}} className="boardContainer" />,
+  {info: 'Change the background and other css styles for the board container'}
 )
 
 const dataWithLaneStyles = {
@@ -40,7 +38,6 @@ const dataWithLaneStyles = {
   ]
 }
 
-storiesOf('Styling', module).add(
-  'Lane Styling',
-  withInfo('Change the look and feel of the lane')(() => <Board data={dataWithLaneStyles} style={{backgroundColor: '#eee'}} />)
-)
+storiesOf('Styling', module).add('Lane Styling', () => <Board data={dataWithLaneStyles} style={{backgroundColor: '#eee'}} />, {
+  info: 'Change the look and feel of the lane'
+})

@@ -1,5 +1,4 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -17,21 +16,20 @@ const data = {
     {
       id: 'lane2',
       title: 'Executing',
-      cards: [
-        {id: 'Card3', title: 'Card3', description: 'foobar card', metadata: {id: 'Card3'}}
-      ]
+      cards: [{id: 'Card3', title: 'Card3', description: 'foobar card', metadata: {id: 'Card3'}}]
     }
   ]
 }
 
 storiesOf('Advanced Features', module).add(
   'Event Handling',
-  withInfo('Adding event handlers to cards')(() =>
+  () => (
     <Board
       draggable
       data={data}
       onCardClick={(cardId, metadata, laneId) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}. Card in lane: ${laneId}`)}
-      onLaneClick={(laneId) => alert(`Lane with id:${laneId} clicked`)}
+      onLaneClick={laneId => alert(`Lane with id:${laneId} clicked`)}
     />
-  )
+  ),
+  {info: 'Adding event handlers to cards'}
 )
