@@ -276,7 +276,7 @@ yarn run storybook
 9.  `npm run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
 10. `npm run docs`: create static build of storybook in `docs` directory that can be used for github pages
 
-Learn how to write stories [here](https://getstorybook.io/docs/basics/writing-stories)
+Learn how to write stories [here](https://storybook.js.org/basics/writing-stories/)
 
 ### License
 
