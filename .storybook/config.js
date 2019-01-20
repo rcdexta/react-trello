@@ -9,7 +9,8 @@ addDecorator(
     goFullScreen: false,
     showStoriesPanel: true,
     showSearchBox: false,
-    addonPanelInRight: false
+    addonPanelInRight: false,
+    showAddonPanel: false
   })
 )
 

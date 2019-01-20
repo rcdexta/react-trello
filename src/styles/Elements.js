@@ -1,11 +1,31 @@
 import styled from 'styled-components'
-import {CardWrapper} from './Base'
+import {CardWrapper, MovableCardWrapper} from './Base'
 
 export const DeleteWrapper = styled.div`
   text-align: center;
   position: absolute;
-  top: -6px;
-  right: -1px;
+  top: -1px;
+  right: 2px;
+`
+
+export const DelButton = styled.button`
+  font-weight: bold;
+  border: none;
+  display: inline-block;
+  font-size: 8px;
+  opacity: 0;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+  
+  ${MovableCardWrapper}:hover & {
+    opacity: 1;
+  }
 `
 
 export const DeleteIcon = styled.span`
@@ -13,7 +33,7 @@ export const DeleteIcon = styled.span`
   display: inline-block;
   width: 4px;
   height: 4px;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   border: 1px solid #83bd42;
   border-radius: 50%;
@@ -62,7 +82,6 @@ export const ExpandCollapseBase = styled.span`
   font-size: 14px;
   position: relative;
   cursor: pointer;
-
 `
 
 export const CollapseBtn = styled(ExpandCollapseBase)`
@@ -140,15 +159,15 @@ export const CancelButton = styled.button`
   margin-bottom: 0;
 `
 export const NewLaneButton = styled.button`
-  background: #2B6AA3;
-  border: none; 
+  background: #2b6aa3;
+  border: none;
   color: #fff;
   transition: background 0.3s ease;
   min-height: 32px;
   padding: 4px 16px;
   vertical-align: top;
-  margin-top: 0; 
-  margin-right: 0px; 
+  margin-top: 0;
+  margin-right: 0px;
   border-radius: 4px;
   font-size: 13px;
   cursor: pointer;

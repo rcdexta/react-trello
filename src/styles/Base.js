@@ -18,8 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   
   .react_trello_dragLaneClass {
     transform: rotate(3deg);
-  }
-  
+  }  
 `
 
 export const BoardDiv = styled.div`

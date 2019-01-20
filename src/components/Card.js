@@ -25,14 +25,20 @@ class Card extends Component {
             <CardRightContent>{label}</CardRightContent>
           </CardHeader>
           <Detail>{description}</Detail>
-          {tags && <Footer>{tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />)}</Footer>}
+          {tags && (
+            <Footer>
+              {tags.map(tag => (
+                <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />
+              ))}
+            </Footer>
+          )}
         </span>
       )
     }
   }
 
   render() {
-    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, ...otherProps} = this.props
+    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, onDelete, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     return (
       <MovableCardWrapper
