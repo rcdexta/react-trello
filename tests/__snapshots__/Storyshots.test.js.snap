@@ -1944,8 +1944,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
         }
       }
       draggable={false}
-      onCardClick={[Function]}
-      onLaneClick={[Function]}
       style={undefined}
     >
       <div
@@ -1958,7 +1956,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label={undefined}
-            onCardClick={[Function]}
             onClick={[Function]}
             style={Object {}}
             title="Planned Tasks"
@@ -2053,7 +2050,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label={undefined}
-            onCardClick={[Function]}
             onClick={[Function]}
             style={Object {}}
             title="Executing"
@@ -4262,7 +4258,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
           }
         }
         draggable={false}
-        onLaneScroll={[Function]}
         style={undefined}
       >
         <div
@@ -4274,7 +4269,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
               draggable={false}
               label={undefined}
               onClick={[Function]}
-              onLaneScroll={[Function]}
               style={Object {}}
               title="Lane1"
             >
@@ -7088,7 +7082,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
         }
       }
       draggable={false}
-      onLaneScroll={[Function]}
       style={undefined}
     >
       <div
@@ -7100,7 +7093,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
             draggable={false}
             label={undefined}
             onClick={[Function]}
-            onLaneScroll={[Function]}
             style={Object {}}
             title="Lane1"
           >
@@ -10500,7 +10492,6 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
         }
       }
       draggable={false}
-      onCardClick={[Function]}
       style={undefined}
     >
       <div
@@ -10513,7 +10504,6 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="12/12"
-            onCardClick={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -10776,7 +10766,6 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label={undefined}
-            onCardClick={[Function]}
             onClick={[Function]}
             style={Object {}}
             title="Long Lane name this is i suppose ha!"
@@ -12545,7 +12534,6 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
         }
       }
       draggable={false}
-      onCardClick={[Function]}
       style={undefined}
     >
       <div
@@ -12558,7 +12546,6 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label={undefined}
-            onCardClick={[Function]}
             onClick={[Function]}
             style={Object {}}
             title="Planned"
@@ -12747,7 +12734,6 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label={undefined}
-            onCardClick={[Function]}
             onClick={[Function]}
             style={Object {}}
             title="Work In Progress"
@@ -19215,9 +19201,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
         }
       }
       draggable={false}
-      onCardAdd={[Function]}
-      onCardClick={[Function]}
-      onCardDelete={[Function]}
       style={undefined}
     >
       <div
@@ -19230,8 +19213,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="20/70"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19459,8 +19440,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="10/20"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19556,8 +19535,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="0/0"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19608,8 +19585,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="2/5"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19749,8 +19724,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="1/1"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19846,8 +19819,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="1/1"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -19943,8 +19914,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="1/1"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
@@ -20040,8 +20009,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             label="1/1"
-            onCardClick={[Function]}
-            onCardDelete={[Function]}
             onClick={[Function]}
             style={
               Object {
