@@ -117,7 +117,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
+    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onCardDelete, onCardAdd, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
