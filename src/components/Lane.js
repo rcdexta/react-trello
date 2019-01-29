@@ -137,6 +137,7 @@ class Lane extends Component {
   onDragEnd = (laneId, result) => {
     const {handleDragEnd} = this.props
     const {addedIndex, payload} = result
+    this.setState({isDraggingOver: false})
     if (addedIndex != null) {
       this.props.actions.moveCardAcrossLanes({
         fromLaneId: payload.laneId,
