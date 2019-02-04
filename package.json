@@ -116,5 +116,6 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "10.10.1"
 }
