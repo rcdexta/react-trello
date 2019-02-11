@@ -6,6 +6,7 @@ import isEqual from 'lodash/isEqual'
 import Container from '../dnd/Container'
 import Draggable from '../dnd/Draggable'
 import uuidv1 from 'uuid/v1'
+import Popover from '@terebentina/react-popover'
 
 import Loader from './Loader'
 import Card from './Card'
@@ -13,7 +14,17 @@ import NewCard from './NewCard'
 import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
 
 import * as laneActions from '../actions/LaneActions'
-import {CollapseBtn, ExpandBtn} from '../styles/Elements'
+import {
+  CollapseBtn,
+  DeleteWrapper,
+  ExpandBtn,
+  GenDelButton,
+  LaneMenuContent,
+  LaneMenuHeader,
+  LaneMenuItem,
+  LaneMenuTitle,
+  MenuButton
+} from '../styles/Elements'
 
 class Lane extends Component {
   state = {
@@ -195,8 +206,29 @@ class Lane extends Component {
     )
   }
 
+  removeLane = () => {
+    const {id} = this.props
+    this.props.actions.removeLane({laneId: id})
+  }
+
+  laneMenu = () => {
+    return (
+      <Popover className="menu" position="bottom" trigger={<MenuButton>⋮</MenuButton>}>
+        <LaneMenuHeader>
+          <LaneMenuTitle>Lane actions</LaneMenuTitle>
+          <DeleteWrapper>
+            <GenDelButton>&#10006;</GenDelButton>
+          </DeleteWrapper>
+        </LaneMenuHeader>
+        <LaneMenuContent>
+          <LaneMenuItem onClick={this.removeLane}>Delete Lane...</LaneMenuItem>
+        </LaneMenuContent>
+      </Popover>
+    )
+  }
+
   renderHeader = () => {
-    const {customLaneHeader} = this.props
+    const {customLaneHeader, canAddLanes} = this.props
     if (customLaneHeader) {
       const customLaneElement = React.cloneElement(customLaneHeader, {...this.props})
       return <span>{customLaneElement}</span>
@@ -210,6 +242,7 @@ class Lane extends Component {
               <span style={labelStyle}>{label}</span>
             </RightContent>
           )}
+          {canAddLanes && this.laneMenu()}
         </LaneHeader>
       )
     }
@@ -272,7 +305,8 @@ Lane.propTypes = {
   addCardTitle: PropTypes.string,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
-  cardDragClass: PropTypes.string
+  cardDragClass: PropTypes.string,
+  canAddLanes: PropTypes.bool
 }
 
 Lane.defaultProps = {

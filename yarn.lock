@@ -1512,6 +1512,11 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
+"@terebentina/react-popover@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@terebentina/react-popover/-/react-popover-2.0.0.tgz#46a46052a889d423646daa1057bbb07879d19908"
+  integrity sha1-RqRgUqiJ1CNkbaoQV7uweHnRmQg=
+
 "@types/node@*":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"

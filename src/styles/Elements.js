@@ -6,14 +6,28 @@ export const DeleteWrapper = styled.div`
   position: absolute;
   top: -1px;
   right: 2px;
+  cursor: pointer;
+`
+
+export const GenDelButton = styled.button`
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 15px;
+  height: 15px;
+  padding: 0;
+  margin-top: 5px;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
 `
 
 export const DelButton = styled.button`
-  font-weight: bold;
-  border: none;
+  transition: all 0.5s ease;
   display: inline-block;
+  border: none;
   font-size: 8px;
-  opacity: 0;
   height: 15px;
   line-height: 1px;
   margin: 0 0 8px;
@@ -22,10 +36,69 @@ export const DelButton = styled.button`
   width: 15px;
   background: inherit;
   cursor: pointer;
-  
+  opacity: 0;
   ${MovableCardWrapper}:hover & {
     opacity: 1;
   }
+`
+
+export const MenuButton = styled.button`
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+`
+
+export const LaneMenuHeader = styled.div`
+    position: relative;
+    margin-bottom: 4px;
+    text-align: center;
+`
+
+export const LaneMenuContent = styled.div`
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 12px 12px;
+`
+
+export const LaneMenuItem = styled.div`
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    padding: 6px 12px;
+    position: relative;
+    margin: 0 -12px;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: #3179BA;
+      color: #fff;
+    }
+`
+
+export const LaneMenuTitle = styled.span`
+    box-sizing: border-box;
+    color: #6b808c;
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(9,45,66,.13);
+    margin: 0 6px;
+    overflow: hidden;
+    padding: 0 32px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 1;
 `
 
 export const DeleteIcon = styled.span`

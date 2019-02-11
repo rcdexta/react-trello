@@ -10,6 +10,7 @@ import {BoardDiv, LaneSection} from '../styles/Base'
 import {NewLaneButton} from '../styles/Elements'
 import Lane from './Lane'
 import NewLane from './NewLane'
+import { PopoverWrapper } from '@terebentina/react-popover'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
@@ -150,6 +151,7 @@ class BoardContainer extends Component {
 
     return (
       <BoardDiv style={style} {...otherProps} draggable={false}>
+        <PopoverWrapper>
         <Container
           orientation="horizontal"
           onDragStart={this.onDragStart}
@@ -176,6 +178,7 @@ class BoardContainer extends Component {
             return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
           })}
         </Container>
+        </PopoverWrapper>
         {canAddLanes && (
           <Container orientation="horizontal">
             {editable && !addLaneMode ? (

@@ -4,7 +4,7 @@ import {DeleteWrapper, DelButton} from '../../styles/Elements'
 const DeleteButton = props => {
   return (
     <DeleteWrapper {...props}>
-      <DelButton>x</DelButton>
+      <DelButton>&#10006;</DelButton>
     </DeleteWrapper>
   )
 }
