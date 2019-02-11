@@ -18631,6 +18631,25 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
           </section>
         </span>
       </div>
+      <div
+        style={undefined}
+      >
+        <section
+          className="sc-kAzzGY dDenbz"
+          style={
+            Object {
+              "width": 200,
+            }
+          }
+        >
+          <button
+            className="sc-kkGfuU ehXxRc"
+            onClick={[Function]}
+          >
+            + Add another lane
+          </button>
+        </section>
+      </div>
     </div>
   </div>
   <button
@@ -18804,7 +18823,10 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 </span>
                 <span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
@@ -18961,7 +18983,10 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     </span>
                   </span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
@@ -18969,13 +18994,45 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     </span>
                   </span>
                   <span>
-                     
+                    <span>
+                      <br />
+                        
+                    </span>
                     <span
                       style={Object {}}
                     >
                       canAddLanes
                     </span>
-                     
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      onLaneAdd
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onLaneAdd
+                        </span>
+                        }
+                      </span>
+                    </span>
+                    <br />
                   </span>
                 </span>
                 <span

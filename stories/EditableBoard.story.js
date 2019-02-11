@@ -79,14 +79,21 @@ storiesOf('Editable Board', module)
   .add(
     'New Card Template',
     () => {
-      return <Board data={data} editable newCardTemplate={<NewCard />} addCardTitle='Click to add'/>
+      return <Board data={data} editable newCardTemplate={<NewCard />} addCardTitle="Click to add" />
     },
     {info: 'Pass a custom new card template to add card'}
   )
   .add(
     'Add New Lane',
     () => {
-      return <Board data={smallData} editable canAddLanes />
+      return (
+        <Board
+          data={smallData}
+          editable
+          canAddLanes
+          onLaneAdd={t => console.log('You added a line with title ' + t.title)}
+        />
+      )
     },
     {info: 'Allow adding new lane'}
   )
