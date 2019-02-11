@@ -104,6 +104,7 @@ This is the container component that encapsulates the lanes and cards
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
+| onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
 | addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
 | newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
