@@ -25,6 +25,7 @@ import {
   LaneMenuTitle,
   MenuButton
 } from '../styles/Elements'
+import classNames from 'classnames'
 
 class Lane extends Component {
   state = {
@@ -263,8 +264,9 @@ class Lane extends Component {
   render() {
     const {loading, isDraggingOver} = this.state
     const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, ...otherProps} = this.props
+    const allClassNames = classNames('react-trello-board', this.props.className || '')
     return (
-      <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className="react-trello-lane">
+      <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
         {this.renderHeader()}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <Loader />}
