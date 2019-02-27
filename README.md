@@ -183,7 +183,7 @@ const CustomCard = props => {
           justifyContent: 'space-between',
           color: props.cardColor
         }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.name}</div>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.title}</div>
         <div style={{fontSize: 11}}>{props.dueOn}</div>
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
