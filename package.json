@@ -42,9 +42,14 @@
     "@terebentina/react-popover": "^2.0.0",
     "classnames": "^2.2.6",
     "immutability-helper": "^2.8.1",
-    "prop-types": "^15.6.2",
     "smooth-dnd": "https://github.com/rcdexta/smooth-dnd",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-logger": "^3.0.6"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
@@ -96,11 +101,6 @@
     "prettier": "1.14.3",
     "pretty-quick": "^1.7.0",
     "styled-components": "4.0.3",
-    "lodash": ">= 4.17.11",
-    "react-redux": ">= 5.0.7",
-    "redux": ">= 4.0.0",
-    "redux-actions": ">= 2.6.1",
-    "redux-logger": ">= 3.0.6",
     "react": "^16.2.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
