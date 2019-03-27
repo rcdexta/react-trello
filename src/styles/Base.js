@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -25,8 +25,8 @@ export const GlobalStyle = createGlobalStyle`
       position: absolute;
       background: transparent none repeat scroll 0 0;
       border: 6px solid transparent;
-      transition: all 0.3s ease 0ms; }
-        left: 50%; }
+      transition: all 0.3s ease 0ms; 
+      left: 50%; }
   .popover.popover--bottom {
     flex-flow: column nowrap; }
     .popover.popover--bottom .popover__content {
