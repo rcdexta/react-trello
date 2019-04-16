@@ -269,7 +269,7 @@ class Lane extends Component {
   render() {
     const {loading, isDraggingOver} = this.state
     const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, ...otherProps} = this.props
-    const allClassNames = classNames('react-trello-board', this.props.className || '')
+    const allClassNames = classNames('react-trello-lane', this.props.className || '')
     return (
       <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
         {this.renderHeader()}
