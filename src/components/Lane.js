@@ -250,10 +250,15 @@ class Lane extends Component {
   }
 
   renderFooter = () => {
-    const {collapsibleLanes, cards} = this.props
+    const {collapsibleLanes, cards, customFooter} = this.props
     const {collapsed} = this.state
-    if (collapsibleLanes && cards.length > 0) {
-      return <LaneFooter onClick={this.toggleLaneCollapsed}>{collapsed ? <ExpandBtn /> : <CollapseBtn />}</LaneFooter>
+    if (customFooter) {
+      const customLaneElement = React.cloneElement(customFooter, {...this.props});
+      return <span>{customLaneElement}</span>
+    }else{
+      if (collapsibleLanes && cards.length > 0) {
+        return <LaneFooter onClick={this.toggleLaneCollapsed}>{collapsed ? <ExpandBtn /> : <CollapseBtn />}</LaneFooter>
+      }
     }
   }
 

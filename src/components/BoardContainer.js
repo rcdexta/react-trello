@@ -138,6 +138,7 @@ class BoardContainer extends Component {
       'hideCardDeleteIcon',
       'customCardLayout',
       'customLaneHeader',
+      'customFooter',
       'tagStyle',
       'handleDragStart',
       'handleDragEnd',
