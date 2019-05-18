@@ -436,7 +436,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -477,7 +477,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -511,7 +511,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -545,7 +545,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -579,7 +579,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -625,7 +625,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -666,7 +666,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -712,7 +712,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -756,7 +756,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -797,7 +797,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -831,7 +831,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -877,7 +877,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -918,7 +918,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -964,7 +964,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -1005,7 +1005,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -1051,7 +1051,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -1092,7 +1092,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -1138,7 +1138,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -1179,7 +1179,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -1967,7 +1967,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -1995,7 +1995,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       onClick={[Function]}
                       style={Object {}}
@@ -2026,7 +2026,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       onClick={[Function]}
                       style={Object {}}
@@ -2061,7 +2061,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -2089,7 +2089,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       onClick={[Function]}
                       style={Object {}}
@@ -3188,7 +3188,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
           >
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="20/70"
                 onClick={[Function]}
@@ -3227,7 +3227,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Milk"
                         label="15 mins"
                         onClick={[Function]}
@@ -3259,7 +3259,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Plan2"
                         label="10 mins"
                         onClick={[Function]}
@@ -3291,7 +3291,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Plan3"
                         label="30 mins"
                         onClick={[Function]}
@@ -3323,7 +3323,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Plan4"
                         label="5 mins"
                         onClick={[Function]}
@@ -3359,7 +3359,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="10/20"
                 onClick={[Function]}
@@ -3398,7 +3398,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Wip1"
                         label="30 mins"
                         onClick={[Function]}
@@ -3434,7 +3434,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="0/0"
                 onClick={[Function]}
@@ -3476,7 +3476,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="2/5"
                 onClick={[Function]}
@@ -3515,7 +3515,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Completed1"
                         label="15 mins"
                         onClick={[Function]}
@@ -3547,7 +3547,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Completed2"
                         label="15 mins"
                         onClick={[Function]}
@@ -3583,7 +3583,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="1/1"
                 onClick={[Function]}
@@ -3622,7 +3622,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Repeat1"
                         label="30 mins"
                         onClick={[Function]}
@@ -3658,7 +3658,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="1/1"
                 onClick={[Function]}
@@ -3697,7 +3697,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Archived1"
                         label="300 mins"
                         onClick={[Function]}
@@ -3733,7 +3733,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="1/1"
                 onClick={[Function]}
@@ -3772,7 +3772,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Archived2"
                         label="300 mins"
                         onClick={[Function]}
@@ -3808,7 +3808,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             </span>
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label="1/1"
                 onClick={[Function]}
@@ -3847,7 +3847,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="Archived3"
                         label="300 mins"
                         onClick={[Function]}
@@ -4289,7 +4289,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
           >
             <span>
               <section
-                className="react-trello-board sc-htpNat dJewwL"
+                className="react-trello-lane sc-htpNat dJewwL"
                 draggable={false}
                 label={undefined}
                 onClick={[Function]}
@@ -4315,7 +4315,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                   >
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="1"
                         onClick={[Function]}
                         style={Object {}}
@@ -4344,7 +4344,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="2"
                         onClick={[Function]}
                         style={Object {}}
@@ -4373,7 +4373,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="3"
                         onClick={[Function]}
                         style={Object {}}
@@ -4402,7 +4402,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="4"
                         onClick={[Function]}
                         style={Object {}}
@@ -4431,7 +4431,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="5"
                         onClick={[Function]}
                         style={Object {}}
@@ -4460,7 +4460,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="6"
                         onClick={[Function]}
                         style={Object {}}
@@ -4489,7 +4489,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="7"
                         onClick={[Function]}
                         style={Object {}}
@@ -4518,7 +4518,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="8"
                         onClick={[Function]}
                         style={Object {}}
@@ -4547,7 +4547,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="9"
                         onClick={[Function]}
                         style={Object {}}
@@ -4576,7 +4576,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="10"
                         onClick={[Function]}
                         style={Object {}}
@@ -4605,7 +4605,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="11"
                         onClick={[Function]}
                         style={Object {}}
@@ -4634,7 +4634,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="12"
                         onClick={[Function]}
                         style={Object {}}
@@ -4663,7 +4663,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="13"
                         onClick={[Function]}
                         style={Object {}}
@@ -4692,7 +4692,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="14"
                         onClick={[Function]}
                         style={Object {}}
@@ -4721,7 +4721,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                     </span>
                     <span>
                       <article
-                        className="react-trello-board sc-dnqmqq eoPYBZ"
+                        className="react-trello-card sc-dnqmqq eoPYBZ"
                         data-id="15"
                         onClick={[Function]}
                         style={Object {}}
@@ -5684,7 +5684,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -5723,7 +5723,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -5755,7 +5755,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -5787,7 +5787,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -5819,7 +5819,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -5855,7 +5855,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -5894,7 +5894,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -5930,7 +5930,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -5972,7 +5972,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -6011,7 +6011,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -6043,7 +6043,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -6079,7 +6079,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -6118,7 +6118,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -6154,7 +6154,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -6193,7 +6193,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -6229,7 +6229,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -6268,7 +6268,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -6304,7 +6304,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -6343,7 +6343,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -7123,7 +7123,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -7149,7 +7149,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="1"
                       onClick={[Function]}
                       style={Object {}}
@@ -7178,7 +7178,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="2"
                       onClick={[Function]}
                       style={Object {}}
@@ -7207,7 +7207,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="3"
                       onClick={[Function]}
                       style={Object {}}
@@ -7236,7 +7236,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="4"
                       onClick={[Function]}
                       style={Object {}}
@@ -7265,7 +7265,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="5"
                       onClick={[Function]}
                       style={Object {}}
@@ -7294,7 +7294,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="6"
                       onClick={[Function]}
                       style={Object {}}
@@ -7323,7 +7323,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="7"
                       onClick={[Function]}
                       style={Object {}}
@@ -7352,7 +7352,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="8"
                       onClick={[Function]}
                       style={Object {}}
@@ -7381,7 +7381,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="9"
                       onClick={[Function]}
                       style={Object {}}
@@ -7410,7 +7410,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="10"
                       onClick={[Function]}
                       style={Object {}}
@@ -7439,7 +7439,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="11"
                       onClick={[Function]}
                       style={Object {}}
@@ -7468,7 +7468,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="12"
                       onClick={[Function]}
                       style={Object {}}
@@ -7497,7 +7497,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="13"
                       onClick={[Function]}
                       style={Object {}}
@@ -7526,7 +7526,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="14"
                       onClick={[Function]}
                       style={Object {}}
@@ -7555,7 +7555,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="15"
                       onClick={[Function]}
                       style={Object {}}
@@ -8373,7 +8373,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -8408,7 +8408,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       label="2017-12-01"
                       onClick={[Function]}
@@ -8440,7 +8440,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       label="2017-11-01"
                       onClick={[Function]}
@@ -8472,7 +8472,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       label="2017-10-01"
                       onClick={[Function]}
@@ -8504,7 +8504,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card4"
                       label="2017-09-01"
                       onClick={[Function]}
@@ -9019,7 +9019,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -9054,7 +9054,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card4"
                       label="2017-09-01"
                       onClick={[Function]}
@@ -9086,7 +9086,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       label="2017-10-01"
                       onClick={[Function]}
@@ -9118,7 +9118,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       label="2017-11-01"
                       onClick={[Function]}
@@ -9150,7 +9150,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       label="2017-12-01"
                       onClick={[Function]}
@@ -9665,7 +9665,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -9691,7 +9691,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       onClick={[Function]}
                       style={Object {}}
@@ -9772,7 +9772,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       onClick={[Function]}
                       style={Object {}}
@@ -10555,7 +10555,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="12/12"
               onClick={[Function]}
@@ -10607,7 +10607,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       name="John Smith"
                       onClick={[Function]}
@@ -10710,7 +10710,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       name="Card Weathers"
                       onClick={[Function]}
@@ -10817,7 +10817,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -10845,7 +10845,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       name="Michael Caine"
                       onClick={[Function]}
@@ -11780,7 +11780,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="First Lane here"
               onClick={[Function]}
@@ -11842,7 +11842,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       onClick={[Function]}
                       style={Object {}}
@@ -11871,7 +11871,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       onClick={[Function]}
                       style={Object {}}
@@ -11904,7 +11904,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="Second Lane here"
               onClick={[Function]}
@@ -11966,7 +11966,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       onClick={[Function]}
                       style={Object {}}
@@ -12607,7 +12607,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -12635,7 +12635,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       name="John Smith"
                       onClick={[Function]}
@@ -12713,7 +12713,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       name="Card Weathers"
                       onClick={[Function]}
@@ -12795,7 +12795,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label={undefined}
               onClick={[Function]}
@@ -12823,7 +12823,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       name="Michael Caine"
                       onClick={[Function]}
@@ -13311,7 +13311,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -13352,7 +13352,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -13386,7 +13386,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -13420,7 +13420,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -13454,7 +13454,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -13492,7 +13492,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -13533,7 +13533,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -13571,7 +13571,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -13615,7 +13615,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -13656,7 +13656,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -13690,7 +13690,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -13728,7 +13728,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -13769,7 +13769,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -13807,7 +13807,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -13848,7 +13848,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -13886,7 +13886,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -13927,7 +13927,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -13965,7 +13965,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -14006,7 +14006,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -14910,7 +14910,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -14947,7 +14947,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -14981,7 +14981,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -15015,7 +15015,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -15049,7 +15049,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -15085,7 +15085,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -15122,7 +15122,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -15158,7 +15158,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -16019,7 +16019,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -16060,7 +16060,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -16094,7 +16094,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -16128,7 +16128,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -16162,7 +16162,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -16200,7 +16200,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -16241,7 +16241,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -16279,7 +16279,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -16323,7 +16323,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -16364,7 +16364,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -16398,7 +16398,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -16436,7 +16436,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -16477,7 +16477,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -16515,7 +16515,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -16556,7 +16556,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -16594,7 +16594,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -16635,7 +16635,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -16673,7 +16673,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -16714,7 +16714,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -17535,7 +17535,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -17572,7 +17572,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -17606,7 +17606,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -17640,7 +17640,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -17674,7 +17674,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -17712,7 +17712,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -17749,7 +17749,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -17787,7 +17787,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -18508,7 +18508,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -18590,7 +18590,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card1"
                       label="2017-12-01"
                       onClick={[Function]}
@@ -18632,7 +18632,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card2"
                       label="2017-11-01"
                       onClick={[Function]}
@@ -18674,7 +18674,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card3"
                       label="2017-10-01"
                       onClick={[Function]}
@@ -18716,7 +18716,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Card4"
                       label="2017-09-01"
                       onClick={[Function]}
@@ -19408,7 +19408,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -19449,7 +19449,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -19493,7 +19493,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -19537,7 +19537,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -19581,7 +19581,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -19635,7 +19635,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -19676,7 +19676,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -19730,7 +19730,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -19780,7 +19780,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -19821,7 +19821,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -19865,7 +19865,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -19919,7 +19919,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -19960,7 +19960,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -20014,7 +20014,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -20055,7 +20055,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -20109,7 +20109,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -20150,7 +20150,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -20204,7 +20204,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             className="smooth-dnd-draggable-wrapper"
           >
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -20245,7 +20245,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -21279,7 +21279,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -21318,7 +21318,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -21350,7 +21350,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -21382,7 +21382,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -21414,7 +21414,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -21457,7 +21457,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -21496,7 +21496,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -21539,7 +21539,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -21588,7 +21588,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -21627,7 +21627,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -21659,7 +21659,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -21702,7 +21702,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -21741,7 +21741,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -21784,7 +21784,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -21823,7 +21823,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -21866,7 +21866,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -21905,7 +21905,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -21948,7 +21948,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -21987,7 +21987,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -22895,7 +22895,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -22934,7 +22934,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -22976,7 +22976,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -23018,7 +23018,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -23060,7 +23060,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -23112,7 +23112,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -23151,7 +23151,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -23203,7 +23203,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -23251,7 +23251,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -23290,7 +23290,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -23332,7 +23332,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -23384,7 +23384,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -23423,7 +23423,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -23475,7 +23475,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -23514,7 +23514,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -23566,7 +23566,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -23605,7 +23605,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -23657,7 +23657,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -23696,7 +23696,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -24650,7 +24650,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
@@ -24691,7 +24691,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Milk"
                           label="15 mins"
                           onClick={[Function]}
@@ -24725,7 +24725,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan2"
                           label="10 mins"
                           onClick={[Function]}
@@ -24759,7 +24759,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan3"
                           label="30 mins"
                           onClick={[Function]}
@@ -24793,7 +24793,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan4"
                           label="5 mins"
                           onClick={[Function]}
@@ -24831,7 +24831,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
@@ -24872,7 +24872,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Wip1"
                           label="30 mins"
                           onClick={[Function]}
@@ -24910,7 +24910,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
@@ -24954,7 +24954,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="2/5"
                   onClick={[Function]}
@@ -24995,7 +24995,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Completed1"
                           label="15 mins"
                           onClick={[Function]}
@@ -25029,7 +25029,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Completed2"
                           label="15 mins"
                           onClick={[Function]}
@@ -25067,7 +25067,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
@@ -25108,7 +25108,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Repeat1"
                           label="30 mins"
                           onClick={[Function]}
@@ -25146,7 +25146,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
@@ -25187,7 +25187,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Archived1"
                           label="300 mins"
                           onClick={[Function]}
@@ -25225,7 +25225,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
@@ -25266,7 +25266,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Archived2"
                           label="300 mins"
                           onClick={[Function]}
@@ -25304,7 +25304,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
@@ -25345,7 +25345,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Archived3"
                           label="300 mins"
                           onClick={[Function]}
@@ -25472,7 +25472,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
@@ -25509,7 +25509,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Wip1"
                           label="30 mins"
                           onClick={[Function]}
@@ -25547,7 +25547,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
@@ -25584,7 +25584,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Milk"
                           label="15 mins"
                           onClick={[Function]}
@@ -25618,7 +25618,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan2"
                           label="10 mins"
                           onClick={[Function]}
@@ -25652,7 +25652,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan3"
                           label="30 mins"
                           onClick={[Function]}
@@ -25686,7 +25686,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                         className="smooth-dnd-draggable-wrapper"
                       >
                         <article
-                          className="react-trello-board sc-dnqmqq eoPYBZ"
+                          className="react-trello-card sc-dnqmqq eoPYBZ"
                           data-id="Plan4"
                           label="5 mins"
                           onClick={[Function]}
@@ -25724,7 +25724,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                 className="smooth-dnd-draggable-wrapper"
               >
                 <section
-                  className="react-trello-board sc-htpNat dJewwL"
+                  className="react-trello-lane sc-htpNat dJewwL"
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
@@ -27427,7 +27427,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -27466,7 +27466,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -27498,7 +27498,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
@@ -27530,7 +27530,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan3"
                       label="30 mins"
                       onClick={[Function]}
@@ -27562,7 +27562,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan4"
                       label="5 mins"
                       onClick={[Function]}
@@ -27598,7 +27598,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="10/20"
               onClick={[Function]}
@@ -27637,7 +27637,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Wip1"
                       label="30 mins"
                       onClick={[Function]}
@@ -27673,7 +27673,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="0/0"
               onClick={[Function]}
@@ -27715,7 +27715,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="2/5"
               onClick={[Function]}
@@ -27754,7 +27754,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed1"
                       label="15 mins"
                       onClick={[Function]}
@@ -27786,7 +27786,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Completed2"
                       label="15 mins"
                       onClick={[Function]}
@@ -27822,7 +27822,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -27861,7 +27861,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Repeat1"
                       label="30 mins"
                       onClick={[Function]}
@@ -27897,7 +27897,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -27936,7 +27936,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived1"
                       label="300 mins"
                       onClick={[Function]}
@@ -27972,7 +27972,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -28011,7 +28011,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived2"
                       label="300 mins"
                       onClick={[Function]}
@@ -28047,7 +28047,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
           </span>
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="1/1"
               onClick={[Function]}
@@ -28086,7 +28086,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Archived3"
                       label="300 mins"
                       onClick={[Function]}
@@ -28900,7 +28900,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
         >
           <span>
             <section
-              className="react-trello-board sc-htpNat dJewwL"
+              className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               label="20/70"
               onClick={[Function]}
@@ -28942,7 +28942,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                 >
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Milk"
                       label="15 mins"
                       onClick={[Function]}
@@ -28974,7 +28974,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                   </span>
                   <span>
                     <article
-                      className="react-trello-board sc-dnqmqq eoPYBZ"
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
                       data-id="Plan2"
                       label="10 mins"
                       onClick={[Function]}
