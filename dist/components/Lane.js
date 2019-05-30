@@ -99,31 +99,33 @@ var Lane = function (_Component) {
       collapsed: false,
       isDraggingOver: false
     }, _this.handleScroll = function (evt) {
-      var node = evt.target;
-      var elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight;
-      var onLaneScroll = _this.props.onLaneScroll;
+      if (_this.props.shouldPaginate(_this.props, _this.state)) {
+        var node = evt.target;
+        var elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight;
+        var onLaneScroll = _this.props.onLaneScroll;
 
-      if (elemScrolPosition <= 0 && onLaneScroll && !_this.state.loading) {
-        var currentPage = _this.state.currentPage;
+        if (elemScrolPosition <= 0 && onLaneScroll && !_this.state.loading) {
+          var currentPage = _this.state.currentPage;
 
-        _this.setState({ loading: true });
-        var nextPage = currentPage + 1;
-        onLaneScroll(nextPage, _this.props.id).then(function (moreCards) {
-          if (!moreCards || moreCards.length === 0) {
-            // if no cards present, stop retrying until user action
-            node.scrollTop = node.scrollTop - 100;
-          } else {
-            _this.props.actions.paginateLane({
-              laneId: _this.props.id,
-              newCards: moreCards,
-              nextPage: nextPage
-            });
-          }
-          _this.setState({ loading: false });
-        });
+          _this.setState({ loading: true });
+          var nextPage = currentPage + 1;
+          onLaneScroll(nextPage, _this.props.id).then(function (moreCards) {
+            if (!moreCards || moreCards.length === 0) {
+              // if no cards present, stop retrying until user action
+              node.scrollTop = node.scrollTop - 100;
+            } else {
+              _this.props.actions.paginateLane({
+                laneId: _this.props.id,
+                newCards: moreCards,
+                nextPage: nextPage
+              });
+            }
+            _this.setState({ loading: false });
+          });
+        }
       }
     }, _this.laneDidMount = function (node) {
-      if (node) {
+      if (_this.props.shouldPaginate(_this.props, _this.state) && node) {
         node.addEventListener('scroll', _this.handleScroll);
       }
     }, _this.removeCard = function (laneId, cardId) {
@@ -402,7 +404,8 @@ Lane.propTypes = {
   addCardLink: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.node]),
   editable: _propTypes2.default.bool,
   cardDraggable: _propTypes2.default.bool,
-  cardDragClass: _propTypes2.default.string
+  cardDragClass: _propTypes2.default.string,
+  shouldPaginate: _propTypes2.default.func
 };
 
 Lane.defaultProps = {
@@ -411,7 +414,10 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: function onCardAdd() {}
+  onCardAdd: function onCardAdd() {},
+  shouldPaginate: function shouldPaginate() {
+    return false;
+  }
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {

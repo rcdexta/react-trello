@@ -24,26 +24,28 @@ class Lane extends Component {
   }
 
   handleScroll = evt => {
-    const node = evt.target
-    const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
-    const {onLaneScroll} = this.props
-    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
-      const {currentPage} = this.state
-      this.setState({loading: true})
-      const nextPage = currentPage + 1
-      onLaneScroll(nextPage, this.props.id).then(moreCards => {
-        if (!moreCards || moreCards.length === 0) {
-          // if no cards present, stop retrying until user action
-          node.scrollTop = node.scrollTop - 100
-        } else {
-          this.props.actions.paginateLane({
-            laneId: this.props.id,
-            newCards: moreCards,
-            nextPage: nextPage
-          })
-        }
-        this.setState({loading: false})
-      })
+    if (this.props.shouldPaginate(this.props, this.state)) {
+      const node = evt.target
+      const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
+      const {onLaneScroll} = this.props
+      if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
+        const {currentPage} = this.state
+        this.setState({loading: true})
+        const nextPage = currentPage + 1
+        onLaneScroll(nextPage, this.props.id).then(moreCards => {
+          if (!moreCards || moreCards.length === 0) {
+            // if no cards present, stop retrying until user action
+            node.scrollTop = node.scrollTop - 100
+          } else {
+            this.props.actions.paginateLane({
+              laneId: this.props.id,
+              newCards: moreCards,
+              nextPage: nextPage
+            })
+          }
+          this.setState({loading: false})
+        })
+      }
     }
   }
 
@@ -56,7 +58,7 @@ class Lane extends Component {
   }
 
   laneDidMount = node => {
-    if (node) {
+    if (this.props.shouldPaginate(this.props, this.state) && node) {
       node.addEventListener('scroll', this.handleScroll)
     }
   }
@@ -283,7 +285,8 @@ Lane.propTypes = {
   addCardLink: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
-  cardDragClass: PropTypes.string
+  cardDragClass: PropTypes.string,
+  shouldPaginate: PropTypes.func
 }
 
 Lane.defaultProps = {
@@ -292,7 +295,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  shouldPaginate: () => false
 }
 
 const mapDispatchToProps = dispatch => ({
