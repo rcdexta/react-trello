@@ -500,7 +500,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -534,7 +534,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -568,7 +568,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -602,7 +602,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -689,7 +689,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -820,7 +820,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -854,7 +854,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -941,7 +941,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -1028,7 +1028,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -1115,7 +1115,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -1202,7 +1202,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -2015,7 +2015,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           foo card
                         </div>
@@ -2046,7 +2046,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           bar card
                         </div>
@@ -2109,7 +2109,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           foobar card
                         </div>
@@ -3250,7 +3250,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             2 Gallons of milk at the Deli store
                           </div>
@@ -3282,7 +3282,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Sort out recyclable and waste as needed
                           </div>
@@ -3314,7 +3314,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Can AI make memes?
                           </div>
@@ -3346,7 +3346,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Transfer to bank account
                           </div>
@@ -3421,7 +3421,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </div>
@@ -3538,7 +3538,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Use Headspace app
                           </div>
@@ -3570,7 +3570,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Use Spreadsheet for now
                           </div>
@@ -3645,7 +3645,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Track using fitbit
                           </div>
@@ -3720,7 +3720,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Completed 10km on cycle
                           </div>
@@ -3795,7 +3795,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Completed 10km on cycle
                           </div>
@@ -3870,7 +3870,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Completed 10km on cycle
                           </div>
@@ -4335,7 +4335,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #1
                           </div>
@@ -4364,7 +4364,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #2
                           </div>
@@ -4393,7 +4393,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #3
                           </div>
@@ -4422,7 +4422,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #4
                           </div>
@@ -4451,7 +4451,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #5
                           </div>
@@ -4480,7 +4480,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #6
                           </div>
@@ -4509,7 +4509,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #7
                           </div>
@@ -4538,7 +4538,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #8
                           </div>
@@ -4567,7 +4567,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #9
                           </div>
@@ -4596,7 +4596,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #10
                           </div>
@@ -4625,7 +4625,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #11
                           </div>
@@ -4654,7 +4654,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #12
                           </div>
@@ -4683,7 +4683,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #13
                           </div>
@@ -4712,7 +4712,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #14
                           </div>
@@ -4741,7 +4741,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                             />
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Description for #15
                           </div>
@@ -5746,7 +5746,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -5778,7 +5778,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -5810,7 +5810,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -5842,7 +5842,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -5917,7 +5917,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -6034,7 +6034,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -6066,7 +6066,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -6141,7 +6141,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -6216,7 +6216,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -6291,7 +6291,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -6366,7 +6366,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -7169,7 +7169,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #1
                         </div>
@@ -7198,7 +7198,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #2
                         </div>
@@ -7227,7 +7227,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #3
                         </div>
@@ -7256,7 +7256,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #4
                         </div>
@@ -7285,7 +7285,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #5
                         </div>
@@ -7314,7 +7314,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #6
                         </div>
@@ -7343,7 +7343,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #7
                         </div>
@@ -7372,7 +7372,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #8
                         </div>
@@ -7401,7 +7401,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #9
                         </div>
@@ -7430,7 +7430,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #10
                         </div>
@@ -7459,7 +7459,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #11
                         </div>
@@ -7488,7 +7488,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #12
                         </div>
@@ -7517,7 +7517,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #13
                         </div>
@@ -7546,7 +7546,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #14
                         </div>
@@ -7575,7 +7575,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Description for #15
                         </div>
@@ -8431,7 +8431,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -8463,7 +8463,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -8495,7 +8495,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -8527,7 +8527,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -9077,7 +9077,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -9109,7 +9109,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -9141,7 +9141,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -9173,7 +9173,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -9711,7 +9711,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           foo card
                         </div>
@@ -9792,7 +9792,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           bar card
                         </div>
@@ -11862,7 +11862,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Thanks. Please schedule me for an estimate on Monday.
                         </div>
@@ -11891,7 +11891,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Email received at 1:14pm
                         </div>
@@ -11986,7 +11986,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
                           />
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           You are welcome. Interested in doing business with you again
                         </div>
@@ -13375,7 +13375,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -13409,7 +13409,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -13443,7 +13443,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -13477,7 +13477,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -13556,7 +13556,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -13679,7 +13679,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -13713,7 +13713,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -13792,7 +13792,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -13871,7 +13871,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -13950,7 +13950,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -14029,7 +14029,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -14970,7 +14970,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -15004,7 +15004,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -15038,7 +15038,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -15072,7 +15072,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -15145,7 +15145,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -16083,7 +16083,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -16117,7 +16117,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -16151,7 +16151,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -16185,7 +16185,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -16264,7 +16264,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -16387,7 +16387,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -16421,7 +16421,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -16500,7 +16500,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -16579,7 +16579,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -16658,7 +16658,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -16737,7 +16737,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -17595,7 +17595,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -17629,7 +17629,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -17663,7 +17663,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -17697,7 +17697,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -17772,7 +17772,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -18613,7 +18613,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -18655,7 +18655,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -18697,7 +18697,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -18739,7 +18739,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -19472,7 +19472,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -19516,7 +19516,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -19560,7 +19560,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -19604,7 +19604,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -19699,7 +19699,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -19844,7 +19844,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -19888,7 +19888,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -19983,7 +19983,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -20078,7 +20078,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -20173,7 +20173,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -20268,7 +20268,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -21341,7 +21341,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -21373,7 +21373,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -21405,7 +21405,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -21437,7 +21437,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -21519,7 +21519,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -21650,7 +21650,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -21682,7 +21682,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -21764,7 +21764,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -21846,7 +21846,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -21928,7 +21928,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -22010,7 +22010,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -22957,7 +22957,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -22999,7 +22999,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -23041,7 +23041,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -23083,7 +23083,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -23174,7 +23174,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -23313,7 +23313,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -23355,7 +23355,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -23446,7 +23446,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -23537,7 +23537,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -23628,7 +23628,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -23719,7 +23719,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -24714,7 +24714,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               2 Gallons of milk at the Deli store
                             </div>
@@ -24748,7 +24748,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Sort out recyclable and waste as needed
                             </div>
@@ -24782,7 +24782,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Can AI make memes?
                             </div>
@@ -24816,7 +24816,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Transfer to bank account
                             </div>
@@ -24895,7 +24895,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                             </div>
@@ -25018,7 +25018,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Use Headspace app
                             </div>
@@ -25052,7 +25052,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Use Spreadsheet for now
                             </div>
@@ -25131,7 +25131,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Track using fitbit
                             </div>
@@ -25210,7 +25210,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Completed 10km on cycle
                             </div>
@@ -25289,7 +25289,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Completed 10km on cycle
                             </div>
@@ -25368,7 +25368,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Completed 10km on cycle
                             </div>
@@ -25532,7 +25532,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                             </div>
@@ -25607,7 +25607,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               2 Gallons of milk at the Deli store
                             </div>
@@ -25641,7 +25641,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Sort out recyclable and waste as needed
                             </div>
@@ -25675,7 +25675,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Can AI make memes?
                             </div>
@@ -25709,7 +25709,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                               </span>
                             </header>
                             <div
-                              className="sc-VigVT ddzuTg"
+                              className="sc-VigVT jTtwdL"
                             >
                               Transfer to bank account
                             </div>
@@ -27489,7 +27489,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -27521,7 +27521,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -27553,7 +27553,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -27585,7 +27585,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -27660,7 +27660,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
@@ -27777,7 +27777,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Headspace app
                         </div>
@@ -27809,7 +27809,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Use Spreadsheet for now
                         </div>
@@ -27884,7 +27884,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Track using fitbit
                         </div>
@@ -27959,7 +27959,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -28034,7 +28034,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -28109,7 +28109,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Completed 10km on cycle
                         </div>
@@ -28965,7 +28965,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -28997,7 +28997,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>

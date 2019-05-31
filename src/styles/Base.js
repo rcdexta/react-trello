@@ -192,7 +192,7 @@ export const CardRightContent = styled(RightContent)`
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
-  white-space: normal;
+  white-space: pre-wrap;
 `
 
 export const Footer = styled.div`
