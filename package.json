@@ -70,7 +70,7 @@
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
     "codecov.io": "^0.1.6",
