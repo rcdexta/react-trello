@@ -1,0 +1,15 @@
+{
+  "Add another lane": "+ Добавить колонку",
+  "Click to add card": "Добавить карточку",
+  "Delete lane": "Удалить колонку",
+  "Lane actions": "Действия над колонкой",
+  "button": {
+    "Add": "Добавить",
+    "Cancel": "Отменить"
+  },
+  "placeholder": {
+    "title": "Название",
+    "description": "Описание",
+    "label": "Метка"
+  }
+}
