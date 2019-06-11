@@ -13,6 +13,7 @@ import Loader from './Loader'
 import Card from './Card'
 import NewCard from './NewCard'
 import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
+import defaultTranslation from '../helpers/defaultTranslation'
 
 import * as laneActions from '../actions/LaneActions'
 import {
@@ -111,16 +112,16 @@ class Lane extends Component {
   }
 
   renderAddCardLink = () => {
-    const {addCardLink, addCardTitle} = this.props
+    const {addCardLink, t} = this.props
     if (addCardLink) {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
-      return <AddCardLink onClick={this.showEditableCard}>{addCardTitle}</AddCardLink>
+      return <AddCardLink onClick={this.showEditableCard}>{t('Click to add card')}</AddCardLink>
     }
   }
 
   renderNewCard = () => {
-    const {newCardTemplate, id} = this.props
+    const {newCardTemplate, id, t} = this.props
     if (newCardTemplate) {
       const newCardWithProps = React.cloneElement(newCardTemplate, {
         onCancel: this.hideEditableCard,
@@ -129,7 +130,7 @@ class Lane extends Component {
       })
       return <span>{newCardWithProps}</span>
     } else {
-      return <NewCard onCancel={this.hideEditableCard} onAdd={this.addNewCard} />
+      return <NewCard onCancel={this.hideEditableCard} t={t} onAdd={this.addNewCard} />
     }
   }
 
@@ -221,13 +222,13 @@ class Lane extends Component {
     return (
       <Popover className="menu" position="bottom" trigger={<MenuButton>⋮</MenuButton>}>
         <LaneMenuHeader>
-          <LaneMenuTitle>Lane actions</LaneMenuTitle>
+          <LaneMenuTitle>{this.props.t('Lane actions')}</LaneMenuTitle>
           <DeleteWrapper>
             <GenDelButton>&#10006;</GenDelButton>
           </DeleteWrapper>
         </LaneMenuHeader>
         <LaneMenuContent>
-          <LaneMenuItem onClick={this.removeLane}>Delete Lane...</LaneMenuItem>
+          <LaneMenuItem onClick={this.removeLane}>{this.props.t('Delete lane')}</LaneMenuItem>
         </LaneMenuContent>
       </Popover>
     )
@@ -309,11 +310,11 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,
   addCardLink: PropTypes.node,
-  addCardTitle: PropTypes.string,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
-  canAddLanes: PropTypes.bool
+  canAddLanes: PropTypes.bool,
+  t: PropTypes.func.isRequired
 }
 
 Lane.defaultProps = {
@@ -322,7 +323,8 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  t: defaultTranslation
 }
 
 const mapDispatchToProps = dispatch => ({
