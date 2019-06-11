@@ -104,7 +104,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-i18next": "^10.11.0",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "^16.8.6",
     "sass-loader": "^6.0.6",
     "semantic-release": "^6.3.6",
     "style-loader": "^0.18.2",
