@@ -120,11 +120,12 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onCardDelete, onCardAdd, editable, canAddLanes, t, ...otherProps} = this.props
+    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onLaneDelete, onCardDelete, onCardAdd, editable, canAddLanes, t, ...otherProps} = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
       'onLaneScroll',
+      'onLaneDelete',
       'onCardClick',
       'onCardDelete',
       'onCardAdd',
@@ -208,6 +209,7 @@ BoardContainer.propTypes = {
   onCardAdd: PropTypes.func,
   addCardLink: PropTypes.node,
   onLaneAdd: PropTypes.func,
+  onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
@@ -238,6 +240,7 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
+  onLaneDelete: () => {},
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,
