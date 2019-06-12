@@ -127,14 +127,14 @@ class BoardContainer extends Component {
       laneDragClass,
       style,
       onDataChange,
-      onLaneScroll,
+      onCardAdd,
       onCardClick,
+      onLaneScroll,
       onLaneClick,
       onLaneAdd,
+      onLaneDelete
       onCardDelete,
-      onCardAdd,
       addLaneTitle,
-      onLaneDelete,
       editable,
       canAddLanes,
       ...otherProps
@@ -142,6 +142,7 @@ class BoardContainer extends Component {
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
+      'onCardMoveAcrossLanes',
       'onLaneScroll',
       'onLaneDelete',
       'onCardClick',
@@ -261,6 +262,7 @@ BoardContainer.defaultProps = {
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
   onLaneDelete: () => {},
+  onCardMoveAcrossLanes: () => {},
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,
