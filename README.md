@@ -120,6 +120,7 @@ This is the container component that encapsulates the lanes and cards
 | customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
 | data                | object   | Actual board data in the form of json                                                                                          |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
+| verticalBoard       | boolean  | Allow the board to display in a vertical format                                                                                |
 
 Refer to `stories` folder for examples on many more options for customization.
 

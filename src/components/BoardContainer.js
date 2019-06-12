@@ -119,7 +119,7 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onCardDelete, onCardAdd, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
+    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onCardDelete, onCardAdd, addLaneTitle, editable, canAddLanes, verticalBoard, ...otherProps} = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
@@ -153,12 +153,12 @@ class BoardContainer extends Component {
       <BoardDiv style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
         <Container
-          orientation="horizontal"
+          orientation={verticalBoard ? "vertical" : "horizontal"}
           onDragStart={this.onDragStart}
           dragClass={laneDragClass}
           dropClass=""
           onDrop={this.onLaneDrop}
-          lockAxis="x"
+          lockAxis={verticalBoard ? "y" : "x"}
           getChildPayload={index => this.getLaneDetails(index)}
           groupName={this.groupName}>
           {reducerData.lanes.map((lane, index) => {
@@ -180,7 +180,7 @@ class BoardContainer extends Component {
         </Container>
         </PopoverWrapper>
         {canAddLanes && (
-          <Container orientation="horizontal">
+          <Container orientation={verticalBoard ? "vertical" : "horizontal"}>
             {editable && !addLaneMode ? (
               <LaneSection style={{width: 200}}>
                 <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
@@ -229,7 +229,8 @@ BoardContainer.propTypes = {
   laneDragClass: PropTypes.string,
   addLaneTitle: PropTypes.string,
   addCardTitle: PropTypes.string,
-  newLaneTemplate: PropTypes.node
+  newLaneTemplate: PropTypes.node,
+  verticalBoard: PropTypes.bool
 }
 
 BoardContainer.defaultProps = {
