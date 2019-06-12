@@ -23,7 +23,7 @@ const I18nBoard = () => {
   )
 }
 
-storiesOf('I81n', module)
+storiesOf('I18n', module)
   .addDecorator(story => <I18nextProvider i18n={i18n}>{story()}</I18nextProvider>)
   .add(
     'Custom texts',
