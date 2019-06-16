@@ -171,6 +171,8 @@ class BoardContainer extends Component {
                 getCardDetails={this.getCardDetails}
                 index={index}
                 droppable={droppable === undefined ? true : droppable}
+                style={lane.style || {}}
+                labelStyle={lane.labelStyle || {}}
                 {...otherProps}
                 {...passthroughProps}
               />
