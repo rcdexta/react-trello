@@ -126,7 +126,8 @@ class Lane extends Component {
       const newCardWithProps = React.cloneElement(newCardTemplate, {
         onCancel: this.hideEditableCard,
         onAdd: this.addNewCard,
-        laneId: id
+        laneId: id,
+        t: t
       })
       return <span>{newCardWithProps}</span>
     } else {
