@@ -40,7 +40,6 @@ class Card extends Component {
 
   render() {
     const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, onDelete, ...otherProps} = this.props
-    const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
     const allClassNames = classNames('react-trello-card', this.props.className || '')
     return (
       <MovableCardWrapper
@@ -48,7 +47,7 @@ class Card extends Component {
         key={id}
         data-id={id}
         style={{
-          ...style,
+          ...cardStyle,
           ...dragStyle
         }}
         {...otherProps}>
