@@ -132,7 +132,7 @@ class BoardContainer extends Component {
       onLaneScroll,
       onLaneClick,
       onLaneAdd,
-      onLaneDelete
+      onLaneDelete,
       onCardDelete,
       addLaneTitle,
       editable,
