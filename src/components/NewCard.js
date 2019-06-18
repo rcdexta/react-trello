@@ -31,7 +31,7 @@ class NewCard extends Component {
             <EditableLabel placeholder={t('placeholder.description')} onChange={val => this.updateField('description', val)} />
           </Detail>
         </CardWrapper>
-        <AddButton onClick={this.handleAdd}>{t('button.Add')}</AddButton>
+        <AddButton onClick={this.handleAdd}>{t('button.Add card')}</AddButton>
         <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
       </div>
     )

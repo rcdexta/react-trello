@@ -9,7 +9,7 @@ import isEqual from 'lodash/isEqual'
 import {BoardDiv, LaneSection} from '../styles/Base'
 import {NewLaneButton} from '../styles/Elements'
 import Lane from './Lane'
-import NewLane from './NewLane'
+import DefaultNewLane from './NewLane'
 import { PopoverWrapper } from '@terebentina/react-popover'
 import defaultTranslation from '../helpers/defaultTranslation'
 
@@ -103,19 +103,6 @@ class BoardContainer extends Component {
     this.props.onLaneAdd(params)
   }
 
-  renderNewLane = () => {
-    const {newLaneTemplate, t} = this.props
-    if (newLaneTemplate) {
-      const newCardWithProps = React.cloneElement(newLaneTemplate, {
-        onCancel: this.hideEditableLane,
-        onAdd: this.addNewLane
-      })
-      return <span>{newCardWithProps}</span>
-    } else {
-      return <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
-    }
-  }
-
   get groupName() {
     const {id} = this.props
     return `TrelloBoard${id}`
@@ -123,7 +110,7 @@ class BoardContainer extends Component {
 
   render() {
     const {
-      id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardMoveAcrossLanes, onCardClick, onLaneClick, onLaneAdd, onLaneDelete, onCardDelete, onCardAdd, editable, canAddLanes, t, inlineEditLaneTitle, onLaneUpdate,
+      id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardMoveAcrossLanes, onCardClick, onLaneClick, onLaneAdd, onLaneDelete, onCardDelete, onCardAdd, editable, canAddLanes, t, inlineEditLaneTitle, onLaneUpdate, NewLane,
       ...otherProps
     } = this.props
     const {addLaneMode} = this.state
@@ -151,7 +138,6 @@ class BoardContainer extends Component {
       'handleDragEnd',
       'cardDragClass',
       'children',
-      'newLaneTemplate',
       'newCardTemplate',
       't'
     ])
@@ -196,9 +182,9 @@ class BoardContainer extends Component {
               <LaneSection style={{width: 200}}>
                 <NewLaneButton onClick={this.showEditableLane}>{t('Add another lane')}</NewLaneButton>
               </LaneSection>
-            ) : (
-              addLaneMode && this.renderNewLane()
-            )}
+            ) : ( addLaneMode && <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>)
+         }
+
           </Container>
         )}
       </BoardDiv>
@@ -239,13 +225,13 @@ BoardContainer.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   laneDragClass: PropTypes.string,
-  newLaneTemplate: PropTypes.node,
   onLaneUpdate: PropTypes.func,
   inlineEditLaneTitle: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
 
 BoardContainer.defaultProps = {
+  NewLane: DefaultNewLane,
   onDataChange: () => {},
   handleDragStart: () => {},
   handleDragEnd: () => {},

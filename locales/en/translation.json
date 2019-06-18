@@ -4,7 +4,8 @@
   "Delete lane": "Delete lane",
   "Lane actions": "Lane actions",
   "button": {
-    "Add": "Add",
+    "Add lane": "Add lane",
+    "Add card": "Add card",
     "Cancel": "Cancel"
   },
   "placeholder": {

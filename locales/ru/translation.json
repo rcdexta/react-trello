@@ -4,7 +4,8 @@
   "Delete lane": "Удалить колонку",
   "Lane actions": "Действия над колонкой",
   "button": {
-    "Add": "Добавить",
+    "Add card": "Добавить карту",
+    "Add lane": "Добавить колонку",
     "Cancel": "Отменить"
   },
   "placeholder": {
