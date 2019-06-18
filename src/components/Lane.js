@@ -258,7 +258,7 @@ class Lane extends Component {
         <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
           <Title style={{...titleStyle, margin: '-5px'}}>
             {inlineEditTitle ?
-              <InlineInput value={title} border placeholder={t('placeholder.title')} onChange={this.updateTitle} /> :
+              <InlineInput value={title} border placeholder={t('placeholder.title')} onSave={this.updateTitle} /> :
               title
             }
           </Title>

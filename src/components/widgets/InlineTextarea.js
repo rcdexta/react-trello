@@ -3,19 +3,19 @@ import PropTypes from 'prop-types'
 import {InlineInput} from '../../styles/Base'
 import autosize from 'autosize';
 
-class InlineInputController extends React.Component {
+class InlintTextareaController extends React.Component {
   onFocus = (e) => e.target.select()
 
   // This is the way to select all text if mouse clicked
   onMouseDown = (e) => {
     if (document.activeElement != e.target) {
       e.preventDefault()
-      this.refInput.focus()
+      focus()
     }
   }
 
   onBlur = () => {
-    this.updateValue()
+    this.saveValue()
   }
 
   onKeyDown = (e) => {
@@ -24,20 +24,23 @@ class InlineInputController extends React.Component {
       e.preventDefault()
     }
     if(e.keyCode == 27) {
-      this.setValue(this.props.value)
+      this.setValue('')
+      this.props.onCancel()
       this.refInput.blur()
       e.preventDefault()
     }
   }
 
   getValue = () => this.refInput.value
-  setValue = (value) => this.refInput.value=value
+  setValue = (value) => this.refInput.value = value
 
-  updateValue = () => {
+  saveValue = () => {
     if (this.getValue() != this.props.value) {
       this.props.onSave(this.getValue())
     }
   }
+
+  focus = () => this.refInput.focus()
 
   componentDidMount = () => {
     if (this.props.autoResize) {
@@ -54,7 +57,6 @@ class InlineInputController extends React.Component {
       border={border}
       onMouseDown={this.onMouseDown}
       onFocus={this.onFocus}
-      onBlur={this.onBlur}
       onKeyDown={this.onKeyDown}
       placeholder={value.length == 0 ? undefined : placeholder}
       defaultValue={value}
@@ -65,8 +67,9 @@ class InlineInputController extends React.Component {
   }
 }
 
-InlineInputController.propTypes = {
+InlintTextareaController.propTypes = {
   onSave: PropTypes.func,
+  onCancel: PropTypes.func,
   border: PropTypes.bool,
   placeholder: PropTypes.string,
   value: PropTypes.string,
@@ -75,8 +78,10 @@ InlineInputController.propTypes = {
   resize: PropTypes.oneOf(['none', 'vertical', 'horizontal']),
 }
 
-InlineInputController.defaultProps = {
+InlintTextareaController.defaultProps = {
+  inputRef: () => {},
   onSave: () => {},
+  onCancel: () => {},
   placeholder: '',
   value: '',
   border: false,
@@ -85,4 +90,4 @@ InlineInputController.defaultProps = {
   resize: 'none'
 }
 
-export default InlineInputController
+export default InlintTextareaController
