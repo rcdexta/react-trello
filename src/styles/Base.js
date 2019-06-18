@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { css, createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -267,9 +267,12 @@ export const InlineInput = styled.textarea`
   border: 0;
   padding: 4px 8px;
   outline: 0;
+  ${props => props.border && css`
+    &:focus {
+      box-shadow: inset 0 0 0 2px #0079bf;
+    }
+   `}
   &:focus {
     background-color: white;
-    box-shadow: inset 0 0 0 2px #0079bf;
-  }
   }
 `

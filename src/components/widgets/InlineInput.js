@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {InlineInput} from '../../styles/Base'
+import autosize from 'autosize';
 
 class InlineInputController extends React.Component {
   onFocus = (e) => e.target.select()
@@ -36,31 +37,50 @@ class InlineInputController extends React.Component {
     }
   }
 
+  componentDidMount = () => {
+    if (this.props.autoResize) {
+      autosize(this.refInput)
+    }
+  }
+
   render() {
-    const {autoFocus, value, placeholder} = this.props
+    const {autoFocus, resize, border, autoResize, value, placeholder} = this.props
 
     return <InlineInput
-        ref={ref => (this.refInput = ref)}
-        onMouseDown={this.onMouseDown}
-        onFocus={this.onFocus}
-        onBlur={this.onBlur}
-        onKeyDown={this.onKeyDown}
-        placeholder={value.length == 0 ? false : placeholder}
-        defaultValue={value}
-      />
+      style={{resize: resize}}
+      ref={ref => (this.refInput = ref)}
+      border={border}
+      onMouseDown={this.onMouseDown}
+      onFocus={this.onFocus}
+      onBlur={this.onBlur}
+      onKeyDown={this.onKeyDown}
+      placeholder={value.length == 0 ? undefined : placeholder}
+      defaultValue={value}
+      rows={1}
+      autoResize={autoResize}
+      autoFocus={autoFocus}
+    />
   }
+}
+
+InlineInputController.propTypes = {
+  onChange: PropTypes.func,
+  border: PropTypes.bool,
+  placeholder: PropTypes.string,
+  value: PropTypes.string,
+  autoFocus: PropTypes.bool,
+  autoResize: PropTypes.bool,
+  resize: PropTypes.oneOf(['none', 'vertical', 'horizontal']),
 }
 
 InlineInputController.defaultProps = {
   onChange: () => {},
   placeholder: '',
   value: '',
-}
-
-InlineInputController.propTypes = {
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  value: PropTypes.string
+  border: false,
+  autoFocus: false,
+  autoResize: false,
+  resize: 'none'
 }
 
 export default InlineInputController
