@@ -46,6 +46,17 @@ const LaneHelper = {
     return update(state, {lanes: {$push: [newLane]}})
   },
 
+  updateLane: (state, updatedLane) => {
+    const newLanes = state.lanes.map(lane => {
+      if (updatedLane.id == lane.id ) {
+        return { ...lane, ...updatedLane }
+      } else {
+        return lane
+      }
+    })
+    return update(state, {lanes: {$set: newLanes}})
+  },
+
   removeCardFromLane: (state, {laneId, cardId}) => {
     const lanes = state.lanes.map(lane => {
       if (lane.id === laneId) {

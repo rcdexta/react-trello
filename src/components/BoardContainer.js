@@ -80,6 +80,8 @@ class BoardContainer extends Component {
             })
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
+          case 'UPDATE_LANE':
+            return actions.updateLane(event.lane)
         }
       }
     }
@@ -121,7 +123,7 @@ class BoardContainer extends Component {
 
   render() {
     const {
-      id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardMoveAcrossLanes, onCardClick, onLaneClick, onLaneAdd, onLaneDelete, onCardDelete, onCardAdd, editable, canAddLanes, t,
+      id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardMoveAcrossLanes, onCardClick, onLaneClick, onLaneAdd, onLaneDelete, onCardDelete, onCardAdd, editable, canAddLanes, t, inlineEditLaneTitle, onLaneUpdate,
       ...otherProps
     } = this.props
     const {addLaneMode} = this.state
@@ -170,6 +172,8 @@ class BoardContainer extends Component {
             const {id, droppable, ...otherProps} = lane
             const laneToRender = (
               <Lane
+                inlineEditTitle={inlineEditLaneTitle}
+                onLaneUpdate={onLaneUpdate}
                 key={id}
                 boardId={this.groupName}
                 id={id}
@@ -236,6 +240,8 @@ BoardContainer.propTypes = {
   cardDragClass: PropTypes.string,
   laneDragClass: PropTypes.string,
   newLaneTemplate: PropTypes.node,
+  onLaneUpdate: PropTypes.func,
+  inlineEditLaneTitle: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
 
@@ -253,6 +259,7 @@ BoardContainer.defaultProps = {
   hideCardDeleteIcon: false,
   draggable: false,
   collapsibleLanes: false,
+  inlineEditLaneTitle: false,
   laneDraggable: true,
   cardDraggable: true,
   cardDragClass: 'react_trello_dragClass',

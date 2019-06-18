@@ -14,6 +14,7 @@ import Card from './Card'
 import NewCard from './NewCard'
 import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
 import defaultTranslation from '../helpers/defaultTranslation'
+import InlineInput from './widgets/InlineInput'
 
 import * as laneActions from '../actions/LaneActions'
 import {
@@ -77,6 +78,8 @@ class Lane extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    this.setState({title: nextProps.title})
+
     if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({
         currentPage: nextProps.currentPage
@@ -239,16 +242,26 @@ class Lane extends Component {
     )
   }
 
+  updateTitle = (value) => {
+    this.props.actions.updateLane({id: this.props.id, title: value})
+    this.props.onLaneUpdate(this.props.id, {title: value })
+  }
+
   renderHeader = () => {
-    const {customLaneHeader, canAddLanes} = this.props
+    const {customLaneHeader, canAddLanes, inlineEditTitle} = this.props
     if (customLaneHeader) {
       const customLaneElement = React.cloneElement(customLaneHeader, {...this.props})
       return <span>{customLaneElement}</span>
     } else {
-      const {title, label, titleStyle, labelStyle} = this.props
+      const {id, label, title, titleStyle, labelStyle, t} = this.props
       return (
         <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
-          <Title style={titleStyle}>{title}</Title>
+          <Title style={{...titleStyle, margin: '-5px'}}>
+            {inlineEditTitle ?
+              <InlineInput value={title} placeholder={t('placeholder.title')} onChange={this.updateTitle} t={t} /> :
+              title
+            }
+          </Title>
           {label && (
             <RightContent>
               <span style={labelStyle}>{label}</span>
@@ -274,7 +287,7 @@ class Lane extends Component {
 
   render() {
     const {loading, isDraggingOver} = this.state
-    const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, onLaneDelete, onCardMoveAcrossLanes, ...otherProps} = this.props
+    const {id, onLaneClick, onLaneScroll, onLaneUpdate, onCardClick, onCardAdd, onCardDelete, onLaneDelete, onCardMoveAcrossLanes, ...otherProps} = this.props
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
     return (
       <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
@@ -321,16 +334,20 @@ Lane.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
+  onLaneUpdate: PropTypes.func,
+  inlineEditTitle: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
 
 Lane.defaultProps = {
+  inlineEditTitle: false,
   style: {},
   titleStyle: {},
   labelStyle: {},
   label: undefined,
   editable: false,
   onCardAdd: () => {},
+  onLaneUpdate: () => {},
   t: defaultTranslation
 }
 

@@ -25,14 +25,14 @@ export const GlobalStyle = createGlobalStyle`
       position: absolute;
       background: transparent none repeat scroll 0 0;
       border: 6px solid transparent;
-      transition: all 0.3s ease 0ms; 
+      transition: all 0.3s ease 0ms;
       left: 50%; }
   .popover.popover--bottom {
     flex-flow: column nowrap; }
     .popover.popover--bottom .popover__content {
       left: 50%;
-      transform: translateX(-50%); }      
-  
+      transform: translateX(-50%); }
+
   .popover.popover--active .popover__content {
     visibility: visible;
     opacity: 1;
@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   .popover[class*="menu"] .popover__content {
     border-radius: 3px;
     min-width: 7em;
-    flex-flow: column nowrap;    
+    flex-flow: column nowrap;
     color: #000; }
     .popover[class*="menu"] .popover__content a {
       color: rgba(255, 255, 255, 0.56);
@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #00bcd4 !important;
         color: #37474F; }
 
-		
+
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
   }
@@ -62,15 +62,15 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
     cursor: text;
   }
-  
+
   .react_trello_dragClass {
     transform: rotate(3deg);
   }
-  
+
   .react_trello_dragLaneClass {
     transform: rotate(3deg);
-  }  
-  
+  }
+
   .icon-overflow-menu-horizontal:before {
     content: "\\E91F";
   }
@@ -116,7 +116,7 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-  padding: 0px 5px;
+  padding: 2px 5px 0px 5px;
   margin-bottom: 0px;
 `
 
@@ -252,4 +252,24 @@ export const NewLaneSection = styled(LaneSection)`
 
 export const NewLaneButtons = styled.div`
   margin-top: 10px;
+  `
+
+export const InlineInput = styled.textarea`
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: none;
+  width: 100%;
+  height: 28px;
+  line-height: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 3px;
+  border: 0;
+  padding: 4px 8px;
+  outline: 0;
+  &:focus {
+    background-color: white;
+    box-shadow: inset 0 0 0 2px #0079bf;
+  }
+  }
 `

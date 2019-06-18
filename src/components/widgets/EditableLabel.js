@@ -43,8 +43,8 @@ class EditableLabel extends React.Component {
         onPaste={this.onPaste}
         onBlur={this.onBlur}
         onInput={this.onTextChange}
-        placeholder={this.props.placeholder}
-      />
+        placeholder={this.props.value.length == 0 && this.props.placeholder}
+      >{this.props.value}</div>
     )
   }
 }
@@ -52,12 +52,14 @@ class EditableLabel extends React.Component {
 EditableLabel.defaultProps = {
   onChange: () => {},
   placeholder: '',
-  autoFocus: false
+  autoFocus: false,
+  value: '',
 }
 EditableLabel.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  autoFocus: PropTypes.bool
+  autoFocus: PropTypes.bool,
+  value: PropTypes.string
 }
 
 export default EditableLabel

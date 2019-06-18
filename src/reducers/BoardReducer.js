@@ -23,6 +23,8 @@ const boardReducer = (state = {lanes: []}, action) => {
       return Lh.removeLane(state, payload)
     case 'ADD_LANE':
       return Lh.addLane(state, payload)
+    case 'UPDATE_LANE':
+      return Lh.updateLane(state, payload)
     default:
       return state
   }
