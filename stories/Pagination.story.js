@@ -1,21 +1,11 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
 storiesOf('Basic Functions', module).add(
   'Infinite Scrolling',
-  withInfo(`
-      Infinite scroll with onLaneScroll function callback to fetch more items
-      
-      The callback function passed to onLaneScroll will be of the following form
-      ~~~js
-      function paginate(requestedPage, laneId) {
-        return fetchCardsFromBackend(laneId, requestedPage); 
-      };
-      ~~~
-    `)(() => {
+  () => {
     const PER_PAGE = 15
 
     function delayedPromise(durationInMs, resolutionPayload) {
@@ -58,12 +48,18 @@ storiesOf('Basic Functions', module).add(
       ]
     }
 
-    return (
-      <Board
-        data={data}
-        laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)}
-        onLaneScroll={paginate}
-      />
-    )
-  })
+    return <Board data={data} laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)} onLaneScroll={paginate} />
+  },
+  {
+    info: `
+      Infinite scroll with onLaneScroll function callback to fetch more items
+      
+      The callback function passed to onLaneScroll will be of the following form
+      ~~~js
+      function paginate(requestedPage, laneId) {
+        return fetchCardsFromBackend(laneId, requestedPage); 
+      };
+      ~~~
+    `
+  }
 )

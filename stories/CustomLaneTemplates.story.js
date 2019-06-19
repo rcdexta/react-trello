@@ -1,5 +1,4 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
@@ -18,17 +17,15 @@ const CustomLaneHeader = props => {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between'
-        }}
-      >
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>
-          {props.title}
-        </div>
-        {props.label &&
+        }}>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.title}</div>
+        {props.label && (
           <div style={{width: '30%', textAlign: 'right', fontSize: 13}}>
             <button onClick={buttonHandler} style={{cursor: 'pointer'}}>
               ?
             </button>
-          </div>}
+          </div>
+        )}
       </header>
     </div>
   )
@@ -36,7 +33,7 @@ const CustomLaneHeader = props => {
 
 storiesOf('Custom Templates', module).add(
   'Custom Lane Template',
-  withInfo('Style your lane header appearance')(() => {
+  () => {
     const data = {
       lanes: [
         {
@@ -65,10 +62,7 @@ storiesOf('Custom Templates', module).add(
               id: 'Card3',
               title: 'Michael Caine',
               description: 'You are welcome. Interested in doing business with you' + ' again',
-              tags: [
-                {title: 'Critical', color: 'white', bgcolor: 'red'},
-                {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
-              ]
+              tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
             }
           ]
         }
@@ -76,5 +70,6 @@ storiesOf('Custom Templates', module).add(
     }
 
     return <Board data={data} customLaneHeader={<CustomLaneHeader />} />
-  })
+  },
+  {info: 'Style your lane header appearance'}
 )

@@ -21,7 +21,8 @@
     "docs": "build-storybook -o docs",
     "commit": "git cz",
     "deploy-storybook": "storybook-to-ghpages",
-    "format": "pretty-quick \"src/**/*.js\""
+    "format": "pretty-quick \"src/**/*.js\"",
+    "size": "size-limit"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,8 @@
   },
   "homepage": "https://github.com/rcdexta/react-trello",
   "dependencies": {
+    "@terebentina/react-popover": "^2.0.0",
+    "classnames": "^2.2.6",
     "immutability-helper": "^2.8.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
@@ -46,28 +49,29 @@
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",
     "redux-logger": "^3.0.6",
-    "smooth-dnd": "0.6.2",
-    "styled-components": "^3.4.10",
+    "smooth-dnd": "https://github.com/rcdexta/smooth-dnd",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "babel-loader": "^8.0.4",
     "@babel/cli": "7.1.2",
     "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-transform-async-to-generator": "7.1.0",
     "@babel/plugin-transform-runtime": "7.1.0",
+    "@babel/plugin-transform-template-literals": "^7.2.0",
     "@babel/preset-env": "7.1.0",
     "@babel/preset-react": " 7.0.0",
-    "@storybook/addon-info": "^v4.0.0-alpha.20",
-    "@storybook/addon-options": "^v4.0.0-alpha.20",
-    "@storybook/cli": "^v4.0.0-alpha.20",
-    "@storybook/react": "4.0.0-alpha.20",
+    "@storybook/addon-info": "4.1.3",
+    "@storybook/addon-options": "4.1.3",
+    "@storybook/addon-storyshots": "4.1.3",
+    "@storybook/cli": "4.1.3",
+    "@storybook/react": "4.1.3",
     "@storybook/storybook-deployer": "^2.3.0",
     "autoprefixer": "^9.1.5",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
     "codecov.io": "^0.1.6",
@@ -82,14 +86,16 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "eventsource-polyfill": "^0.9.6",
     "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^1.1.2",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^21.0.1",
     "jest-cli": "^21.0.1",
+    "jest-css-modules": "^1.1.0",
     "jsdom": "^12.2.0",
     "mocha": "^5.2.0",
     "node-sass": "^4.5.3",
@@ -98,19 +104,31 @@
     "react": "^16.2.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.2.0",
-    "react-test-renderer": "^15.4.2",
+    "react-test-renderer": "16.6.3",
     "sass-loader": "^6.0.6",
     "semantic-release": "^6.3.6",
+    "size-limit": "^1.3.7",
     "style-loader": "^0.18.2",
+    "styled-components": "4.0.3",
     "webpack": "^3.0.0"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0 < 17.0.0-0",
-    "react-dom": ">= 0.14.0 < 17.0.0-0"
+    "lodash": ">= 4.17.11",
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": ">= 5.0.7",
+    "redux": ">= 4.0.0",
+    "redux-actions": ">= 2.6.1",
+    "redux-logger": ">= 3.0.6",
+    "styled-components": ">= 4.0.3"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "size-limit": [{
+    "path": "dist/**/*.js",
+    "limit": "800 ms"
+  }]
 }

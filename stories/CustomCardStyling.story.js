@@ -1,9 +1,7 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
 
-import Board from '../src'
-import {Tag} from '../src'
+import Board, {Tag} from '../src'
 
 const CustomCard = props => {
   return (
@@ -17,28 +15,17 @@ const CustomCard = props => {
           flexDirection: 'row',
           justifyContent: 'space-between',
           color: props.cardColor
-        }}
-      >
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>
-          {props.name}
-        </div>
-        <div style={{fontSize: 11}}>
-          {props.dueOn}
-        </div>
+        }}>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.name}</div>
+        <div style={{fontSize: 11}}>{props.dueOn}</div>
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
-        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>
-          {props.subTitle}
-        </div>
+        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{props.subTitle}</div>
         <div style={{padding: '5px 0px'}}>
-          <i>
-            {props.body}
-          </i>
+          <i>{props.body}</i>
         </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
-          {props.escalationText}
-        </div>
-        {props.tags &&
+        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>{props.escalationText}</div>
+        {props.tags && (
           <div
             style={{
               borderTop: '1px solid #eee',
@@ -47,10 +34,12 @@ const CustomCard = props => {
               justifyContent: 'flex-end',
               flexDirection: 'row',
               flexWrap: 'wrap'
-            }}
-          >
-            {props.tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />)}
-          </div>}
+            }}>
+            {props.tags.map(tag => (
+              <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )
@@ -58,7 +47,7 @@ const CustomCard = props => {
 
 storiesOf('Custom Templates', module).add(
   'Custom Card Template',
-  withInfo('Style your own card appearance. Watch out for usage of tags in custom styling as well!')(() => {
+  () => {
     const data = {
       lanes: [
         {
@@ -107,10 +96,7 @@ storiesOf('Custom Templates', module).add(
               cardColor: '#BD3B36',
               cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
               metadata: {id: 'Card1'},
-              tags: [
-                {title: 'Critical', color: 'white', bgcolor: 'red'},
-                {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
-              ]
+              tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
             }
           ]
         }
@@ -123,10 +109,10 @@ storiesOf('Custom Templates', module).add(
         data={data}
         draggable
         customCardLayout
-        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
-      >
+        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}>
         <CustomCard />
       </Board>
     )
-  })
+  },
+  {info: 'Style your own card appearance. Watch out for usage of tags in custom styling as well!'}
 )

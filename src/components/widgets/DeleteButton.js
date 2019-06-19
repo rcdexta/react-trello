@@ -1,10 +1,10 @@
 import React from 'react'
-import {DeleteWrapper, DeleteIcon} from '../../styles/Elements'
+import {DeleteWrapper, DelButton} from '../../styles/Elements'
 
 const DeleteButton = props => {
   return (
     <DeleteWrapper {...props}>
-      <DeleteIcon />
+      <DelButton>&#10006;</DelButton>
     </DeleteWrapper>
   )
 }

@@ -1,13 +1,12 @@
 language: node_js
 cache:
   directories:
-    - node_modules
+    - ~/.npm
 notifications:
-  email: false
+  email: true
 node_js:
   - '10'
-before_script:
-  - npm prune
+  - '8'
 after_success:
   - npm run semantic-release
 branches:

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
 import Tag from './Tag'
 import DeleteButton from './widgets/DeleteButton'
+import classNames from 'classnames'
 
 class Card extends Component {
   removeCard = e => {
@@ -25,17 +26,25 @@ class Card extends Component {
             <CardRightContent>{label}</CardRightContent>
           </CardHeader>
           <Detail>{description}</Detail>
-          {tags && <Footer>{tags.map(tag => <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />)}</Footer>}
+          {tags && (
+            <Footer>
+              {tags.map(tag => (
+                <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />
+              ))}
+            </Footer>
+          )}
         </span>
       )
     }
   }
 
   render() {
-    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, ...otherProps} = this.props
+    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, onDelete, ...otherProps} = this.props
     const style = customCardLayout ? {...cardStyle, padding: 0} : cardStyle
+    const allClassNames = classNames('react-trello-card', this.props.className || '')
     return (
       <MovableCardWrapper
+        className={allClassNames}
         key={id}
         data-id={id}
         style={{

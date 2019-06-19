@@ -5,19 +5,23 @@ Pluggable components to add a trello-like kanban board to your application
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 [![npm version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 
-[Demo](https://rcdexta.github.io/react-trello/)
+#### Basic Demo
+[![Edit react-trello-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/1o3zj95m9j)
+
+#### Features Showcase
+[Storybook](https://rcdexta.github.io/react-trello/)
 
 ## Features
 
 ![alt tag](https://raw.githubusercontent.com/rcdexta/react-trello/master/react-trello.gif)
 
 * responsive and extensible
-* easily pluggable into existing application
+* easily pluggable into existing react application
 * supports pagination when scrolling individual lanes
-* drag-and-drop cards and lanes (compatible with touch devices)
-* event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* drag-and-drop on cards and lanes (compatible with touch devices)
 * edit functionality to add/delete cards
-* Parameterised templates to customize lane and card appearance
+* Custom templates to define lane and card appearance
+* event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
 
 ## Getting Started
 
@@ -92,25 +96,29 @@ This is the container component that encapsulates the lanes and cards
 | collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
+| addLaneTitle        | string   | Changes add lane button description.                                Default: false                                             |
 | handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
-| handleDragEnd       | function | Callback function triggered when card drag ends: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
+| handleDragEnd       | function | Callback function triggered when card drag ends, return false if you want to cancel drop: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
-| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition)`                                      |
+| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition, payload)`                                      |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
+| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
+| onCardMoveAcrossLanes        | function | Called when a card is moved across lanes `onCardMoveAcrossLanes(fromLaneId, toLaneId, cardId, index)`                                                                  |
+| onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
+| onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
+| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
 | newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
-| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
-| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
 | style               | object   | Pass css style props to board container                                                                                        |
-| customCardLayout    | function | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
+| customCardLayout    | boolean  | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
 | customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
 | data                | object   | Actual board data in the form of json                                                                                          |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
@@ -144,6 +152,13 @@ eventBus.publish({type: 'UPDATE_LANES', lanes: newLaneData})
 
 The first event in the above example will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
 
+### Styling
+
+There are two ways to apply styles to the library components including `Board`, `Lane` or `Card`:
+
+* Use the predefined css classnames attached to these elements that go by `.react-trello-lane`, `.react-trello-card`, `.react-trello-board`
+* You can also pass custom style attributes as part of data. Refer to the storybook for examples
+
 ### Custom Card Styling
 
 You can completely customize the look-and-feel of each card in any lane by passing in a custom component as child to the Board as seen below:
@@ -172,7 +187,7 @@ const CustomCard = props => {
           justifyContent: 'space-between',
           color: props.cardColor
         }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.name}</div>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.title}</div>
         <div style={{fontSize: 11}}>{props.dueOn}</div>
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
@@ -267,7 +282,7 @@ yarn run storybook
 9.  `npm run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
 10. `npm run docs`: create static build of storybook in `docs` directory that can be used for github pages
 
-Learn how to write stories [here](https://getstorybook.io/docs/basics/writing-stories)
+Learn how to write stories [here](https://storybook.js.org/basics/writing-stories/)
 
 ### License
 

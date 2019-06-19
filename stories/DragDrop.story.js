@@ -1,7 +1,5 @@
 import React from 'react'
-import {withInfo} from '@storybook/addon-info'
 import {storiesOf} from '@storybook/react'
-import './drag.css'
 
 import Board from '../src'
 
@@ -10,7 +8,7 @@ const data = require('./data/base.json')
 storiesOf('Drag-n-Drop', module)
   .add(
     'Basic',
-    withInfo('A demonstration of onDragStart and onDragEnd hooks for card and lanes')(() => {
+    () => {
       const handleDragStart = (cardId, laneId) => {
         console.log('drag started')
         console.log(`cardId: ${cardId}`)
@@ -52,16 +50,13 @@ storiesOf('Drag-n-Drop', module)
           handleLaneDragEnd={handleLaneDragEnd}
         />
       )
-    })
+    },
+    {info: 'A demonstration of onDragStart and onDragEnd hooks for card and lanes'}
   )
   .add(
     'Drag Styling',
-    withInfo('Modifying appearance of dragged card')(() => {
-      return <Board
-        data={data}
-        cardDragClass='draggingCard'
-        laneDragClass='draggingLane'
-        draggable
-      />
-    })
+    () => {
+      return <Board data={data} cardDragClass="draggingCard" laneDragClass="draggingLane" draggable />
+    },
+    {info: 'Modifying appearance of dragged card'}
   )

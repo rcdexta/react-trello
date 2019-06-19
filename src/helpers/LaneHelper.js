@@ -92,6 +92,11 @@ const LaneHelper = {
     const laneToMove = state.lanes[oldIndex]
     const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}});
     return update(tempState, {lanes: {$splice: [[newIndex, 0, laneToMove]]}})
+  },
+
+  removeLane: (state, {laneId}) => {
+    const updatedLanes = state.lanes.filter(lane => lane.id !== laneId)
+    return update(state, {lanes: {$set: updatedLanes}})
   }
 }
 

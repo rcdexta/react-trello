@@ -17,7 +17,7 @@ class Container extends Component {
 	componentDidMount() {
 		this.containerDiv = this.containerDiv || ReactDOM.findDOMNode(this);
 		this.prevContainer = this.containerDiv;
-		this.container = container(this.containerDiv, this.getContainerOptions(this.props));
+		this.container = container(this.containerDiv, this.getContainerOptions());
 	}
 
 	componentWillUnmount() {
@@ -30,7 +30,7 @@ class Container extends Component {
 		if (this.containerDiv) {
 			if (this.prevContainer && this.prevContainer !== this.containerDiv) {
 				this.container.dispose();
-				this.container = container(this.containerDiv, this.getContainerOptions(this.props));
+				this.container = container(this.containerDiv, this.getContainerOptions());
 				this.prevContainer = this.containerDiv;
 			}
 		}
@@ -52,8 +52,54 @@ class Container extends Component {
 		this.containerDiv = element;
 	}
 
-	getContainerOptions(props) {
-		return Object.assign({}, props);
+	getContainerOptions() {
+		const functionProps = {};
+
+		if (this.props.onDragStart) {
+			functionProps.onDragStart = (...p) => this.props.onDragStart(...p);
+		}
+
+		if (this.props.onDragEnd) {
+			functionProps.onDragEnd = (...p) => this.props.onDragEnd(...p);
+		}
+
+		if (this.props.onDrop) {
+			functionProps.onDrop = (...p) => this.props.onDrop(...p);
+		}
+
+		if (this.props.getChildPayload) {
+			functionProps.getChildPayload = (...p) => this.props.getChildPayload(...p);
+		}
+
+		if (this.props.shouldAnimateDrop) {
+			functionProps.shouldAnimateDrop = (...p) => this.props.shouldAnimateDrop(...p);
+		}
+
+		if (this.props.shouldAcceptDrop) {
+			functionProps.shouldAcceptDrop = (...p) => this.props.shouldAcceptDrop(...p);
+		}
+
+		if (this.props.onDragEnter) {
+			functionProps.onDragEnter = (...p) => this.props.onDragEnter(...p);
+		}
+
+		if (this.props.onDragLeave) {
+			functionProps.onDragLeave = (...p) => this.props.onDragLeave(...p);
+		}
+
+		if (this.props.render) {
+			functionProps.render = (...p) => this.props.render(...p);
+		}
+
+		if (this.props.onDropReady) {
+			functionProps.onDropReady = (...p) => this.props.onDropReady(...p);
+		}
+
+		if (this.props.getGhostParent) {
+			functionProps.getGhostParent = (...p) => this.props.getGhostParent(...p);
+		}
+
+		return Object.assign({}, this.props, functionProps);
 	}
 }
 
@@ -63,6 +109,7 @@ Container.propTypes = {
 	orientation: PropTypes.oneOf(["horizontal", "vertical"]),
 	style: PropTypes.object,
 	dragHandleSelector: PropTypes.string,
+	className: PropTypes.string,
 	nonDragAreaSelector: PropTypes.string,
 	dragBeginDelay: PropTypes.number,
 	animationDuration: PropTypes.number,
@@ -78,12 +125,15 @@ Container.propTypes = {
 	shouldAcceptDrop: PropTypes.func,
 	onDragEnter: PropTypes.func,
 	onDragLeave: PropTypes.func,
-	render: PropTypes.func
+	render: PropTypes.func,
+	getGhostParent: PropTypes.func,
+	removeOnDropOut: PropTypes.bool
 };
 
 Container.defaultProps = {
 	behaviour: 'move',
-	orientation: 'vertical'
+	orientation: 'vertical',
+	className: 'reactTrelloBoard'
 };
 
 export default Container;

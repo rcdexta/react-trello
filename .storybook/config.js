@@ -1,23 +1,27 @@
-import {configure} from '@storybook/react'
-import {setOptions} from '@storybook/addon-options'
-import {setDefaults} from '@storybook/addon-info'
+import {addDecorator, configure} from '@storybook/react'
+import {withInfo} from '@storybook/addon-info'
+import {withOptions} from '@storybook/addon-options'
 
-setOptions({
-  name: 'react-trello',
-  url: 'https://github.com/rcdexta/react-trello',
-  goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: false,
-  showSearchBox: false,
-  downPanelInRight: false
-})
+addDecorator(
+  withOptions({
+    name: 'react-trello',
+    url: 'https://github.com/rcdexta/react-trello',
+    goFullScreen: false,
+    showStoriesPanel: true,
+    showSearchBox: false,
+    addonPanelInRight: false,
+    showAddonPanel: false
+  })
+)
 
-setDefaults({
-  header: true,
-  inline: false,
-  source: true,
-  propTables: false
-})
+addDecorator(
+  withInfo({
+    header: true,
+    inline: false,
+    source: true,
+    propTables: false
+  })
+)
 
 function loadStories() {
   require('../stories')
