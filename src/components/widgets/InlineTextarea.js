@@ -4,16 +4,6 @@ import {InlineInput} from '../../styles/Base'
 import autosize from 'autosize';
 
 class InlintTextareaController extends React.Component {
-  onFocus = (e) => e.target.select()
-
-  // This is the way to select all text if mouse clicked
-  onMouseDown = (e) => {
-    if (document.activeElement != e.target) {
-      e.preventDefault()
-      focus()
-    }
-  }
-
   onBlur = () => {
     this.saveValue()
   }
@@ -24,17 +14,24 @@ class InlintTextareaController extends React.Component {
       e.preventDefault()
     }
     if(e.keyCode == 27) {
-      this.setValue('')
-      this.props.onCancel()
-      this.refInput.blur()
+      this.cancel()
       e.preventDefault()
     }
 
-    if(e.keyCode == 9 && this.getValue().length == 0) {
-      this.props.onCancel()
-      this.refInput.blur()
+    if(e.keyCode == 9) {
+      if (this.getValue().length == 0) {
+        this.cancel()
+      } else {
+        this.props.onSave()
+      }
       e.preventDefault()
     }
+  }
+
+  cancel = () => {
+    this.setValue('')
+    this.props.onCancel()
+    this.refInput.blur()
   }
 
   getValue = () => this.refInput.value
@@ -48,8 +45,9 @@ class InlintTextareaController extends React.Component {
 
   focus = () => this.refInput.focus()
 
-  componentDidMount = () => {
-    if (this.props.autoResize) {
+  setRef = (ref) => {
+    this.refInput = ref
+    if (this.props.resize != 'none') {
       autosize(this.refInput)
     }
   }
@@ -59,14 +57,15 @@ class InlintTextareaController extends React.Component {
 
     return <InlineInput
       style={{resize: resize}}
-      ref={ref => (this.refInput = ref)}
+      ref={this.setRef}
       border={border}
       onMouseDown={this.onMouseDown}
       onFocus={this.onFocus}
       onKeyDown={this.onKeyDown}
+      onBlur={this.onBlur}
       placeholder={value.length == 0 ? undefined : placeholder}
       defaultValue={value}
-      rows={1}
+      rows={3}
       autoResize={autoResize}
       autoFocus={autoFocus}
     />
