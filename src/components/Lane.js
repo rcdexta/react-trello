@@ -161,6 +161,7 @@ class Lane extends Component {
           cardId: payload.id,
           index: addedIndex
         })
+        this.props.onCardMoveAcrossLanes(payload.laneId, laneId, payload.id, addedIndex)
       }
       return response
     }
@@ -215,6 +216,7 @@ class Lane extends Component {
   removeLane = () => {
     const {id} = this.props
     this.props.actions.removeLane({laneId: id})
+    this.props.onLaneDelete(id)
   }
 
   laneMenu = () => {
@@ -268,7 +270,7 @@ class Lane extends Component {
 
   render() {
     const {loading, isDraggingOver} = this.state
-    const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, ...otherProps} = this.props
+    const {id, onLaneClick, onLaneScroll, onCardClick, onCardAdd, onCardDelete, onLaneDelete, onCardMoveAcrossLanes, ...otherProps} = this.props
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
     return (
       <Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
@@ -303,8 +305,10 @@ Lane.propTypes = {
   collapsibleLanes: PropTypes.bool,
   droppable: PropTypes.bool,
   onLaneScroll: PropTypes.func,
+  onCardMoveAcrossLanes: PropTypes.func,
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
+  onLaneDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
   onLaneClick: PropTypes.func,
   newCardTemplate: PropTypes.node,

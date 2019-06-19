@@ -18,6 +18,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -423,6 +424,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -1954,6 +1956,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -3177,6 +3180,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
           }
         }
         draggable={false}
+        onCardMoveAcrossLanes={[Function]}
         style={undefined}
       >
         <div
@@ -4278,6 +4282,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
           }
         }
         draggable={false}
+        onCardMoveAcrossLanes={[Function]}
         style={undefined}
       >
         <div
@@ -5673,6 +5678,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -7112,6 +7118,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -8362,6 +8369,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -9008,6 +9016,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -9654,6 +9663,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -10542,6 +10552,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -11769,6 +11780,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -12594,6 +12606,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -13298,6 +13311,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -14899,6 +14913,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -16006,6 +16021,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -17522,6 +17538,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -18497,6 +18514,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -19395,6 +19413,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -21268,6 +21287,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -22884,6 +22904,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={undefined}
     >
       <div
@@ -24637,6 +24658,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
             }
           }
           draggable={false}
+          onCardMoveAcrossLanes={[Function]}
           style={undefined}
         >
           <div
@@ -25459,6 +25481,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
             }
           }
           draggable={false}
+          onCardMoveAcrossLanes={[Function]}
           style={undefined}
         >
           <div
@@ -27411,6 +27434,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={
         Object {
           "fontFamily": "Verdana",
@@ -28885,6 +28909,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
         }
       }
       draggable={false}
+      onCardMoveAcrossLanes={[Function]}
       style={
         Object {
           "backgroundColor": "#eee",
