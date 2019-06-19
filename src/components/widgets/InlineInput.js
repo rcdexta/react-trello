@@ -39,18 +39,18 @@ class InlineInputController extends React.Component {
     }
   }
 
-  componentDidMount = () => {
-    if (this.props.autoResize) {
+  setRef = (ref) => {
+    this.refInput = ref
+    if (this.props.resize != 'none') {
       autosize(this.refInput)
     }
   }
 
   render() {
-    const {autoFocus, resize, border, autoResize, value, placeholder} = this.props
+    const {autoFocus, border, value, placeholder} = this.props
 
     return <InlineInput
-      style={{resize: resize}}
-      ref={ref => (this.refInput = ref)}
+      ref={this.setRef}
       border={border}
       onMouseDown={this.onMouseDown}
       onFocus={this.onFocus}
@@ -58,8 +58,12 @@ class InlineInputController extends React.Component {
       onKeyDown={this.onKeyDown}
       placeholder={value.length == 0 ? undefined : placeholder}
       defaultValue={value}
+      autoComplete="off"
+      autoCorrect="off"
+      autoCapitalize="off"
+      spellCheck="false"
+      dataGramm="false"
       rows={1}
-      autoResize={autoResize}
       autoFocus={autoFocus}
     />
   }
@@ -71,7 +75,6 @@ InlineInputController.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   autoFocus: PropTypes.bool,
-  autoResize: PropTypes.bool,
   resize: PropTypes.oneOf(['none', 'vertical', 'horizontal']),
 }
 
@@ -81,7 +84,6 @@ InlineInputController.defaultProps = {
   value: '',
   border: false,
   autoFocus: false,
-  autoResize: false,
   resize: 'none'
 }
 

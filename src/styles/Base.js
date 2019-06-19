@@ -255,14 +255,17 @@ export const NewLaneButtons = styled.div`
   `
 
 export const InlineInput = styled.textarea`
-  overflow: hidden;
+  overflow-x: hidden; /* for Firefox (issue #5) */
   word-wrap: break-word;
+  min-height: 28px;
+  max-height: 112px; /* optional, but recommended */
   resize: none;
   width: 100%;
   height: 28px;
   line-height: 20px;
   background-color: transparent;
   box-shadow: none;
+  box-sizing: border-box;
   border-radius: 3px;
   border: 0;
   padding: 4px 8px;
