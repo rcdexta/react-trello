@@ -29,6 +29,12 @@ class InlintTextareaController extends React.Component {
       this.refInput.blur()
       e.preventDefault()
     }
+
+    if(e.keyCode == 9 && this.getValue().length == 0) {
+      this.props.onCancel()
+      this.refInput.blur()
+      e.preventDefault()
+    }
   }
 
   getValue = () => this.refInput.value
