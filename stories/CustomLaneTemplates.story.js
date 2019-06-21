@@ -69,7 +69,7 @@ storiesOf('Custom Templates', module).add(
       ]
     }
 
-    return <Board data={data} customLaneHeader={<CustomLaneHeader />} />
+    return <Board data={data} LaneHeader={CustomLaneHeader} />
   },
   {info: 'Style your lane header appearance'}
 )

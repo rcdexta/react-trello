@@ -72,16 +72,16 @@ storiesOf('Editable Board', module)
   .add(
     'Custom Buttons',
     () => {
-      return <Board data={data} editable hideCardDeleteIcon addCardLink={<button>New Card</button>} />
+      return <Board data={data} editable cardDeletable={false} addCardLink={<button>New Card</button>} />
     },
     {info: 'Allow editable elements on the board to be customized'}
   )
   .add(
-    'New Card Template',
+    'New Card Compoment',
     () => {
-      return <Board data={data} editable newCardTemplate={<NewCard />} addCardTitle="Click to add" />
+      return <Board data={data} editable NewCard={NewCard} addCardTitle="Click to add" />
     },
-    {info: 'Pass a custom new card template to add card'}
+    {info: 'Pass a custom new card compoment to add card'}
   )
   .add(
     'Add New Lane',

@@ -1,89 +1,57 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper} from '../styles/Base'
+
+// Move styles to ./styles/Card
+import {CardHeader, CardRightContent, CardTitle, Detail, Footer } from '../styles/Base'
 import Tag from './Tag'
 import DeleteButton from './widgets/DeleteButton'
-import classNames from 'classnames'
 
 class Card extends Component {
-  removeCard = e => {
-    const {id, laneId, removeCard, onDelete} = this.props
-    removeCard(laneId, id)
-    onDelete(id, laneId)
+  onDelete = e => {
+    this.props.onDelete(this.props.card.id)
     e.stopPropagation()
   }
 
-  renderBody = () => {
-    if (this.props.customCardLayout) {
-      const {customCard, ...otherProps} = this.props
-      return React.cloneElement(customCard, {...otherProps})
-    } else {
-      const {title, description, label, tags} = this.props
-      return (
-        <span>
-          <CardHeader>
-            <CardTitle>{title}</CardTitle>
-            <CardRightContent>{label}</CardRightContent>
-          </CardHeader>
-          <Detail>{description}</Detail>
-          {tags && (
-            <Footer>
-              {tags.map(tag => (
-                <Tag key={tag.title} {...tag} tagStyle={this.props.tagStyle} />
-              ))}
-            </Footer>
-          )}
-        </span>
-      )
-    }
-  }
+  render()  {
+    const {showDeleteButton, tagStyle, card } = this.props
+    const { title, label, description, tags } = card
 
-  render() {
-    const {id, cardStyle, editable, hideCardDeleteIcon, customCardLayout, dragStyle, onDelete, ...otherProps} = this.props
-    const allClassNames = classNames('react-trello-card', this.props.className || '')
     return (
-      <MovableCardWrapper
-        className={allClassNames}
-        key={id}
-        data-id={id}
-        style={{
-          ...cardStyle,
-          ...dragStyle
-        }}
-        {...otherProps}>
-        {this.renderBody()}
-        {editable && !hideCardDeleteIcon && <DeleteButton onClick={this.removeCard} />}
-      </MovableCardWrapper>
-    )
+      <span>
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardRightContent>{label}</CardRightContent>
+          {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
+        </CardHeader>
+        <Detail>{description}</Detail>
+        {tags && (
+        <Footer>
+          {tags.map(tag => (
+          <Tag key={tag.title} {...tag} tagStyle={tagStyle} />
+          ))}
+        </Footer>
+        )}
+      </span>
+      )
   }
 }
 
+
 Card.defaultProps = {
-  cardStyle: {},
-  customCardLayout: false,
+  showDeleteButton: true,
   onDelete: () => {},
-  editable: false,
-  dragStyle: {}
+
+  card: { title: 'no title', description: '', label: '', tags: [] },
+
+  tagStyle: {},
 }
 
 Card.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string,
-  index: PropTypes.number,
-  description: PropTypes.string,
-  label: PropTypes.string,
-  tags: PropTypes.array,
-  laneId: PropTypes.string.isRequired,
-  removeCard: PropTypes.func,
-  onClick: PropTypes.func,
+  showDeleteButton: PropTypes.bool,
   onDelete: PropTypes.func,
-  metadata: PropTypes.object,
-  cardStyle: PropTypes.object,
-  dragStyle: PropTypes.object,
-  tagStyle: PropTypes.object,
-  customCardLayout: PropTypes.bool,
-  customCard: PropTypes.node,
-  editable: PropTypes.bool
+  id: PropTypes.string.isRequired,
+  card: PropTypes.object.isRequired,
+  tagStyle: PropTypes.object
 }
 
 export default Card

@@ -7,14 +7,18 @@ import cloneDeep from 'lodash/cloneDeep'
 import Container from '../dnd/Container'
 import Draggable from '../dnd/Draggable'
 import uuidv1 from 'uuid/v1'
-import Popover from '@terebentina/react-popover'
 
+import pick from 'lodash/pick'
 import Loader from './Loader'
-import Card from './Card'
-import NewCard from './NewCard'
-import {AddCardLink, LaneFooter, LaneHeader, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
+import CardWrapper from './CardWrapper'
+
+import DefaultNewCard from './NewCard'
+import DefaultLaneHeader from './Lane/LaneHeader'
+import DefaultCard from './Card'
+import DefaultAddCardLink from './AddCardLink'
+
+import { LaneFooter, RightContent, ScrollableLane, Section, Title} from '../styles/Base'
 import defaultTranslation from '../helpers/defaultTranslation'
-import InlineInput from './widgets/InlineInput'
 
 import * as laneActions from '../actions/LaneActions'
 import {
@@ -87,8 +91,10 @@ class Lane extends Component {
     }
   }
 
-  removeCard = (laneId, cardId) => {
-    this.props.actions.removeCard({laneId: laneId, cardId: cardId})
+  removeCard = (cardId) => {
+    const { id} = this.props
+    this.props.actions.removeCard({laneId: id, cardId: cardId})
+    this.props.onCardDelete(cardId, id)
   }
 
   handleCardClick = (e, card) => {
@@ -114,30 +120,9 @@ class Lane extends Component {
     this.props.onCardAdd(card, laneId)
   }
 
-  renderAddCardLink = () => {
-    const {addCardLink, t} = this.props
-    if (addCardLink) {
-      return <span onClick={this.showEditableCard}>{addCardLink}</span>
-    } else {
-      return <AddCardLink onClick={this.showEditableCard}>{t('Click to add card')}</AddCardLink>
-    }
-  }
-
   renderNewCard = () => {
-    const {newCardTemplate, id, t} = this.props
-    if (newCardTemplate) {
-
-      return React.createElement(
-        newCardTemplate,
-        {
-          onCancel: this.hideEditableCard,
-          onAdd: this.addNewCard,
-          laneId: id,
-          t: t
-        })
-    } else {
-      return <NewCard onCancel={this.hideEditableCard} t={t} onAdd={this.addNewCard} />
-    }
+    const {NewCard, id, t} = this.props
+    return <NewCard onCancel={this.hideEditableCard} t={t} laneId={id} onAdd={this.addNewCard} />
   }
 
   onDragStart = ({payload}) => {
@@ -175,27 +160,27 @@ class Lane extends Component {
   }
 
   renderDragContainer = isDraggingOver => {
-    const {laneSortFunction, editable, hideCardDeleteIcon, tagStyle, cardStyle, draggable, cardDraggable, cards, cardDragClass, id} = this.props
+    const {Card, AddCardLink, laneSortFunction, editable, cardDeletable, tagStyle, cardStyle, draggable, cardDraggable, cards, cardDragClass, id} = this.props
     const {addCardMode, collapsed} = this.state
-
     const showableCards = collapsed ? [] : cards
+    const showDeleteButton = editable && cardDeletable
 
     const cardList = this.sortCards(showableCards, laneSortFunction).map((card, idx) => {
       const cardToRender = (
-        <Card
+        <CardWrapper
           key={card.id}
+          id={card.id}
           index={idx}
-          customCardLayout={this.props.customCardLayout}
-          customCard={this.props.children}
-          tagStyle={tagStyle}
-          cardStyle={cardStyle}
-          removeCard={this.removeCard}
           onClick={e => this.handleCardClick(e, card)}
-          onDelete={this.props.onCardDelete}
-          editable={editable}
-          hideCardDeleteIcon={hideCardDeleteIcon}
-          {...card}
-        />
+        >
+          <Card
+            style={cardStyle}
+            card={card}
+            tagStyle={tagStyle}
+            showDeleteButton={showDeleteButton}
+            onDelete={this.removeCard}
+          />
+        </CardWrapper>
       )
       return draggable && cardDraggable ? <Draggable key={card.id}>{cardToRender}</Draggable> : <span key={card.id}>{cardToRender}</span>
     })
@@ -214,7 +199,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && !addCardMode && this.renderAddCardLink()}
+        {editable && !addCardMode && <AddCardLink onClick={this.showEditableCard} t={this.props.t} /> }
         {addCardMode && this.renderNewCard()}
       </ScrollableLane>
     )
@@ -226,51 +211,20 @@ class Lane extends Component {
     this.props.onLaneDelete(id)
   }
 
-  laneMenu = () => {
-    return (
-      <Popover className="menu" position="bottom" trigger={<MenuButton>⋮</MenuButton>}>
-        <LaneMenuHeader>
-          <LaneMenuTitle>{this.props.t('Lane actions')}</LaneMenuTitle>
-          <DeleteWrapper>
-            <GenDelButton>&#10006;</GenDelButton>
-          </DeleteWrapper>
-        </LaneMenuHeader>
-        <LaneMenuContent>
-          <LaneMenuItem onClick={this.removeLane}>{this.props.t('Delete lane')}</LaneMenuItem>
-        </LaneMenuContent>
-      </Popover>
-    )
-  }
-
   updateTitle = (value) => {
     this.props.actions.updateLane({id: this.props.id, title: value})
     this.props.onLaneUpdate(this.props.id, {title: value })
   }
 
   renderHeader = () => {
-    const {customLaneHeader, canAddLanes, inlineEditTitle} = this.props
-    if (customLaneHeader) {
-      const customLaneElement = React.cloneElement(customLaneHeader, {...this.props})
-      return <span>{customLaneElement}</span>
-    } else {
-      const {id, label, title, titleStyle, labelStyle, t} = this.props
-      return (
-        <LaneHeader onDoubleClick={this.toggleLaneCollapsed}>
-          <Title style={{...titleStyle, margin: '-5px'}}>
-            {inlineEditTitle ?
-              <InlineInput value={title} border placeholder={t('placeholder.title')} onSave={this.updateTitle} /> :
-              title
-            }
-          </Title>
-          {label && (
-            <RightContent>
-              <span style={labelStyle}>{label}</span>
-            </RightContent>
-          )}
-          {canAddLanes && this.laneMenu()}
-        </LaneHeader>
-      )
-    }
+    const { LaneHeader } = this.props
+    const pickedProps = pick(
+      this.props,
+      ['id','label','title','titleStyle','labelStyle','t','inlineEditTitle','canAddLanes']
+    )
+    return (
+      <LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>
+    )
   }
 
   renderFooter = () => {
@@ -302,7 +256,6 @@ class Lane extends Component {
 
 Lane.propTypes = {
   actions: PropTypes.object,
-  children: PropTypes.node,
   id: PropTypes.string.isRequired,
   boardId: PropTypes.string,
   title: PropTypes.node,
@@ -313,8 +266,6 @@ Lane.propTypes = {
   tagStyle: PropTypes.object,
   titleStyle: PropTypes.object,
   labelStyle: PropTypes.object,
-  customLaneHeader: PropTypes.element,
-  customCardLayout: PropTypes.bool,
   cards: PropTypes.array,
   label: PropTypes.string,
   currentPage: PropTypes.number,
@@ -328,8 +279,10 @@ Lane.propTypes = {
   onLaneDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
   onLaneClick: PropTypes.func,
-  newCardTemplate: PropTypes.node,
-  addCardLink: PropTypes.node,
+  NewCard: PropTypes.elementType,
+  Card: PropTypes.elementType,
+  LaneHeader: PropTypes.elementType,
+  AddCardLink: PropTypes.elementType,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
@@ -340,6 +293,10 @@ Lane.propTypes = {
 }
 
 Lane.defaultProps = {
+  LaneHeader: DefaultLaneHeader,
+  NewCard: DefaultNewCard,
+  Card: DefaultCard,
+  AddCardLink: DefaultAddCardLink,
   inlineEditTitle: false,
   style: {},
   titleStyle: {},
