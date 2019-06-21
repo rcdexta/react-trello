@@ -7,23 +7,26 @@ import {Title, LaneHeader, RightContent } from '../../styles/Base'
 
 import LaneMenu from './LaneHeader/LaneMenu'
 
-const LaneHeaderComponent = ({canAddLanes, onDelete, onDoubleClick, inlineEditTitle, label, title, titleStyle, labelStyle, t}) => {
+const LaneHeaderComponent = ({
+  updateTitle, canAddLanes, onDelete, onDoubleClick, inlineEditTitle, label, title, titleStyle, labelStyle, t
+}) => {
+
   return (
     <LaneHeader onDoubleClick={onDoubleClick}>
-      <Title style={{...titleStyle, margin: '-5px'}}>
-        {inlineEditTitle ?
-        <InlineInput value={title} border placeholder={t('placeholder.title')} onSave={this.updateTitle} /> :
-        title
-        }
-      </Title>
-      {label && (
+    <Title style={{...titleStyle, margin: '-5px'}}>
+      {inlineEditTitle ?
+      <InlineInput value={title} border placeholder={t('placeholder.title')} onSave={updateTitle} /> :
+      title
+      }
+    </Title>
+    {label && (
       <RightContent>
         <span style={labelStyle}>{label}</span>
-      </RightContent>
-      )}
-      {canAddLanes && <LaneMenu t={t} onDelete={onDelete}/>}
-    </LaneHeader>
-    )
+        </RightContent>
+        )}
+        {canAddLanes && <LaneMenu t={t} onDelete={onDelete}/>}
+      </LaneHeader>
+  )
 }
 
 LaneHeaderComponent.propTypes = {

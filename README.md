@@ -100,6 +100,7 @@ This is the container component that encapsulates the lanes and cards
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
 | cardDeletable       | boolean  | Enable showing the delete icon to the top right corner of the card (when board is editable) Default: true                      |
+| inlineEditLaneTitle | boolean  | Enable inline editing of lane's title |
 
 
 #### Callbacks and handlers
