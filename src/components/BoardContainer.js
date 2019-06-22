@@ -16,6 +16,8 @@ import defaultTranslation from '../helpers/defaultTranslation'
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
 
+import uuidv1 from 'uuid/v1'
+
 class BoardContainer extends Component {
   state = {
     addLaneMode: false
@@ -99,8 +101,9 @@ class BoardContainer extends Component {
 
   addNewLane = params => {
     this.hideEditableLane()
-    this.props.actions.addLane(params)
-    this.props.onLaneAdd(params)
+    const lane = { ...params, id: uuidv1() }
+    this.props.actions.addLane(lane)
+    this.props.onLaneAdd(lane)
   }
 
   get groupName() {
