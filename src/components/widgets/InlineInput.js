@@ -53,6 +53,10 @@ class InlineInputController extends React.Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setValue(nextProps.value)
+  }
+
   render() {
     const {autoFocus, border, value, placeholder} = this.props
 
