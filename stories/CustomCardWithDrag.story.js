@@ -89,12 +89,11 @@ class BoardWithCustomCard extends Component {
         tagStyle={{fontSize: '80%'}}
         data={this.state.boardData}
         draggable
-        customCardLayout
         onDataChange={this.updateBoard}
         handleDragEnd={this.onDragEnd}
-        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}>
-        <CustomCard />
-      </Board>
+        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
+        components={{Card: CustomCard}}
+      />
     )
   }
 }

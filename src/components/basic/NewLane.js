@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {LaneTitle, NewLaneButtons, Section} from '../styles/Base'
+import {LaneTitle, NewLaneButtons, Section} from 'styles/Base'
+import {AddButton, CancelButton} from 'styles/Elements'
 import EditableLabel from './widgets/EditableLabel'
-import {AddButton, CancelButton} from '../styles/Elements'
 
 class NewLane extends Component {
   updateField = (field, value) => {
