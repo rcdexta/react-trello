@@ -122,8 +122,8 @@ class BoardContainer extends Component {
       addLaneTitle,
       editable,
       canAddLanes,
-      ...otherProps,
-      t
+      t,
+      ...otherProps
     } = this.props
 
     const {addLaneMode} = this.state
