@@ -1,9 +1,10 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 
-import Board, {Tag} from '../src'
+import Board from '../src'
+import Tag from 'components/basic/Tag'
 
-const CustomCard = props => {
+const CustomCard = ({card, tagStyle}) => {
   return (
     <div style={{padding: 6}}>
       <header
@@ -14,18 +15,18 @@ const CustomCard = props => {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          color: props.cardColor
+          color: card.cardColor
         }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.name}</div>
-        <div style={{fontSize: 11}}>{props.dueOn}</div>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{card.name}</div>
+        <div style={{fontSize: 11}}>{card.dueOn}</div>
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
-        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{props.subTitle}</div>
+        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{card.subTitle}</div>
         <div style={{padding: '5px 0px'}}>
-          <i>{props.body}</i>
+          <i>{card.body}</i>
         </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>{props.escalationText}</div>
-        {props.tags && (
+        <div style={{marginTop: 10, textAlign: 'center', color: card.cardColor, fontSize: 15, fontWeight: 'bold'}}>{card.escalationText}</div>
+        {card.tags && (
           <div
             style={{
               borderTop: '1px solid #eee',
@@ -35,8 +36,8 @@ const CustomCard = props => {
               flexDirection: 'row',
               flexWrap: 'wrap'
             }}>
-            {props.tags.map(tag => (
-              <Tag key={tag.title} {...tag} tagStyle={props.tagStyle} />
+            {card.tags.map(tag => (
+              <Tag key={tag.title} {...tag} tagStyle={tagStyle} />
             ))}
           </div>
         )}
@@ -108,10 +109,9 @@ storiesOf('Custom Templates', module).add(
         tagStyle={{fontSize: '80%'}}
         data={data}
         draggable
-        customCardLayout
-        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}>
-        <CustomCard />
-      </Board>
+        components={{Card: CustomCard}}
+        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
+      />
     )
   },
   {info: 'Style your own card appearance. Watch out for usage of tags in custom styling as well!'}

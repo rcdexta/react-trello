@@ -1,10 +1,21 @@
-import Board from './components/Board'
-import Tag from './components/Tag'
-import Lane from './components/Lane'
-import Card from './components/Card'
+import React from 'react'
+
 import Draggable from './dnd/Draggable'
 import Container from './dnd/Container'
+import Lane from './controllers/Lane'
+import BoardController from './controllers/Board'
 
-export {Board, Tag, Lane, Card}
-export {Container, Draggable}
+import DefaultComponents from 'components/basic'
+
+export {
+  Board,
+  Lane,
+  Container,
+  Draggable,
+  DefaultComponents
+}
+
+const Board = ({ components, ...otherProps }) =>
+  <BoardController components={{...DefaultComponents, ...components}} {...otherProps} />
+
 export default Board

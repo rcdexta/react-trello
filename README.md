@@ -21,7 +21,7 @@ Pluggable components to add a trello-like kanban board to your application
 * supports pagination when scrolling individual lanes
 * drag-and-drop on cards and lanes (compatible with touch devices)
 * edit functionality to add/delete cards
-* Custom templates to define lane and card appearance
+* Custom elements to define lane and card appearance
 * event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
 
 ## Getting Started
@@ -112,14 +112,11 @@ This is the container component that encapsulates the lanes and cards
 | onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
 | onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
-| newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
 | laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
 | style               | object   | Pass css style props to board container                                                                                        |
-| customCardLayout    | boolean  | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
-| customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
 | data                | object   | Actual board data in the form of json                                                                                          |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
 
@@ -164,12 +161,8 @@ There are two ways to apply styles to the library components including `Board`, 
 You can completely customize the look-and-feel of each card in any lane by passing in a custom component as child to the Board as seen below:
 
 ```javascript
-<Board data={data} customCardLayout>
-  <CustomCard />
-</Board>
+<Board data={data} components={{ Card: CustomCard }}/>
 ```
-
-`customCardLayout` prop must be set to true for the custom card to be rendered
 
 The json content for the card and the card template must agree on the props:
 

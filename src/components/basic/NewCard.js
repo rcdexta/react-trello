@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from '../styles/Base'
+import {CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'styles/Base'
 import EditableLabel from './widgets/EditableLabel'
-import {AddButton, CancelButton} from '../styles/Elements'
-import defaultTranslation from '../helpers/defaultTranslation'
+import {AddButton, CancelButton} from 'styles/Elements'
 
 class NewCard extends Component {
   updateField = (field, value) => {
@@ -45,7 +44,6 @@ NewCard.propTypes = {
 }
 
 NewCard.defaultProps = {
-  t: defaultTranslation
 }
 
 export default NewCard

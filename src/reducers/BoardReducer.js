@@ -1,4 +1,4 @@
-import Lh from '../helpers/LaneHelper'
+import Lh from 'helpers/LaneHelper'
 
 const boardReducer = (state = {lanes: []}, action) => {
   const {payload, type} = action
