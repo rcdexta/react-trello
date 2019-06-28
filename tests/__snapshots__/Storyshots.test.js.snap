@@ -24619,7 +24619,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                 </div>
               </header>
               <div
-                className="sc-EHOje cqkFMI"
+                className="sc-EHOje iisOsp"
               >
                 <div
                   style={undefined}
@@ -24651,7 +24651,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -24695,7 +24695,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -24739,7 +24739,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Can AI make memes?
                         </div>
@@ -24783,7 +24783,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                           </span>
                         </header>
                         <div
-                          className="sc-VigVT ddzuTg"
+                          className="sc-VigVT jTtwdL"
                         >
                           Transfer to bank account
                         </div>
@@ -24802,7 +24802,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                   </div>
                 </div>
                 <a
-                  className="sc-jzJRlG BFmJH"
+                  className="sc-jzJRlG iukqtR"
                   onClick={[Function]}
                 >
                   *Click to add card*
@@ -27026,7 +27026,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                   </div>
                 </header>
                 <div
-                  className="sc-EHOje cqkFMI"
+                  className="sc-EHOje iisOsp"
                 >
                   <div
                     style={undefined}
@@ -27058,7 +27058,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             2 Gallons of milk at the Deli store
                           </div>
@@ -27102,7 +27102,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Sort out recyclable and waste as needed
                           </div>
@@ -27146,7 +27146,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Can AI make memes?
                           </div>
@@ -27190,7 +27190,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                             </span>
                           </header>
                           <div
-                            className="sc-VigVT ddzuTg"
+                            className="sc-VigVT jTtwdL"
                           >
                             Transfer to bank account
                           </div>
@@ -27209,7 +27209,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                     </div>
                   </div>
                   <a
-                    className="sc-jzJRlG BFmJH"
+                    className="sc-jzJRlG iukqtR"
                     onClick={[Function]}
                   >
                     Click to add card
