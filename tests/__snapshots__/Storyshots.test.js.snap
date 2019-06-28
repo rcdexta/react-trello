@@ -19,23 +19,21 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        />
+        <div />
       </div>
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -54,6 +52,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -70,10 +69,11 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -91,18 +91,15 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -155,9 +152,6 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -179,7 +173,19 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -213,25 +219,26 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -425,15 +432,12 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -472,9 +476,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -661,9 +663,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -748,9 +748,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </div>
@@ -792,9 +790,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -913,9 +909,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -1000,9 +994,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -1087,9 +1079,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -1174,9 +1164,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -1228,10 +1216,11 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -1250,6 +1239,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -1266,10 +1256,11 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -1287,18 +1278,15 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -1351,9 +1339,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -1375,7 +1360,19 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -1868,25 +1865,26 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -1957,22 +1955,18 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Planned Tasks"
@@ -1991,9 +1985,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -2066,7 +2058,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Executing"
@@ -2085,9 +2076,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -2128,10 +2117,11 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -2150,6 +2140,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -2166,10 +2157,11 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -2187,18 +2179,15 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -2251,9 +2240,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -2275,7 +2261,19 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -2918,25 +2916,26 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -3181,15 +3180,12 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
         }
         draggable={false}
         onCardMoveAcrossLanes={[Function]}
-        style={undefined}
       >
         <div
           onClick={[Function]}
           onTouchEnd={[Function]}
         >
-          <div
-            style={undefined}
-          >
+          <div>
             <span>
               <section
                 className="react-trello-lane sc-htpNat dJewwL"
@@ -3226,9 +3222,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3397,9 +3391,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3472,9 +3464,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  />
+                  <div />
                 </div>
               </section>
             </span>
@@ -3514,9 +3504,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3621,9 +3609,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3696,9 +3682,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3771,9 +3755,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3846,9 +3828,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <span>
                       <article
                         className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -3891,10 +3871,11 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -3913,6 +3894,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -3929,10 +3911,11 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -3950,18 +3933,15 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -4014,9 +3994,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -4038,7 +4015,19 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -4072,25 +4061,26 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -5679,15 +5669,12 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -5724,9 +5711,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -5895,9 +5880,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -5970,9 +5953,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </span>
@@ -6012,9 +5993,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -6119,9 +6098,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -6194,9 +6171,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -6269,9 +6244,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -6344,9 +6317,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -6388,10 +6359,11 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -6410,6 +6382,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -6426,10 +6399,11 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -6447,18 +6421,15 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -6511,9 +6482,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -6535,7 +6503,19 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -6974,25 +6954,26 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -8370,15 +8351,12 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -8411,9 +8389,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -8551,10 +8527,11 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -8573,6 +8550,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -8589,10 +8567,11 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -8610,18 +8589,15 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -8674,9 +8650,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -8698,7 +8671,19 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -8917,25 +8902,26 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -9017,15 +9003,12 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -9058,9 +9041,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -9198,10 +9179,11 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -9220,6 +9202,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -9236,10 +9219,11 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -9257,18 +9241,15 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -9321,9 +9302,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -9345,7 +9323,19 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -9564,25 +9554,26 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -9664,20 +9655,16 @@ exports[`Storyshots Basic Functions Tags 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Planned Tasks"
@@ -9696,9 +9683,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -9834,10 +9819,11 @@ exports[`Storyshots Basic Functions Tags 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -9856,6 +9842,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -9872,10 +9859,11 @@ exports[`Storyshots Basic Functions Tags 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -9893,18 +9881,15 @@ exports[`Storyshots Basic Functions Tags 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -9957,9 +9942,6 @@ exports[`Storyshots Basic Functions Tags 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -9981,7 +9963,19 @@ exports[`Storyshots Basic Functions Tags 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -10412,25 +10406,26 @@ exports[`Storyshots Basic Functions Tags 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -10553,15 +10548,12 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -10611,9 +10603,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -10830,7 +10820,6 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Long Lane name this is i suppose ha!"
@@ -10849,9 +10838,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -11001,10 +10988,11 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -11023,6 +11011,7 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -11039,10 +11028,11 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -11060,18 +11050,15 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -11124,9 +11111,6 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -11148,7 +11132,19 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div>
@@ -11687,25 +11683,26 @@ exports[`Storyshots Custom Templates Custom Card Template 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -11781,15 +11778,12 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -11849,9 +11843,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -11973,9 +11965,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -12040,10 +12030,11 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12062,6 +12053,7 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -12078,10 +12070,11 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12099,18 +12092,15 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -12163,9 +12153,6 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -12187,7 +12174,19 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -12515,25 +12514,26 @@ exports[`Storyshots Custom Templates Custom Lane Template 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -12607,22 +12607,18 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Planned"
@@ -12641,9 +12637,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -12810,7 +12804,6 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             <section
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
-              label={undefined}
               onClick={[Function]}
               style={Object {}}
               title="Work In Progress"
@@ -12829,9 +12822,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -12919,10 +12910,11 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -12941,6 +12933,7 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -12957,10 +12950,11 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -12978,18 +12972,15 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -13042,9 +13033,6 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -13066,7 +13054,19 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -13100,25 +13100,26 @@ exports[`Storyshots Custom Templates Drag-n-Drop Styling 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -13312,15 +13313,12 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -13359,9 +13357,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -13540,9 +13536,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -13619,9 +13613,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </div>
@@ -13663,9 +13655,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -13776,9 +13766,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -13855,9 +13843,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -13934,9 +13920,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -14013,9 +13997,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -14059,10 +14041,11 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -14081,6 +14064,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -14097,10 +14081,11 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -14118,18 +14103,15 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -14182,9 +14164,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -14206,7 +14185,19 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -14804,25 +14795,26 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -14914,15 +14906,12 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -14955,9 +14944,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -15130,9 +15117,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -15207,9 +15192,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </span>
@@ -15218,10 +15201,11 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -15240,6 +15224,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -15256,10 +15241,11 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -15277,18 +15263,15 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -15341,9 +15324,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -15365,7 +15345,19 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -15810,25 +15802,26 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -16022,15 +16015,12 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -16069,9 +16059,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16250,9 +16238,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16329,9 +16315,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </div>
@@ -16373,9 +16357,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16486,9 +16468,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16565,9 +16545,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16644,9 +16622,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16723,9 +16699,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -16769,10 +16743,11 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -16791,6 +16766,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -16807,10 +16783,11 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -16828,18 +16805,15 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -16892,9 +16866,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -16916,7 +16887,19 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -17429,25 +17412,26 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -17539,15 +17523,12 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -17582,9 +17563,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -17759,9 +17738,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -17838,9 +17815,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </div>
@@ -17849,10 +17824,11 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -17871,6 +17847,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -17887,10 +17864,11 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -17908,18 +17886,15 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -17972,9 +17947,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -17996,7 +17968,19 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -18415,25 +18399,26 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -18515,15 +18500,12 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -18603,9 +18585,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -18786,9 +18766,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
           </span>
         </div>
       </div>
-      <div
-        style={undefined}
-      >
+      <div>
         <section
           className="sc-kAzzGY dDenbz"
           style={
@@ -18808,10 +18786,11 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -18830,6 +18809,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -18846,10 +18826,11 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -18867,18 +18848,15 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -18931,9 +18909,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -18955,7 +18930,19 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -19202,25 +19189,26 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -19414,15 +19402,12 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -19461,9 +19446,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -19688,9 +19671,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -19783,9 +19764,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
                 <a
                   className="sc-jzJRlG iukqtR"
                   onClick={[Function]}
@@ -19833,9 +19812,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -19972,9 +19949,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -20067,9 +20042,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -20162,9 +20135,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -20257,9 +20228,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -20319,10 +20288,11 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -20341,6 +20311,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -20357,10 +20328,11 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -20378,18 +20350,15 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -20442,9 +20411,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -20466,7 +20432,19 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -21076,25 +21054,26 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -21288,15 +21267,12 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -21333,9 +21309,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -21511,9 +21485,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -21593,9 +21565,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
                 <span
                   onClick={[Function]}
                 >
@@ -21642,9 +21612,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -21756,9 +21724,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -21838,9 +21804,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -21920,9 +21884,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -22002,9 +21964,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -22053,10 +22013,11 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -22075,6 +22036,7 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -22091,10 +22053,11 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -22112,18 +22075,15 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -22176,9 +22136,6 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -22200,7 +22157,19 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -22693,25 +22662,26 @@ exports[`Storyshots Editable Board Custom Buttons 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -22905,15 +22875,12 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -22950,9 +22917,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23167,9 +23132,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23258,9 +23221,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
                 <a
                   className="sc-jzJRlG iukqtR"
                   onClick={[Function]}
@@ -23306,9 +23267,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23439,9 +23398,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23530,9 +23487,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23621,9 +23576,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23712,9 +23665,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -23772,10 +23723,11 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -23794,6 +23746,7 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -23810,10 +23763,11 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -23831,18 +23785,15 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -23895,9 +23846,6 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -23919,7 +23867,19 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -24431,25 +24391,26 @@ exports[`Storyshots Editable Board New Card Template 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -24531,15 +24492,12 @@ exports[`Storyshots I18n Custom texts 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      style={undefined}
     >
       <div
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <div
             className="smooth-dnd-draggable-wrapper"
           >
@@ -24621,9 +24579,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
@@ -24812,9 +24768,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style={undefined}
-      >
+      <div>
         <section
           className="sc-kAzzGY dDenbz"
           style={
@@ -24834,10 +24788,11 @@ exports[`Storyshots I18n Custom texts 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -24856,6 +24811,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -24872,10 +24828,11 @@ exports[`Storyshots I18n Custom texts 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -24893,18 +24850,15 @@ exports[`Storyshots I18n Custom texts 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -24957,9 +24911,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -24981,7 +24932,19 @@ exports[`Storyshots I18n Custom texts 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div>
@@ -26825,25 +26788,26 @@ exports[`Storyshots I18n Custom texts 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -26938,15 +26902,12 @@ exports[`Storyshots I18n Using i18next 1`] = `
         }
         draggable={false}
         onCardMoveAcrossLanes={[Function]}
-        style={undefined}
       >
         <div
           onClick={[Function]}
           onTouchEnd={[Function]}
         >
-          <div
-            style={undefined}
-          >
+          <div>
             <div
               className="smooth-dnd-draggable-wrapper"
             >
@@ -27028,9 +26989,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 <div
                   className="sc-EHOje iisOsp"
                 >
-                  <div
-                    style={undefined}
-                  >
+                  <div>
                     <div
                       className="smooth-dnd-draggable-wrapper"
                     >
@@ -27219,9 +27178,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
             </div>
           </div>
         </div>
-        <div
-          style={undefined}
-        >
+        <div>
           <section
             className="sc-kAzzGY dDenbz"
             style={
@@ -27242,10 +27199,11 @@ exports[`Storyshots I18n Using i18next 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -27264,6 +27222,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -27280,10 +27239,11 @@ exports[`Storyshots I18n Using i18next 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -27301,18 +27261,15 @@ exports[`Storyshots I18n Using i18next 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -27365,9 +27322,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -27389,7 +27343,19 @@ exports[`Storyshots I18n Using i18next 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div>
@@ -29009,25 +28975,26 @@ exports[`Storyshots I18n Using i18next 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -29237,15 +29204,12 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
           }
           draggable={false}
           onCardMoveAcrossLanes={[Function]}
-          style={undefined}
         >
           <div
             onClick={[Function]}
             onTouchEnd={[Function]}
           >
-            <div
-              style={undefined}
-            >
+            <div>
               <div
                 className="smooth-dnd-draggable-wrapper"
               >
@@ -29284,9 +29248,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29465,9 +29427,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29544,9 +29504,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    />
+                    <div />
                   </div>
                 </section>
               </div>
@@ -29588,9 +29546,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29701,9 +29657,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29780,9 +29734,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29859,9 +29811,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -29938,9 +29888,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -30060,15 +30008,12 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
           }
           draggable={false}
           onCardMoveAcrossLanes={[Function]}
-          style={undefined}
         >
           <div
             onClick={[Function]}
             onTouchEnd={[Function]}
           >
-            <div
-              style={undefined}
-            >
+            <div>
               <div
                 className="smooth-dnd-draggable-wrapper"
               >
@@ -30103,9 +30048,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -30178,9 +30121,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    >
+                    <div>
                       <div
                         className="smooth-dnd-draggable-wrapper"
                       >
@@ -30355,9 +30296,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   <div
                     className="sc-EHOje iisOsp"
                   >
-                    <div
-                      style={undefined}
-                    />
+                    <div />
                   </div>
                 </section>
               </div>
@@ -30368,10 +30307,11 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -30390,6 +30330,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -30406,10 +30347,11 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -30427,18 +30369,15 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -30491,9 +30430,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -30515,7 +30451,19 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div>
@@ -31801,25 +31749,26 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -32024,9 +31973,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -32063,9 +32010,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32234,9 +32179,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32309,9 +32252,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                />
+                <div />
               </div>
             </section>
           </span>
@@ -32351,9 +32292,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32458,9 +32397,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32533,9 +32470,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32608,9 +32543,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32683,9 +32616,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -32727,10 +32658,11 @@ exports[`Storyshots Styling Board Styling 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -32749,6 +32681,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -32765,10 +32698,11 @@ exports[`Storyshots Styling Board Styling 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -32786,18 +32720,15 @@ exports[`Storyshots Styling Board Styling 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -32850,9 +32781,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -32874,7 +32802,19 @@ exports[`Storyshots Styling Board Styling 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -33412,25 +33352,26 @@ exports[`Storyshots Styling Board Styling 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
@@ -33498,9 +33439,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
         onClick={[Function]}
         onTouchEnd={[Function]}
       >
-        <div
-          style={undefined}
-        >
+        <div>
           <span>
             <section
               className="react-trello-lane sc-htpNat dJewwL"
@@ -33540,9 +33479,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
               <div
                 className="sc-EHOje iisOsp"
               >
-                <div
-                  style={undefined}
-                >
+                <div>
                   <span>
                     <article
                       className="react-trello-card sc-dnqmqq eoPYBZ"
@@ -33616,10 +33553,11 @@ exports[`Storyshots Styling Lane Styling 1`] = `
     </div>
   </div>
   <button
+    className="info__show-button"
     onClick={[Function]}
     style={
       Object {
-        "background": "#28c",
+        "background": "#027ac5",
         "border": "none",
         "borderRadius": "0 0 0 5px",
         "color": "#fff",
@@ -33638,6 +33576,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
     Show Info
   </button>
   <div
+    className="info__overlay"
     style={
       Object {
         "background": "white",
@@ -33654,10 +33593,11 @@ exports[`Storyshots Styling Lane Styling 1`] = `
     }
   >
     <button
+      className="info__close-button"
       onClick={[Function]}
       style={
         Object {
-          "background": "#28c",
+          "background": "#027ac5",
           "border": "none",
           "borderRadius": "0 0 0 5px",
           "color": "#fff",
@@ -33675,18 +33615,15 @@ exports[`Storyshots Styling Lane Styling 1`] = `
     >
       ×
     </button>
-    <div
-      style={undefined}
-    >
+    <div>
       <div
         style={
           Object {
-            "WebkitFontSmoothing": "antialiased",
             "backgroundColor": "#fff",
             "border": "1px solid #eee",
             "borderRadius": "2px",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "color": "black",
+            "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -33739,9 +33676,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
           <div
             style={
               Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
                 "fontSize": "15px",
               }
             }
@@ -33763,7 +33697,19 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             Story Source
           </h1>
           <pre
-            className="css-r8d96o eyvlbql0"
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fafafa",
+                "display": "flex",
+                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                "fontSize": ".88em",
+                "justifyContent": "space-between",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }
           >
             <div>
               <div
@@ -34005,25 +33951,26 @@ exports[`Storyshots Styling Lane Styling 1`] = `
               </div>
             </div>
             <button
-              className="css-1naocv3 eva467m0"
               onClick={[Function]}
+              style={
+                Object {
+                  "alignSelf": "flex-start",
+                  "backgroundColor": "rgb(255, 255, 255)",
+                  "borderColor": "rgb(238, 238, 238)",
+                  "borderImage": "initial",
+                  "borderRadius": "3px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "cursor": "pointer",
+                  "flexShrink": "0",
+                  "fontSize": "13px",
+                  "overflow": "hidden",
+                  "padding": "3px 10px",
+                }
+              }
+              type="button"
             >
-              <div
-                className="css-lvl6aa eva467m1"
-              >
-                <div
-                  style={
-                    Object {
-                      "marginBottom": 6,
-                    }
-                  }
-                >
-                  Copied!
-                </div>
-                <div>
-                  Copy
-                </div>
-              </div>
+              Copy
             </button>
           </pre>
         </div>
