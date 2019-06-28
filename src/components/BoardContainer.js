@@ -11,6 +11,7 @@ import {NewLaneButton} from '../styles/Elements'
 import Lane from './Lane'
 import NewLane from './NewLane'
 import { PopoverWrapper } from '@terebentina/react-popover'
+import defaultTranslation from '../helpers/defaultTranslation'
 
 import * as boardActions from '../actions/BoardActions'
 import * as laneActions from '../actions/LaneActions'
@@ -101,7 +102,7 @@ class BoardContainer extends Component {
   }
 
   renderNewLane = () => {
-    const {newLaneTemplate} = this.props
+    const {newLaneTemplate, t} = this.props
     if (newLaneTemplate) {
       const newCardWithProps = React.cloneElement(newLaneTemplate, {
         onCancel: this.hideEditableLane,
@@ -109,7 +110,7 @@ class BoardContainer extends Component {
       })
       return <span>{newCardWithProps}</span>
     } else {
-      return <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} />
+      return <NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
     }
   }
 
@@ -119,11 +120,32 @@ class BoardContainer extends Component {
   }
 
   render() {
-    const {id, reducerData, draggable, laneDraggable, laneDragClass, style, onDataChange, onLaneScroll, onCardClick, onLaneClick, onLaneAdd, onCardDelete, onCardAdd, addLaneTitle, editable, canAddLanes, ...otherProps} = this.props
+    const {
+      id,
+      reducerData,
+      draggable,
+      laneDraggable,
+      laneDragClass,
+      style,
+      onDataChange,
+      onCardAdd,
+      onCardClick,
+      onLaneScroll,
+      onLaneClick,
+      onLaneAdd,
+      onLaneDelete,
+      onCardDelete,
+      editable,
+      canAddLanes,
+      t,
+      ...otherProps
+      } = this.props
     const {addLaneMode} = this.state
     // Stick to whitelisting attributes to segregate board and lane props
     const passthroughProps = pick(this.props, [
+      'onCardMoveAcrossLanes',
       'onLaneScroll',
+      'onLaneDelete',
       'onCardClick',
       'onCardDelete',
       'onCardAdd',
@@ -143,10 +165,9 @@ class BoardContainer extends Component {
       'handleDragEnd',
       'cardDragClass',
       'children',
-      'addLaneTitle',
-      'addCardTitle',
       'newLaneTemplate',
-      'newCardTemplate'
+      'newCardTemplate',
+      't'
     ])
 
     return (
@@ -171,6 +192,8 @@ class BoardContainer extends Component {
                 getCardDetails={this.getCardDetails}
                 index={index}
                 droppable={droppable === undefined ? true : droppable}
+                style={lane.style || {}}
+                labelStyle={lane.labelStyle || {}}
                 {...otherProps}
                 {...passthroughProps}
               />
@@ -183,7 +206,7 @@ class BoardContainer extends Component {
           <Container orientation="horizontal">
             {editable && !addLaneMode ? (
               <LaneSection style={{width: 200}}>
-                <NewLaneButton onClick={this.showEditableLane}>{addLaneTitle}</NewLaneButton>
+                <NewLaneButton onClick={this.showEditableLane}>{t('Add another lane')}</NewLaneButton>
               </LaneSection>
             ) : (
               addLaneMode && this.renderNewLane()
@@ -208,6 +231,7 @@ BoardContainer.propTypes = {
   onCardAdd: PropTypes.func,
   addCardLink: PropTypes.node,
   onLaneAdd: PropTypes.func,
+  onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
@@ -227,9 +251,8 @@ BoardContainer.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   laneDragClass: PropTypes.string,
-  addLaneTitle: PropTypes.string,
-  addCardTitle: PropTypes.string,
-  newLaneTemplate: PropTypes.node
+  newLaneTemplate: PropTypes.node,
+  t: PropTypes.func.isRequired
 }
 
 BoardContainer.defaultProps = {
@@ -239,6 +262,8 @@ BoardContainer.defaultProps = {
   handleLaneDragStart: () => {},
   handleLaneDragEnd: () => {},
   onLaneAdd: () => {},
+  onLaneDelete: () => {},
+  onCardMoveAcrossLanes: () => {},
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,
@@ -248,8 +273,7 @@ BoardContainer.defaultProps = {
   cardDraggable: true,
   cardDragClass: 'react_trello_dragClass',
   laneDragClass: 'react_trello_dragLaneClass',
-  addLaneTitle: '+ Add another lane',
-  addCardTitle: 'Add Card'
+  t: defaultTranslation,
 }
 
 const mapStateToProps = state => {

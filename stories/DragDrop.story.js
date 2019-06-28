@@ -29,9 +29,9 @@ storiesOf('Drag-n-Drop', module)
         console.log(`lane drag started for ${laneId}`)
       }
 
-      const handleLaneDragEnd = (laneId, newPosition) => {
-        console.log(`lane drag ended for ${laneId}`)
-        console.log(`New lane position: ${newPosition}`)
+      const handleLaneDragEnd = (removedIndex, addedIndex, {id}) => {
+        console.log(`lane drag ended from position ${removedIndex} for laneId=${id}`)
+        console.log(`New lane position: ${addedIndex}`)
       }
 
       const shouldReceiveNewData = nextData => {

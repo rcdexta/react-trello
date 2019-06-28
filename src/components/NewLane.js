@@ -14,15 +14,15 @@ class NewLane extends Component {
   }
 
   render() {
-    const {onCancel} = this.props
+    const {onCancel, t} = this.props
     return (
         <Section>
           <LaneTitle>
-            <EditableLabel placeholder="title" onChange={val => this.updateField('title', val)} autoFocus/>
+            <EditableLabel placeholder={t('placeholder.title')} onChange={val => this.updateField('title', val)} autoFocus/>
           </LaneTitle>
           <NewLaneButtons>
-            <AddButton onClick={this.handleAdd}>Add</AddButton>
-            <CancelButton onClick={onCancel}>Cancel</CancelButton>
+            <AddButton onClick={this.handleAdd}>{t('button.Add lane')}</AddButton>
+            <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
           </NewLaneButtons>
         </Section>
     )
@@ -31,7 +31,8 @@ class NewLane extends Component {
 
 NewLane.propTypes = {
   onCancel: PropTypes.func.isRequired,
-  onAdd: PropTypes.func.isRequired
+  onAdd: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired
 }
 NewLane.defaultProps = {}
 

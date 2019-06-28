@@ -2,8 +2,6 @@
 
 Pluggable components to add a trello-like kanban board to your application
 
-*MAINTAINERS NEEDED*
-
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 [![npm version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 
@@ -51,7 +49,7 @@ const data = {
       title: 'Planned Tasks',
       label: '2/2',
       cards: [
-        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins'},
+        {id: 'Card1', title: 'Write Blog', description: 'Can AI make memes', label: '30 mins', draggable: false},
         {id: 'Card2', title: 'Pay Rent', description: 'Transfer via NEFT', label: '5 mins', metadata: {sha: 'be312a1'}}
       ]
     },
@@ -64,6 +62,8 @@ const data = {
   ]
 }
 ```
+
+`draggable` property of Card object is `true` by default.
 
 The data is passed to the board component and that's it.
 
@@ -96,22 +96,23 @@ This is the container component that encapsulates the lanes and cards
 | collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
-| addLaneTitle        | string   | Changes add lane button description.                                Default: false                                             |
 | handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
 | handleDragEnd       | function | Callback function triggered when card drag ends, return false if you want to cancel drop: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
-| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(laneId, newPosition, payload)`                                      |
+| handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(removedIndex, addedIndex, payload)`                                      |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
+| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
+| onCardMoveAcrossLanes        | function | Called when a card is moved across lanes `onCardMoveAcrossLanes(fromLaneId, toLaneId, cardId, index)`                                                                  |
 | onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
+| onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
+| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
 | newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
-| onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
-| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
@@ -248,6 +249,27 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * Opera 51 or above
 * Safari 4.0 or above
 * Microsoft Edge 15 or above
+
+## I18n
+
+
+### Custom function
+
+Use custom translation function to provide localized texts:
+
+```javascript
+const customTranslation = (key) => TRANSLATION_TABLE[key]
+
+<Board t={customTranslation} .../>
+```
+
+### I18next support
+
+```javascript
+import { withTranslation } from 'react-i18next';
+
+const I18nBoard = withTranslation()(Board) 
+```
 
 ## Feature Wishlist
 

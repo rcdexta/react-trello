@@ -25,14 +25,14 @@ export const GlobalStyle = createGlobalStyle`
       position: absolute;
       background: transparent none repeat scroll 0 0;
       border: 6px solid transparent;
-      transition: all 0.3s ease 0ms; 
+      transition: all 0.3s ease 0ms;
       left: 50%; }
   .popover.popover--bottom {
     flex-flow: column nowrap; }
     .popover.popover--bottom .popover__content {
       left: 50%;
-      transform: translateX(-50%); }      
-  
+      transform: translateX(-50%); }
+
   .popover.popover--active .popover__content {
     visibility: visible;
     opacity: 1;
@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   .popover[class*="menu"] .popover__content {
     border-radius: 3px;
     min-width: 7em;
-    flex-flow: column nowrap;    
+    flex-flow: column nowrap;
     color: #000; }
     .popover[class*="menu"] .popover__content a {
       color: rgba(255, 255, 255, 0.56);
@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #00bcd4 !important;
         color: #37474F; }
 
-		
+
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
   }
@@ -62,15 +62,15 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
     cursor: text;
   }
-  
+
   .react_trello_dragClass {
     transform: rotate(3deg);
   }
-  
+
   .react_trello_dragLaneClass {
     transform: rotate(3deg);
-  }  
-  
+  }
+
   .icon-overflow-menu-horizontal:before {
     content: "\\E91F";
   }
@@ -136,7 +136,6 @@ export const ScrollableLane = styled.div`
   overflow-x: hidden;
   align-self: center;
   max-height: 90vh;
-  padding-bottom: 30px;
   margin-top: 10px;
   flex-direction: column;
   justify-content: space-between;
@@ -192,7 +191,7 @@ export const CardRightContent = styled(RightContent)`
 export const Detail = styled.div`
   font-size: 12px;
   color: #4d4d4d;
-  white-space: normal;
+  white-space: pre-wrap;
 `
 
 export const Footer = styled.div`
@@ -217,10 +216,10 @@ export const AddCardLink = styled.a`
   color: #838c91;
   display: block;
   padding: 5px 2px;
-  position: absolute;
+  margin-top: 10px;
+  position: relative;
   text-decoration: none;
   cursor: pointer;
-  bottom: 3px;
 
   &:hover {
     //background-color: #cdd2d4;
