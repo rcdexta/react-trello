@@ -25065,7 +25065,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                   }
                                 }
                               >
-                                true
+                                false
                               </span>
                               ,
                               <span>
@@ -25399,7 +25399,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -25895,7 +25895,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -26051,7 +26051,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -26405,7 +26405,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                         }
                                       }
                                     >
-                                      true
+                                      false
                                     </span>
                                     ,
                                     <span>
@@ -27476,7 +27476,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                                   }
                                 }
                               >
-                                true
+                                false
                               </span>
                               ,
                               <span>
@@ -27810,7 +27810,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -28306,7 +28306,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -28462,7 +28462,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                                       }
                                     }
                                   >
-                                    true
+                                    false
                                   </span>
                                   ,
                                   <span>
@@ -28816,7 +28816,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                                         }
                                       }
                                     >
-                                      true
+                                      false
                                     </span>
                                     ,
                                     <span>
