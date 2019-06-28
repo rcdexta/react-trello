@@ -8,7 +8,9 @@ i18n
   .init({
     resources,
     lng: "en",
-    debug: true
+    react: {
+      wait: true
+    }
   });
 
 export default i18n;
