@@ -1,0 +1,16 @@
+{
+  "Add another lane": "+ Add another lane",
+  "Click to add card": "Click to add card",
+  "Delete lane": "Delete lane",
+  "Lane actions": "Lane actions",
+  "button": {
+    "Add lane": "Add lane",
+    "Add card": "Add card",
+    "Cancel": "Cancel"
+  },
+  "placeholder": {
+    "title": "title",
+    "description": "description",
+    "label": "label"
+  }
+}

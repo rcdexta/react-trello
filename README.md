@@ -96,7 +96,6 @@ This is the container component that encapsulates the lanes and cards
 | collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
-| addLaneTitle        | string   | Changes add lane button description.                                Default: false                                             |
 | handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
 | handleDragEnd       | function | Callback function triggered when card drag ends, return false if you want to cancel drop: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
@@ -250,6 +249,27 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * Opera 51 or above
 * Safari 4.0 or above
 * Microsoft Edge 15 or above
+
+## I18n
+
+
+### Custom function
+
+Use custom translation function to provide localized texts:
+
+```javascript
+const customTranslation = (key) => TRANSLATION_TABLE[key]
+
+<Board t={customTranslation} .../>
+```
+
+### I18next support
+
+```javascript
+import { withTranslation } from 'react-i18next';
+
+const I18nBoard = withTranslation()(Board) 
+```
 
 ## Feature Wishlist
 

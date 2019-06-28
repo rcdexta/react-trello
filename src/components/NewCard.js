@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from '../styles/Base'
 import EditableLabel from './widgets/EditableLabel'
 import {AddButton, CancelButton} from '../styles/Elements'
+import defaultTranslation from '../helpers/defaultTranslation'
 
 class NewCard extends Component {
   updateField = (field, value) => {
@@ -14,24 +15,24 @@ class NewCard extends Component {
   }
 
   render() {
-    const {onCancel} = this.props
+    const {onCancel, t} = this.props
     return (
       <div style={{background: '#E3E3E3'}}>
         <CardWrapper>
           <CardHeader>
             <CardTitle>
-              <EditableLabel placeholder="title" onChange={val => this.updateField('title', val)} autoFocus />
+              <EditableLabel placeholder={t('placeholder.title')} onChange={val => this.updateField('title', val)} autoFocus />
             </CardTitle>
             <CardRightContent>
-              <EditableLabel placeholder="label" onChange={val => this.updateField('label', val)} />
+              <EditableLabel placeholder={t('placeholder.label')} onChange={val => this.updateField('label', val)} />
             </CardRightContent>
           </CardHeader>
           <Detail>
-            <EditableLabel placeholder="description" onChange={val => this.updateField('description', val)} />
+            <EditableLabel placeholder={t('placeholder.description')} onChange={val => this.updateField('description', val)} />
           </Detail>
         </CardWrapper>
-        <AddButton onClick={this.handleAdd}>Add</AddButton>
-        <CancelButton onClick={onCancel}>Cancel</CancelButton>
+        <AddButton onClick={this.handleAdd}>{t('button.Add card')}</AddButton>
+        <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
       </div>
     )
   }
@@ -39,8 +40,12 @@ class NewCard extends Component {
 
 NewCard.propTypes = {
   onCancel: PropTypes.func.isRequired,
-  onAdd: PropTypes.func.isRequired
+  onAdd: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 }
-NewCard.defaultProps = {}
+
+NewCard.defaultProps = {
+  t: defaultTranslation
+}
 
 export default NewCard
