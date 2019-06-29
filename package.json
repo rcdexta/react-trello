@@ -73,6 +73,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
     "codecov.io": "^0.1.6",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
