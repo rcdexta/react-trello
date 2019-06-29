@@ -4,7 +4,7 @@ import { useTranslation, I18nextProvider } from 'react-i18next';
 
 import Board from '../src'
 import defaultTranslation from '../src/helpers/defaultTranslation'
-import i18n from './i18n'
+import i18n from './helpers/i18n'
 
 const smallData = require('./data/data-sort')
 
