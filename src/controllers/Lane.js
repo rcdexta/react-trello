@@ -7,7 +7,6 @@ import isEqual from 'lodash/isEqual'
 import cloneDeep from 'lodash/cloneDeep'
 import pick from 'lodash/pick'
 import uuidv1 from 'uuid/v1'
-import Popover from '@terebentina/react-popover'
 
 import Container from 'dnd/Container'
 import Draggable from 'dnd/Draggable'
