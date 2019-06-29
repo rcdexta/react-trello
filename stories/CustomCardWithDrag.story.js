@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
+import debug from './helpers/debug'
 
 import Board from '../src'
 
@@ -70,12 +71,12 @@ class BoardWithCustomCard extends Component {
   state = {boardData: customCardData, draggedData: undefined}
 
   updateBoard = newData => {
-    console.log('calling updateBoard')
+    debug('calling updateBoard')
     this.setState({draggedData: newData})
   }
 
   onDragEnd = (cardId, sourceLandId, targetLaneId) => {
-    console.log('Calling onDragENd')
+    debug('Calling onDragENd')
     const {draggedData} = this.state
     const laneIndex = draggedData.lanes.findIndex(lane => lane.id === targetLaneId)
     const cardIndex = draggedData.lanes[laneIndex].cards.findIndex(card => card.id === cardId)

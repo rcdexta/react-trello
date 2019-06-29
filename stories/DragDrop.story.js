@@ -1,5 +1,6 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
+import debug from './helpers/debug'
 
 import Board from '../src'
 
@@ -10,33 +11,33 @@ storiesOf('Drag-n-Drop', module)
     'Basic',
     () => {
       const handleDragStart = (cardId, laneId) => {
-        console.log('drag started')
-        console.log(`cardId: ${cardId}`)
-        console.log(`laneId: ${laneId}`)
+        debug('drag started')
+        debug(`cardId: ${cardId}`)
+        debug(`laneId: ${laneId}`)
       }
 
       const handleDragEnd = (cardId, sourceLaneId, targetLaneId, position, card) => {
-        console.log('drag ended')
-        console.log(`cardId: ${cardId}`)
-        console.log(`sourceLaneId: ${sourceLaneId}`)
-        console.log(`targetLaneId: ${targetLaneId}`)
-        console.log(`newPosition: ${position}`)
-        console.log(`cardDetails:`)
-        console.log(card)
+        debug('drag ended')
+        debug(`cardId: ${cardId}`)
+        debug(`sourceLaneId: ${sourceLaneId}`)
+        debug(`targetLaneId: ${targetLaneId}`)
+        debug(`newPosition: ${position}`)
+        debug(`cardDetails:`)
+        debug(card)
       }
 
       const handleLaneDragStart = laneId => {
-        console.log(`lane drag started for ${laneId}`)
+        debug(`lane drag started for ${laneId}`)
       }
 
       const handleLaneDragEnd = (removedIndex, addedIndex, {id}) => {
-        console.log(`lane drag ended from position ${removedIndex} for laneId=${id}`)
-        console.log(`New lane position: ${addedIndex}`)
+        debug(`lane drag ended from position ${removedIndex} for laneId=${id}`)
+        debug(`New lane position: ${addedIndex}`)
       }
 
       const shouldReceiveNewData = nextData => {
-        console.log('data has changed')
-        console.log(nextData)
+        debug('data has changed')
+        debug(nextData)
       }
 
       return (

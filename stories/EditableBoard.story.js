@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
+import debug from './helpers/debug'
 
 import Board from '../src'
 
@@ -41,17 +42,17 @@ storiesOf('Editable Board', module)
     'Add/Delete Cards',
     () => {
       const shouldReceiveNewData = nextData => {
-        console.log('Board has changed')
-        console.log(nextData)
+        debug('Board has changed')
+        debug(nextData)
       }
 
       const handleCardDelete = (cardId, laneId) => {
-        console.log(`Card: ${cardId} deleted from lane: ${laneId}`)
+        debug(`Card: ${cardId} deleted from lane: ${laneId}`)
       }
 
       const handleCardAdd = (card, laneId) => {
-        console.log(`New card added to lane ${laneId}`)
-        console.dir(card)
+        debug(`New card added to lane ${laneId}`)
+        debug(card)
       }
 
       return (
@@ -91,7 +92,7 @@ storiesOf('Editable Board', module)
           data={smallData}
           editable
           canAddLanes
-          onLaneAdd={t => console.log('You added a line with title ' + t.title)}
+          onLaneAdd={t => debug('You added a line with title ' + t.title)}
         />
       )
     },

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
+import debug from './helpers/debug'
 
 import Board from '../src'
 
@@ -53,8 +54,8 @@ class RealtimeBoard extends Component {
   }
 
   shouldReceiveNewData = nextData => {
-    console.log('data has changed')
-    console.log(nextData)
+    debug('data has changed')
+    debug(nextData)
   }
 
   render() {
