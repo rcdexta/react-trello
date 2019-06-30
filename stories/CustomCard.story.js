@@ -2,7 +2,7 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
-import Tag from 'components/basic/Tag'
+import Tag from 'components/basic/Card/Tag'
 
 const CustomCard = ({name, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
   return (

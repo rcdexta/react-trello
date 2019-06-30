@@ -4,7 +4,7 @@ import {CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'styl
 import EditableLabel from './widgets/EditableLabel'
 import {AddButton, CancelButton} from 'styles/Elements'
 
-class NewCard extends Component {
+class NewCardForm extends Component {
   updateField = (field, value) => {
     this.setState({[field]: value})
   }
@@ -37,13 +37,13 @@ class NewCard extends Component {
   }
 }
 
-NewCard.propTypes = {
+NewCardForm.propTypes = {
   onCancel: PropTypes.func.isRequired,
   onAdd: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 }
 
-NewCard.defaultProps = {
+NewCardForm.defaultProps = {
 }
 
-export default NewCard
+export default NewCardForm

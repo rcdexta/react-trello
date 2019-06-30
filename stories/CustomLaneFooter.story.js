@@ -7,4 +7,5 @@ const data = require('./data/collapsible.json')
 
 const LaneFooter = ({onClick, collapsed}) => <div onClick={onClick}>{collapsed ? 'click to expand' : 'click to collapse'}</div>
 
-storiesOf('Custom Components', module).add('Custom LaneFooter', () => <Board collapsibleLanes components={{LaneFooter: LaneFooter}} data={data} />)
+storiesOf('Custom Components', module).
+  add('Custom LaneFooter', () => <Board collapsibleLanes components={{LaneFooter: LaneFooter}} data={data} />)

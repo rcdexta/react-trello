@@ -246,7 +246,7 @@ export const LaneSection = styled.section`
 `
 
 export const NewLaneSection = styled(LaneSection)`
-  background-color: #e0e3e6;
+  width: 200px;
 `
 
 export const NewLaneButtons = styled.div`

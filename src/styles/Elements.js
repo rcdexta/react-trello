@@ -79,7 +79,7 @@ export const LaneMenuItem = styled.div`
     position: relative;
     margin: 0 -12px;
     text-decoration: none;
-    
+
     &:hover {
       background-color: #3179BA;
       color: #fff;
@@ -231,7 +231,7 @@ export const CancelButton = styled.button`
   cursor: pointer;
   margin-bottom: 0;
 `
-export const NewLaneButton = styled.button`
+export const AddLaneLink = styled.button`
   background: #2b6aa3;
   border: none;
   color: #fff;

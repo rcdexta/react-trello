@@ -4,7 +4,7 @@ import {LaneTitle, NewLaneButtons, Section} from 'styles/Base'
 import {AddButton, CancelButton} from 'styles/Elements'
 import EditableLabel from './widgets/EditableLabel'
 
-class NewLane extends Component {
+class NewLaneForm extends Component {
   updateField = (field, value) => {
     this.setState({[field]: value})
   }
@@ -29,11 +29,11 @@ class NewLane extends Component {
   }
 }
 
-NewLane.propTypes = {
+NewLaneForm.propTypes = {
   onCancel: PropTypes.func.isRequired,
   onAdd: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired
 }
-NewLane.defaultProps = {}
+NewLaneForm.defaultProps = {}
 
-export default NewLane
+export default NewLaneForm

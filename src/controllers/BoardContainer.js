@@ -189,7 +189,7 @@ class BoardContainer extends Component {
         {canAddLanes && (
           <Container orientation="horizontal">
             {editable && !addLaneMode ? <components.NewLaneSection t={t} onClick={this.showEditableLane} /> : (
-              addLaneMode && <components.NewLane onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
+              addLaneMode && <components.NewLaneForm onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
             )}
           </Container>
         )}

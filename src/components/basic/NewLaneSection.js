@@ -1,9 +1,9 @@
 import React from 'react'
-import {LaneSection} from 'styles/Base'
-import {NewLaneButton} from 'styles/Elements'
+import {NewLaneSection} from 'styles/Base'
+import {AddLaneLink} from 'styles/Elements'
 
 export default ({t, onClick}) => (
-  <LaneSection style={{width: 200}}>
-    <NewLaneButton t={t} onClick={onClick}>{t('Add another lane')}</NewLaneButton>
-  </LaneSection>
-  )
+  <NewLaneSection>
+    <AddLaneLink t={t} onClick={onClick}>{t('Add another lane')}</AddLaneLink>
+  </NewLaneSection>
+)

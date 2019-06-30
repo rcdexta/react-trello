@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 import {MovableCardWrapper, CardHeader, CardRightContent, CardTitle, Detail, Footer } from 'styles/Base'
-import Tag from './Tag'
+import Tag from './Card/Tag'
 import DeleteButton from './widgets/DeleteButton'
 
 class Card extends Component {
