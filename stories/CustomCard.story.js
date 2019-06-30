@@ -107,7 +107,7 @@ const data = {
 }
 
 storiesOf('Custom Components', module).add(
-  'Custom Card',
+  'Card',
   () => {
     return (
       <Board

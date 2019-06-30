@@ -32,7 +32,7 @@ const CustomLaneHeader = props => {
 }
 
 storiesOf('Custom Components', module).add(
-  'Custom LaneHeader',
+  'LaneHeader',
   () => {
     const data = {
       lanes: [

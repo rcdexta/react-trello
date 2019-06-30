@@ -8,5 +8,5 @@ const data = require('./data/data-sort.json')
 const NewLaneSection = ({t, onClick}) => <button onClick={onClick}>{t('Add another lane')}</button>
 
 storiesOf('Custom Components', module)
-  .add('Custom NewLaneSection', () => <Board editable canAddLanes components={{NewLaneSection: NewLaneSection}} data={data} />, {
+  .add('NewLaneSection', () => <Board editable canAddLanes components={{NewLaneSection: NewLaneSection}} data={data} />, {
 })

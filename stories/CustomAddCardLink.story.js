@@ -9,7 +9,7 @@ const CustomAddCardLink =  ({onClick, t}) => <button onClick={onClick}>{t('Click
 
 storiesOf('Custom Components', module)
   .add(
-    'Custom AddCardLink',
+    'AddCardLink',
     () => {
       return <Board data={data} editable components={{AddCardLink: CustomAddCardLink}} />
     }

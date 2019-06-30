@@ -21,4 +21,4 @@ class NewLaneForm extends Component {
 }
 
 storiesOf('Custom Components', module)
-  .add('Custom NewLaneForm', () => <Board editable canAddLanes components={{NewLaneForm: NewLaneForm}} data={data} />)
+  .add('NewLaneForm', () => <Board editable canAddLanes components={{NewLaneForm: NewLaneForm}} data={data} />)

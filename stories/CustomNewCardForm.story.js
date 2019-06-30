@@ -32,7 +32,7 @@ class NewCardForm extends Component {
 
 storiesOf('Custom Components', module)
   .add(
-    'Custom NewCardForm',
+    'NewCardForm',
     () => <Board data={data} editable components={{NewCardForm: NewCardForm}} />
     , {info: 'Pass a custom new card form compoment to add card'}
   )
