@@ -12,8 +12,19 @@ class Card extends Component {
   }
 
   render()  {
-    const {showDeleteButton, style, tagStyle, card, onClick, onDelete, className } = this.props
-    const { id, title, label, description, tags } = card
+    const {
+      showDeleteButton,
+      style,
+      tagStyle,
+      onClick,
+      onDelete,
+      className,
+      id,
+      title,
+      label,
+      description,
+      tags,
+    } = this.props
 
     return (
       <MovableCardWrapper
@@ -46,16 +57,23 @@ Card.propTypes = {
   onDelete: PropTypes.func,
   onClick: PropTypes.func,
   tagStyle: PropTypes.object,
-  card: PropTypes.object.isRequired,
   className: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  description: PropTypes.string,
+  tags: PropTypes.array,
 }
 
 Card.defaultProps = {
   showDeleteButton: true,
   onDelete: () => {},
   onClick: () => {},
-  card: { title: 'no title', description: '', label: '', tags: [] },
   tagStyle: {},
+  title: 'no title',
+  description: '',
+  label: '',
+  tags: [],
   className: ''
 }
 

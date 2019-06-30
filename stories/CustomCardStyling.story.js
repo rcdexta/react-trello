@@ -4,7 +4,7 @@ import {storiesOf} from '@storybook/react'
 import Board from '../src'
 import Tag from 'components/basic/Tag'
 
-const CustomCard = ({card, tagStyle}) => {
+const CustomCard = ({name, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
   return (
     <div style={{padding: 6}}>
       <header
@@ -15,18 +15,18 @@ const CustomCard = ({card, tagStyle}) => {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          color: card.cardColor
+          color: cardColor
         }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{card.name}</div>
-        <div style={{fontSize: 11}}>{card.dueOn}</div>
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{name}</div>
+        <div style={{fontSize: 11}}>{dueOn}</div>
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
-        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{card.subTitle}</div>
+        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{subTitle}</div>
         <div style={{padding: '5px 0px'}}>
-          <i>{card.body}</i>
+          <i>{body}</i>
         </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: card.cardColor, fontSize: 15, fontWeight: 'bold'}}>{card.escalationText}</div>
-        {card.tags && (
+        <div style={{marginTop: 10, textAlign: 'center', color: cardColor, fontSize: 15, fontWeight: 'bold'}}>{escalationText}</div>
+        {tags && (
           <div
             style={{
               borderTop: '1px solid #eee',
@@ -36,7 +36,7 @@ const CustomCard = ({card, tagStyle}) => {
               flexDirection: 'row',
               flexWrap: 'wrap'
             }}>
-            {card.tags.map(tag => (
+            {tags.map(tag => (
               <Tag key={tag.title} {...tag} tagStyle={tagStyle} />
             ))}
           </div>

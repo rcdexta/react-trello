@@ -162,7 +162,7 @@ class Lane extends Component {
           onClick={e => this.handleCardClick(e, card)}
           showDeleteButton={!hideCardDeleteIcon}
           tagStyle={tagStyle}
-          card={card}
+          {...card}
         />
       )
      return draggable && cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
