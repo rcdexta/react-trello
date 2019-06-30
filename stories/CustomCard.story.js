@@ -102,7 +102,7 @@ const data = {
 }
 
 storiesOf('Custom Components', module).add(
-  'Custom Card Component',
+  'Custom Card',
   () => {
     return (
       <Board

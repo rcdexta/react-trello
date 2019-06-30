@@ -32,7 +32,7 @@ const CustomLaneHeader = props => {
 }
 
 storiesOf('Custom Components', module).add(
-  'Custom Lane Component',
+  'Custom LaneHeader',
   () => {
     const data = {
       lanes: [
@@ -69,7 +69,7 @@ storiesOf('Custom Components', module).add(
       ]
     }
 
-    return <Board data={data} customLaneHeader={<CustomLaneHeader />} />
+    return <Board data={data} components={{LaneHeader: CustomLaneHeader}} />
   },
   {info: 'Style your lane header appearance'}
 )
