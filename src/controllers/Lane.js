@@ -200,7 +200,7 @@ class Lane extends Component {
     const { components } = this.props
     const pickedProps = pick(
       this.props,
-      ['id','label','title','titleStyle','labelStyle','t','inlineEditTitle','canAddLanes']
+      ['id','label','title','titleStyle','cards', 'labelStyle','t','inlineEditTitle','canAddLanes']
     )
     return (
       <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>
