@@ -153,37 +153,37 @@ class BoardContainer extends Component {
     ])
 
     return (
-      <components.BoardDiv style={style} {...otherProps} draggable={false}>
+      <components.BoardWrapper style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
-        <Container
-          orientation="horizontal"
-          onDragStart={this.onDragStart}
-          dragClass={laneDragClass}
-          dropClass=""
-          onDrop={this.onLaneDrop}
-          lockAxis="x"
-          getChildPayload={index => this.getLaneDetails(index)}
-          groupName={this.groupName}>
-          {reducerData.lanes.map((lane, index) => {
-            const {id, droppable, ...otherProps} = lane
-            const laneToRender = (
-              <Lane
-                key={id}
-                boardId={this.groupName}
-                components={components}
-                id={id}
-                getCardDetails={this.getCardDetails}
-                index={index}
-                droppable={droppable === undefined ? true : droppable}
-                style={lane.style || {}}
-                labelStyle={lane.labelStyle || {}}
-                {...otherProps}
-                {...passthroughProps}
-              />
-            )
-            return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
-          })}
-        </Container>
+          <Container
+            orientation="horizontal"
+            onDragStart={this.onDragStart}
+            dragClass={laneDragClass}
+            dropClass=""
+            onDrop={this.onLaneDrop}
+            lockAxis="x"
+            getChildPayload={index => this.getLaneDetails(index)}
+            groupName={this.groupName}>
+            {reducerData.lanes.map((lane, index) => {
+              const {id, droppable, ...otherProps} = lane
+              const laneToRender = (
+                <Lane
+                  key={id}
+                  boardId={this.groupName}
+                  components={components}
+                  id={id}
+                  getCardDetails={this.getCardDetails}
+                  index={index}
+                  droppable={droppable === undefined ? true : droppable}
+                  style={lane.style || {}}
+                  labelStyle={lane.labelStyle || {}}
+                  {...otherProps}
+                  {...passthroughProps}
+                />
+              )
+              return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
+            })}
+          </Container>
         </PopoverWrapper>
         {canAddLanes && (
           <Container orientation="horizontal">
@@ -192,7 +192,7 @@ class BoardContainer extends Component {
             )}
           </Container>
         )}
-      </components.BoardDiv>
+      </components.BoardWrapper>
     )
   }
 }

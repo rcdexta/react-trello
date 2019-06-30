@@ -85,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const BoardDiv = styled.div`
+export const BoardWrapper = styled.div`
   background-color: #3179ba;
   overflow-y: hidden;
   padding: 5px;

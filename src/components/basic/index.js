@@ -6,20 +6,20 @@ import Loader from './Loader'
 import NewLane from './NewLane'
 import NewLaneSection from './NewLaneSection'
 import {NewLaneButton} from 'styles/Elements'
-import {Section, BoardDiv, AddCardLink, ScrollableLane } from 'styles/Base'
+import {Section, BoardWrapper, AddCardLink, ScrollableLane } from 'styles/Base'
 import {GlobalStyle} from 'styles/Base'
 
 export default {
   GlobalStyle,
+  BoardWrapper,
   Loader,
-  LaneHeader,
   ScrollableLane,
+  LaneHeader,
+  LaneFooter,
   Section,
   NewLane,
   NewLaneSection,
   NewLaneButton,
-  BoardDiv,
   Card,
   AddCardLink,
-  LaneFooter
 }
