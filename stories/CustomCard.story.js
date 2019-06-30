@@ -5,11 +5,11 @@ import {MovableCardWrapper } from 'styles/Base'
 import Board from '../src'
 import Tag from 'components/basic/Card/Tag'
 
-const CustomCard = ({onClick, className, name, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
+const CustomCard = ({onClick, className, name, cardStyle, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
   return (
     <MovableCardWrapper
       onClick={onClick}
-      style={{padding: 6}}
+      style={cardStyle}
       className={className}
     >
       <header
