@@ -1,12 +1,17 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
+import {MovableCardWrapper } from 'styles/Base'
 
 import Board from '../src'
 import Tag from 'components/basic/Card/Tag'
 
-const CustomCard = ({name, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
+const CustomCard = ({onClick, className, name, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
   return (
-    <div style={{padding: 6}}>
+    <MovableCardWrapper
+      onClick={onClick}
+      style={{padding: 6}}
+      className={className}
+    >
       <header
         style={{
           borderBottom: '1px solid #eee',
@@ -42,7 +47,7 @@ const CustomCard = ({name, body, dueOn, cardColor, subTitle, tagStyle, escalatio
           </div>
         )}
       </div>
-    </div>
+    </MovableCardWrapper>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'styles/Base'
+import {CardForm, CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'styles/Base'
 import EditableLabel from './widgets/EditableLabel'
 import {AddButton, CancelButton} from 'styles/Elements'
 
@@ -16,7 +16,7 @@ class NewCardForm extends Component {
   render() {
     const {onCancel, t} = this.props
     return (
-      <div style={{background: '#E3E3E3'}}>
+      <CardForm>
         <CardWrapper>
           <CardHeader>
             <CardTitle>
@@ -32,7 +32,7 @@ class NewCardForm extends Component {
         </CardWrapper>
         <AddButton onClick={this.handleAdd}>{t('button.Add card')}</AddButton>
         <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
-      </div>
+      </CardForm>
     )
   }
 }

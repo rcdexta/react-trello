@@ -252,3 +252,7 @@ export const NewLaneSection = styled(LaneSection)`
 export const NewLaneButtons = styled.div`
   margin-top: 10px;
 `
+
+export const CardForm = styled.div`
+  background-color: #e3e3e3;
+`
