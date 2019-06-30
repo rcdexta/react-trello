@@ -40,10 +40,15 @@ storiesOf('Drag-n-Drop', module)
         debug(nextData)
       }
 
+      const onCardMoveAcrossLanes = (fromLaneId, toLaneId, cardId, addedIndex) => {
+        debug(`onCardMoveAcrossLanes: ${fromLaneId}, ${toLaneId}, ${cardId}, ${addedIndex}`)
+      }
+
       return (
         <Board
           data={data}
           draggable
+          onCardMoveAcrossLanes={onCardMoveAcrossLanes}
           onDataChange={shouldReceiveNewData}
           handleDragStart={handleDragStart}
           handleDragEnd={handleDragEnd}
