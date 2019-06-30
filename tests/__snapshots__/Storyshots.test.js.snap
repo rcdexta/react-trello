@@ -11055,6 +11055,2675 @@ exports[`Storyshots Basic Functions Tags 1`] = `
 </div>
 `;
 
+exports[`Storyshots Custom Components Custom Card 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "body": "Thanks. Please schedule me for an estimate on Monday.",
+                  "cardColor": "#BD3B36",
+                  "cardStyle": Object {
+                    "borderRadius": 6,
+                    "boxShadow": "0 0 6px 1px #BD3B36",
+                    "marginBottom": 15,
+                  },
+                  "dueOn": "due in a day",
+                  "escalationText": "Escalated to OPS-ESCALATIONS!",
+                  "id": "Card1",
+                  "laneId": "lane1",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "John Smith",
+                  "subTitle": "SMS received at 12:13pm today",
+                },
+                Object {
+                  "body": "Is the estimate free, and can someone call me soon?",
+                  "cardColor": "#E08521",
+                  "cardStyle": Object {
+                    "borderRadius": 6,
+                    "boxShadow": "0 0 6px 1px #E08521",
+                    "marginBottom": 15,
+                  },
+                  "dueOn": "due now",
+                  "escalationText": "Escalated to Admin",
+                  "id": "Card2",
+                  "laneId": "lane1",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "Card Weathers",
+                  "subTitle": "Email received at 1:14pm",
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane1",
+              "label": "12/12",
+              "labelStyle": Object {
+                "color": "#009688",
+                "fontWeight": "bold",
+              },
+              "style": Object {
+                "backgroundColor": "cyan",
+                "padding": 20,
+              },
+              "title": "Planned Tasks",
+              "titleStyle": Object {
+                "fontSize": 20,
+                "marginBottom": 15,
+              },
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "body": "You are welcome. Interested in doing business with you again",
+                  "cardColor": "#BD3B36",
+                  "cardStyle": Object {
+                    "borderRadius": 6,
+                    "boxShadow": "0 0 6px 1px #BD3B36",
+                    "marginBottom": 15,
+                  },
+                  "dueOn": "due in a day",
+                  "escalationText": "Escalated to OPS-ESCALATIONS!",
+                  "id": "Card3",
+                  "laneId": "lane2",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "Michael Caine",
+                  "subTitle": "Email received at 4:23pm today",
+                  "tags": Array [
+                    Object {
+                      "bgcolor": "red",
+                      "color": "white",
+                      "title": "Critical",
+                    },
+                    Object {
+                      "bgcolor": "#0079BF",
+                      "color": "white",
+                      "title": "2d ETA",
+                    },
+                  ],
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane2",
+              "title": "Long Lane name this is i suppose ha!",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+      style={undefined}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          style={undefined}
+        >
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label="12/12"
+              onClick={[Function]}
+              style={
+                Object {
+                  "backgroundColor": "cyan",
+                  "padding": 20,
+                }
+              }
+              title="Planned Tasks"
+            >
+              <header
+                className="sc-bxivhb fwjdWp"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="sc-bZQynM iTzKeC"
+                  style={
+                    Object {
+                      "fontSize": 20,
+                      "margin": "-5px",
+                      "marginBottom": 15,
+                    }
+                  }
+                >
+                  Planned Tasks
+                </span>
+                <span
+                  className="sc-gzVnrw dZkyH"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#009688",
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    12/12
+                  </span>
+                </span>
+              </header>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "color": "#BD3B36",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          John Smith
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 11,
+                            }
+                          }
+                        >
+                          due in a day
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          SMS received at 12:13pm today
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            Thanks. Please schedule me for an estimate on Monday.
+                          </i>
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "color": "#BD3B36",
+                              "fontSize": 15,
+                              "fontWeight": "bold",
+                              "marginTop": 10,
+                              "textAlign": "center",
+                            }
+                          }
+                        >
+                          Escalated to OPS-ESCALATIONS!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "color": "#E08521",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Card Weathers
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 11,
+                            }
+                          }
+                        >
+                          due now
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Email received at 1:14pm
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            Is the estimate free, and can someone call me soon?
+                          </i>
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "color": "#E08521",
+                              "fontSize": 15,
+                              "fontWeight": "bold",
+                              "marginTop": 10,
+                              "textAlign": "center",
+                            }
+                          }
+                        >
+                          Escalated to Admin
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label={undefined}
+              onClick={[Function]}
+              style={Object {}}
+              title="Long Lane name this is i suppose ha!"
+            >
+              <header
+                className="sc-bxivhb fwjdWp"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="sc-bZQynM iTzKeC"
+                  style={
+                    Object {
+                      "margin": "-5px",
+                    }
+                  }
+                >
+                  Long Lane name this is i suppose ha!
+                </span>
+              </header>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "color": "#BD3B36",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Michael Caine
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 11,
+                            }
+                          }
+                        >
+                          due in a day
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Email received at 4:23pm today
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            You are welcome. Interested in doing business with you again
+                          </i>
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "color": "#BD3B36",
+                              "fontSize": 15,
+                              "fontWeight": "bold",
+                              "marginTop": 10,
+                              "textAlign": "center",
+                            }
+                          }
+                        >
+                          Escalated to OPS-ESCALATIONS!
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "borderTop": "1px solid #eee",
+                              "display": "flex",
+                              "flexDirection": "row",
+                              "flexWrap": "wrap",
+                              "justifyContent": "flex-end",
+                              "paddingTop": 6,
+                            }
+                          }
+                        >
+                          <span
+                            className="sc-fjdhpX fDqPwO"
+                            style={
+                              Object {
+                                "backgroundColor": "red",
+                                "color": "white",
+                                "fontSize": "80%",
+                              }
+                            }
+                          >
+                            Critical
+                          </span>
+                          <span
+                            className="sc-fjdhpX fDqPwO"
+                            style={
+                              Object {
+                                "backgroundColor": "#0079BF",
+                                "color": "white",
+                                "fontSize": "80%",
+                              }
+                            }
+                          >
+                            2d ETA
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Custom Components
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Custom Card
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Style your own card appearance. Watch out for usage of tags in custom styling as well!
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  Board
+                </span>
+                <span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      tagStyle
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              fontSize
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            '80%'
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              lanes
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            [
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'lane1'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Planned Tasks'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '12/12'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'lane2'
+                                </span>
+                                ,
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Long Lane name this is i suppose ha!'
+                                </span>
+                                ,
+                                <span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    cards
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }
+                                >
+                                  [
+                                  <span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      {
+                                      <span>
+                                        <span>
+                                          <br />
+                                                    
+                                            
+                                        </span>
+                                        <span
+                                          style={
+                                            Object {
+                                              "color": "#666",
+                                            }
+                                          }
+                                        >
+                                          id
+                                        </span>
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        'Card3'
+                                      </span>
+                                      ,
+                                      <span>
+                                        <span>
+                                          <br />
+                                                    
+                                            
+                                        </span>
+                                        <span
+                                          style={
+                                            Object {
+                                              "color": "#666",
+                                            }
+                                          }
+                                        >
+                                          name
+                                        </span>
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        'Michael Caine'
+                                      </span>
+                                      ,
+                                      <span>
+                                        <span>
+                                          <br />
+                                                    
+                                            
+                                        </span>
+                                        <span
+                                          style={
+                                            Object {
+                                              "color": "#666",
+                                            }
+                                          }
+                                        >
+                                          dueOn
+                                        </span>
+                                      </span>
+                                      : 
+                                      <span
+                                        style={
+                                          Object {
+                                            "color": "#22a",
+                                            "wordBreak": "break-word",
+                                          }
+                                        }
+                                      >
+                                        'due in a day'
+                                      </span>
+                                      ,
+                                      <span>
+                                        <span>
+                                          <br />
+                                                    
+                                            
+                                        </span>
+                                        …
+                                      </span>
+                                      <span>
+                                        <br />
+                                                  
+                                      </span>
+                                      }
+                                    </span>
+                                  </span>
+                                  ]
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ]
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      draggable
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      components
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              Card
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#170",
+                              }
+                            }
+                          >
+                            CustomCard
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      onCardClick
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onCardClick
+                        </span>
+                        }
+                      </span>
+                    </span>
+                    <br />
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Custom Components Custom LaneHeader 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Thanks. Please schedule me for an estimate on Monday.",
+                  "id": "Card1",
+                  "laneId": "lane1",
+                  "title": "John Smith",
+                },
+                Object {
+                  "description": "Email received at 1:14pm",
+                  "id": "Card2",
+                  "laneId": "lane1",
+                  "title": "Card Weathers",
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane1",
+              "label": "First Lane here",
+              "title": "Planned Tasks",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "You are welcome. Interested in doing business with you again",
+                  "id": "Card3",
+                  "laneId": "lane2",
+                  "tags": Array [
+                    Object {
+                      "bgcolor": "red",
+                      "color": "white",
+                      "title": "Critical",
+                    },
+                    Object {
+                      "bgcolor": "#0079BF",
+                      "color": "white",
+                      "title": "2d ETA",
+                    },
+                  ],
+                  "title": "Michael Caine",
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane2",
+              "label": "Second Lane here",
+              "title": "Completed Tasks",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+      style={undefined}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          style={undefined}
+        >
+          <span>
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label="First Lane here"
+              onClick={[Function]}
+              style={Object {}}
+              title="Planned Tasks"
+            >
+              <div>
+                <header
+                  style={
+                    Object {
+                      "borderBottom": "2px solid #c5c5c5",
+                      "display": "flex",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginBottom": 10,
+                      "paddingBottom": 6,
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    Planned Tasks
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "fontSize": 13,
+                        "textAlign": "right",
+                        "width": "30%",
+                      }
+                    }
+                  >
+                    <button
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "cursor": "pointer",
+                        }
+                      }
+                    >
+                      ?
+                    </button>
+                  </div>
+                </header>
+              </div>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card1"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          John Smith
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        Thanks. Please schedule me for an estimate on Monday.
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      />
+                    </article>
+                  </span>
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card2"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          Card Weathers
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        Email received at 1:14pm
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      />
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </section>
+          </span>
+          <span>
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label="Second Lane here"
+              onClick={[Function]}
+              style={Object {}}
+              title="Completed Tasks"
+            >
+              <div>
+                <header
+                  style={
+                    Object {
+                      "borderBottom": "2px solid #c5c5c5",
+                      "display": "flex",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginBottom": 10,
+                      "paddingBottom": 6,
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    Completed Tasks
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "fontSize": 13,
+                        "textAlign": "right",
+                        "width": "30%",
+                      }
+                    }
+                  >
+                    <button
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "cursor": "pointer",
+                        }
+                      }
+                    >
+                      ?
+                    </button>
+                  </div>
+                </header>
+              </div>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card3"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          Michael Caine
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        You are welcome. Interested in doing business with you again
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      >
+                        <span
+                          className="sc-fjdhpX fDqPwO"
+                          style={
+                            Object {
+                              "backgroundColor": "red",
+                              "color": "white",
+                            }
+                          }
+                        >
+                          Critical
+                        </span>
+                        <span
+                          className="sc-fjdhpX fDqPwO"
+                          style={
+                            Object {
+                              "backgroundColor": "#0079BF",
+                              "color": "white",
+                            }
+                          }
+                        >
+                          2d ETA
+                        </span>
+                      </div>
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </section>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Custom Components
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Custom LaneHeader
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Style your lane header appearance
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  Board
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              lanes
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            [
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'lane1'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Planned Tasks'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'First Lane here'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'lane2'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Completed Tasks'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Second Lane here'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ]
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      components
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              LaneHeader
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#170",
+                              }
+                            }
+                          >
+                            CustomLaneHeader
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                     
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "body": "Thanks. Please schedule me for an estimate on Monday.",
+                  "id": "Card1",
+                  "laneId": "lane1",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "John Smith",
+                  "subTitle": "SMS received at 12:13pm today",
+                },
+                Object {
+                  "body": "Is the estimate free, and can someone call me soon?",
+                  "id": "Card2",
+                  "laneId": "lane1",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "Card Weathers",
+                  "subTitle": "Email received at 1:14pm",
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane1",
+              "title": "Planned",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "body": "You are welcome. Interested in doing business with you again",
+                  "id": "Card3",
+                  "laneId": "lane2",
+                  "metadata": Object {
+                    "id": "Card1",
+                  },
+                  "name": "Michael Caine",
+                  "subTitle": "Email received at 4:23pm today",
+                },
+              ],
+              "currentPage": 1,
+              "id": "lane2",
+              "title": "Work In Progress",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+      style={undefined}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          style={undefined}
+        >
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label={undefined}
+              onClick={[Function]}
+              style={Object {}}
+              title="Planned"
+            >
+              <header
+                className="sc-bxivhb fwjdWp"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="sc-bZQynM iTzKeC"
+                  style={
+                    Object {
+                      "margin": "-5px",
+                    }
+                  }
+                >
+                  Planned
+                </span>
+              </header>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card1"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          John Smith
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          SMS received at 12:13pm today
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            Thanks. Please schedule me for an estimate on Monday.
+                          </i>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card2"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Card Weathers
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Email received at 1:14pm
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            Is the estimate free, and can someone call me soon?
+                          </i>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label={undefined}
+              onClick={[Function]}
+              style={Object {}}
+              title="Work In Progress"
+            >
+              <header
+                className="sc-bxivhb fwjdWp"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="sc-bZQynM iTzKeC"
+                  style={
+                    Object {
+                      "margin": "-5px",
+                    }
+                  }
+                >
+                  Work In Progress
+                </span>
+              </header>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Card3"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": undefined,
+                          "padding": 6,
+                        }
+                      }
+                    >
+                      <header
+                        style={
+                          Object {
+                            "borderBottom": "1px solid #eee",
+                            "display": "flex",
+                            "flexDirection": "row",
+                            "justifyContent": "space-between",
+                            "marginBottom": 10,
+                            "paddingBottom": 6,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Michael Caine
+                        </div>
+                      </header>
+                      <div
+                        style={
+                          Object {
+                            "color": "#BD3B36",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        <div
+                          style={
+                            Object {
+                              "color": "#4C4C4C",
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Email received at 4:23pm today
+                        </div>
+                        <div
+                          style={
+                            Object {
+                              "padding": "5px 0px",
+                            }
+                          }
+                        >
+                          <i>
+                            You are welcome. Interested in doing business with you again
+                          </i>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Custom Components
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Drag-n-Drop Styling
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Change card color on drag-n-drop
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  BoardWithCustomCard
+                </span>
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Custom Templates Custom Card Template 1`] = `
 <div>
   <div
@@ -34272,6 +36941,666 @@ exports[`Storyshots Styling Board Styling 1`] = `
                           boardContainer
                         </span>
                         "
+                      </span>
+                    </span>
+                     
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Styling Card Styling 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "2 Gallons of milk at the Deli store",
+                  "id": "Milk",
+                  "label": "15 mins",
+                  "laneId": "PLANNED",
+                  "style": Object {
+                    "backgroundColor": "#eec",
+                  },
+                  "title": "Buy milk",
+                },
+                Object {
+                  "description": "Sort out recyclable and waste as needed",
+                  "id": "Plan2",
+                  "label": "10 mins",
+                  "laneId": "PLANNED",
+                  "title": "Dispose Garbage",
+                },
+                Object {
+                  "id": "Plan3",
+                  "label": "20 mins",
+                  "laneId": "PLANNED",
+                  "title": "Burn Garbage",
+                },
+              ],
+              "currentPage": 1,
+              "id": "PLANNED",
+              "label": "20/70",
+              "title": "Planned Tasks",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+      style={undefined}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          style={undefined}
+        >
+          <span>
+            <section
+              className="react-trello-lane sc-htpNat dJewwL"
+              draggable={false}
+              label="20/70"
+              onClick={[Function]}
+              style={Object {}}
+              title="Planned Tasks"
+            >
+              <header
+                className="sc-bxivhb fwjdWp"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="sc-bZQynM iTzKeC"
+                  style={
+                    Object {
+                      "margin": "-5px",
+                    }
+                  }
+                >
+                  Planned Tasks
+                </span>
+                <span
+                  className="sc-gzVnrw dZkyH"
+                >
+                  <span
+                    style={Object {}}
+                  >
+                    20/70
+                  </span>
+                </span>
+              </header>
+              <div
+                className="sc-EHOje iisOsp"
+              >
+                <div
+                  style={undefined}
+                >
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Milk"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": "#eec",
+                        }
+                      }
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          Buy milk
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          15 mins
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        2 Gallons of milk at the Deli store
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      />
+                    </article>
+                  </span>
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Plan2"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": "#ffe",
+                        }
+                      }
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          Dispose Garbage
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          10 mins
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        Sort out recyclable and waste as needed
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      />
+                    </article>
+                  </span>
+                  <span>
+                    <article
+                      className="react-trello-card sc-dnqmqq eoPYBZ"
+                      data-id="Plan3"
+                      onClick={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": "#ffe",
+                        }
+                      }
+                    >
+                      <header
+                        className="sc-iwsKbI eoGtce"
+                      >
+                        <span
+                          className="sc-gZMcBi kYtIM"
+                        >
+                          Burn Garbage
+                        </span>
+                        <span
+                          className="sc-gqjmRU hQTJYT"
+                        >
+                          20 mins
+                        </span>
+                        <div
+                          className="sc-kGXeez llVHpP"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="sc-dxgOiQ hntFuT"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="sc-VigVT jTtwdL"
+                      >
+                        
+                      </div>
+                      <div
+                        className="sc-jTzLTM cuFeqX"
+                      />
+                    </article>
+                  </span>
+                </div>
+              </div>
+            </section>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div
+      style={undefined}
+    >
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Styling
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Card Styling
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Change the background of cards
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  Board
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              lanes
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            [
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'PLANNED'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Planned Tasks'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ]
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      cardStyle
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              backgroundColor
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            '#ffe'
+                          </span>
+                          }
+                        </span>
+                        }
                       </span>
                     </span>
                      
