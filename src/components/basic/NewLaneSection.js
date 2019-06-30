@@ -4,6 +4,6 @@ import {NewLaneButton} from 'styles/Elements'
 
 export default ({t, onClick}) => (
   <LaneSection style={{width: 200}}>
-    <NewLaneButton t={t} onClick={onClick}>{t('Add lane')}</NewLaneButton>
+    <NewLaneButton t={t} onClick={onClick}>{t('Add another lane')}</NewLaneButton>
   </LaneSection>
   )
