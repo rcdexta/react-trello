@@ -46,64 +46,64 @@ const CustomCard = ({name, body, dueOn, cardColor, subTitle, tagStyle, escalatio
   )
 }
 
-storiesOf('Custom Templates', module).add(
-  'Custom Card Template',
-  () => {
-    const data = {
-      lanes: [
+const data = {
+  lanes: [
+    {
+      id: 'lane1',
+      title: 'Planned Tasks',
+      label: '12/12',
+      style: {backgroundColor: 'cyan', padding: 20},
+      titleStyle: {fontSize: 20, marginBottom: 15},
+      labelStyle: {color: '#009688', fontWeight: 'bold'},
+      cards: [
         {
-          id: 'lane1',
-          title: 'Planned Tasks',
-          label: '12/12',
-          style: {backgroundColor: 'cyan', padding: 20},
-          titleStyle: {fontSize: 20, marginBottom: 15},
-          labelStyle: {color: '#009688', fontWeight: 'bold'},
-          cards: [
-            {
-              id: 'Card1',
-              name: 'John Smith',
-              dueOn: 'due in a day',
-              subTitle: 'SMS received at 12:13pm today',
-              body: 'Thanks. Please schedule me for an estimate on Monday.',
-              escalationText: 'Escalated to OPS-ESCALATIONS!',
-              cardColor: '#BD3B36',
-              cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
-              metadata: {id: 'Card1'}
-            },
-            {
-              id: 'Card2',
-              name: 'Card Weathers',
-              dueOn: 'due now',
-              subTitle: 'Email received at 1:14pm',
-              body: 'Is the estimate free, and can someone call me soon?',
-              escalationText: 'Escalated to Admin',
-              cardColor: '#E08521',
-              cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15},
-              metadata: {id: 'Card1'}
-            }
-          ]
+          id: 'Card1',
+          name: 'John Smith',
+          dueOn: 'due in a day',
+          subTitle: 'SMS received at 12:13pm today',
+          body: 'Thanks. Please schedule me for an estimate on Monday.',
+          escalationText: 'Escalated to OPS-ESCALATIONS!',
+          cardColor: '#BD3B36',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
+          metadata: {id: 'Card1'}
         },
         {
-          id: 'lane2',
-          title: 'Long Lane name this is i suppose ha!',
-          cards: [
-            {
-              id: 'Card3',
-              name: 'Michael Caine',
-              dueOn: 'due in a day',
-              subTitle: 'Email received at 4:23pm today',
-              body: 'You are welcome. Interested in doing business with you' + ' again',
-              escalationText: 'Escalated to OPS-ESCALATIONS!',
-              cardColor: '#BD3B36',
-              cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
-              metadata: {id: 'Card1'},
-              tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
-            }
-          ]
+          id: 'Card2',
+          name: 'Card Weathers',
+          dueOn: 'due now',
+          subTitle: 'Email received at 1:14pm',
+          body: 'Is the estimate free, and can someone call me soon?',
+          escalationText: 'Escalated to Admin',
+          cardColor: '#E08521',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15},
+          metadata: {id: 'Card1'}
+        }
+      ]
+    },
+    {
+      id: 'lane2',
+      title: 'Long Lane name this is i suppose ha!',
+      cards: [
+        {
+          id: 'Card3',
+          name: 'Michael Caine',
+          dueOn: 'due in a day',
+          subTitle: 'Email received at 4:23pm today',
+          body: 'You are welcome. Interested in doing business with you' + ' again',
+          escalationText: 'Escalated to OPS-ESCALATIONS!',
+          cardColor: '#BD3B36',
+          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
+          metadata: {id: 'Card1'},
+          tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
         }
       ]
     }
+  ]
+}
 
+storiesOf('Custom Templates', module).add(
+  'Custom Card Template',
+  () => {
     return (
       <Board
         tagStyle={{fontSize: '80%'}}
