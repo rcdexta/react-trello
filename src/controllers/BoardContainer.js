@@ -182,7 +182,7 @@ class BoardContainer extends Component {
                   {...passthroughProps}
                 />
               )
-              return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : <span key={lane.id}>{laneToRender}</span>
+              return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
             })}
           </Container>
         </PopoverWrapper>
