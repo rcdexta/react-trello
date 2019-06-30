@@ -1,6 +1,6 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import {MovableCardWrapper } from 'styles/Base'
+import {MovableCardWrapper } from 'components/basic/styles/Base'
 
 import Board from '../src'
 import Tag from 'components/basic/Card/Tag'

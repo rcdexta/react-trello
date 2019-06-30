@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
 
-import {MovableCardWrapper } from 'styles/Base'
+import {MovableCardWrapper } from 'components/basic/styles/Base'
 import debug from './helpers/debug'
 
 import Board from '../src'

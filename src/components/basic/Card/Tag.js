@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {TagSpan} from 'styles/Base'
+import {TagSpan} from '../styles/Base'
 
 class Tag extends Component {
   render() {

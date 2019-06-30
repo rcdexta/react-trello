@@ -1,8 +1,15 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {CardForm, CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'styles/Base'
+import {
+  CardForm,
+  CardHeader,
+  CardRightContent,
+  CardTitle,
+  CardWrapper,
+  Detail
+} from './styles/Base'
+import {AddButton, CancelButton} from './styles/Elements'
 import EditableLabel from './widgets/EditableLabel'
-import {AddButton, CancelButton} from 'styles/Elements'
 
 class NewCardForm extends Component {
   updateField = (field, value) => {

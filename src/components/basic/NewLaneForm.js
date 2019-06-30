@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {LaneTitle, NewLaneButtons, Section} from 'styles/Base'
-import {AddButton, CancelButton} from 'styles/Elements'
+import {LaneTitle, NewLaneButtons, Section} from './styles/Base'
+import {AddButton, CancelButton} from './styles/Elements'
 import EditableLabel from './widgets/EditableLabel'
 
 class NewLaneForm extends Component {
