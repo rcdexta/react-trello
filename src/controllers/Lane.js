@@ -131,17 +131,16 @@ class Lane extends Component {
 
   renderDragContainer = isDraggingOver => {
     const {
+      id,
+      cards,
       laneSortFunction,
       editable,
       hideCardDeleteIcon,
-      tagStyle,
-      cardStyle,
       draggable,
       cardDraggable,
-      cards,
       cardDragClass,
-      dragStyle,
-      id,
+      tagStyle,
+      cardStyle,
       components,
       t
       } = this.props
@@ -155,7 +154,7 @@ class Lane extends Component {
         <components.Card
           key={card.id}
           index={idx}
-          style={{ ...cardStyle, ...dragStyle}}
+          style={card.style || cardStyle}
           className='react-trello-card'
           onDelete={onDeleteCard}
           onClick={e => this.handleCardClick(e, card)}
@@ -185,7 +184,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && !addCardMode && <components.AddCardLink onClick={this.showEditableCard} t={t} />}
+        {editable && !addCardMode && <components.AddCardButton onClick={this.showEditableCard} t={t} />}
         {addCardMode && <components.NewCard onCancel={this.hideEditableCard} t={t} laneId={id} onAdd={this.addNewCard} />}
       </components.ScrollableLane>
     )

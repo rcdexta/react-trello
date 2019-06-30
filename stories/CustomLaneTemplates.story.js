@@ -31,8 +31,8 @@ const CustomLaneHeader = props => {
   )
 }
 
-storiesOf('Custom Templates', module).add(
-  'Custom Lane Template',
+storiesOf('Custom Components', module).add(
+  'Custom Lane Component',
   () => {
     const data = {
       lanes: [

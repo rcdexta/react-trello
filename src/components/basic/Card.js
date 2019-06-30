@@ -28,7 +28,6 @@ class Card extends Component {
 
     return (
       <MovableCardWrapper
-        key={id}
         data-id={id}
         onClick={onClick}
         style={style}
@@ -56,6 +55,7 @@ Card.propTypes = {
   showDeleteButton: PropTypes.bool,
   onDelete: PropTypes.func,
   onClick: PropTypes.func,
+  style: PropTypes.object,
   tagStyle: PropTypes.object,
   className: PropTypes.string,
   id: PropTypes.string.isRequired,
@@ -69,6 +69,7 @@ Card.defaultProps = {
   showDeleteButton: true,
   onDelete: () => {},
   onClick: () => {},
+  style: {},
   tagStyle: {},
   title: 'no title',
   description: '',

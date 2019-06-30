@@ -101,8 +101,8 @@ const data = {
   ]
 }
 
-storiesOf('Custom Templates', module).add(
-  'Custom Card Template',
+storiesOf('Custom Components', module).add(
+  'Custom Card Component',
   () => {
     return (
       <Board

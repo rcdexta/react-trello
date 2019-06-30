@@ -136,8 +136,10 @@ This is the container component that encapsulates the lanes and cards
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| style               | object   | Pass CSS style props to board container                                                                                        |
+| cardStyle           | object   | CSS style for every cards |
+| laneStyle           | object   | CSS style for every lanes |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
-| style               | object   | Pass css style props to board container                                                                                        |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 
@@ -185,7 +187,7 @@ const data = {
   />
 ```
 
-TODO make an example in story book
+Storybook example - [stories/Styling.story.js](stories/Styling.story.js]
 
 ### 3. Completely customize the look-and-feel by passing `components` property
 

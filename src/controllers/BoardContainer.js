@@ -177,6 +177,7 @@ class BoardContainer extends Component {
                   droppable={droppable === undefined ? true : droppable}
                   style={lane.style || {}}
                   labelStyle={lane.labelStyle || {}}
+                  cardStyle={this.props.cardStyle || lane.cardStyle}
                   {...otherProps}
                   {...passthroughProps}
                 />
