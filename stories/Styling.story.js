@@ -25,7 +25,8 @@ const dataWithLaneStyles = {
           id: 'Milk',
           title: 'Buy milk',
           label: '15 mins',
-          description: '2 Gallons of milk at the Deli store'
+          description: '2 Gallons of milk at the Deli store',
+          style: { backgroundColor: '#eec' },
         },
         {
           id: 'Plan2',
@@ -38,6 +39,6 @@ const dataWithLaneStyles = {
   ]
 }
 
-storiesOf('Styling', module).add('Lane Styling', () => <Board data={dataWithLaneStyles} style={{backgroundColor: '#eee'}} />, {
-  info: 'Change the look and feel of the lane'
+storiesOf('Styling', module).add('Lane and Card Styling', () => <Board data={dataWithLaneStyles} style={{backgroundColor: '#eee'}} />, {
+  info: 'Change the look and feel of the lane and cart'
 })
