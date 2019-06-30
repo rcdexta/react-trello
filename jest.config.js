@@ -7,7 +7,7 @@ module.exports = {
   },
   'moduleNameMapper': {
     '\\.(jpg|png|gif|svg)$': '<rootDir>/tests/__mocks__/fileMock.js',
-    "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    "\\.(css)$": "identity-obj-proxy"
   },
   'coveragePathIgnorePatterns': [
     '/stories/',
