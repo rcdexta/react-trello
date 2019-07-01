@@ -83,6 +83,13 @@ Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello
 
 Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
 
+## Upgrade
+
+Breaking changes. Since version 2.2 these properties are removed: `addLaneTitle`, `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`, 
+and `customCardLayout` with `children` element. 
+
+Follow [upgrade instructions](UPGRADE.md) to make easy migration.
+
 ## Properties
 
 This is the container component that encapsulates the lanes and cards
@@ -138,7 +145,7 @@ This is the container component that encapsulates the lanes and cards
 | lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
 | t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
 
-### Style customization
+### Style customisation
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -148,6 +155,7 @@ This is the container component that encapsulates the lanes and cards
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
+| components          | object   | Map of customised components. [List](src/components/index.js) of available. |
 
 Refer to `stories` folder for examples on many more options for customization.
 
@@ -265,14 +273,6 @@ import { withTranslation } from 'react-i18next';
 
 const I18nBoard = withTranslation()(Board) 
 ```
-
-## Breaking changes
-
-Since version 2.2 next properties are removed: `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`
-and `customCardLayout` with `children` element. 
-
-Read [upgrade instruction](UPGRADE.md) (it's small) to migrate to next version
-of package.
 
 ## Compatible Browsers
 

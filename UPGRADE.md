@@ -38,7 +38,7 @@ const TEXTS = {
   "Lane actions": "Lane actions",
   "button": {
     "Add lane": "Add lane",
-    "Add card": "Add card",
+    "Add card": "ADD CARD",
     "Cancel": "Cancel"
   },
   "placeholder": {
@@ -50,15 +50,15 @@ const TEXTS = {
 <Board t={createTranslate(TEXTS)}/>
 ```
 
-### Customization components
+### Components customization
 
-Next Board properties are removed: `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`
+These properties are removed: `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`
 and `customCardLayout` with `children` element. 
 
 You must use `components` property, that contains map of custom
 `React.Component`'s (not elements/templates)
 
-| Legacy property     | Key name in components object|
+| Legacy property     | Key name in components map|
 | ------------------- | ---------------------------- |
 | addCardLink         | AddCardLink                  |
 | customLaneHeader    | LaneHeader                   |
