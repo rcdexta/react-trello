@@ -8,7 +8,6 @@ import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
 import { PopoverWrapper } from '@terebentina/react-popover'
-import defaultTranslation from '../helpers/defaultTranslation'
 
 import * as boardActions from 'actions/BoardActions'
 import * as laneActions from 'actions/LaneActions'
@@ -249,8 +248,7 @@ BoardContainer.defaultProps = {
   laneDraggable: true,
   cardDraggable: true,
   cardDragClass: 'react_trello_dragClass',
-  laneDragClass: 'react_trello_dragLaneClass',
-  t: defaultTranslation,
+  laneDragClass: 'react_trello_dragLaneClass'
 }
 
 const mapStateToProps = state => {

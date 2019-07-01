@@ -130,7 +130,13 @@ This is the container component that encapsulates the lanes and cards
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
 | laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
-| t                   | function | Translation function. You can specify either one key as a `String` |
+
+### I18n support
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
+| t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
 
 ### Style customization
 

@@ -7,18 +7,26 @@ import Board from './controllers/Board'
 import Lane from './controllers/Lane'
 import deprecationWarnings from './helpers/deprecationWarnings'
 import DefaultComponents from './components'
+import locales from 'locales'
+
+import createTranslate from './helpers/createTranslate'
 
 export {
   Draggable,
   Container,
   BoardContainer,
   Board,
-  Lane
+  Lane,
+  createTranslate,
+  locales
 }
 
 export { DefaultComponents as components }
 
-export default ({ components, ...otherProps }) => {
+const DEFAULT_LANG='en'
+
+export default ({ components, lang=DEFAULT_LANG, ...otherProps }) => {
   deprecationWarnings(otherProps);
-  return <Board components={{...DefaultComponents, ...components}} {...otherProps} />
+  const translate = createTranslate(locales[lang].translation)
+  return <Board t={translate} components={{...DefaultComponents, ...components}} {...otherProps} />
 }
