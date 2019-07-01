@@ -5,7 +5,7 @@ import Container from './dnd/Container'
 import Lane from './controllers/Lane'
 import BoardController from './controllers/Board'
 
-import DefaultComponents from 'components/basic'
+import DefaultComponents from 'components'
 
 export {
   Board,

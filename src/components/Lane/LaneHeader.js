@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import EditableLabel from 'components/basic/widgets/EditableLabel'
+import EditableLabel from 'components/widgets/EditableLabel'
 
-import {Title, LaneHeader, RightContent } from 'components/basic/styles/Base'
+import {Title, LaneHeader, RightContent } from 'styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
 const LaneHeaderComponent = ({

@@ -10,7 +10,7 @@ import React from 'react'
 	  LaneMenuItem,
 	  GenDelButton,
 	  MenuButton,
-  } from 'components/basic/styles/Elements'
+  } from 'styles/Elements'
 
 	const LaneMenu = ({t, onDelete}) => {
 	  return (

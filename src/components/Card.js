@@ -8,7 +8,7 @@ import {
   CardTitle,
   Detail,
   Footer
-} from './styles/Base'
+} from 'styles/Base'
 import Tag from './Card/Tag'
 import DeleteButton from './widgets/DeleteButton'
 

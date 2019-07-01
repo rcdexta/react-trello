@@ -6,7 +6,7 @@ import NewLaneForm from './NewLaneForm'
 import NewCardForm from './NewCardForm'
 import AddCardLink from './AddCardLink'
 import NewLaneSection from './NewLaneSection'
-import {GlobalStyle, Section, BoardWrapper, ScrollableLane } from './styles/Base'
+import {GlobalStyle, Section, BoardWrapper, ScrollableLane } from 'styles/Base'
 
 export default {
   GlobalStyle,
