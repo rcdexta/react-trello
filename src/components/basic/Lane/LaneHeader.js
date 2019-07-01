@@ -28,7 +28,6 @@ const LaneHeaderComponent = ({
 }
 
 LaneHeaderComponent.propTypes = {
-  // ['id','label','title','titleStyle','labelStyle','t','inlineEditTitle','canAddLanes']
   updateTitle: PropTypes.func,
   inlineEditTitle: PropTypes.bool,
   canAddLanes: PropTypes.bool,

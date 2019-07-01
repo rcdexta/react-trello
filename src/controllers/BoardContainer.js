@@ -136,7 +136,6 @@ class BoardContainer extends Component {
       'onCardDelete',
       'onCardAdd',
       'onLaneClick',
-      'addCardLink',
       'laneSortFunction',
       'draggable',
       'cardDraggable',
@@ -148,7 +147,6 @@ class BoardContainer extends Component {
       'handleDragStart',
       'handleDragEnd',
       'cardDragClass',
-      'children',
       't'
     ])
 
@@ -210,7 +208,6 @@ BoardContainer.propTypes = {
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
-  addCardLink: PropTypes.node,
   onLaneAdd: PropTypes.func,
   onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,

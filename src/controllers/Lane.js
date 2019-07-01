@@ -246,7 +246,6 @@ class Lane extends Component {
 
 Lane.propTypes = {
   actions: PropTypes.object,
-  children: PropTypes.node,
   id: PropTypes.string.isRequired,
   boardId: PropTypes.string,
   title: PropTypes.node,
@@ -270,7 +269,6 @@ Lane.propTypes = {
   onLaneDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
   onLaneClick: PropTypes.func,
-  addCardLink: PropTypes.node,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
