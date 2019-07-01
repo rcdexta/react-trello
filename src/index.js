@@ -2,20 +2,23 @@ import React from 'react'
 
 import Draggable from './dnd/Draggable'
 import Container from './dnd/Container'
+import BoardContainer from './controllers/BoardContainer'
+import Board from './controllers/Board'
 import Lane from './controllers/Lane'
-import BoardController from './controllers/Board'
-
-import DefaultComponents from 'components'
+import deprecationWarnings from './helpers/deprecationWarnings'
+import DefaultComponents from './components'
 
 export {
-  Board,
-  Lane,
-  Container,
   Draggable,
-  DefaultComponents
+  Container,
+  BoardContainer,
+  Board,
+  Lane
 }
 
-const Board = ({ components, ...otherProps }) =>
-  <BoardController components={{...DefaultComponents, ...components}} {...otherProps} />
+export { DefaultComponents as components }
 
-export default Board
+export default ({ components, ...otherProps }) => {
+  deprecationWarnings(otherProps);
+  return <Board components={{...DefaultComponents, ...components}} {...otherProps} />
+}
