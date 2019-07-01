@@ -260,6 +260,14 @@ import { withTranslation } from 'react-i18next';
 const I18nBoard = withTranslation()(Board) 
 ```
 
+## Breaking changes
+
+Since version 2.2 next properties are removed: `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`
+and `customCardLayout` with `children` element. 
+
+Read [upgrade instruction](UPGRADE.md) (it's small) to migrate to next version
+of package.
+
 ## Compatible Browsers
 
 Tested to work with following browsers using [Browserling](https://www.browserling.com/):
