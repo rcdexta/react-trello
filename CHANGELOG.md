@@ -13,8 +13,9 @@ Refer [upgrade instructions](UPGRADE.md) to migrate to new version.
 * Internationalization support (property `t` and `lang`)
 * Dependency Injection mechanisim for all components customization 
   (property `components`)
-* Add `onCardMoveAcrossLanes` handler, called when a card is moved across lanes
-* Add `onDeleteLane` handler
+* Add `onCardMoveAcrossLanes` handler property, called when a card is moved across lanes
+* Add `onDeleteLane` handler property
+* Add `laneStyle` property
 
 ### Improvements
 

@@ -36,8 +36,8 @@ const dataWithLaneStyles = {
       ]
     },
     {
-      id: 'DONW',
-      title: 'Dones tasks',
+      id: 'DONE',
+      title: 'Doned tasks',
       label: '10/70',
       style: {width: 280, backgroundColor: '#ba7931', color: '#fff', boxShadow: '2px 2px 4px 0px rgba(0,0,0,0.75)'},
       cards: [
@@ -48,13 +48,28 @@ const dataWithLaneStyles = {
           description: 'Sort out recyclable and waste as needed'
         },
       ]
+    },
+    {
+      id: 'ARCHIVE',
+      title: 'Archived tasks',
+      label: '1/2',
+      cards: [
+        {
+          id: 'archived',
+          title: 'Archived',
+          label: '10 mins',
+        },
+      ]
     }
   ]
 }
 
-storiesOf('Styling', module).add('Lane Styling', () => <Board data={dataWithLaneStyles} style={{backgroundColor: '#eee'}} />, {
-  info: 'Change the look and feel of the lane'
-})
+storiesOf('Styling', module)
+  .add('Lane Styling',
+     () => <Board data={dataWithLaneStyles} laneStyle={{backgroundColor: '#666'}} style={{backgroundColor: '#eee'}} />,
+   {
+    info: 'Change the look and feel of the lane'
+  })
 
 const dataWithCardStyles = {
   lanes: [

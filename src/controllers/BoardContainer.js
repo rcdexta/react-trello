@@ -121,6 +121,7 @@ class BoardContainer extends Component {
       onLaneDelete,
       editable,
       canAddLanes,
+      laneStyle,
       t,
       ...otherProps
     } = this.props
@@ -172,7 +173,7 @@ class BoardContainer extends Component {
                   getCardDetails={this.getCardDetails}
                   index={index}
                   droppable={droppable === undefined ? true : droppable}
-                  style={lane.style || {}}
+                  style={laneStyle || lane.style || {}}
                   labelStyle={lane.labelStyle || {}}
                   cardStyle={this.props.cardStyle || lane.cardStyle}
                   {...otherProps}

@@ -1535,7 +1535,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -2468,7 +2468,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -7090,7 +7090,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -8512,7 +8512,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -9458,7 +9458,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -10136,7 +10136,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -10784,7 +10784,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -12398,7 +12398,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -13591,7 +13591,7 @@ exports[`Storyshots Custom Components Card 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -15852,7 +15852,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -16863,7 +16863,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -18423,7 +18423,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -19271,7 +19271,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
             className="sc-cMljjf hbtVsV"
             onClick={[Function]}
           >
-            Add another lane
+            + Add another lane
           </button>
         </section>
       </div>
@@ -19423,7 +19423,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -20041,7 +20041,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
         <button
           onClick={[Function]}
         >
-          Add another lane
+          + Add another lane
         </button>
       </div>
     </div>
@@ -20192,7 +20192,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -20439,6 +20439,1847 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 >
                   /&gt;
                 </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "2 Gallons of milk at the Deli store",
+                  "id": "Milk",
+                  "label": "15 mins",
+                  "laneId": "PLANNED",
+                  "title": "Buy milk",
+                },
+                Object {
+                  "description": "Sort out recyclable and waste as needed",
+                  "id": "Plan2",
+                  "label": "10 mins",
+                  "laneId": "PLANNED",
+                  "title": "Dispose Garbage",
+                },
+                Object {
+                  "description": "Can AI make memes?",
+                  "id": "Plan3",
+                  "label": "30 mins",
+                  "laneId": "PLANNED",
+                  "title": "Write Blog",
+                },
+                Object {
+                  "description": "Transfer to bank account",
+                  "id": "Plan4",
+                  "label": "5 mins",
+                  "laneId": "PLANNED",
+                  "title": "Pay Rent",
+                },
+              ],
+              "currentPage": 1,
+              "id": "PLANNED",
+              "label": "20/70",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Planned Tasks",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
+            Object {
+              "cards": Array [],
+              "currentPage": 1,
+              "id": "BLOCKED",
+              "label": "0/0",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Blocked",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Use Headspace app",
+                  "id": "Completed1",
+                  "label": "15 mins",
+                  "laneId": "COMPLETED",
+                  "title": "Practice Meditation",
+                },
+                Object {
+                  "description": "Use Spreadsheet for now",
+                  "id": "Completed2",
+                  "label": "15 mins",
+                  "laneId": "COMPLETED",
+                  "title": "Maintain Daily Journal",
+                },
+              ],
+              "currentPage": 1,
+              "id": "COMPLETED",
+              "label": "2/5",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Completed",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Track using fitbit",
+                  "id": "Repeat1",
+                  "label": "30 mins",
+                  "laneId": "REPEAT",
+                  "title": "Morning Jog",
+                },
+              ],
+              "currentPage": 1,
+              "id": "REPEAT",
+              "label": "1/1",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Repeat",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Completed 10km on cycle",
+                  "id": "Archived1",
+                  "label": "300 mins",
+                  "laneId": "ARCHIVED",
+                  "title": "Go Trekking",
+                },
+              ],
+              "currentPage": 1,
+              "id": "ARCHIVED",
+              "label": "1/1",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Archived",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Completed 10km on cycle",
+                  "id": "Archived2",
+                  "label": "300 mins",
+                  "laneId": "ARCHIVED2",
+                  "title": "Go Jogging",
+                },
+              ],
+              "currentPage": 1,
+              "id": "ARCHIVED2",
+              "label": "1/1",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Archived2",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Completed 10km on cycle",
+                  "id": "Archived3",
+                  "label": "300 mins",
+                  "laneId": "ARCHIVED3",
+                  "title": "Go Cycling",
+                },
+              ],
+              "currentPage": 1,
+              "id": "ARCHIVED3",
+              "label": "1/1",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Archived3",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="20/70"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Planned Tasks"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Planned Tasks
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  20/70
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Milk"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Buy milk
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        15 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      2 Gallons of milk at the Deli store
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Plan2"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Dispose Garbage
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        10 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Sort out recyclable and waste as needed
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Plan3"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Write Blog
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Can AI make memes?
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Plan4"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Pay Rent
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        5 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Transfer to bank account
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Work In Progress
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="0/0"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Blocked"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Blocked
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  0/0
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div />
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="2/5"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Completed"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Completed
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  2/5
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Completed1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Practice Meditation
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        15 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Use Headspace app
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Completed2"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Maintain Daily Journal
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        15 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Use Spreadsheet for now
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="1/1"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Repeat"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Repeat
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  1/1
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Repeat1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Morning Jog
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Track using fitbit
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="1/1"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Archived"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Archived
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  1/1
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Archived1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Go Trekking
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        300 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Completed 10km on cycle
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="1/1"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Archived2"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Archived2
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  1/1
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Archived2"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Go Jogging
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        300 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Completed 10km on cycle
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="1/1"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Archived3"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Archived3
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  1/1
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Archived3"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Go Cycling
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        300 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Completed 10km on cycle
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div>
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Deprecation warnings
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            v2.2 warnings
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Example of usage legacy props: addCardLink, customCardLayout, customLaneHeader, newLaneTemplate, newCardTemplate
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 18,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#444",
+                      }
+                    }
+                  >
+                    &lt;
+                    _default
+                  </span>
+                  <span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        data
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            {
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                lanes
+                              </span>
+                            </span>
+                            : 
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              [
+                              <span>
+                                <span>
+                                  <br />
+                                      
+                                    
+                                </span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }
+                                >
+                                  {
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      id
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'PLANNED'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      title
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'Planned Tasks'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      label
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    '20/70'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    …
+                                  </span>
+                                  <span>
+                                    <br />
+                                          
+                                  </span>
+                                  }
+                                </span>
+                              </span>
+                              ,
+                              <span>
+                                <span>
+                                  <br />
+                                      
+                                    
+                                </span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }
+                                >
+                                  {
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      id
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'WIP'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      title
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'Work In Progress'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      label
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    '10/20'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    …
+                                  </span>
+                                  <span>
+                                    <br />
+                                          
+                                  </span>
+                                  }
+                                </span>
+                              </span>
+                              ,
+                              <span>
+                                <span>
+                                  <br />
+                                      
+                                    
+                                </span>
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }
+                                >
+                                  {
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      id
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'BLOCKED'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      title
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    'Blocked'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    <span
+                                      style={
+                                        Object {
+                                          "color": "#666",
+                                        }
+                                      }
+                                    >
+                                      label
+                                    </span>
+                                  </span>
+                                  : 
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#22a",
+                                        "wordBreak": "break-word",
+                                      }
+                                    }
+                                  >
+                                    '0/0'
+                                  </span>
+                                  ,
+                                  <span>
+                                    <span>
+                                      <br />
+                                            
+                                        
+                                    </span>
+                                    …
+                                  </span>
+                                  <span>
+                                    <br />
+                                          
+                                  </span>
+                                  }
+                                </span>
+                              </span>
+                              ,
+                              <span>
+                                <span>
+                                  <br />
+                                      
+                                    
+                                </span>
+                                …
+                              </span>
+                              <span>
+                                <br />
+                                    
+                              </span>
+                              ]
+                            </span>
+                            }
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        editable
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        addCardLink
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            &lt;button /&gt;
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        customLaneHeader
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            &lt;CustomLaneHeader /&gt;
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        newLaneTemplate
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            &lt;div /&gt;
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        newCardTemplate
+                      </span>
+                      <span>
+                        =
+                        <span
+                          style={Object {}}
+                        >
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            &lt;NewCard /&gt;
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      <span>
+                        <br />
+                          
+                      </span>
+                      <span
+                        style={Object {}}
+                      >
+                        customCardLayout
+                      </span>
+                      <br />
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#444",
+                      }
+                    }
+                  >
+                    &gt;
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 33,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#444",
+                      }
+                    }
+                  >
+                    &lt;
+                    CustomCard
+                  </span>
+                  <span />
+                  <span
+                    style={
+                      Object {
+                        "color": "#444",
+                      }
+                    }
+                  >
+                    /&gt;
+                  </span>
+                </div>
+                <div
+                  style={
+                    Object {
+                      "paddingLeft": 18,
+                      "paddingRight": 3,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#444",
+                      }
+                    }
+                  >
+                    &lt;/
+                    _default
+                    &gt;
+                  </span>
+                </div>
               </div>
             </div>
             <button
@@ -21677,7 +23518,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -22905,7 +24746,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -24566,7 +26407,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -25692,7 +27533,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -26464,7 +28305,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             className="sc-cMljjf hbtVsV"
             onClick={[Function]}
           >
-            Add another lane
+            + Add another lane
           </button>
         </section>
       </div>
@@ -26635,7 +28476,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -28146,7 +29987,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -28900,7 +30741,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                       <span
                         className="sc-kkGfuU bJNZNz"
                       >
-                        *Lane actions*
+                        Lane actions
                       </span>
                       <div
                         className="sc-kpOJdX cBUVBp"
@@ -28919,7 +30760,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                         className="sc-kEYyzF kunGuF"
                         onClick={[Function]}
                       >
-                        *Delete lane*
+                        Delete lane
                       </div>
                     </div>
                   </div>
@@ -29106,7 +30947,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                   className="sc-jzJRlG iukqtR"
                   onClick={[Function]}
                 >
-                  *Click to add card*
+                  Click to add card
                 </a>
               </div>
             </section>
@@ -29121,7 +30962,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
             className="sc-cMljjf hbtVsV"
             onClick={[Function]}
           >
-            *Add another lane*
+            NEW LANE
           </button>
         </section>
       </div>
@@ -30857,7 +32698,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                     }
                   >
                     &lt;
-                    Board
+                    _default
                   </span>
                   <span>
                     <span>
@@ -31043,7 +32884,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                               }
                             }
                           >
-                            customTranslation
+                            anonymous
                           </span>
                           }
                         </span>
@@ -35176,7 +37017,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                       }
                     >
                       &lt;
-                      Board
+                      _default
                     </span>
                     <span>
                       <span>
@@ -35768,7 +37609,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                       }
                     >
                       &lt;
-                      Board
+                      _default
                     </span>
                     <span>
                       <span>
@@ -37424,7 +39265,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -38371,7 +40212,7 @@ exports[`Storyshots Styling Card Styling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -38671,12 +40512,12 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                   "description": "Sort out recyclable and waste as needed",
                   "id": "burn",
                   "label": "10 mins",
-                  "laneId": "DONW",
+                  "laneId": "DONE",
                   "title": "Burn Garbage",
                 },
               ],
               "currentPage": 1,
-              "id": "DONW",
+              "id": "DONE",
               "label": "10/70",
               "style": Object {
                 "backgroundColor": "#ba7931",
@@ -38684,7 +40525,21 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                 "color": "#fff",
                 "width": 280,
               },
-              "title": "Dones tasks",
+              "title": "Doned tasks",
+            },
+            Object {
+              "cards": Array [
+                Object {
+                  "id": "archived",
+                  "label": "10 mins",
+                  "laneId": "ARCHIVE",
+                  "title": "Archived",
+                },
+              ],
+              "currentPage": 1,
+              "id": "ARCHIVE",
+              "label": "1/2",
+              "title": "Archived tasks",
             },
           ],
         }
@@ -38843,7 +40698,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                 "width": 280,
               }
             }
-            title="Dones tasks"
+            title="Doned tasks"
           >
             <header
               className="sc-bxivhb fwjdWp"
@@ -38857,7 +40712,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                   }
                 }
               >
-                Dones tasks
+                Doned tasks
               </span>
               <span
                 className="sc-gzVnrw dZkyH"
@@ -38908,6 +40763,90 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                       className="sc-VigVT jTtwdL"
                     >
                       Sort out recyclable and waste as needed
+                    </div>
+                    <div
+                      className="sc-jTzLTM cuFeqX"
+                    />
+                  </article>
+                </span>
+              </div>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="1/2"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#666",
+              }
+            }
+            title="Archived tasks"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={
+                  Object {
+                    "margin": "-5px",
+                  }
+                }
+              >
+                Archived tasks
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  1/2
+                </span>
+              </span>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="archived"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Archived
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        10 mins
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      
                     </div>
                     <div
                       className="sc-jTzLTM cuFeqX"
@@ -39086,7 +41025,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                   }
                 >
                   &lt;
-                  Board
+                  _default
                 </span>
                 <span>
                   <span>
@@ -39273,7 +41212,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                                     }
                                   }
                                 >
-                                  'DONW'
+                                  'DONE'
                                 </span>
                                 ,
                                 <span>
@@ -39301,7 +41240,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                                     }
                                   }
                                 >
-                                  'Dones tasks'
+                                  'Doned tasks'
                                 </span>
                                 ,
                                 <span>
@@ -39347,7 +41286,165 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                                 }
                               </span>
                             </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'ARCHIVE'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Archived tasks'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '1/2'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
                             ]
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}
+                    >
+                      laneStyle
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              backgroundColor
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            '#666'
                           </span>
                           }
                         </span>

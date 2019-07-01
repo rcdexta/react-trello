@@ -193,7 +193,7 @@ const data = {
   />
 ```
 
-Storybook example - [stories/Styling.story.js](stories/Styling.story.js]
+Storybook example - [stories/Styling.story.js](stories/Styling.story.js)
 
 ### 3. Completely customize the look-and-feel by passing `components` property
 
@@ -211,9 +211,9 @@ const components = {
 <Board components={components} />
 ```
 
-Total list of customizable components: [src/components/basic/index.js ](src/components/basic/index.js)
+Total list of customizable components: [src/components/index.js ](src/components/index.js)
 
-Refer to [components definitions](src/components/basic) to discover their properties list and types.
+Refer to [components definitions](src/components) to discover their properties list and types.
 
 Refer more examples in storybook.
 
