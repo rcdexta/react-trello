@@ -257,3 +257,22 @@ export const NewLaneButtons = styled.div`
 export const CardForm = styled.div`
   background-color: #e3e3e3;
 `
+
+export const InlineInput = styled.textarea`
+  overflow: hidden;
+  word-wrap: break-word;
+  resize: none;
+  width: 100%;
+  height: 28px;
+  line-height: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 3px;
+  border: 0;
+  padding: 4px 8px;
+  outline: 0;
+  &:focus {
+    background-color: white;
+    box-shadow: inset 0 0 0 2px #0079bf;
+  }
+`

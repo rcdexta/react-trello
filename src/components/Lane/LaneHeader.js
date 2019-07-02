@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import EditableLabel from 'components/widgets/EditableLabel'
-
+import InlineInput from 'components/widgets/InlineInput'
 import {Title, LaneHeader, RightContent } from 'styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
@@ -13,7 +12,7 @@ const LaneHeaderComponent = ({
     <LaneHeader onDoubleClick={onDoubleClick}>
       <Title style={titleStyle}>
       {editLaneTitle ?
-        <EditableLabel value={title} border inline placeholder={t('placeholder.title')} onChange={updateTitle} /> :
+        <InlineInput value={title} border placeholder={t('placeholder.title')} onChange={updateTitle} /> :
         title
       }
       </Title>
