@@ -111,6 +111,7 @@ This is the container component that encapsulates the lanes and cards
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
+| editLaneTitle     | boolean  | Allow inline lane title edit                                        Default: false                                             |
 
 
 ### Callbacks and handlers
@@ -128,7 +129,8 @@ This is the container component that encapsulates the lanes and cards
 | onCardMoveAcrossLanes        | function | Called when a card is moved across lanes `onCardMoveAcrossLanes(fromLaneId, toLaneId, cardId, index)`                                                                  |
 | onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
 | onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
-| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
+| onLaneUpdate        | function | Called when a lane attributes are updated `onLaneUpdate(laneId, data)`                                                                     |
+| onLaneClick         | function | Called when a lane is clicked `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 
 ### Other functions

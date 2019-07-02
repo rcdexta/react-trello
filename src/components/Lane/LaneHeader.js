@@ -6,22 +6,22 @@ import {Title, LaneHeader, RightContent } from 'styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
 const LaneHeaderComponent = ({
-  updateTitle, canAddLanes, onDelete, onDoubleClick, inlineEditTitle, label, title, titleStyle, labelStyle, t
+  updateTitle, canAddLanes, onDelete, onDoubleClick, editLaneTitle, label, title, titleStyle, labelStyle, t
 }) => {
 
   return (
     <LaneHeader onDoubleClick={onDoubleClick}>
       <Title style={titleStyle}>
-        {inlineEditTitle ?
-          <EditableLabel value={title} border placeholder={t('placeholder.title')} onSave={updateTitle} /> :
-          title
-        }
+      {editLaneTitle ?
+        <EditableLabel value={title} border inline placeholder={t('placeholder.title')} onChange={updateTitle} /> :
+        title
+      }
       </Title>
       {label && (
         <RightContent>
           <span style={labelStyle}>{label}</span>
           </RightContent>
-      )}
+          )}
       {canAddLanes && <LaneMenu t={t} onDelete={onDelete}/>}
     </LaneHeader>
   )
@@ -29,18 +29,19 @@ const LaneHeaderComponent = ({
 
 LaneHeaderComponent.propTypes = {
   updateTitle: PropTypes.func,
-  inlineEditTitle: PropTypes.bool,
+  editLaneTitle: PropTypes.bool,
   canAddLanes: PropTypes.bool,
   label: PropTypes.string,
   title: PropTypes.string,
   onDelete: PropTypes.func,
   onDoubleClick: PropTypes.func,
+  editLaneTitle: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
 
 LaneHeaderComponent.defaultProps = {
   updateTitle: () => {},
-  inlineEditTitle: false,
+  editLaneTitle: false,
   canAddLanes: false
 }
 

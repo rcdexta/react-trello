@@ -194,13 +194,18 @@ class Lane extends Component {
     const {id} = this.props
     this.props.actions.removeLane({laneId: id})
     this.props.onLaneDelete(id)
+    }
+
+  updateTitle = (value) => {
+    this.props.actions.updateLane({id: this.props.id, title: value})
+    this.props.onLaneUpdate(this.props.id, {title: value })
   }
 
   renderHeader = () => {
     const { components } = this.props
     const pickedProps = pick(
       this.props,
-      ['id','label','title','titleStyle','cards', 'labelStyle','t','inlineEditTitle','canAddLanes']
+      ['id','label','title','titleStyle','cards', 'labelStyle','t','editLaneTitle','canAddLanes']
     )
     return (
       <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>

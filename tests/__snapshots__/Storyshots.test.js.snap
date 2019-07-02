@@ -26,6 +26,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -36,6 +37,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="loading.."
           >
@@ -452,6 +454,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -466,6 +469,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -677,6 +681,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -768,6 +773,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -810,6 +816,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -941,6 +948,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1032,6 +1040,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1123,6 +1132,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1214,6 +1224,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -2029,6 +2040,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -2042,6 +2054,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned Tasks"
             >
@@ -2151,6 +2164,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Executing"
             >
@@ -3270,6 +3284,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
         }
         draggable={false}
         onCardMoveAcrossLanes={[Function]}
+        onLaneUpdate={[Function]}
       >
         <div
           onClick={[Function]}
@@ -3281,6 +3296,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3472,6 +3488,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3549,6 +3566,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3587,6 +3605,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3702,6 +3721,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3779,6 +3799,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3856,6 +3877,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3933,6 +3955,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -4401,6 +4424,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
         }
         draggable={false}
         onCardMoveAcrossLanes={[Function]}
+        onLaneUpdate={[Function]}
       >
         <div
           onClick={[Function]}
@@ -4411,6 +4435,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Lane1"
             >
@@ -5923,6 +5948,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -5934,6 +5960,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6125,6 +6152,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6202,6 +6230,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6240,6 +6269,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6355,6 +6385,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6432,6 +6463,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6509,6 +6541,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6586,6 +6619,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -7392,6 +7426,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -7402,6 +7437,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Lane1"
           >
@@ -8768,6 +8804,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -8779,6 +8816,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -9430,6 +9468,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -9441,6 +9480,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -10092,6 +10132,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -10102,6 +10143,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -11060,6 +11102,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -11071,6 +11114,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11267,6 +11311,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11349,6 +11394,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11392,6 +11438,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11512,6 +11559,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11594,6 +11642,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11676,6 +11725,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11758,6 +11808,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -12602,6 +12653,7 @@ exports[`Storyshots Custom Components Card 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -12616,6 +12668,7 @@ exports[`Storyshots Custom Components Card 1`] = `
               draggable={false}
               label="12/12"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "backgroundColor": "cyan",
@@ -12853,6 +12906,7 @@ exports[`Storyshots Custom Components Card 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Long Lane name this is i suppose ha!"
             >
@@ -13774,6 +13828,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -13787,6 +13842,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned"
             >
@@ -13954,6 +14010,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Work In Progress"
             >
@@ -14441,6 +14498,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -14452,6 +14510,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14648,6 +14707,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14730,6 +14790,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14768,6 +14829,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14888,6 +14950,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14970,6 +15033,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15052,6 +15116,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15134,6 +15199,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15931,6 +15997,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -15942,6 +16009,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             draggable={false}
             label="First Lane here"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -16078,6 +16146,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             draggable={false}
             label="Second Lane here"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Completed Tasks"
           >
@@ -16910,6 +16979,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -16921,6 +16991,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17112,6 +17183,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17195,6 +17267,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17239,6 +17312,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17360,6 +17434,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17443,6 +17518,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17526,6 +17602,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17609,6 +17686,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -18432,6 +18510,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -18443,6 +18522,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -19190,6 +19270,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -19201,6 +19282,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -20056,6 +20138,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -20067,6 +20150,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20258,6 +20342,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20341,6 +20426,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20385,6 +20471,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20506,6 +20593,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20589,6 +20677,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20672,6 +20761,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20755,6 +20845,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -21827,6 +21918,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -21841,6 +21933,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22044,6 +22137,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22127,6 +22221,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22169,6 +22264,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22292,6 +22388,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22375,6 +22472,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22458,6 +22556,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22541,6 +22640,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -23503,6 +23603,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -23514,6 +23615,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -23709,6 +23811,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Work In Progress (Not Droppable)"
           >
@@ -23784,6 +23887,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -24625,6 +24729,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -24639,6 +24744,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -24842,6 +24948,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -24925,6 +25032,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -24967,6 +25075,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25090,6 +25199,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25173,6 +25283,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25256,6 +25367,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25339,6 +25451,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -26187,6 +26300,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -26201,6 +26315,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned Tasks"
             >
@@ -26400,6 +26515,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Work In Progress (Not Droppable)"
             >
@@ -26479,6 +26595,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -27182,6 +27299,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -27193,6 +27311,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -28050,6 +28169,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -28064,6 +28184,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28267,6 +28388,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28356,6 +28478,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28404,6 +28527,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28533,6 +28657,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28622,6 +28747,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28711,6 +28837,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28800,6 +28927,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -29854,6 +29982,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -29865,6 +29994,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30056,6 +30186,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30139,6 +30270,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30183,6 +30315,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30304,6 +30437,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30387,6 +30521,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30470,6 +30605,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30553,6 +30689,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -31256,6 +31393,813 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
 </div>
 `;
 
+exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board sc-bdVaJa jrGeNN"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "2 Gallons of milk at the Deli store",
+                  "id": "Card1",
+                  "label": "2017-12-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-12-01T10:00:00Z",
+                    "shortCode": "abc",
+                  },
+                  "title": "Buy milk",
+                },
+                Object {
+                  "description": "Sort out recyclable and waste as needed",
+                  "id": "Card2",
+                  "label": "2017-11-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-11-01T10:00:00Z",
+                    "shortCode": "aaa",
+                  },
+                  "title": "Dispose Garbage",
+                },
+                Object {
+                  "description": "Can AI make memes?",
+                  "id": "Card3",
+                  "label": "2017-10-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-10-01T10:00:00Z",
+                    "shortCode": "fa1",
+                  },
+                  "title": "Write Blog",
+                },
+                Object {
+                  "description": "Transfer to bank account",
+                  "id": "Card4",
+                  "label": "2017-09-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-09-01T10:00:00Z",
+                    "shortCode": "ga2",
+                  },
+                  "title": "Pay Rent",
+                },
+              ],
+              "currentPage": 1,
+              "id": "SORTED_LANE",
+              "label": "20/70",
+              "title": "Sorted Lane",
+            },
+          ],
+        }
+      }
+      draggable={false}
+      onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div>
+          <section
+            className="react-trello-lane sc-htpNat dJewwL"
+            draggable={false}
+            label="20/70"
+            onClick={[Function]}
+            onLaneUpdate={[Function]}
+            style={Object {}}
+            title="Sorted Lane"
+          >
+            <header
+              className="sc-bxivhb fwjdWp"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="sc-bZQynM iTzKeC"
+                style={Object {}}
+              >
+                <div
+                  className="comPlainTextContentEditable "
+                  contentEditable="true"
+                  onBlur={[Function]}
+                  onInput={[Function]}
+                  onKeyDown={[Function]}
+                  onPaste={[Function]}
+                  placeholder="title"
+                >
+                  Sorted Lane
+                </div>
+              </span>
+              <span
+                className="sc-gzVnrw dZkyH"
+              >
+                <span
+                  style={Object {}}
+                >
+                  20/70
+                </span>
+              </span>
+              <div
+                className="popover menu popover--bottom"
+              >
+                <a
+                  className="popover__trigger"
+                  href=""
+                  onClick={[Function]}
+                >
+                  <button
+                    className="sc-jKJlTe hwllfO"
+                  >
+                    ⋮
+                  </button>
+                </a>
+                <div
+                  className="popover__content"
+                >
+                  <div
+                    className="sc-eNQAEJ jMrXgs"
+                  >
+                    <span
+                      className="sc-kkGfuU bJNZNz"
+                    >
+                      Lane actions
+                    </span>
+                    <div
+                      className="sc-kpOJdX cBUVBp"
+                    >
+                      <button
+                        className="sc-dxgOiQ fUcFVh"
+                      >
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-hMqMXs eRjYNZ"
+                  >
+                    <div
+                      className="sc-kEYyzF kunGuF"
+                      onClick={[Function]}
+                    >
+                      Delete lane
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div
+              className="sc-EHOje iisOsp"
+            >
+              <div>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Card1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Buy milk
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        2017-12-01
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      2 Gallons of milk at the Deli store
+                    </div>
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Card2"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Dispose Garbage
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        2017-11-01
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Sort out recyclable and waste as needed
+                    </div>
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Card3"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Write Blog
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        2017-10-01
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Can AI make memes?
+                    </div>
+                  </article>
+                </span>
+                <span>
+                  <article
+                    className="react-trello-card sc-dnqmqq eoPYBZ"
+                    data-id="Card4"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="sc-iwsKbI eoGtce"
+                    >
+                      <span
+                        className="sc-gZMcBi kYtIM"
+                      >
+                        Pay Rent
+                      </span>
+                      <span
+                        className="sc-gqjmRU hQTJYT"
+                      >
+                        2017-09-01
+                      </span>
+                      <div
+                        className="sc-kpOJdX cBUVBp"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-ckVGcZ hGdpIe"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="sc-VigVT jTtwdL"
+                    >
+                      Transfer to bank account
+                    </div>
+                  </article>
+                </span>
+              </div>
+              <a
+                className="sc-jzJRlG iukqtR"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div>
+        <section
+          className="sc-chPdSV imdAml"
+        >
+          <button
+            className="sc-cMljjf hbtVsV"
+            onClick={[Function]}
+          >
+            + Add another lane
+          </button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div>
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            Editable Board
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Inline Edit Lane Title
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Allow edit lane title
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  _default
+                </span>
+                <span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
+                        >
+                          {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              lanes
+                            </span>
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            [
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'SORTED_LANE'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Sorted Lane'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ]
+                          </span>
+                          }
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      editable
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      canAddLanes
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      editLaneTitle
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      onLaneUpdate
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onLaneUpdate
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      onLaneAdd
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          onLaneAdd
+                        </span>
+                        }
+                      </span>
+                    </span>
+                    <br />
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots I18n Custom texts 1`] = `
 <div>
   <div
@@ -31328,6 +32272,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -31342,6 +32287,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
+              onLaneUpdate={[Function]}
               style={Object {}}
               title="Sorted Lane"
             >
@@ -33705,6 +34651,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
         }
         draggable={false}
         onCardMoveAcrossLanes={[Function]}
+        onLaneUpdate={[Function]}
       >
         <div
           onClick={[Function]}
@@ -33719,6 +34666,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 draggable={false}
                 label="20/70"
                 onClick={[Function]}
+                onLaneUpdate={[Function]}
                 style={Object {}}
                 title="Sorted Lane"
               >
@@ -35975,6 +36923,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
           }
           draggable={false}
           onCardMoveAcrossLanes={[Function]}
+          onLaneUpdate={[Function]}
         >
           <div
             onClick={[Function]}
@@ -35989,6 +36938,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36192,6 +37142,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36275,6 +37226,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36317,6 +37269,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="2/5"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36440,6 +37393,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36523,6 +37477,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36606,6 +37561,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36689,6 +37645,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -36845,6 +37802,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
           }
           draggable={false}
           onCardMoveAcrossLanes={[Function]}
+          onLaneUpdate={[Function]}
         >
           <div
             onClick={[Function]}
@@ -36859,6 +37817,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Yesterday"
                 >
@@ -36938,6 +37897,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Today"
                 >
@@ -37137,6 +38097,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
+                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Tomorrow"
                 >
@@ -38818,6 +39779,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
       style={
         Object {
           "fontFamily": "Verdana",
@@ -38835,6 +39797,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39026,6 +39989,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39103,6 +40067,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39141,6 +40106,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39256,6 +40222,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39333,6 +40300,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39410,6 +40378,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39487,6 +40456,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40326,6 +41296,7 @@ exports[`Storyshots Styling Card Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -40337,6 +41308,7 @@ exports[`Storyshots Styling Card Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -40996,6 +41968,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
+      onLaneUpdate={[Function]}
       style={
         Object {
           "backgroundColor": "#eee",
@@ -41012,6 +41985,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#3179ba",
@@ -41130,6 +42104,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="10/70"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#ba7931",
@@ -41210,6 +42185,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="1/2"
             onClick={[Function]}
+            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#666",

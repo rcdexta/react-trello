@@ -54,6 +54,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
+    cursor: text;
   }
 
   .comPlainTextContentEditable--has-placeholder::before {
