@@ -305,6 +305,12 @@ yarn run storybook
 
 Learn how to write stories [here](https://storybook.js.org/basics/writing-stories/)
 
+### Maintainers
+
+* [@rcdexta](https://github.com/rcdexta)
+* [@dapi](https://github.com/dapi)
+
+
 ### License
 
 MIT
