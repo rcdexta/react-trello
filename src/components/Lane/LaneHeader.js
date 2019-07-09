@@ -11,19 +11,19 @@ const LaneHeaderComponent = ({
 
   return (
     <LaneHeader onDoubleClick={onDoubleClick}>
-    <Title style={{...titleStyle, margin: '-5px'}}>
-      {inlineEditTitle ?
-      <EditableLabel value={title} border placeholder={t('placeholder.title')} onSave={updateTitle} /> :
-      title
-      }
-    </Title>
-    {label && (
-      <RightContent>
-        <span style={labelStyle}>{label}</span>
-        </RightContent>
-        )}
-        {canAddLanes && <LaneMenu t={t} onDelete={onDelete}/>}
-      </LaneHeader>
+      <Title style={titleStyle}>
+        {inlineEditTitle ?
+          <EditableLabel value={title} border placeholder={t('placeholder.title')} onSave={updateTitle} /> :
+          title
+        }
+      </Title>
+      {label && (
+        <RightContent>
+          <span style={labelStyle}>{label}</span>
+          </RightContent>
+      )}
+      {canAddLanes && <LaneMenu t={t} onDelete={onDelete}/>}
+    </LaneHeader>
   )
 }
 
