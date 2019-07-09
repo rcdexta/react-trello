@@ -46,12 +46,12 @@ class Card extends Component {
           {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
         </CardHeader>
         <Detail>{description}</Detail>
-        {tags && (
-        <Footer>
-          {tags.map(tag => (
-          <Tag key={tag.title} {...tag} tagStyle={tagStyle} />
-          ))}
-        </Footer>
+        {tags && tags.length> 0 && (
+          <Footer>
+            {tags.map(tag => (
+              <Tag key={tag.title} {...tag} tagStyle={tagStyle} />
+            ))}
+          </Footer>
         )}
       </MovableCardWrapper>
       )
