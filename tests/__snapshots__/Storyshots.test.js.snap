@@ -45,11 +45,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 loading..
               </span>
@@ -483,11 +479,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Double Click Here
                 </span>
@@ -543,9 +535,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -586,9 +575,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -629,9 +615,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -672,9 +655,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -710,11 +690,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -770,9 +746,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -808,11 +781,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Blocked
                 </span>
@@ -854,11 +823,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed
                 </span>
@@ -914,9 +879,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Use Headspace app
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -957,9 +919,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Use Spreadsheet for now
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -995,11 +954,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Repeat
                 </span>
@@ -1055,9 +1010,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Track using fitbit
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -1093,11 +1045,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived
                 </span>
@@ -1153,9 +1101,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -1191,11 +1136,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived2
                 </span>
@@ -1251,9 +1192,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -1289,11 +1227,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived3
                 </span>
@@ -1349,9 +1283,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -2120,11 +2051,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -2171,9 +2098,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                       >
                         foo card
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -2214,9 +2138,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                       >
                         bar card
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -2239,11 +2160,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Executing
                 </span>
@@ -2290,9 +2207,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
                       >
                         foobar card
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -3379,11 +3293,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -3437,9 +3347,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -3478,9 +3385,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -3519,9 +3423,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -3560,9 +3461,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -3586,11 +3484,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -3644,9 +3538,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -3670,11 +3561,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Blocked
                 </span>
@@ -3712,11 +3599,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed
                 </span>
@@ -3770,9 +3653,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Use Headspace app
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -3811,9 +3691,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Use Spreadsheet for now
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -3837,11 +3714,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Repeat
                 </span>
@@ -3895,9 +3768,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Track using fitbit
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -3921,11 +3791,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived
                 </span>
@@ -3979,9 +3845,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -4005,11 +3868,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived2
                 </span>
@@ -4063,9 +3922,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -4089,11 +3945,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived3
                 </span>
@@ -4147,9 +3999,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -4570,11 +4419,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Lane1
                 </span>
@@ -4619,9 +4464,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #1
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4660,9 +4502,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #2
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4701,9 +4540,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #3
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4742,9 +4578,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #4
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4783,9 +4616,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #5
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4824,9 +4654,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #6
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4865,9 +4692,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #7
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4906,9 +4730,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #8
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4947,9 +4768,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #9
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -4988,9 +4806,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #10
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -5029,9 +4844,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #11
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -5070,9 +4882,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #12
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -5111,9 +4920,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #13
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -5152,9 +4958,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #14
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                   <span>
@@ -5193,9 +4996,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
                       >
                         Description for #15
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </span>
                 </div>
@@ -6145,11 +5945,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -6203,9 +5999,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -6244,9 +6037,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -6285,9 +6075,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -6326,9 +6113,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6352,11 +6136,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -6410,9 +6190,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6436,11 +6213,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -6478,11 +6251,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -6536,9 +6305,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -6577,9 +6343,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6603,11 +6366,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -6661,9 +6420,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6687,11 +6443,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -6745,9 +6497,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6771,11 +6520,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -6829,9 +6574,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -6855,11 +6597,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -6913,9 +6651,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -7674,11 +7409,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Lane1
               </span>
@@ -7723,9 +7454,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #1
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7764,9 +7492,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #2
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7805,9 +7530,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #3
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7846,9 +7568,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #4
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7887,9 +7606,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #5
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7928,9 +7644,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #6
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -7969,9 +7682,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #7
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8010,9 +7720,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #8
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8051,9 +7758,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #9
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8092,9 +7796,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #10
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8133,9 +7834,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #11
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8174,9 +7872,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #12
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8215,9 +7910,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #13
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8256,9 +7948,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #14
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -8297,9 +7986,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
                     >
                       Description for #15
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -9100,11 +8786,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Sorted Lane
               </span>
@@ -9158,9 +8840,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9199,9 +8878,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9240,9 +8916,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9281,9 +8954,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -9778,11 +9448,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Sorted Lane
               </span>
@@ -9836,9 +9502,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9877,9 +9540,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9918,9 +9578,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -9959,9 +9616,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -10455,11 +10109,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -11432,11 +11082,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Double Click Here
               </span>
@@ -11490,9 +11136,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -11531,9 +11174,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -11572,9 +11212,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -11613,9 +11250,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -11644,11 +11278,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -11702,9 +11332,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -11733,11 +11360,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -11780,11 +11403,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -11838,9 +11457,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -11879,9 +11495,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -11910,11 +11523,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -11968,9 +11577,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -11999,11 +11605,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -12057,9 +11659,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -12088,11 +11687,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -12146,9 +11741,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -12177,11 +11769,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -12235,9 +11823,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -13046,7 +12631,6 @@ exports[`Storyshots Custom Components Card 1`] = `
                   style={
                     Object {
                       "fontSize": 20,
-                      "margin": "-5px",
                       "marginBottom": 15,
                     }
                   }
@@ -13276,11 +12860,7 @@ exports[`Storyshots Custom Components Card 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Long Lane name this is i suppose ha!
                 </span>
@@ -14214,11 +13794,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned
                 </span>
@@ -14385,11 +13961,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -14891,11 +14463,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Double Click Here
               </span>
@@ -14949,9 +14517,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -14990,9 +14555,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -15031,9 +14593,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -15072,9 +14631,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15103,11 +14659,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -15161,9 +14713,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15192,11 +14741,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -15234,11 +14779,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -15292,9 +14833,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -15333,9 +14871,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15364,11 +14899,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -15422,9 +14953,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15453,11 +14981,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -15511,9 +15035,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15542,11 +15063,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -15600,9 +15117,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -15631,11 +15145,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -15689,9 +15199,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -16521,9 +16028,6 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                     >
                       Thanks. Please schedule me for an estimate on Monday.
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -16562,9 +16066,6 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                     >
                       Email received at 1:14pm
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -17430,11 +16931,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -17488,9 +16985,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -17529,9 +17023,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -17570,9 +17061,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -17611,9 +17099,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -17643,11 +17128,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -17701,9 +17182,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -17733,11 +17211,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -17781,11 +17255,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -17839,9 +17309,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -17880,9 +17347,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -17912,11 +17376,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -17970,9 +17430,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -18002,11 +17459,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -18060,9 +17513,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -18092,11 +17542,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -18150,9 +17596,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -18182,11 +17625,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -18240,9 +17679,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -19019,11 +18455,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Sorted Lane
               </span>
@@ -19124,9 +18556,6 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -19165,9 +18594,6 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -19206,9 +18632,6 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -19247,9 +18670,6 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -19793,11 +19213,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Sorted Lane
               </span>
@@ -19898,9 +19314,6 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -19939,9 +19352,6 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -19980,9 +19390,6 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -20021,9 +19428,6 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -20678,11 +20082,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -20736,9 +20136,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -20777,9 +20174,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -20818,9 +20212,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -20859,9 +20250,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -20891,11 +20279,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -20949,9 +20333,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -20981,11 +20362,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -21029,11 +20406,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -21087,9 +20460,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -21128,9 +20498,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -21160,11 +20527,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -21218,9 +20581,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -21250,11 +20610,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -21308,9 +20664,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -21340,11 +20693,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -21398,9 +20747,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -21430,11 +20776,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -21488,9 +20830,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -22522,11 +21861,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -22582,9 +21917,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -22625,9 +21957,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -22668,9 +21997,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -22711,9 +22037,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -22741,11 +22064,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -22801,9 +22120,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -22831,11 +22147,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Blocked
                 </span>
@@ -22877,11 +22189,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed
                 </span>
@@ -22937,9 +22245,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Use Headspace app
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -22980,9 +22285,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Use Spreadsheet for now
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -23010,11 +22312,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Repeat
                 </span>
@@ -23070,9 +22368,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Track using fitbit
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -23100,11 +22395,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived
                 </span>
@@ -23160,9 +22451,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -23190,11 +22478,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived2
                 </span>
@@ -23250,9 +22534,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -23280,11 +22561,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived3
                 </span>
@@ -23340,9 +22617,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -24256,11 +23530,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -24316,9 +23586,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </div>
                 <div
@@ -24359,9 +23626,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </div>
                 <div
@@ -24402,9 +23666,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </div>
                 <div
@@ -24445,9 +23706,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </div>
               </div>
@@ -24467,11 +23725,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress (Not Droppable)
               </span>
@@ -24527,9 +23781,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </div>
               </div>
@@ -24553,11 +23804,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed (Droppable)
               </span>
@@ -25411,11 +24658,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -25471,9 +24714,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -25514,9 +24754,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -25557,9 +24794,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -25600,9 +24834,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -25630,11 +24861,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -25690,9 +24917,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -25720,11 +24944,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Blocked
                 </span>
@@ -25766,11 +24986,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed
                 </span>
@@ -25826,9 +25042,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Use Headspace app
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -25869,9 +25082,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Use Spreadsheet for now
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -25899,11 +25109,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Repeat
                 </span>
@@ -25959,9 +25165,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Track using fitbit
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -25989,11 +25192,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived
                 </span>
@@ -26049,9 +25248,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -26079,11 +25275,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived2
                 </span>
@@ -26139,9 +25331,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -26169,11 +25358,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived3
                 </span>
@@ -26229,9 +25414,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -27034,11 +26216,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -27094,9 +26272,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -27137,9 +26312,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -27180,9 +26352,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -27223,9 +26392,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -27249,11 +26415,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress (Not Droppable)
                 </span>
@@ -27309,9 +26471,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -27339,11 +26498,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed (Droppable)
                 </span>
@@ -28053,11 +27208,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Sorted Lane
               </span>
@@ -28158,9 +27309,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -28199,9 +27347,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -28240,9 +27385,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -28281,9 +27423,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -28943,11 +28082,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Planned Tasks
                 </span>
@@ -29003,9 +28138,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -29046,9 +28178,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -29089,9 +28218,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -29132,9 +28258,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29168,11 +28291,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Work In Progress
                 </span>
@@ -29228,9 +28347,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29264,11 +28380,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Blocked
                 </span>
@@ -29316,11 +28428,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Completed
                 </span>
@@ -29376,9 +28484,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Use Headspace app
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -29419,9 +28524,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Use Spreadsheet for now
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29455,11 +28557,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Repeat
                 </span>
@@ -29515,9 +28613,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Track using fitbit
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29551,11 +28646,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived
                 </span>
@@ -29611,9 +28702,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29647,11 +28735,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived2
                 </span>
@@ -29707,9 +28791,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -29743,11 +28824,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Archived3
                 </span>
@@ -29803,9 +28880,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
                       >
                         Completed 10km on cycle
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -30701,11 +29775,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
               >
                 <span
                   className="sc-bZQynM iTzKeC"
-                  style={
-                    Object {
-                      "margin": "-5px",
-                    }
-                  }
+                  style={Object {}}
                 >
                   Sorted Lane
                 </span>
@@ -30808,9 +29878,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -30851,9 +29918,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -30894,9 +29958,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
                       >
                         Can AI make memes?
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                   <div
@@ -30937,9 +29998,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
                       >
                         Transfer to bank account
                       </div>
-                      <div
-                        className="sc-jTzLTM cuFeqX"
-                      />
                     </article>
                   </div>
                 </div>
@@ -33094,11 +32152,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 >
                   <span
                     className="sc-bZQynM iTzKeC"
-                    style={
-                      Object {
-                        "margin": "-5px",
-                      }
-                    }
+                    style={Object {}}
                   >
                     Sorted Lane
                   </span>
@@ -33201,9 +32255,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
                         >
                           2 Gallons of milk at the Deli store
                         </div>
-                        <div
-                          className="sc-jTzLTM cuFeqX"
-                        />
                       </article>
                     </div>
                     <div
@@ -33244,9 +32295,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
                         >
                           Sort out recyclable and waste as needed
                         </div>
-                        <div
-                          className="sc-jTzLTM cuFeqX"
-                        />
                       </article>
                     </div>
                     <div
@@ -33287,9 +32335,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
                         >
                           Can AI make memes?
                         </div>
-                        <div
-                          className="sc-jTzLTM cuFeqX"
-                        />
                       </article>
                     </div>
                     <div
@@ -33330,9 +32375,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
                         >
                           Transfer to bank account
                         </div>
-                        <div
-                          className="sc-jTzLTM cuFeqX"
-                        />
                       </article>
                     </div>
                   </div>
@@ -35383,11 +34425,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Planned Tasks
                     </span>
@@ -35443,9 +34481,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             2 Gallons of milk at the Deli store
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -35486,9 +34521,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Sort out recyclable and waste as needed
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -35529,9 +34561,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Can AI make memes?
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -35572,9 +34601,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Transfer to bank account
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -35602,11 +34628,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Work In Progress
                     </span>
@@ -35662,9 +34684,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -35692,11 +34711,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Blocked
                     </span>
@@ -35738,11 +34753,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Completed
                     </span>
@@ -35798,9 +34809,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Use Headspace app
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -35841,9 +34849,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Use Spreadsheet for now
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -35871,11 +34876,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Repeat
                     </span>
@@ -35931,9 +34932,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Track using fitbit
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -35961,11 +34959,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Archived
                     </span>
@@ -36021,9 +35015,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Completed 10km on cycle
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -36051,11 +35042,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Archived2
                     </span>
@@ -36111,9 +35098,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Completed 10km on cycle
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -36141,11 +35125,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Archived3
                     </span>
@@ -36201,9 +35181,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Completed 10km on cycle
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -36314,11 +35291,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Yesterday
                     </span>
@@ -36374,9 +35347,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -36400,11 +35370,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Today
                     </span>
@@ -36460,9 +35426,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             2 Gallons of milk at the Deli store
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -36503,9 +35466,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Sort out recyclable and waste as needed
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -36546,9 +35506,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Can AI make memes?
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                       <div
@@ -36589,9 +35546,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                           >
                             Transfer to bank account
                           </div>
-                          <div
-                            className="sc-jTzLTM cuFeqX"
-                          />
                         </article>
                       </div>
                     </div>
@@ -36615,11 +35569,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   >
                     <span
                       className="sc-bZQynM iTzKeC"
-                      style={
-                        Object {
-                          "margin": "-5px",
-                        }
-                      }
+                      style={Object {}}
                     >
                       Tomorrow
                     </span>
@@ -38320,11 +37270,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -38378,9 +37324,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -38419,9 +37362,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -38460,9 +37400,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Can AI make memes?
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -38501,9 +37438,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Transfer to bank account
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -38527,11 +37461,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Work In Progress
               </span>
@@ -38585,9 +37515,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -38611,11 +37538,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Blocked
               </span>
@@ -38653,11 +37576,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Completed
               </span>
@@ -38711,9 +37630,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Use Headspace app
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -38752,9 +37668,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Use Spreadsheet for now
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -38778,11 +37691,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Repeat
               </span>
@@ -38836,9 +37745,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Track using fitbit
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -38862,11 +37768,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived
               </span>
@@ -38920,9 +37822,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -38946,11 +37845,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived2
               </span>
@@ -39004,9 +37899,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -39030,11 +37922,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived3
               </span>
@@ -39088,9 +37976,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
                     >
                       Completed 10km on cycle
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -39883,11 +38768,7 @@ exports[`Storyshots Styling Card Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -39945,9 +38826,6 @@ exports[`Storyshots Styling Card Styling 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -39990,9 +38868,6 @@ exports[`Storyshots Styling Card Styling 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -40035,9 +38910,6 @@ exports[`Storyshots Styling Card Styling 1`] = `
                     >
                       
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -40578,11 +39450,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Planned Tasks
               </span>
@@ -40636,9 +39504,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
                 <span>
@@ -40677,9 +39542,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -40706,11 +39568,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Doned tasks
               </span>
@@ -40764,9 +39622,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
@@ -40790,11 +39645,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             >
               <span
                 className="sc-bZQynM iTzKeC"
-                style={
-                  Object {
-                    "margin": "-5px",
-                  }
-                }
+                style={Object {}}
               >
                 Archived tasks
               </span>
@@ -40848,9 +39699,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
                     >
                       
                     </div>
-                    <div
-                      className="sc-jTzLTM cuFeqX"
-                    />
                   </article>
                 </span>
               </div>
