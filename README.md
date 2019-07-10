@@ -21,7 +21,7 @@ Pluggable components to add a trello-like kanban board to your application
 * supports pagination when scrolling individual lanes
 * drag-and-drop on cards and lanes (compatible with touch devices)
 * edit functionality to add/delete cards
-* Custom templates to define lane and card appearance
+* Custom elements to define lane and card appearance
 * event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
 
 ## Getting Started
@@ -83,11 +83,24 @@ Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello
 
 Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
 
-## Documentation
+## Upgrade
 
-### Board
+Breaking changes. Since version 2.2 these properties are removed: `addLaneTitle`, `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`, 
+and `customCardLayout` with `children` element. 
+
+Follow [upgrade instructions](UPGRADE.md) to make easy migration.
+
+## Properties
 
 This is the container component that encapsulates the lanes and cards
+
+### Required parameters
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| data                | object   | Actual board data in the form of json                                                                                          |
+
+### Optionable flags
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -97,13 +110,18 @@ This is the container component that encapsulates the lanes and cards
 | collapsibleLanes    | boolean  | Make the lanes with cards collapsible. Default: false                                                                          |
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
+| hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
+
+
+### Callbacks and handlers
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | handleDragStart     | function | Callback function triggered when card drag is started: `handleDragStart(cardId, laneId)`                                       |
 | handleDragEnd       | function | Callback function triggered when card drag ends, return false if you want to cancel drop: `handleDragEnd(cardId, sourceLaneId, targetLaneId, position, cardDetails)`                 |
 | handleLaneDragStart | function | Callback function triggered when lane drag is started: `handleLaneDragStart(laneId)`                                           |
 | handleLaneDragEnd   | function | Callback function triggered when lane drag ends: `handleLaneDragEnd(removedIndex, addedIndex, payload)`                                      |
-| cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
-| laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
-| onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
+| onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
 | onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
@@ -111,21 +129,103 @@ This is the container component that encapsulates the lanes and cards
 | onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
 | onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
 | onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
-| addCardLink         | node     | Pass custom element to replace the `Add Card` link at the end of the lane (when board is editable)                             |
-| newCardTemplate     | node     | Pass a custom new card template to add new cards to a lane (when board is editable)                                            |
-| hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
-| laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
+| onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
+
+### Other functions
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | eventBusHandle      | function | This is a special function that providers a publishHook to pass new events to the board. See details in Publish Events section |
-| onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
-| style               | object   | Pass css style props to board container                                                                                        |
-| customCardLayout    | boolean  | Boolean to indicate a custom card template will be specified. Add the card component as child to Board                         |
-| customLaneHeader    | element  | Pass custom lane header as react component to modify appearance                                                                |
-| data                | object   | Actual board data in the form of json                                                                                          |
+| laneSortFunction    | function | Used to specify the logic to sort cards on a lane: `laneSortFunction(card1, card2)`                                            |
+
+### I18n support
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
+| t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
+
+### Style customisation
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| style               | object   | Pass CSS style props to board container                                                                                        |
+| cardStyle           | object   | CSS style for every cards |
+| laneStyle           | object   | CSS style for every lanes |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
+| cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
+| laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
+| components          | object   | Map of customised components. [List](src/components/index.js) of available. |
 
 Refer to `stories` folder for examples on many more options for customization.
 
-### Publish Events
+## Editable Board
+
+It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card.
+
+Check out the [editable board story](https://rcdexta.github.io/react-trello/?selectedKind=Editable%20Board&selectedStory=Add%2FDelete%20Cards&full=0&down=0&left=1&panelRight=0) and its corresponding [source code](https://github.com/rcdexta/react-trello/blob/master/stories/EditableBoard.story.js) for more details.
+
+## Styling and customization
+
+There are three ways to apply styles to the library components including `Board`, `Lane` or `Card`:
+
+### 1. Predefined CSS classnames
+
+Use the predefined css classnames attached to these elements that go by `.react-trello-lane`, `.react-trello-card`, `.react-trello-board`:
+
+```css
+.react-trello-lane {
+  border: 0;
+  background-color: initial;
+}
+```
+
+### 2. Pass custom style attributes as part of data.
+
+This method depends on used `Card` and `Lane` components.
+
+```javascript
+const data = {
+  lanes: [
+    {
+      id: 'lane1',
+      title: 'Planned Tasks',
+      style: { backgroundColor: 'yellow' },  // Style of Lane
+      cardStyle: { backgroundColor: 'blue' } // Style of Card
+      ...
+};
+
+<Board 
+  style={{backgroundColor: 'red'}}  // Style of BoardWrapper
+  data={data}
+  />
+```
+
+Storybook example - [stories/Styling.story.js](stories/Styling.story.js)
+
+### 3. Completely customize the look-and-feel by passing `components` property
+
+You can override any of used components (ether one or completery all)
+
+```javascript
+const components = {
+  GlobalStyle: MyGlobalStyle, // global style created with method `createGlobalStyle` of `styled-components`
+  LaneHeader: MyLaneHeader,
+  Card: MyCard,
+  AddCardLink: MyAddCardLink,
+  ...
+};
+
+<Board components={components} />
+```
+
+Total list of customizable components: [src/components/index.js ](src/components/index.js)
+
+Refer to [components definitions](src/components) to discover their properties list and types.
+
+Refer more examples in storybook.
+
+## Publish Events
 
 When defining the board, it is possible to obtain a event hook to the component to publish new events later after the board has been rendered. Refer the example below:
 
@@ -152,94 +252,27 @@ eventBus.publish({type: 'UPDATE_LANES', lanes: newLaneData})
 
 The first event in the above example will move the card `Buy Milk` from the planned lane to completed lane. We expect that this library can be wired to a backend push api that can alter the state of the board in realtime.
 
-### Styling
+## I18n and text translations
 
-There are two ways to apply styles to the library components including `Board`, `Lane` or `Card`:
+### Custom text translation function
 
-* Use the predefined css classnames attached to these elements that go by `.react-trello-lane`, `.react-trello-card`, `.react-trello-board`
-* You can also pass custom style attributes as part of data. Refer to the storybook for examples
-
-### Custom Card Styling
-
-You can completely customize the look-and-feel of each card in any lane by passing in a custom component as child to the Board as seen below:
+Pass translation function to provide custom or localized texts:
 
 ```javascript
-<Board data={data} customCardLayout>
-  <CustomCard />
-</Board>
+const customTranslation = (key) => TRANSLATION_TABLE[key]
+
+<Board t={customTranslation} .../>
 ```
 
-`customCardLayout` prop must be set to true for the custom card to be rendered
+List of available keys - [locales/en/translation.json](https://github.com/rcdexta/react-trello/blob/master/locales/en/translation.json)
 
-The json content for the card and the card template must agree on the props:
+### react-i18next example
 
 ```javascript
-const CustomCard = props => {
-  return (
-    <div>
-      <header
-        style={{
-          borderBottom: '1px solid #eee',
-          paddingBottom: 6,
-          marginBottom: 10,
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          color: props.cardColor
-        }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.title}</div>
-        <div style={{fontSize: 11}}>{props.dueOn}</div>
-      </header>
-      <div style={{fontSize: 12, color: '#BD3B36'}}>
-        <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{props.subTitle}</div>
-        <div style={{padding: '5px 0px'}}>
-          <i>{props.body}</i>
-        </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
-          {props.escalationText}
-        </div>
-      </div>
-    </div>
-  )
-}
+import { withTranslation } from 'react-i18next';
 
-const data = {
-  lanes: [
-    {
-      id: 'lane1',
-      title: 'Planned Tasks',
-      cards: [
-        {
-          id: 'Card1',
-          name: 'John Smith',
-          dueOn: 'due in a day',
-          subTitle: 'SMS received at 12:13pm today',
-          body: 'Thanks. Please schedule me for an estimate on Monday.',
-          escalationText: 'Escalated to OPS-ESCALATIONS!',
-          cardColor: '#BD3B36',
-          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15}
-        },
-        {
-          id: 'Card2',
-          name: 'Card Weathers',
-          dueOn: 'due now',
-          subTitle: 'Email received at 1:14pm',
-          body: 'Is the estimate free, and can someone call me soon?',
-          escalationText: 'Escalated to Admin',
-          cardColor: '#E08521',
-          cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #E08521', marginBottom: 15}
-        }
-      ]
-    }
-  ]
-}
+const I18nBoard = withTranslation()(Board) 
 ```
-
-## Editable Board
-
-It is possible to make the entire board editable by setting the `editable` prop to true. This switch prop will enable existing cards to be deleted and show a `Add Card` link at the bottom of each lane, clicking which will show an inline editable new card.
-
-Check out the [editable board story](https://rcdexta.github.io/react-trello/?selectedKind=Editable%20Board&selectedStory=Add%2FDelete%20Cards&full=0&down=0&left=1&panelRight=0) and its corresponding [source code](https://github.com/rcdexta/react-trello/blob/master/stories/EditableBoard.story.js) for more details.
 
 ## Compatible Browsers
 
@@ -250,27 +283,6 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * Opera 51 or above
 * Safari 4.0 or above
 * Microsoft Edge 15 or above
-
-## I18n
-
-
-### Custom function
-
-Use custom translation function to provide localized texts:
-
-```javascript
-const customTranslation = (key) => TRANSLATION_TABLE[key]
-
-<Board t={customTranslation} .../>
-```
-
-### I18next support
-
-```javascript
-import { withTranslation } from 'react-i18next';
-
-const I18nBoard = withTranslation()(Board) 
-```
 
 ## Feature Wishlist
 

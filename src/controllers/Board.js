@@ -3,18 +3,18 @@ import BoardContainer from './BoardContainer'
 import {Provider} from 'react-redux'
 import classNames from 'classnames'
 import {applyMiddleware, createStore} from 'redux'
-import boardReducer from '../reducers/BoardReducer'
+import boardReducer from 'reducers/BoardReducer'
 import logger from 'redux-logger'
 import uuidv1 from 'uuid/v1'
-import {GlobalStyle} from '../styles/Base'
+import createTranslate from 'helpers/createTranslate'
 
 const middlewares = process.env.REDUX_LOGGING ? [logger] : []
 
 export default class Board extends Component {
-  constructor() {
+  constructor({id}) {
     super()
     this.store = this.getStore()
-    this.id = uuidv1()
+    this.id = id || uuidv1()
   }
 
   getStore = () => {
@@ -23,13 +23,18 @@ export default class Board extends Component {
   }
 
   render() {
-    const allClassNames = classNames('react-trello-board', this.props.className || '')
+    const {id, className, components} = this.props
+    const allClassNames = classNames('react-trello-board', className || '')
     return (
       <Provider store={this.store}>
         <>
-          <GlobalStyle />
-          <BoardContainer className={allClassNames} {...this.props} id={this.id} />
-        </>
+          <components.GlobalStyle />
+          <BoardContainer
+            id={this.id}
+            {...this.props}
+            className={allClassNames}
+          />
+       </>
       </Provider>
     )
   }

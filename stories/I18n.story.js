@@ -3,12 +3,30 @@ import {storiesOf} from '@storybook/react'
 import { useTranslation, I18nextProvider } from 'react-i18next';
 
 import Board from '../src'
-import defaultTranslation from '../src/helpers/defaultTranslation'
-import i18n from './i18n'
+import i18n from './helpers/i18n'
 
 const smallData = require('./data/data-sort')
 
-const customTranslation = (key) => '*' + defaultTranslation(key) + '*'
+import createTranslate from 'helpers/createTranslate'
+
+const TEXTS = {
+  "Add another lane": "NEW LANE",
+  "Click to add card": "Click to add card",
+  "Delete lane": "Delete lane",
+  "Lane actions": "Lane actions",
+  "button": {
+    "Add lane": "Add lane",
+    "Add card": "Add card",
+    "Cancel": "Cancel"
+  },
+  "placeholder": {
+    "title": "title",
+    "description": "description",
+    "label": "label"
+  }
+}
+
+const customTranslation = createTranslate(TEXTS)
 
 const I18nBoard = () => {
   const { t } = useTranslation()

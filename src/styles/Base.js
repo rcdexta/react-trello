@@ -85,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const BoardDiv = styled.div`
+export const BoardWrapper = styled.div`
   background-color: #3179ba;
   overflow-y: hidden;
   padding: 5px;
@@ -246,9 +246,13 @@ export const LaneSection = styled.section`
 `
 
 export const NewLaneSection = styled(LaneSection)`
-  background-color: #e0e3e6;
+  width: 200px;
 `
 
 export const NewLaneButtons = styled.div`
   margin-top: 10px;
+`
+
+export const CardForm = styled.div`
+  background-color: #e3e3e3;
 `

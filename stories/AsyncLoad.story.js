@@ -6,17 +6,14 @@ import Board from '../src'
 const data = require('./data/base.json')
 
 class AsyncBoard extends Component {
-  state = {boardData: {lanes: []}}
+  state = {boardData: {lanes: [{id: 'loading', title: 'loading..', cards: []}]}}
 
-  async componentDidMount() {
-    const response = await this.getBoard()
-    this.setState({boardData: response})
+  componentDidMount() {
+    setTimeout(this.getBoard.bind(this), 1000)
   }
 
   getBoard() {
-    return new Promise(resolve => {
-      resolve(data)
-    })
+    this.setState({boardData: data})
   }
 
   render() {
