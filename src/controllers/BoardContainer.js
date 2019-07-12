@@ -121,6 +121,7 @@ class BoardContainer extends Component {
       onLaneClick,
       onLaneAdd,
       onLaneDelete,
+      onLaneUpdate,
       editable,
       canAddLanes,
       laneStyle,

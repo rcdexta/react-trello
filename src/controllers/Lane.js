@@ -278,6 +278,7 @@ Lane.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
+  onLaneUpdate: PropTypes.func,
   t: PropTypes.func.isRequired
 }
 
@@ -287,6 +288,7 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
+  onLaneUpdate: () => {},
   onCardAdd: () => {},
 }
 
