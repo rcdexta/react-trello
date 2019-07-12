@@ -42,6 +42,7 @@
   "homepage": "https://github.com/rcdexta/react-trello",
   "dependencies": {
     "@terebentina/react-popover": "^2.0.0",
+    "autosize": "^4.0.2",
     "classnames": "^2.2.6",
     "immutability-helper": "^2.8.1",
     "lodash": "^4.17.11",
