@@ -145,7 +145,6 @@ export const Title = styled.span`
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  cursor: grab;
   width: 70%;
 `
 

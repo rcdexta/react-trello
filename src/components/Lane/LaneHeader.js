@@ -6,12 +6,12 @@ import {Title, LaneHeader, RightContent } from 'styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
 const LaneHeaderComponent = ({
-  updateTitle, canAddLanes, onDelete, onDoubleClick, inlineEditTitle, label, title, titleStyle, labelStyle, t
+  updateTitle, canAddLanes, onDelete, onDoubleClick, inlineEditTitle, label, title, titleStyle, labelStyle, t, draggable, laneDraggable
 }) => {
 
   return (
     <LaneHeader onDoubleClick={onDoubleClick}>
-      <Title style={titleStyle}>
+      <Title style={{cursor: draggable && laneDraggable ? 'grab' : 'auto', ...titleStyle}}>
         {inlineEditTitle ?
           <EditableLabel value={title} border placeholder={t('placeholder.title')} onSave={updateTitle} /> :
           title
