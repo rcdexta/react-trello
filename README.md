@@ -145,7 +145,7 @@ This is the container component that encapsulates the lanes and cards
 | lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
 | t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
 
-### Style customisation
+### Style customization
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -156,6 +156,18 @@ This is the container component that encapsulates the lanes and cards
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 | components          | object   | Map of customised components. [List](src/components/index.js) of available. |
+
+
+### Lane specific props
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| id                  | string   | ID of lane                                                                                                                     |
+| style               | object   | Pass CSS style props to lane container                                                                                         |
+| labelStyle          | object   | Pass CSS style props of label                                                                                                  |
+| cardStyle           | object   | Pass CSS style props for cards in this lane                                                                                    |
+| disallowAddingCard  | boolean  | Disallow adding card button in this lane (default: false)                                                                      |
+
 
 Refer to `stories` folder for examples on many more options for customization.
 

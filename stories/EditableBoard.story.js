@@ -7,6 +7,10 @@ import Board from '../src'
 const data = require('./data/base.json')
 const smallData = require('./data/data-sort')
 
+const disallowAddingCardData =  {...data}
+disallowAddingCardData.lanes[0].title = 'Disallowed adding card'
+disallowAddingCardData.lanes[0].disallowAddingCard = true
+
 storiesOf('Editable Board', module)
   .add(
     'Add/Delete Cards',
@@ -53,4 +57,16 @@ storiesOf('Editable Board', module)
       )
     },
     {info: 'Allow adding new lane'}
+  )
+  .add(
+    'Disallow Adding Card for specific Lane',
+    () => {
+      return (
+        <Board
+          data={disallowAddingCardData}
+          editable
+        />
+      )
+    },
+    {info: 'Can hide the add card button on specific lanes'}
   )
