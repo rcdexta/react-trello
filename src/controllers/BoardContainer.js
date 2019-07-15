@@ -140,7 +140,6 @@ class BoardContainer extends Component {
       'draggable',
       'cardDraggable',
       'collapsibleLanes',
-      'editable',
       'canAddLanes',
       'hideCardDeleteIcon',
       'tagStyle',
@@ -176,6 +175,7 @@ class BoardContainer extends Component {
                   style={laneStyle || lane.style || {}}
                   labelStyle={lane.labelStyle || {}}
                   cardStyle={this.props.cardStyle || lane.cardStyle}
+                  editable={editable && !lane.disallowAddingCard}
                   {...otherProps}
                   {...passthroughProps}
                 />
