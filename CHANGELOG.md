@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+* Availability to hide Add Card button for specific lane
 * Internationalization support (property `t` and `lang`)
 * Russian translation
 * Dependency Injection mechanisim for all components customization 
