@@ -203,7 +203,7 @@ const data = {
 
 Storybook example - [stories/Styling.story.js](stories/Styling.story.js)
 
-### 3. Completely customize the look-and-feel by passing `components` property
+### 3. Completely customize the look-and-feel by using components dependency injection.
 
 You can override any of used components (ether one or completery all)
 
