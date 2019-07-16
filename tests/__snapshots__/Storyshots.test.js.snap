@@ -39,7 +39,7 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
             title="loading.."
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -472,7 +472,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Double Click Here"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -683,7 +683,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -774,7 +774,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Blocked"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -816,7 +816,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Completed"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -947,7 +947,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Repeat"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -1038,7 +1038,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Archived"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -1129,7 +1129,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Archived2"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -1220,7 +1220,7 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               title="Archived3"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -2043,7 +2043,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               title="Planned Tasks"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -2152,7 +2152,7 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               title="Executing"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3285,7 +3285,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Disallowed adding card"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3476,7 +3476,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3553,7 +3553,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Blocked"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3591,7 +3591,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Completed"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3706,7 +3706,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Repeat"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3783,7 +3783,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Archived"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3860,7 +3860,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Archived2"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -3937,7 +3937,7 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               title="Archived3"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -4410,7 +4410,7 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
               title="Lane1"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -5936,7 +5936,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Disallowed adding card"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6127,7 +6127,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6204,7 +6204,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6242,7 +6242,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6357,7 +6357,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6434,7 +6434,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6511,7 +6511,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -6588,7 +6588,7 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -7399,7 +7399,7 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
             title="Lane1"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -8775,7 +8775,7 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -9436,7 +9436,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -10096,7 +10096,7 @@ exports[`Storyshots Basic Functions Tags 1`] = `
             title="Planned Tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11068,7 +11068,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Double Click Here"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11264,7 +11264,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11346,7 +11346,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11389,7 +11389,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11509,7 +11509,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11591,7 +11591,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11673,7 +11673,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -11755,7 +11755,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -12613,7 +12613,7 @@ exports[`Storyshots Custom Components Card 1`] = `
               title="Planned Tasks"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -12845,7 +12845,7 @@ exports[`Storyshots Custom Components Card 1`] = `
               title="Long Lane name this is i suppose ha!"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -13778,7 +13778,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               title="Planned"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -13945,7 +13945,7 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -14446,7 +14446,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Double Click Here"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -14642,7 +14642,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -14724,7 +14724,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -14762,7 +14762,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -14882,7 +14882,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -14964,7 +14964,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -15046,7 +15046,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -15128,7 +15128,7 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -16913,7 +16913,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Disallowed adding card"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17104,7 +17104,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17187,7 +17187,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17231,7 +17231,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17352,7 +17352,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17435,7 +17435,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17518,7 +17518,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -17601,7 +17601,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -18430,7 +18430,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -19187,7 +19187,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20056,7 +20056,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Disallowed adding card"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20247,7 +20247,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20330,7 +20330,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20374,7 +20374,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20495,7 +20495,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20578,7 +20578,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20661,7 +20661,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -20744,7 +20744,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -21829,7 +21829,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Disallowed adding card"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22032,7 +22032,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22115,7 +22115,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Blocked"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22157,7 +22157,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Completed"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22280,7 +22280,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Repeat"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22363,7 +22363,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Archived"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22446,7 +22446,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Archived2"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -22529,7 +22529,7 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               title="Archived3"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -23497,7 +23497,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             title="Planned Tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -23692,7 +23692,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             title="Work In Progress (Not Droppable)"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -23771,7 +23771,7 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             title="Completed (Droppable)"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -24625,7 +24625,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Disallowed adding card"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -24828,7 +24828,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -24911,7 +24911,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Blocked"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -24953,7 +24953,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Completed"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -25076,7 +25076,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Repeat"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -25159,7 +25159,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Archived"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -25242,7 +25242,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Archived2"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -25325,7 +25325,7 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               title="Archived3"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -26182,7 +26182,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               title="Planned Tasks"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -26381,7 +26381,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               title="Work In Progress (Not Droppable)"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -26464,7 +26464,7 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               title="Completed (Droppable)"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -27173,7 +27173,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -28047,7 +28047,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Disallowed adding card"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28250,7 +28250,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Work In Progress"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28339,7 +28339,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Blocked"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28387,7 +28387,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Completed"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28516,7 +28516,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Repeat"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28605,7 +28605,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Archived"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28694,7 +28694,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Archived2"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -28783,7 +28783,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               title="Archived3"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -29847,7 +29847,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Disallowed adding card"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30038,7 +30038,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30121,7 +30121,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30165,7 +30165,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30286,7 +30286,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30369,7 +30369,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30452,7 +30452,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -30535,7 +30535,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -31316,7 +31316,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
             title="Sorted Lane"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb hloIOP"
               onDoubleClick={[Function]}
             >
               <span
@@ -32127,7 +32127,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
               title="Sorted Lane"
             >
               <header
-                className="sc-bxivhb fwjdWp"
+                className="sc-bxivhb jIQPNZ"
                 onDoubleClick={[Function]}
               >
                 <span
@@ -34503,7 +34503,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 title="Sorted Lane"
               >
                 <header
-                  className="sc-bxivhb fwjdWp"
+                  className="sc-bxivhb jIQPNZ"
                   onDoubleClick={[Function]}
                 >
                   <span
@@ -36776,7 +36776,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Disallowed adding card"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -36979,7 +36979,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Work In Progress"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37062,7 +37062,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Blocked"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37104,7 +37104,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Completed"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37227,7 +37227,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Repeat"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37310,7 +37310,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Archived"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37393,7 +37393,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Archived2"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37476,7 +37476,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Archived3"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37641,7 +37641,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Yesterday"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37720,7 +37720,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Today"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -37919,7 +37919,7 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   title="Tomorrow"
                 >
                   <header
-                    className="sc-bxivhb fwjdWp"
+                    className="sc-bxivhb jIQPNZ"
                     onDoubleClick={[Function]}
                   >
                     <span
@@ -39620,7 +39620,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Disallowed adding card"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -39811,7 +39811,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Work In Progress"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -39888,7 +39888,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Blocked"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -39926,7 +39926,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Completed"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -40041,7 +40041,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Repeat"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -40118,7 +40118,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Archived"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -40195,7 +40195,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Archived2"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -40272,7 +40272,7 @@ exports[`Storyshots Styling Board Styling 1`] = `
             title="Archived3"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -41117,7 +41117,7 @@ exports[`Storyshots Styling Card Styling 1`] = `
             title="Planned Tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -41798,7 +41798,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             title="Planned Tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -41916,7 +41916,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             title="Doned tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span
@@ -41993,7 +41993,7 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             title="Archived tasks"
           >
             <header
-              className="sc-bxivhb fwjdWp"
+              className="sc-bxivhb jIQPNZ"
               onDoubleClick={[Function]}
             >
               <span

@@ -117,8 +117,16 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-  padding: 0px 5px;
   margin-bottom: 0px;
+  ${props => props.editLaneTitle && css`
+    padding: 0px;
+    line-height: 30px;
+    `
+  }
+  ${props => !props.editLaneTitle && css`
+    padding: 0px 5px;
+    `
+  }
 `
 
 export const LaneFooter = styled.div`
