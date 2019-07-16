@@ -233,6 +233,7 @@ class Lane extends Component {
       onCardAdd,
       onCardDelete,
       onLaneDelete,
+      onLaneUpdate,
       onCardMoveAcrossLanes,
       ...otherProps
     } = this.props
@@ -267,18 +268,18 @@ Lane.propTypes = {
   draggable: PropTypes.bool,
   collapsibleLanes: PropTypes.bool,
   droppable: PropTypes.bool,
-  onLaneScroll: PropTypes.func,
   onCardMoveAcrossLanes: PropTypes.func,
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
-  onLaneDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+  onLaneDelete: PropTypes.func,
+  onLaneUpdate: PropTypes.func,
   onLaneClick: PropTypes.func,
+  onLaneScroll: PropTypes.func,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
-  onLaneUpdate: PropTypes.func,
   t: PropTypes.func.isRequired
 }
 

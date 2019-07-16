@@ -35,7 +35,6 @@ exports[`Storyshots Advanced Features Async Load data 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="loading.."
           >
@@ -465,7 +464,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -677,7 +675,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -769,7 +766,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -812,7 +808,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -944,7 +939,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1036,7 +1030,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1128,7 +1121,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -1220,7 +1212,6 @@ exports[`Storyshots Advanced Features Collapsible Lanes 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -2048,7 +2039,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned Tasks"
             >
@@ -2158,7 +2148,6 @@ exports[`Storyshots Advanced Features Event Handling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Executing"
             >
@@ -3288,7 +3277,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3480,7 +3468,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3558,7 +3545,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3597,7 +3583,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3713,7 +3698,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3791,7 +3775,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3869,7 +3852,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -3947,7 +3929,6 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -4425,7 +4406,6 @@ exports[`Storyshots Advanced Features Scrolling and Events 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Lane1"
             >
@@ -5948,7 +5928,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6140,7 +6119,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6218,7 +6196,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6257,7 +6234,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6373,7 +6349,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6451,7 +6426,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6529,7 +6503,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -6607,7 +6580,6 @@ exports[`Storyshots Basic Functions Full Board example 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -7423,7 +7395,6 @@ exports[`Storyshots Basic Functions Infinite Scrolling 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Lane1"
           >
@@ -8800,7 +8771,6 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -9462,7 +9432,6 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -10123,7 +10092,6 @@ exports[`Storyshots Basic Functions Tags 1`] = `
             className="react-trello-lane sc-htpNat dJewwL"
             draggable={false}
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -11092,7 +11060,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11289,7 +11256,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11372,7 +11338,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11416,7 +11381,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11537,7 +11501,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11620,7 +11583,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11703,7 +11665,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -11786,7 +11747,6 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -12644,7 +12604,6 @@ exports[`Storyshots Custom Components Card 1`] = `
               draggable={false}
               label="12/12"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "backgroundColor": "cyan",
@@ -12882,7 +12841,6 @@ exports[`Storyshots Custom Components Card 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Long Lane name this is i suppose ha!"
             >
@@ -13816,7 +13774,6 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned"
             >
@@ -13984,7 +13941,6 @@ exports[`Storyshots Custom Components Drag-n-Drop Styling 1`] = `
               className="react-trello-lane sc-htpNat dJewwL"
               draggable={false}
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Work In Progress"
             >
@@ -14482,7 +14438,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14679,7 +14634,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14762,7 +14716,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14801,7 +14754,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -14922,7 +14874,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15005,7 +14956,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15088,7 +15038,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15171,7 +15120,6 @@ exports[`Storyshots Custom Components LaneFooter 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -15979,7 +15927,6 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             draggable={false}
             label="First Lane here"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -16116,7 +16063,6 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             draggable={false}
             label="Second Lane here"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Completed Tasks"
           >
@@ -16959,7 +16905,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17151,7 +17096,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17235,7 +17179,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17280,7 +17223,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17402,7 +17344,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17486,7 +17427,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17570,7 +17510,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -17654,7 +17593,6 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -18488,7 +18426,6 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -19246,7 +19183,6 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -20112,7 +20048,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20304,7 +20239,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20388,7 +20322,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20433,7 +20366,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20555,7 +20487,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20639,7 +20570,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20723,7 +20653,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -20807,7 +20736,6 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -21893,7 +21821,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22097,7 +22024,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22181,7 +22107,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22224,7 +22149,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22348,7 +22272,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22432,7 +22355,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22516,7 +22438,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -22600,7 +22521,6 @@ exports[`Storyshots Drag-n-Drop Basic 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -23573,7 +23493,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -23769,7 +23688,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Work In Progress (Not Droppable)"
           >
@@ -23845,7 +23763,6 @@ exports[`Storyshots Drag-n-Drop Drag Cards not Lanes 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -24700,7 +24617,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -24904,7 +24820,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -24988,7 +24903,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25031,7 +24945,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25155,7 +25068,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25239,7 +25151,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25323,7 +25234,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -25407,7 +25317,6 @@ exports[`Storyshots Drag-n-Drop Drag Styling 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -26269,7 +26178,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Planned Tasks"
             >
@@ -26469,7 +26377,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Work In Progress (Not Droppable)"
             >
@@ -26549,7 +26456,6 @@ exports[`Storyshots Drag-n-Drop Restrict lanes 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -27263,7 +27169,6 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -28134,7 +28039,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28338,7 +28242,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="10/20"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28428,7 +28331,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="0/0"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28477,7 +28379,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="2/5"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28607,7 +28508,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28697,7 +28597,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28787,7 +28686,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -28877,7 +28775,6 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
               draggable={false}
               label="1/1"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={
                 Object {
                   "width": 280,
@@ -29942,7 +29839,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30134,7 +30030,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30218,7 +30113,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30263,7 +30157,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30385,7 +30278,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30469,7 +30361,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30553,7 +30444,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -30637,7 +30527,6 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -31423,7 +31312,6 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Sorted Lane"
           >
@@ -32235,7 +32123,6 @@ exports[`Storyshots I18n Custom texts 1`] = `
               draggable={false}
               label="20/70"
               onClick={[Function]}
-              onLaneUpdate={[Function]}
               style={Object {}}
               title="Sorted Lane"
             >
@@ -34612,7 +34499,6 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 draggable={false}
                 label="20/70"
                 onClick={[Function]}
-                onLaneUpdate={[Function]}
                 style={Object {}}
                 title="Sorted Lane"
               >
@@ -36882,7 +36768,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37086,7 +36971,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37170,7 +37054,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37213,7 +37096,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="2/5"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37337,7 +37219,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37421,7 +37302,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37505,7 +37385,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37589,7 +37468,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="1/1"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={
                     Object {
                       "width": 280,
@@ -37759,7 +37637,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="20/70"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Yesterday"
                 >
@@ -37839,7 +37716,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="10/20"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Today"
                 >
@@ -38039,7 +37915,6 @@ exports[`Storyshots Multiple Boards Two Boards 1`] = `
                   draggable={false}
                   label="0/0"
                   onClick={[Function]}
-                  onLaneUpdate={[Function]}
                   style={Object {}}
                   title="Tomorrow"
                 >
@@ -39737,7 +39612,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -39929,7 +39803,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="10/20"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40007,7 +39880,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="0/0"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40046,7 +39918,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="2/5"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40162,7 +40033,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40240,7 +40110,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40318,7 +40187,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -40396,7 +40264,6 @@ exports[`Storyshots Styling Board Styling 1`] = `
             draggable={false}
             label="1/1"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "width": 280,
@@ -41246,7 +41113,6 @@ exports[`Storyshots Styling Card Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={Object {}}
             title="Planned Tasks"
           >
@@ -41921,7 +41787,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="20/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#3179ba",
@@ -42040,7 +41905,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="10/70"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#ba7931",
@@ -42121,7 +41985,6 @@ exports[`Storyshots Styling Lane Styling 1`] = `
             draggable={false}
             label="1/2"
             onClick={[Function]}
-            onLaneUpdate={[Function]}
             style={
               Object {
                 "backgroundColor": "#666",
