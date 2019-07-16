@@ -29984,25 +29984,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
                 className="sc-bZQynM iTzKeC"
                 style={Object {}}
               >
-<<<<<<< HEAD
                 Disallowed adding card
-=======
-                <textarea
-                  autoCapitalize="off"
-                  autoComplete="off"
-                  autoCorrect="off"
-                  autoFocus={false}
-                  className="sc-kpOJdX RDblP"
-                  defaultValue="Sorted Lane"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onMouseDown={[Function]}
-                  placeholder="title"
-                  rows={1}
-                  spellCheck="false"
-                />
->>>>>>> Refactor InlintInput
               </span>
               <span
                 className="sc-gzVnrw dZkyH"
@@ -31457,7 +31439,6 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
       }
       draggable={false}
       onCardMoveAcrossLanes={[Function]}
-      onLaneUpdate={[Function]}
     >
       <div
         onClick={[Function]}
@@ -31482,13 +31463,19 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 style={Object {}}
               >
                 <textarea
-                  className="sc-kpOJdX jEDhMs"
+                  autoCapitalize="off"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoFocus={false}
+                  className="sc-kpOJdX RDblP"
                   defaultValue="Sorted Lane"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
                   onMouseDown={[Function]}
                   placeholder="title"
+                  rows={1}
+                  spellCheck="false"
                 />
               </span>
               <span
