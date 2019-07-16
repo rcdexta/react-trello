@@ -2,15 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class EditableLabel extends React.Component {
-  state = {text: ''}
+  constructor({value}) {
+    super()
+    this.state = { value: value }
+  }
 
   getText = el => {
     return el.innerText
   }
 
   onTextChange = ev => {
-    const text = this.getText(ev.target)
-    this.setState({text: text})
+    const value = this.getText(ev.target)
+    this.setState({value: value})
   }
 
   componentDidMount() {
@@ -20,18 +23,33 @@ class EditableLabel extends React.Component {
   }
 
   onBlur = () => {
-    this.props.onChange(this.state.text)
+    this.props.onChange(this.state.value)
   }
 
   onPaste = ev => {
     ev.preventDefault()
-    const text = ev.clipboardData.getData('text')
-    document.execCommand('insertText', false, text)
+    const value = ev.clipboardData.getData('text')
+    document.execCommand('insertText', false, value)
   }
 
   getClassName = () => {
-    const placeholder = this.state.text === '' ? 'comPlainTextContentEditable--has-placeholder' : ''
+    const placeholder = this.state.value === '' ? 'comPlainTextContentEditable--has-placeholder' : ''
     return `comPlainTextContentEditable ${placeholder}`
+  }
+
+  onKeyDown = (e) => {
+    if(e.keyCode === 13) {
+      this.props.onChange(this.state.value)
+      this.refDiv.blur()
+      e.preventDefault()
+    }
+    if(e.keyCode === 27) {
+      this.refDiv.value = this.props.value
+      this.setState({value: this.props.value})
+      // this.refDiv.blur()
+      e.preventDefault()
+      e.stopPropagation()
+    }
   }
 
   render() {
@@ -43,21 +61,26 @@ class EditableLabel extends React.Component {
         onPaste={this.onPaste}
         onBlur={this.onBlur}
         onInput={this.onTextChange}
-        placeholder={this.props.placeholder}
-      />
+        onKeyDown={this.onKeyDown}
+        placeholder={this.props.value.length == 0 ? false : this.props.placeholder}
+        >{this.props.value}</div>
     )
   }
+}
+
+EditableLabel.propTypes = {
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  autoFocus: PropTypes.bool,
+  inline: PropTypes.bool,
+  value: PropTypes.string,
 }
 
 EditableLabel.defaultProps = {
   onChange: () => {},
   placeholder: '',
-  autoFocus: false
+  autoFocus: false,
+  inline: false,
+  value: ''
 }
-EditableLabel.propTypes = {
-  onChange: PropTypes.func,
-  placeholder: PropTypes.string,
-  autoFocus: PropTypes.bool
-}
-
 export default EditableLabel

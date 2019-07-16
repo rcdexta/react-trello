@@ -1,10 +1,18 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [Unreleased]
+
+## [2.3.0-alpha.1] - 2019-07-15
+
+### Added
+
+* Add `editLaneTitle` and `onLaneUpdate` props (availability to inline edit lane
+  title)
 
 ## [2.2.0-alpha.1] - 2019-07-01
 

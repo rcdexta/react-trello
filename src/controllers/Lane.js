@@ -194,13 +194,18 @@ class Lane extends Component {
     const {id} = this.props
     this.props.actions.removeLane({laneId: id})
     this.props.onLaneDelete(id)
+    }
+
+  updateTitle = (value) => {
+    this.props.actions.updateLane({id: this.props.id, title: value})
+    this.props.onLaneUpdate(this.props.id, {title: value })
   }
 
   renderHeader = () => {
     const { components } = this.props
     const pickedProps = pick(
       this.props,
-      ['id','label','title','titleStyle','cards', 'labelStyle','t','inlineEditTitle','canAddLanes']
+      ['id','label','title','titleStyle','cards', 'labelStyle','t','editLaneTitle','canAddLanes']
     )
     return (
       <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>
@@ -228,6 +233,7 @@ class Lane extends Component {
       onCardAdd,
       onCardDelete,
       onLaneDelete,
+      onLaneUpdate,
       onCardMoveAcrossLanes,
       ...otherProps
     } = this.props
@@ -262,13 +268,14 @@ Lane.propTypes = {
   draggable: PropTypes.bool,
   collapsibleLanes: PropTypes.bool,
   droppable: PropTypes.bool,
-  onLaneScroll: PropTypes.func,
   onCardMoveAcrossLanes: PropTypes.func,
   onCardClick: PropTypes.func,
   onCardDelete: PropTypes.func,
-  onLaneDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+  onLaneDelete: PropTypes.func,
+  onLaneUpdate: PropTypes.func,
   onLaneClick: PropTypes.func,
+  onLaneScroll: PropTypes.func,
   editable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
@@ -282,6 +289,7 @@ Lane.defaultProps = {
   labelStyle: {},
   label: undefined,
   editable: false,
+  onLaneUpdate: () => {},
   onCardAdd: () => {},
 }
 
