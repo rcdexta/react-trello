@@ -125,6 +125,7 @@ class BoardContainer extends Component {
       editable,
       canAddLanes,
       laneStyle,
+      onCardMoveAcrossLanes,
       t,
       ...otherProps
     } = this.props
