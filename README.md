@@ -16,13 +16,14 @@ Pluggable components to add a trello-like kanban board to your application
 
 ![alt tag](https://raw.githubusercontent.com/rcdexta/react-trello/master/react-trello.gif)
 
-* responsive and extensible
-* easily pluggable into existing react application
-* supports pagination when scrolling individual lanes
-* drag-and-drop on cards and lanes (compatible with touch devices)
-* edit functionality to add/delete cards
+* Responsive and extensible
+* Easily pluggable into existing react application
+* Supports pagination when scrolling individual lanes
+* Drag-And-Drop on cards and lanes (compatible with touch devices)
+* Edit functionality to add/delete cards
 * Custom elements to define lane and card appearance
-* event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* Event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* Inline edit lane's title
 
 ## Getting Started
 
