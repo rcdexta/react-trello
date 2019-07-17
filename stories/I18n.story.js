@@ -4,10 +4,9 @@ import { useTranslation, I18nextProvider } from 'react-i18next';
 
 import Board from '../src'
 import i18n from './helpers/i18n'
+import createTranslate from 'rt/helpers/createTranslate'
 
 const smallData = require('./data/data-sort')
-
-import createTranslate from 'helpers/createTranslate'
 
 const TEXTS = {
   "Add another lane": "NEW LANE",

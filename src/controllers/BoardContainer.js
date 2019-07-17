@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import Container from 'dnd/Container'
-import Draggable from 'dnd/Draggable'
+import Container from 'rt/dnd/Container'
+import Draggable from 'rt/dnd/Draggable'
 import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
 import { PopoverWrapper } from '@terebentina/react-popover'
 
-import * as boardActions from 'actions/BoardActions'
-import * as laneActions from 'actions/LaneActions'
+import * as boardActions from 'rt/actions/BoardActions'
+import * as laneActions from 'rt/actions/LaneActions'
 
 class BoardContainer extends Component {
   state = {

@@ -8,9 +8,9 @@ import {
   CardTitle,
   Detail,
   Footer
-} from 'styles/Base'
+} from 'rt/styles/Base'
 import Tag from './Card/Tag'
-import DeleteButton from './widgets/DeleteButton'
+import DeleteButton from 'rt/widgets/DeleteButton'
 
 class Card extends Component {
   onDelete = e => {

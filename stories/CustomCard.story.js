@@ -1,9 +1,9 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import {MovableCardWrapper } from 'styles/Base'
+import {MovableCardWrapper } from 'rt/styles/Base'
 
 import Board from '../src'
-import Tag from 'components/Card/Tag'
+import Tag from 'rt/components/Card/Tag'
 
 const CustomCard = ({onClick, className, name, cardStyle, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
   return (
