@@ -39,6 +39,7 @@ or
 $ yarn add react-trello
 ```
 
+
 ## Usage
 
 The `Board` component takes a prop called `data` that contains all the details related to rendering the board. A sample data json is given here to illustrate the contract:
@@ -83,6 +84,18 @@ export default class App extends React.Component {
 Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello/
 
 Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
+
+## Usage of current master branch
+
+```bash
+$ yarn add rcdexta/react-trello
+```
+
+and
+
+```javascript
+import Board from 'react-trello/src'
+```
 
 ## Upgrade
 
