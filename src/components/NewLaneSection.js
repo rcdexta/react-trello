@@ -1,6 +1,6 @@
 import React from 'react'
-import {NewLaneSection} from 'styles/Base'
-import {AddLaneLink} from 'styles/Elements'
+import {NewLaneSection} from 'rt/styles/Base'
+import {AddLaneLink} from 'rt/styles/Elements'
 
 export default ({t, onClick}) => (
   <NewLaneSection>

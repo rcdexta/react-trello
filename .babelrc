@@ -16,7 +16,7 @@
     "@babel/plugin-transform-async-to-generator",
     "@babel/plugin-transform-runtime",
     ["module-resolver", {
-      "root": ["./src/"]
+      "alias": { "rt": "./src/" }
     }]
   ]
 }

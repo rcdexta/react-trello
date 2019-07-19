@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
-import BoardContainer from './BoardContainer'
 import {Provider} from 'react-redux'
 import classNames from 'classnames'
 import {applyMiddleware, createStore} from 'redux'
-import boardReducer from 'reducers/BoardReducer'
 import logger from 'redux-logger'
 import uuidv1 from 'uuid/v1'
-import createTranslate from 'helpers/createTranslate'
+import BoardContainer from './BoardContainer'
+import createTranslate from 'rt/helpers/createTranslate'
+import boardReducer from 'rt/reducers/BoardReducer'
 
 const middlewares = process.env.REDUX_LOGGING ? [logger] : []
 

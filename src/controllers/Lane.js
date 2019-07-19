@@ -8,10 +8,10 @@ import cloneDeep from 'lodash/cloneDeep'
 import pick from 'lodash/pick'
 import uuidv1 from 'uuid/v1'
 
-import Container from 'dnd/Container'
-import Draggable from 'dnd/Draggable'
+import Container from 'rt/dnd/Container'
+import Draggable from 'rt/dnd/Draggable'
 
-import * as laneActions from 'actions/LaneActions'
+import * as laneActions from 'rt/actions/LaneActions'
 
 class Lane extends Component {
   state = {

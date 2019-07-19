@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import InlineInput from 'components/widgets/InlineInput'
-import {Title, LaneHeader, RightContent } from 'styles/Base'
+import InlineInput from 'rt/widgets/InlineInput'
+import {Title, LaneHeader, RightContent } from 'rt/styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
 const LaneHeaderComponent = ({
