@@ -85,7 +85,7 @@ Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello
 
 Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
 
-## Usage of current master branch
+## Use edge version of project (current master branch)
 
 ```bash
 $ yarn add rcdexta/react-trello
