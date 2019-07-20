@@ -4,21 +4,9 @@ import {
   PopoverContainer,
   PopoverContent,
   PopoverTrigger
-} from 'react-popopo';
+} from 'react-popopo'
 
 export const GlobalStyle = createGlobalStyle`
-  .popover[class*="menu"] .popover__content a {
-    color: rgba(255, 255, 255, 0.56);
-    padding: .5em 1em;
-    margin: 0;
-    text-decoration: none;
-  }
-
-  .popover[class*="menu"] .popover__content a:hover {
-    background-color: #00bcd4 !important;
-    color: #37474F;
-  }
-
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
     cursor: text;
@@ -88,8 +76,17 @@ export const CustomPopoverContent = styled(PopoverContent)`
     transition: all 0.3s ease 0ms;
     left: 50%;
   }
+  a {
+    color: rgba(255, 255, 255, 0.56);
+    padding: .5em 1em;
+    margin: 0;
+    text-decoration: none;
+    &:hover {
+      background-color: #00bcd4 !important;
+      color: #37474F;
+    }
+  }
 `
-
 
 export const BoardWrapper = styled.div`
   background-color: #3179ba;
