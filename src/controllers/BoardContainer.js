@@ -12,6 +12,11 @@ import { PopoverWrapper } from 'react-popopo'
 import * as boardActions from 'rt/actions/BoardActions'
 import * as laneActions from 'rt/actions/LaneActions'
 
+const LOCK_AXIS = {
+  'horizontal': 'x',
+  'vertical': 'y'
+}
+
 class BoardContainer extends Component {
   state = {
     addLaneMode: false
@@ -108,6 +113,7 @@ class BoardContainer extends Component {
     const {
       id,
       components,
+      orientation,
       reducerData,
       draggable,
       laneDraggable,
@@ -155,16 +161,17 @@ class BoardContainer extends Component {
       't'
     ])
 
+    const lockAxis = LOCK_AXIS[orientation];
     return (
       <components.BoardWrapper style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
           <Container
-            orientation="horizontal"
+            orientation={orientation}
             onDragStart={this.onDragStart}
             dragClass={laneDragClass}
             dropClass=""
             onDrop={this.onLaneDrop}
-            lockAxis="x"
+            lockAxis={LOCK_AXIS[orientation]}
             getChildPayload={index => this.getLaneDetails(index)}
             groupName={this.groupName}>
             {reducerData.lanes.map((lane, index) => {
@@ -191,7 +198,7 @@ class BoardContainer extends Component {
           </Container>
         </PopoverWrapper>
         {canAddLanes && (
-          <Container orientation="horizontal">
+          <Container orientation={orientation}>
             {editable && !addLaneMode ? <components.NewLaneSection t={t} onClick={this.showEditableLane} /> : (
               addLaneMode && <components.NewLaneForm onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
             )}
@@ -204,6 +211,7 @@ class BoardContainer extends Component {
 
 BoardContainer.propTypes = {
   id: PropTypes.string,
+  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
   components: PropTypes.object,
   actions: PropTypes.object,
   data: PropTypes.object.isRequired,
@@ -240,6 +248,7 @@ BoardContainer.propTypes = {
 
 BoardContainer.defaultProps = {
   t: v=>v,
+  orientation: 'horizontal',
   onDataChange: () => {},
   handleDragStart: () => {},
   handleDragEnd: () => {},
