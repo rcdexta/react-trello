@@ -97,7 +97,6 @@
     "prettier": "1.14.3",
     "pretty-quick": "^1.7.0",
     "react": "^16.8.0",
-    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.8.0",
     "react-i18next": "^10.11.0",
     "react-test-renderer": "^16.8.6",
