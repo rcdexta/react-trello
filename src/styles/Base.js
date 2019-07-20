@@ -53,15 +53,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
-export const CustomPopoverContainer = styled(CustomPopoverContainer)`
+export const CustomPopoverContainer = styled(PopoverContainer)`
   position: absolute;
   right: 10px;
   flex-flow: column nowrap;
-.popover.popover--active .popover__content {
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 100ms;
-}
 `
 
 export const CustomPopoverContent = styled(PopoverContent)`
@@ -80,6 +75,11 @@ export const CustomPopoverContent = styled(PopoverContent)`
   padding: 5px;
   left: 50%;
   transform: translateX(-50%);
+  ${props => props.active && `
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 100ms;
+  `}
   &::before {
     content: "";
     position: absolute;
