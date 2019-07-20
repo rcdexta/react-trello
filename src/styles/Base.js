@@ -1,57 +1,12 @@
 import styled, { css, createGlobalStyle } from 'styled-components'
 
+import {
+  PopoverContainer,
+  PopoverContent,
+  PopoverTrigger
+} from 'react-popopo'
+
 export const GlobalStyle = createGlobalStyle`
-
-  .popover {
-  position: absolute;
-    right: 10px;
-   }
-  .popover .popover__content {
-    visibility: hidden;
-    margin-top: -5px;
-    opacity: 0;
-    position: absolute;
-    z-index: 10;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease 0ms;
-    border-radius: 3px;
-    min-width: 7em;
-    flex-flow: column nowrap;
-    background-color: #fff;
-    color: #000;
-    padding: 5px; }
-    .popover .popover__content::before {
-      content: "";
-      position: absolute;
-      background: transparent none repeat scroll 0 0;
-      border: 6px solid transparent;
-      transition: all 0.3s ease 0ms;
-      left: 50%; }
-  .popover.popover--bottom {
-    flex-flow: column nowrap; }
-    .popover.popover--bottom .popover__content {
-      left: 50%;
-      transform: translateX(-50%); }
-
-  .popover.popover--active .popover__content {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 100ms; }
-  .popover[class*="menu"] .popover__content {
-    border-radius: 3px;
-    min-width: 7em;
-    flex-flow: column nowrap;
-    color: #000; }
-    .popover[class*="menu"] .popover__content a {
-      color: rgba(255, 255, 255, 0.56);
-      padding: .5em 1em;
-      margin: 0;
-      text-decoration: none; }
-      .popover[class*="menu"] .popover__content a:hover {
-        background-color: #00bcd4 !important;
-        color: #37474F; }
-
-
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
     cursor: text;
@@ -83,6 +38,48 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 32px;
     width: 32px;
+  }
+`
+
+export const CustomPopoverContainer = styled(PopoverContainer)`
+  position: absolute;
+  right: 10px;
+  flex-flow: column nowrap;
+`
+
+export const CustomPopoverContent = styled(PopoverContent)`
+  visibility: hidden;
+  margin-top: -5px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0ms;
+  border-radius: 3px;
+  min-width: 7em;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  ${props => props.active && `
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 100ms;
+  `}
+  &::before {
+    visibility: hidden;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.56);
+    padding: .5em 1em;
+    margin: 0;
+    text-decoration: none;
+    &:hover {
+      background-color: #00bcd4 !important;
+      color: #37474F;
+    }
   }
 `
 
