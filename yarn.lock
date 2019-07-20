@@ -11811,12 +11811,13 @@ react-modal@^3.6.1:
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
 
-react-popopo@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/react-popopo/-/react-popopo-2.1.8.tgz#eb9a78be8a3fa51a6b6b9fa3dece3cb252623a39"
-  integrity sha512-EU7vJosUWDqYNG2Iv1d0l5+SwCLAred79XFiGKrXollQFKy5bNdZkQ+96KCRxEPD7RC6LdCL9QCYaswwySuFHA==
+react-popopo@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/react-popopo/-/react-popopo-2.1.9.tgz#d93f70a8fb68227907d00c0cea4d8f5d321053ea"
+  integrity sha512-zXOpcLSpaLZmBxhdtenJzQPLjY81XknVS/tXH4Kv5BBrnYIUPHvVdGmS7+o9s7DjCzzdK7AdVwtG+FVSO0cZ8g==
   dependencies:
     classnames ">= 2.0"
+    prop-types "^15.7.2"
     react ">= 16.3"
     react-dom ">= 16.3"
     styled-components ">= 4.0"

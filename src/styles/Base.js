@@ -69,12 +69,7 @@ export const CustomPopoverContent = styled(PopoverContent)`
     transition-delay: 100ms;
   `}
   &::before {
-    content: "";
-    position: absolute;
-    background: transparent none repeat scroll 0 0;
-    border: 6px solid transparent;
-    transition: all 0.3s ease 0ms;
-    left: 50%;
+    visibility: hidden;
   }
   a {
     color: rgba(255, 255, 255, 0.56);
