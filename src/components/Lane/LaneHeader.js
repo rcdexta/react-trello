@@ -5,12 +5,12 @@ import {Title, LaneHeader, RightContent } from 'rt/styles/Base'
 import LaneMenu from './LaneHeader/LaneMenu'
 
 const LaneHeaderComponent = ({
-  updateTitle, canAddLanes, onDelete, onDoubleClick, editLaneTitle, label, title, titleStyle, labelStyle, t
+  updateTitle, canAddLanes, onDelete, onDoubleClick, editLaneTitle, label, title, titleStyle, labelStyle, t, laneDraggable
 }) => {
 
   return (
     <LaneHeader onDoubleClick={onDoubleClick} editLaneTitle={editLaneTitle}>
-      <Title style={titleStyle}>
+      <Title draggable={laneDraggable} style={titleStyle}>
       {editLaneTitle ?
         <InlineInput value={title} border placeholder={t('placeholder.title')} resize='vertical' onSave={updateTitle} /> :
         title
