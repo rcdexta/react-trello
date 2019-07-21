@@ -5,8 +5,7 @@ cache:
 notifications:
   email: true
 node_js:
-  - '10'
-  - '8'
+  - '10.16.0'
 after_success:
   - npm run semantic-release
 branches:
