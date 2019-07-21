@@ -7,7 +7,9 @@ import Board from './controllers/Board'
 import Lane from './controllers/Lane'
 import deprecationWarnings from './helpers/deprecationWarnings'
 import DefaultComponents from './components'
-import locales from 'locales'
+import locales from './locales'
+
+import widgets from './widgets'
 
 import createTranslate from './helpers/createTranslate'
 
@@ -18,7 +20,8 @@ export {
   Board,
   Lane,
   createTranslate,
-  locales
+  locales,
+  widgets
 }
 
 export { DefaultComponents as components }

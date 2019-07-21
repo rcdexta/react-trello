@@ -1,15 +1,33 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [Unreleased]
+
+## [2.3.0-alpha.1] - 2019-07-15
+
+### Added
+
+* Add `editLaneTitle` and `onLaneUpdate` props (availability to inline edit lane
+  title)
+
+### Fixes
+
+* #201 Fixed Warning: Failed prop type by replacing `react-popover` with
+    `react-popopo`
+
+### Improvements
+
+* Removed `react-popover`'s CSS classes. 
 
 ## [2.2.0-alpha.1] - 2019-07-01
 
 ### Added
 
+* Availability to hide Add Card button for specific lane
 * Internationalization support (property `t` and `lang`)
 * Russian translation
 * Dependency Injection mechanisim for all components customization 

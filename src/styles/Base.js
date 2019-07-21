@@ -1,59 +1,15 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { css, createGlobalStyle } from 'styled-components'
+
+import {
+  PopoverContainer,
+  PopoverContent,
+  PopoverTrigger
+} from 'react-popopo'
 
 export const GlobalStyle = createGlobalStyle`
-
-  .popover {
-  position: absolute;
-    right: 10px;
-   }
-  .popover .popover__content {
-    visibility: hidden;
-    margin-top: -5px;
-    opacity: 0;
-    position: absolute;
-    z-index: 10;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease 0ms;
-    border-radius: 3px;
-    min-width: 7em;
-    flex-flow: column nowrap;
-    background-color: #fff;
-    color: #000;
-    padding: 5px; }
-    .popover .popover__content::before {
-      content: "";
-      position: absolute;
-      background: transparent none repeat scroll 0 0;
-      border: 6px solid transparent;
-      transition: all 0.3s ease 0ms;
-      left: 50%; }
-  .popover.popover--bottom {
-    flex-flow: column nowrap; }
-    .popover.popover--bottom .popover__content {
-      left: 50%;
-      transform: translateX(-50%); }
-
-  .popover.popover--active .popover__content {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 100ms; }
-  .popover[class*="menu"] .popover__content {
-    border-radius: 3px;
-    min-width: 7em;
-    flex-flow: column nowrap;
-    color: #000; }
-    .popover[class*="menu"] .popover__content a {
-      color: rgba(255, 255, 255, 0.56);
-      padding: .5em 1em;
-      margin: 0;
-      text-decoration: none; }
-      .popover[class*="menu"] .popover__content a:hover {
-        background-color: #00bcd4 !important;
-        color: #37474F; }
-
-
   .comPlainTextContentEditable {
     -webkit-user-modify: read-write-plaintext-only;
+    cursor: text;
   }
 
   .comPlainTextContentEditable--has-placeholder::before {
@@ -82,6 +38,48 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 32px;
     width: 32px;
+  }
+`
+
+export const CustomPopoverContainer = styled(PopoverContainer)`
+  position: absolute;
+  right: 10px;
+  flex-flow: column nowrap;
+`
+
+export const CustomPopoverContent = styled(PopoverContent)`
+  visibility: hidden;
+  margin-top: -5px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0ms;
+  border-radius: 3px;
+  min-width: 7em;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  ${props => props.active && `
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 100ms;
+  `}
+  &::before {
+    visibility: hidden;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.56);
+    padding: .5em 1em;
+    margin: 0;
+    text-decoration: none;
+    &:hover {
+      background-color: #00bcd4 !important;
+      color: #37474F;
+    }
   }
 `
 
@@ -116,8 +114,16 @@ export const Section = styled.section`
 `
 
 export const LaneHeader = styled(Header)`
-  padding: 0px 5px;
   margin-bottom: 0px;
+  ${props => props.editLaneTitle && css`
+    padding: 0px;
+    line-height: 30px;
+    `
+  }
+  ${props => !props.editLaneTitle && css`
+    padding: 0px 5px;
+    `
+  }
 `
 
 export const LaneFooter = styled.div`
@@ -254,4 +260,32 @@ export const NewLaneButtons = styled.div`
 
 export const CardForm = styled.div`
   background-color: #e3e3e3;
+`
+
+export const InlineInput = styled.textarea`
+  overflow-x: hidden; /* for Firefox (issue #5) */
+  word-wrap: break-word;
+  min-height: 28px;
+  max-height: 112px; /* optional, but recommended */
+  resize: none;
+  width: 100%;
+  height: 28px;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 0;
+  padding: 4px 8px;
+  outline: 0;
+  ${props => props.border && css`
+    &:focus {
+      box-shadow: inset 0 0 0 2px #0079bf;
+    }
+    `
+  }
+  &:focus {
+    background-color: white;
+  }
 `

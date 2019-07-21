@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import Container from 'dnd/Container'
-import Draggable from 'dnd/Draggable'
+import Container from 'rt/dnd/Container'
+import Draggable from 'rt/dnd/Draggable'
 import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
-import { PopoverWrapper } from '@terebentina/react-popover'
+import { PopoverWrapper } from 'react-popopo'
 
-import * as boardActions from 'actions/BoardActions'
-import * as laneActions from 'actions/LaneActions'
+import * as boardActions from 'rt/actions/BoardActions'
+import * as laneActions from 'rt/actions/LaneActions'
 
 class BoardContainer extends Component {
   state = {
@@ -76,6 +76,8 @@ class BoardContainer extends Component {
             })
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
+          case 'UPDATE_LANE':
+            return actions.updateLane(event.lane)
         }
       }
     }
@@ -119,9 +121,11 @@ class BoardContainer extends Component {
       onLaneClick,
       onLaneAdd,
       onLaneDelete,
+      onLaneUpdate,
       editable,
       canAddLanes,
       laneStyle,
+      onCardMoveAcrossLanes,
       t,
       ...otherProps
     } = this.props
@@ -132,6 +136,7 @@ class BoardContainer extends Component {
       'onCardMoveAcrossLanes',
       'onLaneScroll',
       'onLaneDelete',
+      'onLaneUpdate',
       'onCardClick',
       'onCardDelete',
       'onCardAdd',
@@ -141,13 +146,13 @@ class BoardContainer extends Component {
       'laneDraggable',
       'cardDraggable',
       'collapsibleLanes',
-      'editable',
       'canAddLanes',
       'hideCardDeleteIcon',
       'tagStyle',
       'handleDragStart',
       'handleDragEnd',
       'cardDragClass',
+      'editLaneTitle',
       't'
     ])
 
@@ -177,6 +182,7 @@ class BoardContainer extends Component {
                   style={laneStyle || lane.style || {}}
                   labelStyle={lane.labelStyle || {}}
                   cardStyle={this.props.cardStyle || lane.cardStyle}
+                  editable={editable && !lane.disallowAddingCard}
                   {...otherProps}
                   {...passthroughProps}
                 />
@@ -212,6 +218,7 @@ BoardContainer.propTypes = {
   onLaneAdd: PropTypes.func,
   onLaneDelete: PropTypes.func,
   onLaneClick: PropTypes.func,
+  onLaneUpdate: PropTypes.func,
   laneSortFunction: PropTypes.func,
   draggable: PropTypes.bool,
   collapsibleLanes: PropTypes.bool,
@@ -242,6 +249,7 @@ BoardContainer.defaultProps = {
   onLaneAdd: () => {},
   onLaneDelete: () => {},
   onCardMoveAcrossLanes: () => {},
+  onLaneUpdate: () => {},
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,

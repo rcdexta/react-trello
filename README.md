@@ -16,13 +16,14 @@ Pluggable components to add a trello-like kanban board to your application
 
 ![alt tag](https://raw.githubusercontent.com/rcdexta/react-trello/master/react-trello.gif)
 
-* responsive and extensible
-* easily pluggable into existing react application
-* supports pagination when scrolling individual lanes
-* drag-and-drop on cards and lanes (compatible with touch devices)
-* edit functionality to add/delete cards
+* Responsive and extensible
+* Easily pluggable into existing react application
+* Supports pagination when scrolling individual lanes
+* Drag-And-Drop on cards and lanes (compatible with touch devices)
+* Edit functionality to add/delete cards
 * Custom elements to define lane and card appearance
-* event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* Event bus for triggering events externally (e.g.: adding or removing cards based on events coming from backend)
+* Inline edit lane's title
 
 ## Getting Started
 
@@ -37,6 +38,7 @@ or
 ```bash
 $ yarn add react-trello
 ```
+
 
 ## Usage
 
@@ -83,6 +85,18 @@ Refer to storybook for detailed examples: https://rcdexta.github.io/react-trello
 
 Also refer to the sample project that uses react-trello as illustration: https://github.com/rcdexta/react-trello-example
 
+## Use edge version of project (current master branch)
+
+```bash
+$ yarn add rcdexta/react-trello
+```
+
+and
+
+```javascript
+import Board from 'react-trello/src'
+```
+
 ## Upgrade
 
 Breaking changes. Since version 2.2 these properties are removed: `addLaneTitle`, `addCardLink`, `customLaneHeader`, `newCardTemplate`, `newLaneTemplate`, 
@@ -111,6 +125,7 @@ This is the container component that encapsulates the lanes and cards
 | editable            | boolean  | Makes the entire board editable. Allow cards to be added or deleted Default: false                                             |
 | canAddLanes         | boolean  | Allows new lanes to be added to the board.                          Default: false                                             |
 | hideCardDeleteIcon  | boolean  | Disable showing the delete icon to the top right corner of the card (when board is editable)                                   |
+| editLaneTitle     | boolean  | Allow inline lane title edit                                        Default: false                                             |
 
 
 ### Callbacks and handlers
@@ -128,7 +143,8 @@ This is the container component that encapsulates the lanes and cards
 | onCardMoveAcrossLanes        | function | Called when a card is moved across lanes `onCardMoveAcrossLanes(fromLaneId, toLaneId, cardId, index)`                                                                  |
 | onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
 | onLaneDelete        | function | Called when a lane is deleted `onLaneDelete(laneId)`                                                                     |
-| onLaneClick         | function | Called when a lane is clicked: `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
+| onLaneUpdate        | function | Called when a lane attributes are updated `onLaneUpdate(laneId, data)`                                                                     |
+| onLaneClick         | function | Called when a lane is clicked `onLaneClick(laneId)`. Card clicks are not propagated to lane click event                       |
 | onLaneScroll        | function | Called when a lane is scrolled to the end: `onLaneScroll(requestedPage, laneId)`                                               |
 
 ### Other functions
@@ -145,7 +161,7 @@ This is the container component that encapsulates the lanes and cards
 | lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
 | t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
 
-### Style customisation
+### Style customization
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -156,6 +172,18 @@ This is the container component that encapsulates the lanes and cards
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
 | components          | object   | Map of customised components. [List](src/components/index.js) of available. |
+
+
+### Lane specific props
+
+| Name                | Type     | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| id                  | string   | ID of lane                                                                                                                     |
+| style               | object   | Pass CSS style props to lane container                                                                                         |
+| labelStyle          | object   | Pass CSS style props of label                                                                                                  |
+| cardStyle           | object   | Pass CSS style props for cards in this lane                                                                                    |
+| disallowAddingCard  | boolean  | Disallow adding card button in this lane (default: false)                                                                      |
+
 
 Refer to `stories` folder for examples on many more options for customization.
 
@@ -203,7 +231,7 @@ const data = {
 
 Storybook example - [stories/Styling.story.js](stories/Styling.story.js)
 
-### 3. Completely customize the look-and-feel by passing `components` property
+### 3. Completely customize the look-and-feel by using components dependency injection.
 
 You can override any of used components (ether one or completery all)
 
