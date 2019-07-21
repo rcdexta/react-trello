@@ -21067,14 +21067,14 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   flex-flow: column nowrap;
 }
 
-.c5 .c25 {
+.c5 .c7 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c5 .c25::before {
+.c5 .c7::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -21083,7 +21083,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   left: 50%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -21122,7 +21122,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   transform: translateX(-50%);
 }
 
-.c7::before {
+.c8::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -21131,11 +21131,11 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c7::before {
+.c8::before {
   visibility: hidden;
 }
 
-.c7 a {
+.c8 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -21143,7 +21143,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   text-decoration: none;
 }
 
-.c7 a:hover {
+.c8 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -21201,7 +21201,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   padding: 0px 5px;
 }
 
-.c14 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -21239,7 +21239,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   font-size: 13px;
 }
 
-.c16 {
+.c17 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -21251,12 +21251,12 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   min-width: 230px;
 }
 
-.c16:hover {
+.c17:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c17 {
+.c18 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -21274,7 +21274,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   color: #000;
 }
 
-.c18 {
+.c19 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -21285,7 +21285,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   font-size: 14px;
 }
 
-.c19 {
+.c20 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -21293,13 +21293,13 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   font-size: 10px;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c22 {
+.c23 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -21311,13 +21311,13 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   cursor: pointer;
 }
 
-.c22:hover {
+.c23:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c23 {
+.c24 {
   background-color: #2b6aa3;
   border-radius: 3px;
   margin: 5px;
@@ -21334,7 +21334,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   width: 200px;
 }
 
-.c10 {
+.c11 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -21342,7 +21342,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -21357,7 +21357,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -21374,7 +21374,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   opacity: 0;
 }
 
-.c15:hover .c20 {
+.c16:hover .c21 {
   opacity: 1;
 }
 
@@ -21396,19 +21396,19 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c12 {
+.c13 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -21419,12 +21419,12 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   text-decoration: none;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -21439,7 +21439,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   z-index: 1;
 }
 
-.c24 {
+.c25 {
   background: #2b6aa3;
   border: none;
   color: #fff;
@@ -21563,7 +21563,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                 className="c5"
               >
                 <a
-                  className=""
+                  className="fePDys"
                   href=""
                   onClick={[Function]}
                 >
@@ -21574,31 +21574,31 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                   </button>
                 </a>
                 <div
-                  className="c7"
+                  className="c7 c8"
                 >
                   <div
-                    className="c8"
+                    className="c9"
                   >
                     <span
-                      className="c9"
+                      className="c10"
                     >
                       Lane actions
                     </span>
                     <div
-                      className="c10"
+                      className="c11"
                     >
                       <button
-                        className="c11"
+                        className="c12"
                       >
                         ✖
                       </button>
                     </div>
                   </div>
                   <div
-                    className="c12"
+                    className="c13"
                   >
                     <div
-                      className="c13"
+                      className="c14"
                       onClick={[Function]}
                     >
                       Delete lane
@@ -21608,42 +21608,42 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
               </div>
             </header>
             <div
-              className="c14"
+              className="c15"
             >
               <div>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card1"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Buy milk
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-12-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       2 Gallons of milk at the Deli store
                     </div>
@@ -21651,37 +21651,37 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card2"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Dispose Garbage
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-11-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Sort out recyclable and waste as needed
                     </div>
@@ -21689,37 +21689,37 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card3"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Write Blog
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-10-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Can AI make memes?
                     </div>
@@ -21727,37 +21727,37 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card4"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Pay Rent
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-09-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Transfer to bank account
                     </div>
@@ -21765,7 +21765,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                 </span>
               </div>
               <a
-                className="c22"
+                className="c23"
                 onClick={[Function]}
               >
                 Click to add card
@@ -21776,10 +21776,10 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
       </div>
       <div>
         <section
-          className="c23"
+          className="c24"
         >
           <button
-            className="c24"
+            className="c25"
             onClick={[Function]}
           >
             + Add another lane
@@ -22230,14 +22230,14 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   flex-flow: column nowrap;
 }
 
-.c5 .c23 {
+.c5 .c7 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c5 .c23::before {
+.c5 .c7::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -22246,7 +22246,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   left: 50%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -22285,7 +22285,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   transform: translateX(-50%);
 }
 
-.c7::before {
+.c8::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -22294,11 +22294,11 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c7::before {
+.c8::before {
   visibility: hidden;
 }
 
-.c7 a {
+.c8 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -22306,7 +22306,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   text-decoration: none;
 }
 
-.c7 a:hover {
+.c8 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -22364,7 +22364,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   padding: 0px 5px;
 }
 
-.c14 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -22402,7 +22402,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   font-size: 13px;
 }
 
-.c16 {
+.c17 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -22414,12 +22414,12 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   min-width: 230px;
 }
 
-.c16:hover {
+.c17:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c17 {
+.c18 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22437,7 +22437,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   color: #000;
 }
 
-.c18 {
+.c19 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -22448,7 +22448,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   font-size: 14px;
 }
 
-.c19 {
+.c20 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -22456,13 +22456,13 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   font-size: 10px;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c22 {
+.c23 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -22474,13 +22474,13 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   cursor: pointer;
 }
 
-.c22:hover {
+.c23:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c10 {
+.c11 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -22488,7 +22488,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -22503,7 +22503,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -22520,7 +22520,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   opacity: 0;
 }
 
-.c15:hover .c20 {
+.c16:hover .c21 {
   opacity: 1;
 }
 
@@ -22542,19 +22542,19 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c12 {
+.c13 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -22565,12 +22565,12 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   text-decoration: none;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -22692,7 +22692,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 className="c5"
               >
                 <a
-                  className=""
+                  className="fePDys"
                   href=""
                   onClick={[Function]}
                 >
@@ -22703,31 +22703,31 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                   </button>
                 </a>
                 <div
-                  className="c7"
+                  className="c7 c8"
                 >
                   <div
-                    className="c8"
+                    className="c9"
                   >
                     <span
-                      className="c9"
+                      className="c10"
                     >
                       Lane actions
                     </span>
                     <div
-                      className="c10"
+                      className="c11"
                     >
                       <button
-                        className="c11"
+                        className="c12"
                       >
                         ✖
                       </button>
                     </div>
                   </div>
                   <div
-                    className="c12"
+                    className="c13"
                   >
                     <div
-                      className="c13"
+                      className="c14"
                       onClick={[Function]}
                     >
                       Delete lane
@@ -22737,42 +22737,42 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
               </div>
             </header>
             <div
-              className="c14"
+              className="c15"
             >
               <div>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card1"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Buy milk
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-12-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       2 Gallons of milk at the Deli store
                     </div>
@@ -22780,37 +22780,37 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card2"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Dispose Garbage
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-11-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Sort out recyclable and waste as needed
                     </div>
@@ -22818,37 +22818,37 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card3"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Write Blog
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-10-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Can AI make memes?
                     </div>
@@ -22856,37 +22856,37 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card4"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Pay Rent
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-09-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Transfer to bank account
                     </div>
@@ -22894,7 +22894,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                 </span>
               </div>
               <a
-                className="c22"
+                className="c23"
                 onClick={[Function]}
               >
                 Click to add card
@@ -31506,14 +31506,14 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   flex-flow: column nowrap;
 }
 
-.c5 .c25 {
+.c5 .c7 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c5 .c25::before {
+.c5 .c7::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -31522,7 +31522,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   left: 50%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -31561,7 +31561,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   transform: translateX(-50%);
 }
 
-.c7::before {
+.c8::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -31570,11 +31570,11 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c7::before {
+.c8::before {
   visibility: hidden;
 }
 
-.c7 a {
+.c8 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -31582,7 +31582,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   text-decoration: none;
 }
 
-.c7 a:hover {
+.c8 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -31640,7 +31640,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   padding: 0px 5px;
 }
 
-.c14 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -31678,7 +31678,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   font-size: 13px;
 }
 
-.c16 {
+.c17 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -31690,12 +31690,12 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   min-width: 230px;
 }
 
-.c16:hover {
+.c17:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c17 {
+.c18 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -31713,7 +31713,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   color: #000;
 }
 
-.c18 {
+.c19 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -31724,7 +31724,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   font-size: 14px;
 }
 
-.c19 {
+.c20 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -31732,13 +31732,13 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   font-size: 10px;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c22 {
+.c23 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -31750,13 +31750,13 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   cursor: pointer;
 }
 
-.c22:hover {
+.c23:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c23 {
+.c24 {
   background-color: #2b6aa3;
   border-radius: 3px;
   margin: 5px;
@@ -31773,7 +31773,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   width: 200px;
 }
 
-.c10 {
+.c11 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -31781,7 +31781,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -31796,7 +31796,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -31813,7 +31813,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   opacity: 0;
 }
 
-.c15:hover .c20 {
+.c16:hover .c21 {
   opacity: 1;
 }
 
@@ -31835,19 +31835,19 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c12 {
+.c13 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -31858,12 +31858,12 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   text-decoration: none;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -31878,7 +31878,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   z-index: 1;
 }
 
-.c24 {
+.c25 {
   background: #2b6aa3;
   border: none;
   color: #fff;
@@ -32002,7 +32002,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 className="c5"
               >
                 <a
-                  className=""
+                  className="fePDys"
                   href=""
                   onClick={[Function]}
                 >
@@ -32013,31 +32013,31 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                   </button>
                 </a>
                 <div
-                  className="c7"
+                  className="c7 c8"
                 >
                   <div
-                    className="c8"
+                    className="c9"
                   >
                     <span
-                      className="c9"
+                      className="c10"
                     >
                       Lane actions
                     </span>
                     <div
-                      className="c10"
+                      className="c11"
                     >
                       <button
-                        className="c11"
+                        className="c12"
                       >
                         ✖
                       </button>
                     </div>
                   </div>
                   <div
-                    className="c12"
+                    className="c13"
                   >
                     <div
-                      className="c13"
+                      className="c14"
                       onClick={[Function]}
                     >
                       Delete lane
@@ -32047,42 +32047,42 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
               </div>
             </header>
             <div
-              className="c14"
+              className="c15"
             >
               <div>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card1"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Buy milk
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-12-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       2 Gallons of milk at the Deli store
                     </div>
@@ -32090,37 +32090,37 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card2"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Dispose Garbage
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-11-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Sort out recyclable and waste as needed
                     </div>
@@ -32128,37 +32128,37 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card3"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Write Blog
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-10-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Can AI make memes?
                     </div>
@@ -32166,37 +32166,37 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c15 c16"
+                    className="react-trello-card c16 c17"
                     data-id="Card4"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c17"
+                      className="c18"
                     >
                       <span
-                        className="c18"
+                        className="c19"
                       >
                         Pay Rent
                       </span>
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         2017-09-01
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                         onClick={[Function]}
                       >
                         <button
-                          className="c20"
+                          className="c21"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c21"
+                      className="c22"
                     >
                       Transfer to bank account
                     </div>
@@ -32204,7 +32204,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                 </span>
               </div>
               <a
-                className="c22"
+                className="c23"
                 onClick={[Function]}
               >
                 Click to add card
@@ -32215,10 +32215,10 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
       </div>
       <div>
         <section
-          className="c23"
+          className="c24"
         >
           <button
-            className="c24"
+            className="c25"
             onClick={[Function]}
           >
             + Add another lane
@@ -36451,14 +36451,14 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   flex-flow: column nowrap;
 }
 
-.c6 .c26 {
+.c6 .c8 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c6 .c26::before {
+.c6 .c8::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -36467,7 +36467,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   left: 50%;
 }
 
-.c8 {
+.c9 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -36506,7 +36506,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   transform: translateX(-50%);
 }
 
-.c8::before {
+.c9::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -36515,11 +36515,11 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c8::before {
+.c9::before {
   visibility: hidden;
 }
 
-.c8 a {
+.c9 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -36527,7 +36527,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   text-decoration: none;
 }
 
-.c8 a:hover {
+.c9 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -36586,7 +36586,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   line-height: 30px;
 }
 
-.c15 {
+.c16 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -36624,7 +36624,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   font-size: 13px;
 }
 
-.c17 {
+.c18 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -36636,12 +36636,12 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   min-width: 230px;
 }
 
-.c17:hover {
+.c18:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c18 {
+.c19 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -36659,7 +36659,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   color: #000;
 }
 
-.c19 {
+.c20 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -36670,7 +36670,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   font-size: 14px;
 }
 
-.c20 {
+.c21 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -36678,13 +36678,13 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   font-size: 10px;
 }
 
-.c22 {
+.c23 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c23 {
+.c24 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -36696,13 +36696,13 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   cursor: pointer;
 }
 
-.c23:hover {
+.c24:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c24 {
+.c25 {
   background-color: #2b6aa3;
   border-radius: 3px;
   margin: 5px;
@@ -36746,7 +36746,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   background-color: white;
 }
 
-.c11 {
+.c12 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -36754,7 +36754,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   cursor: pointer;
 }
 
-.c12 {
+.c13 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -36769,7 +36769,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   cursor: pointer;
 }
 
-.c21 {
+.c22 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -36786,7 +36786,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   opacity: 0;
 }
 
-.c16:hover .c21 {
+.c17:hover .c22 {
   opacity: 1;
 }
 
@@ -36808,19 +36808,19 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   cursor: pointer;
 }
 
-.c9 {
+.c10 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c13 {
+.c14 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c14 {
+.c15 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -36831,12 +36831,12 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   text-decoration: none;
 }
 
-.c14:hover {
+.c15:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c10 {
+.c11 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -36851,7 +36851,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
   z-index: 1;
 }
 
-.c25 {
+.c26 {
   background: #2b6aa3;
   border: none;
   color: #fff;
@@ -36989,7 +36989,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 className="c6"
               >
                 <a
-                  className=""
+                  className="fePDys"
                   href=""
                   onClick={[Function]}
                 >
@@ -37000,31 +37000,31 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                   </button>
                 </a>
                 <div
-                  className="c8"
+                  className="c8 c9"
                 >
                   <div
-                    className="c9"
+                    className="c10"
                   >
                     <span
-                      className="c10"
+                      className="c11"
                     >
                       Lane actions
                     </span>
                     <div
-                      className="c11"
+                      className="c12"
                     >
                       <button
-                        className="c12"
+                        className="c13"
                       >
                         ✖
                       </button>
                     </div>
                   </div>
                   <div
-                    className="c13"
+                    className="c14"
                   >
                     <div
-                      className="c14"
+                      className="c15"
                       onClick={[Function]}
                     >
                       Delete lane
@@ -37034,42 +37034,42 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
               </div>
             </header>
             <div
-              className="c15"
+              className="c16"
             >
               <div>
                 <span>
                   <article
-                    className="react-trello-card c16 c17"
+                    className="react-trello-card c17 c18"
                     data-id="Card1"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c18"
+                      className="c19"
                     >
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         Buy milk
                       </span>
                       <span
-                        className="c20"
+                        className="c21"
                       >
                         2017-12-01
                       </span>
                       <div
-                        className="c11"
+                        className="c12"
                         onClick={[Function]}
                       >
                         <button
-                          className="c21"
+                          className="c22"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c22"
+                      className="c23"
                     >
                       2 Gallons of milk at the Deli store
                     </div>
@@ -37077,37 +37077,37 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c16 c17"
+                    className="react-trello-card c17 c18"
                     data-id="Card2"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c18"
+                      className="c19"
                     >
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         Dispose Garbage
                       </span>
                       <span
-                        className="c20"
+                        className="c21"
                       >
                         2017-11-01
                       </span>
                       <div
-                        className="c11"
+                        className="c12"
                         onClick={[Function]}
                       >
                         <button
-                          className="c21"
+                          className="c22"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c22"
+                      className="c23"
                     >
                       Sort out recyclable and waste as needed
                     </div>
@@ -37115,37 +37115,37 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c16 c17"
+                    className="react-trello-card c17 c18"
                     data-id="Card3"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c18"
+                      className="c19"
                     >
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         Write Blog
                       </span>
                       <span
-                        className="c20"
+                        className="c21"
                       >
                         2017-10-01
                       </span>
                       <div
-                        className="c11"
+                        className="c12"
                         onClick={[Function]}
                       >
                         <button
-                          className="c21"
+                          className="c22"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c22"
+                      className="c23"
                     >
                       Can AI make memes?
                     </div>
@@ -37153,37 +37153,37 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 </span>
                 <span>
                   <article
-                    className="react-trello-card c16 c17"
+                    className="react-trello-card c17 c18"
                     data-id="Card4"
                     onClick={[Function]}
                     style={Object {}}
                   >
                     <header
-                      className="c18"
+                      className="c19"
                     >
                       <span
-                        className="c19"
+                        className="c20"
                       >
                         Pay Rent
                       </span>
                       <span
-                        className="c20"
+                        className="c21"
                       >
                         2017-09-01
                       </span>
                       <div
-                        className="c11"
+                        className="c12"
                         onClick={[Function]}
                       >
                         <button
-                          className="c21"
+                          className="c22"
                         >
                           ✖
                         </button>
                       </div>
                     </header>
                     <div
-                      className="c22"
+                      className="c23"
                     >
                       Transfer to bank account
                     </div>
@@ -37191,7 +37191,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                 </span>
               </div>
               <a
-                className="c23"
+                className="c24"
                 onClick={[Function]}
               >
                 Click to add card
@@ -37202,10 +37202,10 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
       </div>
       <div>
         <section
-          className="c24"
+          className="c25"
         >
           <button
-            className="c25"
+            className="c26"
             onClick={[Function]}
           >
             + Add another lane
@@ -37693,14 +37693,14 @@ exports[`Storyshots I18n Custom texts 1`] = `
   flex-flow: column nowrap;
 }
 
-.c5 .c25 {
+.c5 .c7 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c5 .c25::before {
+.c5 .c7::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -37709,7 +37709,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   left: 50%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -37748,7 +37748,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   transform: translateX(-50%);
 }
 
-.c7::before {
+.c8::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -37757,11 +37757,11 @@ exports[`Storyshots I18n Custom texts 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c7::before {
+.c8::before {
   visibility: hidden;
 }
 
-.c7 a {
+.c8 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -37769,7 +37769,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   text-decoration: none;
 }
 
-.c7 a:hover {
+.c8 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -37827,7 +37827,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   padding: 0px 5px;
 }
 
-.c14 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -37865,7 +37865,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   font-size: 13px;
 }
 
-.c16 {
+.c17 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -37877,12 +37877,12 @@ exports[`Storyshots I18n Custom texts 1`] = `
   min-width: 230px;
 }
 
-.c16:hover {
+.c17:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c17 {
+.c18 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -37900,7 +37900,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   color: #000;
 }
 
-.c18 {
+.c19 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -37911,7 +37911,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   font-size: 14px;
 }
 
-.c19 {
+.c20 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -37919,13 +37919,13 @@ exports[`Storyshots I18n Custom texts 1`] = `
   font-size: 10px;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c22 {
+.c23 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -37937,13 +37937,13 @@ exports[`Storyshots I18n Custom texts 1`] = `
   cursor: pointer;
 }
 
-.c22:hover {
+.c23:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c23 {
+.c24 {
   background-color: #2b6aa3;
   border-radius: 3px;
   margin: 5px;
@@ -37960,7 +37960,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   width: 200px;
 }
 
-.c10 {
+.c11 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -37968,7 +37968,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -37983,7 +37983,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -38000,7 +38000,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   opacity: 0;
 }
 
-.c15:hover .c20 {
+.c16:hover .c21 {
   opacity: 1;
 }
 
@@ -38022,19 +38022,19 @@ exports[`Storyshots I18n Custom texts 1`] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c12 {
+.c13 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -38045,12 +38045,12 @@ exports[`Storyshots I18n Custom texts 1`] = `
   text-decoration: none;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -38065,7 +38065,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   z-index: 1;
 }
 
-.c24 {
+.c25 {
   background: #2b6aa3;
   border: none;
   color: #fff;
@@ -38192,7 +38192,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                   className="c5"
                 >
                   <a
-                    className=""
+                    className="fePDys"
                     href=""
                     onClick={[Function]}
                   >
@@ -38203,31 +38203,31 @@ exports[`Storyshots I18n Custom texts 1`] = `
                     </button>
                   </a>
                   <div
-                    className="c7"
+                    className="c7 c8"
                   >
                     <div
-                      className="c8"
+                      className="c9"
                     >
                       <span
-                        className="c9"
+                        className="c10"
                       >
                         Lane actions
                       </span>
                       <div
-                        className="c10"
+                        className="c11"
                       >
                         <button
-                          className="c11"
+                          className="c12"
                         >
                           ✖
                         </button>
                       </div>
                     </div>
                     <div
-                      className="c12"
+                      className="c13"
                     >
                       <div
-                        className="c13"
+                        className="c14"
                         onClick={[Function]}
                       >
                         Delete lane
@@ -38237,44 +38237,44 @@ exports[`Storyshots I18n Custom texts 1`] = `
                 </div>
               </header>
               <div
-                className="c14"
+                className="c15"
               >
                 <div>
                   <div
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-card c15 c16"
+                      className="react-trello-card c16 c17"
                       data-id="Card1"
                       onClick={[Function]}
                       style={Object {}}
                     >
                       <header
-                        className="c17"
+                        className="c18"
                       >
                         <span
-                          className="c18"
+                          className="c19"
                         >
                           Buy milk
                         </span>
                         <span
-                          className="c19"
+                          className="c20"
                         >
                           2017-12-01
                         </span>
                         <div
-                          className="c10"
+                          className="c11"
                           onClick={[Function]}
                         >
                           <button
-                            className="c20"
+                            className="c21"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        className="c21"
+                        className="c22"
                       >
                         2 Gallons of milk at the Deli store
                       </div>
@@ -38284,37 +38284,37 @@ exports[`Storyshots I18n Custom texts 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-card c15 c16"
+                      className="react-trello-card c16 c17"
                       data-id="Card2"
                       onClick={[Function]}
                       style={Object {}}
                     >
                       <header
-                        className="c17"
+                        className="c18"
                       >
                         <span
-                          className="c18"
+                          className="c19"
                         >
                           Dispose Garbage
                         </span>
                         <span
-                          className="c19"
+                          className="c20"
                         >
                           2017-11-01
                         </span>
                         <div
-                          className="c10"
+                          className="c11"
                           onClick={[Function]}
                         >
                           <button
-                            className="c20"
+                            className="c21"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        className="c21"
+                        className="c22"
                       >
                         Sort out recyclable and waste as needed
                       </div>
@@ -38324,37 +38324,37 @@ exports[`Storyshots I18n Custom texts 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-card c15 c16"
+                      className="react-trello-card c16 c17"
                       data-id="Card3"
                       onClick={[Function]}
                       style={Object {}}
                     >
                       <header
-                        className="c17"
+                        className="c18"
                       >
                         <span
-                          className="c18"
+                          className="c19"
                         >
                           Write Blog
                         </span>
                         <span
-                          className="c19"
+                          className="c20"
                         >
                           2017-10-01
                         </span>
                         <div
-                          className="c10"
+                          className="c11"
                           onClick={[Function]}
                         >
                           <button
-                            className="c20"
+                            className="c21"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        className="c21"
+                        className="c22"
                       >
                         Can AI make memes?
                       </div>
@@ -38364,37 +38364,37 @@ exports[`Storyshots I18n Custom texts 1`] = `
                     className="smooth-dnd-draggable-wrapper"
                   >
                     <article
-                      className="react-trello-card c15 c16"
+                      className="react-trello-card c16 c17"
                       data-id="Card4"
                       onClick={[Function]}
                       style={Object {}}
                     >
                       <header
-                        className="c17"
+                        className="c18"
                       >
                         <span
-                          className="c18"
+                          className="c19"
                         >
                           Pay Rent
                         </span>
                         <span
-                          className="c19"
+                          className="c20"
                         >
                           2017-09-01
                         </span>
                         <div
-                          className="c10"
+                          className="c11"
                           onClick={[Function]}
                         >
                           <button
-                            className="c20"
+                            className="c21"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        className="c21"
+                        className="c22"
                       >
                         Transfer to bank account
                       </div>
@@ -38402,7 +38402,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                   </div>
                 </div>
                 <a
-                  className="c22"
+                  className="c23"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -38414,10 +38414,10 @@ exports[`Storyshots I18n Custom texts 1`] = `
       </div>
       <div>
         <section
-          className="c23"
+          className="c24"
         >
           <button
-            className="c24"
+            className="c25"
             onClick={[Function]}
           >
             NEW LANE
@@ -40462,14 +40462,14 @@ exports[`Storyshots I18n Using i18next 1`] = `
   flex-flow: column nowrap;
 }
 
-.c5 .c25 {
+.c5 .c7 {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(6px);
   -ms-transform: translateX(-50%) translateY(6px);
   transform: translateX(-50%) translateY(6px);
 }
 
-.c5 .c25::before {
+.c5 .c7::before {
   border-bottom-color: #000;
   top: -20px;
   -webkit-transform: translateX(-50%) translateY(8px);
@@ -40478,7 +40478,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   left: 50%;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   position: absolute;
   z-index: 10;
@@ -40517,7 +40517,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   transform: translateX(-50%);
 }
 
-.c7::before {
+.c8::before {
   content: "";
   position: absolute;
   background: transparent none repeat scroll 0 0;
@@ -40526,11 +40526,11 @@ exports[`Storyshots I18n Using i18next 1`] = `
   transition: all 0.3s ease 0ms;
 }
 
-.c7::before {
+.c8::before {
   visibility: hidden;
 }
 
-.c7 a {
+.c8 a {
   color: rgba(255,255,255,0.56);
   padding: .5em 1em;
   margin: 0;
@@ -40538,7 +40538,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   text-decoration: none;
 }
 
-.c7 a:hover {
+.c8 a:hover {
   background-color: #00bcd4 !important;
   color: #37474F;
 }
@@ -40596,7 +40596,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   padding: 0px 5px;
 }
 
-.c14 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -40634,7 +40634,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   font-size: 13px;
 }
 
-.c16 {
+.c17 {
   border-radius: 3px;
   border-bottom: 1px solid #ccc;
   background-color: #fff;
@@ -40646,12 +40646,12 @@ exports[`Storyshots I18n Using i18next 1`] = `
   min-width: 230px;
 }
 
-.c16:hover {
+.c17:hover {
   background-color: #f0f0f0;
   color: #000;
 }
 
-.c17 {
+.c18 {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -40669,7 +40669,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   color: #000;
 }
 
-.c18 {
+.c19 {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -40680,7 +40680,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   font-size: 14px;
 }
 
-.c19 {
+.c20 {
   width: 30%;
   text-align: right;
   padding-right: 10px;
@@ -40688,13 +40688,13 @@ exports[`Storyshots I18n Using i18next 1`] = `
   font-size: 10px;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c22 {
+.c23 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -40706,13 +40706,13 @@ exports[`Storyshots I18n Using i18next 1`] = `
   cursor: pointer;
 }
 
-.c22:hover {
+.c23:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c23 {
+.c24 {
   background-color: #2b6aa3;
   border-radius: 3px;
   margin: 5px;
@@ -40729,7 +40729,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   width: 200px;
 }
 
-.c10 {
+.c11 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -40737,7 +40737,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   cursor: pointer;
 }
 
-.c11 {
+.c12 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -40752,7 +40752,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   cursor: pointer;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -40769,7 +40769,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   opacity: 0;
 }
 
-.c15:hover .c20 {
+.c16:hover .c21 {
   opacity: 1;
 }
 
@@ -40791,19 +40791,19 @@ exports[`Storyshots I18n Using i18next 1`] = `
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   position: relative;
   margin-bottom: 4px;
   text-align: center;
 }
 
-.c12 {
+.c13 {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 0 12px 12px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   display: block;
   font-weight: 700;
@@ -40814,12 +40814,12 @@ exports[`Storyshots I18n Using i18next 1`] = `
   text-decoration: none;
 }
 
-.c13:hover {
+.c14:hover {
   background-color: #3179BA;
   color: #fff;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   color: #6b808c;
   display: block;
@@ -40834,7 +40834,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   z-index: 1;
 }
 
-.c24 {
+.c25 {
   background: #2b6aa3;
   border: none;
   color: #fff;
@@ -40974,7 +40974,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                     className="c5"
                   >
                     <a
-                      className=""
+                      className="fePDys"
                       href=""
                       onClick={[Function]}
                     >
@@ -40985,31 +40985,31 @@ exports[`Storyshots I18n Using i18next 1`] = `
                       </button>
                     </a>
                     <div
-                      className="c7"
+                      className="c7 c8"
                     >
                       <div
-                        className="c8"
+                        className="c9"
                       >
                         <span
-                          className="c9"
+                          className="c10"
                         >
                           Lane actions
                         </span>
                         <div
-                          className="c10"
+                          className="c11"
                         >
                           <button
-                            className="c11"
+                            className="c12"
                           >
                             ✖
                           </button>
                         </div>
                       </div>
                       <div
-                        className="c12"
+                        className="c13"
                       >
                         <div
-                          className="c13"
+                          className="c14"
                           onClick={[Function]}
                         >
                           Delete lane
@@ -41019,44 +41019,44 @@ exports[`Storyshots I18n Using i18next 1`] = `
                   </div>
                 </header>
                 <div
-                  className="c14"
+                  className="c15"
                 >
                   <div>
                     <div
                       className="smooth-dnd-draggable-wrapper"
                     >
                       <article
-                        className="react-trello-card c15 c16"
+                        className="react-trello-card c16 c17"
                         data-id="Card1"
                         onClick={[Function]}
                         style={Object {}}
                       >
                         <header
-                          className="c17"
+                          className="c18"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             Buy milk
                           </span>
                           <span
-                            className="c19"
+                            className="c20"
                           >
                             2017-12-01
                           </span>
                           <div
-                            className="c10"
+                            className="c11"
                             onClick={[Function]}
                           >
                             <button
-                              className="c20"
+                              className="c21"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          className="c21"
+                          className="c22"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -41066,37 +41066,37 @@ exports[`Storyshots I18n Using i18next 1`] = `
                       className="smooth-dnd-draggable-wrapper"
                     >
                       <article
-                        className="react-trello-card c15 c16"
+                        className="react-trello-card c16 c17"
                         data-id="Card2"
                         onClick={[Function]}
                         style={Object {}}
                       >
                         <header
-                          className="c17"
+                          className="c18"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             Dispose Garbage
                           </span>
                           <span
-                            className="c19"
+                            className="c20"
                           >
                             2017-11-01
                           </span>
                           <div
-                            className="c10"
+                            className="c11"
                             onClick={[Function]}
                           >
                             <button
-                              className="c20"
+                              className="c21"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          className="c21"
+                          className="c22"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -41106,37 +41106,37 @@ exports[`Storyshots I18n Using i18next 1`] = `
                       className="smooth-dnd-draggable-wrapper"
                     >
                       <article
-                        className="react-trello-card c15 c16"
+                        className="react-trello-card c16 c17"
                         data-id="Card3"
                         onClick={[Function]}
                         style={Object {}}
                       >
                         <header
-                          className="c17"
+                          className="c18"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             Write Blog
                           </span>
                           <span
-                            className="c19"
+                            className="c20"
                           >
                             2017-10-01
                           </span>
                           <div
-                            className="c10"
+                            className="c11"
                             onClick={[Function]}
                           >
                             <button
-                              className="c20"
+                              className="c21"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          className="c21"
+                          className="c22"
                         >
                           Can AI make memes?
                         </div>
@@ -41146,37 +41146,37 @@ exports[`Storyshots I18n Using i18next 1`] = `
                       className="smooth-dnd-draggable-wrapper"
                     >
                       <article
-                        className="react-trello-card c15 c16"
+                        className="react-trello-card c16 c17"
                         data-id="Card4"
                         onClick={[Function]}
                         style={Object {}}
                       >
                         <header
-                          className="c17"
+                          className="c18"
                         >
                           <span
-                            className="c18"
+                            className="c19"
                           >
                             Pay Rent
                           </span>
                           <span
-                            className="c19"
+                            className="c20"
                           >
                             2017-09-01
                           </span>
                           <div
-                            className="c10"
+                            className="c11"
                             onClick={[Function]}
                           >
                             <button
-                              className="c20"
+                              className="c21"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          className="c21"
+                          className="c22"
                         >
                           Transfer to bank account
                         </div>
@@ -41184,7 +41184,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
                     </div>
                   </div>
                   <a
-                    className="c22"
+                    className="c23"
                     onClick={[Function]}
                   >
                     Click to add card
@@ -41196,10 +41196,10 @@ exports[`Storyshots I18n Using i18next 1`] = `
         </div>
         <div>
           <section
-            className="c23"
+            className="c24"
           >
             <button
-              className="c24"
+              className="c25"
               onClick={[Function]}
             >
               + Add another lane
