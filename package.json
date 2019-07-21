@@ -93,6 +93,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
+    "jest-styled-components": "^6.3.3",
     "prettier": "1.14.3",
     "pretty-quick": "^1.7.0",
     "react": "^16.8.0",
