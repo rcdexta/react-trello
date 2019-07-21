@@ -347,8 +347,20 @@ Learn how to write stories [here](https://storybook.js.org/basics/writing-storie
 
 ### Maintainers
 
-* [@rcdexta](https://github.com/rcdexta)
-* [@dapi](https://github.com/dapi)
+<table>
+<tr>
+<td align="center">
+<img src="https://avatars1.githubusercontent.com/u/900028?s=460&v=4" width="100px;" alt=""/>
+<br /><sub><b>rcdexta</b></sub></a><br />
+</td>
+
+<td align="center">
+<img src="https://avatars1.githubusercontent.com/u/31139?s=460&v=4" width="100px;" alt=""/>
+<br /><sub><b>dapi</b></sub></a><br />
+</td>
+
+</tr>
+</table>
 
 
 ### License
