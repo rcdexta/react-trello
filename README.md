@@ -3,7 +3,7 @@
 Pluggable components to add a trello-like kanban board to your application
 
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
-[![npm version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
+[![yarn version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 [![bundlephobia.com](https://img.shields.io/bundlephobia/minzip/react-trello.svg)](https://bundlephobia.com/result?p=react-trello)
 
 #### Basic Demo
@@ -27,10 +27,10 @@ Pluggable components to add a trello-like kanban board to your application
 
 ## Getting Started
 
-Install using npm or yarn
+Install using yarn or yarn
 
 ```bash
-$ npm install --save react-trello
+$ yarn install --save react-trello
 ```
 
 or
@@ -312,12 +312,6 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * Safari 4.0 or above
 * Microsoft Edge 15 or above
 
-## Feature Wishlist
-
-* the prop `onDataChange` is a catch all callback that returns the entire board data when anything changes on the board. Micro-events like when a card is added or re-arranged should be possible too
-
-Check the Milestones for this project to track when the above features will be implemented.
-
 ## Logging
 
 Pass environment variable `REDUX_LOGGING` as true to enable Redux logging in any environment
@@ -332,16 +326,16 @@ yarn run storybook
 
 ### Scripts
 
-1.  `npm run lint` : Lint all js files
-2.  `npm run lintfix` : fix linting errors of all js files
-3.  `npm run semantic-release` : make a release. Leave it for CI to do.
-4.  `npm run storybook`: Start developing by using storybook
-5.  `npm run test` : Run tests. tests file should be written as `*.test.js` and using ES2015
-6.  `npm run test:watch` : Watch tests while writing
-7.  `npm run test:cover` : Show coverage report of your tests
-8.  `npm run test:report` : Report test coverage to codecov.io. Leave this for CI
-9.  `npm run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
-10. `npm run docs`: create static build of storybook in `docs` directory that can be used for github pages
+1.  `yarn run lint` : Lint all js files
+2.  `yarn run lintfix` : fix linting errors of all js files
+3.  `yarn run semantic-release` : make a release. Leave it for CI to do.
+4.  `yarn run storybook`: Start developing by using storybook
+5.  `yarn run test` : Run tests. tests file should be written as `*.test.js` and using ES2015
+6.  `yarn run test:watch` : Watch tests while writing
+7.  `yarn run test:cover` : Show coverage report of your tests
+8.  `yarn run test:report` : Report test coverage to codecov.io. Leave this for CI
+9.  `yarn run build`: transpile all ES6 component files into ES5(commonjs) and put it in `dist` directory
+10. `yarn run docs`: create static build of storybook in `docs` directory that can be used for github pages
 
 Learn how to write stories [here](https://storybook.js.org/basics/writing-stories/)
 
