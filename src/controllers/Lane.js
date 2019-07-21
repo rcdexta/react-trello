@@ -160,6 +160,7 @@ class Lane extends Component {
           onClick={e => this.handleCardClick(e, card)}
           showDeleteButton={!hideCardDeleteIcon}
           tagStyle={tagStyle}
+          cardDraggable={draggable && cardDraggable}
           {...card}
         />
       )
@@ -202,13 +203,13 @@ class Lane extends Component {
   }
 
   renderHeader = () => {
-    const { components } = this.props
+    const { components, draggable, laneDraggable } = this.props
     const pickedProps = pick(
       this.props,
       ['id','label','title','titleStyle','cards', 'labelStyle','t','editLaneTitle','canAddLanes']
     )
     return (
-      <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>
+      <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle} laneDraggable={draggable && laneDraggable}/>
     )
   }
 

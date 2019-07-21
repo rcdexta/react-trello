@@ -31,6 +31,7 @@ class Card extends Component {
       label,
       description,
       tags,
+      cardDraggable
     } = this.props
 
     return (
@@ -41,7 +42,7 @@ class Card extends Component {
         className={className}
       >
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle draggable={cardDraggable}>{title}</CardTitle>
           <CardRightContent>{label}</CardRightContent>
           {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
         </CardHeader>
