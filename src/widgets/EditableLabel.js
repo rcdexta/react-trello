@@ -53,6 +53,7 @@ class EditableLabel extends React.Component {
   }
 
   render() {
+    const placeholder = this.props.value.length > 0 ? false : this.props.placeholder;
     return (
       <div
         ref={ref => (this.refDiv = ref)}
@@ -62,8 +63,8 @@ class EditableLabel extends React.Component {
         onBlur={this.onBlur}
         onInput={this.onTextChange}
         onKeyDown={this.onKeyDown}
-        placeholder={this.props.value.length == 0 ? false : this.props.placeholder}
-        >{this.props.value}</div>
+        placeholder={placeholder}
+      />
     )
   }
 }
