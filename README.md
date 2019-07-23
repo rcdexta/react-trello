@@ -287,12 +287,23 @@ The first event in the above example will move the card `Buy Milk` from the plan
 Pass translation function to provide custom or localized texts:
 
 ```javascript
+
+// If your translation table is flat
+//
+// For example: { 'placeholder.title': 'some text' }
 const customTranslation = (key) => TRANSLATION_TABLE[key]
+
+// If your translation table has nested hashes (provided translations table is it)
+//
+// For example: { 'placeholder': { 'title': 'some text' } }
+import { createTranslate } from 'react-trello'
+const customTranslation = createTranslate(TRANSLATION_TABLE)
 
 <Board t={customTranslation} .../>
 ```
 
 List of available keys - [locales/en/translation.json](https://github.com/rcdexta/react-trello/blob/master/locales/en/translation.json)
+
 
 ### react-i18next example
 
