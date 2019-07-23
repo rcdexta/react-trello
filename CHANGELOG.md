@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Improvements
 
 * Cursor on lane header respects draggable
+* Improve new lane title editor (auto close on click outside)
 
 ## [2.2.0] - 2019-07-20
 
