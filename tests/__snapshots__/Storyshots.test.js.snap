@@ -39153,39 +39153,61 @@ exports[`Storyshots I18n Custom texts 1`] = `
             className="css-r8d96o eyvlbql0"
           >
             <div>
-              <div>
-                <div
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
                   style={
                     Object {
-                      "paddingLeft": 18,
-                      "paddingRight": 3,
+                      "color": "#444",
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &lt;
-                    I18nextProvider
-                  </span>
+                  &lt;
+                  _default
+                </span>
+                <span>
                   <span>
                     <span>
-                       
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
                       <span
                         style={Object {}}
                       >
-                        i18n
-                      </span>
-                      <span>
-                        =
+                        {
                         <span
-                          style={Object {}}
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
                         >
                           {
+                          <span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#666",
+                                }
+                              }
+                            >
+                              lanes
+                            </span>
+                          </span>
+                          : 
                           <span
                             style={
                               Object {
@@ -39193,211 +39215,8 @@ exports[`Storyshots I18n Custom texts 1`] = `
                               }
                             }
                           >
-                            {
+                            [
                             <span>
-                              <span>
-                                <br />
-                                  
-                                  
-                              </span>
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                observers
-                              </span>
-                            </span>
-                            : 
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              }
-                            </span>
-                            ,
-                            <span>
-                              <span>
-                                <br />
-                                  
-                                  
-                              </span>
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                options
-                              </span>
-                            </span>
-                            : 
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  debug
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#a11",
-                                  }
-                                }
-                              >
-                                false
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  initImmediate
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#a11",
-                                  }
-                                }
-                              >
-                                true
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  ns
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                [
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    'translation'
-                                  </span>
-                                </span>
-                                ]
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                …
-                              </span>
-                              <span>
-                                <br />
-                                    
-                              </span>
-                              }
-                            </span>
-                            ,
-                            <span>
-                              <span>
-                                <br />
-                                  
-                                  
-                              </span>
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                services
-                              </span>
-                            </span>
-                            : 
-                            <span
-                              style={
-                                Object {
-                                  "color": "#666",
-                                }
-                              }
-                            >
-                              {
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  logger
-                                </span>
-                              </span>
-                              : 
                               <span
                                 style={
                                   Object {
@@ -39419,7 +39238,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    prefix
+                                    id
                                   </span>
                                 </span>
                                 : 
@@ -39431,7 +39250,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                     }
                                   }
                                 >
-                                  'i18next:'
+                                  'SORTED_LANE'
                                 </span>
                                 ,
                                 <span>
@@ -39447,113 +39266,19 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    logger
+                                    title
                                   </span>
                                 </span>
                                 : 
                                 <span
                                   style={
                                     Object {
-                                      "color": "#666",
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
                                     }
                                   }
                                 >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      type
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    'logger'
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      log
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#170",
-                                      }
-                                    }
-                                  >
-                                    log
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      warn
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#170",
-                                      }
-                                    }
-                                  >
-                                    warn
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                            
-                                  </span>
-                                  }
+                                  'Sorted Lane'
                                 </span>
                                 ,
                                 <span>
@@ -39569,125 +39294,19 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                       }
                                     }
                                   >
-                                    options
+                                    label
                                   </span>
                                 </span>
                                 : 
                                 <span
                                   style={
                                     Object {
-                                      "color": "#666",
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
                                     }
                                   }
                                 >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      debug
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    false
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      initImmediate
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    true
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      ns
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    [
-                                    <span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'translation'
-                                      </span>
-                                    </span>
-                                    ]
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                            
-                                  </span>
-                                  }
+                                  '20/70'
                                 </span>
                                 ,
                                 <span>
@@ -39704,1075 +39323,1068 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                 </span>
                                 }
                               </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  resourceStore
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                {
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    observers
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  }
-                                </span>
-                                ,
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    data
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  <span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      en
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        translation
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      {
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Add another lane
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        '+ Add another lane'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Click to add card
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'Click to add card'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Delete lane
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'Delete lane'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        …
-                                      </span>
-                                      <span>
-                                        <br />
-                                                    
-                                      </span>
-                                      }
-                                    </span>
-                                    }
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      ru
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        translation
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      {
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Add another lane
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        '＋Добавить колонку'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Click to add card
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        '＋Добавить карточку'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        <span
-                                          style={
-                                            Object {
-                                              "color": "#666",
-                                            }
-                                          }
-                                        >
-                                          Delete lane
-                                        </span>
-                                      </span>
-                                      : 
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'Удалить колонку'
-                                      </span>
-                                      ,
-                                      <span>
-                                        <span>
-                                          <br />
-                                                      
-                                            
-                                        </span>
-                                        …
-                                      </span>
-                                      <span>
-                                        <br />
-                                                    
-                                      </span>
-                                      }
-                                    </span>
-                                    }
-                                  </span>
-                                  }
-                                </span>
-                                ,
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    options
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      debug
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    false
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      initImmediate
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    true
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      ns
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    [
-                                    <span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'translation'
-                                      </span>
-                                    </span>
-                                    ]
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                            
-                                  </span>
-                                  }
-                                </span>
-                                }
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  languageUtils
-                                </span>
-                              </span>
-                              : 
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                {
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    options
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      debug
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    false
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      initImmediate
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#a11",
-                                      }
-                                    }
-                                  >
-                                    true
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      ns
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    [
-                                    <span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#22a",
-                                            "wordBreak": "break-word",
-                                          }
-                                        }
-                                      >
-                                        'translation'
-                                      </span>
-                                    </span>
-                                    ]
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                            
-                                  </span>
-                                  }
-                                </span>
-                                ,
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    whitelist
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#a11",
-                                    }
-                                  }
-                                >
-                                  false
-                                </span>
-                                ,
-                                <span>
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    logger
-                                  </span>
-                                </span>
-                                : 
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      prefix
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    'i18next::languageUtils:'
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      logger
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        type
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      'logger'
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        log
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#170",
-                                        }
-                                      }
-                                    >
-                                      log
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        warn
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#170",
-                                        }
-                                      }
-                                    >
-                                      warn
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      …
-                                    </span>
-                                    <span>
-                                      <br />
-                                                
-                                    </span>
-                                    }
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      options
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#666",
-                                      }
-                                    }
-                                  >
-                                    {
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        prefix
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#22a",
-                                          "wordBreak": "break-word",
-                                        }
-                                      }
-                                    >
-                                      'i18next::languageUtils:'
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        debug
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#a11",
-                                        }
-                                      }
-                                    >
-                                      false
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      <span
-                                        style={
-                                          Object {
-                                            "color": "#666",
-                                          }
-                                        }
-                                      >
-                                        initImmediate
-                                      </span>
-                                    </span>
-                                    : 
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#a11",
-                                        }
-                                      }
-                                    >
-                                      true
-                                    </span>
-                                    ,
-                                    <span>
-                                      <span>
-                                        <br />
-                                                  
-                                          
-                                      </span>
-                                      …
-                                    </span>
-                                    <span>
-                                      <br />
-                                                
-                                    </span>
-                                    }
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                              
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                            
-                                  </span>
-                                  }
-                                </span>
-                                }
-                              </span>
-                              ,
-                              <span>
-                                <span>
-                                  <br />
-                                      
-                                    
-                                </span>
-                                …
-                              </span>
-                              <span>
-                                <br />
-                                    
-                              </span>
-                              }
                             </span>
-                            ,
-                            <span>
-                              <span>
-                                <br />
-                                  
-                                  
-                              </span>
-                              …
-                            </span>
-                            <span>
-                              <br />
-                                
-                            </span>
-                            }
+                            ]
                           </span>
                           }
                         </span>
+                        }
                       </span>
-                      
                     </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &gt;
-                  </span>
-                </div>
-                <div
-                  style={
-                    Object {
-                      "paddingLeft": 33,
-                      "paddingRight": 3,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &lt;
-                    _default
                   </span>
                   <span>
                     <span>
-                      <span>
-                        <br />
-                          
-                      </span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      t
+                    </span>
+                    <span>
+                      =
                       <span
                         style={Object {}}
                       >
-                        data
-                      </span>
-                      <span>
-                        =
+                        {
                         <span
-                          style={Object {}}
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          anonymous
+                        </span>
+                        }
+                      </span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      editable
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      canAddLanes
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      draggable
+                    </span>
+                    <br />
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  /&gt;
+                </span>
+              </div>
+            </div>
+            <button
+              className="css-1naocv3 eva467m0"
+              onClick={[Function]}
+            >
+              <div
+                className="css-lvl6aa eva467m1"
+              >
+                <div
+                  style={
+                    Object {
+                      "marginBottom": 6,
+                    }
+                  }
+                >
+                  Copied!
+                </div>
+                <div>
+                  Copy
+                </div>
+              </div>
+            </button>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots I18n Flat translation table 1`] = `
+.c5 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  box-sizing: border-box;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  position: absolute;
+  right: 10px;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.c5 .c7 {
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(6px);
+  -ms-transform: translateX(-50%) translateY(6px);
+  transform: translateX(-50%) translateY(6px);
+}
+
+.c5 .c7::before {
+  border-bottom-color: #000;
+  top: -20px;
+  -webkit-transform: translateX(-50%) translateY(8px);
+  -ms-transform: translateX(-50%) translateY(8px);
+  transform: translateX(-50%) translateY(8px);
+  left: 50%;
+}
+
+.c8 {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  -webkit-transition: all 0.3s ease 0ms;
+  transition: all 0.3s ease 0ms;
+  border-radius: 3px;
+  min-width: 7em;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -5px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  -webkit-transition: all 0.3s ease 0ms;
+  transition: all 0.3s ease 0ms;
+  border-radius: 3px;
+  min-width: 7em;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c8::before {
+  content: "";
+  position: absolute;
+  background: transparent none repeat scroll 0 0;
+  border: 6px solid transparent;
+  -webkit-transition: all 0.3s ease 0ms;
+  transition: all 0.3s ease 0ms;
+}
+
+.c8::before {
+  visibility: hidden;
+}
+
+.c8 a {
+  color: rgba(255,255,255,0.56);
+  padding: .5em 1em;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8 a:hover {
+  background-color: #00bcd4 !important;
+  color: #37474F;
+}
+
+.c0 {
+  background-color: #3179ba;
+  overflow-y: hidden;
+  padding: 5px;
+  color: #393939;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.c1 {
+  background-color: #e3e3e3;
+  border-radius: 3px;
+  margin: 5px 5px;
+  position: relative;
+  padding: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: auto;
+  max-height: 90%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  padding: 0px 5px;
+}
+
+.c15 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: auto;
+  min-width: 250px;
+  overflow-x: hidden;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-height: 90vh;
+  margin-top: 10px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c3 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  width: 70%;
+}
+
+.c4 {
+  width: 30%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.c17 {
+  border-radius: 3px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  max-width: 250px;
+  margin-bottom: 7px;
+  min-width: 230px;
+}
+
+.c17:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.c18 {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+  color: #000;
+}
+
+.c19 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+  width: 70%;
+  font-size: 14px;
+}
+
+.c20 {
+  width: 30%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 13px;
+  font-size: 10px;
+}
+
+.c22 {
+  font-size: 12px;
+  color: #4d4d4d;
+  white-space: pre-wrap;
+}
+
+.c23 {
+  border-radius: 0 0 3px 3px;
+  color: #838c91;
+  display: block;
+  padding: 5px 2px;
+  margin-top: 10px;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c23:hover {
+  color: #4d4d4d;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c24 {
+  background-color: #2b6aa3;
+  border-radius: 3px;
+  margin: 5px;
+  position: relative;
+  padding: 5px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 200px;
+}
+
+.c11 {
+  text-align: center;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.c12 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 15px;
+  height: 15px;
+  padding: 0;
+  margin-top: 5px;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.c21 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 8px;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.c16:hover .c21 {
+  opacity: 1;
+}
+
+.c6 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.c9 {
+  position: relative;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.c13 {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 12px 12px;
+}
+
+.c14 {
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  padding: 6px 12px;
+  position: relative;
+  margin: 0 -12px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c14:hover {
+  background-color: #3179BA;
+  color: #fff;
+}
+
+.c10 {
+  box-sizing: border-box;
+  color: #6b808c;
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(9,45,66,.13);
+  margin: 0 6px;
+  overflow: hidden;
+  padding: 0 32px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c25 {
+  background: #2b6aa3;
+  border: none;
+  color: #fff;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  min-height: 32px;
+  padding: 4px 16px;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: 0px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }
+  >
+    <div
+      className="react-trello-board c0"
+      data={
+        Object {
+          "lanes": Array [
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "2 Gallons of milk at the Deli store",
+                  "id": "Card1",
+                  "label": "2017-12-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-12-01T10:00:00Z",
+                    "shortCode": "abc",
+                  },
+                  "title": "Buy milk",
+                },
+                Object {
+                  "description": "Sort out recyclable and waste as needed",
+                  "id": "Card2",
+                  "label": "2017-11-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-11-01T10:00:00Z",
+                    "shortCode": "aaa",
+                  },
+                  "title": "Dispose Garbage",
+                },
+                Object {
+                  "description": "Can AI make memes?",
+                  "id": "Card3",
+                  "label": "2017-10-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-10-01T10:00:00Z",
+                    "shortCode": "fa1",
+                  },
+                  "title": "Write Blog",
+                },
+                Object {
+                  "description": "Transfer to bank account",
+                  "id": "Card4",
+                  "label": "2017-09-01",
+                  "laneId": "SORTED_LANE",
+                  "metadata": Object {
+                    "completedAt": "2017-09-01T10:00:00Z",
+                    "shortCode": "ga2",
+                  },
+                  "title": "Pay Rent",
+                },
+              ],
+              "currentPage": 1,
+              "id": "SORTED_LANE",
+              "label": "20/70",
+              "title": "Sorted Lane",
+            },
+          ],
+        }
+      }
+      draggable={false}
+    >
+      <div
+        onClick={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div>
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane c1"
+              draggable={false}
+              label="20/70"
+              onClick={[Function]}
+              style={Object {}}
+              title="Sorted Lane"
+            >
+              <header
+                className="c2"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="c3"
+                  draggable={true}
+                  style={Object {}}
+                >
+                  Sorted Lane
+                </span>
+                <span
+                  className="c4"
+                >
+                  <span
+                    style={Object {}}
+                  >
+                    20/70
+                  </span>
+                </span>
+                <div
+                  className="c5"
+                >
+                  <a
+                    className="fePDys"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="c6"
+                    >
+                      ⋮
+                    </button>
+                  </a>
+                  <div
+                    className="c7 c8"
+                  >
+                    <div
+                      className="c9"
+                    >
+                      <span
+                        className="c10"
+                      >
+                        Listenaktionen
+                      </span>
+                      <div
+                        className="c11"
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      className="c13"
+                    >
+                      <div
+                        className="c14"
+                        onClick={[Function]}
+                      >
+                        Liste löschen
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div
+                className="c15"
+              >
+                <div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Card1"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Buy milk
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          2017-12-01
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        2 Gallons of milk at the Deli store
+                      </div>
+                    </article>
+                  </div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Card2"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Dispose Garbage
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          2017-11-01
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        Sort out recyclable and waste as needed
+                      </div>
+                    </article>
+                  </div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Card3"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Write Blog
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          2017-10-01
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        Can AI make memes?
+                      </div>
+                    </article>
+                  </div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Card4"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Pay Rent
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          2017-09-01
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        Transfer to bank account
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <a
+                  className="c23"
+                  onClick={[Function]}
+                >
+                  Klicken zum Erstellen einer Karte
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div>
+        <section
+          className="c24"
+        >
+          <button
+            className="c25"
+            onClick={[Function]}
+          >
+            + Weitere Liste erstellen
+          </button>
+        </section>
+      </div>
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "border": "none",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": "12px",
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    type="button"
+  >
+    Show Info
+  </button>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 99999,
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      ×
+    </button>
+    <div>
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "backgroundColor": "#fff",
+            "border": "1px solid #eee",
+            "borderRadius": "2px",
+            "color": "#444",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+            "marginBottom": "20px",
+            "marginTop": "20px",
+            "padding": "20px 40px 40px",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <h1
+            style={
+              Object {
+                "fontSize": "35px",
+                "margin": 0,
+                "padding": 0,
+              }
+            }
+          >
+            I18n
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": "22px",
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }
+          >
+            Flat translation table
+          </h2>
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "WebkitFontSmoothing": "antialiased",
+                "color": "#444",
+                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
+                "fontSize": "15px",
+              }
+            }
+          >
+            Flat translation table
+          </div>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": "25px",
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }
+          >
+            Story Source
+          </h1>
+          <pre
+            className="css-r8d96o eyvlbql0"
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#444",
+                    }
+                  }
+                >
+                  &lt;
+                  _default
+                </span>
+                <span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      data
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#666",
+                            }
+                          }
                         >
                           {
-                          <span
-                            style={
-                              Object {
-                                "color": "#666",
-                              }
-                            }
-                          >
-                            {
-                            <span>
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#666",
-                                  }
-                                }
-                              >
-                                lanes
-                              </span>
-                            </span>
-                            : 
+                          <span>
                             <span
                               style={
                                 Object {
@@ -40780,217 +40392,207 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                 }
                               }
                             >
-                              [
-                              <span>
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#666",
-                                    }
-                                  }
-                                >
-                                  {
-                                  <span>
-                                    <span>
-                                      <br />
-                                            
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      id
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    'SORTED_LANE'
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                            
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      title
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    'Sorted Lane'
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                            
-                                        
-                                    </span>
-                                    <span
-                                      style={
-                                        Object {
-                                          "color": "#666",
-                                        }
-                                      }
-                                    >
-                                      label
-                                    </span>
-                                  </span>
-                                  : 
-                                  <span
-                                    style={
-                                      Object {
-                                        "color": "#22a",
-                                        "wordBreak": "break-word",
-                                      }
-                                    }
-                                  >
-                                    '20/70'
-                                  </span>
-                                  ,
-                                  <span>
-                                    <span>
-                                      <br />
-                                            
-                                        
-                                    </span>
-                                    …
-                                  </span>
-                                  <span>
-                                    <br />
-                                          
-                                  </span>
-                                  }
-                                </span>
-                              </span>
-                              ]
+                              lanes
                             </span>
-                            }
                           </span>
-                          }
-                        </span>
-                      </span>
-                    </span>
-                    <span>
-                      <span>
-                        <br />
-                          
-                      </span>
-                      <span
-                        style={Object {}}
-                      >
-                        t
-                      </span>
-                      <span>
-                        =
-                        <span
-                          style={Object {}}
-                        >
-                          {
+                          : 
                           <span
                             style={
                               Object {
-                                "color": "#170",
+                                "color": "#666",
                               }
                             }
                           >
-                            anonymous
+                            [
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'SORTED_LANE'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Sorted Lane'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ]
                           </span>
                           }
                         </span>
+                        }
                       </span>
                     </span>
+                  </span>
+                  <span>
                     <span>
-                      <span>
-                        <br />
-                          
-                      </span>
-                      <span
-                        style={Object {}}
-                      >
-                        editable
-                      </span>
-                    </span>
-                    <span>
-                      <span>
-                        <br />
-                          
-                      </span>
-                      <span
-                        style={Object {}}
-                      >
-                        canAddLanes
-                      </span>
-                    </span>
-                    <span>
-                      <span>
-                        <br />
-                          
-                      </span>
-                      <span
-                        style={Object {}}
-                      >
-                        draggable
-                      </span>
                       <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      t
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}
+                      >
+                        {
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          t
+                        </span>
+                        }
+                      </span>
                     </span>
                   </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    /&gt;
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      editable
+                    </span>
                   </span>
-                </div>
-                <div
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      canAddLanes
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <br />
+                        
+                    </span>
+                    <span
+                      style={Object {}}
+                    >
+                      draggable
+                    </span>
+                    <br />
+                  </span>
+                </span>
+                <span
                   style={
                     Object {
-                      "paddingLeft": 18,
-                      "paddingRight": 3,
+                      "color": "#444",
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#444",
-                      }
-                    }
-                  >
-                    &lt;/
-                    I18nextProvider
-                    &gt;
-                  </span>
-                </div>
+                  /&gt;
+                </span>
               </div>
             </div>
             <button
