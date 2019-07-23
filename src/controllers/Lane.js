@@ -137,7 +137,6 @@ class Lane extends Component {
       laneSortFunction,
       editable,
       hideCardDeleteIcon,
-      draggable,
       cardDraggable,
       cardDragClass,
       tagStyle,
@@ -161,10 +160,11 @@ class Lane extends Component {
           onClick={e => this.handleCardClick(e, card)}
           showDeleteButton={!hideCardDeleteIcon}
           tagStyle={tagStyle}
+          cardDraggable={cardDraggable}
           {...card}
         />
       )
-      return draggable && cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
+      return cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
         <Draggable key={card.id}>{cardToRender}</Draggable>
       ) : (
         <span key={card.id}>{cardToRender}</span>
@@ -215,7 +215,8 @@ class Lane extends Component {
       'labelStyle',
       't',
       'editLaneTitle',
-      'canAddLanes'
+      'canAddLanes',
+      'laneDraggable',
     ])
     return (
       <components.LaneHeader
@@ -293,6 +294,7 @@ Lane.propTypes = {
   onLaneClick: PropTypes.func,
   onLaneScroll: PropTypes.func,
   editable: PropTypes.bool,
+  laneDraggable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
