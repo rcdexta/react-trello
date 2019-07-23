@@ -68,7 +68,8 @@ class Lane extends Component {
     }
   }
 
-  removeCard = (cardId) => {
+  removeCard = cardId => {
+    this.props.onCardDelete && this.props.onCardDelete(cardId, this.props.id)
     this.props.actions.removeCard({laneId: this.props.id, cardId: cardId})
   }
 
@@ -143,7 +144,7 @@ class Lane extends Component {
       cardStyle,
       components,
       t
-      } = this.props
+    } = this.props
     const {addCardMode, collapsed} = this.state
 
     const showableCards = collapsed ? [] : cards
@@ -155,7 +156,7 @@ class Lane extends Component {
           key={card.id}
           index={idx}
           style={card.style || cardStyle}
-          className='react-trello-card'
+          className="react-trello-card"
           onDelete={onDeleteCard}
           onClick={e => this.handleCardClick(e, card)}
           showDeleteButton={!hideCardDeleteIcon}
@@ -163,7 +164,7 @@ class Lane extends Component {
           {...card}
         />
       )
-     return draggable && cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
+      return draggable && cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (
         <Draggable key={card.id}>{cardToRender}</Draggable>
       ) : (
         <span key={card.id}>{cardToRender}</span>
@@ -185,7 +186,9 @@ class Lane extends Component {
           {cardList}
         </Container>
         {editable && !addCardMode && <components.AddCardLink onClick={this.showEditableCard} t={t} />}
-        {addCardMode && <components.NewCardForm onCancel={this.hideEditableCard} t={t} laneId={id} onAdd={this.addNewCard} />}
+        {addCardMode && (
+          <components.NewCardForm onCancel={this.hideEditableCard} t={t} laneId={id} onAdd={this.addNewCard} />
+        )}
       </components.ScrollableLane>
     )
   }
@@ -194,21 +197,33 @@ class Lane extends Component {
     const {id} = this.props
     this.props.actions.removeLane({laneId: id})
     this.props.onLaneDelete(id)
-    }
+  }
 
-  updateTitle = (value) => {
+  updateTitle = value => {
     this.props.actions.updateLane({id: this.props.id, title: value})
-    this.props.onLaneUpdate(this.props.id, {title: value })
+    this.props.onLaneUpdate(this.props.id, {title: value})
   }
 
   renderHeader = () => {
-    const { components } = this.props
-    const pickedProps = pick(
-      this.props,
-      ['id','label','title','titleStyle','cards', 'labelStyle','t','editLaneTitle','canAddLanes']
-    )
+    const {components} = this.props
+    const pickedProps = pick(this.props, [
+      'id',
+      'label',
+      'title',
+      'titleStyle',
+      'cards',
+      'labelStyle',
+      't',
+      'editLaneTitle',
+      'canAddLanes'
+    ])
     return (
-      <components.LaneHeader {...pickedProps} onDelete={this.removeLane} onDoubleClick={this.toggleLaneCollapsed} updateTitle={this.updateTitle}/>
+      <components.LaneHeader
+        {...pickedProps}
+        onDelete={this.removeLane}
+        onDoubleClick={this.toggleLaneCollapsed}
+        updateTitle={this.updateTitle}
+      />
     )
   }
 
@@ -217,11 +232,7 @@ class Lane extends Component {
   }
 
   render() {
-    const {
-      loading,
-      isDraggingOver,
-      collapsed
-    } = this.state
+    const {loading, isDraggingOver, collapsed} = this.state
     const {
       id,
       cards,
@@ -240,7 +251,12 @@ class Lane extends Component {
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
     const showFooter = collapsibleLanes && cards.length > 0
     return (
-      <components.Section {...otherProps} key={id} onClick={() => onLaneClick && onLaneClick(id)} draggable={false} className={allClassNames}>
+      <components.Section
+        {...otherProps}
+        key={id}
+        onClick={() => onLaneClick && onLaneClick(id)}
+        draggable={false}
+        className={allClassNames}>
         {this.renderHeader()}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
@@ -290,7 +306,7 @@ Lane.defaultProps = {
   label: undefined,
   editable: false,
   onLaneUpdate: () => {},
-  onCardAdd: () => {},
+  onCardAdd: () => {}
 }
 
 const mapDispatchToProps = dispatch => ({
