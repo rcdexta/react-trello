@@ -30,6 +30,7 @@ LaneHeaderComponent.propTypes = {
   updateTitle: PropTypes.func,
   editLaneTitle: PropTypes.bool,
   canAddLanes: PropTypes.bool,
+  laneDraggable: PropTypes.bool,
   label: PropTypes.string,
   title: PropTypes.string,
   onDelete: PropTypes.func,
