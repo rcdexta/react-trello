@@ -35,7 +35,6 @@ LaneHeaderComponent.propTypes = {
   title: PropTypes.string,
   onDelete: PropTypes.func,
   onDoubleClick: PropTypes.func,
-  editLaneTitle: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
 
