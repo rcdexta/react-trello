@@ -14790,11 +14790,36 @@ exports[`Storyshots Custom Components Card 1`] = `
   color: #000;
 }
 
-.c8 {
+.c10 {
   padding: 2px 3px;
   border-radius: 3px;
   margin: 2px 5px;
   font-size: 70%;
+}
+
+.c8 {
+  text-align: center;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.c9 {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 8px;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .c6:hover .c9 {
@@ -15015,6 +15040,16 @@ exports[`Storyshots Custom Components Card 1`] = `
                         >
                           due in a day
                         </div>
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c9"
+                          >
+                            ✖
+                          </button>
+                        </div>
                       </header>
                       <div
                         style={
@@ -15106,6 +15141,16 @@ exports[`Storyshots Custom Components Card 1`] = `
                           }
                         >
                           due now
+                        </div>
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c9"
+                          >
+                            ✖
+                          </button>
                         </div>
                       </header>
                       <div
@@ -15229,6 +15274,16 @@ exports[`Storyshots Custom Components Card 1`] = `
                         >
                           due in a day
                         </div>
+                        <div
+                          className="c8"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c9"
+                          >
+                            ✖
+                          </button>
+                        </div>
                       </header>
                       <div
                         style={
@@ -15285,7 +15340,7 @@ exports[`Storyshots Custom Components Card 1`] = `
                           }
                         >
                           <span
-                            className="c8"
+                            className="c10"
                             style={
                               Object {
                                 "backgroundColor": "red",
@@ -15297,7 +15352,7 @@ exports[`Storyshots Custom Components Card 1`] = `
                             Critical
                           </span>
                           <span
-                            className="c8"
+                            className="c10"
                             style={
                               Object {
                                 "backgroundColor": "#0079BF",

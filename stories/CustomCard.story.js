@@ -1,11 +1,31 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import {MovableCardWrapper } from 'rt/styles/Base'
+import DeleteButton from 'rt/widgets/DeleteButton'
 
 import Board from '../src'
 import Tag from 'rt/components/Card/Tag'
 
-const CustomCard = ({onClick, className, name, cardStyle, body, dueOn, cardColor, subTitle, tagStyle, escalationText, tags}) => {
+const CustomCard = ({
+  onClick,
+  className,
+  name,
+  cardStyle,
+  body,
+  dueOn,
+  cardColor,
+  subTitle,
+  tagStyle,
+  escalationText,
+  tags,
+  showDeleteButton,
+  onDelete,
+}) => {
+  const clickDelete = e => {
+    onDelete()
+    e.stopPropagation()
+  }
+
   return (
     <MovableCardWrapper
       onClick={onClick}
@@ -24,6 +44,7 @@ const CustomCard = ({onClick, className, name, cardStyle, body, dueOn, cardColor
         }}>
         <div style={{fontSize: 14, fontWeight: 'bold'}}>{name}</div>
         <div style={{fontSize: 11}}>{dueOn}</div>
+        {showDeleteButton && <DeleteButton onClick={clickDelete} />}
       </header>
       <div style={{fontSize: 12, color: '#BD3B36'}}>
         <div style={{color: '#4C4C4C', fontWeight: 'bold'}}>{subTitle}</div>
