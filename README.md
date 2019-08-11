@@ -27,10 +27,10 @@ Pluggable components to add a trello-like kanban board to your application
 
 ## Getting Started
 
-Install using yarn or yarn
+Install using npm or yarn
 
 ```bash
-$ yarn install --save react-trello
+$ npm install --save react-trello
 ```
 
 or
