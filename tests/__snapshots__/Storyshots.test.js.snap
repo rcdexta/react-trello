@@ -18761,9 +18761,11 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                   "title": "Card Weathers",
                 },
               ],
+              "current": "70",
               "currentPage": 1,
               "id": "lane1",
               "label": "First Lane here",
+              "target": "100",
               "title": "Planned Tasks",
             },
             Object {
@@ -18787,9 +18789,11 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                   "title": "Michael Caine",
                 },
               ],
+              "current": "30",
               "currentPage": 1,
               "id": "lane2",
               "label": "Second Lane here",
+              "target": "100",
               "title": "Completed Tasks",
             },
           ],
@@ -18808,6 +18812,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             label="First Lane here"
             onClick={[Function]}
             style={Object {}}
+            target="100"
             title="Planned Tasks"
           >
             <div>
@@ -18854,6 +18859,12 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                   </button>
                 </div>
               </header>
+              <div>
+                Percentage: 
+                70
+                /
+                100
+              </div>
             </div>
             <div
               className="c2"
@@ -18950,6 +18961,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
             label="Second Lane here"
             onClick={[Function]}
             style={Object {}}
+            target="100"
             title="Completed Tasks"
           >
             <div>
@@ -18996,6 +19008,12 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                   </button>
                 </div>
               </header>
+              <div>
+                Percentage: 
+                30
+                /
+                100
+              </div>
             </div>
             <div
               className="c2"
@@ -19362,7 +19380,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                                       }
                                     }
                                   >
-                                    label
+                                    current
                                   </span>
                                 </span>
                                 : 
@@ -19374,7 +19392,7 @@ exports[`Storyshots Custom Components LaneHeader 1`] = `
                                     }
                                   }
                                 >
-                                  'First Lane here'
+                                  '70'
                                 </span>
                                 ,
                                 <span>
