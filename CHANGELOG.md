@@ -5,11 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.2.2] - 2019-08-22
+## [2.2.3] - 2019-08-22
 
 ### Fixes
 
 * [#312] Lane metadata not being passed to CustomLaneHeader
+
+## [2.2.2] - 2019-07-30
+
+### Improvements
+
+* LaneHeaderComponent specified two editLaneTitle props, causing a warning to
+  be shown
+* Remove duplicated editLaneTitle propType
+
+### Fixes
+
+* [#306] Delete Icon not there in Custom Card Component
 
 ## [2.2.1] - 2019-07-22
 
