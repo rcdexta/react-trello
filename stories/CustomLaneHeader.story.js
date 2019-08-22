@@ -3,9 +3,9 @@ import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
 
-const CustomLaneHeader = props => {
+const CustomLaneHeader = ({label, cards, title, current, target}) => {
   const buttonHandler = () => {
-    alert(`The label passed to the lane was: ${props.label}. The lane has ${props.cards.length} cards!`)
+    alert(`The label passed to the lane was: ${label}. The lane has ${cards.length} cards!`)
   }
   return (
     <div>
@@ -18,8 +18,8 @@ const CustomLaneHeader = props => {
           flexDirection: 'row',
           justifyContent: 'space-between'
         }}>
-        <div style={{fontSize: 14, fontWeight: 'bold'}}>{props.title}</div>
-        {props.label && (
+        <div style={{fontSize: 14, fontWeight: 'bold'}}>{title}</div>
+        {label && (
           <div style={{width: '30%', textAlign: 'right', fontSize: 13}}>
             <button onClick={buttonHandler} style={{cursor: 'pointer'}}>
               ?
@@ -27,6 +27,7 @@ const CustomLaneHeader = props => {
           </div>
         )}
       </header>
+      <div>Percentage: {current || 0}/{target}</div>
     </div>
   )
 }
@@ -39,6 +40,8 @@ storiesOf('Custom Components', module).add(
         {
           id: 'lane1',
           title: 'Planned Tasks',
+          current: "70", // custom property
+          target: "100", // custom property
           label: 'First Lane here',
           cards: [
             {
@@ -57,6 +60,8 @@ storiesOf('Custom Components', module).add(
           id: 'lane2',
           title: 'Completed Tasks',
           label: 'Second Lane here',
+          current: "30", // custom property
+          target: "100", // custom property
           cards: [
             {
               id: 'Card3',

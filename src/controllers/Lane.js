@@ -204,20 +204,8 @@ class Lane extends Component {
     this.props.onLaneUpdate(this.props.id, {title: value})
   }
 
-  renderHeader = () => {
+  renderHeader = (pickedProps) => {
     const {components} = this.props
-    const pickedProps = pick(this.props, [
-      'id',
-      'label',
-      'title',
-      'titleStyle',
-      'cards',
-      'labelStyle',
-      't',
-      'editLaneTitle',
-      'canAddLanes',
-      'laneDraggable',
-    ])
     return (
       <components.LaneHeader
         {...pickedProps}
@@ -258,7 +246,7 @@ class Lane extends Component {
         onClick={() => onLaneClick && onLaneClick(id)}
         draggable={false}
         className={allClassNames}>
-        {this.renderHeader()}
+        {this.renderHeader({id, cards, ...otherProps})}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
         {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} />}
