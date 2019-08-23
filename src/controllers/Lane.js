@@ -139,6 +139,7 @@ class Lane extends Component {
       hideCardDeleteIcon,
       cardDraggable,
       cardDragClass,
+      cardDropClass,
       tagStyle,
       cardStyle,
       components,
@@ -177,6 +178,7 @@ class Lane extends Component {
           orientation="vertical"
           groupName={this.groupName}
           dragClass={cardDragClass}
+          dropClass={cardDropClass}
           onDragStart={this.onDragStart}
           onDrop={e => this.onDragEnd(id, e)}
           onDragEnter={() => this.setState({isDraggingOver: true})}
@@ -285,6 +287,7 @@ Lane.propTypes = {
   laneDraggable: PropTypes.bool,
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
+  cardDropClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
   t: PropTypes.func.isRequired
 }
