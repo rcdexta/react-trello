@@ -170,7 +170,9 @@ This is the container component that encapsulates the lanes and cards
 | laneStyle           | object   | CSS style for every lanes |
 | tagStyle            | object   | If cards have tags, use this prop to modify their style                                                                        |
 | cardDragClass       | string   | CSS class to be applied to Card when being dragged                                                                             |
+| cardDropClass       | string   | CSS class to be applied to Card when being dropped                                                                             |
 | laneDragClass       | string   | CSS class to be applied to Lane when being dragged                                                                             |
+| laneDropClass       | string   | CSS class to be applied to Lane when being dropped                                                                             |
 | components          | object   | Map of customised components. [List](src/components/index.js) of available. |
 
 
