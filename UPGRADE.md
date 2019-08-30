@@ -91,7 +91,7 @@ Use
 ```javascript
 const components = {
   AddCardLink:      () => <button>New Card</button>,
-  LaneHeader: CustomLaneHeader,
+  LaneHeader:       CustomLaneHeader,
   NewCardForm:      NewCard,
   NewLaneSection:   NewLane,
   Card:             CustomCard
