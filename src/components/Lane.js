@@ -150,7 +150,11 @@ class Lane extends Component {
   onDragEnd = (laneId, result) => {
     const {handleDragEnd} = this.props
     const {addedIndex, payload} = result
-    this.setState({isDraggingOver: false})
+
+    if (this.state.isDraggingOver) {
+      this.setState({isDraggingOver: false})
+    }
+
     if (addedIndex != null) {
       const newCard = {...cloneDeep(payload), laneId}
       const response = handleDragEnd ? handleDragEnd(payload.id, payload.laneId, laneId, addedIndex, newCard) : true
