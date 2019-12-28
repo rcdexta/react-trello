@@ -47,6 +47,20 @@
           }
         }
       ]
+    },
+    {
+      "id": "WIP",
+      "title": "Work In Progress",
+      "label": "10/20",
+      "style": {"width": 280},
+      "cards": [
+        {
+          "id": "Wip1",
+          "title": "Clean House",
+          "label": "30 mins",
+          "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
+        }
+      ]
     }
   ]
 }

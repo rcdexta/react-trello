@@ -110,7 +110,7 @@ class Lane extends Component {
     return `TrelloBoard${boardId}Lane`
   }
 
-  onDragEnd = (laneId, result) => {
+  onDragEnd = (laneId, result, laneSortFunction) => {
     const {handleDragEnd} = this.props
     const {addedIndex, payload} = result
     this.setState({isDraggingOver: false})
@@ -122,7 +122,8 @@ class Lane extends Component {
           fromLaneId: payload.laneId,
           toLaneId: laneId,
           cardId: payload.id,
-          index: addedIndex
+          index: addedIndex,
+          laneSortFunction
         })
         this.props.onCardMoveAcrossLanes(payload.laneId, laneId, payload.id, addedIndex)
       }
@@ -178,7 +179,7 @@ class Lane extends Component {
           groupName={this.groupName}
           dragClass={cardDragClass}
           onDragStart={this.onDragStart}
-          onDrop={e => this.onDragEnd(id, e)}
+          onDrop={e => this.onDragEnd(id, e, laneSortFunction)}
           onDragEnter={() => this.setState({isDraggingOver: true})}
           onDragLeave={() => this.setState({isDraggingOver: false})}
           shouldAcceptDrop={this.shouldAcceptDrop}
@@ -204,7 +205,7 @@ class Lane extends Component {
     this.props.onLaneUpdate(this.props.id, {title: value})
   }
 
-  renderHeader = (pickedProps) => {
+  renderHeader = pickedProps => {
     const {components} = this.props
     return (
       <components.LaneHeader
