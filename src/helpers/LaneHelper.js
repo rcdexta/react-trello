@@ -29,7 +29,7 @@ const LaneHelper = {
           let cardsToUpdate = [...lane.cards, ...newCards]
 
           if (laneSortFunction) {
-            cardsToUpdate.sort(function(card1, card2) {
+            cardsToUpdate.sort(laneSortFunction)
               return laneSortFunction(card1, card2)
             })
           }
