@@ -17,7 +17,7 @@ function compare(a, b) {
 }
 
 storiesOf('Basic Functions', module)
-  .add('Sorted Lane', () => <Board data={data} laneSortFunction={(card1, card2) => compare(card1, card2)} />, {
+  .add('Sorted Lane', () => <Board data={data} laneSortFunction={compare} />, {
     info: 'A lane sorted by completed at ascending'
   })
   .add(
