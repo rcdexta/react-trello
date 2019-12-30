@@ -30,8 +30,6 @@ const LaneHelper = {
 
           if (laneSortFunction) {
             cardsToUpdate.sort(laneSortFunction)
-              return laneSortFunction(card1, card2)
-            })
           }
 
           return update(lane, {cards: {$set: cardsToUpdate}})

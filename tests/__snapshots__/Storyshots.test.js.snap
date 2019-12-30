@@ -12154,7 +12154,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                             }
                           }
                         >
-                          laneSortFunction
+                          compare
                         </span>
                         }
                       </span>
