@@ -125,5 +125,6 @@
       "path": "dist/**/*.js",
       "limit": "800 ms"
     }
-  ]
+  ],
+  "version": "2.2.4"
 }
