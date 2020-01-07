@@ -150,9 +150,9 @@ class Lane extends Component {
 
     const cardList = this.sortCards(showableCards, laneSortFunction).map((card, idx) => {
       const onDeleteCard = () => this.removeCard(card.id)
-      const Comp = card.type ? components.Card[card.type] : components.Card
+      const CompCard = card.type ? components.Card[card.type] : components.Card
       const cardToRender = (
-        <Comp
+        <CompCard
           key={card.id}
           index={idx}
           style={card.style || cardStyle}
