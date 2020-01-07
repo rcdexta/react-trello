@@ -228,7 +228,7 @@ export const AddCardLink = styled.a`
   cursor: pointer;
 
   &:hover {
-    //background-color: #cdd2d4;
+    background-color: #cdd2d4;
     color: #4d4d4d;
     text-decoration: underline;
   }
