@@ -139,6 +139,7 @@ This is the container component that encapsulates the lanes and cards
 | onDataChange        | function | Called everytime the data changes due to user interaction or event bus: `onDataChange(newData)`                                |
 | onCardClick         | function | Called when a card is clicked: `onCardClick(cardId, metadata, laneId)`                                                         |
 | onCardAdd           | function | Called when a new card is added: `onCardAdd(card, laneId)`                                                                     |
+| onBeforeCardDelete  | function | Called before delete a card, please call the `callback()` if confirm to delete a card: `onConfirmCardDelete(callback)`    
 | onCardDelete        | function | Called when a card is deleted: `onCardDelete(cardId, laneId)`                                                                  |
 | onCardMoveAcrossLanes        | function | Called when a card is moved across lanes `onCardMoveAcrossLanes(fromLaneId, toLaneId, cardId, index)`                                                                  |
 | onLaneAdd           | function | Called when a new lane is added: `onLaneAdd(params)`                                                                     |
