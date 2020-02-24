@@ -24,9 +24,9 @@ class Lane extends Component {
 
   handleScroll = evt => {
     const node = evt.target
-    const elemScrolPosition = node.scrollHeight - node.scrollTop - node.clientHeight
+    const elemScrollPosition = node.scrollHeight - node.scrollTop - node.clientHeight
     const {onLaneScroll} = this.props
-    if (elemScrolPosition <= 0 && onLaneScroll && !this.state.loading) {
+    if (elemScrollPosition <= 0 && onLaneScroll && !this.state.loading) {
       const {currentPage} = this.state
       this.setState({loading: true})
       const nextPage = currentPage + 1
