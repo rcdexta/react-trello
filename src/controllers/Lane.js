@@ -69,8 +69,15 @@ class Lane extends Component {
   }
 
   removeCard = cardId => {
-    this.props.onCardDelete && this.props.onCardDelete(cardId, this.props.id)
-    this.props.actions.removeCard({laneId: this.props.id, cardId: cardId})
+    if (this.props.onBeforeCardDelete && typeof this.props.onBeforeCardDelete === 'function') {
+      this.props.onBeforeCardDelete(() => {
+        this.props.onCardDelete && this.props.onCardDelete(cardId, this.props.id)
+        this.props.actions.removeCard({laneId: this.props.id, cardId: cardId})
+      })
+    } else {
+      this.props.onCardDelete && this.props.onCardDelete(cardId, this.props.id)
+      this.props.actions.removeCard({laneId: this.props.id, cardId: cardId})
+    }
   }
 
   handleCardClick = (e, card) => {
@@ -237,6 +244,7 @@ class Lane extends Component {
       onLaneScroll,
       onCardClick,
       onCardAdd,
+      onBeforeCardDelete,
       onCardDelete,
       onLaneDelete,
       onLaneUpdate,
@@ -281,6 +289,7 @@ Lane.propTypes = {
   droppable: PropTypes.bool,
   onCardMoveAcrossLanes: PropTypes.func,
   onCardClick: PropTypes.func,
+  onBeforeCardDelete: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
   onLaneDelete: PropTypes.func,
