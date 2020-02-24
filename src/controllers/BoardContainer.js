@@ -75,7 +75,7 @@ class BoardContainer extends Component {
               index: event.index
             })
           case 'UPDATE_CARDS':
-          return actions.updateCards({laneId: event.laneId, cards: event.cards})
+            return actions.updateCards({laneId: event.laneId, cards: event.cards})
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
           case 'UPDATE_LANE':
