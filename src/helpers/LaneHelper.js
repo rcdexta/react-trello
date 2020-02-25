@@ -95,6 +95,24 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
+  updateCardForLane: (state, {laneId, updatedCard}) => {
+    const lanes = state.lanes.map(lane => {
+      if (lane.id === laneId) {
+        const cards = lane.cards.map(card => {
+          if (card.id === updatedCard.id) {
+            return {...card, ...updatedCard}
+          } else {
+            return card
+          }
+        })
+        return update(lane, {cards: {$set: cards}})
+      } else {
+        return lane
+      }
+    })
+    return update(state, {lanes: {$set: lanes}})
+  },
+
   updateLanes: (state, lanes) => {
     return {...state, ...{lanes: lanes}}
   },

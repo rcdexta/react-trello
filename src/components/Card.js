@@ -9,6 +9,7 @@ import {
   Detail,
   Footer
 } from 'rt/styles/Base'
+import InlineInput from 'rt/widgets/InlineInput'
 import Tag from './Card/Tag'
 import DeleteButton from 'rt/widgets/DeleteButton'
 
@@ -25,14 +26,21 @@ class Card extends Component {
       tagStyle,
       onClick,
       onDelete,
+      onChange,
       className,
       id,
       title,
       label,
       description,
       tags,
-      cardDraggable
+      cardDraggable,
+      editable,
+      t
     } = this.props
+
+    const updateCard = (card) => {
+      onChange({...card, id})
+    }
 
     return (
       <MovableCardWrapper
@@ -42,11 +50,17 @@ class Card extends Component {
         className={className}
       >
         <CardHeader>
-          <CardTitle draggable={cardDraggable}>{title}</CardTitle>
-          <CardRightContent>{label}</CardRightContent>
+          <CardTitle draggable={cardDraggable}>
+            {editable ? <InlineInput value={title} border placeholder={t('placeholder.title')} resize='vertical' onSave={(value) => updateCard({title: value})} /> : title}
+          </CardTitle>
+          <CardRightContent>
+            {editable ? <InlineInput value={label} border placeholder={t('placeholder.label')} resize='vertical' onSave={(value) => updateCard({label: value})} /> : label}
+          </CardRightContent>
           {showDeleteButton && <DeleteButton onClick={this.onDelete} />}
         </CardHeader>
-        <Detail>{description}</Detail>
+        <Detail>
+          {editable ? <InlineInput value={description} border placeholder={t('placeholder.description')} resize='vertical' onSave={(value) => updateCard({description: value})} /> : description}
+        </Detail>
         {tags && tags.length> 0 && (
           <Footer>
             {tags.map(tag => (
