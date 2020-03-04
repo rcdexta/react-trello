@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import container, {dropHandlers} from 'smooth-dnd'
+import container, {dropHandlers} from 'trello-smooth-dnd'
 
 container.dropHandler = dropHandlers.reactDropHandler().handler;
 container.wrapChild = p => p; // dont wrap children they will already be wrapped
