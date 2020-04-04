@@ -1,10 +1,5 @@
-import styled, { css, createGlobalStyle } from 'styled-components'
-
-import {
-  PopoverContainer,
-  PopoverContent,
-  PopoverTrigger
-} from 'react-popopo'
+import {PopoverContainer, PopoverContent} from 'react-popopo'
+import styled, {createGlobalStyle, css} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   .comPlainTextContentEditable {
@@ -63,22 +58,23 @@ export const CustomPopoverContent = styled(PopoverContent)`
   padding: 5px;
   left: 50%;
   transform: translateX(-50%);
-  ${props => props.active && `
+  ${props =>
+    props.active &&
+    `
     visibility: visible;
     opacity: 1;
     transition-delay: 100ms;
-  `}
-  &::before {
+  `} &::before {
     visibility: hidden;
   }
   a {
     color: rgba(255, 255, 255, 0.56);
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     margin: 0;
     text-decoration: none;
     &:hover {
       background-color: #00bcd4 !important;
-      color: #37474F;
+      color: #37474f;
     }
   }
 `
@@ -115,15 +111,16 @@ export const Section = styled.section`
 
 export const LaneHeader = styled(Header)`
   margin-bottom: 0px;
-  ${props => props.editLaneTitle && css`
-    padding: 0px;
-    line-height: 30px;
-    `
-  }
-  ${props => !props.editLaneTitle && css`
-    padding: 0px 5px;
-    `
-  }
+  ${props =>
+    props.editLaneTitle &&
+    css`
+      padding: 0px;
+      line-height: 30px;
+    `} ${props =>
+    !props.editLaneTitle &&
+    css`
+      padding: 0px 5px;
+    `};
 `
 
 export const LaneFooter = styled.div`
@@ -280,13 +277,13 @@ export const InlineInput = styled.textarea`
   border: 0;
   padding: 4px 8px;
   outline: 0;
-  ${props => props.border && css`
-    &:focus {
-      box-shadow: inset 0 0 0 2px #0079bf;
-    }
-    `
-  }
-  &:focus {
+  ${props =>
+    props.border &&
+    css`
+      &:focus {
+        box-shadow: inset 0 0 0 2px #0079bf;
+      }
+    `} &:focus {
     background-color: white;
   }
 `
