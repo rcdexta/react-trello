@@ -21578,7 +21578,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -21586,7 +21586,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -22754,7 +22754,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -22762,7 +22762,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -32136,7 +32136,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -32144,7 +32144,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -37154,7 +37154,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
 
 .c9 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37162,7 +37162,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
 
 .c9 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -38409,7 +38409,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -38417,7 +38417,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -39597,7 +39597,7 @@ exports[`Storyshots I18n Flat translation table 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -39605,7 +39605,7 @@ exports[`Storyshots I18n Flat translation table 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
@@ -40785,7 +40785,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
 
 .c8 a {
   color: rgba(255,255,255,0.56);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -40793,7 +40793,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
 
 .c8 a:hover {
   background-color: #00bcd4 !important;
-  color: #37474F;
+  color: #37474f;
 }
 
 .c0 {
