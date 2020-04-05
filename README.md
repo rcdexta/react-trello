@@ -6,7 +6,7 @@ Pluggable components to add a Trello® (like) kanban board to your application
 [![yarn version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
 [![bundlephobia.com](https://img.shields.io/bundlephobia/minzip/react-trello.svg)](https://bundlephobia.com/result?p=react-trello)
 
-> This library is not affiliated, associated, authorized, endorsed by or in any way officially connected to Trello, Inc. (www.trello.com). Trello® is a registered trademark of Atlassian, Inc.
+> This library is not affiliated, associated, authorized, endorsed by or in any way officially connected to Trello, Inc. `Trello` is a registered trademark of Atlassian, Inc.
 
 #### Basic Demo
 [![Edit react-trello-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/1o3zj95m9j)
