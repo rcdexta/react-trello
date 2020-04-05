@@ -1,6 +1,6 @@
-# React Trello®
+# React Trello
 
-Pluggable components to add a Trello® (like) kanban board to your application
+Pluggable components to add a Trello (like) kanban board to your application
 
 [![Build Status](https://travis-ci.org/rcdexta/react-trello.svg?branch=master)](https://travis-ci.org/rcdexta/react-trello)
 [![yarn version](https://badge.fury.io/js/react-trello.svg)](https://badge.fury.io/js/react-trello)
