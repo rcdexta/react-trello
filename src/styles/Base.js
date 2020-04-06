@@ -153,7 +153,7 @@ export const Title = styled.span`
 `
 
 export const RightContent = styled.span`
-  width: 30%;
+  width: 38%;
   text-align: right;
   padding-right: 10px;
   font-size: 13px;
@@ -263,19 +263,21 @@ export const CardForm = styled.div`
 export const InlineInput = styled.textarea`
   overflow-x: hidden; /* for Firefox (issue #5) */
   word-wrap: break-word;
-  min-height: 28px;
+  min-height: 18px;
   max-height: 112px; /* optional, but recommended */
   resize: none;
   width: 100%;
-  height: 28px;
-  font-size: 15px;
-  line-height: 20px;
+  height: 18px;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
   background-color: transparent;
   box-shadow: none;
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 4px 8px;
+  padding: 0 8px;
   outline: 0;
   ${props =>
     props.border &&
