@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { LaneTitle, NewLaneButtons, Section } from 'rt/styles/Base'
 import { AddButton, CancelButton } from 'rt/styles/Elements'
 import NewLaneTitleEditor from 'rt/widgets/NewLaneTitleEditor'
-import ClickOutside from 'react-click-outside'
+import onClickOutside from 'react-onclickoutside'
 
 class NewLane extends Component {
   handleSubmit = () => {
@@ -12,7 +12,7 @@ class NewLane extends Component {
 
   getValue = () => this.refInput.getValue()
 
-  onClickOutside = (a,b,c) => {
+  onClickOutside = evt => {
     if (this.getValue().length > 0) {
       this.handleSubmit()
     } else {
@@ -23,25 +23,23 @@ class NewLane extends Component {
   render() {
     const { onCancel, t } = this.props
     return (
-      <ClickOutside onClickOutside={this.onClickOutside}>
-        <Section>
-          <LaneTitle>
-            <NewLaneTitleEditor
-              ref={ref => (this.refInput = ref)}
-              placeholder={t('placeholder.title')}
-              onCancel={this.props.onCancel}
-              onSave={this.handleSubmit}
-              resize='vertical'
-              border
-              autoFocus
-            />
-          </LaneTitle>
-          <NewLaneButtons>
-             <AddButton onClick={this.handleSubmit}>{t('button.Add lane')}</AddButton>
-            <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
-          </NewLaneButtons>
-        </Section>
-      </ClickOutside>
+      <Section>
+        <LaneTitle>
+          <NewLaneTitleEditor
+            ref={ref => (this.refInput = ref)}
+            placeholder={t('placeholder.title')}
+            onCancel={this.props.onCancel}
+            onSave={this.handleSubmit}
+            resize='vertical'
+            border
+            autoFocus
+          />
+        </LaneTitle>
+        <NewLaneButtons>
+            <AddButton onClick={this.handleSubmit}>{t('button.Add lane')}</AddButton>
+          <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>
+        </NewLaneButtons>
+      </Section>
     )
   }
 }
@@ -54,4 +52,4 @@ NewLane.propTypes = {
 
 NewLane.defaultProps = {}
 
-export default NewLane
+export default onClickOutside(NewLane)
