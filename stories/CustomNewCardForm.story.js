@@ -6,20 +6,20 @@ import Board from '../src'
 const data = require('./data/base.json')
 
 class NewCardForm extends Component {
+  handleAdd = () => this.props.onAdd({title: this.titleRef.value, description: this.descRef.value})
+  setTitleRef = (ref) => this.titleRef = ref
+  setDescRef = (ref) => this.descRef = ref
   render() {
     const {onCancel} = this.props
-    const handleAdd = () => this.props.onAdd({title: this.titleRef.value, desc: this.descRef.value})
-    const setTitleRef = (ref) => this.titleRef = ref
-    const setDescRef = (ref) => this.descRef = ref
     return (
       <div style={{background: 'white', borderRadius: 3, border: '1px solid #eee', borderBottom: '1px solid #ccc'}}>
         <div style={{padding: 5, margin: 5}}>
           <div>
             <div style={{marginBottom: 5}}>
-              <input type="text" ref={setTitleRef} placeholder="Title" />
+              <input type="text" ref={this.setTitleRef} placeholder="Title" />
             </div>
             <div style={{marginBottom: 5}}>
-              <input type="text" ref={setDescRef} placeholder="Description" />
+              <input type="text" ref={this.setDescRef} placeholder="Description" />
             </div>
           </div>
           <button onClick={this.handleAdd}>Add</button>
