@@ -3781,6 +3781,16 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
       >
         Prioritize Write Blog
       </button>
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "margin": 5,
+          }
+        }
+      >
+        Update Dispose Garbage
+      </button>
       <div
         className="react-trello-board c0"
         data={
