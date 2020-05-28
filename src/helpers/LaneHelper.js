@@ -74,7 +74,7 @@ const LaneHelper = {
     if (laneIndex < 0) {
       return state
     }
-    const cardIndex = state.lanes[laneIndex].cards.findIndex(x => x.id == card.id)
+    const cardIndex = state.lanes[laneIndex].cards.findIndex(x => x.id === card.id)
     if (cardIndex < 0) {
       return state
     }
