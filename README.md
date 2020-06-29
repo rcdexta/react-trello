@@ -271,6 +271,9 @@ const setEventBus = (handle) => {
 //To add a card
 eventBus.publish({type: 'ADD_CARD', laneId: 'COMPLETED', card: {id: "M1", title: "Buy Milk", label: "15 mins", description: "Also set reminder"}})
 
+//To update a card
+eventBus.publish({type: 'UPDATE_CARD', laneId: 'COMPLETED', card: {id: "M1", title: "Buy Milk (Updated)", label: "20 mins", description: "Also set reminder (Updated)"}})
+
 //To remove a card
 eventBus.publish({type: 'REMOVE_CARD', laneId: 'PLANNED', cardId: "M1"})
 
