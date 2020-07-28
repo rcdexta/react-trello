@@ -196,7 +196,7 @@ class Lane extends Component {
           onDragEnter={() => this.setState({isDraggingOver: true})}
           onDragLeave={() => this.setState({isDraggingOver: false})}
           shouldAcceptDrop={this.shouldAcceptDrop}
-          getChildPayload={index => this.props.getCardDetails(id, index)}>
+          getChildPayload={index => this.props.getCardDetails(id, index, laneSortFunction)}>
           {cardList}
         </Container>
         {editable && !addCardMode && <components.AddCardLink onClick={this.showEditableCard} t={t} />}
