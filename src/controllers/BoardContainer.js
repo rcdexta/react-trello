@@ -63,6 +63,8 @@ class BoardContainer extends Component {
         switch (event.type) {
           case 'ADD_CARD':
             return actions.addCard({laneId: event.laneId, card: event.card})
+          case 'UPDATE_CARD':
+            return actions.updateCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
             return actions.removeCard({laneId: event.laneId, cardId: event.cardId})
           case 'REFRESH_BOARD':
@@ -74,6 +76,8 @@ class BoardContainer extends Component {
               cardId: event.cardId,
               index: event.index
             })
+          case 'UPDATE_CARDS':
+            return actions.updateCards({laneId: event.laneId, cards: event.cards})
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
           case 'UPDATE_LANE':
@@ -112,10 +116,12 @@ class BoardContainer extends Component {
       draggable,
       laneDraggable,
       laneDragClass,
+      laneDropClass,
       style,
       onDataChange,
       onCardAdd,
       onCardClick,
+      onBeforeCardDelete,
       onCardDelete,
       onLaneScroll,
       onLaneClick,
@@ -138,6 +144,7 @@ class BoardContainer extends Component {
       'onLaneDelete',
       'onLaneUpdate',
       'onCardClick',
+      'onBeforeCardDelete',
       'onCardDelete',
       'onCardAdd',
       'onLaneClick',
@@ -163,7 +170,7 @@ class BoardContainer extends Component {
             orientation="horizontal"
             onDragStart={this.onDragStart}
             dragClass={laneDragClass}
-            dropClass=""
+            dropClass={laneDropClass}
             onDrop={this.onLaneDrop}
             lockAxis="x"
             getChildPayload={index => this.getLaneDetails(index)}
@@ -213,6 +220,7 @@ BoardContainer.propTypes = {
   eventBusHandle: PropTypes.func,
   onLaneScroll: PropTypes.func,
   onCardClick: PropTypes.func,
+  onBeforeCardDelete: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
   onLaneAdd: PropTypes.func,
@@ -235,6 +243,7 @@ BoardContainer.propTypes = {
   cardDraggable: PropTypes.bool,
   cardDragClass: PropTypes.string,
   laneDragClass: PropTypes.string,
+  laneDropClass: PropTypes.string,
   onCardMoveAcrossLanes: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 }
@@ -258,7 +267,8 @@ BoardContainer.defaultProps = {
   laneDraggable: true,
   cardDraggable: true,
   cardDragClass: 'react_trello_dragClass',
-  laneDragClass: 'react_trello_dragLaneClass'
+  laneDragClass: 'react_trello_dragLaneClass',
+  laneDropClass: ''
 }
 
 const mapStateToProps = state => {
