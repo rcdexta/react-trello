@@ -194,6 +194,11 @@ class BoardContainer extends Component {
                   {...passthroughProps}
                 />
               )
+              
+              if (typeof lane.draggable !== 'boolean') {
+                return lane.draggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
+              }
+              
               return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
             })}
           </Container>
