@@ -53,7 +53,7 @@ class InlineInputController extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.setValue(nextProps.value)
   }
 

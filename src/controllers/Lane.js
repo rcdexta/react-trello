@@ -60,7 +60,7 @@ class Lane extends Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (!isEqual(this.props.cards, nextProps.cards)) {
       this.setState({
         currentPage: nextProps.currentPage
