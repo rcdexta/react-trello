@@ -198,7 +198,7 @@ class Lane extends Component {
           getChildPayload={index => this.props.getCardDetails(id, index)}>
           {cardList}
         </Container>
-        {editable && !addCardMode && <components.AddCardLink onClick={this.showEditableCard} t={t} />}
+        {editable && !addCardMode && <components.AddCardLink onClick={this.showEditableCard} t={t} laneId={id} />}
         {addCardMode && (
           <components.NewCardForm onCancel={this.hideEditableCard} t={t} laneId={id} onAdd={this.addNewCard} />
         )}
@@ -217,7 +217,7 @@ class Lane extends Component {
     this.props.onLaneUpdate(this.props.id, {title: value})
   }
 
-  renderHeader = (pickedProps) => {
+  renderHeader = pickedProps => {
     const {components} = this.props
     return (
       <components.LaneHeader
