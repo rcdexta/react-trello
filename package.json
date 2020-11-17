@@ -1,11 +1,9 @@
 {
   "name": "react-trello",
+  "version": "2.4.1",
   "description": "Pluggable components to add a trello like kanban board to your application",
   "main": "dist/index.js",
-  "jsnext:main": "src/components/index.js",
-  "module": "src/components/index.js",
   "files": [
-    "src",
     "dist",
     "README"
   ],
@@ -45,13 +43,12 @@
     "immutability-helper": "^2.8.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
-    "react-click-outside": "tj/react-click-outside",
     "react-popopo": "^2.1.9",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",
     "redux-logger": "^3.0.6",
-    "smooth-dnd": "https://github.com/rcdexta/smooth-dnd",
+    "trello-smooth-dnd": "1.0.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -75,6 +72,7 @@
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-react": "^6.24.1",
     "codecov.io": "^0.1.6",
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",

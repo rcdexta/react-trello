@@ -17,7 +17,6 @@ export {
   Draggable,
   Container,
   BoardContainer,
-  Board,
   Lane,
   createTranslate,
   locales,
