@@ -252,6 +252,7 @@ class Lane extends Component {
       onLaneScroll,
       onCardClick,
       onCardAdd,
+      onCardUpdate,
       onBeforeCardDelete,
       onCardDelete,
       onCardUpdate,
