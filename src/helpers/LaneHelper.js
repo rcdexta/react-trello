@@ -70,25 +70,21 @@ const LaneHelper = {
   },
 
   updateCardFromLane: (state, {laneId, card}) => {
-    const laneIndex = state.lanes.findIndex(x => x.id === laneId)
-    if (laneIndex < 0) {
-      return state
-    }
-    const cardIndex = state.lanes[laneIndex].cards.findIndex(x => x.id === card.id)
-    if (cardIndex < 0) {
-      return state
-    }
-    return update(state, {
-      lanes: {
-        [laneIndex]: {
-          cards: {
-            [cardIndex]: {
-              $set: card
-            }
+    const lanes = state.lanes.map(lane => {
+      if (lane.id === laneId) {
+        const cards = lane.cards.map(c => {
+          if (c.id === card.id) {
+            return {...c, ...card}
+          } else {
+            return c
           }
-        }
+        })
+        return update(lane, {cards: {$set: cards}})
+      } else {
+        return lane
       }
     })
+    return update(state, {lanes: {$set: lanes}})
   },
 
   moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index}) => {
@@ -109,24 +105,6 @@ const LaneHelper = {
   updateCardsForLane: (state, {laneId, cards}) => {
     const lanes = state.lanes.map(lane => {
       if (lane.id === laneId) {
-        return update(lane, {cards: {$set: cards}})
-      } else {
-        return lane
-      }
-    })
-    return update(state, {lanes: {$set: lanes}})
-  },
-
-  updateCardForLane: (state, {laneId, updatedCard}) => {
-    const lanes = state.lanes.map(lane => {
-      if (lane.id === laneId) {
-        const cards = lane.cards.map(card => {
-          if (card.id === updatedCard.id) {
-            return {...card, ...updatedCard}
-          } else {
-            return card
-          }
-        })
         return update(lane, {cards: {$set: cards}})
       } else {
         return lane
