@@ -69,6 +69,24 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
+  updateCardFromLane: (state, {laneId, card}) => {
+    const lanes = state.lanes.map(lane => {
+      if (lane.id === laneId) {
+        const cards = lane.cards.map(c => {
+          if (c.id === card.id) {
+            return {...c, ...card}
+          } else {
+            return c
+          }
+        })
+        return update(lane, {cards: {$set: cards}})
+      } else {
+        return lane
+      }
+    })
+    return update(state, {lanes: {$set: lanes}})
+  },
+
   moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index}) => {
     let cardToMove = null
     const interimLanes = state.lanes.map(lane => {

@@ -277,7 +277,7 @@ export const InlineInput = styled.textarea`
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
   ${props =>
     props.border &&

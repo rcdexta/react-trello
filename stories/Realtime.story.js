@@ -43,6 +43,14 @@ class RealtimeBoard extends Component {
     this.setState({boardData: newData})
   }
 
+  updateCard = () => {
+    this.state.eventBus.publish({
+      type: 'UPDATE_CARD',
+      laneId: 'PLANNED',
+      card: {id: 'Plan2', title: 'UPDATED Dispose Garbage', label: '45 mins', description: 'UPDATED Sort out recyclable and waste as needed'}
+    })
+  }
+
   prioritizeWriteBlog = () => {
     this.state.eventBus.publish({
       type: 'MOVE_CARD',
@@ -75,6 +83,9 @@ class RealtimeBoard extends Component {
         </button>
         <button onClick={this.prioritizeWriteBlog} style={{margin: 5}}>
           Prioritize Write Blog
+        </button>
+        <button onClick={this.updateCard} style={{margin: 5}}>
+          Update Dispose Garbage
         </button>
         <Board data={this.state.boardData} onDataChange={this.shouldReceiveNewData} eventBusHandle={this.setEventBus} />
       </div>

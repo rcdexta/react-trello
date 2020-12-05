@@ -3781,6 +3781,16 @@ exports[`Storyshots Advanced Features Realtime Events 1`] = `
       >
         Prioritize Write Blog
       </button>
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "margin": 5,
+          }
+        }
+      >
+        Update Dispose Garbage
+      </button>
       <div
         className="react-trello-board c0"
         data={
@@ -13017,7 +13027,7 @@ exports[`Storyshots Custom Components AddCardLink 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -20295,7 +20305,7 @@ exports[`Storyshots Custom Components NewCardForm 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -22606,7 +22616,7 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -23962,7 +23972,7 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -25198,7 +25208,7 @@ exports[`Storyshots Deprecation warnings v2.2 warnings 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -33881,7 +33891,7 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -35136,7 +35146,7 @@ exports[`Storyshots Editable Board Add/Delete Cards 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -37479,7 +37489,7 @@ exports[`Storyshots Editable Board Disallow Adding Card for specific Lane 1`] = 
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -39743,7 +39753,7 @@ exports[`Storyshots Editable Board Inline Edit Lane Title and Cards 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -41196,7 +41206,7 @@ exports[`Storyshots I18n Custom texts 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -42581,7 +42591,7 @@ exports[`Storyshots I18n Flat translation table 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 
@@ -43966,7 +43976,7 @@ exports[`Storyshots I18n Using i18next 1`] = `
   box-sizing: border-box;
   border-radius: 3px;
   border: 0;
-  padding: 0 8px;
+  padding: 0px 8px;
   outline: 0;
 }
 

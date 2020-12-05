@@ -63,6 +63,8 @@ class BoardContainer extends Component {
         switch (event.type) {
           case 'ADD_CARD':
             return actions.addCard({laneId: event.laneId, card: event.card})
+          case 'UPDATE_CARD':
+            return actions.updateCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
             return actions.removeCard({laneId: event.laneId, cardId: event.cardId})
           case 'REFRESH_BOARD':
@@ -120,10 +122,10 @@ class BoardContainer extends Component {
       style,
       onDataChange,
       onCardAdd,
-      onCardUpdate,
       onCardClick,
       onBeforeCardDelete,
       onCardDelete,
+      onCardUpdate,
       onLaneScroll,
       onLaneClick,
       onLaneAdd,
