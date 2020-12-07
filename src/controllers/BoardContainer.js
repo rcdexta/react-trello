@@ -61,14 +61,15 @@ class BoardContainer extends Component {
     let eventBus = {
       publish: event => {
         switch (event.type) {
+          case 'REFRESH_BOARD':
+            return actions.loadBoard(event.data)
+
           case 'ADD_CARD':
             return actions.addCard({laneId: event.laneId, card: event.card})
           case 'UPDATE_CARD':
             return actions.updateCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
             return actions.removeCard({laneId: event.laneId, cardId: event.cardId})
-          case 'REFRESH_BOARD':
-            return actions.loadBoard(event.data)
           case 'MOVE_CARD':
             return actions.moveCardAcrossLanes({
               fromLaneId: event.fromLaneId,
@@ -78,10 +79,18 @@ class BoardContainer extends Component {
             })
           case 'UPDATE_CARDS':
             return actions.updateCards({laneId: event.laneId, cards: event.cards})
+          
           case 'UPDATE_LANES':
             return actions.updateLanes(event.lanes)
           case 'UPDATE_LANE':
             return actions.updateLane(event.lane)
+          case 'MOVE_LANE':
+            return actions.moveLane({ oldIndex: event.fromIndex, newIndex: event.toIndex })
+          case 'REMOVE_LANE':
+            return actions.moveLane({ laneId: event.laneId })
+          case 'ADD_LANE':
+            return actions.addLane(event.lane)
+
         }
       }
     }

@@ -283,6 +283,19 @@ eventBus.publish({type: 'MOVE_CARD', fromLaneId: 'PLANNED', toLaneId: 'WIP', car
 //To update the lanes
 eventBus.publish({type: 'UPDATE_LANES', lanes: newLaneData})
 
+//To update one lane
+eventBus.publish({type: 'UPDATE_LANE', lane: { id: 'TODO', title: 'teste' }})
+
+//To add a new lane
+eventBus.publish({type: 'ADD_LANE', lane: { id: 'TODO', title: 'teste' }})
+
+//To move one lane
+eventBus.publish({type: 'MOVE_LANE', fromIndex: 0, toIndex: 1 })
+
+//To remove a lane
+eventBus.publish({type: 'REMOVE_LANE', laneId: 'TODO' })
+
+
 <Board data={data} eventBusHandle={setEventBus}/>
 ```
 
