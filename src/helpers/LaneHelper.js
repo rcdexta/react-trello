@@ -17,15 +17,22 @@ const LaneHelper = {
     return update(state, {lanes: {$set: updatedLanes}})
   },
 
-  appendCardsToLane: (state, {laneId, newCards, index}) => {
+  appendCardsToLane: (state, {laneId, newCards, index}, laneSortFunction) => {
     const lane = state.lanes.find(lane => lane.id === laneId)
     newCards = newCards
       .map(c => update(c, {laneId: {$set: laneId}}))
       .filter(c => lane.cards.find(card => card.id === c.id) == null)
+
     return state.lanes.map(lane => {
       if (lane.id === laneId) {
         if (index !== undefined) {
-          return update(lane, {cards: {$splice: [[index, 0, ...newCards]]}})
+          let cardsToUpdate = [...lane.cards, ...newCards]
+
+          if (laneSortFunction) {
+            cardsToUpdate.sort(laneSortFunction)
+          }
+
+          return update(lane, {cards: {$set: cardsToUpdate}})
         } else {
           const cardsToUpdate = [...lane.cards, ...newCards]
           return update(lane, {cards: {$set: cardsToUpdate}})
@@ -36,8 +43,8 @@ const LaneHelper = {
     })
   },
 
-  appendCardToLane: (state, {laneId, card, index}) => {
-    const newLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card], index})
+  appendCardToLane: (state, {laneId, card, index}, laneSortFunction) => {
+    const newLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card], index}, laneSortFunction)
     return update(state, {lanes: {$set: newLanes}})
   },
 
@@ -48,8 +55,8 @@ const LaneHelper = {
 
   updateLane: (state, updatedLane) => {
     const newLanes = state.lanes.map(lane => {
-      if (updatedLane.id == lane.id ) {
-        return { ...lane, ...updatedLane }
+      if (updatedLane.id == lane.id) {
+        return {...lane, ...updatedLane}
       } else {
         return lane
       }
@@ -91,7 +98,7 @@ const LaneHelper = {
     })
   },
 
-  moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index}) => {
+  moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index, laneSortFunction}) => {
     let cardToMove = null
     const interimLanes = state.lanes.map(lane => {
       if (lane.id === fromLaneId) {
@@ -103,7 +110,11 @@ const LaneHelper = {
       }
     })
     const updatedState = update(state, {lanes: {$set: interimLanes}})
-    return LaneHelper.appendCardToLane(updatedState, {laneId: toLaneId, card: cardToMove, index: index})
+    return LaneHelper.appendCardToLane(
+      updatedState,
+      {laneId: toLaneId, card: cardToMove, index: index},
+      laneSortFunction
+    )
   },
 
   updateCardsForLane: (state, {laneId, cards}) => {
@@ -123,7 +134,7 @@ const LaneHelper = {
 
   moveLane: (state, {oldIndex, newIndex}) => {
     const laneToMove = state.lanes[oldIndex]
-    const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}});
+    const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}})
     return update(tempState, {lanes: {$splice: [[newIndex, 0, laneToMove]]}})
   },
 

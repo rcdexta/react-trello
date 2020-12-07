@@ -10335,6 +10335,24 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -10539,6 +10557,87 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                       className="c13"
                     >
                       Transfer to bank account
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                Work In Progress
+              </span>
+              <span
+                className="c4"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+            </header>
+            <div
+              className="c5"
+            >
+              <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c6 c7"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c8"
+                    >
+                      <span
+                        className="c9"
+                        draggable={true}
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="c10"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c13"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -10849,6 +10948,115 @@ exports[`Storyshots Basic Functions Reverse Sorted Lane 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -11189,6 +11397,24 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -11232,6 +11458,88 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
               className="c5"
             >
               <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c6 c7"
+                    data-id="Card1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c8"
+                    >
+                      <span
+                        className="c9"
+                        draggable={true}
+                      >
+                        Buy milk
+                      </span>
+                      <span
+                        className="c10"
+                      >
+                        2017-12-01
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c13"
+                    >
+                      2 Gallons of milk at the Deli store
+                    </div>
+                  </article>
+                </div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c6 c7"
+                    data-id="Card2"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c8"
+                    >
+                      <span
+                        className="c9"
+                        draggable={true}
+                      >
+                        Dispose Garbage
+                      </span>
+                      <span
+                        className="c10"
+                      >
+                        2017-11-01
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c13"
+                    >
+                      Sort out recyclable and waste as needed
+                    </div>
+                  </article>
+                </div>
                 <div
                   className="smooth-dnd-draggable-wrapper"
                 >
@@ -11314,12 +11622,52 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     </div>
                   </article>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                Work In Progress
+              </span>
+              <span
+                className="c4"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+            </header>
+            <div
+              className="c5"
+            >
+              <div>
                 <div
                   className="smooth-dnd-draggable-wrapper"
                 >
                   <article
                     className="react-trello-card c6 c7"
-                    data-id="Card2"
+                    data-id="Wip1"
                     onClick={[Function]}
                     style={Object {}}
                   >
@@ -11330,12 +11678,12 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                         className="c9"
                         draggable={true}
                       >
-                        Dispose Garbage
+                        Clean House
                       </span>
                       <span
                         className="c10"
                       >
-                        2017-11-01
+                        30 mins
                       </span>
                       <div
                         className="c11"
@@ -11351,48 +11699,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                     <div
                       className="c13"
                     >
-                      Sort out recyclable and waste as needed
-                    </div>
-                  </article>
-                </div>
-                <div
-                  className="smooth-dnd-draggable-wrapper"
-                >
-                  <article
-                    className="react-trello-card c6 c7"
-                    data-id="Card1"
-                    onClick={[Function]}
-                    style={Object {}}
-                  >
-                    <header
-                      className="c8"
-                    >
-                      <span
-                        className="c9"
-                        draggable={true}
-                      >
-                        Buy milk
-                      </span>
-                      <span
-                        className="c10"
-                      >
-                        2017-12-01
-                      </span>
-                      <div
-                        className="c11"
-                        onClick={[Function]}
-                      >
-                        <button
-                          className="c12"
-                        >
-                          ✖
-                        </button>
-                      </div>
-                    </header>
-                    <div
-                      className="c13"
-                    >
-                      2 Gallons of milk at the Deli store
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -11720,6 +12027,115 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                                 }
                               </span>
                             </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
                             ]
                           </span>
                           }
@@ -11748,7 +12164,7 @@ exports[`Storyshots Basic Functions Sorted Lane 1`] = `
                             }
                           }
                         >
-                          laneSortFunction
+                          compare
                         </span>
                         }
                       </span>
@@ -21973,6 +22389,24 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -22224,6 +22658,140 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                       className="c22"
                     >
                       Transfer to bank account
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <a
+                className="c23"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                Work In Progress
+              </span>
+              <span
+                className="c4"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+              <div
+                className="c5"
+              >
+                <a
+                  className="fePDys"
+                  href=""
+                  onClick={[Function]}
+                >
+                  <button
+                    className="c6"
+                  >
+                    ⋮
+                  </button>
+                </a>
+                <div
+                  className="c7 c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <span
+                      className="c10"
+                    >
+                      Lane actions
+                    </span>
+                    <div
+                      className="c11"
+                    >
+                      <button
+                        className="c12"
+                      >
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="c13"
+                  >
+                    <div
+                      className="c14"
+                      onClick={[Function]}
+                    >
+                      Delete lane
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div
+              className="c15"
+            >
+              <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c16 c17"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c18"
+                    >
+                      <span
+                        className="c19"
+                        draggable={true}
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="c20"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c21"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c22"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -22609,6 +23177,115 @@ exports[`Storyshots Custom Components NewLaneForm 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -23115,6 +23792,24 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -23366,6 +24061,140 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                       className="c22"
                     >
                       Transfer to bank account
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <a
+                className="c23"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                Work In Progress
+              </span>
+              <span
+                className="c4"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+              <div
+                className="c5"
+              >
+                <a
+                  className="fePDys"
+                  href=""
+                  onClick={[Function]}
+                >
+                  <button
+                    className="c6"
+                  >
+                    ⋮
+                  </button>
+                </a>
+                <div
+                  className="c7 c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <span
+                      className="c10"
+                    >
+                      Lane actions
+                    </span>
+                    <div
+                      className="c11"
+                    >
+                      <button
+                        className="c12"
+                      >
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="c13"
+                  >
+                    <div
+                      className="c14"
+                      onClick={[Function]}
+                    >
+                      Delete lane
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div
+              className="c15"
+            >
+              <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c16 c17"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c18"
+                    >
+                      <span
+                        className="c19"
+                        draggable={true}
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="c20"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c21"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c22"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -23746,6 +24575,115 @@ exports[`Storyshots Custom Components NewLaneSection 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -32531,6 +33469,24 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -32782,6 +33738,140 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                       className="c22"
                     >
                       Transfer to bank account
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <a
+                className="c23"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                Work In Progress
+              </span>
+              <span
+                className="c4"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+              <div
+                className="c5"
+              >
+                <a
+                  className="fePDys"
+                  href=""
+                  onClick={[Function]}
+                >
+                  <button
+                    className="c6"
+                  >
+                    ⋮
+                  </button>
+                </a>
+                <div
+                  className="c7 c8"
+                >
+                  <div
+                    className="c9"
+                  >
+                    <span
+                      className="c10"
+                    >
+                      Lane actions
+                    </span>
+                    <div
+                      className="c11"
+                    >
+                      <button
+                        className="c12"
+                      >
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="c13"
+                  >
+                    <div
+                      className="c14"
+                      onClick={[Function]}
+                    >
+                      Delete lane
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div
+              className="c15"
+            >
+              <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c16 c17"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c18"
+                    >
+                      <span
+                        className="c19"
+                        draggable={true}
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="c20"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="c11"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c21"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c22"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -33113,6 +34203,115 @@ exports[`Storyshots Editable Board Add New Lane 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -37577,6 +38776,24 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -37842,6 +39059,154 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                       className="c23"
                     >
                       Transfer to bank account
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <a
+                className="c24"
+                onClick={[Function]}
+              >
+                Click to add card
+              </a>
+            </div>
+          </section>
+          <section
+            className="react-trello-lane c1"
+            draggable={false}
+            label="10/20"
+            onClick={[Function]}
+            style={
+              Object {
+                "width": 280,
+              }
+            }
+            title="Work In Progress"
+          >
+            <header
+              className="c2"
+              onDoubleClick={[Function]}
+            >
+              <span
+                className="c3"
+                draggable={true}
+                style={Object {}}
+              >
+                <textarea
+                  autoCapitalize="off"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  autoFocus={false}
+                  className="c4"
+                  defaultValue="Work In Progress"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onMouseDown={[Function]}
+                  placeholder="title"
+                  rows={1}
+                  spellCheck="false"
+                />
+              </span>
+              <span
+                className="c5"
+              >
+                <span
+                  style={Object {}}
+                >
+                  10/20
+                </span>
+              </span>
+              <div
+                className="c6"
+              >
+                <a
+                  className="fePDys"
+                  href=""
+                  onClick={[Function]}
+                >
+                  <button
+                    className="c7"
+                  >
+                    ⋮
+                  </button>
+                </a>
+                <div
+                  className="c8 c9"
+                >
+                  <div
+                    className="c10"
+                  >
+                    <span
+                      className="c11"
+                    >
+                      Lane actions
+                    </span>
+                    <div
+                      className="c12"
+                    >
+                      <button
+                        className="c13"
+                      >
+                        ✖
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="c14"
+                  >
+                    <div
+                      className="c15"
+                      onClick={[Function]}
+                    >
+                      Delete lane
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div
+              className="c16"
+            >
+              <div>
+                <div
+                  className="smooth-dnd-draggable-wrapper"
+                >
+                  <article
+                    className="react-trello-card c17 c18"
+                    data-id="Wip1"
+                    onClick={[Function]}
+                    style={Object {}}
+                  >
+                    <header
+                      className="c19"
+                    >
+                      <span
+                        className="c20"
+                        draggable={true}
+                      >
+                        Clean House
+                      </span>
+                      <span
+                        className="c21"
+                      >
+                        30 mins
+                      </span>
+                      <div
+                        className="c12"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="c22"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div
+                      className="c23"
+                    >
+                      Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
                   </article>
                 </div>
@@ -38173,6 +39538,115 @@ exports[`Storyshots Editable Board Inline Edit Lane Title 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -38804,6 +40278,24 @@ exports[`Storyshots I18n Custom texts 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -39058,6 +40550,144 @@ exports[`Storyshots I18n Custom texts 1`] = `
                         className="c22"
                       >
                         Transfer to bank account
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <a
+                  className="c23"
+                  onClick={[Function]}
+                >
+                  Click to add card
+                </a>
+              </div>
+            </section>
+          </div>
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane c1"
+              draggable={false}
+              label="10/20"
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 280,
+                }
+              }
+              title="Work In Progress"
+            >
+              <header
+                className="c2"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="c3"
+                  draggable={true}
+                  style={Object {}}
+                >
+                  Work In Progress
+                </span>
+                <span
+                  className="c4"
+                >
+                  <span
+                    style={Object {}}
+                  >
+                    10/20
+                  </span>
+                </span>
+                <div
+                  className="c5"
+                >
+                  <a
+                    className="fePDys"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="c6"
+                    >
+                      ⋮
+                    </button>
+                  </a>
+                  <div
+                    className="c7 c8"
+                  >
+                    <div
+                      className="c9"
+                    >
+                      <span
+                        className="c10"
+                      >
+                        Lane actions
+                      </span>
+                      <div
+                        className="c11"
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      className="c13"
+                    >
+                      <div
+                        className="c14"
+                        onClick={[Function]}
+                      >
+                        Delete lane
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div
+                className="c15"
+              >
+                <div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Wip1"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Clean House
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          30 mins
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
                     </article>
                   </div>
@@ -39390,6 +41020,115 @@ exports[`Storyshots I18n Custom texts 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -39992,6 +41731,24 @@ exports[`Storyshots I18n Flat translation table 1`] = `
               "label": "20/70",
               "title": "Sorted Lane",
             },
+            Object {
+              "cards": Array [
+                Object {
+                  "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "id": "Wip1",
+                  "label": "30 mins",
+                  "laneId": "WIP",
+                  "title": "Clean House",
+                },
+              ],
+              "currentPage": 1,
+              "id": "WIP",
+              "label": "10/20",
+              "style": Object {
+                "width": 280,
+              },
+              "title": "Work In Progress",
+            },
           ],
         }
       }
@@ -40246,6 +42003,144 @@ exports[`Storyshots I18n Flat translation table 1`] = `
                         className="c22"
                       >
                         Transfer to bank account
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <a
+                  className="c23"
+                  onClick={[Function]}
+                >
+                  Klicken zum Erstellen einer Karte
+                </a>
+              </div>
+            </section>
+          </div>
+          <div
+            className="smooth-dnd-draggable-wrapper"
+          >
+            <section
+              className="react-trello-lane c1"
+              draggable={false}
+              label="10/20"
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 280,
+                }
+              }
+              title="Work In Progress"
+            >
+              <header
+                className="c2"
+                onDoubleClick={[Function]}
+              >
+                <span
+                  className="c3"
+                  draggable={true}
+                  style={Object {}}
+                >
+                  Work In Progress
+                </span>
+                <span
+                  className="c4"
+                >
+                  <span
+                    style={Object {}}
+                  >
+                    10/20
+                  </span>
+                </span>
+                <div
+                  className="c5"
+                >
+                  <a
+                    className="fePDys"
+                    href=""
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="c6"
+                    >
+                      ⋮
+                    </button>
+                  </a>
+                  <div
+                    className="c7 c8"
+                  >
+                    <div
+                      className="c9"
+                    >
+                      <span
+                        className="c10"
+                      >
+                        Listenaktionen
+                      </span>
+                      <div
+                        className="c11"
+                      >
+                        <button
+                          className="c12"
+                        >
+                          ✖
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      className="c13"
+                    >
+                      <div
+                        className="c14"
+                        onClick={[Function]}
+                      >
+                        Liste löschen
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div
+                className="c15"
+              >
+                <div>
+                  <div
+                    className="smooth-dnd-draggable-wrapper"
+                  >
+                    <article
+                      className="react-trello-card c16 c17"
+                      data-id="Wip1"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <header
+                        className="c18"
+                      >
+                        <span
+                          className="c19"
+                          draggable={true}
+                        >
+                          Clean House
+                        </span>
+                        <span
+                          className="c20"
+                        >
+                          30 mins
+                        </span>
+                        <div
+                          className="c11"
+                          onClick={[Function]}
+                        >
+                          <button
+                            className="c21"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </header>
+                      <div
+                        className="c22"
+                      >
+                        Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
                     </article>
                   </div>
@@ -40578,6 +42473,115 @@ exports[`Storyshots I18n Flat translation table 1`] = `
                                   }
                                 >
                                   '20/70'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  …
+                                </span>
+                                <span>
+                                  <br />
+                                        
+                                </span>
+                                }
+                              </span>
+                            </span>
+                            ,
+                            <span>
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }
+                              >
+                                {
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    id
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'WIP'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    title
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  'Work In Progress'
+                                </span>
+                                ,
+                                <span>
+                                  <span>
+                                    <br />
+                                          
+                                      
+                                  </span>
+                                  <span
+                                    style={
+                                      Object {
+                                        "color": "#666",
+                                      }
+                                    }
+                                  >
+                                    label
+                                  </span>
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }
+                                >
+                                  '10/20'
                                 </span>
                                 ,
                                 <span>
@@ -41193,6 +43197,24 @@ exports[`Storyshots I18n Using i18next 1`] = `
                 "label": "20/70",
                 "title": "Sorted Lane",
               },
+              Object {
+                "cards": Array [
+                  Object {
+                    "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                    "id": "Wip1",
+                    "label": "30 mins",
+                    "laneId": "WIP",
+                    "title": "Clean House",
+                  },
+                ],
+                "currentPage": 1,
+                "id": "WIP",
+                "label": "10/20",
+                "style": Object {
+                  "width": 280,
+                },
+                "title": "Work In Progress",
+              },
             ],
           }
         }
@@ -41447,6 +43469,144 @@ exports[`Storyshots I18n Using i18next 1`] = `
                           className="c22"
                         >
                           Transfer to bank account
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <a
+                    className="c23"
+                    onClick={[Function]}
+                  >
+                    Click to add card
+                  </a>
+                </div>
+              </section>
+            </div>
+            <div
+              className="smooth-dnd-draggable-wrapper"
+            >
+              <section
+                className="react-trello-lane c1"
+                draggable={false}
+                label="10/20"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "width": 280,
+                  }
+                }
+                title="Work In Progress"
+              >
+                <header
+                  className="c2"
+                  onDoubleClick={[Function]}
+                >
+                  <span
+                    className="c3"
+                    draggable={true}
+                    style={Object {}}
+                  >
+                    Work In Progress
+                  </span>
+                  <span
+                    className="c4"
+                  >
+                    <span
+                      style={Object {}}
+                    >
+                      10/20
+                    </span>
+                  </span>
+                  <div
+                    className="c5"
+                  >
+                    <a
+                      className="fePDys"
+                      href=""
+                      onClick={[Function]}
+                    >
+                      <button
+                        className="c6"
+                      >
+                        ⋮
+                      </button>
+                    </a>
+                    <div
+                      className="c7 c8"
+                    >
+                      <div
+                        className="c9"
+                      >
+                        <span
+                          className="c10"
+                        >
+                          Lane actions
+                        </span>
+                        <div
+                          className="c11"
+                        >
+                          <button
+                            className="c12"
+                          >
+                            ✖
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        className="c13"
+                      >
+                        <div
+                          className="c14"
+                          onClick={[Function]}
+                        >
+                          Delete lane
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </header>
+                <div
+                  className="c15"
+                >
+                  <div>
+                    <div
+                      className="smooth-dnd-draggable-wrapper"
+                    >
+                      <article
+                        className="react-trello-card c16 c17"
+                        data-id="Wip1"
+                        onClick={[Function]}
+                        style={Object {}}
+                      >
+                        <header
+                          className="c18"
+                        >
+                          <span
+                            className="c19"
+                            draggable={true}
+                          >
+                            Clean House
+                          </span>
+                          <span
+                            className="c20"
+                          >
+                            30 mins
+                          </span>
+                          <div
+                            className="c11"
+                            onClick={[Function]}
+                          >
+                            <button
+                              className="c21"
+                            >
+                              ✖
+                            </button>
+                          </div>
+                        </header>
+                        <div
+                          className="c22"
+                        >
+                          Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </div>
                       </article>
                     </div>

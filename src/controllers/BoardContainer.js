@@ -49,7 +49,12 @@ class BoardContainer extends Component {
       handleLaneDragEnd(removedIndex, addedIndex, payload)
     }
   }
-  getCardDetails = (laneId, cardIndex) => {
+  getCardDetails = (laneId, cardIndex, sortLaneFunction) => {
+    if (sortLaneFunction) {
+      const toBeSorted = this.props.reducerData.lanes.find(lane => lane.id === laneId).cards;
+      toBeSorted.sort(sortLaneFunction);
+      return toBeSorted[cardIndex];
+    }
     return this.props.reducerData.lanes.find(lane => lane.id === laneId).cards[cardIndex]
   }
   getLaneDetails = index => {
