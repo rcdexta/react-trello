@@ -256,6 +256,7 @@ class Lane extends Component {
       onCardDelete,
       onLaneDelete,
       onLaneUpdate,
+      onCardUpdate,
       onCardMoveAcrossLanes,
       ...otherProps
     } = this.props

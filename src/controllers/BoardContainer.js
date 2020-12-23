@@ -122,6 +122,7 @@ class BoardContainer extends Component {
       style,
       onDataChange,
       onCardAdd,
+      onCardUpdate,
       onCardClick,
       onBeforeCardDelete,
       onCardDelete,
