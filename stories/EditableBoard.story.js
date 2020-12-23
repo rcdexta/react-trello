@@ -71,7 +71,7 @@ storiesOf('Editable Board', module)
     {info: 'Can hide the add card button on specific lanes'}
   )
   .add(
-    'Inline Edit Lane Title',
+    'Inline Edit Lane Title and Cards',
     () => {
       return (
         <Board
@@ -79,10 +79,11 @@ storiesOf('Editable Board', module)
           editable
           canAddLanes
           editLaneTitle
+          onCardUpdate={ (cardId, data) => debug(`onCardUpdate: ${cardId} -> ${JSON.stringify(data, null, 2)}`)}
           onLaneUpdate={ (laneId, data) => debug(`onLaneUpdate: ${laneId} -> ${data.title}`)}
           onLaneAdd={t => debug('You added a line with title ' + t.title)}
         />
       )
     },
-    {info: 'Allow edit lane title'}
+    {info: 'Allow edit lane title and cards'}
   )

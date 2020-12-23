@@ -15,6 +15,8 @@ const boardReducer = (state = {lanes: []}, action) => {
       return Lh.moveCardAcrossLanes(state, payload)
     case 'UPDATE_CARDS':
       return Lh.updateCardsForLane(state, payload)
+    case 'UPDATE_CARD':
+      return Lh.updateCardForLane(state, payload)
     case 'UPDATE_LANES':
       return Lh.updateLanes(state, payload)
     case 'UPDATE_LANE':

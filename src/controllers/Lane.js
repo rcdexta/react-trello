@@ -141,6 +141,11 @@ class Lane extends Component {
     }
   }
 
+  updateCard = updatedCard => {
+    this.props.actions.updateCard({laneId: this.props.id, updatedCard})
+    this.props.onCardUpdate(this.props.id, updatedCard)
+  }
+
   renderDragContainer = isDraggingOver => {
     const {
       id,
@@ -170,9 +175,12 @@ class Lane extends Component {
           className="react-trello-card"
           onDelete={onDeleteCard}
           onClick={e => this.handleCardClick(e, card)}
+          onChange={updatedCard => this.updateCard(updatedCard)}
           showDeleteButton={!hideCardDeleteIcon}
           tagStyle={tagStyle}
           cardDraggable={cardDraggable}
+          editable={editable}
+          t={t}
           {...card}
         />
       )
@@ -292,6 +300,7 @@ Lane.propTypes = {
   onBeforeCardDelete: PropTypes.func,
   onCardDelete: PropTypes.func,
   onCardAdd: PropTypes.func,
+  onCardUpdate: PropTypes.func,
   onLaneDelete: PropTypes.func,
   onLaneUpdate: PropTypes.func,
   onLaneClick: PropTypes.func,
@@ -312,7 +321,8 @@ Lane.defaultProps = {
   label: undefined,
   editable: false,
   onLaneUpdate: () => {},
-  onCardAdd: () => {}
+  onCardAdd: () => {},
+  onCardUpdate: () => {}
 }
 
 const mapDispatchToProps = dispatch => ({
