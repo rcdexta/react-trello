@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "storybook": "start-storybook -p 9002",
     "test": "jest",
     "test:watch": "jest --watch",
