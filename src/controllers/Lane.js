@@ -31,10 +31,7 @@ class Lane extends Component {
       this.setState({loading: true})
       const nextPage = currentPage + 1
       onLaneScroll(nextPage, this.props.id).then(moreCards => {
-        if (!moreCards || moreCards.length === 0) {
-          // if no cards present, stop retrying until user action
-          node.scrollTop = node.scrollTop - 10
-        } else {
+        if ((moreCards || []).length > 0) {
           this.props.actions.paginateLane({
             laneId: this.props.id,
             newCards: moreCards,
