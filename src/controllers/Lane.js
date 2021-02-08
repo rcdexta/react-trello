@@ -142,7 +142,7 @@ class Lane extends Component {
   }
 
   updateCard = updatedCard => {
-    this.props.actions.updateCard({laneId: this.props.id, updatedCard})
+    this.props.actions.updateCard({laneId: this.props.id, card: updatedCard})
     this.props.onCardUpdate(this.props.id, updatedCard)
   }
 

@@ -7,8 +7,6 @@ const boardReducer = (state = {lanes: []}, action) => {
       return Lh.initialiseLanes(state, payload)
     case 'ADD_CARD':
       return Lh.appendCardToLane(state, payload)
-    case 'UPDATE_CARD':
-      return Lh.updateCardFromLane(state, payload)
     case 'REMOVE_CARD':
       return Lh.removeCardFromLane(state, payload)
     case 'MOVE_CARD':
