@@ -1,5 +1,5 @@
 {
-  "name": "react-trello",
+  "name": "@autotable/react-trello",
   "version": "2.4.1",
   "description": "Pluggable components to add a trello like kanban board to your application",
   "main": "dist/index.js",
@@ -23,31 +23,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rcdexta/react-trello"
+    "url": "https://github.com/autotable/react-trello"
   },
   "keywords": [
     "react",
     "trello",
     "board"
   ],
-  "author": "RC, Prakash",
+  "author": "Autotable Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rcdexta/react-trello/issues"
+    "url": "https://github.com/autotable/react-trello/issues"
   },
-  "homepage": "https://github.com/rcdexta/react-trello",
+  "homepage": "https://github.com/autotable/react-trello",
   "dependencies": {
+    "@autotable/trello-smooth-dnd": "1.0.0",
     "autosize": "^4.0.2",
     "classnames": "^2.2.6",
     "immutability-helper": "^2.8.1",
-    "lodash": "^4.17.11",
+    "lodash": ">= 4.17.11",
     "prop-types": "^15.7.2",
     "react-popopo": "^2.1.9",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.0",
-    "redux-actions": "^2.6.1",
-    "redux-logger": "^3.0.6",
-    "trello-smooth-dnd": "1.0.0",
+    "react-redux": ">= 5.0.7",
+    "redux": ">= 4.0.0",
+    "redux-actions": ">= 2.6.1",
+    "redux-logger": ">= 3.0.6",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

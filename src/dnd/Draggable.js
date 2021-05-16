@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {constants} from 'trello-smooth-dnd'
+import {constants} from '@autotable/trello-smooth-dnd'
 const {wrapperClass} = constants
 
 class Draggable extends Component {
