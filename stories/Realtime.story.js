@@ -31,6 +31,15 @@ class RealtimeBoard extends Component {
     })
   }
 
+  addCardWithIndex = () => {
+    this.state.eventBus.publish({
+      type: 'ADD_CARD',
+      laneId: 'WIP',
+      card: { id: 'AddWithIndex', title: 'Urgent Task', label: '5 mins', description: 'Everything is down' },
+      index: 0
+    })
+  }
+
   modifyLaneTitle = () => {
     const data = this.state.boardData
     const newData = update(data, {lanes: {1: {title: {$set: 'New Lane Title'}}}})
@@ -74,6 +83,9 @@ class RealtimeBoard extends Component {
         </button>
         <button onClick={this.addBlockedEvent} style={{margin: 5}}>
           Add Blocked
+        </button>
+        <button onClick={this.addCardWithIndex} style={{margin: 5}}>
+          Add Card At Given Index
         </button>
         <button onClick={this.modifyLaneTitle} style={{margin: 5}}>
           Modify Lane Title

@@ -62,7 +62,7 @@ class BoardContainer extends Component {
       publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
-            return actions.addCard({laneId: event.laneId, card: event.card})
+            return actions.addCard({laneId: event.laneId, card: event.card, index: event.index})
           case 'UPDATE_CARD':
             return actions.updateCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
