@@ -264,6 +264,7 @@ class Lane extends Component {
       <components.Section
         {...otherProps}
         key={id}
+        laneId={id}
         onClick={() => onLaneClick && onLaneClick(id)}
         draggable={false}
         className={allClassNames}>
