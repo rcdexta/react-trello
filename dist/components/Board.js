@@ -54,7 +54,7 @@ var _v2 = _interopRequireDefault(_v);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var middlewares = process.env.NODE_ENV === 'development' ? [_reduxLogger2.default] : [];
+var middlewares = []; //process.env.NODE_ENV === 'development' ? [logger] : []
 
 var Board = function (_Component) {
   (0, _inherits3.default)(Board, _Component);
