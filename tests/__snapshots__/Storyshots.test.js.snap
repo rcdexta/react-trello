@@ -11251,6 +11251,10 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              4
+               card
+              s
             </div>
           </section>
           <section
@@ -11337,6 +11341,9 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              1
+               card
             </div>
           </section>
           <section
@@ -11503,6 +11510,10 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              2
+               card
+              s
             </div>
           </section>
           <section
@@ -11589,6 +11600,9 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              1
+               card
             </div>
           </section>
           <section
@@ -11675,6 +11689,9 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              1
+               card
             </div>
           </section>
           <section
@@ -11761,6 +11778,9 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              1
+               card
             </div>
           </section>
           <section
@@ -11847,6 +11867,9 @@ Array [
               onClick={[Function]}
             >
               click to collapse
+               
+              1
+               card
             </div>
           </section>
         </div>

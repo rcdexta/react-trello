@@ -270,7 +270,7 @@ class Lane extends Component {
         {this.renderHeader({id, cards, ...otherProps})}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
-        {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} />}
+        {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} cards={cards} />}
       </components.Section>
     )
   }
