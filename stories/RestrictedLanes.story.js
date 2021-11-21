@@ -20,3 +20,14 @@ storiesOf('Drag-n-Drop', module).add(
   },
   {info: 'Use props to disable dragging lanes but enable card dragging'}
 )
+
+storiesOf('Drag-n-Drop', module).add(
+  'Immoveable lane',
+  () => {
+    const dataCopy = JSON.parse(JSON.stringify(data))
+    dataCopy.lanes[0].immoveable = true
+    dataCopy.lanes[0].title = 'Immoveable'
+    return <Board data={dataCopy} draggable />
+  },
+  {info: 'Use props to disable dragging lanes but enable card dragging'}
+)

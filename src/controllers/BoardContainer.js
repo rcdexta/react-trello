@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
-import { PopoverWrapper } from 'react-popopo'
+import {PopoverWrapper} from 'react-popopo'
 
 import * as boardActions from 'rt/actions/BoardActions'
 import * as laneActions from 'rt/actions/LaneActions'
@@ -170,16 +170,8 @@ class BoardContainer extends Component {
     return (
       <components.BoardWrapper style={style} {...otherProps} draggable={false}>
         <PopoverWrapper>
-          <Container
-            orientation="horizontal"
-            onDragStart={this.onDragStart}
-            dragClass={laneDragClass}
-            dropClass={laneDropClass}
-            onDrop={this.onLaneDrop}
-            lockAxis="x"
-            getChildPayload={index => this.getLaneDetails(index)}
-            groupName={this.groupName}>
-            {reducerData.lanes.map((lane, index) => {
+          <div style={{display: 'flex'}}>
+            {reducerData.lanes.filter(l => l.immoveable).map((lane, index) => {
               const {id, droppable, ...otherProps} = lane
               const laneToRender = (
                 <Lane
@@ -198,13 +190,51 @@ class BoardContainer extends Component {
                   {...passthroughProps}
                 />
               )
-              return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
+              return draggable && laneDraggable && !lane.immoveable ?
+                <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
             })}
-          </Container>
+            <Container
+              orientation="horizontal"
+              onDragStart={this.onDragStart}
+              dragClass={laneDragClass}
+              dropClass={laneDropClass}
+              onDrop={this.onLaneDrop}
+              lockAxis="x"
+              getChildPayload={index => this.getLaneDetails(index)}
+              groupName={this.groupName}>
+              {reducerData.lanes.map((lane, index) => {
+                const {id, droppable, ...otherProps} = lane
+                const laneToRender = (
+                  <Lane
+                    key={id}
+                    boardId={this.groupName}
+                    components={components}
+                    id={id}
+                    getCardDetails={this.getCardDetails}
+                    index={index}
+                    droppable={droppable === undefined ? true : droppable}
+                    style={laneStyle || lane.style || {}}
+                    labelStyle={lane.labelStyle || {}}
+                    cardStyle={this.props.cardStyle || lane.cardStyle}
+                    editable={editable && !lane.disallowAddingCard}
+                    {...otherProps}
+                    {...passthroughProps}
+                  />
+                )
+
+                if (lane.immoveable) {
+                  return <Draggable key={lane.id}><div/></Draggable>
+                }
+
+                return draggable && laneDraggable ?
+                  <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
+              })}
+            </Container>
+          </div>
         </PopoverWrapper>
         {canAddLanes && (
           <Container orientation="horizontal">
-            {editable && !addLaneMode ? <components.NewLaneSection t={t} onClick={this.showEditableLane} /> : (
+            {editable && !addLaneMode ? <components.NewLaneSection t={t} onClick={this.showEditableLane}/> : (
               addLaneMode && <components.NewLaneForm onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
             )}
           </Container>
@@ -254,17 +284,27 @@ BoardContainer.propTypes = {
 }
 
 BoardContainer.defaultProps = {
-  t: v=>v,
-  onDataChange: () => {},
-  handleDragStart: () => {},
-  handleDragEnd: () => {},
-  handleLaneDragStart: () => {},
-  handleLaneDragEnd: () => {},
-  onCardUpdate: () => {},
-  onLaneAdd: () => {},
-  onLaneDelete: () => {},
-  onCardMoveAcrossLanes: () => {},
-  onLaneUpdate: () => {},
+  t: v => v,
+  onDataChange: () => {
+  },
+  handleDragStart: () => {
+  },
+  handleDragEnd: () => {
+  },
+  handleLaneDragStart: () => {
+  },
+  handleLaneDragEnd: () => {
+  },
+  onCardUpdate: () => {
+  },
+  onLaneAdd: () => {
+  },
+  onLaneDelete: () => {
+  },
+  onCardMoveAcrossLanes: () => {
+  },
+  onLaneUpdate: () => {
+  },
   editable: false,
   canAddLanes: false,
   hideCardDeleteIcon: false,

@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
 import cloneDeep from 'lodash/cloneDeep'
 import pick from 'lodash/pick'
-import uuidv1 from 'uuid/v1'
+import {v1 as uuidv1} from 'uuid'
 
 import Container from 'rt/dnd/Container'
 import Draggable from 'rt/dnd/Draggable'
