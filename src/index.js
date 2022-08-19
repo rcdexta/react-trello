@@ -25,7 +25,7 @@ export {
 
 export { DefaultComponents as components }
 
-const DEFAULT_LANG='en'
+const DEFAULT_LANG='ptbr'
 
 export default ({ components, lang=DEFAULT_LANG, ...otherProps }) => {
   deprecationWarnings(otherProps);
