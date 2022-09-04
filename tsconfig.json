@@ -5,7 +5,7 @@
 
     "module": "commonjs",                                /* Specify what module code is generated. */
     "rootDir": "./",                                  /* Specify the root folder within your source files. */
-    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "baseUrl": ".",                                  /* Specify the base directory to resolve non-relative module names. */
     "paths": {"rt":["./src/"]},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     "resolveJsonModule": true,                        /* Enable importing .json files. */
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */

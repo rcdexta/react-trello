@@ -90,7 +90,7 @@ export const BoardWrapper = styled.div`
   height: 100vh;
 `
 
-export const Header = styled.header`
+export const Header = styled.header<{editLaneTitle: boolean}>`
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -260,7 +260,7 @@ export const CardForm = styled.div`
   background-color: #e3e3e3;
 `
 
-export const InlineInput = styled.textarea`
+export const InlineInput = styled.textarea<{border: boolean}>`
   overflow-x: hidden; /* for Firefox (issue #5) */
   word-wrap: break-word;
   min-height: 18px;

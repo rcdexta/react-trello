@@ -2,8 +2,6 @@ import {addDecorator, configure} from '@storybook/react'
 import {withInfo} from '@storybook/addon-info'
 import {withOptions} from '@storybook/addon-options'
 
-// jest.mock('global', () => global)
-
 addDecorator(
   withOptions({
     name: 'react-trello',
@@ -25,15 +23,8 @@ addDecorator(
   })
 )
 
-// function loadStories() {
-//   require('../stories')
-// }
-const req = require.context('../stories', true, /\.story\.tsx$/) // <- import all the stories at once
-
 function loadStories() {
-  req.keys().forEach(filename => req(filename))
+  require('../stories')
 }
-
-// configure(loadStories, module);
 
 configure(loadStories, module)
