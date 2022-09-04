@@ -4,7 +4,7 @@ import Card from './Card'
 import Loader from './Loader'
 import NewLaneForm from './NewLaneForm'
 import NewCardForm from './NewCardForm'
-import AddCardLink from './AddCardLink'
+import {AddCardLink} from './AddCardLink'
 import NewLaneSection from './NewLaneSection'
 import {BoardWrapper, GlobalStyle, ScrollableLane, Section} from 'rt/styles/Base'
 
