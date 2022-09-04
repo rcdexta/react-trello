@@ -90,7 +90,7 @@ export const BoardWrapper = styled.div`
   height: 100vh;
 `
 
-export const Header = styled.header<{editLaneTitle: boolean}>`
+export const Header = styled.header<{editLaneTitle?: boolean}>`
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
