@@ -1,4 +1,4 @@
-import LaneHeader from './Lane/LaneHeader'
+import {LaneHeader} from './Lane/LaneHeader'
 import {LaneFooter} from './Lane/LaneFooter'
 import Card from './Card'
 import Loader from './Loader'
