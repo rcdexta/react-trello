@@ -9,7 +9,7 @@ import pick from 'lodash/pick'
 import uuidv1 from 'uuid/v1'
 
 import Container from 'rt/dnd/Container'
-import Draggable from 'rt/dnd/Draggable'
+import {Draggable} from 'rt/dnd/Draggable'
 
 import * as laneActions from 'rt/actions/LaneActions'
 
@@ -47,7 +47,7 @@ class Lane extends Component {
   sortCards(cards, sortFunction) {
     if (!cards) return []
     if (!sortFunction) return cards
-    return cards.concat().sort(function (card1, card2) {
+    return cards.concat().sort(function(card1, card2) {
       return sortFunction(card1, card2)
     })
   }
@@ -328,4 +328,7 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(laneActions, dispatch)
 })
 
-export default connect(null, mapDispatchToProps)(Lane)
+export default connect(
+  null,
+  mapDispatchToProps
+)(Lane)

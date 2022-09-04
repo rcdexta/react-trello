@@ -19,6 +19,7 @@ specifiers:
   '@storybook/storybook-deployer': ^2.8.12
   '@testing-library/react': ^12
   '@types/jest': ^27
+  '@types/lodash': ^4.14.184
   '@types/node': ^18.7.14
   '@types/react': ^16
   '@types/react-dom': ^16
@@ -111,6 +112,7 @@ devDependencies:
   '@storybook/storybook-deployer': 2.8.12
   '@testing-library/react': 12.1.5_wcqkhtmu7mswc6yz4uyexck3ty
   '@types/jest': 27.5.2
+  '@types/lodash': 4.14.184
   '@types/node': 18.7.14
   '@types/react': 16.14.31
   '@types/react-dom': 16.9.16

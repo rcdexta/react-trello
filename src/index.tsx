@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Draggable from './dnd/Draggable'
+import {Draggable} from './dnd/Draggable'
 import Container from './dnd/Container'
 import BoardContainer from './controllers/BoardContainer'
 import Lane from './controllers/Lane'
