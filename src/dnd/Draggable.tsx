@@ -2,15 +2,10 @@ import React, {FC, HTMLAttributes, PropsWithChildren, ReactElement} from 'react'
 import {constants} from 'trello-smooth-dnd'
 const {wrapperClass} = constants
 
-interface DraggableProps {
+interface DraggableProps extends HTMLAttributes<HTMLDivElement> {
   render: () => ReactElement
 }
-export const Draggable: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement> & DraggableProps>> = ({
-  className,
-  render,
-  children,
-  ...rest
-}) => {
+export const Draggable: FC<PropsWithChildren<DraggableProps>> = ({className, render, children, ...rest}) => {
   if (render) {
     return React.cloneElement(render(), {className: wrapperClass})
   }

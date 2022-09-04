@@ -4,8 +4,8 @@ export interface BoardData {
 
 export interface Lane {
   id: string
-  title: string
-  label: string
+  title?: string
+  label?: string
   style: Style
   cards: Card[]
   currentPage: number
@@ -13,10 +13,10 @@ export interface Lane {
 
 export interface Card {
   id: string
-  title: string
-  label: string
-  description: string
-  laneId: string
+  title?: string
+  label?: string
+  description?: string
+  laneId?: string
 }
 
 export interface Style {

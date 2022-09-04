@@ -1,11 +1,11 @@
-import React, {FC, PropsWithChildren} from 'react'
+import React, {CSSProperties, FC, PropsWithChildren} from 'react'
 import {TagSpan} from 'rt/styles/Base'
 
-interface TagProps {
+export interface TagProps {
   title: string
   color?: string
   bgcolor?: string
-  tagStyle?: object
+  tagStyle?: CSSProperties
 }
 export const Tag: FC<PropsWithChildren<TagProps>> = ({title, color, bgcolor, tagStyle, ...otherProps}) => {
   const style = {color: color || 'white', backgroundColor: bgcolor || 'orange', ...tagStyle}
