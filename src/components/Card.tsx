@@ -1,8 +1,8 @@
 import React, {CSSProperties, FC, PropsWithChildren} from 'react'
 import {MovableCardWrapper, CardHeader, CardRightContent, CardTitle, Detail, Footer} from 'rt/styles/Base'
-import InlineInput from 'rt/widgets/InlineInput'
+import {InlineInput} from 'rt/widgets/InlineInput'
 import {Tag, TagProps} from './Card/Tag'
-import DeleteButton from 'rt/widgets/DeleteButton'
+import {DeleteButton} from 'rt/widgets/DeleteButton'
 import {createTranslate} from '..'
 import {Card as ICard} from 'rt/types/Board'
 

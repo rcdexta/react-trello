@@ -8,12 +8,12 @@ import deprecationWarnings from './helpers/deprecationWarnings'
 import DefaultComponents from './components'
 import locales from './locales'
 
-import widgets from './widgets'
+export * from './widgets'
 
 import createTranslate from './helpers/createTranslate'
 import {Board} from './controllers/Board'
 
-export {Draggable, Container, BoardContainer, Lane, createTranslate, locales, widgets}
+export {Draggable, Container, BoardContainer, Lane, createTranslate, locales}
 
 export {DefaultComponents as components}
 

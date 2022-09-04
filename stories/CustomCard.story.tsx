@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import {MovableCardWrapper} from 'rt/styles/Base'
-import DeleteButton from './../src/widgets/DeleteButton'
+import {DeleteButton} from './../src/widgets/DeleteButton'
 import Board from '../src'
 import {Tag} from 'rt/components/Card/Tag'
 

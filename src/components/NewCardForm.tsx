@@ -1,7 +1,7 @@
 import React, {FC, PropsWithChildren, useState} from 'react'
 import {CardForm, CardHeader, CardRightContent, CardTitle, CardWrapper, Detail} from 'rt/styles/Base'
 import {AddButton, CancelButton} from 'rt/styles/Elements'
-import EditableLabel from 'rt/widgets/EditableLabel'
+import {EditableLabel} from 'rt/widgets/EditableLabel'
 import createTranslate from 'rt/helpers/createTranslate'
 
 interface FormState {
@@ -32,21 +32,21 @@ export const NewCardForm: FC<PropsWithChildren<NewCardFormProps>> = ({onCancel, 
         <CardHeader>
           <CardTitle>
             <EditableLabel
-              placeholder={t('placeholder.title')}
+              placeholder={(t('placeholder.title') as unknown) as string}
               onChange={(val: FormState['title']) => updateField('title', val)}
               autoFocus
             />
           </CardTitle>
           <CardRightContent>
             <EditableLabel
-              placeholder={t('placeholder.label')}
+              placeholder={(t('placeholder.label') as unknown) as string}
               onChange={(val: FormState['label']) => updateField('label', val)}
             />
           </CardRightContent>
         </CardHeader>
         <Detail>
           <EditableLabel
-            placeholder={t('placeholder.description')}
+            placeholder={(t('placeholder.description') as unknown) as string}
             onChange={(val: FormState['description']) => updateField('description', val)}
           />
         </Detail>

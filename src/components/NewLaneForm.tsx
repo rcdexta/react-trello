@@ -1,4 +1,4 @@
-import React, {FC, HTMLAttributes, PropsWithChildren, useState} from 'react'
+import React, {FC, HTMLAttributes, PropsWithChildren, useRef, useState} from 'react'
 import {LaneTitle, NewLaneButtons, Section} from 'rt/styles/Base'
 import {AddButton, CancelButton} from 'rt/styles/Elements'
 import NewLaneTitleEditor from 'rt/widgets/NewLaneTitleEditor'
@@ -12,23 +12,19 @@ interface NewLaneFormProps extends HTMLAttributes<ThemedStyledFunction<'section'
   t: typeof createTranslate
 }
 export const NewLaneForm: FC<PropsWithChildren<NewLaneFormProps>> = ({onAdd, onCancel, t}) => {
-  const [refInput, setRefInput] = useState<any>()
+  const titleRef = useRef<NewLaneTitleEditor>()
   const handleSubmit = () => {
     onAdd({
       id: uuidv1(),
-      title: getValue()
+      title: titleRef.current.getValue()
     })
   }
-
-  const getValue = () => refInput
 
   return (
     <Section>
       <LaneTitle>
         <NewLaneTitleEditor
-          ref={ref => {
-            setRefInput(ref)
-          }}
+          ref={ref => (titleRef.current = ref)}
           placeholder={t('placeholder.title')}
           onCancel={onCancel}
           onSave={handleSubmit}

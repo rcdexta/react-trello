@@ -1,6 +1,5 @@
 import React, {CSSProperties, FC, HTMLAttributes, PropsWithChildren} from 'react'
-import PropTypes from 'prop-types'
-import InlineInput from 'rt/widgets/InlineInput'
+import {InlineInput} from 'rt/widgets/InlineInput'
 import {Title, LaneHeader as _LaneHeader, RightContent} from 'rt/styles/Base'
 import {LaneMenu} from './LaneHeader/LaneMenu'
 import createTranslate from 'rt/helpers/createTranslate'
@@ -29,6 +28,8 @@ export const LaneHeader: FC<PropsWithChildren<LaneHeaderProps>> = ({
   t,
   laneDraggable
 }) => {
+  console.log('title', title)
+
   return (
     <_LaneHeader onDoubleClick={onDoubleClick} editLaneTitle={editLaneTitle}>
       <Title draggable={laneDraggable} style={titleStyle}>
@@ -36,7 +37,7 @@ export const LaneHeader: FC<PropsWithChildren<LaneHeaderProps>> = ({
           <InlineInput
             value={title}
             border
-            placeholder={t('placeholder.title')}
+            placeholder={(t('placeholder.title') as unknown) as string}
             resize="vertical"
             onSave={updateTitle}
           />

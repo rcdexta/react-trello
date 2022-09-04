@@ -219,6 +219,7 @@ class Lane extends Component {
   }
 
   updateTitle = value => {
+    console.log('value', value)
     this.props.actions.updateLane({id: this.props.id, title: value})
     this.props.onLaneUpdate(this.props.id, {title: value})
   }
