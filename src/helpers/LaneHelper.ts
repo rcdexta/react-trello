@@ -1,7 +1,8 @@
 import update from 'immutability-helper'
+import {BoardData, Card, Lane} from 'rt/types/Board'
 
-const LaneHelper = {
-  initialiseLanes: (state, {lanes}) => {
+export const LaneHelper = {
+  initialiseLanes: (state: BoardData, {lanes}: BoardData) => {
     const newLanes = lanes.map(lane => {
       lane.currentPage = 1
       lane.cards && lane.cards.forEach(c => (c.laneId = lane.id))
@@ -10,13 +11,16 @@ const LaneHelper = {
     return update(state, {lanes: {$set: newLanes}})
   },
 
-  paginateLane: (state, {laneId, newCards, nextPage}) => {
-    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: newCards})
+  paginateLane: (state: BoardData, {laneId, newCards, nextPage}) => {
+    const updatedLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: newCards, index: undefined})
     updatedLanes.find(lane => lane.id === laneId).currentPage = nextPage
     return update(state, {lanes: {$set: updatedLanes}})
   },
 
-  appendCardsToLane: (state, {laneId, newCards, index}) => {
+  appendCardsToLane: (
+    state: BoardData,
+    {laneId, newCards, index}: {laneId: string; newCards: Card[]; index: number}
+  ) => {
     const lane = state.lanes.find(lane => lane.id === laneId)
     newCards = newCards
       .map(c => update(c, {laneId: {$set: laneId}}))
@@ -35,20 +39,20 @@ const LaneHelper = {
     })
   },
 
-  appendCardToLane: (state, {laneId, card, index}) => {
+  appendCardToLane: (state: BoardData, {laneId, card, index}: {laneId: string; card: Card; index: number}) => {
     const newLanes = LaneHelper.appendCardsToLane(state, {laneId: laneId, newCards: [card], index})
     return update(state, {lanes: {$set: newLanes}})
   },
 
-  addLane: (state, lane) => {
+  addLane: (state: BoardData, lane: Lane) => {
     const newLane = {cards: [], ...lane}
     return update(state, {lanes: {$push: [newLane]}})
   },
 
-  updateLane: (state, updatedLane) => {
+  updateLane: (state: BoardData, updatedLane: Partial<Lane>) => {
     const newLanes = state.lanes.map(lane => {
-      if (updatedLane.id == lane.id ) {
-        return { ...lane, ...updatedLane }
+      if (updatedLane.id == lane.id) {
+        return {...lane, ...updatedLane}
       } else {
         return lane
       }
@@ -56,7 +60,7 @@ const LaneHelper = {
     return update(state, {lanes: {$set: newLanes}})
   },
 
-  removeCardFromLane: (state, {laneId, cardId}) => {
+  removeCardFromLane: (state: BoardData, {laneId, cardId}: {laneId: string; cardId: string}) => {
     const lanes = state.lanes.map(lane => {
       if (lane.id === laneId) {
         let newCards = lane.cards.filter(card => card.id !== cardId)
@@ -68,7 +72,10 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
-  moveCardAcrossLanes: (state, {fromLaneId, toLaneId, cardId, index}) => {
+  moveCardAcrossLanes: (
+    state: BoardData,
+    {fromLaneId, toLaneId, cardId, index}: {fromLaneId: string; toLaneId: string; cardId: string; index: number}
+  ) => {
     let cardToMove = null
     const interimLanes = state.lanes.map(lane => {
       if (lane.id === fromLaneId) {
@@ -94,7 +101,7 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
-  updateCardForLane: (state, {laneId, card: updatedCard}) => {
+  updateCardForLane: (state, {laneId, card: updatedCard}: {laneId: string; card: Card}) => {
     const lanes = state.lanes.map(lane => {
       if (lane.id === laneId) {
         const cards = lane.cards.map(card => {
@@ -112,20 +119,18 @@ const LaneHelper = {
     return update(state, {lanes: {$set: lanes}})
   },
 
-  updateLanes: (state, lanes) => {
+  updateLanes: (state: BoardData, lanes: BoardData['lanes']) => {
     return {...state, ...{lanes: lanes}}
   },
 
-  moveLane: (state, {oldIndex, newIndex}) => {
+  moveLane: (state: BoardData, {oldIndex, newIndex}: {oldIndex: number; newIndex: number}) => {
     const laneToMove = state.lanes[oldIndex]
-    const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}});
+    const tempState = update(state, {lanes: {$splice: [[oldIndex, 1]]}})
     return update(tempState, {lanes: {$splice: [[newIndex, 0, laneToMove]]}})
   },
 
-  removeLane: (state, {laneId}) => {
+  removeLane: (state: BoardData, {laneId}: {laneId: string}) => {
     const updatedLanes = state.lanes.filter(lane => lane.id !== laneId)
     return update(state, {lanes: {$set: updatedLanes}})
   }
 }
-
-export default LaneHelper
