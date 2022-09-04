@@ -21,4 +21,6 @@ class AsyncBoard extends Component {
   }
 }
 
-storiesOf('Advanced Features', module).add('Async Load data', () => <AsyncBoard />, {info: 'Load board data asynchronously after the component has mounted'})
+storiesOf('Advanced Features', module).add('Async Load data', () => <AsyncBoard />, {
+  info: 'Load board data asynchronously after the component has mounted'
+})

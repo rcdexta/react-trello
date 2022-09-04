@@ -48,7 +48,13 @@ storiesOf('Basic Functions', module).add(
       ]
     }
 
-    return <Board data={data} laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)} onLaneScroll={paginate} />
+    return (
+      <Board
+        data={data}
+        laneSortFunction={(card1, card2) => parseInt(card1.id) - parseInt(card2.id)}
+        onLaneScroll={paginate}
+      />
+    )
   },
   {
     info: `

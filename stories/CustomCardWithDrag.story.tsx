@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
 
-import {MovableCardWrapper } from 'rt/styles/Base'
+import {MovableCardWrapper} from 'rt/styles/Base'
 import debug from './helpers/debug'
 
 import Board from '../src'
@@ -14,8 +14,7 @@ const CustomCard = props => {
       onClick={props.onClick}
       style={props.style}
       className={props.className}
-      style={{backgroundColor: props.cardColor, padding: 6}}
-    >
+      style={{backgroundColor: props.cardColor, padding: 6}}>
       <header
         style={{
           borderBottom: '1px solid #eee',
@@ -88,7 +87,9 @@ class BoardWithCustomCard extends Component {
     const {draggedData} = this.state
     const laneIndex = draggedData.lanes.findIndex(lane => lane.id === sourceLandId)
     const cardIndex = draggedData.lanes[laneIndex].cards.findIndex(card => card.id === cardId)
-    const updatedData = update(draggedData, {lanes: {[laneIndex]: {cards: {[cardIndex]: {cardColor: {$set: '#d0fdd2'}}}}}})
+    const updatedData = update(draggedData, {
+      lanes: {[laneIndex]: {cards: {[cardIndex]: {cardColor: {$set: '#d0fdd2'}}}}}
+    })
     this.setState({boardData: updatedData})
   }
 

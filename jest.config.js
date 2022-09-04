@@ -1,19 +1,21 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
-
 module.exports = {
+  preset: 'ts-jest',
   transform: {
-    '^.+\\.jsx?$': 'babel-jest'
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest'
   },
-  'moduleNameMapper': {
+  moduleNameMapper: {
     '\\.(jpg|png|gif|svg)$': '<rootDir>/tests/__mocks__/fileMock.js',
-    "\\.(css)$": "identity-obj-proxy"
+    '\\.(css)$': 'identity-obj-proxy'
   },
-  'coveragePathIgnorePatterns': [
-    '/stories/',
-    '/.storybook/',
-    '<rootDir>/node_modules/',
-    'story(.*).tsx'
-  ],
-  collectCoverage: true
+  setupFiles: ['<rootDir>/.jest/register-context.js'],
+  coveragePathIgnorePatterns: ['/stories/', '/.storybook/', '<rootDir>/node_modules/', 'story(.*).tsx'],
+  testEnvironment: 'jsdom',
+  collectCoverage: true,
+  globals: {
+    'ts-jest': {
+      babelConfig: '.babelrc'
+    }
+  }
 }

@@ -27,7 +27,9 @@ const CustomLaneHeader = ({label, cards, title, current, target}) => {
           </div>
         )}
       </header>
-      <div>Percentage: {current || 0}/{target}</div>
+      <div>
+        Percentage: {current || 0}/{target}
+      </div>
     </div>
   )
 }
@@ -40,8 +42,8 @@ storiesOf('Custom Components', module).add(
         {
           id: 'lane1',
           title: 'Planned Tasks',
-          current: "70", // custom property
-          target: "100", // custom property
+          current: '70', // custom property
+          target: '100', // custom property
           label: 'First Lane here',
           cards: [
             {
@@ -60,14 +62,17 @@ storiesOf('Custom Components', module).add(
           id: 'lane2',
           title: 'Completed Tasks',
           label: 'Second Lane here',
-          current: "30", // custom property
-          target: "100", // custom property
+          current: '30', // custom property
+          target: '100', // custom property
           cards: [
             {
               id: 'Card3',
               title: 'Michael Caine',
               description: 'You are welcome. Interested in doing business with you' + ' again',
-              tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
+              tags: [
+                {title: 'Critical', color: 'white', bgcolor: 'red'},
+                {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
+              ]
             }
           ]
         }

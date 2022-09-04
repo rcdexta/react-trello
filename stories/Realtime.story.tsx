@@ -47,7 +47,12 @@ class RealtimeBoard extends Component {
     this.state.eventBus.publish({
       type: 'UPDATE_CARD',
       laneId: 'PLANNED',
-      card: {id: 'Plan2', title: 'UPDATED Dispose Garbage', label: '45 mins', description: 'UPDATED Sort out recyclable and waste as needed'}
+      card: {
+        id: 'Plan2',
+        title: 'UPDATED Dispose Garbage',
+        label: '45 mins',
+        description: 'UPDATED Sort out recyclable and waste as needed'
+      }
     })
   }
 

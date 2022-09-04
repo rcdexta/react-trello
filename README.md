@@ -331,9 +331,6 @@ Tested to work with following browsers using [Browserling](https://www.browserli
 * Safari 4.0 or above
 * Microsoft Edge 15 or above
 
-## Logging
-
-Pass environment variable `REDUX_LOGGING` as true to enable Redux logging in any environment
 
 ## Development
 

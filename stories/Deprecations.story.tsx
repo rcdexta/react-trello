@@ -85,7 +85,9 @@ const CustomCard = props => {
         <div style={{padding: '5px 0px'}}>
           <i>{props.body}</i>
         </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>{props.escalationText}</div>
+        <div style={{marginTop: 10, textAlign: 'center', color: props.cardColor, fontSize: 15, fontWeight: 'bold'}}>
+          {props.escalationText}
+        </div>
         {props.tags && (
           <div
             style={{
@@ -107,16 +109,20 @@ const CustomCard = props => {
 }
 storiesOf('Deprecation warnings', module).add(
   'v2.2 warnings',
-  () => <Board
-          data={data}
-          editable
-					addCardLink={<button>New Card</button>}
-					customLaneHeader={<CustomLaneHeader />}
-					newLaneTemplate={<div>new lane</div>}
-					newCardTemplate={<NewCard />}
-					customCardLayout
-					>
-				 <CustomCard />
-				</Board>,
-  {info: 'Example of usage legacy props: addCardLink, customCardLayout, customLaneHeader, newLaneTemplate, newCardTemplate'}
+  () => (
+    <Board
+      data={data}
+      editable
+      addCardLink={<button>New Card</button>}
+      customLaneHeader={<CustomLaneHeader />}
+      newLaneTemplate={<div>new lane</div>}
+      newCardTemplate={<NewCard />}
+      customCardLayout>
+      <CustomCard />
+    </Board>
+  ),
+  {
+    info:
+      'Example of usage legacy props: addCardLink, customCardLayout, customLaneHeader, newLaneTemplate, newCardTemplate'
+  }
 )

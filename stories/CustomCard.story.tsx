@@ -1,9 +1,10 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import {MovableCardWrapper } from 'rt/styles/Base'
+import {MovableCardWrapper} from 'rt/styles/Base'
 import DeleteButton from 'rt/widgets/DeleteButton'
 
 import Board from '../src'
+
 import Tag from 'rt/components/Card/Tag'
 
 const CustomCard = ({
@@ -19,7 +20,7 @@ const CustomCard = ({
   escalationText,
   tags,
   showDeleteButton,
-  onDelete,
+  onDelete
 }) => {
   const clickDelete = e => {
     onDelete()
@@ -27,11 +28,7 @@ const CustomCard = ({
   }
 
   return (
-    <MovableCardWrapper
-      onClick={onClick}
-      style={cardStyle}
-      className={className}
-    >
+    <MovableCardWrapper onClick={onClick} style={cardStyle} className={className}>
       <header
         style={{
           borderBottom: '1px solid #eee',
@@ -51,7 +48,9 @@ const CustomCard = ({
         <div style={{padding: '5px 0px'}}>
           <i>{body}</i>
         </div>
-        <div style={{marginTop: 10, textAlign: 'center', color: cardColor, fontSize: 15, fontWeight: 'bold'}}>{escalationText}</div>
+        <div style={{marginTop: 10, textAlign: 'center', color: cardColor, fontSize: 15, fontWeight: 'bold'}}>
+          {escalationText}
+        </div>
         {tags && (
           <div
             style={{
@@ -120,7 +119,10 @@ const data = {
           cardColor: '#BD3B36',
           cardStyle: {borderRadius: 6, boxShadow: '0 0 6px 1px #BD3B36', marginBottom: 15},
           metadata: {id: 'Card1'},
-          tags: [{title: 'Critical', color: 'white', bgcolor: 'red'}, {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}]
+          tags: [
+            {title: 'Critical', color: 'white', bgcolor: 'red'},
+            {title: '2d ETA', color: 'white', bgcolor: '#0079BF'}
+          ]
         }
       ]
     }

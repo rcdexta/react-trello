@@ -7,7 +7,7 @@ import Board from '../src'
 const data = require('./data/base.json')
 const smallData = require('./data/data-sort')
 
-const disallowAddingCardData =  {...data}
+const disallowAddingCardData = {...data}
 disallowAddingCardData.lanes[0].title = 'Disallowed adding card'
 disallowAddingCardData.lanes[0].disallowAddingCard = true
 
@@ -48,12 +48,7 @@ storiesOf('Editable Board', module)
     'Add New Lane',
     () => {
       return (
-        <Board
-          data={smallData}
-          editable
-          canAddLanes
-          onLaneAdd={t => debug('You added a line with title ' + t.title)}
-        />
+        <Board data={smallData} editable canAddLanes onLaneAdd={t => debug('You added a line with title ' + t.title)} />
       )
     },
     {info: 'Allow adding new lane'}
@@ -61,12 +56,7 @@ storiesOf('Editable Board', module)
   .add(
     'Disallow Adding Card for specific Lane',
     () => {
-      return (
-        <Board
-          data={disallowAddingCardData}
-          editable
-        />
-      )
+      return <Board data={disallowAddingCardData} editable />
     },
     {info: 'Can hide the add card button on specific lanes'}
   )
@@ -79,8 +69,8 @@ storiesOf('Editable Board', module)
           editable
           canAddLanes
           editLaneTitle
-          onCardUpdate={ (cardId, data) => debug(`onCardUpdate: ${cardId} -> ${JSON.stringify(data, null, 2)}`)}
-          onLaneUpdate={ (laneId, data) => debug(`onLaneUpdate: ${laneId} -> ${data.title}`)}
+          onCardUpdate={(cardId, data) => debug(`onCardUpdate: ${cardId} -> ${JSON.stringify(data, null, 2)}`)}
+          onLaneUpdate={(laneId, data) => debug(`onLaneUpdate: ${laneId} -> ${data.title}`)}
           onLaneAdd={t => debug('You added a line with title ' + t.title)}
         />
       )
