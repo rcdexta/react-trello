@@ -2,7 +2,7 @@ import React, {CSSProperties, FC, HTMLAttributes, PropsWithChildren} from 'react
 import PropTypes from 'prop-types'
 import InlineInput from 'rt/widgets/InlineInput'
 import {Title, LaneHeader as _LaneHeader, RightContent} from 'rt/styles/Base'
-import LaneMenu from './LaneHeader/LaneMenu'
+import {LaneMenu} from './LaneHeader/LaneMenu'
 import createTranslate from 'rt/helpers/createTranslate'
 
 interface LaneHeaderProps extends HTMLAttributes<HTMLHeadElement> {
