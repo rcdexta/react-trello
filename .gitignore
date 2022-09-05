@@ -6,3 +6,4 @@ coverage
 npm-debug.log
 dist/
 .history/
+storybook-build
