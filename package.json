@@ -1,41 +1,41 @@
 {
-  "name": "react-trello",
-  "version": "2.4.1",
-  "description": "Pluggable components to add a trello like kanban board to your application",
-  "main": "dist/index.js",
+  "name": "react-trello-ts",
+  "version": "1.0.0",
+  "description": "Pluggable typesafe components to add a trello like kanban board to your application",
+  "main": "dist/index.tsx",
   "files": [
     "dist",
     "README"
   ],
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "pnpm build",
     "storybook": "start-storybook -p 9002",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require tests/config/setup 'tests/**/*.test.js'",
+    "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require tests/config/setup 'tests/**/*.test.ts'",
     "test:report": "cat ./coverage/lcov.info | codecov && rm -rf ./coverage",
-    "build": "babel src --out-dir dist --copy-files",
+    "build": "tsup src/index.tsx --format cjs --watch --dts --external react --inject react-shim.js",
     "docs": "build-storybook -o docs",
     "commit": "git cz",
     "deploy-storybook": "storybook-to-ghpages",
-    "format": "pretty-quick \"src/**/*.js\"",
     "size": "size-limit"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rcdexta/react-trello"
+    "url": "https://github.com/KaiSpencer/react-trello-ts"
   },
   "keywords": [
     "react",
     "trello",
-    "board"
+    "board",
+    "typescript"
   ],
-  "author": "RC, Prakash",
+  "author": "Kai",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rcdexta/react-trello/issues"
+    "url": "https://github.com/KaiSpencer/react-trello-ts/issues"
   },
-  "homepage": "https://github.com/rcdexta/react-trello",
+  "homepage": "https://github.com/KaiSpencer/react-trello-ts",
   "dependencies": {
     "autosize": "^4.0.2",
     "classnames": "^2.2.6",
@@ -115,6 +115,7 @@
     "styled-components": "^5",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
+    "tsup": "^6.2.3",
     "typescript": "^4.8.2"
   },
   "peerDependencies": {

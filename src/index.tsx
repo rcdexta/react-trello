@@ -5,7 +5,7 @@ import Container from './dnd/Container'
 import BoardContainer from './controllers/BoardContainer'
 import Lane from './controllers/Lane'
 import deprecationWarnings from './helpers/deprecationWarnings'
-import DefaultComponents from './components'
+import * as DefaultComponents from './components'
 import locales from './locales'
 
 export * from './widgets'

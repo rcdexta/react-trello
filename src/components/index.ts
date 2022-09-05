@@ -8,7 +8,7 @@ import {AddCardLink} from './AddCardLink'
 import {NewLaneSection} from './NewLaneSection'
 import {BoardWrapper, GlobalStyle, ScrollableLane, Section} from 'rt/styles/Base'
 
-export default {
+export {
   GlobalStyle,
   BoardWrapper,
   Loader,
