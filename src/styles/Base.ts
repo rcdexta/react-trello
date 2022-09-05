@@ -132,7 +132,7 @@ export const LaneFooter = styled.div`
   height: 10px;
 `
 
-export const ScrollableLane = styled.div`
+export const ScrollableLane = styled.div<{isDraggingOver?: boolean}>`
   flex: 1;
   overflow-y: auto;
   min-width: 250px;

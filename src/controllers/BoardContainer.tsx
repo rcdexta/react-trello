@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
-import {bindActionCreators} from 'redux'
+import React, {Component, CSSProperties, HTMLAttributes} from 'react'
+import {bindActionCreators, Dispatch} from 'redux'
 import {connect} from 'react-redux'
 import Container from 'rt/dnd/Container'
 import {Draggable} from 'rt/dnd/Draggable'
-import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
@@ -11,11 +10,60 @@ import {PopoverWrapper} from 'react-popopo'
 
 import * as boardActions from 'rt/actions/BoardActions'
 import * as laneActions from 'rt/actions/LaneActions'
+import {components, createTranslate} from '..'
+import {BoardData, Lane as ILane} from 'rt/types/Board'
+import {FormState as NewCardFormState} from 'rt/components/NewCardForm'
 
-class BoardContainer extends Component {
+interface BoardContainerProps {
+  id?: string
+  components?: typeof components
+  actions?: typeof laneActions & typeof boardActions
+  data: BoardData
+  reducerData?: BoardData
+  onDataChange?: (reducerData: BoardContainerProps['reducerData']) => void
+  eventBusHandle?: (
+    handle: {
+      publish: (event: any) => any
+    }
+  ) => void
+  onLaneScroll?: () => void
+  onCardClick?: () => void
+  onBeforeCardDelete?: () => void
+  onCardDelete?: () => void
+  onCardAdd?: () => void
+  onCardUpdate?: () => void
+  onLaneAdd?: (laneAddParams: NewCardFormState) => void
+  onLaneDelete?: () => void
+  onLaneClick?: () => void
+  onLaneUpdate?: () => void
+  laneSortFunction?: (laneA: ILane, laneB: ILane) => number
+  draggable?: boolean
+  collapsibleLanes?: boolean
+  editable?: boolean
+  canAddLanes?: boolean
+  hideCardDeleteAction?: boolean
+  hideCardDeleteIcon?: boolean
+  handleDragStart?: () => void
+  handleDragEnd?: () => void
+  handleLaneDragStart?: (payloadId: string) => void
+  handleLaneDragEnd?: (removedIndex: string, addedIndex: string, payload: ILane) => void
+  style?: CSSProperties
+  tagStyle?: CSSProperties
+  laneStyle?: CSSProperties
+  cardStyle?: CSSProperties
+  laneDraggable?: boolean
+  cardDraggable?: boolean
+  cardDragClass?: string
+  laneDragClass?: string
+  laneDropClass?: string
+  onCardMoveAcrossLanes: () => void
+  t: typeof createTranslate
+}
+class BoardContainer extends Component<BoardContainerProps> {
   state = {
     addLaneMode: false
   }
+  static defaultProps: Partial<BoardContainerProps>
 
   componentDidMount() {
     const {actions, eventBusHandle} = this.props
@@ -216,45 +264,6 @@ class BoardContainer extends Component {
   }
 }
 
-BoardContainer.propTypes = {
-  id: PropTypes.string,
-  components: PropTypes.object,
-  actions: PropTypes.object,
-  data: PropTypes.object.isRequired,
-  reducerData: PropTypes.object,
-  onDataChange: PropTypes.func,
-  eventBusHandle: PropTypes.func,
-  onLaneScroll: PropTypes.func,
-  onCardClick: PropTypes.func,
-  onBeforeCardDelete: PropTypes.func,
-  onCardDelete: PropTypes.func,
-  onCardAdd: PropTypes.func,
-  onCardUpdate: PropTypes.func,
-  onLaneAdd: PropTypes.func,
-  onLaneDelete: PropTypes.func,
-  onLaneClick: PropTypes.func,
-  onLaneUpdate: PropTypes.func,
-  laneSortFunction: PropTypes.func,
-  draggable: PropTypes.bool,
-  collapsibleLanes: PropTypes.bool,
-  editable: PropTypes.bool,
-  canAddLanes: PropTypes.bool,
-  hideCardDeleteIcon: PropTypes.bool,
-  handleDragStart: PropTypes.func,
-  handleDragEnd: PropTypes.func,
-  handleLaneDragStart: PropTypes.func,
-  handleLaneDragEnd: PropTypes.func,
-  style: PropTypes.object,
-  tagStyle: PropTypes.object,
-  laneDraggable: PropTypes.bool,
-  cardDraggable: PropTypes.bool,
-  cardDragClass: PropTypes.string,
-  laneDragClass: PropTypes.string,
-  laneDropClass: PropTypes.string,
-  onCardMoveAcrossLanes: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired
-}
-
 BoardContainer.defaultProps = {
   t: v => v,
   onDataChange: () => {},
@@ -279,11 +288,13 @@ BoardContainer.defaultProps = {
   laneDropClass: ''
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state: BoardData) => {
   return state.lanes ? {reducerData: state} : {}
 }
 
-const mapDispatchToProps = dispatch => ({actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)})
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)
+})
 
 export default connect(
   mapStateToProps,

@@ -5,7 +5,7 @@ import container, {dropHandlers} from 'trello-smooth-dnd'
 container.dropHandler = dropHandlers.reactDropHandler().handler
 container.wrapChild = (p: any) => p // dont wrap children they will already be wrapped
 
-interface ContainerProps {
+export interface ContainerProps {
   behaviour?: 'move' | 'copy' | 'drag-zone'
   groupName?: string
   orientation?: 'horizontal' | 'vertical'

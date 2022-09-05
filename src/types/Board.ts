@@ -1,3 +1,5 @@
+import {CSSProperties} from 'react'
+
 export interface BoardData {
   lanes: Lane[]
 }
@@ -9,6 +11,10 @@ export interface Lane {
   style: Style
   cards: Card[]
   currentPage: number
+  droppable?: boolean
+  labelStyle?: CSSProperties
+  cardStyle?: CSSProperties
+  disallowAddingCard?: boolean
 }
 
 export interface Card {
@@ -17,6 +23,8 @@ export interface Card {
   label?: string
   description?: string
   laneId?: string
+  style?: string
+  draggable?: boolean
 }
 
 export interface Style {

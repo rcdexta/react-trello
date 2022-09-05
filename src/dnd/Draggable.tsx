@@ -3,7 +3,7 @@ import {constants} from 'trello-smooth-dnd'
 const {wrapperClass} = constants
 
 interface DraggableProps extends HTMLAttributes<HTMLDivElement> {
-  render: () => ReactElement
+  render?: () => ReactElement
 }
 export const Draggable: FC<PropsWithChildren<DraggableProps>> = ({className, render, children, ...rest}) => {
   if (render) {

@@ -4,22 +4,24 @@ import {AddButton, CancelButton} from 'rt/styles/Elements'
 import {EditableLabel} from 'rt/widgets/EditableLabel'
 import createTranslate from 'rt/helpers/createTranslate'
 
-interface FormState {
+export interface FormState {
   title: string
   description: string
   label: string
+  laneId: string
 }
 
 interface NewCardFormProps {
+  laneId: string
   onCancel: () => void
   onAdd: (formState: FormState) => void
   t: typeof createTranslate
 }
-export const NewCardForm: FC<PropsWithChildren<NewCardFormProps>> = ({onCancel, onAdd, t}) => {
+export const NewCardForm: FC<PropsWithChildren<NewCardFormProps>> = ({laneId, onCancel, onAdd, t}) => {
   const [formState, setFormState] = useState<FormState>()
 
   const handleAdd = () => {
-    onAdd(formState)
+    onAdd({...formState, laneId})
   }
 
   const updateField = <K extends keyof FormState>(field: K, value: FormState[K]) => {
