@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "KaiSpencer",
+      "name": "Kai Spencer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51139521?v=4",
+      "profile": "https://github.com/KaiSpencer",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "react-trello-ts",
+  "projectOwner": "KaiSpencer",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
