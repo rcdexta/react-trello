@@ -1,7 +1,7 @@
 import React, {FC, HTMLAttributes, PropsWithChildren, useRef, useState} from 'react'
 import {LaneTitle, NewLaneButtons, Section} from 'rt/styles/Base'
 import {AddButton, CancelButton} from 'rt/styles/Elements'
-import NewLaneTitleEditor from 'rt/widgets/NewLaneTitleEditor'
+import {NewLaneTitleEditor} from 'rt/widgets/NewLaneTitleEditor'
 import uuidv1 from 'uuid/v1'
 import {ThemedStyledFunction} from 'styled-components'
 import createTranslate from 'rt/helpers/createTranslate'
@@ -12,11 +12,11 @@ interface NewLaneFormProps extends HTMLAttributes<ThemedStyledFunction<'section'
   t: typeof createTranslate
 }
 export const NewLaneForm: FC<PropsWithChildren<NewLaneFormProps>> = ({onAdd, onCancel, t}) => {
-  const titleRef = useRef<NewLaneTitleEditor>()
+  const titleRef = useRef<HTMLTextAreaElement>()
   const handleSubmit = () => {
     onAdd({
       id: uuidv1(),
-      title: titleRef.current.getValue()
+      title: titleRef.current.value
     })
   }
 
@@ -24,8 +24,8 @@ export const NewLaneForm: FC<PropsWithChildren<NewLaneFormProps>> = ({onAdd, onC
     <Section>
       <LaneTitle>
         <NewLaneTitleEditor
-          ref={ref => (titleRef.current = ref)}
-          placeholder={t('placeholder.title')}
+          inputRef={titleRef}
+          placeholder={(t('placeholder.title') as unknown) as string}
           onCancel={onCancel}
           onSave={handleSubmit}
           resize="vertical"

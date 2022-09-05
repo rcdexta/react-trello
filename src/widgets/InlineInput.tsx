@@ -63,12 +63,12 @@ export const InlineInput: FC<PropsWithChildren<InlineInputProps>> = ({
       autosize(inputRef)
     }
   }
-  // useEffect(
-  //   () => {
-  //     setInputValue(value)
-  //   },
-  //   [resize]
-  // )
+  useEffect(
+    () => {
+      setInputValue(value)
+    },
+    [resize]
+  )
   return (
     <_InlineInput
       ref={setRef}

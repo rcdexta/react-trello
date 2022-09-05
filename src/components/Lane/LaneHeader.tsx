@@ -28,8 +28,6 @@ export const LaneHeader: FC<PropsWithChildren<LaneHeaderProps>> = ({
   t,
   laneDraggable
 }) => {
-  console.log('title', title)
-
   return (
     <_LaneHeader onDoubleClick={onDoubleClick} editLaneTitle={editLaneTitle}>
       <Title draggable={laneDraggable} style={titleStyle}>
