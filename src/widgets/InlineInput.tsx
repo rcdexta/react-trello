@@ -1,7 +1,6 @@
 import React, {FC, PropsWithChildren, useEffect, useRef, useState} from 'react'
 import {InlineInput as _InlineInput} from 'rt/styles/Base'
 import autosize from 'autosize'
-import {StyledComponent} from 'styled-components'
 
 interface InlineInputProps {
   onSave?: (inputValue: string) => void

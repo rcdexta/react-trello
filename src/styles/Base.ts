@@ -260,7 +260,7 @@ export const CardForm = styled.div`
   background-color: #e3e3e3;
 `
 
-export const InlineInput = styled.textarea<{border: boolean}>`
+export const InlineInput = styled.textarea<{border: boolean; resize?: 'vertical' | 'horizontal' | 'none'}>`
   overflow-x: hidden; /* for Firefox (issue #5) */
   word-wrap: break-word;
   min-height: 18px;
@@ -288,4 +288,9 @@ export const InlineInput = styled.textarea<{border: boolean}>`
     `} &:focus {
     background-color: white;
   }
+  ${props =>
+    props.resize &&
+    css`
+      resize: ${props.resize};
+    `};
 `

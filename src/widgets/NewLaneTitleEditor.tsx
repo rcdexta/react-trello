@@ -15,7 +15,6 @@ interface NewLaneTitleEditorProps extends HTMLAttributes<HTMLTextAreaElement> {
 }
 export const NewLaneTitleEditor: React.FC<PropsWithChildren<NewLaneTitleEditorProps>> = ({
   autoFocus = false,
-  autoResize = false,
   border = false,
   onCancel = () => {},
   onSave = () => {},
@@ -70,7 +69,6 @@ export const NewLaneTitleEditor: React.FC<PropsWithChildren<NewLaneTitleEditorPr
       placeholder={inputValue.length === 0 ? undefined : placeholder}
       defaultValue={value}
       rows={3}
-      // autoResize={autoResize}
       autoFocus={autoFocus}
     />
   )

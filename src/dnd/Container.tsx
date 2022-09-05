@@ -1,12 +1,42 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
 import container, {dropHandlers} from 'trello-smooth-dnd'
 
 container.dropHandler = dropHandlers.reactDropHandler().handler
-container.wrapChild = p => p // dont wrap children they will already be wrapped
+container.wrapChild = (p: any) => p // dont wrap children they will already be wrapped
 
-class Container extends Component {
+interface ContainerProps {
+  behaviour?: 'move' | 'copy' | 'drag-zone'
+  groupName?: string
+  orientation?: 'horizontal' | 'vertical'
+  style?: object
+  dragHandleSelector?: string
+  className?: string
+  nonDragAreaSelector?: string
+  dragBeginDelay?: number
+  animationDuration?: number
+  autoScrollEnabled?: string
+  lockAxis?: string
+  dragClass?: string
+  dropClass?: string
+  onDragStart?: (params: any) => void
+  onDragEnd?: (params: any) => void
+  onDrop?: (params: any) => void
+  onDropReady?: (params: any) => void
+  getChildPayload?: (index: number) => any
+  shouldAnimateDrop?: (params: any) => boolean
+  shouldAcceptDrop?: (params: any) => boolean
+  onDragEnter?: (params: any) => void
+  onDragLeave?: (params: any) => void
+  render?: (params: any) => any
+  getGhostParent?: () => any
+  removeOnDropOut?: boolean
+}
+
+class Container extends Component<ContainerProps> {
+  containerDiv: typeof Container | Element | Text
+  prevContainer: typeof Container | Element | Text
+  container: any
   constructor(props) {
     super(props)
     this.getContainerOptions = this.getContainerOptions.bind(this)
@@ -53,7 +83,20 @@ class Container extends Component {
   }
 
   getContainerOptions() {
-    const functionProps = {}
+    const functionProps: Pick<
+      ContainerProps,
+      | 'onDragEnd'
+      | 'onDragStart'
+      | 'onDrop'
+      | 'getChildPayload'
+      | 'shouldAnimateDrop'
+      | 'shouldAcceptDrop'
+      | 'onDragEnter'
+      | 'onDragLeave'
+      | 'render'
+      | 'onDropReady'
+      | 'getGhostParent'
+    > = {}
 
     if (this.props.onDragStart) {
       functionProps.onDragStart = (...p) => this.props.onDragStart(...p)
@@ -101,39 +144,6 @@ class Container extends Component {
 
     return Object.assign({}, this.props, functionProps)
   }
-}
-
-Container.propTypes = {
-  behaviour: PropTypes.oneOf(['move', 'copy', 'drag-zone']),
-  groupName: PropTypes.string,
-  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
-  style: PropTypes.object,
-  dragHandleSelector: PropTypes.string,
-  className: PropTypes.string,
-  nonDragAreaSelector: PropTypes.string,
-  dragBeginDelay: PropTypes.number,
-  animationDuration: PropTypes.number,
-  autoScrollEnabled: PropTypes.string,
-  lockAxis: PropTypes.string,
-  dragClass: PropTypes.string,
-  dropClass: PropTypes.string,
-  onDragStart: PropTypes.func,
-  onDragEnd: PropTypes.func,
-  onDrop: PropTypes.func,
-  getChildPayload: PropTypes.func,
-  shouldAnimateDrop: PropTypes.func,
-  shouldAcceptDrop: PropTypes.func,
-  onDragEnter: PropTypes.func,
-  onDragLeave: PropTypes.func,
-  render: PropTypes.func,
-  getGhostParent: PropTypes.func,
-  removeOnDropOut: PropTypes.bool
-}
-
-Container.defaultProps = {
-  behaviour: 'move',
-  orientation: 'vertical',
-  className: 'reactTrelloBoard'
 }
 
 export default Container
