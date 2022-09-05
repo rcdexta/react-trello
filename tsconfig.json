@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "jsx": "react",                                /* Specify what JSX code is generated. */
+    "module": "commonjs",    
+    "declaration": true,                            /* Specify what module code is generated. */
+    "rootDir": "./",                                  /* Specify the root folder within your source files. */
+    "baseUrl": ".",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {"rt/*":["./src/*"]},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "resolveJsonModule": true,                        /* Enable importing .json files. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "allowJs": true,
+    "strict": false,                                      /* Enable all strict type-checking options. */
+    "strictFunctionTypes": false,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+    "skipLibCheck": true   ,  
+    },
+    "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx"],
+    "exclude": ["node_modules", "dist"]
+}
