@@ -14,7 +14,7 @@
     "test:watch": "jest --watch",
     "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require tests/config/setup 'tests/**/*.test.ts'",
     "test:report": "cat ./coverage/lcov.info | codecov && rm -rf ./coverage",
-    "build": "tsup src/index.tsx --format cjs --watch --dts --external react --inject react-shim.js",
+    "build": "tsup src/index.tsx --format cjs --dts --external react --inject react-shim.js",
     "docs": "build-storybook -o docs",
     "commit": "git cz",
     "deploy-storybook": "storybook-to-ghpages",
