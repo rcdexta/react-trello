@@ -12542,7 +12542,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -12558,7 +12557,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -12584,7 +12582,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -12613,7 +12610,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -12629,7 +12625,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               10 mins
                             </textarea>
@@ -12655,7 +12650,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -12684,7 +12678,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -12700,7 +12693,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -12726,7 +12718,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -12755,7 +12746,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -12771,7 +12761,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               5 mins
                             </textarea>
@@ -12797,7 +12786,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -12862,7 +12850,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Clean House
                             </textarea>
@@ -12878,7 +12865,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -12904,7 +12890,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </textarea>
@@ -13004,7 +12989,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Practice Meditation
                             </textarea>
@@ -13020,7 +13004,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -13046,7 +13029,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Headspace app
                           </textarea>
@@ -13075,7 +13057,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Maintain Daily Journal
                             </textarea>
@@ -13091,7 +13072,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -13117,7 +13097,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Spreadsheet for now
                           </textarea>
@@ -13182,7 +13161,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Morning Jog
                             </textarea>
@@ -13198,7 +13176,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -13224,7 +13201,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Track using fitbit
                           </textarea>
@@ -13289,7 +13265,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Trekking
                             </textarea>
@@ -13305,7 +13280,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -13331,7 +13305,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -13396,7 +13369,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Jogging
                             </textarea>
@@ -13412,7 +13384,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -13438,7 +13409,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -13503,7 +13473,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Cycling
                             </textarea>
@@ -13519,7 +13488,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -13545,7 +13513,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -13825,7 +13792,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Buy milk
                           </textarea>
@@ -13841,7 +13807,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -13867,7 +13832,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           2 Gallons of milk at the Deli store
                         </textarea>
@@ -13896,7 +13860,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Dispose Garbage
                           </textarea>
@@ -13912,7 +13875,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             10 mins
                           </textarea>
@@ -13938,7 +13900,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Sort out recyclable and waste as needed
                         </textarea>
@@ -13967,7 +13928,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Write Blog
                           </textarea>
@@ -13983,7 +13943,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -14009,7 +13968,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Can AI make memes?
                         </textarea>
@@ -14038,7 +13996,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Pay Rent
                           </textarea>
@@ -14054,7 +14011,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             5 mins
                           </textarea>
@@ -14080,7 +14036,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Transfer to bank account
                         </textarea>
@@ -14145,7 +14100,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Clean House
                           </textarea>
@@ -14161,7 +14115,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -14187,7 +14140,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </textarea>
@@ -14287,7 +14239,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Practice Meditation
                           </textarea>
@@ -14303,7 +14254,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -14329,7 +14279,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Headspace app
                         </textarea>
@@ -14358,7 +14307,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Maintain Daily Journal
                           </textarea>
@@ -14374,7 +14322,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -14400,7 +14347,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Spreadsheet for now
                         </textarea>
@@ -14465,7 +14411,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Morning Jog
                           </textarea>
@@ -14481,7 +14426,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -14507,7 +14451,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Track using fitbit
                         </textarea>
@@ -14572,7 +14515,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Trekking
                           </textarea>
@@ -14588,7 +14530,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -14614,7 +14555,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -14679,7 +14619,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Jogging
                           </textarea>
@@ -14695,7 +14634,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -14721,7 +14659,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -14786,7 +14723,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Cycling
                           </textarea>
@@ -14802,7 +14738,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -14828,7 +14763,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -19134,7 +19068,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Clean House
                             </textarea>
@@ -19150,7 +19083,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -19176,7 +19108,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </textarea>
@@ -19280,7 +19211,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Practice Meditation
                             </textarea>
@@ -19296,7 +19226,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -19322,7 +19251,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Headspace app
                           </textarea>
@@ -19351,7 +19279,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Maintain Daily Journal
                             </textarea>
@@ -19367,7 +19294,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -19393,7 +19319,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Spreadsheet for now
                           </textarea>
@@ -19460,7 +19385,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Morning Jog
                             </textarea>
@@ -19476,7 +19400,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -19502,7 +19425,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Track using fitbit
                           </textarea>
@@ -19569,7 +19491,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Trekking
                             </textarea>
@@ -19585,7 +19506,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -19611,7 +19531,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -19678,7 +19597,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Jogging
                             </textarea>
@@ -19694,7 +19612,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -19720,7 +19637,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -19787,7 +19703,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Cycling
                             </textarea>
@@ -19803,7 +19718,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -19829,7 +19743,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -20314,7 +20227,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Clean House
                           </textarea>
@@ -20330,7 +20242,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -20356,7 +20267,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </textarea>
@@ -20460,7 +20370,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Practice Meditation
                           </textarea>
@@ -20476,7 +20385,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -20502,7 +20410,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Headspace app
                         </textarea>
@@ -20531,7 +20438,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Maintain Daily Journal
                           </textarea>
@@ -20547,7 +20453,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -20573,7 +20478,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Spreadsheet for now
                         </textarea>
@@ -20640,7 +20544,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Morning Jog
                           </textarea>
@@ -20656,7 +20559,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -20682,7 +20584,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Track using fitbit
                         </textarea>
@@ -20749,7 +20650,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Trekking
                           </textarea>
@@ -20765,7 +20665,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -20791,7 +20690,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -20858,7 +20756,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Jogging
                           </textarea>
@@ -20874,7 +20771,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -20900,7 +20796,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -20967,7 +20862,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Cycling
                           </textarea>
@@ -20983,7 +20877,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -21009,7 +20902,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -21629,7 +21521,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -21645,7 +21536,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -21671,7 +21561,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -21700,7 +21589,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -21716,7 +21604,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -21742,7 +21629,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -21771,7 +21657,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -21787,7 +21672,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -21813,7 +21697,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -21842,7 +21725,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -21858,7 +21740,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -21884,7 +21765,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -22458,7 +22338,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Buy milk
                           </textarea>
@@ -22474,7 +22353,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-12-01
                           </textarea>
@@ -22500,7 +22378,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           2 Gallons of milk at the Deli store
                         </textarea>
@@ -22529,7 +22406,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Dispose Garbage
                           </textarea>
@@ -22545,7 +22421,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-11-01
                           </textarea>
@@ -22571,7 +22446,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Sort out recyclable and waste as needed
                         </textarea>
@@ -22600,7 +22474,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Write Blog
                           </textarea>
@@ -22616,7 +22489,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-10-01
                           </textarea>
@@ -22642,7 +22514,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Can AI make memes?
                         </textarea>
@@ -22671,7 +22542,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Pay Rent
                           </textarea>
@@ -22687,7 +22557,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-09-01
                           </textarea>
@@ -22713,7 +22582,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Transfer to bank account
                         </textarea>
@@ -23309,7 +23177,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -23325,7 +23192,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -23351,7 +23217,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -23380,7 +23245,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -23396,7 +23260,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -23422,7 +23285,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -23451,7 +23313,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -23467,7 +23328,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -23493,7 +23353,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -23522,7 +23381,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -23538,7 +23396,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -23564,7 +23421,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -24095,7 +23951,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Buy milk
                           </textarea>
@@ -24111,7 +23966,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-12-01
                           </textarea>
@@ -24137,7 +23991,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           2 Gallons of milk at the Deli store
                         </textarea>
@@ -24166,7 +24019,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Dispose Garbage
                           </textarea>
@@ -24182,7 +24034,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-11-01
                           </textarea>
@@ -24208,7 +24059,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Sort out recyclable and waste as needed
                         </textarea>
@@ -24237,7 +24087,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Write Blog
                           </textarea>
@@ -24253,7 +24102,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-10-01
                           </textarea>
@@ -24279,7 +24127,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Can AI make memes?
                         </textarea>
@@ -24308,7 +24155,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Pay Rent
                           </textarea>
@@ -24324,7 +24170,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-09-01
                           </textarea>
@@ -24350,7 +24195,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Transfer to bank account
                         </textarea>
@@ -24901,7 +24745,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Clean House
                             </textarea>
@@ -24917,7 +24760,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -24943,7 +24785,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </textarea>
@@ -25047,7 +24888,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Practice Meditation
                             </textarea>
@@ -25063,7 +24903,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -25089,7 +24928,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Headspace app
                           </textarea>
@@ -25118,7 +24956,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Maintain Daily Journal
                             </textarea>
@@ -25134,7 +24971,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -25160,7 +24996,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Spreadsheet for now
                           </textarea>
@@ -25227,7 +25062,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Morning Jog
                             </textarea>
@@ -25243,7 +25077,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -25269,7 +25102,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Track using fitbit
                           </textarea>
@@ -25336,7 +25168,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Trekking
                             </textarea>
@@ -25352,7 +25183,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -25378,7 +25208,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -25445,7 +25274,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Jogging
                             </textarea>
@@ -25461,7 +25289,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -25487,7 +25314,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -25554,7 +25380,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Cycling
                             </textarea>
@@ -25570,7 +25395,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -25596,7 +25420,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -26081,7 +25904,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Clean House
                           </textarea>
@@ -26097,7 +25919,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -26123,7 +25944,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </textarea>
@@ -26227,7 +26047,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Practice Meditation
                           </textarea>
@@ -26243,7 +26062,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -26269,7 +26087,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Headspace app
                         </textarea>
@@ -26298,7 +26115,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Maintain Daily Journal
                           </textarea>
@@ -26314,7 +26130,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -26340,7 +26155,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Spreadsheet for now
                         </textarea>
@@ -26407,7 +26221,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Morning Jog
                           </textarea>
@@ -26423,7 +26236,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -26449,7 +26261,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Track using fitbit
                         </textarea>
@@ -26516,7 +26327,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Trekking
                           </textarea>
@@ -26532,7 +26342,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -26558,7 +26367,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -26625,7 +26433,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Jogging
                           </textarea>
@@ -26641,7 +26448,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -26667,7 +26473,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -26734,7 +26539,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Cycling
                           </textarea>
@@ -26750,7 +26554,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -26776,7 +26579,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -33156,7 +32958,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -33172,7 +32973,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -33198,7 +32998,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -33227,7 +33026,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -33243,7 +33041,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -33269,7 +33066,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -33298,7 +33094,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -33314,7 +33109,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -33340,7 +33134,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -33369,7 +33162,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -33385,7 +33177,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -33411,7 +33202,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -33985,7 +33775,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Buy milk
                           </textarea>
@@ -34001,7 +33790,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-12-01
                           </textarea>
@@ -34027,7 +33815,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           2 Gallons of milk at the Deli store
                         </textarea>
@@ -34056,7 +33843,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Dispose Garbage
                           </textarea>
@@ -34072,7 +33858,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-11-01
                           </textarea>
@@ -34098,7 +33883,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Sort out recyclable and waste as needed
                         </textarea>
@@ -34127,7 +33911,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Write Blog
                           </textarea>
@@ -34143,7 +33926,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-10-01
                           </textarea>
@@ -34169,7 +33951,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Can AI make memes?
                         </textarea>
@@ -34198,7 +33979,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Pay Rent
                           </textarea>
@@ -34214,7 +33994,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-09-01
                           </textarea>
@@ -34240,7 +34019,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Transfer to bank account
                         </textarea>
@@ -34804,7 +34582,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Clean House
                               </textarea>
@@ -34820,7 +34597,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 30 mins
                               </textarea>
@@ -34846,7 +34622,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                             </textarea>
@@ -34958,7 +34733,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Practice Meditation
                               </textarea>
@@ -34974,7 +34748,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 15 mins
                               </textarea>
@@ -35000,7 +34773,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Use Headspace app
                             </textarea>
@@ -35029,7 +34801,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Maintain Daily Journal
                               </textarea>
@@ -35045,7 +34816,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 15 mins
                               </textarea>
@@ -35071,7 +34841,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Use Spreadsheet for now
                             </textarea>
@@ -35142,7 +34911,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Morning Jog
                               </textarea>
@@ -35158,7 +34926,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 30 mins
                               </textarea>
@@ -35184,7 +34951,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Track using fitbit
                             </textarea>
@@ -35255,7 +35021,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Go Trekking
                               </textarea>
@@ -35271,7 +35036,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 300 mins
                               </textarea>
@@ -35297,7 +35061,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Completed 10km on cycle
                             </textarea>
@@ -35368,7 +35131,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Go Jogging
                               </textarea>
@@ -35384,7 +35146,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 300 mins
                               </textarea>
@@ -35410,7 +35171,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Completed 10km on cycle
                             </textarea>
@@ -35481,7 +35241,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Go Cycling
                               </textarea>
@@ -35497,7 +35256,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 300 mins
                               </textarea>
@@ -35523,7 +35281,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Completed 10km on cycle
                             </textarea>
@@ -36016,7 +35773,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Clean House
                             </textarea>
@@ -36032,7 +35788,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -36058,7 +35813,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </textarea>
@@ -36170,7 +35924,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Practice Meditation
                             </textarea>
@@ -36186,7 +35939,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -36212,7 +35964,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Headspace app
                           </textarea>
@@ -36241,7 +35992,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Maintain Daily Journal
                             </textarea>
@@ -36257,7 +36007,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -36283,7 +36032,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Spreadsheet for now
                           </textarea>
@@ -36354,7 +36102,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Morning Jog
                             </textarea>
@@ -36370,7 +36117,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -36396,7 +36142,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Track using fitbit
                           </textarea>
@@ -36467,7 +36212,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Trekking
                             </textarea>
@@ -36483,7 +36227,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -36509,7 +36252,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -36580,7 +36322,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Jogging
                             </textarea>
@@ -36596,7 +36337,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -36622,7 +36362,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -36693,7 +36432,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Cycling
                             </textarea>
@@ -36709,7 +36447,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -36735,7 +36472,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -37280,7 +37016,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Clean House
                             </textarea>
@@ -37296,7 +37031,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -37322,7 +37056,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </textarea>
@@ -37426,7 +37159,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Practice Meditation
                             </textarea>
@@ -37442,7 +37174,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -37468,7 +37199,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Headspace app
                           </textarea>
@@ -37497,7 +37227,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Maintain Daily Journal
                             </textarea>
@@ -37513,7 +37242,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               15 mins
                             </textarea>
@@ -37539,7 +37267,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Use Spreadsheet for now
                           </textarea>
@@ -37606,7 +37333,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Morning Jog
                             </textarea>
@@ -37622,7 +37348,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               30 mins
                             </textarea>
@@ -37648,7 +37373,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Track using fitbit
                           </textarea>
@@ -37715,7 +37439,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Trekking
                             </textarea>
@@ -37731,7 +37454,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -37757,7 +37479,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -37824,7 +37545,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Jogging
                             </textarea>
@@ -37840,7 +37560,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -37866,7 +37585,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -37933,7 +37651,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Go Cycling
                             </textarea>
@@ -37949,7 +37666,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               300 mins
                             </textarea>
@@ -37975,7 +37691,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Completed 10km on cycle
                           </textarea>
@@ -38460,7 +38175,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Clean House
                           </textarea>
@@ -38476,7 +38190,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -38502,7 +38215,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                         </textarea>
@@ -38606,7 +38318,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Practice Meditation
                           </textarea>
@@ -38622,7 +38333,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -38648,7 +38358,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Headspace app
                         </textarea>
@@ -38677,7 +38386,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Maintain Daily Journal
                           </textarea>
@@ -38693,7 +38401,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             15 mins
                           </textarea>
@@ -38719,7 +38426,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Use Spreadsheet for now
                         </textarea>
@@ -38786,7 +38492,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Morning Jog
                           </textarea>
@@ -38802,7 +38507,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             30 mins
                           </textarea>
@@ -38828,7 +38532,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Track using fitbit
                         </textarea>
@@ -38895,7 +38598,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Trekking
                           </textarea>
@@ -38911,7 +38613,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -38937,7 +38638,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -39004,7 +38704,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Jogging
                           </textarea>
@@ -39020,7 +38719,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -39046,7 +38744,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -39113,7 +38810,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Go Cycling
                           </textarea>
@@ -39129,7 +38825,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             300 mins
                           </textarea>
@@ -39155,7 +38850,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Completed 10km on cycle
                         </textarea>
@@ -39701,7 +39395,6 @@ Object {
                       placeholder="title"
                       rows="1"
                       spellcheck="false"
-                      style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                     >
                       Sorted Lane
                     </textarea>
@@ -39787,7 +39480,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -39803,7 +39495,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -39829,7 +39520,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -39858,7 +39548,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -39874,7 +39563,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -39900,7 +39588,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -39929,7 +39616,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -39945,7 +39631,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -39971,7 +39656,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -40000,7 +39684,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -40016,7 +39699,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -40042,7 +39724,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -40542,7 +40223,6 @@ Object {
                     placeholder="title"
                     rows="1"
                     spellcheck="false"
-                    style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                   >
                     Sorted Lane
                   </textarea>
@@ -40628,7 +40308,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Buy milk
                           </textarea>
@@ -40644,7 +40323,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-12-01
                           </textarea>
@@ -40670,7 +40348,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           2 Gallons of milk at the Deli store
                         </textarea>
@@ -40699,7 +40376,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Dispose Garbage
                           </textarea>
@@ -40715,7 +40391,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-11-01
                           </textarea>
@@ -40741,7 +40416,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Sort out recyclable and waste as needed
                         </textarea>
@@ -40770,7 +40444,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Write Blog
                           </textarea>
@@ -40786,7 +40459,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-10-01
                           </textarea>
@@ -40812,7 +40484,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Can AI make memes?
                         </textarea>
@@ -40841,7 +40512,6 @@ Object {
                             placeholder="title"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Pay Rent
                           </textarea>
@@ -40857,7 +40527,6 @@ Object {
                             placeholder="label"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2017-09-01
                           </textarea>
@@ -40883,7 +40552,6 @@ Object {
                           placeholder="description"
                           rows="1"
                           spellcheck="false"
-                          style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                         >
                           Transfer to bank account
                         </textarea>
@@ -41519,7 +41187,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Buy milk
                               </textarea>
@@ -41535,7 +41202,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-12-01
                               </textarea>
@@ -41561,7 +41227,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2 Gallons of milk at the Deli store
                             </textarea>
@@ -41590,7 +41255,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Dispose Garbage
                               </textarea>
@@ -41606,7 +41270,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-11-01
                               </textarea>
@@ -41632,7 +41295,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Sort out recyclable and waste as needed
                             </textarea>
@@ -41661,7 +41323,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Write Blog
                               </textarea>
@@ -41677,7 +41338,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-10-01
                               </textarea>
@@ -41703,7 +41363,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Can AI make memes?
                             </textarea>
@@ -41732,7 +41391,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Pay Rent
                               </textarea>
@@ -41748,7 +41406,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-09-01
                               </textarea>
@@ -41774,7 +41431,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Transfer to bank account
                             </textarea>
@@ -42352,7 +42008,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -42368,7 +42023,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -42394,7 +42048,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -42423,7 +42076,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -42439,7 +42091,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -42465,7 +42116,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -42494,7 +42144,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -42510,7 +42159,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -42536,7 +42184,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -42565,7 +42212,6 @@ Object {
                               placeholder="title"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -42581,7 +42227,6 @@ Object {
                               placeholder="label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -42607,7 +42252,6 @@ Object {
                             placeholder="description"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -43244,7 +42888,6 @@ Object {
                                 placeholder="Titel"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Buy milk
                               </textarea>
@@ -43260,7 +42903,6 @@ Object {
                                 placeholder="Label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-12-01
                               </textarea>
@@ -43286,7 +42928,6 @@ Object {
                               placeholder="Beschreibung"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2 Gallons of milk at the Deli store
                             </textarea>
@@ -43315,7 +42956,6 @@ Object {
                                 placeholder="Titel"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Dispose Garbage
                               </textarea>
@@ -43331,7 +42971,6 @@ Object {
                                 placeholder="Label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-11-01
                               </textarea>
@@ -43357,7 +42996,6 @@ Object {
                               placeholder="Beschreibung"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Sort out recyclable and waste as needed
                             </textarea>
@@ -43386,7 +43024,6 @@ Object {
                                 placeholder="Titel"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Write Blog
                               </textarea>
@@ -43402,7 +43039,6 @@ Object {
                                 placeholder="Label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-10-01
                               </textarea>
@@ -43428,7 +43064,6 @@ Object {
                               placeholder="Beschreibung"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Can AI make memes?
                             </textarea>
@@ -43457,7 +43092,6 @@ Object {
                                 placeholder="Titel"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Pay Rent
                               </textarea>
@@ -43473,7 +43107,6 @@ Object {
                                 placeholder="Label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-09-01
                               </textarea>
@@ -43499,7 +43132,6 @@ Object {
                               placeholder="Beschreibung"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Transfer to bank account
                             </textarea>
@@ -44077,7 +43709,6 @@ Object {
                               placeholder="Titel"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Buy milk
                             </textarea>
@@ -44093,7 +43724,6 @@ Object {
                               placeholder="Label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-12-01
                             </textarea>
@@ -44119,7 +43749,6 @@ Object {
                             placeholder="Beschreibung"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             2 Gallons of milk at the Deli store
                           </textarea>
@@ -44148,7 +43777,6 @@ Object {
                               placeholder="Titel"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Dispose Garbage
                             </textarea>
@@ -44164,7 +43792,6 @@ Object {
                               placeholder="Label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-11-01
                             </textarea>
@@ -44190,7 +43817,6 @@ Object {
                             placeholder="Beschreibung"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Sort out recyclable and waste as needed
                           </textarea>
@@ -44219,7 +43845,6 @@ Object {
                               placeholder="Titel"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Write Blog
                             </textarea>
@@ -44235,7 +43860,6 @@ Object {
                               placeholder="Label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-10-01
                             </textarea>
@@ -44261,7 +43885,6 @@ Object {
                             placeholder="Beschreibung"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Can AI make memes?
                           </textarea>
@@ -44290,7 +43913,6 @@ Object {
                               placeholder="Titel"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Pay Rent
                             </textarea>
@@ -44306,7 +43928,6 @@ Object {
                               placeholder="Label"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2017-09-01
                             </textarea>
@@ -44332,7 +43953,6 @@ Object {
                             placeholder="Beschreibung"
                             rows="1"
                             spellcheck="false"
-                            style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                           >
                             Transfer to bank account
                           </textarea>
@@ -44978,7 +44598,6 @@ Object {
                                   placeholder="title"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   Buy milk
                                 </textarea>
@@ -44994,7 +44613,6 @@ Object {
                                   placeholder="label"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   2017-12-01
                                 </textarea>
@@ -45020,7 +44638,6 @@ Object {
                                 placeholder="description"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2 Gallons of milk at the Deli store
                               </textarea>
@@ -45049,7 +44666,6 @@ Object {
                                   placeholder="title"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   Dispose Garbage
                                 </textarea>
@@ -45065,7 +44681,6 @@ Object {
                                   placeholder="label"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   2017-11-01
                                 </textarea>
@@ -45091,7 +44706,6 @@ Object {
                                 placeholder="description"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Sort out recyclable and waste as needed
                               </textarea>
@@ -45120,7 +44734,6 @@ Object {
                                   placeholder="title"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   Write Blog
                                 </textarea>
@@ -45136,7 +44749,6 @@ Object {
                                   placeholder="label"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   2017-10-01
                                 </textarea>
@@ -45162,7 +44774,6 @@ Object {
                                 placeholder="description"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Can AI make memes?
                               </textarea>
@@ -45191,7 +44802,6 @@ Object {
                                   placeholder="title"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   Pay Rent
                                 </textarea>
@@ -45207,7 +44817,6 @@ Object {
                                   placeholder="label"
                                   rows="1"
                                   spellcheck="false"
-                                  style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                                 >
                                   2017-09-01
                                 </textarea>
@@ -45233,7 +44842,6 @@ Object {
                                 placeholder="description"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Transfer to bank account
                               </textarea>
@@ -45821,7 +45429,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Buy milk
                               </textarea>
@@ -45837,7 +45444,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-12-01
                               </textarea>
@@ -45863,7 +45469,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               2 Gallons of milk at the Deli store
                             </textarea>
@@ -45892,7 +45497,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Dispose Garbage
                               </textarea>
@@ -45908,7 +45512,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-11-01
                               </textarea>
@@ -45934,7 +45537,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Sort out recyclable and waste as needed
                             </textarea>
@@ -45963,7 +45565,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Write Blog
                               </textarea>
@@ -45979,7 +45580,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-10-01
                               </textarea>
@@ -46005,7 +45605,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Can AI make memes?
                             </textarea>
@@ -46034,7 +45633,6 @@ Object {
                                 placeholder="title"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 Pay Rent
                               </textarea>
@@ -46050,7 +45648,6 @@ Object {
                                 placeholder="label"
                                 rows="1"
                                 spellcheck="false"
-                                style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                               >
                                 2017-09-01
                               </textarea>
@@ -46076,7 +45673,6 @@ Object {
                               placeholder="description"
                               rows="1"
                               spellcheck="false"
-                              style="overflow-x: hidden; word-wrap: break-word; overflow-y: hidden;"
                             >
                               Transfer to bank account
                             </textarea>
