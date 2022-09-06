@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
+import {BoardData} from 'rt/types/Board'
 
 let eventBus
 
@@ -35,7 +36,7 @@ function generateCards(requestedPage = 1) {
   return cards
 }
 
-class BoardWrapper extends Component {
+class BoardWrapper extends Component<{data: BoardData}> {
   state = {data: this.props.data}
 
   setEventBus = handle => {

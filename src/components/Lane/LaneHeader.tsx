@@ -4,7 +4,8 @@ import {Title, LaneHeader as _LaneHeader, RightContent} from 'rt/styles/Base'
 import {LaneMenu} from './LaneHeader/LaneMenu'
 import createTranslate from 'rt/helpers/createTranslate'
 
-export interface LaneHeaderProps extends HTMLAttributes<HTMLHeadElement> {
+export type LaneHeaderProps = _LaneHeaderProps & {[key: string]: any}
+interface _LaneHeaderProps extends HTMLAttributes<HTMLHeadElement> {
   updateTitle?: (title: string) => void
   canAddLanes?: boolean
   onDelete?: () => void

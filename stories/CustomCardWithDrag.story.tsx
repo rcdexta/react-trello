@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {storiesOf} from '@storybook/react'
 import update from 'immutability-helper'
 
@@ -12,9 +12,8 @@ const CustomCard = props => {
     <MovableCardWrapper
       data-id={props.id}
       onClick={props.onClick}
-      style={props.style}
       className={props.className}
-      style={{backgroundColor: props.cardColor, padding: 6}}>
+      style={{backgroundColor: props.cardColor, padding: 6, ...props.style}}>
       <header
         style={{
           borderBottom: '1px solid #eee',
@@ -74,40 +73,35 @@ const customCardData = {
   ]
 }
 
-class BoardWithCustomCard extends Component {
-  state = {boardData: customCardData, draggedData: undefined}
-
-  updateBoard = newData => {
+const BoardWithCustomCard = () => {
+  const [boardData, setBoardData] = React.useState(customCardData)
+  const [draggedData, setDraggedData] = React.useState(undefined)
+  const updateBoard = newData => {
     debug('calling updateBoard')
-    this.setState({draggedData: newData})
+    setDraggedData(newData)
   }
+  const onDragEnd = (cardId, sourceLandId, targetLaneId, index, card) => {
+    debug('Calling onDragEnd')
 
-  onDragEnd = (cardId, sourceLandId, targetLaneId, card) => {
-    debug('Calling onDragENd')
-    const {draggedData} = this.state
     const laneIndex = draggedData.lanes.findIndex(lane => lane.id === sourceLandId)
     const cardIndex = draggedData.lanes[laneIndex].cards.findIndex(card => card.id === cardId)
     const updatedData = update(draggedData, {
       lanes: {[laneIndex]: {cards: {[cardIndex]: {cardColor: {$set: '#d0fdd2'}}}}}
     })
-    this.setState({boardData: updatedData})
+    setBoardData(updatedData)
   }
-
-  render() {
-    return (
-      <Board
-        tagStyle={{fontSize: '80%'}}
-        data={this.state.boardData}
-        draggable
-        onDataChange={this.updateBoard}
-        handleDragEnd={this.onDragEnd}
-        onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
-        components={{Card: CustomCard}}
-      />
-    )
-  }
+  return (
+    <Board
+      tagStyle={{fontSize: '80%'}}
+      data={boardData}
+      draggable
+      onDataChange={updateBoard}
+      handleDragEnd={onDragEnd}
+      onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
+      components={{Card: CustomCard}}
+    />
+  )
 }
-
 storiesOf('Custom Components', module).add(
   'Drag-n-Drop Styling',
   () => {

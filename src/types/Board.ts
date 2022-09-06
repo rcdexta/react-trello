@@ -8,13 +8,14 @@ export interface Lane {
   id: string
   title?: string
   label?: string
-  style: Style
+  style?: CSSProperties
   cards: Card[]
-  currentPage: number
+  currentPage?: number
   droppable?: boolean
   labelStyle?: CSSProperties
   cardStyle?: CSSProperties
   disallowAddingCard?: boolean
+  [key: string]: any
 }
 
 export interface Card {
@@ -23,10 +24,7 @@ export interface Card {
   label?: string
   description?: string
   laneId?: string
-  style?: string
+  style?: CSSProperties
   draggable?: boolean
-}
-
-export interface Style {
-  width: number
+  [key: string]: any
 }

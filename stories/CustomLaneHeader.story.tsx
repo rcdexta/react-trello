@@ -2,8 +2,9 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 
 import Board from '../src'
+import {LaneHeaderProps} from 'rt/components/Lane/LaneHeader'
 
-const CustomLaneHeader = ({label, cards, title, current, target}) => {
+const CustomLaneHeader = ({label, cards, title, current, target}: LaneHeaderProps) => {
   const buttonHandler = () => {
     alert(`The label passed to the lane was: ${label}. The lane has ${cards.length} cards!`)
   }

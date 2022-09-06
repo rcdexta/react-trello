@@ -2,7 +2,7 @@ import React from 'react'
 
 import {Draggable} from './dnd/Draggable'
 import Container from './dnd/Container'
-import BoardContainer from './controllers/BoardContainer'
+import BoardContainer, {BoardContainerProps} from './controllers/BoardContainer'
 import Lane from './controllers/Lane'
 import deprecationWarnings from './helpers/deprecationWarnings'
 import * as DefaultComponents from './components'
@@ -19,8 +19,14 @@ export {DefaultComponents as components}
 
 const DEFAULT_LANG = 'en'
 
-export default ({components = {}, lang = DEFAULT_LANG, ...otherProps}) => {
+export default ({
+  components,
+  lang = DEFAULT_LANG,
+  ...otherProps
+}: BoardContainerProps & {
+  lang?: keyof typeof locales
+}) => {
   deprecationWarnings(otherProps)
-  const translate = createTranslate(locales[lang].translation)
+  const translate = createTranslate(locales[lang || 'en'].translation)
   return <Board t={translate} components={{...DefaultComponents, ...components}} {...otherProps} />
 }

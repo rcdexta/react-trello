@@ -3,6 +3,7 @@ import {storiesOf} from '@storybook/react'
 
 import './board.css'
 import Board from '../src'
+import {BoardData} from 'rt/types/Board'
 const data = require('./data/base.json')
 
 storiesOf('Styling', module).add(
@@ -70,7 +71,7 @@ storiesOf('Styling', module).add(
   }
 )
 
-const dataWithCardStyles = {
+const dataWithCardStyles: BoardData = {
   lanes: [
     {
       id: 'PLANNED',

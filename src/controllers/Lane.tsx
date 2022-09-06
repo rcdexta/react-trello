@@ -5,7 +5,6 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
 import cloneDeep from 'lodash/cloneDeep'
-import pick from 'lodash/pick'
 import uuidv1 from 'uuid/v1'
 
 import Container, {ContainerProps} from 'rt/dnd/Container'
@@ -267,7 +266,6 @@ class Lane extends Component<LaneProps> {
   }
 
   updateTitle = value => {
-    console.log('value', value)
     this.props.actions.updateLane({id: this.props.id, title: value})
     this.props.onLaneUpdate(this.props.id, {title: value})
   }
@@ -317,7 +315,7 @@ class Lane extends Component<LaneProps> {
         onClick={() => onLaneClick && onLaneClick(id)}
         draggable={false}
         className={allClassNames}>
-        {this.renderHeader({id, /* cards ,*/ ...otherProps})}
+        {this.renderHeader({id, cards, ...otherProps})}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
         {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} />}

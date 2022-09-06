@@ -4,6 +4,8 @@ import {storiesOf} from '@storybook/react'
 import Board from '../src'
 
 import './board.css'
+import {CardProps} from 'rt/components/Card'
+import {Tag} from 'rt/components/Card/Tag'
 
 const data = require('./data/base.json')
 
@@ -35,7 +37,7 @@ const CustomLaneHeader = props => {
   )
 }
 
-class NewCard extends Component {
+class NewCard extends Component<CardProps> {
   updateField = (field, evt) => {
     this.setState({[field]: evt.target.value})
   }

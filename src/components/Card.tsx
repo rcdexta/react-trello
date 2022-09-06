@@ -7,7 +7,7 @@ import {createTranslate} from '..'
 import {Card as ICard} from 'rt/types/Board'
 import {StyledComponent} from 'styled-components'
 
-interface CardProps {
+export type CardProps = {
   showDeleteButton?: boolean
   onDelete?: () => void
   onClick?: (e) => void
@@ -24,7 +24,7 @@ interface CardProps {
   cardDraggable?: boolean
   editable?: boolean
   t: typeof createTranslate
-}
+} & {[key: string]: any}
 
 export const Card: FC<PropsWithChildren<CardProps>> = ({
   onDelete,

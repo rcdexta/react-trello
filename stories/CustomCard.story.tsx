@@ -4,6 +4,7 @@ import {MovableCardWrapper} from 'rt/styles/Base'
 import {DeleteButton} from './../src/widgets/DeleteButton'
 import Board from '../src'
 import {Tag} from 'rt/components/Card/Tag'
+import {BoardData} from 'rt/types/Board'
 
 const CustomCard = ({
   onClick,
@@ -18,7 +19,10 @@ const CustomCard = ({
   escalationText,
   tags,
   showDeleteButton,
-  onDelete
+  onDelete,
+  id,
+  index,
+  t
 }) => {
   const clickDelete = e => {
     onDelete()
@@ -69,7 +73,7 @@ const CustomCard = ({
   )
 }
 
-const data = {
+const data: BoardData = {
   lanes: [
     {
       id: 'lane1',

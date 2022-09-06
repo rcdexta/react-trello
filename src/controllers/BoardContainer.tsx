@@ -10,41 +10,47 @@ import {PopoverWrapper} from 'react-popopo'
 
 import * as boardActions from 'rt/actions/BoardActions'
 import * as laneActions from 'rt/actions/LaneActions'
-import {components, createTranslate} from '..'
-import {BoardData, Lane as ILane} from 'rt/types/Board'
+import {createTranslate} from '..'
+import {BoardData, Card, Lane as ILane} from 'rt/types/Board'
 import {FormState as NewCardFormState} from 'rt/components/NewCardForm'
-
-interface BoardContainerProps {
+import * as DefaultComponents from './../components'
+export interface BoardContainerProps {
   id?: string
-  components?: typeof components
+  components?: Partial<typeof DefaultComponents>
   actions?: typeof laneActions & typeof boardActions
   data: BoardData
   reducerData?: BoardData
-  onDataChange?: (reducerData: BoardContainerProps['reducerData']) => void
+  onDataChange?: (reducerData: BoardData) => void
   eventBusHandle?: (
     handle: {
       publish: (event: any) => any
     }
   ) => void
-  onLaneScroll?: () => void
-  onCardClick?: () => void
+  onLaneScroll?: (requestedPage: any, laneId: any) => Promise<unknown> | unknown
+  onCardClick?: (cardId: Card['id'], metadata: {id: string}, card: Card) => void
   onBeforeCardDelete?: () => void
-  onCardDelete?: () => void
-  onCardAdd?: () => void
-  onCardUpdate?: () => void
+  onCardDelete?: (cardId: string, laneId: string) => void
+  onCardAdd?: (card: Card, laneId: string) => void
+  onCardUpdate?: (cardId: string, data: Card) => void
   onLaneAdd?: (laneAddParams: NewCardFormState) => void
   onLaneDelete?: () => void
-  onLaneClick?: () => void
-  onLaneUpdate?: () => void
-  laneSortFunction?: (laneA: ILane, laneB: ILane) => number
+  onLaneClick?: (laneId: string) => void
+  onLaneUpdate?: (laneId: string, data: ILane) => void
+  laneSortFunction?: (cardA: Card, cardB: Card) => number
   draggable?: boolean
   collapsibleLanes?: boolean
   editable?: boolean
   canAddLanes?: boolean
   hideCardDeleteAction?: boolean
   hideCardDeleteIcon?: boolean
-  handleDragStart?: () => void
-  handleDragEnd?: () => void
+  handleDragStart?: (cardId: string, laneId: string) => void
+  handleDragEnd?: (
+    cardId: Card['id'],
+    sourceLandId: ILane['id'],
+    targetLaneId: ILane['id'],
+    position: number,
+    card: Card
+  ) => void
   handleLaneDragStart?: (payloadId: string) => void
   handleLaneDragEnd?: (removedIndex: string, addedIndex: string, payload: ILane) => void
   style?: CSSProperties
@@ -56,17 +62,41 @@ interface BoardContainerProps {
   cardDragClass?: string
   laneDragClass?: string
   laneDropClass?: string
-  onCardMoveAcrossLanes: () => void
-  t: typeof createTranslate
+  editLaneTitle?: boolean
+  onCardMoveAcrossLanes?: (fromLaneId: string, toLaneId: string, cardId: string, addedIndex: string) => void
+  t?: typeof createTranslate
 }
 class BoardContainer extends Component<BoardContainerProps> {
   state = {
     addLaneMode: false
   }
-  static defaultProps: Partial<BoardContainerProps>
+  static defaultProps: {
+    t: (v: any) => any
+    onDataChange: () => void
+    handleDragStart: () => void
+    handleDragEnd: () => void
+    handleLaneDragStart: () => void
+    handleLaneDragEnd: () => void
+    onCardUpdate: () => void
+    onLaneAdd: () => void
+    onLaneDelete: () => void
+    onCardMoveAcrossLanes: () => void
+    onLaneUpdate: () => void
+    editable: boolean
+    canAddLanes: boolean
+    hideCardDeleteIcon: boolean
+    draggable: boolean
+    collapsibleLanes: boolean
+    laneDraggable: boolean
+    cardDraggable: boolean
+    cardDragClass: string
+    laneDragClass: string
+    laneDropClass: string
+  }
 
   componentDidMount() {
     const {actions, eventBusHandle} = this.props
+
     actions.loadBoard(this.props.data)
     if (eventBusHandle) {
       this.wireEventBus()
@@ -161,26 +191,26 @@ class BoardContainer extends Component<BoardContainerProps> {
       id,
       components,
       reducerData,
-      draggable,
-      laneDraggable,
-      laneDragClass,
-      laneDropClass,
+      draggable = false,
+      laneDraggable = true,
+      laneDragClass = 'react_trello_dragLaneClass',
+      laneDropClass = '',
       style,
-      onDataChange,
+      onDataChange = () => {},
       onCardAdd,
-      onCardUpdate,
+      onCardUpdate = () => {},
       onCardClick,
       onBeforeCardDelete,
       onCardDelete,
       onLaneScroll,
       onLaneClick,
-      onLaneAdd,
-      onLaneDelete,
+      onLaneAdd = () => {},
+      onLaneDelete = () => {},
       onLaneUpdate,
-      editable,
-      canAddLanes,
+      editable = false,
+      canAddLanes = false,
       laneStyle,
-      onCardMoveAcrossLanes,
+      onCardMoveAcrossLanes = () => {},
       t,
       ...otherProps
     } = this.props
