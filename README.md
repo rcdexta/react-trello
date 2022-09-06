@@ -1,9 +1,10 @@
 # React Trello TS
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Typescript fork of [rcdexta/react-trello](https://github.com/rcdexta/react-trello)
 
@@ -18,6 +19,12 @@ For a direct typescript implementation of the original react-trello, see the `v1
 No new features will be added to this branch, only bug fixes and commits inline with `react-trello`
 
 For a react-trello-ts latest features see the main branch.
+
+### Releases
+
+The `v1` branch will be released as 1.x.x
+
+The main branch will be released as 2.x.x
 
 ## Getting Started
 
@@ -35,9 +42,9 @@ $ yarn add react-trello-ts
 
 ## Documentation
 
-See the [TODO!]() for more information.
+See the LINK_TO_DOCS_SITE for more information.
 
-Whilst the docs site is under development (see issue #), you can find the legacy docs for `v1` in the `react-trello-README.md` file.
+Whilst the docs site is under development (see issue [#6](https://github.com/KaiSpencer/react-trello-ts/issues/6)), you can find the legacy docs for `v1` in the `react-trello-README.md` file.
 
 ## Contributors ✨
 
