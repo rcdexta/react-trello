@@ -9,7 +9,7 @@ export interface Lane {
   title?: string
   label?: string
   style?: CSSProperties
-  cards: Card[]
+  cards?: Card[]
   currentPage?: number
   droppable?: boolean
   labelStyle?: CSSProperties

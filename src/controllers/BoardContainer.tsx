@@ -26,7 +26,7 @@ export interface BoardContainerProps {
       publish: (event: any) => any
     }
   ) => void
-  onLaneScroll?: (requestedPage: any, laneId: any) => Promise<unknown> | unknown
+  onLaneScroll?: (requestedPage: any, laneId: any) => Promise<unknown>
   onCardClick?: (cardId: Card['id'], metadata: {id: string}, card: Card) => void
   onBeforeCardDelete?: () => void
   onCardDelete?: (cardId: string, laneId: string) => void

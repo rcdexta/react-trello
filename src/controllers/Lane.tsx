@@ -11,12 +11,13 @@ import Container, {ContainerProps} from 'rt/dnd/Container'
 import {Draggable} from 'rt/dnd/Draggable'
 
 import * as laneActions from 'rt/actions/LaneActions'
-import {Card} from 'rt/types/Board'
+import {Card, Lane as ILane} from 'rt/types/Board'
 import {components, createTranslate} from '..'
 import {LaneHeaderProps} from 'rt/components/Lane/LaneHeader'
 
 interface LaneProps {
   id: string
+  index?: number
   boardId?: string
   actions?: typeof laneActions
   title?: string
@@ -42,22 +43,22 @@ interface LaneProps {
   cardDragClass?: string
   cardDropClass?: string
   tagStyle?: CSSProperties
-  components?: typeof components
-  onLaneScroll?: (page: number, laneId: string) => Promise<any[]>
+  components?: Partial<typeof components>
+  onLaneScroll?: (page: number, laneId: string) => Promise<unknown>
   onLaneAdd?: (params: any) => void
   onLaneDelete?: (laneId: string) => void
-  onLaneUpdate?: (laneId: string, {title}: {title: string}) => void
-  onCardClick?: (cardId: string, metadata: any, laneId: string) => void
+  onLaneUpdate?: (laneId: string, data: ILane) => void
+  onCardClick?: (cardId: string, metadata: {id: string}, card: Card) => void
   onCardAdd?: (card: any, laneId: string) => void
   onCardDelete?: (cardId: string, laneId: string) => void
   onCardUpdate?: (laneId: string, card: any) => void
   onBeforeCardDelete?: (callback: () => void) => void
-  onCardMoveAcrossLanes?: (fromLaneId: string, toLaneId: string, cardId: string, index: number) => void
+  onCardMoveAcrossLanes?: (fromLaneId: string, toLaneId: string, cardId: string, index: string) => void
   onLaneClick?: (laneId: string) => void
   handleDragStart?: (cardId: string, laneId: string) => void
   handleDragEnd?: (cardId: string, payloadLaneId: string, laneId: string, addedIndex: number, newCard: Card) => void
   getCardDetails?: (cardId: string, index: number) => any
-  t: typeof createTranslate
+  t?: typeof createTranslate
 }
 
 class Lane extends Component<LaneProps> {
@@ -78,7 +79,7 @@ class Lane extends Component<LaneProps> {
       const {currentPage} = this.state
       this.setState({loading: true})
       const nextPage = currentPage + 1
-      onLaneScroll(nextPage, this.props.id).then(moreCards => {
+      onLaneScroll(nextPage, this.props.id).then((moreCards: Card[]) => {
         if ((moreCards || []).length > 0) {
           this.props.actions.paginateLane({
             laneId: this.props.id,
@@ -267,7 +268,10 @@ class Lane extends Component<LaneProps> {
 
   updateTitle = value => {
     this.props.actions.updateLane({id: this.props.id, title: value})
-    this.props.onLaneUpdate(this.props.id, {title: value})
+    this.props.onLaneUpdate(this.props.id, {
+      title: value,
+      id: this.props.id
+    })
   }
 
   renderHeader = (pickedProps: Partial<LaneHeaderProps>) => {
