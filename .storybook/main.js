@@ -10,6 +10,9 @@ const config = {
   },
   features: {
     babelModeV7: true
+  },
+  core: {
+    builder: 'webpack5'
   }
 }
 module.exports = config
