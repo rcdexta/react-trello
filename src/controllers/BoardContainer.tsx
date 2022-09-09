@@ -21,11 +21,7 @@ export interface BoardContainerProps {
   data: BoardData
   reducerData?: BoardData
   onDataChange?: (reducerData: BoardData) => void
-  eventBusHandle?: (
-    handle: {
-      publish: (event: any) => any
-    }
-  ) => void
+  eventBusHandle?: (handle: {publish: (event: any) => any}) => void
   onLaneScroll?: (requestedPage: any, laneId: any) => Promise<unknown>
   onCardClick?: (cardId: Card['id'], metadata: {id: string}, card: Card) => void
   onBeforeCardDelete?: () => void
@@ -140,7 +136,7 @@ class BoardContainer extends Component<BoardContainerProps> {
       publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
-            return actions.addCard({laneId: event.laneId, card: event.card})
+            return actions.addCard({laneId: event.laneId, card: event.card, index: event.index})
           case 'UPDATE_CARD':
             return actions.updateCard({laneId: event.laneId, card: event.card})
           case 'REMOVE_CARD':
@@ -324,7 +320,4 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   actions: bindActionCreators({...boardActions, ...laneActions}, dispatch)
 })
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BoardContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(BoardContainer)
