@@ -1,4 +1,4 @@
-import React, {Component, FC, PropsWithChildren} from 'react'
+import React, {Component} from 'react'
 import {Provider} from 'react-redux'
 import classNames from 'classnames'
 import {createStore} from 'redux'
@@ -6,11 +6,13 @@ import uuidv1 from 'uuid/v1'
 import BoardContainer from './BoardContainer'
 import boardReducer from '../reducers/BoardReducer'
 import * as DefaultComponets from '../components'
+import {BoardData} from 'rt/types/Board'
 
 export class Board extends Component<{
   id?: string
   className?: string
   components?: typeof DefaultComponets
+  data: BoardData
   t?: any
 }> {
   store: any
@@ -29,11 +31,13 @@ export class Board extends Component<{
   render() {
     const {id, className, components} = this.props
     const allClassNames = classNames('react-trello-board', className || '')
+    console.log('this.props', this.props)
+
     return (
       <Provider store={this.store}>
         <>
           <components.GlobalStyle />
-          <BoardContainer id={this.id} {...this.props} className={allClassNames} />
+          <BoardContainer id={this.props.id} {...this.props} className={allClassNames} />
         </>
       </Provider>
     )
