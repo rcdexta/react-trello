@@ -30,7 +30,7 @@ export const MapLaneHelperToReducer = {
 } as const
 
 const boardReducer = (
-  state: BoardData,
+  state: BoardData = {lanes: []},
   {
     payload,
     type
@@ -39,12 +39,8 @@ const boardReducer = (
     type: keyof typeof MapLaneHelperToReducer
   }
 ) => {
-  console.log('reducer', state, type, payload)
-
   switch (type) {
     case 'LOAD_BOARD':
-      console.log('init')
-
       return initialiseLanes({state, payload})
     case 'ADD_CARD':
       return appendCardToLane({state, payload})

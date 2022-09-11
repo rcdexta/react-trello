@@ -29,15 +29,13 @@ export class Board extends Component<{
   }
 
   render() {
-    const {id, className, components} = this.props
+    const {className, components} = this.props
     const allClassNames = classNames('react-trello-board', className || '')
-    console.log('this.props', this.props)
-
     return (
       <Provider store={this.store}>
         <>
           <components.GlobalStyle />
-          <BoardContainer id={this.props.id} {...this.props} className={allClassNames} />
+          <BoardContainer id={this.id} {...this.props} className={allClassNames} />
         </>
       </Provider>
     )
