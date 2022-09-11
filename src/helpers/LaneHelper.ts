@@ -100,7 +100,7 @@ export const removeCardFromLane = ({
 }: LaneHelperParams<'removeCardFromLane', {laneId: string; cardId: string}>) => {
   const lanes = state.lanes.map(lane => {
     if (lane.id === laneId) {
-      let newCards = lane.cards.filter(card => card.id !== cardId)
+      const newCards = lane.cards.filter(card => card.id !== cardId)
       return update(lane, {cards: {$set: newCards}})
     } else {
       return lane
