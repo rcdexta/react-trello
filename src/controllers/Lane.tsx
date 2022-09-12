@@ -141,12 +141,12 @@ class Lane extends Component<LaneProps> {
   }
 
   addNewCard = (params: {title?: string; laneId?: string; description?: string; label?: string}) => {
-    const _laneId = params.laneId || this.props.id
+    const laneId = params.laneId || this.props.id
     const id = uuidv1()
     this.hideEditableCard()
     const card = {id, ...params}
-    this.props.actions.addCard({_laneId, card})
-    this.props.onCardAdd(card, _laneId)
+    this.props.actions.addCard({laneId, card})
+    this.props.onCardAdd(card, laneId)
   }
 
   onDragStart = ({payload}) => {

@@ -20,7 +20,7 @@ export class Board extends Component<{
   constructor(props) {
     super(props)
     this.store = this.getStore()
-    this.id = this.id || uuidv1()
+    this.id = this.props.id || uuidv1()
   }
 
   getStore = () => {

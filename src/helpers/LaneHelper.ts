@@ -1,4 +1,5 @@
 import update, {Spec} from 'immutability-helper'
+import {MapLaneHelperToReducer} from 'rt/reducers/BoardReducer'
 import {BoardData, Card, Lane} from 'rt/types/Board'
 import {PartialExcept} from 'rt/types/utilities'
 
@@ -47,7 +48,11 @@ export const appendCardsToLane = ({
   state,
   payload: {index, laneId, newCards}
 }: LaneHelperParams<'appendCardsToLane', {laneId: string; newCards: Card[]; index: number}>) => {
+  console.log('laneId', laneId)
+
   const lane = state.lanes.find(lane => lane.id === laneId)
+  console.log('lane', lane)
+
   newCards = newCards
     .map(c => update(c, {laneId: {$set: laneId}}))
     .filter(c => lane.cards.find(card => card.id === c.id) == null)
@@ -185,3 +190,19 @@ export const removeLane = ({state, payload: {laneId}}: LaneHelperParams<'removeL
   const updatedLanes = state.lanes.filter(lane => lane.id !== laneId)
   return update(state, {lanes: {$set: updatedLanes}})
 }
+
+// type Export = {[key in typeof MapLaneHelperToReducer as string]: ({state, payload}) => BoardData | Lane[]}
+export const _export = {
+  addLane,
+  appendCardToLane,
+  appendCardsToLane,
+  moveCardAcrossLanes,
+  moveLane,
+  removeCardFromLane,
+  removeLane,
+  updateCardForLane,
+  updateCardsForLane,
+  updateLane,
+  updateLanes
+}
+export default _export

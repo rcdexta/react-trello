@@ -13,8 +13,10 @@ import {
   updateLane,
   updateLanes
 } from 'rt/helpers/LaneHelper'
+import {loadBoard} from 'rt/actions/BoardActions'
 
 export const MapLaneHelperToReducer = {
+  REFRESH_BOARD: 'loadBoard',
   LOAD_BOARD: 'initialiseLanes',
   ADD_CARD: 'appendCardToLane',
   REMOVE_CARD: 'removeCardFromLane',
@@ -42,6 +44,8 @@ const boardReducer = (
   switch (type) {
     case 'LOAD_BOARD':
       return initialiseLanes({state, payload})
+    case 'REFRESH_BOARD':
+      return loadBoard({state, payload})
     case 'ADD_CARD':
       return appendCardToLane({state, payload})
     case 'REMOVE_CARD':

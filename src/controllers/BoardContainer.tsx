@@ -134,7 +134,7 @@ class BoardContainer extends Component<BoardContainerProps> {
 
   wireEventBus = () => {
     const {actions, eventBusHandle} = this.props
-    const eventBus = {
+    const eventBus: EventBusHandle = {
       publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
