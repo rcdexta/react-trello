@@ -1,6 +1,22 @@
-import {LaneHelper as Lh} from 'rt/helpers/LaneHelper'
+import {BoardData} from 'rt/types/Board'
+import {
+  appendCardToLane,
+  initialiseLanes,
+  removeCardFromLane,
+  addLane,
+  moveCardAcrossLanes,
+  moveLane,
+  paginateLane,
+  removeLane,
+  updateCardForLane,
+  updateCardsForLane,
+  updateLane,
+  updateLanes
+} from 'rt/helpers/LaneHelper'
+import {loadBoard} from 'rt/actions/BoardActions'
 
-const MapLaneHelperToReducer = {
+export const MapLaneHelperToReducer = {
+  REFRESH_BOARD: 'loadBoard',
   LOAD_BOARD: 'initialiseLanes',
   ADD_CARD: 'appendCardToLane',
   REMOVE_CARD: 'removeCardFromLane',
@@ -15,56 +31,43 @@ const MapLaneHelperToReducer = {
   ADD_LANE: 'addLane'
 } as const
 
-const boardReducer = <K extends keyof typeof MapLaneHelperToReducer>(
-  state = {lanes: []},
+const boardReducer = (
+  state: BoardData = {lanes: []},
   {
     payload,
     type
   }: {
-    payload: Parameters<typeof Lh[typeof MapLaneHelperToReducer[K]]>['1']
-    type: K
+    payload: any
+    type: keyof typeof MapLaneHelperToReducer
   }
 ) => {
-  /**
-   * Switch statements cannot narrow a union :(
-   */
   switch (type) {
     case 'LOAD_BOARD':
-      const initialiseLanesPayload = payload as Parameters<typeof Lh.initialiseLanes>['1']
-      return Lh.initialiseLanes(state, initialiseLanesPayload)
+      return initialiseLanes({state, payload})
+    case 'REFRESH_BOARD':
+      return loadBoard({state, payload})
     case 'ADD_CARD':
-      const appendCardToLanePayload = payload as Parameters<typeof Lh.appendCardToLane>['1']
-      return Lh.appendCardToLane(state, appendCardToLanePayload)
+      return appendCardToLane({state, payload})
     case 'REMOVE_CARD':
-      const removeCardFromLanePayload = payload as Parameters<typeof Lh.removeCardFromLane>['1']
-      return Lh.removeCardFromLane(state, removeCardFromLanePayload)
+      return removeCardFromLane({state, payload})
     case 'MOVE_CARD':
-      const moveCardAcrossLanesPayload = payload as Parameters<typeof Lh.moveCardAcrossLanes>['1']
-      return Lh.moveCardAcrossLanes(state, moveCardAcrossLanesPayload)
+      return moveCardAcrossLanes({state, payload})
     case 'UPDATE_CARDS':
-      const updateCardsForLanePayload = payload as Parameters<typeof Lh.updateCardsForLane>['1']
-      return Lh.updateCardsForLane(state, updateCardsForLanePayload)
+      return updateCardsForLane({state, payload})
     case 'UPDATE_CARD':
-      const updateCardForLanePayload = payload as Parameters<typeof Lh.updateCardForLane>['1']
-      return Lh.updateCardForLane(state, updateCardForLanePayload)
+      return updateCardForLane({state, payload})
     case 'UPDATE_LANES':
-      const updateLanesPayload = payload as Parameters<typeof Lh.updateLanes>['1']
-      return Lh.updateLanes(state, updateLanesPayload)
+      return updateLanes({state, payload})
     case 'UPDATE_LANE':
-      const updateLanePayload = payload as Parameters<typeof Lh.updateLane>['1']
-      return Lh.updateLane(state, updateLanePayload)
+      return updateLane({state, payload})
     case 'PAGINATE_LANE':
-      const paginateLanePayload = payload as Parameters<typeof Lh.paginateLane>['1']
-      return Lh.paginateLane(state, paginateLanePayload)
+      return paginateLane({state, payload})
     case 'MOVE_LANE':
-      const moveLanePayload = payload as Parameters<typeof Lh.moveLane>['1']
-      return Lh.moveLane(state, moveLanePayload)
+      return moveLane({state, payload})
     case 'REMOVE_LANE':
-      const removeLanePayload = payload as Parameters<typeof Lh.removeLane>['1']
-      return Lh.removeLane(state, removeLanePayload)
+      return removeLane({state, payload})
     case 'ADD_LANE':
-      const addLanePayload = payload as Parameters<typeof Lh.addLane>['1']
-      return Lh.addLane(state, addLanePayload)
+      return addLane({state, payload})
     default:
       return state
   }

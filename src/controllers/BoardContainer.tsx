@@ -14,14 +14,16 @@ import {createTranslate} from '..'
 import {BoardData, Card, Lane as ILane} from 'rt/types/Board'
 import {FormState as NewCardFormState} from 'rt/components/NewCardForm'
 import * as DefaultComponents from './../components'
+import {EventBusHandle} from 'rt/types/EventBus'
 export interface BoardContainerProps {
   id?: string
   components?: Partial<typeof DefaultComponents>
   actions?: typeof laneActions & typeof boardActions
+  className?: string
   data: BoardData
   reducerData?: BoardData
   onDataChange?: (reducerData: BoardData) => void
-  eventBusHandle?: (handle: {publish: (event: any) => any}) => void
+  eventBusHandle?: (handle: EventBusHandle) => void
   onLaneScroll?: (requestedPage: any, laneId: any) => Promise<unknown>
   onCardClick?: (cardId: Card['id'], metadata: {id: string}, card: Card) => void
   onBeforeCardDelete?: () => void
@@ -124,15 +126,15 @@ class BoardContainer extends Component<BoardContainerProps> {
     }
   }
   getCardDetails = (laneId, cardIndex) => {
-    return this.props.reducerData.lanes.find(lane => lane.id === laneId).cards[cardIndex]
+    return this.props.reducerData?.lanes.find(lane => lane.id === laneId).cards[cardIndex]
   }
   getLaneDetails = index => {
-    return this.props.reducerData.lanes[index]
+    return this.props.reducerData?.lanes[index]
   }
 
   wireEventBus = () => {
     const {actions, eventBusHandle} = this.props
-    let eventBus = {
+    const eventBus: EventBusHandle = {
       publish: event => {
         switch (event.type) {
           case 'ADD_CARD':
@@ -244,6 +246,7 @@ class BoardContainer extends Component<BoardContainerProps> {
         <PopoverWrapper>
           <Container
             orientation="horizontal"
+            className={this.props.className}
             onDragStart={this.onDragStart}
             dragClass={laneDragClass}
             dropClass={laneDropClass}
@@ -251,7 +254,7 @@ class BoardContainer extends Component<BoardContainerProps> {
             lockAxis="x"
             getChildPayload={index => this.getLaneDetails(index)}
             groupName={this.groupName}>
-            {reducerData.lanes.map((lane, index) => {
+            {reducerData?.lanes.map((lane, index) => {
               const {id, droppable, ...otherProps} = lane
               const laneToRender = (
                 <Lane
@@ -313,7 +316,7 @@ BoardContainer.defaultProps = {
 }
 
 const mapStateToProps = (state: BoardData) => {
-  return state.lanes ? {reducerData: state} : {}
+  return state?.lanes ? {reducerData: state} : {}
 }
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({

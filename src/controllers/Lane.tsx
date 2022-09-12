@@ -95,7 +95,7 @@ class Lane extends Component<LaneProps> {
   sortCards(cards: Card[], sortFunction: typeof this.props.laneSortFunction) {
     if (!cards) return []
     if (!sortFunction) return cards
-    return cards.concat().sort(function(card1, card2) {
+    return cards.concat().sort(function (card1, card2) {
       return sortFunction(card1, card2)
     })
   }
@@ -141,12 +141,12 @@ class Lane extends Component<LaneProps> {
   }
 
   addNewCard = (params: {title?: string; laneId?: string; description?: string; label?: string}) => {
-    const _laneId = params.laneId || this.props.id
+    const laneId = params.laneId || this.props.id
     const id = uuidv1()
     this.hideEditableCard()
-    let card = {id, ...params}
-    this.props.actions.addCard({_laneId, card})
-    this.props.onCardAdd(card, _laneId)
+    const card = {id, ...params}
+    this.props.actions.addCard({laneId, card})
+    this.props.onCardAdd(card, laneId)
   }
 
   onDragStart = ({payload}) => {
@@ -332,7 +332,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(laneActions, dispatch)
 })
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(Lane)
+export default connect(null, mapDispatchToProps)(Lane)
