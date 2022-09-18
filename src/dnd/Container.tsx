@@ -20,7 +20,7 @@ export interface ContainerProps {
   dragClass?: string
   dropClass?: string
   onDragStart?: (params: any) => void
-  onDragEnd?: (params: any) => void
+  onDragEnd?: (laneId: string, result: {addedIndex: any; payload: any}) => void
   onDrop?: (params: any) => void
   onDropReady?: (params: any) => void
   getChildPayload?: (index: number) => any

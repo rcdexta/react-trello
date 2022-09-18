@@ -48,6 +48,7 @@ storiesOf('Drag-n-Drop', module)
         <Board
           data={data}
           draggable
+          laneDraggable
           onCardMoveAcrossLanes={onCardMoveAcrossLanes}
           onDataChange={shouldReceiveNewData}
           handleDragStart={handleDragStart}

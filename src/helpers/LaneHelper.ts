@@ -17,7 +17,7 @@ type LaneHelperType =
   | 'moveLane'
   | 'removeLane'
   | 'addLane'
-type LaneHelperParams<TType extends LaneHelperType, TPayload> = {
+export type LaneHelperParams<TType extends LaneHelperType, TPayload> = {
   type?: TType
   state: BoardData
   payload: TPayload
@@ -48,10 +48,7 @@ export const appendCardsToLane = ({
   state,
   payload: {index, laneId, newCards}
 }: LaneHelperParams<'appendCardsToLane', {laneId: string; newCards: Card[]; index: number}>) => {
-  console.log('laneId', laneId)
-
   const lane = state.lanes.find(lane => lane.id === laneId)
-  console.log('lane', lane)
 
   newCards = newCards
     .map(c => update(c, {laneId: {$set: laneId}}))
