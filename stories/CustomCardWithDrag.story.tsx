@@ -6,6 +6,8 @@ import {MovableCardWrapper} from 'rt/styles/Base'
 import debug from './helpers/debug'
 
 import Board from '../src'
+import produce from 'immer'
+import {BoardData, Card} from 'rt/types/Board'
 
 const CustomCard = props => {
   return (
@@ -74,28 +76,28 @@ const customCardData = {
 }
 
 const BoardWithCustomCard = () => {
-  const [boardData, setBoardData] = React.useState(customCardData)
-  const [draggedData, setDraggedData] = React.useState(undefined)
-  const updateBoard = newData => {
-    debug('calling updateBoard')
-    setDraggedData(newData)
-  }
+  const [boardData, setBoardData] = React.useState<BoardData>(customCardData)
   const onDragEnd = (cardId, sourceLandId, targetLaneId, index, card) => {
     debug('Calling onDragEnd')
-
-    const laneIndex = draggedData.lanes.findIndex(lane => lane.id === sourceLandId)
-    const cardIndex = draggedData.lanes[laneIndex].cards.findIndex(card => card.id === cardId)
-    const updatedData = update(draggedData, {
-      lanes: {[laneIndex]: {cards: {[cardIndex]: {cardColor: {$set: '#d0fdd2'}}}}}
+    console.log('draggedData', draggedData)
+    console.log('card', card)
+    const updatedCard = produce<Card>(card, draft => {
+      draft.cardColor = '#d0fdd2'
     })
-    setBoardData(updatedData)
+    const updatedBoard = produce<BoardData>(boardData, draft => {
+      const sourceLane = draft.lanes.find(lane => lane.id === sourceLandId)
+      const targetLane = draft.lanes.find(lane => lane.id === targetLaneId)
+      const cardIndex = sourceLane.cards.findIndex(card => card.id === cardId)
+      sourceLane.cards.splice(cardIndex, 1)
+      targetLane.cards.splice(index, 0, updatedCard)
+    })
+    setBoardData(updatedBoard)
   }
   return (
     <Board
       tagStyle={{fontSize: '80%'}}
       data={boardData}
       draggable
-      onDataChange={updateBoard}
       handleDragEnd={onDragEnd}
       onCardClick={(cardId, metadata) => alert(`Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`)}
       components={{Card: CustomCard}}

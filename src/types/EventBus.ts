@@ -8,6 +8,7 @@ type EventBusEvent =
       type: 'ADD_CARD'
       laneId: string
       card: Card
+      index?: number
     }
   | {
       type: 'UPDATE_CARD'
