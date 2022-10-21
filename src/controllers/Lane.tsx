@@ -119,8 +119,6 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 
   // useEffect(
   //   () => {
-  //     console.log('cards', cards)
-  //     console.log('board cards', board.data.lanes[index].cards)
 
   //     if (!isEqual(cards, board.data.lanes[index].cards)) {
   //       setCurrentPageState(currentPage)

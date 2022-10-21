@@ -6,40 +6,6 @@ import * as DefaultComponets from '../components'
 import {BoardData} from 'rt/types/Board'
 import {store} from 'rt/store/store'
 
-// export class _Board extends Component<{
-//   id?: string
-//   className?: string
-//   components?: typeof DefaultComponets
-//   data: BoardData
-//   t?: any
-// }> {
-//   store: any
-//   id: any
-//   constructor(props) {
-//     super(props)
-//     this.store = this.getStore()
-//     this.id = this.props.id || uuidv1()
-//   }
-
-//   getStore = () => {
-//     //When you create multiple boards, unique stores are created for isolation
-//     return createStore(boardReducer)
-//   }
-
-//   render() {
-//     const {className, components} = this.props
-//     const allClassNames = classNames('react-trello-board', className || '')
-//     return (
-//       <Provider store={this.store}>
-//         <>
-//           <components.GlobalStyle />
-//           <BoardContainer id={this.id} {...this.props} className={allClassNames} />
-//         </>
-//       </Provider>
-//     )
-//   }
-// }
-
 export const Board: FC<
   PropsWithChildren<{
     id?: string
