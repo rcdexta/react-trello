@@ -223,6 +223,8 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
   const renderDragContainer = (isDraggingOver: boolean) => {
     const showableCards = collapsed ? [] : cards
     const cardList = sortCards(showableCards, laneSortFunction).map((card, idx) => {
+      console.log('Card', card)
+
       const onDeleteCard = () => removeCard(card.id)
       const cardToRender = (
         <components.Card
@@ -243,6 +245,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
           metadata={card.metadata}
           id={card.id}
           t={t}
+          {...card}
         />
       )
       return cardDraggable && (!card.hasOwnProperty('draggable') || card.draggable) ? (

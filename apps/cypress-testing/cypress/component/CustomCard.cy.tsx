@@ -1,8 +1,10 @@
 import { mount } from "cypress/react18";
 import { DeleteButton } from "react-trello-ts";
+import { CardProps } from "react-trello-ts/src/components/Card";
 import { Tag } from "react-trello-ts/src/components/Card/Tag";
-import { Board } from "react-trello-ts/src/controllers/Board";
+import Board from "react-trello-ts";
 import { MovableCardWrapper } from "react-trello-ts/src/styles/Base";
+import { BoardData } from "react-trello-ts/src/types/Board";
 
 const CustomCard = ({
   onClick,
@@ -21,9 +23,28 @@ const CustomCard = ({
   id,
   index,
   t,
-}: any) => {
+}: CardProps) => {
+  console.log("CustomCard", {
+    onClick,
+    className,
+    name,
+    cardStyle,
+    body,
+    dueOn,
+    cardColor,
+    subTitle,
+    tagStyle,
+    escalationText,
+    tags,
+    showDeleteButton,
+    onDelete,
+    id,
+    index,
+    t,
+  });
+
   const clickDelete = (e: { stopPropagation: () => void }) => {
-    onDelete();
+    onDelete && onDelete();
     e.stopPropagation();
   };
 
@@ -157,7 +178,7 @@ const data: BoardData = {
 };
 
 describe("CustomCard.cy.ts", () => {
-  it("renders cards", () => {
+  it("Renders custom card content correctly", () => {
     mount(
       <Board
         tagStyle={{ fontSize: "80%" }}
@@ -166,10 +187,50 @@ describe("CustomCard.cy.ts", () => {
         components={{ Card: CustomCard }}
         onCardClick={(cardId: any, metadata: { id: any }) =>
           alert(
-            `Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`,
+            `Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`
           )
         }
-      />,
+      />
     );
+    cy.findCardByTitle("John Smith");
+    cy.get(".react-trello-card")
+      .should("have.length", 3)
+      .first()
+      .then((card) => {
+        cy.wrap(card).contains("John Smith");
+        cy.wrap(card).contains("due in a day");
+        cy.wrap(card).contains("SMS received at 12:13pm today");
+        cy.wrap(card).contains(
+          "Thanks. Please schedule me for an estimate on Monday."
+        );
+        cy.wrap(card).contains("Escalated to OPS-ESCALATIONS!");
+      });
+
+    cy.findCardByTitle("Card Weathers");
+    cy.get(".react-trello-card")
+      .should("have.length", 3)
+      .eq(1)
+      .then((card) => {
+        cy.wrap(card).contains("Card Weathers");
+        cy.wrap(card).contains("due now");
+        cy.wrap(card).contains("Email received at 1:14pm");
+        cy.wrap(card).contains(
+          "Is the estimate free, and can someone call me soon?"
+        );
+        cy.wrap(card).contains("Escalated to Admin");
+      });
+
+    cy.findCardByTitle("Michael Caine");
+    cy.get(".react-trello-card")
+      .should("have.length", 3)
+      .last()
+      .then((card) => {
+        cy.wrap(card).contains("Michael Caine");
+        cy.wrap(card).contains("due in a day");
+        cy.wrap(card).contains("Email received at 4:23pm today");
+        cy.wrap(card).contains("Escalated to OPS-ESCALATIONS!");
+        cy.wrap(card).contains("Critical");
+        cy.wrap(card).contains("2d ETA");
+      });
   });
 });
