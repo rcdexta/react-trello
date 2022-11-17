@@ -1,10 +1,2 @@
-node_modules
-*.log
-.DS_Store
-coverage
-.idea
-npm-debug.log
-dist/
-.history/
-storybook-build
-.npmrc
+/node_modules
+.turbo
