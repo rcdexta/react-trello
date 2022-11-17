@@ -2,6 +2,14 @@ lockfileVersion: 5.4
 
 importers:
 
+  .:
+    specifiers:
+      rome: ^10.0.1
+      turbo: ^1.6.3
+    devDependencies:
+      rome: 10.0.1
+      turbo: 1.6.3
+
   apps/cypress-testing:
     specifiers:
       '@4tw/cypress-drag-drop': ^2.2.1
@@ -2584,6 +2592,54 @@ packages:
       react-dom: 16.14.0_react@16.14.0
       react-lifecycles-compat: 3.0.4
     dev: true
+
+  /@rometools/cli-darwin-arm64/10.0.1:
+    resolution: {integrity: sha512-MwQjk3uhZrCu6LgIwJHREAsVt/mUQTGv7p8iosfaF8lCIxMVjyS+akbF/QcBufyW5sFtHYNWUEe/uKPHK4E//A==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-darwin-x64/10.0.1:
+    resolution: {integrity: sha512-n010Wc/z9L8wRkRnR5boMhdWgDVGrTG/i7zL8u/3+F5aSUgLCywf9F/b3ex74tCJJfcwBLlhaAqAVQX6U1bIkA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-linux-arm64/10.0.1:
+    resolution: {integrity: sha512-JljZsnud1KCfe36VNsVh/LrYdAzgbKbcsCTzeCjW9ROkMyNj8pmQ/gIUFxZ+PyhMFgowHIDGihoNf4m+pgpxkA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-linux-x64/10.0.1:
+    resolution: {integrity: sha512-jXIqd9iDyZUexk63CRfAXDA4zNDUHpErUmCejjGab3dhDt1KA40fDqKb+kxZpAhY3tQoWNSNQyo750zX5NawLw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-win32-arm64/10.0.1:
+    resolution: {integrity: sha512-G/toRrKPhhi7SMYMyROq/E2c8/4xRX/67vFhVihuMvDDzhanIb99hEt5MMbM4HbYK1nnZBPyLN6LxVsxm9M9hA==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rometools/cli-win32-x64/10.0.1:
+    resolution: {integrity: sha512-y299+VGoBufZntZj0Xz7w9DODU+6E5giXStfBDoa0fspXGNkYyYfD+HC6j9gUv4zpMZJ607XVvVHjpfwM/3ftA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /@semantic-release/commit-analyzer/8.0.1_semantic-release@17.4.7:
     resolution: {integrity: sha512-5bJma/oB7B4MtwUkZC2Bf7O1MHfi4gWe4mA+MIQ3lsEV0b422Bvl1z5HRpplDnMLHH3EXMoRdEng6Ds5wUqA3A==}
@@ -7616,8 +7672,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -16558,6 +16614,20 @@ packages:
       fsevents: 2.3.2
     dev: true
 
+  /rome/10.0.1:
+    resolution: {integrity: sha512-RfaDa+cSustBsjX6bj3fWqEhoNxXrK1uNgKHpkCHAqp20QMJXnCRtbokhirNMe0utyGI9GTO/sDoK7hJP7O8Bw==}
+    engines: {node: '>=14.*'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@rometools/cli-darwin-arm64': 10.0.1
+      '@rometools/cli-darwin-x64': 10.0.1
+      '@rometools/cli-linux-arm64': 10.0.1
+      '@rometools/cli-linux-x64': 10.0.1
+      '@rometools/cli-win32-arm64': 10.0.1
+      '@rometools/cli-win32-x64': 10.0.1
+    dev: true
+
   /rsvp/4.8.5:
     resolution: {integrity: sha512-nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==}
     engines: {node: 6.* || >= 7.*}
@@ -18298,6 +18368,67 @@ packages:
     dependencies:
       safe-buffer: 5.2.1
     dev: false
+
+  /turbo-darwin-64/1.6.3:
+    resolution: {integrity: sha512-QmDIX0Yh1wYQl0bUS0gGWwNxpJwrzZU2GIAYt3aOKoirWA2ecnyb3R6ludcS1znfNV2MfunP+l8E3ncxUHwtjA==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-darwin-arm64/1.6.3:
+    resolution: {integrity: sha512-75DXhFpwE7CinBbtxTxH08EcWrxYSPFow3NaeFwsG8aymkWXF+U2aukYHJA6I12n9/dGqf7yRXzkF0S/9UtdyQ==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-64/1.6.3:
+    resolution: {integrity: sha512-O9uc6J0yoRPWdPg9THRQi69K6E2iZ98cRHNvus05lZbcPzZTxJYkYGb5iagCmCW/pq6fL4T4oLWAd6evg2LGQA==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-linux-arm64/1.6.3:
+    resolution: {integrity: sha512-dCy667qqEtZIhulsRTe8hhWQNCJO0i20uHXv7KjLHuFZGCeMbWxB8rsneRoY+blf8+QNqGuXQJxak7ayjHLxiA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-64/1.6.3:
+    resolution: {integrity: sha512-lKRqwL3mrVF09b9KySSaOwetehmGknV9EcQTF7d2dxngGYYX1WXoQLjFP9YYH8ZV07oPm+RUOAKSCQuDuMNhiA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo-windows-arm64/1.6.3:
+    resolution: {integrity: sha512-BXY1sDPEA1DgPwuENvDCD8B7Hb0toscjus941WpL8CVd10hg9pk/MWn9CNgwDO5Q9ks0mw+liDv2EMnleEjeNA==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /turbo/1.6.3:
+    resolution: {integrity: sha512-FtfhJLmEEtHveGxW4Ye/QuY85AnZ2ZNVgkTBswoap7UMHB1+oI4diHPNyqrQLG4K1UFtCkjOlVoLsllUh/9QRw==}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      turbo-darwin-64: 1.6.3
+      turbo-darwin-arm64: 1.6.3
+      turbo-linux-64: 1.6.3
+      turbo-linux-arm64: 1.6.3
+      turbo-windows-64: 1.6.3
+      turbo-windows-arm64: 1.6.3
+    dev: true
 
   /tweetnacl/0.14.5:
     resolution: {integrity: sha512-KXXFFdAbFXY4geFIwoyNK+f5Z1b7swfXABfL7HXCmoIWMKU3dmS26672A4EeQtDzLKy7SXmfBu51JolvEKwtGA==}

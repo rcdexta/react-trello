@@ -11547,6 +11547,33 @@ Object {
   white-space: pre-wrap;
 }
 
+.c18 {
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c19 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+
 .c14 {
   text-align: center;
   position: absolute;
@@ -11644,6 +11671,34 @@ Object {
                         >
                           foo card
                         </div>
+                        <div
+                          class="c18"
+                        >
+                          <span
+                            class="c19"
+                            style="color: white; background-color: rgb(235, 90, 70); font-size: 80%;"
+                          >
+                            High
+                          </span>
+                          <span
+                            class="c19"
+                            style="color: white; background-color: rgb(0, 121, 191); font-size: 80%;"
+                          >
+                            Tech Debt
+                          </span>
+                          <span
+                            class="c19"
+                            style="color: white; background-color: rgb(97, 189, 79); font-size: 80%;"
+                          >
+                            Very long tag that is
+                          </span>
+                          <span
+                            class="c19"
+                            style="color: white; background-color: rgb(97, 189, 79); font-size: 80%;"
+                          >
+                            One more
+                          </span>
+                        </div>
                       </article>
                     </div>
                     <div
@@ -11679,6 +11734,16 @@ Object {
                           class="c17"
                         >
                           bar card
+                        </div>
+                        <div
+                          class="c18"
+                        >
+                          <span
+                            class="c19"
+                            style="color: white; background-color: orange; font-size: 80%;"
+                          >
+                            Low
+                          </span>
                         </div>
                       </article>
                     </div>
@@ -11837,6 +11902,33 @@ Object {
   white-space: pre-wrap;
 }
 
+.c18 {
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c19 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+
 .c14 {
   text-align: center;
   position: absolute;
@@ -11931,6 +12023,34 @@ Object {
                       >
                         foo card
                       </div>
+                      <div
+                        class="c18"
+                      >
+                        <span
+                          class="c19"
+                          style="color: white; background-color: rgb(235, 90, 70); font-size: 80%;"
+                        >
+                          High
+                        </span>
+                        <span
+                          class="c19"
+                          style="color: white; background-color: rgb(0, 121, 191); font-size: 80%;"
+                        >
+                          Tech Debt
+                        </span>
+                        <span
+                          class="c19"
+                          style="color: white; background-color: rgb(97, 189, 79); font-size: 80%;"
+                        >
+                          Very long tag that is
+                        </span>
+                        <span
+                          class="c19"
+                          style="color: white; background-color: rgb(97, 189, 79); font-size: 80%;"
+                        >
+                          One more
+                        </span>
+                      </div>
                     </article>
                   </div>
                   <div
@@ -11966,6 +12086,16 @@ Object {
                         class="c17"
                       >
                         bar card
+                      </div>
+                      <div
+                        class="c18"
+                      >
+                        <span
+                          class="c19"
+                          style="color: white; background-color: orange; font-size: 80%;"
+                        >
+                          Low
+                        </span>
                       </div>
                     </article>
                   </div>
@@ -14659,6 +14789,13 @@ Object {
   color: #000;
 }
 
+.c13 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+
 .c10 {
   text-align: center;
   position: absolute;
@@ -14740,16 +14877,21 @@ Object {
                       >
                         <article
                           class="c7 c8 c9 react-trello-card"
+                          style="border-radius: 6px; box-shadow: 0 0 6px 1px #BD3B36; margin-bottom: 15px;"
                         >
                           <header
-                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);"
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              John Smith
+                            </div>
                             <div
                               style="font-size: 11px;"
-                            />
+                            >
+                              due in a day
+                            </div>
                             <div
                               class="c10"
                             >
@@ -14765,15 +14907,21 @@ Object {
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              SMS received at 12:13pm today
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                Thanks. Please schedule me for an estimate on Monday.
+                              </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                            />
+                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                            >
+                              Escalated to OPS-ESCALATIONS!
+                            </div>
                           </div>
                         </article>
                       </div>
@@ -14782,16 +14930,21 @@ Object {
                       >
                         <article
                           class="c7 c8 c9 react-trello-card"
+                          style="border-radius: 6px; box-shadow: 0 0 6px 1px #E08521; margin-bottom: 15px;"
                         >
                           <header
-                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(224, 133, 33);"
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              Card Weathers
+                            </div>
                             <div
                               style="font-size: 11px;"
-                            />
+                            >
+                              due now
+                            </div>
                             <div
                               class="c10"
                             >
@@ -14807,15 +14960,21 @@ Object {
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              Email received at 1:14pm
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                Is the estimate free, and can someone call me soon?
+                              </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                            />
+                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(224, 133, 33);"
+                            >
+                              Escalated to Admin
+                            </div>
                           </div>
                         </article>
                       </div>
@@ -14850,16 +15009,21 @@ Object {
                       >
                         <article
                           class="c7 c8 c9 react-trello-card"
+                          style="border-radius: 6px; box-shadow: 0 0 6px 1px #BD3B36; margin-bottom: 15px;"
                         >
                           <header
-                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                            style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);"
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              Michael Caine
+                            </div>
                             <div
                               style="font-size: 11px;"
-                            />
+                            >
+                              due in a day
+                            </div>
                             <div
                               class="c10"
                             >
@@ -14875,15 +15039,37 @@ Object {
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              Email received at 4:23pm today
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                You are welcome. Interested in doing business with you again
+                              </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                            />
+                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                            >
+                              Escalated to OPS-ESCALATIONS!
+                            </div>
+                            <div
+                              style="border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: flex-end; flex-direction: row; flex-wrap: wrap;"
+                            >
+                              <span
+                                class="c13"
+                                style="color: white; background-color: red; font-size: 80%;"
+                              >
+                                Critical
+                              </span>
+                              <span
+                                class="c13"
+                                style="color: white; background-color: rgb(0, 121, 191); font-size: 80%;"
+                              >
+                                2d ETA
+                              </span>
+                            </div>
                           </div>
                         </article>
                       </div>
@@ -15013,6 +15199,13 @@ Object {
   color: #000;
 }
 
+.c13 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+
 .c10 {
   text-align: center;
   position: absolute;
@@ -15091,16 +15284,21 @@ Object {
                     >
                       <article
                         class="c7 c8 c9 react-trello-card"
+                        style="border-radius: 6px; box-shadow: 0 0 6px 1px #BD3B36; margin-bottom: 15px;"
                       >
                         <header
-                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);"
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            John Smith
+                          </div>
                           <div
                             style="font-size: 11px;"
-                          />
+                          >
+                            due in a day
+                          </div>
                           <div
                             class="c10"
                           >
@@ -15116,15 +15314,21 @@ Object {
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            SMS received at 12:13pm today
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              Thanks. Please schedule me for an estimate on Monday.
+                            </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                          />
+                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                          >
+                            Escalated to OPS-ESCALATIONS!
+                          </div>
                         </div>
                       </article>
                     </div>
@@ -15133,16 +15337,21 @@ Object {
                     >
                       <article
                         class="c7 c8 c9 react-trello-card"
+                        style="border-radius: 6px; box-shadow: 0 0 6px 1px #E08521; margin-bottom: 15px;"
                       >
                         <header
-                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(224, 133, 33);"
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            Card Weathers
+                          </div>
                           <div
                             style="font-size: 11px;"
-                          />
+                          >
+                            due now
+                          </div>
                           <div
                             class="c10"
                           >
@@ -15158,15 +15367,21 @@ Object {
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            Email received at 1:14pm
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              Is the estimate free, and can someone call me soon?
+                            </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                          />
+                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(224, 133, 33);"
+                          >
+                            Escalated to Admin
+                          </div>
                         </div>
                       </article>
                     </div>
@@ -15201,16 +15416,21 @@ Object {
                     >
                       <article
                         class="c7 c8 c9 react-trello-card"
+                        style="border-radius: 6px; box-shadow: 0 0 6px 1px #BD3B36; margin-bottom: 15px;"
                       >
                         <header
-                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;"
+                          style="border-bottom: 1px solid #eee; padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);"
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            Michael Caine
+                          </div>
                           <div
                             style="font-size: 11px;"
-                          />
+                          >
+                            due in a day
+                          </div>
                           <div
                             class="c10"
                           >
@@ -15226,15 +15446,37 @@ Object {
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            Email received at 4:23pm today
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              You are welcome. Interested in doing business with you again
+                            </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold;"
-                          />
+                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                          >
+                            Escalated to OPS-ESCALATIONS!
+                          </div>
+                          <div
+                            style="border-top: 1px solid #eee; padding-top: 6px; display: flex; justify-content: flex-end; flex-direction: row; flex-wrap: wrap;"
+                          >
+                            <span
+                              class="c13"
+                              style="color: white; background-color: red; font-size: 80%;"
+                            >
+                              Critical
+                            </span>
+                            <span
+                              class="c13"
+                              style="color: white; background-color: rgb(0, 121, 191); font-size: 80%;"
+                            >
+                              2d ETA
+                            </span>
+                          </div>
                         </div>
                       </article>
                     </div>
@@ -15463,18 +15705,24 @@ Object {
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              John Smith
+                            </div>
                           </header>
                           <div
                             style="font-size: 12px; color: rgb(189, 59, 54);"
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              SMS received at 12:13pm today
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                Thanks. Please schedule me for an estimate on Monday.
+                              </i>
                             </div>
                           </div>
                         </article>
@@ -15492,18 +15740,24 @@ Object {
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              Card Weathers
+                            </div>
                           </header>
                           <div
                             style="font-size: 12px; color: rgb(189, 59, 54);"
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              Email received at 1:14pm
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                Is the estimate free, and can someone call me soon?
+                              </i>
                             </div>
                           </div>
                         </article>
@@ -15547,18 +15801,24 @@ Object {
                           >
                             <div
                               style="font-size: 14px; font-weight: bold;"
-                            />
+                            >
+                              Michael Caine
+                            </div>
                           </header>
                           <div
                             style="font-size: 12px; color: rgb(189, 59, 54);"
                           >
                             <div
                               style="color: rgb(76, 76, 76); font-weight: bold;"
-                            />
+                            >
+                              Email received at 4:23pm today
+                            </div>
                             <div
                               style="padding: 5px 0px;"
                             >
-                              <i />
+                              <i>
+                                You are welcome. Interested in doing business with you again
+                              </i>
                             </div>
                           </div>
                         </article>
@@ -15729,18 +15989,24 @@ Object {
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            John Smith
+                          </div>
                         </header>
                         <div
                           style="font-size: 12px; color: rgb(189, 59, 54);"
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            SMS received at 12:13pm today
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              Thanks. Please schedule me for an estimate on Monday.
+                            </i>
                           </div>
                         </div>
                       </article>
@@ -15758,18 +16024,24 @@ Object {
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            Card Weathers
+                          </div>
                         </header>
                         <div
                           style="font-size: 12px; color: rgb(189, 59, 54);"
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            Email received at 1:14pm
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              Is the estimate free, and can someone call me soon?
+                            </i>
                           </div>
                         </div>
                       </article>
@@ -15813,18 +16085,24 @@ Object {
                         >
                           <div
                             style="font-size: 14px; font-weight: bold;"
-                          />
+                          >
+                            Michael Caine
+                          </div>
                         </header>
                         <div
                           style="font-size: 12px; color: rgb(189, 59, 54);"
                         >
                           <div
                             style="color: rgb(76, 76, 76); font-weight: bold;"
-                          />
+                          >
+                            Email received at 4:23pm today
+                          </div>
                           <div
                             style="padding: 5px 0px;"
                           >
-                            <i />
+                            <i>
+                              You are welcome. Interested in doing business with you again
+                            </i>
                           </div>
                         </div>
                       </article>
@@ -17813,6 +18091,33 @@ Object {
   white-space: pre-wrap;
 }
 
+.c16 {
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c17 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+
 .c12 {
   text-align: center;
   position: absolute;
@@ -18038,6 +18343,22 @@ Object {
                         >
                           You are welcome. Interested in doing business with you again
                         </div>
+                        <div
+                          class="c16"
+                        >
+                          <span
+                            class="c17"
+                            style="color: white; background-color: red;"
+                          >
+                            Critical
+                          </span>
+                          <span
+                            class="c17"
+                            style="color: white; background-color: rgb(0, 121, 191);"
+                          >
+                            2d ETA
+                          </span>
+                        </div>
                       </article>
                     </div>
                   </div>
@@ -18180,6 +18501,33 @@ Object {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
+}
+
+.c16 {
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c17 {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
 }
 
 .c12 {
@@ -18403,6 +18751,22 @@ Object {
                         class="c15"
                       >
                         You are welcome. Interested in doing business with you again
+                      </div>
+                      <div
+                        class="c16"
+                      >
+                        <span
+                          class="c17"
+                          style="color: white; background-color: red;"
+                        >
+                          Critical
+                        </span>
+                        <span
+                          class="c17"
+                          style="color: white; background-color: rgb(0, 121, 191);"
+                        >
+                          2d ETA
+                        </span>
                       </div>
                     </article>
                   </div>

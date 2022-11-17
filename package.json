@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "turbo run build",
+    "test:unit": "turbo run test:unit",
+    "test:integration": "turbo run test:integration",
+    "lint": "turbo run lint",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "rome": "^10.0.1",
+    "turbo": "^1.6.3"
+  }
+}

@@ -1,11 +1,16 @@
-import React, {FC, HTMLAttributes, PropsWithChildren} from 'react'
+import React, { FC, HTMLAttributes, PropsWithChildren } from "react";
 
-import {LaneFooter as _LaneFooter} from '../../styles/Base'
-import {CollapseBtn, ExpandBtn} from '../../styles/Elements'
+import { LaneFooter as _LaneFooter } from "../../styles/Base";
+import { CollapseBtn, ExpandBtn } from "../../styles/Elements";
 
 interface LaneFooterProps extends HTMLAttributes<HTMLDivElement> {
-  collapsed?: boolean
+	collapsed?: boolean;
 }
-export const LaneFooter: FC<PropsWithChildren<LaneFooterProps>> = ({onClick, collapsed}) => (
-  <_LaneFooter onClick={onClick}>{collapsed ? <ExpandBtn /> : <CollapseBtn />}</_LaneFooter>
-)
+export const LaneFooter: FC<PropsWithChildren<LaneFooterProps>> = ({
+	onClick,
+	collapsed,
+}) => (
+	<_LaneFooter onClick={onClick}>
+		{collapsed ? <ExpandBtn /> : <CollapseBtn />}
+	</_LaneFooter>
+);

@@ -10,7 +10,7 @@
   "scripts": {
     "prepublish": "pnpm build",
     "storybook": "start-storybook -p 9002",
-    "test": "jest",
+    "test:unit": "jest",
     "test:watch": "jest --watch",
     "test:cover": "istanbul cover -x *.test.js _mocha -- -R spec --require tests/config/setup 'tests/**/*.test.ts'",
     "test:report": "cat ./coverage/lcov.info | codecov && rm -rf ./coverage",
@@ -20,7 +20,8 @@
     "deploy-storybook": "pnpm build-storybook && gh-pages -d storybook-build",
     "build-storybook": "build-storybook -o storybook-build",
     "size": "size-limit",
-    "clean": "rimraf dist storybook-build"
+    "clean": "rimraf dist storybook-build",
+    "lint": "pnpm rome check ."
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,3 @@
-export {DeleteButton} from './DeleteButton'
-export {EditableLabel} from './EditableLabel'
-export {InlineInput} from './InlineInput'
+export { DeleteButton } from "./DeleteButton";
+export { EditableLabel } from "./EditableLabel";
+export { InlineInput } from "./InlineInput";

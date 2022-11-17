@@ -24,25 +24,6 @@ const CustomCard = ({
   index,
   t,
 }: CardProps) => {
-  console.log("CustomCard", {
-    onClick,
-    className,
-    name,
-    cardStyle,
-    body,
-    dueOn,
-    cardColor,
-    subTitle,
-    tagStyle,
-    escalationText,
-    tags,
-    showDeleteButton,
-    onDelete,
-    id,
-    index,
-    t,
-  });
-
   const clickDelete = (e: { stopPropagation: () => void }) => {
     onDelete && onDelete();
     e.stopPropagation();
@@ -187,10 +168,10 @@ describe("CustomCard.cy.ts", () => {
         components={{ Card: CustomCard }}
         onCardClick={(cardId: any, metadata: { id: any }) =>
           alert(
-            `Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`
+            `Card with id:${cardId} clicked. Has metadata.id: ${metadata.id}`,
           )
         }
-      />
+      />,
     );
     cy.findCardByTitle("John Smith");
     cy.get(".react-trello-card")
@@ -201,7 +182,7 @@ describe("CustomCard.cy.ts", () => {
         cy.wrap(card).contains("due in a day");
         cy.wrap(card).contains("SMS received at 12:13pm today");
         cy.wrap(card).contains(
-          "Thanks. Please schedule me for an estimate on Monday."
+          "Thanks. Please schedule me for an estimate on Monday.",
         );
         cy.wrap(card).contains("Escalated to OPS-ESCALATIONS!");
       });
@@ -215,7 +196,7 @@ describe("CustomCard.cy.ts", () => {
         cy.wrap(card).contains("due now");
         cy.wrap(card).contains("Email received at 1:14pm");
         cy.wrap(card).contains(
-          "Is the estimate free, and can someone call me soon?"
+          "Is the estimate free, and can someone call me soon?",
         );
         cy.wrap(card).contains("Escalated to Admin");
       });

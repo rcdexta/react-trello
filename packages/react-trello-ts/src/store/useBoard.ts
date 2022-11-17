@@ -1,8 +1,8 @@
-import {useContext} from 'react'
-import {BoardContext} from '../controllers/Board'
-import {useStore} from 'zustand'
+import { useContext } from "react";
+import { BoardContext } from "../controllers/Board";
+import { useStore } from "zustand";
 
 export const useBoard = () => {
-  const store = useContext(BoardContext)
-  return useStore(store)
-}
+	const store = useContext(BoardContext);
+	return useStore(store);
+};

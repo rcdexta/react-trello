@@ -1,14 +1,20 @@
-import React from 'react'
-import {storiesOf} from '@storybook/react'
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import Board from '../src'
+import Board from "../src";
 
-const data = require('./data/collapsible.json')
+const data = require("./data/collapsible.json");
 
-const LaneFooter = ({onClick, collapsed}) => (
-  <div onClick={onClick}>{collapsed ? 'click to expand' : 'click to collapse'}</div>
-)
+const LaneFooter = ({ onClick, collapsed }) => (
+	<div onClick={onClick} onKeyDown={onClick}>
+		{collapsed ? "click to expand" : "click to collapse"}
+	</div>
+);
 
-storiesOf('Custom Components', module).add('LaneFooter', () => (
-  <Board collapsibleLanes components={{LaneFooter: LaneFooter}} data={data} />
-))
+storiesOf("Custom Components", module).add("LaneFooter", () => (
+	<Board
+		collapsibleLanes={true}
+		components={{ LaneFooter: LaneFooter }}
+		data={data}
+	/>
+));
