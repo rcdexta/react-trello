@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"]
+    },
+    "test:unit": {
+      "dependsOn": [],
+      "outputs": [],
+      "inputs": [
+        "../../packages/react-trello-ts/**/*.ts",
+        "../../packages/react-trello-ts/**/*.tsx",
+        "../../apps/cypress-testing/**/*.tsx",
+        "../../apps/cypress-testing/**/*.ts"
+      ]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "deploy": {
+      "dependsOn": ["build", "test", "lint"],
+      "outputs": []
+    }
+  }
+}
