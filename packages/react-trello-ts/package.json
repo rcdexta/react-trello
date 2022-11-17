@@ -85,6 +85,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "gh-pages": "^4.0.0",
     "i18next": "^17.0.3",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27",
     "jest-cli": "^27",
     "jest-styled-components": "^7",

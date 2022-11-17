@@ -82,6 +82,7 @@ importers:
       eslint-plugin-standard: ^4.0.0
       gh-pages: ^4.0.0
       i18next: ^17.0.3
+      identity-obj-proxy: ^3.0.0
       immer: ^9.0.15
       immutability-helper: ^2.8.1
       jest: ^27
@@ -156,6 +157,7 @@ importers:
       eslint-plugin-standard: 4.1.0_eslint@8.26.0
       gh-pages: 4.0.0
       i18next: 17.3.1
+      identity-obj-proxy: 3.0.0
       jest: 27.5.1
       jest-cli: 27.5.1
       jest-styled-components: 7.1.1_styled-components@5.3.6
@@ -9289,6 +9291,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /harmony-reflect/1.6.2:
+    resolution: {integrity: sha512-HIp/n38R9kQjDEziXyDTuW3vvoxxyxjxFzXLrBr18uB47GnSt+G9D29fqrpM5ZkspMcPICud3XsBJQ4Y2URg8g==}
+    dev: true
+
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
     dev: true
@@ -9707,6 +9713,13 @@ packages:
       postcss: ^8.1.0
     dependencies:
       postcss: 8.4.18
+    dev: true
+
+  /identity-obj-proxy/3.0.0:
+    resolution: {integrity: sha512-00n6YnVHKrinT9t0d9+5yZC6UBNJANpYEQvL2LlX6Ab9lnmxzIRcEmTPuyGScvl1+jKuCICX1Z0Ab1pPKKdikA==}
+    engines: {node: '>=4'}
+    dependencies:
+      harmony-reflect: 1.6.2
     dev: true
 
   /ieee754/1.2.1:
