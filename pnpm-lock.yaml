@@ -104,7 +104,7 @@ importers:
       ts-jest: ^27
       tsup: ^6.2.3
       typescript: ^4.8.2
-      uuid: ^3.3.2
+      uuid: ^9
       webpack: '*'
       zustand: ^4.1.1
     dependencies:
@@ -115,7 +115,7 @@ importers:
       lodash: 4.17.21
       react-popopo: 2.1.9_7wdodx5nsa5yg5y3zejnac65wm
       trello-smooth-dnd: 1.0.0
-      uuid: 3.4.0
+      uuid: 9.0.0
       zustand: 4.1.2_immer@9.0.15+react@16.14.0
     devDependencies:
       '@babel/core': 7.19.6
@@ -16075,9 +16075,15 @@ packages:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
     deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     hasBin: true
+    dev: true
 
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: false
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
     hasBin: true
     dev: false
 

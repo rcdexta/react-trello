@@ -42,7 +42,7 @@
     "lodash": "^4.17.11",
     "react-popopo": "^2.1.9",
     "trello-smooth-dnd": "1.0.0",
-    "uuid": "^3.3.2",
+    "uuid": "^9",
     "zustand": "^4.1.1"
   },
   "devDependencies": {

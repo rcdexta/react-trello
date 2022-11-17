@@ -1,7 +1,7 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from "react";
 import classNames from "classnames";
 import cloneDeep from "lodash/cloneDeep";
-import uuidv1 from "uuid/v1";
+import { v1 } from "uuid";
 
 import Container from "../dnd/Container";
 import { Draggable } from "../dnd/Draggable";
@@ -140,7 +140,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		label?: string;
 	}) => {
 		const laneId = params.laneId || id;
-		const _id = uuidv1();
+		const _id = v1();
 		setAddCardMode(false);
 		const card = { id: _id, ...params };
 		board.addCard(card, laneId);

@@ -1,6 +1,6 @@
 import React, { createContext, FC, PropsWithChildren } from "react";
 import classNames from "classnames";
-import uuidv1 from "uuid/v1";
+import { v1 } from "uuid";
 import { BoardContainer } from "./BoardContainer";
 import * as DefaultComponets from "../components";
 import { BoardData } from "../types/Board";
@@ -21,7 +21,7 @@ export const Board: FC<
 		<BoardContext.Provider value={store}>
 			<components.GlobalStyle />
 			<BoardContainer
-				id={id || uuidv1()}
+				id={id || v1()}
 				data={data}
 				components={components}
 				t={t}

@@ -8,7 +8,7 @@ import React, {
 import { LaneTitle, NewLaneButtons, Section } from "../styles/Base";
 import { AddButton, CancelButton } from "../styles/Elements";
 import { NewLaneTitleEditor } from "../widgets/NewLaneTitleEditor";
-import uuidv1 from "uuid/v1";
+import { v1 } from "uuid";
 import { ThemedStyledFunction } from "styled-components";
 import createTranslate from "../helpers/createTranslate";
 
@@ -26,7 +26,7 @@ export const NewLaneForm: FC<PropsWithChildren<NewLaneFormProps>> = ({
 	const titleRef = useRef<HTMLTextAreaElement>();
 	const handleSubmit = () => {
 		onAdd({
-			id: uuidv1(),
+			id: v1(),
 			title: titleRef.current.value,
 		});
 	};
