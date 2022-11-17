@@ -132,25 +132,13 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 		};
 	}, []);
 
-	/** TODO handle this shit */
-	// UNSAFE_componentWillReceiveProps(nextProps) {
-	//     // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
-	//     const {data, reducerData, onDataChange} = this.props
-	//     if (nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
-	//       onDataChange(nextProps.reducerData)
-	//     }
-	//     if (nextProps.data && !isEqual(nextProps.data, data)) {
-	//       loadBoard(nextProps.data)
-	//       onDataChange(nextProps.data)
-	//     }
-	//   }
-
 	useEffect(() => {
 		if (!isEqual(board.data, data)) {
 			onDataChange(data);
 			board.initializeLanes(data.lanes);
 		}
 	}, [data]);
+
 	const wireEventBus = () => {
 		const eventBus: EventBusHandle = {
 			publish: (event) => {
