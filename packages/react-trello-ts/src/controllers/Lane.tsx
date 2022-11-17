@@ -126,6 +126,9 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 	//     })
 	//   }
 	// }
+	useEffect(() => {
+		setCurrentPageState(currentPage);
+	}, [cards]);
 
 	// useEffect(
 	//   () => {

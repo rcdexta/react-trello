@@ -24,10 +24,14 @@ storiesOf("Basic Functions", module)
 		() => (
 			<Board
 				data={data}
-				laneSortFunction={(card1, card2) =>
-					new Date(card2.metadata.completedAt).getTime() -
-					new Date(card1.metadata.completedAt).getTime()
-				}
+				laneSortFunction={(card1, card2) => {
+					console.log("card1", card1);
+
+					return (
+						new Date(card2.metadata.completedAt).getTime() -
+						new Date(card1.metadata.completedAt).getTime()
+					);
+				}}
 			/>
 		),
 		{ info: "A lane sorted by completed at descending" },

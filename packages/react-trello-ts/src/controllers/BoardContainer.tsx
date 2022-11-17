@@ -127,6 +127,9 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 		if (eventBusHandle) {
 			wireEventBus();
 		}
+		return () => {
+			board.refreshBoard([]);
+		};
 	}, []);
 
 	/** TODO handle this shit */

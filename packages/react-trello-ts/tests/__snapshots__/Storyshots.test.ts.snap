@@ -9891,6 +9891,14 @@ Object {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
+  cursor: auto;
+  width: 70%;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
@@ -9927,21 +9935,21 @@ Object {
   color: #000;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
 }
 
-.c12 {
+.c13 {
   font-size: 10px;
 }
 
-.c16 {
+.c17 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c13 {
+.c14 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -9949,7 +9957,7 @@ Object {
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -9966,7 +9974,7 @@ Object {
   opacity: 0;
 }
 
-.c7:hover .c14 {
+.c7:hover .c15 {
   opacity: 1;
 }
 
@@ -9978,8 +9986,7 @@ Object {
         style="position: relative; z-index: 0;"
       >
         <div
-          class="c0 react-trello-board"
-          data="[object Object]"
+          class="c0"
           draggable="false"
         >
           <div>
@@ -9989,15 +9996,12 @@ Object {
               <section
                 class="c1 react-trello-lane"
                 draggable="false"
-                label="20/70"
-                title="Sorted Lane"
               >
                 <header
                   class="c2 c3"
                 >
                   <span
                     class="c4"
-                    draggable="true"
                   >
                     Sorted Lane
                   </span>
@@ -10026,28 +10030,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Buy milk
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-12-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -10064,28 +10068,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Dispose Garbage
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-11-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -10102,28 +10106,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Write Blog
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-10-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Can AI make memes?
                         </div>
@@ -10140,28 +10144,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Pay Rent
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-09-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Transfer to bank account
                         </div>
@@ -10264,6 +10268,14 @@ Object {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
+  cursor: auto;
+  width: 70%;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
@@ -10300,21 +10312,21 @@ Object {
   color: #000;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
 }
 
-.c12 {
+.c13 {
   font-size: 10px;
 }
 
-.c16 {
+.c17 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c13 {
+.c14 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -10322,7 +10334,7 @@ Object {
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -10339,7 +10351,7 @@ Object {
   opacity: 0;
 }
 
-.c7:hover .c14 {
+.c7:hover .c15 {
   opacity: 1;
 }
 
@@ -10348,8 +10360,7 @@ Object {
       style="position: relative; z-index: 0;"
     >
       <div
-        class="c0 react-trello-board"
-        data="[object Object]"
+        class="c0"
         draggable="false"
       >
         <div>
@@ -10359,15 +10370,12 @@ Object {
             <section
               class="c1 react-trello-lane"
               draggable="false"
-              label="20/70"
-              title="Sorted Lane"
             >
               <header
                 class="c2 c3"
               >
                 <span
                   class="c4"
-                  draggable="true"
                 >
                   Sorted Lane
                 </span>
@@ -10396,28 +10404,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Buy milk
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-12-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         2 Gallons of milk at the Deli store
                       </div>
@@ -10434,28 +10442,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Dispose Garbage
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-11-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Sort out recyclable and waste as needed
                       </div>
@@ -10472,28 +10480,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Write Blog
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-10-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Can AI make memes?
                       </div>
@@ -10510,28 +10518,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Pay Rent
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-09-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Transfer to bank account
                       </div>
@@ -10690,6 +10698,14 @@ Object {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
+  cursor: auto;
+  width: 70%;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
@@ -10726,21 +10742,21 @@ Object {
   color: #000;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
 }
 
-.c12 {
+.c13 {
   font-size: 10px;
 }
 
-.c16 {
+.c17 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c13 {
+.c14 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -10748,7 +10764,7 @@ Object {
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -10765,7 +10781,7 @@ Object {
   opacity: 0;
 }
 
-.c7:hover .c14 {
+.c7:hover .c15 {
   opacity: 1;
 }
 
@@ -10777,8 +10793,7 @@ Object {
         style="position: relative; z-index: 0;"
       >
         <div
-          class="c0 react-trello-board"
-          data="[object Object]"
+          class="c0"
           draggable="false"
         >
           <div>
@@ -10788,15 +10803,12 @@ Object {
               <section
                 class="c1 react-trello-lane"
                 draggable="false"
-                label="20/70"
-                title="Sorted Lane"
               >
                 <header
                   class="c2 c3"
                 >
                   <span
                     class="c4"
-                    draggable="true"
                   >
                     Sorted Lane
                   </span>
@@ -10825,28 +10837,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Pay Rent
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-09-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Transfer to bank account
                         </div>
@@ -10863,28 +10875,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Write Blog
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-10-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Can AI make memes?
                         </div>
@@ -10901,28 +10913,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Dispose Garbage
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-11-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           Sort out recyclable and waste as needed
                         </div>
@@ -10939,28 +10951,28 @@ Object {
                           class="c2 c10"
                         >
                           <span
-                            class="c4 c11"
+                            class="c11 c12"
                             draggable="true"
                           >
                             Buy milk
                           </span>
                           <span
-                            class="c5 c12"
+                            class="c5 c13"
                           >
                             2017-12-01
                           </span>
                           <div
-                            class="c13"
+                            class="c14"
                           >
                             <button
-                              class="c14 c15"
+                              class="c15 c16"
                             >
                               ✖
                             </button>
                           </div>
                         </header>
                         <div
-                          class="c16"
+                          class="c17"
                         >
                           2 Gallons of milk at the Deli store
                         </div>
@@ -11063,6 +11075,14 @@ Object {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
+  cursor: auto;
+  width: 70%;
+}
+
+.c11 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
@@ -11099,21 +11119,21 @@ Object {
   color: #000;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
 }
 
-.c12 {
+.c13 {
   font-size: 10px;
 }
 
-.c16 {
+.c17 {
   font-size: 12px;
   color: #4d4d4d;
   white-space: pre-wrap;
 }
 
-.c13 {
+.c14 {
   text-align: center;
   position: absolute;
   top: -1px;
@@ -11121,7 +11141,7 @@ Object {
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: inline-block;
@@ -11138,7 +11158,7 @@ Object {
   opacity: 0;
 }
 
-.c7:hover .c14 {
+.c7:hover .c15 {
   opacity: 1;
 }
 
@@ -11147,8 +11167,7 @@ Object {
       style="position: relative; z-index: 0;"
     >
       <div
-        class="c0 react-trello-board"
-        data="[object Object]"
+        class="c0"
         draggable="false"
       >
         <div>
@@ -11158,15 +11177,12 @@ Object {
             <section
               class="c1 react-trello-lane"
               draggable="false"
-              label="20/70"
-              title="Sorted Lane"
             >
               <header
                 class="c2 c3"
               >
                 <span
                   class="c4"
-                  draggable="true"
                 >
                   Sorted Lane
                 </span>
@@ -11195,28 +11211,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Pay Rent
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-09-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Transfer to bank account
                       </div>
@@ -11233,28 +11249,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Write Blog
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-10-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Can AI make memes?
                       </div>
@@ -11271,28 +11287,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Dispose Garbage
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-11-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         Sort out recyclable and waste as needed
                       </div>
@@ -11309,28 +11325,28 @@ Object {
                         class="c2 c10"
                       >
                         <span
-                          class="c4 c11"
+                          class="c11 c12"
                           draggable="true"
                         >
                           Buy milk
                         </span>
                         <span
-                          class="c5 c12"
+                          class="c5 c13"
                         >
                           2017-12-01
                         </span>
                         <div
-                          class="c13"
+                          class="c14"
                         >
                           <button
-                            class="c14 c15"
+                            class="c15 c16"
                           >
                             ✖
                           </button>
                         </div>
                       </header>
                       <div
-                        class="c16"
+                        class="c17"
                       >
                         2 Gallons of milk at the Deli store
                       </div>
@@ -14918,7 +14934,7 @@ Object {
                               </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                              style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;"
                             >
                               Escalated to OPS-ESCALATIONS!
                             </div>
@@ -14971,7 +14987,7 @@ Object {
                               </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(224, 133, 33);"
+                              style="margin-top: 10px; text-align: center; color: rgb(224, 133, 33); font-size: 15px; font-weight: bold;"
                             >
                               Escalated to Admin
                             </div>
@@ -15050,7 +15066,7 @@ Object {
                               </i>
                             </div>
                             <div
-                              style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                              style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;"
                             >
                               Escalated to OPS-ESCALATIONS!
                             </div>
@@ -15325,7 +15341,7 @@ Object {
                             </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                            style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;"
                           >
                             Escalated to OPS-ESCALATIONS!
                           </div>
@@ -15378,7 +15394,7 @@ Object {
                             </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(224, 133, 33);"
+                            style="margin-top: 10px; text-align: center; color: rgb(224, 133, 33); font-size: 15px; font-weight: bold;"
                           >
                             Escalated to Admin
                           </div>
@@ -15457,7 +15473,7 @@ Object {
                             </i>
                           </div>
                           <div
-                            style="margin-top: 10px; text-align: center; font-size: 15px; font-weight: bold; color: rgb(189, 59, 54);"
+                            style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;"
                           >
                             Escalated to OPS-ESCALATIONS!
                           </div>
