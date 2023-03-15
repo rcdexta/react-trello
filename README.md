@@ -161,7 +161,7 @@ This is the container component that encapsulates the lanes and cards
 
 | Name                | Type     | Description                                                                                                                    |
 | ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| lang    | string | Language of compiled texts ("en", "ru"). Default is "en"                                            |
+| lang    | string | Language of compiled texts ("en", "ru", "pt-br"). Default is "en"                                            |
 | t       | function | Translation function. You can specify either one key as a `String`. Look into ./src/locales for keys list |
 
 ### Style customization
