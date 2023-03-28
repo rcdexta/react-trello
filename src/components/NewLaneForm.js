@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { LaneTitle, NewLaneButtons, Section } from 'rt/styles/Base'
 import { AddButton, CancelButton } from 'rt/styles/Elements'
 import NewLaneTitleEditor from 'rt/widgets/NewLaneTitleEditor'
-import uuidv1 from 'uuid/v1'
+import {v1 as uuidv1} from 'uuid'
 
 class NewLane extends Component {
   handleSubmit = () => {

@@ -6,7 +6,7 @@ import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
 import cloneDeep from 'lodash/cloneDeep'
 import pick from 'lodash/pick'
-import uuidv1 from 'uuid/v1'
+import {v1 as uuidv1} from 'uuid'
 
 import Container from 'rt/dnd/Container'
 import Draggable from 'rt/dnd/Draggable'
@@ -270,7 +270,7 @@ class Lane extends Component {
         {this.renderHeader({id, cards, ...otherProps})}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
-        {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} />}
+        {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} cards={cards} />}
       </components.Section>
     )
   }
