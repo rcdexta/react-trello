@@ -5,7 +5,6 @@ import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import isEqual from 'lodash/isEqual'
 import cloneDeep from 'lodash/cloneDeep'
-import pick from 'lodash/pick'
 import uuidv1 from 'uuid/v1'
 
 import Container from 'rt/dnd/Container'
@@ -264,6 +263,8 @@ class Lane extends Component {
       <components.Section
         {...otherProps}
         key={id}
+        laneId={id}
+        onAdd={this.addNewCard}
         onClick={() => onLaneClick && onLaneClick(id)}
         draggable={false}
         className={allClassNames}>
