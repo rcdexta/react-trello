@@ -20,7 +20,7 @@ class Lane extends Component {
     addCardMode: false,
     collapsed: false,
     isDraggingOver: false,
-    lastPage: false
+    isPageLast: false
   }
 
   handleScroll = evt => {
@@ -28,7 +28,7 @@ class Lane extends Component {
     const elemScrollPosition = node.scrollHeight - node.scrollTop - node.clientHeight
     const {onLaneScroll} = this.props
     // In some browsers and/or screen sizes a decimal rest value between 0 and 1 exists, so it should be checked on < 1 instead of < 0
-    if (elemScrollPosition < 1 && onLaneScroll && !this.state.loading && !this.state.lastPage) {
+    if (elemScrollPosition < 1 && onLaneScroll && !this.state.loading && !this.state.isPageLast) {
       const {currentPage} = this.state
       this.setState({loading: true})
       const nextPage = currentPage + 1
@@ -40,7 +40,7 @@ class Lane extends Component {
             nextPage: nextPage
           })
         } else {
-          this.setState({lastPage: true});
+          this.setState({isPageLast: true});
         }
         this.setState({loading: false})
       })
