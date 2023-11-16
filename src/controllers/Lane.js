@@ -27,7 +27,8 @@ class Lane extends Component {
     const elemScrollPosition = node.scrollHeight - node.scrollTop - node.clientHeight
     const {onLaneScroll} = this.props
     // In some browsers and/or screen sizes a decimal rest value between 0 and 1 exists, so it should be checked on < 1 instead of < 0
-    if (elemScrollPosition < 1 && onLaneScroll && !this.state.loading) {
+    // However, in come cases `elemScrollPosition` is never smaller than 1 and infinite scrolling ended too soon. Then we use some bigger value to compare
+    if (elemScrollPosition < 15 && onLaneScroll && !this.state.loading) {
       const {currentPage} = this.state
       this.setState({loading: true})
       const nextPage = currentPage + 1
