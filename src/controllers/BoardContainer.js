@@ -7,10 +7,11 @@ import PropTypes from 'prop-types'
 import pick from 'lodash/pick'
 import isEqual from 'lodash/isEqual'
 import Lane from './Lane'
-import { PopoverWrapper } from 'react-popopo'
+import {PopoverWrapper} from 'react-popopo'
 
 import * as boardActions from 'rt/actions/BoardActions'
 import * as laneActions from 'rt/actions/LaneActions'
+import {CustomPopoverContentWrapper} from '../styles/Base'
 
 class BoardContainer extends Component {
   state = {
@@ -136,6 +137,9 @@ class BoardContainer extends Component {
       laneStyle,
       onCardMoveAcrossLanes,
       t,
+      isBoardMoving,
+      isBoardClicked,
+      interactions,
       ...otherProps
     } = this.props
 
@@ -169,7 +173,11 @@ class BoardContainer extends Component {
 
     return (
       <components.BoardWrapper style={style} {...otherProps} draggable={false}>
-        <PopoverWrapper>
+        <CustomPopoverContentWrapper
+          className={'react-trello-board-wrapper'}
+          isBoardMoving={isBoardMoving}
+          isBoardClicked={isBoardClicked}
+          {...interactions}>
           <Container
             orientation="horizontal"
             onDragStart={this.onDragStart}
@@ -201,11 +209,13 @@ class BoardContainer extends Component {
               return draggable && laneDraggable ? <Draggable key={lane.id}>{laneToRender}</Draggable> : laneToRender
             })}
           </Container>
-        </PopoverWrapper>
+        </CustomPopoverContentWrapper>
         {canAddLanes && (
           <Container orientation="horizontal">
-            {editable && !addLaneMode ? <components.NewLaneSection t={t} onClick={this.showEditableLane} /> : (
-              addLaneMode && <components.NewLaneForm onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t}/>
+            {editable && !addLaneMode ? (
+              <components.NewLaneSection t={t} onClick={this.showEditableLane} />
+            ) : (
+              addLaneMode && <components.NewLaneForm onCancel={this.hideEditableLane} onAdd={this.addNewLane} t={t} />
             )}
           </Container>
         )}
@@ -250,11 +260,11 @@ BoardContainer.propTypes = {
   laneDragClass: PropTypes.string,
   laneDropClass: PropTypes.string,
   onCardMoveAcrossLanes: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired
 }
 
 BoardContainer.defaultProps = {
-  t: v=>v,
+  t: v => v,
   onDataChange: () => {},
   handleDragStart: () => {},
   handleDragEnd: () => {},
