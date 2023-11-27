@@ -13,22 +13,14 @@ import widgets from './widgets'
 
 import createTranslate from './helpers/createTranslate'
 
-export {
-  Draggable,
-  Container,
-  BoardContainer,
-  Lane,
-  createTranslate,
-  locales,
-  widgets
-}
+export {Draggable, Container, BoardContainer, Lane, createTranslate, locales, widgets}
 
-export { DefaultComponents as components }
+export {DefaultComponents as components}
 
-const DEFAULT_LANG='en'
+const DEFAULT_LANG = 'en'
 
-export default ({ components, lang=DEFAULT_LANG, ...otherProps }) => {
-  deprecationWarnings(otherProps);
+export default ({components, lang = DEFAULT_LANG, ...otherProps}) => {
+  deprecationWarnings(otherProps)
   const translate = createTranslate(locales[lang].translation)
   return <Board t={translate} components={{...DefaultComponents, ...components}} {...otherProps} />
 }

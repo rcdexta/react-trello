@@ -1,4 +1,4 @@
-import {PopoverContainer, PopoverContent} from 'react-popopo'
+import {PopoverContainer, PopoverContent, PopoverWrapper} from 'react-popopo'
 import styled, {createGlobalStyle, css} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
@@ -88,6 +88,22 @@ export const BoardWrapper = styled.div`
   flex-direction: row;
   align-items: flex-start;
   height: 100vh;
+  position: relative;
+  overflow: hidden; // 🟢
+`
+
+export const CustomPopoverContentWrapper = styled(PopoverWrapper)`
+  position: absolute;
+  top: 0;
+  left: 0em;
+  height: 100%;
+  cursor: grab;
+  ${props =>
+    (props.isBoardMoving || props.isBoardClicked) &&
+    `
+      user-select: none;
+      cursor: grabbing;
+    `};
 `
 
 export const Header = styled.header`
