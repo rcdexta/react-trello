@@ -8,7 +8,6 @@
     "README"
   ],
   "scripts": {
-    "start": "npm run start",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 9002",
     "test": "jest",
