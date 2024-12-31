@@ -242,20 +242,42 @@ class Lane extends Component {
   render() {
     const {loading, isDraggingOver, collapsed} = this.state
     const {
+      actions,
       id,
+      boardId,
+      title,
+      index,
+      laneSortFunction,
+      style,
+      cardStyle,
+      tagStyle,
+      titleStyle,
+      labelStyle,
       cards,
+      label,
+      currentPage,
+      draggable,
       collapsibleLanes,
-      components,
-      onLaneClick,
-      onLaneScroll,
+      droppable,
+      onCardMoveAcrossLanes,
       onCardClick,
-      onCardAdd,
       onBeforeCardDelete,
       onCardDelete,
+      onCardAdd,
+      onCardUpdate,
       onLaneDelete,
       onLaneUpdate,
-      onCardUpdate,
-      onCardMoveAcrossLanes,
+      onLaneClick,
+      onLaneScroll,
+      editable,
+      laneDraggable,
+      cardDraggable,
+      cardDragClass,
+      cardDropClass,
+      canAddLanes,
+      t,
+      components,
+      className,
       ...otherProps
     } = this.props
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
@@ -267,7 +289,7 @@ class Lane extends Component {
         onClick={() => onLaneClick && onLaneClick(id)}
         draggable={false}
         className={allClassNames}>
-        {this.renderHeader({id, cards, ...otherProps})}
+        {this.renderHeader({id, cards, t, ...otherProps})}
         {this.renderDragContainer(isDraggingOver)}
         {loading && <components.Loader />}
         {showFooter && <components.LaneFooter onClick={this.toggleLaneCollapsed} collapsed={collapsed} />}
@@ -310,7 +332,9 @@ Lane.propTypes = {
   cardDragClass: PropTypes.string,
   cardDropClass: PropTypes.string,
   canAddLanes: PropTypes.bool,
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  components: PropTypes.object,
+  className: PropTypes.string
 }
 
 Lane.defaultProps = {
