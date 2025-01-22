@@ -47,7 +47,7 @@ class Lane extends Component {
   sortCards(cards, sortFunction) {
     if (!cards) return []
     if (!sortFunction) return cards
-    return cards.concat().sort(function (card1, card2) {
+    return cards.concat().sort(function(card1, card2) {
       return sortFunction(card1, card2)
     })
   }
@@ -190,9 +190,10 @@ class Lane extends Component {
     })
 
     return (
-      <components.ScrollableLane ref={this.laneDidMount} isDraggingOver={isDraggingOver}>
+      <components.ScrollableLane ref={this.laneDidMount} isDraggingOver={isDraggingOver} className="scrollable-lane">
         <Container
           orientation="vertical"
+          style={{padding: '0 8px 0 0'}}
           groupName={this.groupName}
           dragClass={cardDragClass}
           dropClass={cardDropClass}
@@ -258,6 +259,7 @@ class Lane extends Component {
       onCardMoveAcrossLanes,
       ...otherProps
     } = this.props
+
     const allClassNames = classNames('react-trello-lane', this.props.className || '')
     const showFooter = collapsibleLanes && cards.length > 0
     return (
@@ -328,4 +330,7 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(laneActions, dispatch)
 })
 
-export default connect(null, mapDispatchToProps)(Lane)
+export default connect(
+  null,
+  mapDispatchToProps
+)(Lane)

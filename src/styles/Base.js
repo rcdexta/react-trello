@@ -34,6 +34,24 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 32px;
     width: 32px;
   }
+
+  .scrollable-lane::-webkit-scrollbar {
+   width: 5px;
+   height: 8px;
+  }
+
+  .scrollable-lane::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  .scrollable-lane::-webkit-scrollbar-thumb:hover {
+   background: #555;
+  }
+
+  .scrollable-lane::-webkit-scrollbar-track {
+    background: transparent;
+  }
 `
 
 export const CustomPopoverContainer = styled(PopoverContainer)`
