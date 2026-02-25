@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import container, {dropHandlers} from 'trello-smooth-dnd'
 
@@ -15,7 +14,6 @@ class Container extends Component {
 	}
 
 	componentDidMount() {
-		this.containerDiv = this.containerDiv || ReactDOM.findDOMNode(this);
 		this.prevContainer = this.containerDiv;
 		this.container = container(this.containerDiv, this.getContainerOptions());
 	}
@@ -26,7 +24,6 @@ class Container extends Component {
 	}
 
 	componentDidUpdate() {
-		this.containerDiv = this.containerDiv || ReactDOM.findDOMNode(this);
 		if (this.containerDiv) {
 			if (this.prevContainer && this.prevContainer !== this.containerDiv) {
 				this.container.dispose();

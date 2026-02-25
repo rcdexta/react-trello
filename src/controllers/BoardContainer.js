@@ -25,15 +25,15 @@ class BoardContainer extends Component {
     }
   }
 
-  UNSAFE_componentWillReceiveProps(nextProps) {
-    // nextProps.data changes when external Board input props change and nextProps.reducerData changes due to event bus or UI changes
+  componentDidUpdate(prevProps) {
+    // props.data changes when external Board input props change and props.reducerData changes due to event bus or UI changes
     const {data, reducerData, onDataChange} = this.props
-    if (nextProps.reducerData && !isEqual(reducerData, nextProps.reducerData)) {
-      onDataChange(nextProps.reducerData)
+    if (reducerData && !isEqual(prevProps.reducerData, reducerData)) {
+      onDataChange(reducerData)
     }
-    if (nextProps.data && !isEqual(nextProps.data, data)) {
-      this.props.actions.loadBoard(nextProps.data)
-      onDataChange(nextProps.data)
+    if (data && !isEqual(data, prevProps.data)) {
+      this.props.actions.loadBoard(data)
+      onDataChange(data)
     }
   }
 
