@@ -11,6 +11,7 @@
   "placeholder": {
     "title": "title",
     "description": "description",
-    "label": "label"
+    "label": "label",
+    "dueDate": "due date"
   }
 }

@@ -11,6 +11,7 @@
   "placeholder": {
     "title": "Название",
     "description": "Описание",
-    "label": "Метка"
+    "label": "Метка",
+    "dueDate": "срок выполнения"
   }
 }
