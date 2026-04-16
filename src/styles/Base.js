@@ -207,6 +207,18 @@ export const Footer = styled.div`
   flex-wrap: wrap;
 `
 
+export const DueDate = styled.div`
+  font-size: 11px;
+  color: ${props => (props.isOverdue ? '#c9302c' : '#4d4d4d')};
+  margin-top: 4px;
+  padding: 2px 0;
+  ${props =>
+    props.isOverdue &&
+    `
+    font-weight: bold;
+  `}
+`
+
 export const TagSpan = styled.span`
   padding: 2px 3px;
   border-radius: 3px;

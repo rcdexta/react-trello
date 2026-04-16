@@ -11,6 +11,7 @@
   "placeholder": {
       "title": "título",
       "description": "descrição",
-      "label": "etiqueta"
+      "label": "etiqueta",
+      "dueDate": "data de vencimento"
   }
 }
