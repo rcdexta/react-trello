@@ -7,7 +7,8 @@ import {
   CardRightContent,
   CardTitle,
   Detail,
-  Footer
+  Footer,
+  DueDate
 } from 'rt/styles/Base'
 import InlineInput from 'rt/widgets/InlineInput'
 import Tag from './Card/Tag'
@@ -17,6 +18,20 @@ class Card extends Component {
   onDelete = e => {
     this.props.onDelete()
     e.stopPropagation()
+  }
+
+  isOverdue(dueDate) {
+    if (!dueDate) return false
+    const today = new Date()
+    today.setHours(0, 0, 0, 0)
+    const due = new Date(dueDate)
+    return due < today
+  }
+
+  formatDate(dateString) {
+    const date = new Date(dateString)
+    const options = { year: 'numeric', month: 'short', day: 'numeric' }
+    return date.toLocaleDateString('en-US', options)
   }
 
   render()  {
@@ -33,6 +48,7 @@ class Card extends Component {
       label,
       description,
       tags,
+      dueDate,
       cardDraggable,
       editable,
       t
@@ -41,6 +57,8 @@ class Card extends Component {
     const updateCard = (card) => {
       onChange({...card, id})
     }
+
+    const isOverdue = this.isOverdue(dueDate)
 
     return (
       <MovableCardWrapper
@@ -61,6 +79,21 @@ class Card extends Component {
         <Detail>
           {editable ? <InlineInput value={description} border placeholder={t('placeholder.description')} resize='vertical' onSave={(value) => updateCard({description: value})} /> : description}
         </Detail>
+        {dueDate && (
+          <DueDate isOverdue={isOverdue}>
+            {editable ? (
+              <InlineInput 
+                value={dueDate} 
+                border 
+                placeholder={t('placeholder.dueDate')} 
+                resize='none' 
+                onSave={(value) => updateCard({dueDate: value})} 
+              />
+            ) : (
+              `Due: ${this.formatDate(dueDate)}`
+            )}
+          </DueDate>
+        )}
         {tags && tags.length> 0 && (
           <Footer>
             {tags.map(tag => (
@@ -85,6 +118,7 @@ Card.propTypes = {
   label: PropTypes.string,
   description: PropTypes.string,
   tags: PropTypes.array,
+  dueDate: PropTypes.string,
 }
 
 Card.defaultProps = {
@@ -97,7 +131,8 @@ Card.defaultProps = {
   description: '',
   label: '',
   tags: [],
-  className: ''
+  className: '',
+  dueDate: ''
 }
 
 export default Card
