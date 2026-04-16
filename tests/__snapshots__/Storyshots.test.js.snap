@@ -2093,6 +2093,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -2200,6 +2215,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "2 Gallons of milk at the Deli store",
+                    "dueDate": "2026-04-20",
                     "id": "Milk",
                     "label": "15 mins",
                     "laneId": "PLANNED",
@@ -2207,6 +2223,7 @@ Array [
                   },
                   Object {
                     "description": "Sort out recyclable and waste as needed",
+                    "dueDate": "2026-04-15",
                     "id": "Plan2",
                     "label": "10 mins",
                     "laneId": "PLANNED",
@@ -2214,6 +2231,7 @@ Array [
                   },
                   Object {
                     "description": "Can AI make memes?",
+                    "dueDate": "2026-04-16",
                     "id": "Plan3",
                     "label": "30 mins",
                     "laneId": "PLANNED",
@@ -2240,6 +2258,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                    "dueDate": "2026-04-30",
                     "id": "Wip1",
                     "label": "30 mins",
                     "laneId": "WIP",
@@ -2268,6 +2287,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "Use Headspace app",
+                    "dueDate": "2026-04-10",
                     "id": "Completed1",
                     "label": "15 mins",
                     "laneId": "COMPLETED",
@@ -2293,6 +2313,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "Track using fitbit",
+                    "dueDate": "2026-05-01",
                     "id": "Repeat1",
                     "label": "30 mins",
                     "laneId": "REPEAT",
@@ -2311,6 +2332,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "Completed 10km on cycle",
+                    "dueDate": "2026-03-20",
                     "id": "Archived1",
                     "label": "300 mins",
                     "laneId": "ARCHIVED",
@@ -2347,6 +2369,7 @@ Array [
                 "cards": Array [
                   Object {
                     "description": "Completed 10km on cycle",
+                    "dueDate": "2026-04-01",
                     "id": "Archived3",
                     "label": "300 mins",
                     "laneId": "ARCHIVED3",
@@ -2447,7 +2470,11 @@ Array [
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 20, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -2489,7 +2516,11 @@ Array [
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 15, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -2531,7 +2562,11 @@ Array [
                       >
                         Can AI make memes?
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 16, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -2655,7 +2690,11 @@ Array [
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 30, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -2776,7 +2815,11 @@ Array [
                       >
                         Use Headspace app
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 10, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -2900,7 +2943,11 @@ Array [
                       >
                         Track using fitbit
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: May 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -2982,7 +3029,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Mar 20, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -3146,7 +3197,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -4384,6 +4439,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -4430,6 +4500,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -4437,6 +4508,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -4444,6 +4516,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -4470,6 +4543,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -4498,6 +4572,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -4523,6 +4598,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -4541,6 +4617,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -4577,6 +4654,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -4677,7 +4755,11 @@ Array [
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 20, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -4719,7 +4801,11 @@ Array [
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 15, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -4761,7 +4847,11 @@ Array [
                     >
                       Can AI make memes?
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 16, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -4885,7 +4975,11 @@ Array [
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 30, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -5006,7 +5100,11 @@ Array [
                     >
                       Use Headspace app
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 10, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -5130,7 +5228,11 @@ Array [
                     >
                       Track using fitbit
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: May 1, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -5212,7 +5314,11 @@ Array [
                     >
                       Completed 10km on cycle
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Mar 20, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -5376,7 +5482,11 @@ Array [
                     >
                       Completed 10km on cycle
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 1, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -12694,7 +12804,22 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
 .c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.c17 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -12706,13 +12831,13 @@ Array [
   cursor: pointer;
 }
 
-.c15:hover {
+.c17:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c14 {
+.c16 {
   overflow-x: hidden;
   word-wrap: break-word;
   min-height: 18px;
@@ -12733,11 +12858,11 @@ Array [
   outline: 0;
 }
 
-.c14:focus {
+.c16:focus {
   box-shadow: inset 0 0 0 2px #0079bf;
 }
 
-.c14:focus {
+.c16:focus {
   background-color: white;
 }
 
@@ -12787,6 +12912,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -12794,6 +12920,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -12801,6 +12928,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -12827,6 +12955,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -12855,6 +12984,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -12880,6 +13010,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -12898,6 +13029,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -12934,6 +13066,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -13034,7 +13167,11 @@ Array [
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 20, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -13076,7 +13213,11 @@ Array [
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 15, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -13118,7 +13259,11 @@ Array [
                     >
                       Can AI make memes?
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 16, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -13224,7 +13369,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Clean House"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13243,7 +13388,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13273,7 +13418,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13284,12 +13429,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-30"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -13334,7 +13497,7 @@ Array [
             >
               <div />
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -13399,7 +13562,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Practice Meditation"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13418,7 +13581,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13448,7 +13611,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Headspace app"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13459,7 +13622,25 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-10"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
                 <div
@@ -13483,7 +13664,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Maintain Daily Journal"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13502,7 +13683,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13532,7 +13713,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Spreadsheet for now"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13548,7 +13729,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -13613,7 +13794,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Morning Jog"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13632,7 +13813,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13662,7 +13843,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Track using fitbit"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13673,12 +13854,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-05-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -13743,7 +13942,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Trekking"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13762,7 +13961,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13792,7 +13991,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13803,12 +14002,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-03-20"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -13873,7 +14090,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Jogging"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13892,7 +14109,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -13922,7 +14139,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -13938,7 +14155,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -14003,7 +14220,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Cycling"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -14022,7 +14239,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -14052,7 +14269,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -14063,12 +14280,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -16177,7 +16412,22 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
 .c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.c17 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -16189,13 +16439,13 @@ Array [
   cursor: pointer;
 }
 
-.c15:hover {
+.c17:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c14 {
+.c16 {
   overflow-x: hidden;
   word-wrap: break-word;
   min-height: 18px;
@@ -16216,11 +16466,11 @@ Array [
   outline: 0;
 }
 
-.c14:focus {
+.c16:focus {
   box-shadow: inset 0 0 0 2px #0079bf;
 }
 
-.c14:focus {
+.c16:focus {
   background-color: white;
 }
 
@@ -16270,6 +16520,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -16277,6 +16528,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -16284,6 +16536,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -16310,6 +16563,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -16338,6 +16592,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -16363,6 +16618,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -16381,6 +16637,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -16417,6 +16674,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -16517,7 +16775,11 @@ Array [
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 20, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -16559,7 +16821,11 @@ Array [
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 15, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -16601,7 +16867,11 @@ Array [
                     >
                       Can AI make memes?
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 16, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -16707,7 +16977,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Clean House"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -16726,7 +16996,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -16756,7 +17026,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -16767,12 +17037,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-30"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -16817,7 +17105,7 @@ Array [
             >
               <div />
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -16882,7 +17170,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Practice Meditation"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -16901,7 +17189,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -16931,7 +17219,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Headspace app"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -16942,7 +17230,25 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-10"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
                 <div
@@ -16966,7 +17272,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Maintain Daily Journal"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -16985,7 +17291,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17015,7 +17321,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Spreadsheet for now"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -17031,7 +17337,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -17096,7 +17402,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Morning Jog"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17115,7 +17421,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17145,7 +17451,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Track using fitbit"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -17156,12 +17462,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-05-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -17226,7 +17550,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Trekking"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17245,7 +17569,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17275,7 +17599,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -17286,12 +17610,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-03-20"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -17356,7 +17698,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Jogging"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17375,7 +17717,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17405,7 +17747,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -17421,7 +17763,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -17486,7 +17828,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Cycling"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17505,7 +17847,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -17535,7 +17877,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -17546,12 +17888,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -17741,6 +18101,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -17787,6 +18162,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -17794,6 +18170,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -17801,6 +18178,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -17827,6 +18205,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -17855,6 +18234,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -17880,6 +18260,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -17898,6 +18279,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -17934,6 +18316,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -18037,7 +18420,11 @@ Array [
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 20, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -18079,7 +18466,11 @@ Array [
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 15, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -18121,7 +18512,11 @@ Array [
                       >
                         Can AI make memes?
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 16, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -18249,7 +18644,11 @@ Array [
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 30, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -18378,7 +18777,11 @@ Array [
                       >
                         Use Headspace app
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 10, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -18506,7 +18909,11 @@ Array [
                       >
                         Track using fitbit
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: May 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -18592,7 +18999,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Mar 20, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -18764,7 +19175,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -19570,6 +19985,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -19616,6 +20046,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -19623,6 +20054,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -19630,6 +20062,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -19656,6 +20089,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -19684,6 +20118,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -19709,6 +20144,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -19727,6 +20163,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -19763,6 +20200,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -19866,7 +20304,11 @@ Array [
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 20, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -19908,7 +20350,11 @@ Array [
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 15, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -19950,7 +20396,11 @@ Array [
                       >
                         Can AI make memes?
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 16, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -20078,7 +20528,11 @@ Array [
                       >
                         Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 30, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -20207,7 +20661,11 @@ Array [
                       >
                         Use Headspace app
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 10, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -20335,7 +20793,11 @@ Array [
                       >
                         Track using fitbit
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: May 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -20421,7 +20883,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Mar 20, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -20593,7 +21059,11 @@ Array [
                       >
                         Completed 10km on cycle
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 1, 2026
+                      </div>
                     </article>
                   </div>
                 </div>
@@ -22392,7 +22862,22 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
 .c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.c17 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -22404,13 +22889,13 @@ Array [
   cursor: pointer;
 }
 
-.c15:hover {
+.c17:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c14 {
+.c16 {
   overflow-x: hidden;
   word-wrap: break-word;
   min-height: 18px;
@@ -22431,11 +22916,11 @@ Array [
   outline: 0;
 }
 
-.c14:focus {
+.c16:focus {
   box-shadow: inset 0 0 0 2px #0079bf;
 }
 
-.c14:focus {
+.c16:focus {
   background-color: white;
 }
 
@@ -22485,6 +22970,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -22492,6 +22978,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -22499,6 +22986,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -22525,6 +23013,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -22553,6 +23042,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -22578,6 +23068,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -22596,6 +23087,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -22632,6 +23124,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -22735,7 +23228,11 @@ Array [
                       >
                         2 Gallons of milk at the Deli store
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 20, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -22777,7 +23274,11 @@ Array [
                       >
                         Sort out recyclable and waste as needed
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        Due: Apr 15, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -22819,7 +23320,11 @@ Array [
                       >
                         Can AI make memes?
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        Due: Apr 16, 2026
+                      </div>
                     </article>
                   </div>
                   <div
@@ -22929,7 +23434,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Clean House"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -22948,7 +23453,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="30 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -22978,7 +23483,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -22989,12 +23494,30 @@ Array [
                           spellCheck="false"
                         />
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        <textarea
+                          autoCapitalize="off"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoFocus={false}
+                          className="c16"
+                          defaultValue="2026-04-30"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder="due date"
+                          rows={1}
+                          spellCheck="false"
+                        />
+                      </div>
                     </article>
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23043,7 +23566,7 @@ Array [
               >
                 <div />
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23112,7 +23635,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Practice Meditation"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23131,7 +23654,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="15 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23161,7 +23684,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Use Headspace app"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23172,7 +23695,25 @@ Array [
                           spellCheck="false"
                         />
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        <textarea
+                          autoCapitalize="off"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoFocus={false}
+                          className="c16"
+                          defaultValue="2026-04-10"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder="due date"
+                          rows={1}
+                          spellCheck="false"
+                        />
+                      </div>
                     </article>
                   </div>
                   <div
@@ -23196,7 +23737,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Maintain Daily Journal"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23215,7 +23756,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="15 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23245,7 +23786,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Use Spreadsheet for now"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23261,7 +23802,7 @@ Array [
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23330,7 +23871,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Morning Jog"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23349,7 +23890,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="30 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23379,7 +23920,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Track using fitbit"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23390,12 +23931,30 @@ Array [
                           spellCheck="false"
                         />
                       </div>
-                      
+                      <div
+                        className="c14"
+                      >
+                        <textarea
+                          autoCapitalize="off"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoFocus={false}
+                          className="c16"
+                          defaultValue="2026-05-01"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder="due date"
+                          rows={1}
+                          spellCheck="false"
+                        />
+                      </div>
                     </article>
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23464,7 +24023,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Go Trekking"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23483,7 +24042,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="300 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23513,7 +24072,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Completed 10km on cycle"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23524,12 +24083,30 @@ Array [
                           spellCheck="false"
                         />
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        <textarea
+                          autoCapitalize="off"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoFocus={false}
+                          className="c16"
+                          defaultValue="2026-03-20"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder="due date"
+                          rows={1}
+                          spellCheck="false"
+                        />
+                      </div>
                     </article>
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23598,7 +24175,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Go Jogging"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23617,7 +24194,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="300 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23647,7 +24224,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Completed 10km on cycle"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23663,7 +24240,7 @@ Array [
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23732,7 +24309,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="Go Cycling"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23751,7 +24328,7 @@ Array [
                             autoComplete="off"
                             autoCorrect="off"
                             autoFocus={false}
-                            className="c14"
+                            className="c16"
                             defaultValue="300 mins"
                             onBlur={[Function]}
                             onFocus={[Function]}
@@ -23781,7 +24358,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Completed 10km on cycle"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -23792,12 +24369,30 @@ Array [
                           spellCheck="false"
                         />
                       </div>
-                      
+                      <div
+                        className="c15"
+                      >
+                        <textarea
+                          autoCapitalize="off"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoFocus={false}
+                          className="c16"
+                          defaultValue="2026-04-01"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
+                          onMouseDown={[Function]}
+                          placeholder="due date"
+                          rows={1}
+                          spellCheck="false"
+                        />
+                      </div>
                     </article>
                   </div>
                 </div>
                 <a
-                  className="c15"
+                  className="c17"
                   onClick={[Function]}
                 >
                   Click to add card
@@ -23988,7 +24583,22 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
 .c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
+.c17 {
   border-radius: 0 0 3px 3px;
   color: #838c91;
   display: block;
@@ -24000,13 +24610,13 @@ Array [
   cursor: pointer;
 }
 
-.c15:hover {
+.c17:hover {
   color: #4d4d4d;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c14 {
+.c16 {
   overflow-x: hidden;
   word-wrap: break-word;
   min-height: 18px;
@@ -24027,11 +24637,11 @@ Array [
   outline: 0;
 }
 
-.c14:focus {
+.c16:focus {
   box-shadow: inset 0 0 0 2px #0079bf;
 }
 
-.c14:focus {
+.c16:focus {
   background-color: white;
 }
 
@@ -24081,6 +24691,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -24088,6 +24699,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -24095,6 +24707,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -24121,6 +24734,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -24149,6 +24763,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -24174,6 +24789,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -24192,6 +24808,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -24228,6 +24845,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -24328,7 +24946,11 @@ Array [
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 20, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -24370,7 +24992,11 @@ Array [
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 15, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -24412,7 +25038,11 @@ Array [
                     >
                       Can AI make memes?
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 16, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -24518,7 +25148,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Clean House"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24537,7 +25167,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24567,7 +25197,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -24578,12 +25208,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-30"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -24628,7 +25276,7 @@ Array [
             >
               <div />
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -24693,7 +25341,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Practice Meditation"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24712,7 +25360,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24742,7 +25390,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Headspace app"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -24753,7 +25401,25 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-10"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
                 <div
@@ -24777,7 +25443,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Maintain Daily Journal"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24796,7 +25462,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="15 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24826,7 +25492,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Use Spreadsheet for now"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -24842,7 +25508,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -24907,7 +25573,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Morning Jog"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24926,7 +25592,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="30 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -24956,7 +25622,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Track using fitbit"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -24967,12 +25633,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-05-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -25037,7 +25721,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Trekking"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25056,7 +25740,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25086,7 +25770,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -25097,12 +25781,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-03-20"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -25167,7 +25869,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Jogging"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25186,7 +25888,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25216,7 +25918,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -25232,7 +25934,7 @@ Array [
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -25297,7 +25999,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="Go Cycling"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25316,7 +26018,7 @@ Array [
                           autoComplete="off"
                           autoCorrect="off"
                           autoFocus={false}
-                          className="c14"
+                          className="c16"
                           defaultValue="300 mins"
                           onBlur={[Function]}
                           onFocus={[Function]}
@@ -25346,7 +26048,7 @@ Array [
                         autoComplete="off"
                         autoCorrect="off"
                         autoFocus={false}
-                        className="c14"
+                        className="c16"
                         defaultValue="Completed 10km on cycle"
                         onBlur={[Function]}
                         onFocus={[Function]}
@@ -25357,12 +26059,30 @@ Array [
                         spellCheck="false"
                       />
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      <textarea
+                        autoCapitalize="off"
+                        autoComplete="off"
+                        autoCorrect="off"
+                        autoFocus={false}
+                        className="c16"
+                        defaultValue="2026-04-01"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        onMouseDown={[Function]}
+                        placeholder="due date"
+                        rows={1}
+                        spellCheck="false"
+                      />
+                    </div>
                   </article>
                 </div>
               </div>
               <a
-                className="c15"
+                className="c17"
                 onClick={[Function]}
               >
                 Click to add card
@@ -29509,6 +30229,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -29571,6 +30306,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "2 Gallons of milk at the Deli store",
+                      "dueDate": "2026-04-20",
                       "id": "Milk",
                       "label": "15 mins",
                       "laneId": "PLANNED",
@@ -29578,6 +30314,7 @@ Array [
                     },
                     Object {
                       "description": "Sort out recyclable and waste as needed",
+                      "dueDate": "2026-04-15",
                       "id": "Plan2",
                       "label": "10 mins",
                       "laneId": "PLANNED",
@@ -29585,6 +30322,7 @@ Array [
                     },
                     Object {
                       "description": "Can AI make memes?",
+                      "dueDate": "2026-04-16",
                       "id": "Plan3",
                       "label": "30 mins",
                       "laneId": "PLANNED",
@@ -29611,6 +30349,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                      "dueDate": "2026-04-30",
                       "id": "Wip1",
                       "label": "30 mins",
                       "laneId": "WIP",
@@ -29639,6 +30378,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "Use Headspace app",
+                      "dueDate": "2026-04-10",
                       "id": "Completed1",
                       "label": "15 mins",
                       "laneId": "COMPLETED",
@@ -29664,6 +30404,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "Track using fitbit",
+                      "dueDate": "2026-05-01",
                       "id": "Repeat1",
                       "label": "30 mins",
                       "laneId": "REPEAT",
@@ -29682,6 +30423,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "Completed 10km on cycle",
+                      "dueDate": "2026-03-20",
                       "id": "Archived1",
                       "label": "300 mins",
                       "laneId": "ARCHIVED",
@@ -29718,6 +30460,7 @@ Array [
                   "cards": Array [
                     Object {
                       "description": "Completed 10km on cycle",
+                      "dueDate": "2026-04-01",
                       "id": "Archived3",
                       "label": "300 mins",
                       "laneId": "ARCHIVED3",
@@ -29821,7 +30564,11 @@ Array [
                           >
                             2 Gallons of milk at the Deli store
                           </div>
-                          
+                          <div
+                            className="c14"
+                          >
+                            Due: Apr 20, 2026
+                          </div>
                         </article>
                       </div>
                       <div
@@ -29863,7 +30610,11 @@ Array [
                           >
                             Sort out recyclable and waste as needed
                           </div>
-                          
+                          <div
+                            className="c15"
+                          >
+                            Due: Apr 15, 2026
+                          </div>
                         </article>
                       </div>
                       <div
@@ -29905,7 +30656,11 @@ Array [
                           >
                             Can AI make memes?
                           </div>
-                          
+                          <div
+                            className="c14"
+                          >
+                            Due: Apr 16, 2026
+                          </div>
                         </article>
                       </div>
                       <div
@@ -30033,7 +30788,11 @@ Array [
                           >
                             Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                           </div>
-                          
+                          <div
+                            className="c14"
+                          >
+                            Due: Apr 30, 2026
+                          </div>
                         </article>
                       </div>
                     </div>
@@ -30162,7 +30921,11 @@ Array [
                           >
                             Use Headspace app
                           </div>
-                          
+                          <div
+                            className="c15"
+                          >
+                            Due: Apr 10, 2026
+                          </div>
                         </article>
                       </div>
                       <div
@@ -30290,7 +31053,11 @@ Array [
                           >
                             Track using fitbit
                           </div>
-                          
+                          <div
+                            className="c14"
+                          >
+                            Due: May 1, 2026
+                          </div>
                         </article>
                       </div>
                     </div>
@@ -30376,7 +31143,11 @@ Array [
                           >
                             Completed 10km on cycle
                           </div>
-                          
+                          <div
+                            className="c15"
+                          >
+                            Due: Mar 20, 2026
+                          </div>
                         </article>
                       </div>
                     </div>
@@ -30548,7 +31319,11 @@ Array [
                           >
                             Completed 10km on cycle
                           </div>
-                          
+                          <div
+                            className="c15"
+                          >
+                            Due: Apr 1, 2026
+                          </div>
                         </article>
                       </div>
                     </div>
@@ -31155,6 +31930,21 @@ Array [
   white-space: pre-wrap;
 }
 
+.c14 {
+  font-size: 11px;
+  color: #4d4d4d;
+  margin-top: 4px;
+  padding: 2px 0;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #c9302c;
+  margin-top: 4px;
+  padding: 2px 0;
+  font-weight: bold;
+}
+
 .c11 {
   text-align: center;
   position: absolute;
@@ -31201,6 +31991,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "2 Gallons of milk at the Deli store",
+                  "dueDate": "2026-04-20",
                   "id": "Milk",
                   "label": "15 mins",
                   "laneId": "PLANNED",
@@ -31208,6 +31999,7 @@ Array [
                 },
                 Object {
                   "description": "Sort out recyclable and waste as needed",
+                  "dueDate": "2026-04-15",
                   "id": "Plan2",
                   "label": "10 mins",
                   "laneId": "PLANNED",
@@ -31215,6 +32007,7 @@ Array [
                 },
                 Object {
                   "description": "Can AI make memes?",
+                  "dueDate": "2026-04-16",
                   "id": "Plan3",
                   "label": "30 mins",
                   "laneId": "PLANNED",
@@ -31241,6 +32034,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+                  "dueDate": "2026-04-30",
                   "id": "Wip1",
                   "label": "30 mins",
                   "laneId": "WIP",
@@ -31269,6 +32063,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Use Headspace app",
+                  "dueDate": "2026-04-10",
                   "id": "Completed1",
                   "label": "15 mins",
                   "laneId": "COMPLETED",
@@ -31294,6 +32089,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Track using fitbit",
+                  "dueDate": "2026-05-01",
                   "id": "Repeat1",
                   "label": "30 mins",
                   "laneId": "REPEAT",
@@ -31312,6 +32108,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-03-20",
                   "id": "Archived1",
                   "label": "300 mins",
                   "laneId": "ARCHIVED",
@@ -31348,6 +32145,7 @@ Array [
               "cards": Array [
                 Object {
                   "description": "Completed 10km on cycle",
+                  "dueDate": "2026-04-01",
                   "id": "Archived3",
                   "label": "300 mins",
                   "laneId": "ARCHIVED3",
@@ -31454,7 +32252,11 @@ Array [
                     >
                       2 Gallons of milk at the Deli store
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 20, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -31496,7 +32298,11 @@ Array [
                     >
                       Sort out recyclable and waste as needed
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 15, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -31538,7 +32344,11 @@ Array [
                     >
                       Can AI make memes?
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 16, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -31662,7 +32472,11 @@ Array [
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: Apr 30, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -31783,7 +32597,11 @@ Array [
                     >
                       Use Headspace app
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 10, 2026
+                    </div>
                   </article>
                 </div>
                 <div
@@ -31907,7 +32725,11 @@ Array [
                     >
                       Track using fitbit
                     </div>
-                    
+                    <div
+                      className="c14"
+                    >
+                      Due: May 1, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -31989,7 +32811,11 @@ Array [
                     >
                       Completed 10km on cycle
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Mar 20, 2026
+                    </div>
                   </article>
                 </div>
               </div>
@@ -32153,7 +32979,11 @@ Array [
                     >
                       Completed 10km on cycle
                     </div>
-                    
+                    <div
+                      className="c15"
+                    >
+                      Due: Apr 1, 2026
+                    </div>
                   </article>
                 </div>
               </div>

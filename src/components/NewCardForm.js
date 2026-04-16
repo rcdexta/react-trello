@@ -6,7 +6,8 @@ import {
   CardRightContent,
   CardTitle,
   CardWrapper,
-  Detail
+  Detail,
+  DueDate
 } from 'rt/styles/Base'
 import {AddButton, CancelButton} from 'rt/styles/Elements'
 import EditableLabel from 'rt/widgets/EditableLabel'
@@ -36,6 +37,9 @@ class NewCardForm extends Component {
           <Detail>
             <EditableLabel placeholder={t('placeholder.description')} onChange={val => this.updateField('description', val)} />
           </Detail>
+          <DueDate>
+            <EditableLabel placeholder={t('placeholder.dueDate')} onChange={val => this.updateField('dueDate', val)} />
+          </DueDate>
         </CardWrapper>
         <AddButton onClick={this.handleAdd}>{t('button.Add card')}</AddButton>
         <CancelButton onClick={onCancel}>{t('button.Cancel')}</CancelButton>

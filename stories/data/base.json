@@ -10,19 +10,22 @@
           "id": "Milk",
           "title": "Buy milk",
           "label": "15 mins",
-          "description": "2 Gallons of milk at the Deli store"
+          "description": "2 Gallons of milk at the Deli store",
+          "dueDate": "2026-04-20"
         },
         {
           "id": "Plan2",
           "title": "Dispose Garbage",
           "label": "10 mins",
-          "description": "Sort out recyclable and waste as needed"
+          "description": "Sort out recyclable and waste as needed",
+          "dueDate": "2026-04-15"
         },
         {
           "id": "Plan3",
           "title": "Write Blog",
           "label": "30 mins",
-          "description": "Can AI make memes?"
+          "description": "Can AI make memes?",
+          "dueDate": "2026-04-16"
         },
         {
           "id": "Plan4",
@@ -42,7 +45,8 @@
           "id": "Wip1",
           "title": "Clean House",
           "label": "30 mins",
-          "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses"
+          "description": "Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses",
+          "dueDate": "2026-04-30"
         }
       ]
     },
@@ -63,7 +67,8 @@
           "id": "Completed1",
           "title": "Practice Meditation",
           "label": "15 mins",
-          "description": "Use Headspace app"
+          "description": "Use Headspace app",
+          "dueDate": "2026-04-10"
         },
         {
           "id": "Completed2",
@@ -83,7 +88,8 @@
           "id": "Repeat1",
           "title": "Morning Jog",
           "label": "30 mins",
-          "description": "Track using fitbit"
+          "description": "Track using fitbit",
+          "dueDate": "2026-05-01"
         }
       ]
     },
@@ -97,7 +103,8 @@
           "id": "Archived1",
           "title": "Go Trekking",
           "label": "300 mins",
-          "description": "Completed 10km on cycle"
+          "description": "Completed 10km on cycle",
+          "dueDate": "2026-03-20"
         }
       ]
     },
@@ -125,7 +132,8 @@
           "id": "Archived3",
           "title": "Go Cycling",
           "label": "300 mins",
-          "description": "Completed 10km on cycle"
+          "description": "Completed 10km on cycle",
+          "dueDate": "2026-04-01"
         }
       ]
     }
